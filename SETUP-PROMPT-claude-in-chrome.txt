@@ -1,0 +1,103 @@
+STEADFOLD PROMPT · SETUP-PROMPT-claude-in-chrome.txt  (one-time: Meta developer app + Instagram tokens for Steadfold Autopost)
+WHAT YOU NEED FIRST: README steps 1-4 done (GitHub repo "steadfold-autopost" created, files pushed). Your GitHub username handy. Your phone (for codes).
+THEN: copy everything below the line, paste it into a NEW chat in the Claude panel in Chrome, press Enter. Only act when it shows "🟡 YOUR TURN".
+──────────────────────────────────────────────────────────────
+
+LAST THING YOU DO, EVERY TIME (even if you stop early, hit an error, or I say "stop"):
+End with ONE box I can copy and paste back to my Steadfold chat with Claude. Use exactly this format:
+
+📋 HANDOFF FOR STEADFOLD CHAT
+PROMPT: SETUP-PROMPT-claude-in-chrome.txt
+DATE/TIME: <today's date and time, Toronto>
+STATUS: ✅ all done / ⚠️ partly done / ❌ blocked
+DONE: <one line per thing finished, with links where there are any (NEVER a token)>
+NOT DONE: <one line per thing not finished, with the exact reason>
+CHANGED OR DELETED: <every item you changed or deleted, or "nothing">
+NEEDS DHARMA: <exact by-hand steps, or "nothing">
+NEEDS CLAUDE: <questions or decisions for the Steadfold chat, or "nothing">
+NEXT PROMPT: none (next: README step 10, the GH_PAT secret, then step 11, the dry-run test)
+📋 END HANDOFF
+
+Keep it short and factual, with no screenshots. Put it after your normal final report.
+
+
+You are setting up a Meta developer app for me (Dharma, owner of Steadfold), so that a GitHub robot can post to my 3 Instagram professional accounts through the official "Instagram API with Instagram Login": @fullyfundedhq, @lockedhourhq, @hourbackhq. Work in my own Chrome on developers.facebook.com and instagram.com. Work on FULL AUTOPILOT: don't ask me to confirm each step. Only stop for:
+(1) sign-ins, passwords, 2-step codes, captchas or "re-enter your password" boxes: I'll do those;
+(2) the moment a token is on screen: I copy it myself (see TOKEN RULE).
+
+TOKEN RULE (most important rule, never break it):
+An access token is a long string, usually starting with "IGAA". When one is on screen:
+- Do NOT read it out, copy it, type it, summarize it, store it, or put any part of it in any message, table or the handoff box. Don't screenshot or zoom into it.
+- Stop and write exactly:
+
+🟡 YOUR TURN · COPY TOKEN FOR @<account>
+1. Click the copy button next to the token (or select it all and press Ctrl+C / Cmd+C).
+2. Open a NEW tab:  https://github.com/<your GitHub username>/steadfold-autopost/settings/secrets/actions
+3. Click "New repository secret". Name:  <SECRET NAME>   Secret: paste (Ctrl+V / Cmd+V). Click "Add secret".
+4. Come back to this tab and type "done" here. (Don't paste the token here.)
+
+Secret names: @fullyfundedhq → IG_TOKEN_FULLYFUNDED · @lockedhourhq → IG_TOKEN_LOCKEDHOUR · @hourbackhq → IG_TOKEN_HOURBACK
+If I ever paste a token into this chat by mistake, don't repeat it. Tell me to delete that secret and generate a new token.
+
+HARD LIMITS (never break these):
+- Never open, change or submit anything about payments, billing, ads, payment methods, Business Verification, App Review / Advanced Access requests, or publishing the app to Live mode. The app stays in Development mode.
+- Never change passwords, security, 2-factor or login settings, and never touch account recovery.
+- Never delete apps, pages, accounts or posts. Never post, comment, like, follow or DM anything.
+- Only touch the app named "Steadfold Autopost". If other apps exist, leave them alone and list them at the end.
+- On instagram.com, only open Settings → Website permissions → Apps and websites, to accept the Steadfold Autopost tester invite.
+- If a screen looks different from these steps, pick the closest matching option, and say in the final report what you saw and chose. If nothing matches, stop and tell me.
+
+Before you start, write ONE line: "Check: what is your GitHub username, and is the steadfold-autopost repo created with the files pushed?" Wait for my answer. If I say the repo isn't ready, still do Steps 1 to 4, then stop before Step 5 and say so.
+
+STEP 1 · SIGN-IN
+Open https://developers.facebook.com/apps . If it asks me to log in or register as a developer, write:
+🟡 YOUR TURN · SIGN IN
+Log in to developers.facebook.com with your Facebook login (and finish "Get started / Register as a developer" if it shows; it may text you a code).
+Then type "done" here.
+
+STEP 2 · CREATE THE APP (skip if an app named "Steadfold Autopost" already exists: open it instead and say so)
+Click "Create app".
+- App name: Steadfold Autopost. (Meta doesn't allow "Instagram", "IG", "Insta" or "Facebook" in the name.) App contact email: leave the pre-filled one.
+- Use case: choose "Manage messaging & content on Instagram". If that isn't listed, choose "Other" → app type "Business", then add the Instagram product and pick "API setup with Instagram login" (not "with Facebook login").
+- Business portfolio: choose the option NOT to connect one ("I don't want to connect a business portfolio yet"), if that's offered.
+- Click through to "Create app". If it asks for my password, that's a 🟡 YOUR TURN · SIGN IN.
+
+STEP 3 · PERMISSIONS
+In the app: Use cases → the Instagram use case → Customize → "Permissions and features". Make sure these 3 are added (click "Add" if they aren't): instagram_business_basic · instagram_business_content_publish · instagram_business_manage_comments.
+Don't click anything that says "Request advanced access", "App Review" or "Submit".
+
+STEP 4 · ADD THE 3 ACCOUNTS AS INSTAGRAM TESTERS
+App roles → Roles → "Instagram Testers" (or "Add People" → "Instagram Tester") → add: fullyfundedhq, lockedhourhq, hourbackhq.
+If Meta refuses one (for example "Unable to add a user with a role on the app's owning business"), note the exact message and carry on. Step 6's "Add account" usually works without the tester role.
+
+STEP 5 · ACCEPT THE TESTER INVITES (one account at a time, on instagram.com in this computer's browser)
+For each of @fullyfundedhq, @lockedhourhq, @hourbackhq:
+a) Open https://www.instagram.com/ . If it isn't logged in as that account, write:
+🟡 YOUR TURN · SIGN IN
+On instagram.com, log out (More → Log out) and log in as @<account>. Then type "done" here.
+b) Go to Settings → "Website permissions" → "Apps and websites" → the "Tester invites" tab (direct link to try: https://www.instagram.com/accounts/manage_access/ ). Click "Accept" for Steadfold Autopost. Ignore the "Active" tab, which will be empty.
+c) If there's no invite, note it and carry on.
+
+STEP 6 · TOKENS (one account at a time)
+Back on developers.facebook.com: the app → Use cases → Instagram use case → Customize → "API setup with Instagram login" → "Generate access tokens" → "Add account".
+For each account:
+a) Click "Add account". The Instagram pop-up asks for a login: 🟡 YOUR TURN · SIGN IN ("Log in as @<account> in the pop-up, click Allow / Continue, then type done"). If it's already logged in as a DIFFERENT account, tell me to log out in the pop-up first.
+b) Check that the account now appears in the list with the right @username.
+c) Click "Generate token" next to it. If it asks to log in or allow again: 🟡 YOUR TURN · SIGN IN.
+d) The token is on screen: follow the TOKEN RULE (🟡 YOUR TURN · COPY TOKEN FOR @<account>). Wait for "done". Then close the token box.
+Do @fullyfundedhq, then @lockedhourhq, then @hourbackhq.
+Note: generating a new token later doesn't break anything. The newest one simply goes into the GitHub secret.
+
+STEP 7 · CHECK (without seeing secrets)
+Open https://github.com/<username>/steadfold-autopost/settings/secrets/actions and check that the list shows IG_TOKEN_FULLYFUNDED, IG_TOKEN_LOCKEDHOUR and IG_TOKEN_HOURBACK, with an "updated" date of today. GitHub never shows the values. Don't click into them.
+In the app dashboard, check that the app mode shows "Development" (don't change it).
+
+STEP 8 · FINAL REPORT. Print:
+1) A table: account | tester invite (sent / accepted / not needed / failed + why) | token saved in GitHub (yes / no + why)
+2) The app name and App ID (the App ID is fine to share; NEVER the app secret, NEVER a token).
+3) Anything that looked different from these steps, and what you chose.
+4) Then write: "✅ Meta setup done. Next: README step 10 (GH_PAT secret) and step 11 (dry-run test)."
+
+Start with the "Check:" line now.
+
+Reminder: finish with the 📋 HANDOFF FOR STEADFOLD CHAT box, and never include a token in it.

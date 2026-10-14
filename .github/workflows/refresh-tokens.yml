@@ -1,0 +1,47 @@
+# Refreshes the three Instagram tokens every week (they expire after 60 days)
+# and saves the new ones into this repo's secrets. Needs the GH_PAT secret.
+name: Refresh tokens
+
+on:
+  schedule:
+    - cron: '23 9 * * 1'     # Mondays 09:23 UTC (about 5:23 am Toronto)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only check that the tokens and GH_PAT work (changes nothing)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-tokens
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Refresh Instagram tokens
+        env:
+          IG_TOKEN_FULLYFUNDED: ${{ secrets.IG_TOKEN_FULLYFUNDED }}
+          IG_TOKEN_LOCKEDHOUR: ${{ secrets.IG_TOKEN_LOCKEDHOUR }}
+          IG_TOKEN_HOURBACK: ${{ secrets.IG_TOKEN_HOURBACK }}
+          IG_TOKEN_LITTLEFOLD: ${{ secrets.IG_TOKEN_LITTLEFOLD }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            python refresh_tokens.py --dry-run
+          else
+            python refresh_tokens.py
+          fi

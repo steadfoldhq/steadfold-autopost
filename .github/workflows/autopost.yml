@@ -1,0 +1,79 @@
+# Publishes due Instagram posts every 15 minutes and saves what it did to
+# state/published.json. Pause it: Actions tab -> Autopost -> "..." -> Disable workflow.
+name: Autopost
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes (UTC). GitHub may start runs a few minutes late.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run: only show what would be posted (posts nothing)'
+        type: boolean
+        default: false
+      retry_failed:
+        description: 'Retry posts that already failed 3 times'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write            # needed to commit state/published.json back
+
+concurrency:
+  group: autopost            # never two runs at once (prevents double posting)
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Publish due posts
+        env:
+          IG_TOKEN_FULLYFUNDED: ${{ secrets.IG_TOKEN_FULLYFUNDED }}
+          IG_TOKEN_LOCKEDHOUR: ${{ secrets.IG_TOKEN_LOCKEDHOUR }}
+          IG_TOKEN_HOURBACK: ${{ secrets.IG_TOKEN_HOURBACK }}
+          IG_TOKEN_LITTLEFOLD: ${{ secrets.IG_TOKEN_LITTLEFOLD }}
+          IG_USERNAME_LITTLEFOLD: ${{ vars.IG_USERNAME_LITTLEFOLD }}
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}     # optional repo variable
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}     # optional repo variable
+          DRY_RUN: ${{ inputs.dry_run }}
+          RETRY_FAILED: ${{ inputs.retry_failed }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          if [ "$RETRY_FAILED" = "true" ]; then args+=(--retry-failed); fi
+          python autopost.py "${args[@]}"
+
+      - name: Save state (even if a post failed)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/published.json
+          if git diff --cached --quiet; then
+            echo "No state changes."
+            exit 0
+          fi
+          git commit -m "autopost: update state/published.json"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              echo "State saved."
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::Could not push state/published.json. The next run will still not double-post (it checks Instagram first)."
+          exit 1
