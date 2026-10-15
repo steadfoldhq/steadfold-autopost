@@ -269,6 +269,18 @@
       ]
     },
     {
+      "id": "lh-1017-one-word-later",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T12:30:00-04:00",
+      "caption": "Stay in your focus hour: when a new thought pops up, write it on a \"later\" list and keep going.\n\n1. Keep a sticky note or scrap of paper next to you.\n2. New thought? Write 3 or 4 words. Don't act on it.\n3. When the hour ends, work through the list.\n\nOne Word is our new series: one word to carry into your next locked hour. This is No.1.\n\nSave this, send it to the friend with 40 tabs open and follow @lockedhourhq.\n\nPhoto made with AI.\n\n#focus #deepwork #productivity #studytips #timemanagement",
+      "first_comment": "What's the first thing on your later list right now? One word.",
+      "alt_text": "A 2-slide zine post on butter yellow. Slide 1: a black label \"One Word · No.1\", the huge word \"Later.\" with a pink highlighter stripe, the line \"Mid-hour thought? Write it down. Keep going.\", an alarm clock cut-out and the handwritten note \"save this for later\". Slide 2: a taped, lined sticky note on pink titled \"The later list:\" with ticks next to \"Reply to Sam\", \"Book the dentist\", \"Look up that recipe\", \"Check the bank app\" and \"Then back to work\".",
+      "images": [
+        "lh-1017-one-word-later/01.jpg",
+        "lh-1017-one-word-later/02.jpg"
+      ]
+    },
+    {
       "id": "hb-w02-7-prove-it",
       "account": "hourback",
       "publish_at": "2026-10-17T13:00:00-04:00",
@@ -283,6 +295,33 @@
         "hb-w02-7-prove-it/05.jpg",
         "hb-w02-7-prove-it/06.jpg"
       ]
+    },
+    {
+      "id": "ff-reel-1017-raise-half",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T19:00:00-04:00",
+      "caption": "Got a raise? Save half of it, and enjoy the other half.\n\nExample: a raise of 200 a month. Save 100 of it for 20 years and it could grow to about 46,204, from 24,000 paid in.\nYour move: set up the automatic transfer the day the raise lands, before you get used to the extra.\nThe catch: only save what you can keep up. A smaller amount you never stop beats a big one you cancel.\n\nSave this for your next raise.\n\nExample at 6% a year, compounded monthly. Not a promise. Real returns vary, before fees, tax and inflation. Any currency. Same math.\n\nSource: example math, no outside figures · As of Oct 2026\n\nPhoto made with AI.\n\nGeneral education only, not financial advice.\n\n#personalfinance #savingmoney #investing #moneytips #careergrowth",
+      "first_comment": "If you got a raise tomorrow, what would you do first: save, spend or invest?",
+      "video": "reels/ff-reel-1017-raise-half.mp4",
+      "cover": "reels/ff-reel-1017-raise-half-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1017-one-tab",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T19:00:00-04:00",
+      "caption": "Get more done in your next hour: close every tab but one.\n\n1. Keep the one tab you need. Close the rest.\n2. Opened a new one? Close it and go back.\n3. Need something later? Jot it on paper.\n\nOne tab. One task. One hour.\n\nSave this, try it tomorrow and follow @lockedhourhq.\n\n#focus #deepwork #productivity #studytips #worksmarter",
+      "first_comment": "How many tabs do you have open right now? Just the number.",
+      "video": "reels/lh-reel-1017-one-tab.mp4",
+      "cover": "reels/lh-reel-1017-one-tab-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1017-offline",
+      "account": "hourback",
+      "publish_at": "2026-10-17T19:00:00-04:00",
+      "caption": "Plan tomorrow in one prompt after 7 pm, then close the laptop.\n\n1. Dump everything on your mind into any AI chat.\n2. Ask the prompt below.\n3. Check the plan, move anything that's wrong, and log off.\n\nPROMPT (copy and paste):\nHere's everything on my mind for tomorrow: [brain dump]. Pick my 3 must-dos and give me a rough schedule. Move the rest to later this week.\n\nSave this for tonight.\n\nTip: remove personal details before you paste.\n\nPhoto made with AI.\n\n#eveningroutine #aitips #productivity #worklifebalance #planning",
+      "first_comment": "What time do you log off tonight? Just the time.",
+      "video": "reels/hb-reel-1017-offline.mp4",
+      "cover": "reels/hb-reel-1017-offline-cover.jpg"
     },
     {
       "id": "lf-04-sleep-when-baby-sleeps",
