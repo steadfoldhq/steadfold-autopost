@@ -60,6 +60,9 @@ class FakeGraph:
         self.fail_publish = 0
         self.reject_alt_text = False
         self.head_status = 200
+        self.head_fail_hosts: set[str] = set()       # HEAD returns 404 for these hosts
+        self.video_item_script: list[str] = []       # statuses returned for VIDEO carousel items
+        self.video_never_finishes = False            # VIDEO carousel items stay IN_PROGRESS
         self.refresh_map: dict[str, str] = {}        # old token -> new token
 
     # requests.Session-compatible entry point
@@ -70,7 +73,7 @@ class FakeGraph:
         self.calls.append(call)
         host = urlparse(url).netloc
         if method == "HEAD":
-            return FakeResponse(self.head_status)
+            return FakeResponse(404 if host in self.head_fail_hosts else self.head_status)
         if host == "graph.instagram.com":
             return self._graph(call)
         raise AssertionError(f"unexpected host {host}")
@@ -96,12 +99,29 @@ class FakeGraph:
 
         if c.method == "POST" and parts == [user_id, "media"]:
             if c.data.get("is_carousel_item") == "true":
+                if c.data.get("media_type") == "VIDEO":     # video slide in a carousel
+                    if "image_url" in c.data or "alt_text" in c.data:
+                        return ig_error("Invalid parameter for a VIDEO carousel item")
+                    if not str(c.data.get("video_url", "")).endswith(".mp4"):
+                        return ig_error("video_url must be an mp4")
+                    cid = self._id()
+                    self.containers[cid] = {"kind": "video_item", "status": "IN_PROGRESS", **c.data}
+                    return FakeResponse(200, {"id": cid})
+                if "media_type" in c.data or "image_url" not in c.data:
+                    return ig_error("bad carousel item")
                 if self.reject_alt_text and "alt_text" in c.data:
                     return ig_error("Invalid parameter alt_text")
                 cid = self._id()
                 self.containers[cid] = {"kind": "item", "status": "FINISHED", **c.data}
                 return FakeResponse(200, {"id": cid})
             if c.data.get("media_type") == "CAROUSEL":
+                kids = c.data.get("children", "").split(",")
+                if not (1 <= len(kids) <= 10):
+                    return ig_error("A carousel takes up to 10 children")
+                for k in kids:   # like Meta: every child must exist and be FINISHED
+                    ch = self.containers.get(k)
+                    if not ch or ch["kind"] not in ("item", "video_item") or ch["status"] != "FINISHED":
+                        return ig_error(f"Media ID {k} is not available", code=9007)
                 cid = self._id()
                 self.containers[cid] = {"kind": "carousel", "status": "IN_PROGRESS",
                                         "user": user_id, **c.data}
@@ -122,6 +142,12 @@ class FakeGraph:
 
         if c.method == "GET" and len(parts) == 1 and parts[0] in self.containers:
             cont = self.containers[parts[0]]
+            if cont["status"] == "IN_PROGRESS" and cont["kind"] == "video_item":
+                if self.video_never_finishes:
+                    return FakeResponse(200, {"status_code": "IN_PROGRESS", "id": parts[0]})
+                cont["status"] = self.video_item_script.pop(0) if self.video_item_script else "FINISHED"
+                if cont["status"] == "IN_PROGRESS":
+                    return FakeResponse(200, {"status_code": "IN_PROGRESS", "id": parts[0]})
             if cont["status"] == "IN_PROGRESS":
                 cont["status"] = self.status_script.pop(0) if self.status_script else "FINISHED"
                 if cont["status"] == "IN_PROGRESS":

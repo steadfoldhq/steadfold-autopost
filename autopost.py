@@ -16,6 +16,10 @@ Each run:
   4. Writes progress into state/published.json after every step, so a crash or a
      re-run can never post the same thing twice.
 
+A carousel's "images" list may mix .jpg photos and .mp4 video slides. Each video
+slide becomes a VIDEO carousel item (served like Reels, through jsDelivr) and must
+reach status FINISHED before the carousel container is created.
+
 API: Instagram API with Instagram Login (host graph.instagram.com). No Facebook
 Page needed. Python 3.11+, standard library + requests only.
 
@@ -64,8 +68,10 @@ ACCOUNTS: dict[str, dict[str, str]] = {
 }
 
 LATE_AFTER = timedelta(hours=6)       # older than this: still publish, but log LATE
-MAX_CAROUSEL_ITEMS = 10               # Instagram limit
-MAX_VIDEO_BYTES = 19_500_000          # jsDelivr serves GitHub files up to 20 MB
+MAX_CAROUSEL_ITEMS = 10               # Instagram limit (photos, videos or a mix)
+MAX_VIDEO_BYTES = 19_500_000          # jsDelivr serves GitHub files up to 20 MB (Reels + carousel videos)
+IMAGE_EXTS = (".jpg", ".jpeg")        # Instagram only accepts JPEG photos
+VIDEO_EXTS = (".mp4",)                # carousel video slides: MP4 (H.264 + AAC)
 CAPTION_MAX_CHARS = 2200              # Instagram caption limit
 CAPTION_MAX_HASHTAGS = 30             # Instagram hashtag limit
 POLL_INTERVAL_SECONDS = 10            # how often to ask "is the container ready?"
@@ -232,6 +238,12 @@ class IGClient:
         data = {"image_url": image_url, "is_carousel_item": "true"}
         if alt_text:
             data["alt_text"] = alt_text
+        return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
+
+    def create_carousel_video_item(self, ig_user_id: str, video_url: str) -> str:
+        """A video slide inside a carousel (media_type=VIDEO, is_carousel_item=true).
+        Instagram processes it asynchronously: poll it until FINISHED before using it."""
+        data = {"media_type": "VIDEO", "video_url": video_url, "is_carousel_item": "true"}
         return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
 
     def create_carousel(self, ig_user_id: str, children: list[str], caption: str) -> str:
@@ -401,14 +413,33 @@ def validate_post(post: dict, media_dir: Path | None) -> list[str]:
         return problems
     images = post["images"]
     if not isinstance(images, list) or not (1 <= len(images) <= MAX_CAROUSEL_ITEMS):
-        problems.append(f"images must be a list of 1 to {MAX_CAROUSEL_ITEMS} files")
+        problems.append(f"images must be a list of 1 to {MAX_CAROUSEL_ITEMS} files "
+                        f"(.jpg photos and/or .mp4 videos, {MAX_CAROUSEL_ITEMS} items at most in total)")
     else:
+        n_videos = 0
         for rel in images:
-            if not str(rel).lower().endswith((".jpg", ".jpeg")):
-                problems.append(f"image {rel} is not a .jpg (Instagram only accepts JPEG)")
+            if is_video_item(rel):
+                n_videos += 1
+                if media_dir is not None:
+                    vp = media_dir / rel
+                    if not vp.is_file():
+                        problems.append(f"video file media/{rel} is missing from the repo")
+                    elif vp.stat().st_size > MAX_VIDEO_BYTES:
+                        problems.append(f"video media/{rel} is over {MAX_VIDEO_BYTES / 1_000_000:g} MB")
+            elif not str(rel).lower().endswith(IMAGE_EXTS):
+                problems.append(f"image {rel} is not a .jpg (Instagram only accepts JPEG) "
+                                f"or an .mp4 video")
             elif media_dir is not None and not (media_dir / rel).is_file():
                 problems.append(f"image file media/{rel} is missing from the repo")
+        if n_videos and len(images) < 2:
+            problems.append("a single video can't be a carousel; post it as a Reel "
+                            "(\"video\": ...) instead of in \"images\"")
     return problems
+
+
+def is_video_item(rel: Any) -> bool:
+    """True for a carousel entry that is a video slide (.mp4)."""
+    return str(rel).lower().endswith(VIDEO_EXTS)
 
 
 def media_base_url(env: dict) -> str | None:
@@ -629,7 +660,7 @@ class Runner:
         except StillProcessing as exc:
             log(f"  {exc}")
             self.notes.append(f"[{pid}] Instagram is still processing it; next run "
-                              f"continues with the same container")
+                              f"continues with the same container(s), nothing is re-uploaded")
         except IGError as exc:
             attempts = st.get("attempts", 0) + 1
             if self.retry_failed and status == "failed":
@@ -661,10 +692,16 @@ class Runner:
                 log(f"    cover {self.base_url}/{post['cover']}")
         else:
             n = len(post["images"])
+            n_vid = sum(1 for rel in post["images"] if is_video_item(rel))
             kind = "CAROUSEL" if n > 1 else "single IMAGE"
-            log(f"  WOULD publish a {kind} of {n} image(s){' (late)' if late else ''}:")
+            what = (f"{n} items ({n_vid} video{'s' if n_vid != 1 else ''}, {n - n_vid} "
+                    f"image{'s' if n - n_vid != 1 else ''})" if n_vid else f"{n} image(s)")
+            log(f"  WOULD publish a {kind} of {what}{' (late)' if late else ''}:")
             for rel in post["images"]:
-                log(f"    {self.base_url}/{rel}")
+                if is_video_item(rel):
+                    log(f"    video {self.video_url}/{rel}")
+                else:
+                    log(f"    {self.base_url}/{rel}")
         first_line = post["caption"].splitlines()[0]
         log(f"  caption ({len(post['caption'])} chars): {first_line[:90]}")
         if post.get("alt_text"):
@@ -692,13 +729,16 @@ class Runner:
                 late: bool) -> None:
         pid, acct = post["id"], post["account"]
         is_reel = bool(post.get("video"))
+        items = [] if is_reel else list(post["images"])
+        vids = [is_video_item(rel) for rel in items]
         if is_reel:
             urls = [f"{self.video_url}/{post['video']}"]
             cover_url = f"{self.base_url}/{post['cover']}" if post.get("cover") else None
             if cover_url:
                 urls.append(cover_url)
         else:
-            urls = [f"{self.base_url}/{rel}" for rel in post["images"]]
+            # Photos come from raw GitHub; video slides use the same host as Reels (jsDelivr).
+            urls = [f"{self.video_url if v else self.base_url}/{rel}" for rel, v in zip(items, vids)]
 
         # 1) Already on Instagram? (state lost, or an earlier run died mid-publish)
         try:
@@ -731,17 +771,14 @@ class Runner:
             return
 
         if is_reel:
-            # Video host: jsDelivr first; if it can't serve the file, fall back to raw GitHub.
-            try:
-                self.check_image_urls(urls[:1])
-            except IGError as exc:
-                raw = f"{self.base_url}/{post['video']}"
-                log(f"  video host check failed ({exc}); trying {raw}")
-                urls[0] = raw
-                self.check_image_urls(urls[:1])
+            urls[0] = self.reachable_video_url(urls[0], post["video"])
             self.check_image_urls(urls[1:])
         else:
-            self.check_image_urls(urls)
+            for i, (rel, v) in enumerate(zip(items, vids)):
+                if v:
+                    urls[i] = self.reachable_video_url(urls[i], rel)
+                else:
+                    self.check_image_urls([urls[i]])
 
         # 2) Reuse a container from an earlier run if it is still fresh and usable.
         container_id = st.get("container_id")
@@ -776,18 +813,39 @@ class Runner:
                                                          post["caption"], a), alt, pid)
                 children: list[str] = []
             else:
-                children = []
-                for i, url in enumerate(urls):
-                    if i == 0:  # alt text describes the whole carousel; put it on slide 1
-                        cid = self._with_alt_fallback(
-                            lambda a, u=url: client.create_carousel_item(ig_user_id, u, a),
-                            alt, pid)
-                    else:
-                        cid = client.create_carousel_item(ig_user_id, url)
-                    children.append(cid)
-                    self.state.update(pid, account=acct, status="publishing",
-                                      children=list(children))
-                log(f"  created {len(children)} image containers")
+                children = self.reusable_children(st, client, items, vids)
+                if children is None:
+                    children = []
+                    # Alt text describes the whole carousel. Instagram only takes it on photos,
+                    # so it goes on the first photo (slide 1 when slide 1 is a photo).
+                    alt_on = vids.index(False) if False in vids else -1
+                    created_at = iso(self.now)
+                    for i, (url, v) in enumerate(zip(urls, vids)):
+                        if v:
+                            cid = client.create_carousel_video_item(ig_user_id, url)
+                        elif i == alt_on:
+                            cid = self._with_alt_fallback(
+                                lambda a, u=url: client.create_carousel_item(ig_user_id, u, a),
+                                alt, pid)
+                        else:
+                            cid = client.create_carousel_item(ig_user_id, url)
+                        children.append(cid)
+                        self.state.update(pid, account=acct, status="publishing",
+                                          children=list(children), children_media=items,
+                                          children_created_at=created_at)
+                    n_vid = sum(vids)
+                    log(f"  created {len(children)} item containers"
+                        + (f" ({n_vid} video, {len(children) - n_vid} image)" if n_vid
+                           else " (images)"))
+                # Video items are processed asynchronously; the carousel container may only
+                # be created once every child is FINISHED. Polls with the usual helper; if a
+                # video is still processing when time is up, StillProcessing ends this run
+                # cleanly and the next run reuses the same item containers.
+                for i, (cid, v) in enumerate(zip(children, vids)):
+                    if v:
+                        log(f"  waiting for video slide {i + 1} ({cid}) to finish processing")
+                        client.wait_until_finished(cid)
+                        log(f"  video slide {i + 1} FINISHED")
                 container_id = client.create_carousel(ig_user_id, children, post["caption"])
             self.state.update(pid, account=acct, status="publishing", children=children,
                               container_id=container_id,
@@ -817,6 +875,40 @@ class Runner:
         # 6) First comment.
         if post.get("first_comment"):
             self.post_comment(post, client, media_id, attempts_so_far=0)
+
+    def reachable_video_url(self, url: str, rel: str) -> str:
+        """Video host check: jsDelivr first; if it can't serve the file, fall back to raw GitHub."""
+        try:
+            self.check_image_urls([url])
+            return url
+        except IGError as exc:
+            raw = f"{self.base_url}/{rel}"
+            if raw == url:
+                raise
+            log(f"  video host check failed ({exc}); trying {raw}")
+            self.check_image_urls([raw])
+            return raw
+
+    def reusable_children(self, st: dict, client: IGClient, items: list[str],
+                          vids: list[bool]) -> list[str] | None:
+        """Item containers from an earlier run that stopped before the carousel container
+        was created (e.g. a video slide was still processing). Reused only if they are for
+        the same files, younger than CONTAINER_MAX_AGE, and no video item has failed."""
+        kids = list(st.get("children") or [])
+        if not any(vids) or st.get("container_id") or len(kids) != len(items) \
+                or st.get("children_media") != items:
+            return None
+        created = st.get("children_created_at")
+        if not created or self.now - parse_time(created) >= CONTAINER_MAX_AGE:
+            return None
+        for cid, v in zip(kids, vids):
+            if v:
+                code, _ = client.container_status(cid)
+                if code not in ("FINISHED", "IN_PROGRESS"):
+                    log(f"  earlier video item {cid} is {code or 'unknown'}; rebuilding all items")
+                    return None
+        log(f"  reusing {len(kids)} item containers from an earlier run")
+        return kids
 
     def _with_alt_fallback(self, make: Callable[[str | None], str], alt: str | None,
                            pid: str) -> str:

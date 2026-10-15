@@ -116,6 +116,24 @@ A post with `"video": "reels/<id>.mp4"` (and optionally `"cover": "reels/<id>-co
 - Instagram's own music library can't be added through the API. Our Reels carry original music made in code, so they're copyright-safe. To use a trending sound, post that Reel from the app instead.
 - Processing a Reel takes Instagram a minute or more. If it isn't ready within 5 minutes, the next run (15 minutes later) picks it up again without re-uploading.
 
+## Carousels with video slides
+
+A carousel's `"images"` list can mix `.jpg` photos and `.mp4` video slides, in any order:
+
+```json
+{ "id": "ff-w03-2", "account": "fullyfunded", "publish_at": "2026-10-22T12:00:00-04:00",
+  "caption": "…", "first_comment": "…", "alt_text": "…",
+  "images": ["ff-w03-2/01.mp4", "ff-w03-2/02.mp4", "ff-w03-2/03.jpg"] }
+```
+
+- **Video slides:** MP4 (H.264 + AAC), 3–60 seconds, under 19.5 MB each. Use the same size as the photos (1080×1350, 4:5), because Instagram crops every slide to match the first one. Our slow-pan slides are 6 s and about 6 MB.
+- **At most 10 items in total** (photos + videos). A single video on its own isn't a carousel; post it as a Reel (`"video"`) instead.
+- Video slides are served like Reels (jsDelivr pinned to the commit, falling back to raw GitHub). Photos still come from raw GitHub.
+- For each video slide the robot creates a `VIDEO` carousel item, then **waits until Instagram has finished processing it** before it builds the carousel. If a video is still processing after 5 minutes, the run stops cleanly and the next run (15 minutes later) carries on with the same uploads. If Instagram rejects a video (status `ERROR`), the post is marked failed and retried from scratch on the next run.
+- **Alt text** only works on photos, so it goes on the first photo of the carousel (slide 1 when slide 1 is a photo).
+- The music in the video slides is our own, made in code. Instagram's music library can't be added through the API.
+- `"images"` entries are checked before anything is posted: each file must exist in `media/`, photos must be `.jpg`, videos `.mp4` and under the size limit.
+
 ## Adding next week's posts
 
 1. Ask Claude in the Steadfold chat: *"Import next week into the autopost repo, start date YYYY-MM-DD."* Claude runs
@@ -149,8 +167,8 @@ Small changes can be made right on github.com. Open `schedule/posts.json`, click
 - **Tokens last 60 days.** The weekly renewer extends them. If it fails (you get an email), fix it within a few weeks. If a token does expire, make a new one (setup step 9) and replace the secret. A token must be at least 24 hours old before it can be renewed, so a manual renewal right after setup will fail. Use the "Only check" option.
 - **The `GH_PAT` expires** on the date you chose in step 10. Make a new one before then.
 - **Instagram only accepts JPEG.** The import tool converts PNG slides to JPEG (quality 92). Don't put PNGs in `media/`, because the robot refuses them.
-- **Carousel limit: 10 slides.** Instagram crops all slides to match the first one. All our slides are 1080×1350 (4:5).
-- **Not possible through the API:** music, a cover pick, collaborators, location, product tags and "share to Facebook". Alt text is supported, and we put it on slide 1.
+- **Carousel limit: 10 slides** (photos, videos or a mix). Instagram crops all slides to match the first one. All our slides are 1080×1350 (4:5).
+- **Not possible through the API:** music, a cover pick, collaborators, location, product tags and "share to Facebook". Alt text is supported, and we put it on the first photo (slide 1 for an all-photo carousel).
 - **Timing isn't to the minute.** GitHub often starts scheduled runs a few minutes late, sometimes 15–30 minutes or more when it's busy. Expect posts within about 0–30 minutes of their time.
 - **The repo is public.** Anyone who finds it can see upcoming captions and slides before they're posted. That's low risk, but don't put anything private in it. The tokens are **secrets** and are never visible, not even in logs.
 - **Image hosting.** By default Instagram downloads slides from `raw.githubusercontent.com`. If posts fail with an error about the media URL or downloading the image, switch to GitHub Pages:

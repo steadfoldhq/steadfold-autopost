@@ -457,6 +457,173 @@ class DryRun(Base):
         self.assertEqual(self.run_main(graph(), "--now", "2026-10-15T12:01:00-04:00"), 2)
 
 
+def mixed_post(pid="ff-mix-1", images=None, **kw):
+    p = post(pid, **kw)
+    p["images"] = images or [f"{pid}/01.jpg", f"{pid}/02.mp4", f"{pid}/03.jpg"]
+    return p
+
+
+JSD = "https://cdn.jsdelivr.net/gh/dharma/steadfold-autopost@abc123/media"
+ENV_SHA = {**ENV, "GITHUB_SHA": "abc123"}
+
+
+class CarouselVideo(Base):
+    """Carousels whose "images" list mixes .jpg photos and .mp4 video slides."""
+
+    def creates(self, g):
+        return [c for c in g.posts() if c.path.endswith("/media")]
+
+    def test_mixed_carousel_is_created_and_published(self):
+        self.write_posts([mixed_post()])
+        g = graph()
+        g.video_item_script = ["IN_PROGRESS", "FINISHED"]
+        self.assertEqual(self.run_main(g, env=ENV_SHA), 0, self.output)
+        u = UID["fullyfunded"]
+
+        heads = [c for c in g.calls if c.method == "HEAD"]
+        self.assertEqual([c.url for c in heads], [f"{BASE}/ff-mix-1/01.jpg", f"{JSD}/ff-mix-1/02.mp4",
+                                                  f"{BASE}/ff-mix-1/03.jpg"])
+        creates = self.creates(g)
+        self.assertEqual(len(creates), 4)                           # 3 items + the carousel
+        photo1, video, photo2, carousel = creates
+        self.assertEqual(photo1.data["image_url"], f"{BASE}/ff-mix-1/01.jpg")
+        self.assertEqual(photo1.data["alt_text"], "Alt text for slide 1")
+        self.assertEqual(video.data, {"media_type": "VIDEO", "video_url": f"{JSD}/ff-mix-1/02.mp4",
+                                      "is_carousel_item": "true", "access_token": TOK_FF})
+        self.assertEqual(photo2.data["image_url"], f"{BASE}/ff-mix-1/03.jpg")
+        self.assertNotIn("alt_text", photo2.data)
+        self.assertEqual(carousel.data["media_type"], "CAROUSEL")
+        self.assertEqual(carousel.data["children"], "1001,1002,1003")
+
+        # The video item is polled until FINISHED *before* the carousel container exists.
+        video_polls = [i for i, c in enumerate(g.calls) if c.method == "GET" and c.path == "1002"]
+        self.assertEqual(len(video_polls), 2)
+        self.assertLess(video_polls[-1], g.calls.index(carousel))
+        self.assertEqual(self.sleeps, [10])
+        self.assertEqual(len(g.publishes()), 1)
+        self.assertEqual(g.publishes()[0].data["creation_id"], "1004")
+        self.assertEqual(g.publishes()[0].path, f"{u}/media_publish")
+        st = self.state()["ff-mix-1"]
+        self.assertEqual(st["status"], "published")
+        self.assertEqual(st["children"], ["1001", "1002", "1003"])
+        self.assertEqual(st["comment_status"], "done")
+        self.assertIn("1 video, 2 image", self.output)
+
+    def test_video_first_puts_alt_text_on_first_photo(self):
+        self.write_posts([mixed_post(images=["v/01.mp4", "v/02.jpg", "v/03.jpg"])])
+        g = graph()
+        self.assertEqual(self.run_main(g, env=ENV_SHA), 0, self.output)
+        video, photo1, photo2, _ = self.creates(g)
+        self.assertEqual(video.data["media_type"], "VIDEO")
+        self.assertEqual(photo1.data["alt_text"], "Alt text for slide 1")
+        self.assertNotIn("alt_text", photo2.data)
+        self.assertEqual(len(g.publishes()), 1)
+
+    def test_video_falls_back_to_raw_github_when_jsdelivr_fails(self):
+        self.write_posts([mixed_post()])
+        g = graph()
+        g.head_fail_hosts = {"cdn.jsdelivr.net"}
+        self.assertEqual(self.run_main(g, env=ENV_SHA), 0, self.output)
+        video = self.creates(g)[1]
+        self.assertEqual(video.data["video_url"], f"{BASE}/ff-mix-1/02.mp4")
+        self.assertIn("video host check failed", self.output)
+
+    def test_video_child_that_never_finishes_times_out_cleanly(self):
+        self.write_posts([mixed_post()])
+        g = graph()
+        g.video_never_finishes = True
+        self.assertEqual(self.run_main(g, env=ENV_SHA, timeout=30), 0, self.output)
+        self.assertEqual(len(self.creates(g)), 3)                   # items only
+        self.assertFalse(any(c.data.get("media_type") == "CAROUSEL" for c in g.posts()))
+        self.assertEqual(g.publishes(), [])
+        self.assertEqual(self.sleeps, [10, 10, 10])
+        self.assertIn("still IN_PROGRESS after 30s", self.output)
+        self.assertIn("still processing", self.output)
+        st = self.state()["ff-mix-1"]
+        self.assertEqual(st["status"], "publishing")
+        self.assertNotIn("container_id", st)
+        self.assertEqual(st["children"], ["1001", "1002", "1003"])
+        self.assertEqual(st.get("attempts", 0), 0)                  # not counted as a failure
+
+        # Next run: Instagram has finished; the same items are reused (no re-upload).
+        g.calls.clear()
+        g.video_never_finishes = False
+        self.assertEqual(self.run_main(g, env=ENV_SHA, now=NOW + timedelta(minutes=15)), 0,
+                         self.output)
+        creates = self.creates(g)
+        self.assertEqual(len(creates), 1)
+        self.assertEqual(creates[0].data["children"], "1001,1002,1003")
+        self.assertEqual(len(g.publishes()), 1)
+        self.assertIn("reusing 3 item containers", self.output)
+        self.assertEqual(self.state()["ff-mix-1"]["status"], "published")
+
+    def test_video_child_error_fails_then_rebuilds(self):
+        self.write_posts([mixed_post()])
+        g = graph()
+        g.video_item_script = ["ERROR"]
+        self.assertEqual(self.run_main(g, env=ENV_SHA), 1)
+        self.assertEqual(g.publishes(), [])
+        st = self.state()["ff-mix-1"]
+        self.assertEqual(st["status"], "failed")
+        self.assertIn("status ERROR", st["error"])
+        g.calls.clear()
+        self.assertEqual(self.run_main(g, env=ENV_SHA, now=NOW + timedelta(minutes=15)), 0,
+                         self.output)
+        self.assertIn("rebuilding all items", self.output)
+        self.assertEqual(len(self.creates(g)), 4)                   # fresh items + carousel
+        self.assertEqual(self.state()["ff-mix-1"]["status"], "published")
+
+    # -- validation ------------------------------------------------------------------------
+    def problems(self, p, make_files=True):
+        if make_files:
+            self.write_posts([p])
+        return "; ".join(autopost.validate_post(p, self.media))
+
+    def test_valid_mixed_carousel(self):
+        self.assertEqual(self.problems(mixed_post()), "")
+
+    def test_more_than_ten_items_in_total(self):
+        p = mixed_post(images=[f"x/{i:02d}.jpg" for i in range(6)] + [f"x/{i:02d}.mp4" for i in range(6, 11)])
+        self.assertIn("1 to 10", self.problems(p))
+        self.write_posts([p])
+        g = graph()
+        self.assertEqual(self.run_main(g), 1)
+        self.assertEqual(g.calls, [])
+
+    def test_missing_video_file(self):
+        p = mixed_post()
+        self.write_posts([p])
+        (self.media / "ff-mix-1/02.mp4").unlink()
+        self.assertIn("video file media/ff-mix-1/02.mp4 is missing",
+                      self.problems(p, make_files=False))
+
+    def test_video_over_size_limit(self):
+        p = mixed_post()
+        self.write_posts([p])
+        with open(self.media / "ff-mix-1/02.mp4", "r+b") as f:
+            f.truncate(autopost.MAX_VIDEO_BYTES + 1)              # sparse file, no disk cost
+        self.assertIn("is over 19.5 MB", self.problems(p, make_files=False))
+        g = graph()
+        self.assertEqual(self.run_main(g), 1)
+        self.assertIn("invalid post, skipped", self.output)
+        self.assertEqual(g.calls, [])
+
+    def test_other_video_formats_rejected(self):
+        self.assertIn("not a .jpg (Instagram only accepts JPEG) or an .mp4 video",
+                      self.problems(mixed_post(images=["m/01.jpg", "m/02.mov"])))
+
+    def test_single_video_must_be_a_reel(self):
+        self.assertIn("post it as a Reel", self.problems(mixed_post(images=["m/01.mp4"])))
+
+    def test_dry_run_lists_video_items(self):
+        self.write_posts([mixed_post()])
+        g = graph()
+        self.assertEqual(self.run_main(g, "--dry-run", env=ENV_SHA), 0, self.output)
+        self.assertEqual(g.posts(), [])
+        self.assertIn("WOULD publish a CAROUSEL of 3 items (1 video, 2 images)", self.output)
+        self.assertIn(f"video {JSD}/ff-mix-1/02.mp4", self.output)
+
+
 class Redaction(unittest.TestCase):
     def test_redact(self):
         autopost.register_secret("IGAAsupersecret123")
