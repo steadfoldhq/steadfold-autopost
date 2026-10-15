@@ -1,0 +1,24 @@
+# Manual helper: downloads one file (e.g. a Canva export link) into assets/inbox/<name>.
+name: Fetch asset
+on:
+  workflow_dispatch:
+    inputs:
+      url: {description: 'File URL', required: true}
+      name: {description: 'Save as (file name)', required: true}
+permissions:
+  contents: write
+concurrency: {group: fetch-asset, cancel-in-progress: false}
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - env: {URL: '${{ inputs.url }}', NAME: '${{ inputs.name }}'}
+        run: |
+          case "$NAME" in */*|..*) echo "bad name"; exit 1;; esac
+          mkdir -p assets/inbox
+          curl -sSfL -o "assets/inbox/$NAME" "$URL"
+          ls -la assets/inbox
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/inbox && git commit -m "assets: fetch $NAME" && git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
