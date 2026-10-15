@@ -1,0 +1,203 @@
+# Steadfold brand system v4: the one standard every agent follows (Oct 15, 2026)
+
+Dharma approved this system on Oct 15, 2026. The visual reference is **`docs/grids-FINAL.png`**, the four approved profile grids. Its list tiles are the approved **sticky-note lists**.
+
+This file covers the look and the format mix. For words and facts, `CONTENT-STANDARD-v3.md`, `PAYOFF-FIRST.md` and `copy-lint.py` still apply (in `steadfold-library/current/guides/`). Where those files talk about visuals, this file wins.
+
+**Scope.** The same page palettes and styles apply to every surface:
+- feed posts, Reels and Reel covers;
+- YouTube Shorts and TikTok/Pinterest copies;
+- **product listing images and covers on Gumroad and Etsy.**
+
+A Fully Funded spreadsheet listing is Cobalt, white and coral. A Littlefold printable is Sherbet. They use the same fonts, the same signature objects and the same 2× render rule.
+
+---
+
+## 1. The four pages
+
+Each page keeps its **original** palette and feel. Never borrow another page's colours.
+
+### Fully Funded: "Money, made clear." Cobalt
+| Role | Hex |
+|---|---|
+| Cobalt (main) | `#2B3FE0` |
+| White / light surface | `#FFFFFF` / `#F5F7FF` |
+| Ink | `#0E1440` |
+| Coral highlight | `#FF6A3D` |
+| Soft coral (pills, highlighter, italics on dark) | `#FFB08F` |
+| Deep cobalt (Ep. deep surface) | `#16206B` |
+| Cream (Ep. light surface) | `#F7F1E5` |
+| Occasional accent: royal green | `#0F4D3A` |
+| Occasional accent: butter (glove) | `#F8E07A` / `#FFF1C9`, gold `#F6D44C` |
+
+- Royal green and butter appear only on the occasional glove post: a butter glove on green, or a green glove on butter. Use them at most once in 9 tiles.
+- **Fonts:**
+  - Inter Display 800 for big hooks;
+  - Instrument Serif (and its italic) for editorial and one-word hooks;
+  - Fraunces for Ep. titles;
+  - Caveat Brush for save-lines;
+  - Inter for body text.
+- **Signature objects:** the halftone piggy bank, a coral glove, follow-the-line coloured lines, big example-math numbers, and the round brand stamp ("FULLY FUNDED · MONEY, MADE CLEAR ·").
+- **Series: Rich Habits, Decoded** (No.1 shipped Oct 19). It uses the Ep.01 B/W photo editorial cover with the label "Rich Habits, Decoded · No.N" in Caveat.
+
+### Littlefold: "Small days, gently." Warm Sherbet
+| Role | Hex |
+|---|---|
+| Cream / butter base | `#FFF4E0` / `#FFF8E4` |
+| Soft pink | `#FFD6E3` (blob `#FFC9D6`) |
+| Peach | `#FFD3AE` / `#FFA35C` |
+| Coral touch | `#FF8A70` / `#E8743B` |
+| Berry (italic accent, labels) | `#D9497A` |
+| Butter yellow blob | `#FFE27E` |
+| Ink | `#2C2A3A` |
+| Ep. deep / light | berry `#7A2149` / blush `#FCE5EB` |
+
+- **Feel:** calm, happy and soft. Use blobs in the corners and a faint paper dot.
+- **Fonts:**
+  - Lora 600 with an italic berry word for hooks;
+  - Instrument Serif for photo words;
+  - Caveat and Caveat Brush for notes;
+  - Inter for body text.
+- **Signature objects:** soft paw prints, award rosettes, the halftone baby shoe, real silhouette photos at golden hour, and the arch card.
+- **Series: Small Wins** (No.1 shipped Oct 21). The cover is a coral pill "SMALL WINS · No.N", then the hook "You drank *warm* tea today." with paws and "it counts ♡".
+- **Content:** official sources only (NHS, CDC, PHAC, CPS, WHO). No medical advice. Nothing aimed at children.
+
+### Locked Hour: "One hour at a time." Zine
+| Role | Hex |
+|---|---|
+| Butter yellow (main) | `#FFE27A` |
+| Cream | `#FFF4E0` |
+| Highlighter yellow | `#FFD43B` |
+| Highlighter pink | `#FF5CA8` (deep pink `#E8336F`) |
+| Black ink | `#141414` |
+
+- **Feel:** a zine with highlighter pops, thick ink borders and hard offset shadows, on a dot grid (`rgba(20,20,20,.12)` 2.4 px dots on a 30 px grid).
+- **Never black-heavy.** Black is ink, labels and the occasional CTA scene, never a whole grid tile's background. (Photo tiles may be dark because of the photo.)
+- **Fonts:** Inter Display 900 for hooks and Inter 700–800 for body text. Caveat Brush is allowed for one-line notes.
+- **Signature objects:** the alarm clock (halftone or clean cut-out), the pink glove, the timer, the if-then card and the panorama path.
+- **Series: One Word** (No.1 shipped Oct 17). The cover has a black label "ONE WORD · No.N", one huge word with a pink highlighter stripe, one line and one object or photo.
+
+### Hourback: "Get your evenings back." Periwinkle/indigo + yellow
+| Role | Hex |
+|---|---|
+| Indigo / periwinkle (main) | `#5E54C9` |
+| Yellow highlight | `#FFC94D` |
+| Orange touch | `#FF8A3D` |
+| Cream | `#FFF8EF` / `#FFEEDC` |
+| Ink | `#2A2238` |
+| Ep. deep / light | plum `#3A2240` / peach `#FFE6D3` |
+
+- **Fonts:** Poppins 700 for hooks; Instrument Serif for editorial and one-word hooks; Caveat Brush for notes; Inter for body text and prompts.
+- **Signature objects:** chat bubbles, the prompt card with yellow `[bracket]` chips, the halftone pointing hand, a yellow glove and the pixelated reveal card.
+- **Series: Prompt of the Week** (No.1 shipped Oct 20). The kicker is "Prompt of the Week · No.N"; the format is swipe-to-reveal or chat bubbles.
+- **Captions:** keep the "Example made up…" line when an example is shown, and the privacy tip.
+
+---
+
+## 2. The full style menu (mix every style; remove nothing)
+
+All paths are under `/home/claude/content/design/` unless they say otherwise. A **loud** tile stops the scroll; a **quiet** tile rewards the save.
+
+| # | Style | L/Q | Made by |
+|---|---|---|---|
+| 1 | **Look B big-headline cover**: pills on key words, handwritten save-line + arrow, halftone cut-out object, round stamp | Loud | `samples-v5/build_grid_tiles.py` `cover(c, v)` with `B(...)`/`FF/LF/LH/HB(...)` copy and `V(...)` colours; colourways in `samples-v5/build_mix.py` `LOOKB`; object cut-outs `samples-v5/lib.py` `halftone_cutout()`; stamp `engine/feed.py` (`"stamp": true`) |
+| 2 | **"Put a finger down" glove / countdown**: CLEAN cut-out, background continuous between the fingers, soft contact shadow | Loud | `samples-v5/build_final.py` `glove_tile()` + `tint_glove()` on `assets/cutouts/glove-pink-{1,2,3}.png` (mattes from `samples-v5/matte.py`); recolour via `samples-v5/recolor.py`; Littlefold soft countdown is `T["lf-count"]` (giant numeral, no photo) |
+| 3 | **Ep.01 B/W photo editorial**: grain B/W photo panel, Fraunces title, Caveat label | Loud | `samples-v5/build_final.py` `photo_editorial()` + `bw()` (`lib.bw_grain`); full episodes `engine/episode.py` (`ep-cover`, `ep-step`, `ep-statement`, `ep-reframe`, `ep-handwritten`) via `render.py` |
+| 4 | **One-word photo / slow-pan**: one huge word over a real photo; in video the background slow-pans and the text stays pixel-still | Loud | Still: `samples-v5/build_final.py` `word_tile()` (`build_mix.py` `still()`); video: `content/video/src/slowpan.py` `Scene/Move/render` with `oct16-21/reels_lib.py` `photo_layers()` |
+| 5 | **Kinetic big text** (Reels only) | Loud | `content/video/src/vlab.py` `Video`, `el`, `words`, `count`, rendered at 2× by `oct16-21/reels_lib.py` `render_vlab_2x()` |
+| 6 | **Panorama timeline** (seamless multi-slide path) | Quiet | `engine/interactive.py` template `panorama` via `render.py` |
+| 7 | **Ep.01 reframes "Instead of… Say…"** | Quiet | `samples-v5/build_mix.py` `reframe()`; episode version `ep-reframe` |
+| 8 | **Original simple templates** (cover, big-number, steps, checklist, compare, output, image, table, quote, cta) | Quiet | `engine/templates.py` via `render.py posts.json --out DIR`; covers `engine/covers.py`; palettes `engine/feed.py` `PALETTES`/`rotation()` |
+| 9 | **Follow the line** | Quiet | `engine/interactive.py` template `follow-the-line` |
+| 10 | **Awards** (rosettes / stars / medals) | Quiet | `engine/interactive.py` template `awards`; tile version `samples-v5/build_final.py` `rosettes()` |
+| 11 | **Swipe to reveal** | Quiet | `engine/interactive.py` template `swipe-to-reveal` |
+| 12 | **Emoji meme** | Quiet | `samples-v5/build_mix.py` `meme()` (bigger copy in `build_final.py` `T["lf-meme"]`, `T["lh-meme"]`) |
+| 13 | **Sticky-note list**: lined note card, red margin line, tape strip, Caveat Brush title, Caveat items with ticks, on the page colour | Quiet | `samples-v5/build_mix.py` `paper_list(bg, paper, ink, accent, mark, brand, title, items, tilt)` |
+| 14 | **Silhouette story** (Littlefold Reels): real silhouette photos, slow push-in, serif lines | Quiet | `slowpan.py` with photo scenes (`oct16-21/reels.py` `lf-reel-1016-doing-better`); fully code-drawn version `content/video/src/lf_silhouette_letters.py` |
+| 15 | **Calm text Reel**: code-made paper, blobs or sky background, slow drift, static text | Quiet | `slowpan.py` + `slowpan_bg.py` generators `paper`, `blobs`, `sky`, `forest` |
+| 16 | **Reel cover** (dedicated, never a raw frame) | n/a | `oct16-21/reels_lib.py` `render_cover()` (2×, safe-zone and hook-size QA); older `content/video/src/covers_v3.py` |
+
+**Retired, never use:**
+- the folded-letter look (`samples-v5/build_original.py` `fold_layer()`);
+- **plain handwritten lists** (text straight on the background with no note card). Lists are always sticky-note lists.
+
+**Grid check:** run `python3 grid_preview.py newest.png … --theme <page> --out grid.png` before scheduling. It shows the phone 3:4 crop and flags look-alike neighbours.
+
+---
+
+## 3. Rotation rules
+- **At least 6 different styles in any 9 consecutive tiles** on a page. Reel covers count as tiles: they sit in the grid.
+- **Loud and quiet alternate.** Never put the same style twice in a row, and never three loud or three quiet tiles in a row.
+- **Each page posts at least 2 times a day:** 1 feed post plus 1 Reel. The maximum is 1 feed post and 1 Reel per page per day (autopost rule).
+- **Reels rotate four styles:** one-word slow-pan photo, kinetic big text, calm text, and silhouette (Littlefold). In one day, no two pages use the same Reel style if there are four to pick from. One page repeating a style on a given day is allowed when it is unavoidable.
+- **Each series runs about once a week per page.** Series covers share one layout so the grid looks planned.
+- **Glove posts:** at most 1 in 9 tiles per page. The royal-green or butter Fully Funded colourway counts as that one.
+
+## 4. Hooks
+- **Cover hooks are at least 120 px (at 1080 wide) and 8 words or fewer.** The exception is a tile that is intentionally quiet (awards, follow-the-line, swipe-to-reveal, panorama, sticky-note list), where the template's own size is fine.
+- **Reel covers:** 1080×1920, hook at least 120 px and 3–8 words. All text sits inside **x 90–990 and y 300–1400**. The cover is a dedicated image (no caption bar, no subtitles); `render_cover()` fails it otherwise.
+- **Reel frame 0 is the hook**, readable with the sound off.
+- **Payoff + action in "you" language** (PAYOFF-FIRST). Never headline with a study.
+
+## 5. Clean-cutout rule
+Every cut-out object (gloves, clocks, piggy, shoe, hand) must be **clean**:
+- the background shows through **continuously between fingers and in every gap**, with no backdrop islands or haloes;
+- the edge is soft at 1–2 px with no fringe (despill the edge from the object's own colour);
+- there is a soft contact shadow (`drop-shadow(0 26px 30px rgba(0,0,0,.22)) drop-shadow(0 6px 8px rgba(0,0,0,.12))` or similar), never a hard outline unless the style calls for a sticker border.
+
+Tools:
+- `samples-v5/matte.py` (watershed and guided-filter mattes for photos shot on a similar backdrop);
+- `samples-v5/lib.py` `_object_mask()` (objects on white);
+- `halftone_cutout()` (sticker style).
+
+Check every cut-out at 100% zoom before use.
+
+## 6. Photo-reuse rule
+- **One photo = one post.** Never reuse a photo on two posts within 30 days, or across pages at any time.
+- A/B colourways of one post count as one post: publish only one of them.
+- One Reel's own cover may reuse that Reel's photo, because it is the same post.
+- Log every use in the set's `IMAGE-USE.md` (for example `content/design/samples-v5/IMAGE-USE.md`) and check it before building.
+- **AI-generated images:** list them in `AI-IMAGES.md` and add "Made with AI" (for example "Photo made with AI.") to the caption.
+- No stock photos and no real people's likeness.
+
+Photo use, Oct 16–21:
+
+| Photo | Post |
+|---|---|
+| street | `ff-reel-1017-raise-half` |
+| silhouette1 + sil-lift + shoulders | `lf-reel-1016-doing-better` |
+| forest | `lh-reel-1016-quiet` |
+| clouds | `hb-reel-1017-offline` |
+| wheat | `lf-reel-1018-breathe` |
+| couple | `ff-1019-rich-habits-01` |
+| clock | `lh-1017-one-word-later` |
+
+Still unused: family, father, piggy (photo), halftone sheets 1 and 2.
+
+## 7. The 2× render rule
+Everything is rendered at **2× and downsampled with Lanczos**:
+- Chromium `device_scale_factor=2`, then `PIL.Image.resize(size, Image.LANCZOS)`.
+- `render.py` and `samples-v5/lib.py` `render_many()` already do this for slides.
+- `oct16-21/reels_lib.py` does it for Reel text layers (`text_png_2x`, which replaces `slowpan.text_png`), kinetic frames (`render_vlab_2x`) and covers (`render_cover`).
+- Never ship a 1× browser screenshot, and never upscale a photo by more than about 10%.
+- Feed JPEGs are 1080×1350 at quality 92 with no chroma subsampling.
+- Reels:
+  - 1080×1920 at 30 fps, H.264 + AAC;
+  - 12–18 s;
+  - music2 `warm` at about −14 LUFS;
+  - under 19 MB.
+
+## 8. Canva images
+The full-resolution fetch pipeline is in **`docs/canva-fetch.md`**:
+1. generate the image (one job at a time);
+2. place it on a page at its native size in the scratch design;
+3. export it as a pro PNG;
+4. run `canva_fetch.sh` through the GitHub `fetch-asset.yml` workflow;
+5. the file lands in `assets/inbox/`.
+
+Notes:
+- The account's AI credit quota ran out on Oct 15 (`quota_exceeded`). Build from the photo library first, and use Canva only when a fresh photo is essential.
+- Every Canva AI image gets an AI-IMAGES.md entry and "Made with AI" in the caption.
+
+## 9. Where the engine lives
+The full engine, with every sample build script and the cutouts, is packed at `studio/steadfold-studio.tgz`. See `studio/README.md` for setup and the self-test. Fonts are in `assets/fonts/`.
