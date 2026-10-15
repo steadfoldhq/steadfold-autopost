@@ -209,6 +209,67 @@
       "comment_id": "18118433095950307",
       "comment_error": null,
       "commented_at": "2026-10-15T17:22:58Z"
+    },
+    "lh-st-1015-1740-teaser": {
+      "account": "lockedhour",
+      "status": "published",
+      "container_id": "18067462040521398",
+      "container_created_at": "2026-10-15T22:44:12Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-15T22:44:29Z",
+      "publish_called_at": "2026-10-15T22:44:12Z",
+      "media_id": "18066416489527562",
+      "published_at": "2026-10-15T22:44:12Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "hb-st-1015-1745-teaser": {
+      "account": "hourback",
+      "status": "published",
+      "container_id": "18125346322799084",
+      "container_created_at": "2026-10-15T22:44:12Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-15T22:44:48Z",
+      "publish_called_at": "2026-10-15T22:44:12Z",
+      "media_id": "17906719047571333",
+      "published_at": "2026-10-15T22:44:12Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "lf-st-1015-1730-teaser": {
+      "account": "littlefold",
+      "status": "published",
+      "container_id": "17880580170544608",
+      "container_created_at": "2026-10-15T22:44:12Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-15T22:45:04Z",
+      "publish_called_at": "2026-10-15T22:44:12Z",
+      "media_id": "18098738363429305",
+      "published_at": "2026-10-15T22:44:12Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "ff-st-1015-1735-teaser": {
+      "account": "fullyfunded",
+      "status": "failed",
+      "container_id": "18149676277497733",
+      "container_created_at": "2026-10-15T22:44:12Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-15T22:45:09Z",
+      "publish_called_at": "2026-10-15T22:44:12Z",
+      "error": "POST 17841414931971616/media_publish: HTTP 400: The media with 18,149,676,277,497,733 cannot be found. (code=24, subcode=2207006, fbtrace_id=A4GVUbgMHo8a0DLqdr5Cvu3)",
+      "attempts": 1,
+      "failed_at": "2026-10-15T22:44:12Z"
     }
   }
 }
