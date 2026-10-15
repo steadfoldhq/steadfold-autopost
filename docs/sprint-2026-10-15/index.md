@@ -22,3 +22,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - On the red pandas, Dharma said the face markings looked "broken". If you show red pandas again, use far fewer face lines.
 >   - Keep everything he liked: big characters in frame, cute bright-but-soft colours, a lovely world, and well-defined but simple faces.
 - A5 · Sprint A5 · Hourback Reinvention + 90-Day Backlog · https://claude.ai/code/artifact/598054af-9467-4899-892c-47b381e3b550 · Retire "paste this prompt" as the hook: 5 relatability pillars, 91 ideas × 3, 24 mini-scene Reels, hybrid audio plan
+- A2 · Sprint A2 · Fully Funded 90-Day Backlog (Oct 19 2026 – Jan 17 2027) · https://claude.ai/code/artifact/35caae38-d2da-497f-b47b-feb0f68ace1d · 91 ideas × 3 variations (36 evergreen / 37 seasonal + life event / 18 experiment), 5-country season calendar, Rich Habits to 12 eps, 3 new series (2 FIRST)
