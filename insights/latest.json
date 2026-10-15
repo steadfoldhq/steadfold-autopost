@@ -1,0 +1,159 @@
+{
+ "collected_at": "2026-10-15T03:45:25+00:00",
+ "accounts": {
+  "fullyfunded": {
+   "account": "fullyfunded",
+   "username": "fullyfundedhq",
+   "followers_count": 2,
+   "follows_count": 0,
+   "media_count": 2,
+   "posts": [
+    {
+     "media_id": "17987643992883400",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DeflBIAoJde/",
+     "at": "2026-10-14T23:36:40+0000",
+     "first_line": "Save $5,000 in 26 paydays, starting Fri Oct 23. Here's the whole plan.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 11,
+      "reach": 2,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18106069897979879",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Debcj61lSrK/",
+     "at": "2026-10-13T09:05:35+0000",
+     "first_line": "Your paycheque has 3 jobs. Most of us only give it one 👀",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 18,
+      "reach": 2,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    }
+   ]
+  },
+  "lockedhour": {
+   "account": "lockedhour",
+   "username": "lockedhourhq",
+   "followers_count": 2,
+   "follows_count": 0,
+   "media_count": 3,
+   "posts": [
+    {
+     "media_id": "18117541169005781",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DefkTDLjbBP/",
+     "at": "2026-10-14T23:30:09+0000",
+     "first_line": "\"Put your phone in another room.\" The retest found nothing.",
+     "likes": 4,
+     "comments_count": 0,
+     "insights": {
+      "views": 9,
+      "reach": 3,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 5
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18117823861803468",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dee0PTyCfR2/",
+     "at": "2026-10-14T16:30:12+0000",
+     "first_line": "Writing tomorrow's to-do list helped people fall asleep faster than writing about what they'd already done.",
+     "likes": 3,
+     "comments_count": 0,
+     "insights": {
+      "views": 26,
+      "reach": 3,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17991574842061695",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DebbszunIrw/",
+     "at": "2026-10-13T08:58:04+0000",
+     "first_line": "Lock in for one hour, not one year 🔒",
+     "likes": 2,
+     "comments_count": 2,
+     "insights": {
+      "views": 25,
+      "reach": 2,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 5
+     },
+     "comments": []
+    }
+   ]
+  },
+  "hourback": {
+   "account": "hourback",
+   "username": "hourbackhq",
+   "followers_count": 2,
+   "follows_count": 0,
+   "media_count": 2,
+   "posts": [
+    {
+     "media_id": "18193502386400915",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DefnvgFkRse/",
+     "at": "2026-10-15T00:00:18+0000",
+     "first_line": "Plan one potluck menu that works for every diet at the table. Paste your guest list and one prompt.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 7,
+      "reach": 1,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17898256623393323",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DebbPdGFmPv/",
+     "at": "2026-10-13T08:54:03+0000",
+     "first_line": "5 prompts that give you an hour back ⏳",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 15,
+      "reach": 3,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    }
+   ]
+  },
+  "littlefold": {
+   "account": "littlefold",
+   "username": "littlefoldhq",
+   "followers_count": 0,
+   "follows_count": 0,
+   "media_count": 0,
+   "posts": []
+  }
+ }
+}
