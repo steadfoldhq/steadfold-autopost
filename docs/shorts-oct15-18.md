@@ -46,9 +46,9 @@ For each Reel: a Shorts title (100 characters or fewer, search-phrase style), a 
 - **Description:**
   ```
   200 a month for 30 years: about 200,903 at 6% vs about 166,452 after a 1% yearly fee. Example math, not a promise.
-  General education only, not financial advice. #Shorts #investing #fees
+  General education only, not financial advice. Image made with AI. #Shorts #investing #fees
   ```
-- **TikTok / Pinterest caption:** A 1% fee looks tiny. Over 30 years it can take about a sixth of your pot (example math). Find yours: look for annual fee or expense ratio. General education only, not financial advice. #investing #personalfinance #moneytips
+- **TikTok / Pinterest caption:** A 1% fee looks tiny. Over 30 years it can take about a sixth of your pot (example math). Find yours: look for annual fee or expense ratio. General education only, not financial advice. Image made with AI. #investing #personalfinance #moneytips
 
 ### Littlefold · `lf-reel-1016-doing-better.mp4`
 - **Shorts title** (57 chars): For tired new parents: you're doing better than you think
@@ -73,9 +73,9 @@ For each Reel: a Shorts title (100 characters or fewer, search-phrase style), a 
 - **Description:**
   ```
   Paste the email and ask what it wants you to do and by when, one line per ask, with the quote it comes from.
-  Remove personal details before you paste. #Shorts #aitips #email
+  Remove personal details before you paste. Image made with AI. #Shorts #aitips #email
   ```
-- **TikTok / Pinterest caption:** Long email? Get just the asks: one prompt, one line per ask, with the quote. Remove personal details first. #aitips #emailtips #productivity
+- **TikTok / Pinterest caption:** Long email? Get just the asks: one prompt, one line per ask, with the quote. Remove personal details first. Image made with AI. #aitips #emailtips #productivity
 
 ## Sat Oct 17
 ### Fully Funded · `ff-reel-1017-raise-half.mp4`
@@ -101,9 +101,9 @@ For each Reel: a Shorts title (100 characters or fewer, search-phrase style), a 
 - **Description:**
   ```
   Keep the one tab you need, close the rest, and jot anything else on paper. One tab, one task, one hour.
-  #Shorts #focus #productivity
+  Image made with AI. #Shorts #focus #productivity
   ```
-- **TikTok / Pinterest caption:** Close every tab but one. One tab. One task. One hour. #focus #productivity #studytips
+- **TikTok / Pinterest caption:** Close every tab but one. One tab. One task. One hour. Image made with AI. #focus #productivity #studytips
 
 ### Hourback · `hb-reel-1017-offline.mp4`
 - **Shorts title** (62 chars): Plan tomorrow in one AI prompt, then log off (evening routine)
@@ -149,6 +149,6 @@ _Replaced the beneficiary-form Reel (`ff-reel-1018-beneficiary`, not scheduled):
 - **Description:**
   ```
   Paste the newsletter and get every date, what to bring and what needs a reply, one line each, earliest first.
-  Example made up; check it against the email. #Shorts #aitips #parents
+  Example made up; check it against the email. Photo made with AI. #Shorts #aitips #parents
   ```
-- **TikTok / Pinterest caption:** School email? Get the dates: one prompt lists every date, what to bring and what needs a reply. Example made up; check it against the email. #aitips #parentinghacks #schoollife
+- **TikTok / Pinterest caption:** School email? Get the dates: one prompt lists every date, what to bring and what needs a reply. Example made up; check it against the email. Photo made with AI. #aitips #parentinghacks #schoollife
