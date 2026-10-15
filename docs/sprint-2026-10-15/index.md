@@ -21,3 +21,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 > - 7:37 pm, Dharma: REINDEER IS SCRAPPED. Don't draw or propose reindeer or caribou. Options left: A otters, B capybaras, C red pandas.
 >   - On the red pandas, Dharma said the face markings looked "broken". If you show red pandas again, use far fewer face lines.
 >   - Keep everything he liked: big characters in frame, cute bright-but-soft colours, a lovely world, and well-defined but simple faces.
+- A5 · Sprint A5 · Hourback Reinvention + 90-Day Backlog · https://claude.ai/code/artifact/598054af-9467-4899-892c-47b381e3b550 · Retire "paste this prompt" as the hook: 5 relatability pillars, 91 ideas × 3, 24 mini-scene Reels, hybrid audio plan
