@@ -105,22 +105,36 @@
       ]
     },
     {
-      "id": "lf-reel-1015-safe-sleep",
-      "account": "littlefold",
-      "publish_at": "2026-10-15T19:00:00-04:00",
-      "caption": "Before you put baby down tonight: 3 quick checks. Alone, back, crib.\n\n1. Alone: nothing in the crib but baby.\n2. On their back, for every sleep, naps too.\n3. In a crib, cradle or bassinet, in your room for the first 6 months.\n\nDozed off in the car seat or swing? Move them to their crib.\n\nSave this, and send it to whoever puts baby down next.\n\nSources: Public Health Agency of Canada and the Canadian Paediatric Society · As of Oct 2026\n\nGeneral information only, not medical advice. Talk to your doctor, midwife or public health nurse.\n\n#safesleep #newborn #newparents #babysleep #parentingcanada",
-      "first_comment": "Who puts baby down at your place? Tag them so they see this.",
-      "video": "reels/lf-reel-1015-safe-sleep.mp4",
-      "cover": "reels/lf-reel-1015-safe-sleep-cover.jpg"
+      "id": "lh-st-1015-1740-teaser",
+      "account": "lockedhour",
+      "publish_at": "2026-10-15T17:40:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1015-1740-teaser.jpg",
+      "caption": "Teaser for tonight's 7 pm Reel lh-reel-1015-if-then: one line that helps you reach more goals"
     },
     {
-      "id": "lh-reel-1015-if-then",
-      "account": "lockedhour",
-      "publish_at": "2026-10-15T19:00:00-04:00",
-      "caption": "Reach more of your goals: write one if-then plan tonight.\n\nPick a cue you can't miss: \"When I sit down with coffee at 7:30...\"\nName the first move: \"...then I open the draft and type one line.\"\nPlan for the obstacle: \"If my phone buzzes, then I flip it face-down.\"\n\nSave this for later, and send it to the friend on day 22 of a 21-day challenge.\n\n#habits #focus #productivity #psychology #studytips",
-      "first_comment": "Which step will trip you up most: cue, move or obstacle?",
-      "video": "reels/lh-reel-1015-if-then.mp4",
-      "cover": "reels/lh-reel-1015-if-then-cover.jpg"
+      "id": "hb-st-1015-1745-teaser",
+      "account": "hourback",
+      "publish_at": "2026-10-15T17:45:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1015-1745-teaser.jpg",
+      "caption": "Teaser for tonight's 7 pm Reel hb-reel-1015-parking-sign: never guess a parking sign again"
+    },
+    {
+      "id": "lf-st-1015-1730-teaser",
+      "account": "littlefold",
+      "publish_at": "2026-10-15T18:20:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1015-1730-teaser.jpg",
+      "caption": "Teaser for tonight's 7 pm Reel lf-reel-1015-safe-sleep: 3 quick checks before baby’s bedtime"
+    },
+    {
+      "id": "ff-st-1015-1735-teaser",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-15T18:21:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1015-1735-teaser.jpg",
+      "caption": "Teaser for tonight's 7 pm Reel ff-reel-1015-start-at-birth: what 100 a month from birth can grow to"
     },
     {
       "id": "ff-reel-1015-start-at-birth",
@@ -139,6 +153,128 @@
       "first_comment": "Worst parking signs you've ever had to decode: which city?",
       "video": "reels/hb-reel-1015-parking-sign.mp4",
       "cover": "reels/hb-reel-1015-parking-sign-cover.jpg"
+    },
+    {
+      "id": "lf-reel-1015-safe-sleep",
+      "account": "littlefold",
+      "publish_at": "2026-10-15T19:00:00-04:00",
+      "caption": "Before you put baby down tonight: 3 quick checks. Alone, back, crib.\n\n1. Alone: nothing in the crib but baby.\n2. On their back, for every sleep, naps too.\n3. In a crib, cradle or bassinet, in your room for the first 6 months.\n\nDozed off in the car seat or swing? Move them to their crib.\n\nSave this, and send it to whoever puts baby down next.\n\nSources: Public Health Agency of Canada and the Canadian Paediatric Society · As of Oct 2026\n\nGeneral information only, not medical advice. Talk to your doctor, midwife or public health nurse.\n\n#safesleep #newborn #newparents #babysleep #parentingcanada",
+      "first_comment": "Who puts baby down at your place? Tag them so they see this.",
+      "video": "reels/lf-reel-1015-safe-sleep.mp4",
+      "cover": "reels/lf-reel-1015-safe-sleep-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1015-if-then",
+      "account": "lockedhour",
+      "publish_at": "2026-10-15T19:00:00-04:00",
+      "caption": "Reach more of your goals: write one if-then plan tonight.\n\nPick a cue you can't miss: \"When I sit down with coffee at 7:30...\"\nName the first move: \"...then I open the draft and type one line.\"\nPlan for the obstacle: \"If my phone buzzes, then I flip it face-down.\"\n\nSave this for later, and send it to the friend on day 22 of a 21-day challenge.\n\n#habits #focus #productivity #psychology #studytips",
+      "first_comment": "Which step will trip you up most: cue, move or obstacle?",
+      "video": "reels/lh-reel-1015-if-then.mp4",
+      "cover": "reels/lh-reel-1015-if-then-cover.jpg"
+    },
+    {
+      "id": "lf-st-1015-2015-icymi",
+      "account": "littlefold",
+      "publish_at": "2026-10-15T20:15:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1015-2015-icymi.jpg",
+      "caption": "In case you missed it: lf-reel-1015-safe-sleep. Before baby goes down tonight: alone, back, crib."
+    },
+    {
+      "id": "ff-st-1015-2020-icymi",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-15T20:20:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1015-2020-icymi.jpg",
+      "caption": "In case you missed it: ff-reel-1015-start-at-birth. 100 a month from birth: about 645,000 by 65."
+    },
+    {
+      "id": "lh-st-1015-2025-icymi",
+      "account": "lockedhour",
+      "publish_at": "2026-10-15T20:25:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1015-2025-icymi.jpg",
+      "caption": "In case you missed it: lh-reel-1015-if-then. Reach more of your goals: write one if-then plan."
+    },
+    {
+      "id": "hb-st-1015-2030-icymi",
+      "account": "hourback",
+      "publish_at": "2026-10-15T20:30:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1015-2030-icymi.jpg",
+      "caption": "In case you missed it: hb-reel-1015-parking-sign. Never guess a parking sign again. Snap it, ask one question."
+    },
+    {
+      "id": "lf-st-1016-0745-question",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T07:45:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1016-0745-question.jpg",
+      "caption": "Morning question: Which is harder at 3 am? A: Feeding / B: Settling back to sleep"
+    },
+    {
+      "id": "ff-st-1016-0750-question",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T07:50:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1016-0750-question.jpg",
+      "caption": "Morning question: Payday. What moves first? A: The bills / B: Your savings"
+    },
+    {
+      "id": "lh-st-1016-0755-question",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T07:55:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1016-0755-question.jpg",
+      "caption": "Morning question: When do you focus best? A: Before 10 am / B: After dinner"
+    },
+    {
+      "id": "hb-st-1016-0800-question",
+      "account": "hourback",
+      "publish_at": "2026-10-16T08:00:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1016-0800-question.jpg",
+      "caption": "Morning question: Group trip: who pays? A: One person, settle later / B: Everyone pays as they go"
+    },
+    {
+      "id": "lf-reel-1016am-tummy-time",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T08:00:00-04:00",
+      "caption": "Baby hates tummy time? Try it on your chest.\n\n1. Lie back, propped up a little, wide awake.\n2. Lay baby tummy-down on your chest, face to face.\n3. Talk, sing or just let them look at you. A minute or two is plenty to start.\n\nTummy time can start from birth. Only do it while baby is awake and you're watching.\nThe WHO suggests at least 30 minutes a day, spread through the day, for babies who aren't moving around yet. It adds up a minute at a time.\nFeeling sleepy? Lay baby on their back in their cot or crib.\n\nSend this to a new parent.\n\nSources: WHO guidelines on physical activity, sedentary behaviour and sleep for children under 5 (2019) and NHS tummy time advice (Berkshire Healthcare NHS Foundation Trust) · As of Oct 2026\n\nGeneral information only, not medical advice. Talk to your doctor, midwife or health visitor.\n\n#tummytime #newborn #newparents #babydevelopment #parentingtips",
+      "first_comment": "Tummy time at your place right now: loved, tolerated or a firm no?",
+      "alt_text": "Calm video on soft pastel colours. Text: Baby hates tummy time? Try it on your chest. Lie back, baby tummy-down on you, face to face. A note card lists: start from birth, only while baby's awake, and you're wide awake, little and often. Then a big 30: minutes a day, spread out, what the WHO suggests for babies not yet crawling. Ends: feeling sleepy? Lay baby on their back in the cot.",
+      "video": "reels/lf-reel-1016am-tummy-time.mp4",
+      "cover": "reels/lf-reel-1016am-tummy-time-cover.jpg"
+    },
+    {
+      "id": "ff-reel-1016am-buffer",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T08:15:00-04:00",
+      "caption": "Payday is Friday. The car repair is today. Build a small buffer so surprise bills don't land on a card.\n\n1. Open a separate savings account.\n2. Name it \"Buffer\".\n3. Set an automatic 25 a week into it, and use it only for surprises.\n\nExample: 25 a week is 1,300 in a year, before any interest. Any currency. Same math.\nThe catch: cash grows slowly and prices rise, so a buffer is for surprises, not for investing. A common rule of thumb is to start with 1 month of spending, then build to 3 to 6 months.\n\nSave this for payday. Send it to someone starting their first job.\n\nSource: example math, no outside figures · As of Oct 2026\n\nPhoto made with AI.\n\nGeneral education only, not financial advice.\n\n#emergencyfund #personalfinance #savingmoney #moneytips #budgeting",
+      "first_comment": "What surprise bill caught you off guard last: car, phone, vet or something else?",
+      "alt_text": "Black-and-white photo of a family at a kitchen table, counting coins from a jar. Large text: Buffer. A small pot for surprise bills, so they don't land on a card. Then: open a separate savings account, name it Buffer, move 25 a week into it automatically. Example: 25 a week is 1,300 in a year. The catch: cash grows slowly and prices rise; a common rule of thumb is 1 month of spending, then 3 to 6.",
+      "video": "reels/ff-reel-1016am-buffer.mp4",
+      "cover": "reels/ff-reel-1016am-buffer-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1016am-before-email",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T08:30:00-04:00",
+      "caption": "Do your one thing before you open email.\n\n1. Write your one thing for the morning on paper.\n2. Set a 25-minute timer and start it.\n3. Open email when the timer ends.\n\nThe inbox will still be there. Your first 25 minutes go to what matters to you.\n\nSave this and try it tomorrow at 9.\n\nImage made with AI.\n\n#focus #deepwork #productivity #morningroutine #timemanagement",
+      "first_comment": "What's your one thing tomorrow morning? One line.",
+      "alt_text": "Kinetic video on butter yellow and cream. Cover: Do your one thing before email, with a halftone hourglass. An inbox fills up with 27 new messages: now it picks your morning. Instead, 3 steps: write your one thing on paper, set a 25-minute timer, email after the timer. A big 25:00 timer. Then open email. It will still be there.",
+      "video": "reels/lh-reel-1016am-before-email.mp4",
+      "cover": "reels/lh-reel-1016am-before-email-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1016am-calm-reply",
+      "account": "hourback",
+      "publish_at": "2026-10-16T08:45:00-04:00",
+      "caption": "Got a message that annoyed you before 9 am? Send the calm version.\n\n1. Write your honest first draft. Don't send it.\n2. Paste their message and your draft into any AI chat, with the prompt below.\n3. Read the calm version once, change anything that doesn't sound like you, then send.\n\nPROMPT (copy and paste):\nHere's a message I got: [paste it]. Here's my draft reply: [paste it]. Rewrite my reply so it's calm and clear, keeps my point and is under 80 words.\n\nThe messages in the video are made up for this post. Double-check names, dates and facts before you send.\n\nSave this for your next tricky reply.\n\nTip: remove names and private details before you paste.\n\nImage made with AI.\n\n#aitips #emailtips #communication #worklife #aiprompts",
+      "first_comment": "Draft one or the calm version: which one do you usually send?",
+      "alt_text": "Kinetic video on cream and indigo. Cover: Send the calm version, with a halftone coffee cup and a chat bubble. A made-up message reads: Per my last email, this was due yesterday. Your first draft gets crossed out. A prompt card asks AI to rewrite your reply calm and clear, keep your point and stay under 80 words. Example answer: Thanks for flagging this. I didn't receive it on Tuesday. Could you resend it?",
+      "video": "reels/hb-reel-1016am-calm-reply.mp4",
+      "cover": "reels/hb-reel-1016am-calm-reply-cover.jpg"
     },
     {
       "id": "lf-02-first-72-hours",
@@ -168,6 +304,22 @@
         "ff-w03-1-freedom-number/02.jpg",
         "ff-w03-1-freedom-number/03.jpg"
       ]
+    },
+    {
+      "id": "lf-st-1016-1200-newpost",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T12:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1016-1200-newpost.jpg",
+      "caption": "New post share: lf-02-first-72-hours"
+    },
+    {
+      "id": "ff-st-1016-1230-newpost",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T12:30:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1016-1230-newpost.jpg",
+      "caption": "New post share: ff-w03-1-freedom-number"
     },
     {
       "id": "lh-w2-06-mid-sentence",
@@ -204,6 +356,98 @@
       ]
     },
     {
+      "id": "lh-st-1016-1300-newpost",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T13:00:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1016-1300-newpost.jpg",
+      "caption": "New post share: lh-w2-06-mid-sentence"
+    },
+    {
+      "id": "hb-st-1016-1330-newpost",
+      "account": "hourback",
+      "publish_at": "2026-10-16T13:30:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1016-1330-newpost.jpg",
+      "caption": "New post share: hb-w02-2-trip-settle-up"
+    },
+    {
+      "id": "lf-st-1016-1530-tip",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T15:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1016-1530-tip.jpg",
+      "caption": "Tip: Keep a pen by the bed and tally wet diapers, so you’re not counting from memory at 3 am."
+    },
+    {
+      "id": "ff-st-1016-1535-tip",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T15:35:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1016-1535-tip.jpg",
+      "caption": "Tip: Set your savings transfer for the day after payday, so it moves before you can spend it."
+    },
+    {
+      "id": "lh-st-1016-1540-tip",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T15:40:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1016-1540-tip.jpg",
+      "caption": "Tip: Before you stop tonight, write tomorrow’s first task on a sticky note and leave it on your keyboard."
+    },
+    {
+      "id": "hb-st-1016-1545-tip",
+      "account": "hourback",
+      "publish_at": "2026-10-16T15:45:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1016-1545-tip.jpg",
+      "caption": "Tip: Ask AI to show its math, then check the total adds up before anyone pays."
+    },
+    {
+      "id": "lf-1016-single-feeds-normal",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T17:00:00-04:00",
+      "caption": "Feeding all day in the first weeks? 8 to 12 breastfeeds in 24 hours is typical.\n\nFollow hunger cues, not the clock: hands to mouth, turning toward the breast, lip smacking.\nIn the first days it can be as often as every 1 to 3 hours. Later, many babies feed every 2 to 4 hours.\nFormula feeding? Ask your care team about amounts and timing for your baby.\nWorried about wet diapers, weight or a baby too sleepy to feed? Call your doctor, midwife or health visitor.\n\nSave this for the 3 am feed, and send it to someone in week one.\n\nSources: US CDC, \"How Much and How Often to Breastfeed\" and \"Signs Your Child Is Hungry or Full\" · As of Oct 2026\nGeneral information only, not medical advice.\n\n#newborn #breastfeeding #newparents #firsttimeparents #postpartum",
+      "first_comment": "Night feeds at your place: breast, bottle or a bit of both?",
+      "alt_text": "Littlefold single image on warm cream with soft pink and peach blobs. Headline: Feeding all day? That's normal. A giant coral 8–12, then: breastfeeds in 24 hours is typical in the first weeks. A taped sticky note says: the tip: follow hunger cues, not the clock. Small text: Source: US CDC. Two paw prints in the corner.",
+      "images": [
+        "lf-1016-single-feeds-normal/01.jpg"
+      ]
+    },
+    {
+      "id": "ff-1016-single-finger-down",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T17:15:00-04:00",
+      "caption": "Put a finger down for each one. Every finger is a 10-minute fix.\n\n4. The fee: open your retirement account and look for \"annual fee\" or \"expense ratio\".\n3. Save first: set an automatic transfer for the day after payday.\n2. The names: check who is named as beneficiary on each account and policy, where your country allows it.\n1. The raise: next time, move part of it to savings before you get used to it.\n\nThe catch: automate only what you can keep up. A small transfer you never cancel beats a big one you stop.\n\nSave this and count again in 3 months. Send it to a friend and compare hands.\n\nGlove image made with AI.\nSource: no outside figures · As of Oct 2026\nGeneral education only, not financial advice.\n\n#moneytips #personalfinance #savingmoney #financialliteracy #moneyhabits",
+      "first_comment": "How many fingers are still up? Be honest, we won't tell.",
+      "alt_text": "Fully Funded single image on cobalt blue. Headline: Put a finger down if… Four numbered lines count down: 4, you don't know the yearly fee on your retirement account. 3, you save whatever is left at the end of the month. 2, you've never checked who's named on your accounts. 1, your last raise vanished into everyday spending. An orange glove with all 5 fingers up rises from the bottom, with the handwritten note: start at 5.",
+      "images": [
+        "ff-1016-single-finger-down/01.jpg"
+      ]
+    },
+    {
+      "id": "lh-1016-single-sign-book-hour",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T17:30:00-04:00",
+      "caption": "This is your sign to book one hour with yourself tomorrow.\n\nOpen your calendar now and add a 60-minute block called \"Locked hour\".\nWrite the one task it's for in the event.\nTreat it like a meeting: if someone asks for that time, offer another slot.\n\nSave this and block it before bed. Send it to the friend whose calendar is all meetings.\n\nCut-out image made with AI.\n\n#focus #deepwork #timeblocking #productivity #studytips",
+      "first_comment": "What time are you booking yours: morning, afternoon or evening?",
+      "alt_text": "Locked Hour single image on butter yellow with a dot grid. Big serif headline: This is your sign to book one hour with yourself, with pink and white pills on key words. A zine-style calendar card reads: Tomorrow, 9:00, Locked hour, do not book over. A halftone hourglass cut-out sits beside it, with the handwritten line: block it before bed.",
+      "images": [
+        "lh-1016-single-sign-book-hour/01.jpg"
+      ]
+    },
+    {
+      "id": "hb-1016-single-check",
+      "account": "hourback",
+      "publish_at": "2026-10-16T17:45:00-04:00",
+      "caption": "Before you trust an AI answer, check it. Ask it to show its work.\n\nAdd one line to any money or math question: \"Show your working, step by step.\"\nThen check one step yourself. In our example, 4 × 273.75 = 1,095, so the split adds up.\nSteps don't add up? Ask again, or do that part by hand.\n\nExample made up for this post. Tip: remove names and account details before you paste.\n\nSave this for the next group bill, and send it to whoever usually splits it.\n\n#aitips #aitools #productivity #moneytips #lifehacks",
+      "first_comment": "What's one thing you'd never let AI do without checking?",
+      "alt_text": "Hourback single image on indigo. Label: Before you trust an AI answer. One huge italic word, Check., over a yellow brush stripe. Line: Ask it to show its work. Two chat bubbles: Split $1,095 four ways? and the reply: $273.75 each. Check: 4 × 273.75 = 1,095, with a tick. Handwritten note: example, made up.",
+      "images": [
+        "hb-1016-single-check/01.jpg"
+      ]
+    },
+    {
       "id": "ff-reel-1016-fee",
       "account": "fullyfunded",
       "publish_at": "2026-10-16T19:00:00-04:00",
@@ -211,6 +455,15 @@
       "first_comment": "Do you know your fee? Yes or no is perfect.",
       "video": "reels/ff-reel-1016-fee.mp4",
       "cover": "reels/ff-reel-1016-fee-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1016-email-asks",
+      "account": "hourback",
+      "publish_at": "2026-10-16T19:00:00-04:00",
+      "caption": "Get through a long email fast: paste it and ask for just the asks.\n\n1. Paste the email into any AI chat.\n2. Ask the prompt below.\n3. Check each quote against the email, then reply to the asks.\n\nPROMPT (copy and paste):\nHere's an email: [paste it]. What is it asking me to do, and by when? One line per ask. Quote the sentence each ask comes from.\n\nSave this for your next long email.\n\nTip: remove personal details before you paste.\n\nHand image made with AI.\n\n#emailtips #aitips #productivity #worklife #lifeadmin",
+      "first_comment": "Longest email you got this week: how many paragraphs? Just the number.",
+      "video": "reels/hb-reel-1016-email-asks.mp4",
+      "cover": "reels/hb-reel-1016-email-asks-cover.jpg"
     },
     {
       "id": "lf-reel-1016-doing-better",
@@ -231,13 +484,108 @@
       "cover": "reels/lh-reel-1016-quiet-cover.jpg"
     },
     {
-      "id": "hb-reel-1016-email-asks",
+      "id": "lf-st-1016-2100-evening",
+      "account": "littlefold",
+      "publish_at": "2026-10-16T21:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1016-2100-evening.jpg",
+      "caption": "Evening check-in on lf-reel-1016-doing-better: Did you send it to a tired parent tonight?"
+    },
+    {
+      "id": "ff-st-1016-2105-evening",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-16T21:05:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1016-2105-evening.jpg",
+      "caption": "Evening check-in on ff-reel-1016-fee: Did you find the yearly fee on your account?"
+    },
+    {
+      "id": "lh-st-1016-2110-evening",
+      "account": "lockedhour",
+      "publish_at": "2026-10-16T21:10:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1016-2110-evening.jpg",
+      "caption": "Evening check-in on lh-reel-1016-quiet: Did you send your “heads down” line?"
+    },
+    {
+      "id": "hb-st-1016-2115-evening",
       "account": "hourback",
-      "publish_at": "2026-10-16T19:00:00-04:00",
-      "caption": "Get through a long email fast: paste it and ask for just the asks.\n\n1. Paste the email into any AI chat.\n2. Ask the prompt below.\n3. Check each quote against the email, then reply to the asks.\n\nPROMPT (copy and paste):\nHere's an email: [paste it]. What is it asking me to do, and by when? One line per ask. Quote the sentence each ask comes from.\n\nSave this for your next long email.\n\nTip: remove personal details before you paste.\n\nHand image made with AI.\n\n#emailtips #aitips #productivity #worklife #lifeadmin",
-      "first_comment": "Longest email you got this week: how many paragraphs? Just the number.",
-      "video": "reels/hb-reel-1016-email-asks.mp4",
-      "cover": "reels/hb-reel-1016-email-asks-cover.jpg"
+      "publish_at": "2026-10-16T21:15:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1016-2115-evening.jpg",
+      "caption": "Evening check-in on hb-reel-1016-email-asks: Did you try “just the asks” on a long email?"
+    },
+    {
+      "id": "lf-st-1017-0745-question",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T07:45:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1017-0745-question.jpg",
+      "caption": "Morning question: Visitors in week one? A: Yes please / B: Not yet"
+    },
+    {
+      "id": "ff-st-1017-0750-question",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T07:50:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1017-0750-question.jpg",
+      "caption": "Morning question: A raise lands. First move? A: Save some of it / B: Enjoy all of it"
+    },
+    {
+      "id": "lh-st-1017-0755-question",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T07:55:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1017-0755-question.jpg",
+      "caption": "Morning question: A thought pops up mid-hour. You… A: Act on it now / B: Write it down"
+    },
+    {
+      "id": "hb-st-1017-0800-question",
+      "account": "hourback",
+      "publish_at": "2026-10-17T08:00:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1017-0800-question.jpg",
+      "caption": "Morning question: Do you check AI answers? A: Every time / B: Sometimes"
+    },
+    {
+      "id": "lf-reel-1017am-read",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T08:00:00-04:00",
+      "caption": "Too little for books? Read to them anyway, even now.\n\n1. Pick one board book.\n2. Read it at the same time each day, like bedtime.\n3. Point at a picture, name it, pause. Let them look.\n\nThe American Academy of Pediatrics recommends reading aloud together from infancy. They won't follow the story yet, and that's OK. Your voice and the pictures are the start.\n\nSave this for bedtime. Send it to a new parent.\n\nSource: American Academy of Pediatrics, policy statement on literacy promotion (2014), and HealthyChildren.org · As of Oct 2026\n\nGeneral information only, not medical advice.\n\nPhoto made with AI.\n\n#readingtokids #babybooks #newparents #bedtimeroutine #earlyliteracy",
+      "first_comment": "What's the book on repeat at your place? Title only.",
+      "alt_text": "Black-and-white photo of a parent in an armchair reading a picture book to a small child, both seen from behind. Large text: Read. Even now. Even the same book again. Then: the American Academy of Pediatrics recommends reading aloud together from infancy. Tonight, 5 minutes: pick one board book, read at the same time each day, point, name it, pause.",
+      "video": "reels/lf-reel-1017am-read.mp4",
+      "cover": "reels/lf-reel-1017am-read-cover.jpg"
+    },
+    {
+      "id": "ff-reel-1017am-match",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T08:15:00-04:00",
+      "caption": "You joined the workplace retirement plan and never checked the match. Check it today.\n\n1. Open your benefits portal or plan summary.\n2. Search for the word \"match\".\n3. Compare what you put in with the most they will match.\n\nExample: pay of 50,000 a year. The employer adds half of what you put in, up to 6% of pay. Put in 3% and they add 750. Put in 6% and they add 1,500. That's 750 a year more from them.\nThe catch: the match may only become yours after you stay a set time (often called vesting), and the money is usually locked until retirement age. Only put in what you can keep up.\n\nIn many countries this is a workplace plan, like a 401(k) in the US, a group RRSP in Canada or a workplace pension in the UK. Rules differ where you live; check your plan's own documents.\n\nSave this. Send it to a friend who just started a new job.\n\nSource: example math, no outside figures · As of Oct 2026\n\nGeneral education only, not financial advice.\n\n#retirementplanning #personalfinance #employerbenefits #investing #moneytips",
+      "first_comment": "Did you know your plan's match before today? Yes, no or checking now?",
+      "alt_text": "Calm video on a cobalt sky. Text: Check your match today. Many employers add money when you do, up to a limit. Example math: pay 50,000 a year, they add half of what you put in up to 6% of pay; +750 a year more from them if you go from 3% to 6%. The catch: the match may only become yours after a set time, and the money is usually locked until retirement age.",
+      "video": "reels/ff-reel-1017am-match.mp4",
+      "cover": "reels/ff-reel-1017am-match-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1017am-next-step",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T08:30:00-04:00",
+      "caption": "\"Do taxes\" has been on your list for 3 weeks. It's not a task, it's a project. Rewrite it as a next step.\n\n1. Pick the task that keeps sliding.\n2. Ask: what would I physically do first?\n3. Write that instead: \"Find last year's form\", not \"Do taxes\".\n\nMore examples:\n\"Plan the trip\" becomes \"Text Sam 2 dates\".\n\"Fix my CV\" becomes \"Update one job title\".\n\nSave this. Rewrite one task now and follow @lockedhourhq.\n\n#productivity #todolist #procrastination #focus #gettingthingsdone",
+      "first_comment": "What's the task that's been on your list the longest? Rewrite it here as a next step.",
+      "alt_text": "Calm video on warm paper. Text: Do taxes isn't a task. It's a project. That's why it won't start. A card rewrites 3 vague tasks as next steps: Do taxes becomes Find last year's form, Plan the trip becomes Text Sam 2 dates, Fix my CV becomes Update one job title. Then: Ask what would I physically do first? Write that down. Start there.",
+      "video": "reels/lh-reel-1017am-next-step.mp4",
+      "cover": "reels/lh-reel-1017am-next-step-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1017am-swap",
+      "account": "hourback",
+      "publish_at": "2026-10-17T08:45:00-04:00",
+      "caption": "Out of eggs halfway through a recipe? Ask AI for a swap.\n\n1. Paste the prompt below into any AI chat.\n2. Fill in the recipe and the missing ingredient.\n3. Pick the swap that fits what you're making.\n\nPROMPT (copy and paste):\nI'm making [recipe] and I'm out of [ingredient]. Give me 2 swaps most kitchens have. Say how much to use and how each changes the result.\n\nThe answer in the video is an example made up for this post. Cooking for allergies? Say so in the prompt, and double-check anything important before you cook.\n\nSave this for your next half-made recipe.\n\n#aitips #cookingtips #bakingtips #kitchentips #lifeadmin",
+      "first_comment": "What do you run out of most: eggs, milk or butter?",
+      "alt_text": "Kinetic video on peach. Cover: Out of eggs? Ask for a swap, with a prompt card. A pancake recipe card has 1 egg crossed out. The prompt asks AI for 2 swaps most kitchens have, how much to use and how each changes the result. Example answer, made up: mashed banana or plain yogurt, a quarter cup per egg. Ends: allergies? Say so in the prompt and double-check.",
+      "video": "reels/hb-reel-1017am-swap.mp4",
+      "cover": "reels/hb-reel-1017am-swap-cover.jpg"
     },
     {
       "id": "lf-03-safe-sleep-tonight",
@@ -269,6 +617,22 @@
       ]
     },
     {
+      "id": "lf-st-1017-1200-newpost",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T12:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1017-1200-newpost.jpg",
+      "caption": "New post share: lf-03-safe-sleep-tonight"
+    },
+    {
+      "id": "ff-st-1017-1230-newpost",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T12:30:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1017-1230-newpost.jpg",
+      "caption": "New post share: ff-w03-2-borrow-dont-sell"
+    },
+    {
       "id": "lh-1017-one-word-later",
       "account": "lockedhour",
       "publish_at": "2026-10-17T12:30:00-04:00",
@@ -297,6 +661,98 @@
       ]
     },
     {
+      "id": "lh-st-1017-1300-newpost",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T13:00:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1017-1300-newpost.jpg",
+      "caption": "New post share: lh-1017-one-word-later"
+    },
+    {
+      "id": "hb-st-1017-1330-newpost",
+      "account": "hourback",
+      "publish_at": "2026-10-17T13:30:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1017-1330-newpost.jpg",
+      "caption": "New post share: hb-w02-7-prove-it"
+    },
+    {
+      "id": "lf-st-1017-1530-tip",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T15:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1017-1530-tip.jpg",
+      "caption": "Tip: Write 3 small jobs on the fridge, so helpers can pick one without asking."
+    },
+    {
+      "id": "ff-st-1017-1535-tip",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T15:35:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1017-1535-tip.jpg",
+      "caption": "Tip: Once a year, ask your lender: “Is this the best rate you can offer me?”"
+    },
+    {
+      "id": "lh-st-1017-1540-tip",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T15:40:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1017-1540-tip.jpg",
+      "caption": "Tip: Turn off badge notifications for the one app you check the most."
+    },
+    {
+      "id": "hb-st-1017-1545-tip",
+      "account": "hourback",
+      "publish_at": "2026-10-17T15:45:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1017-1545-tip.jpg",
+      "caption": "Tip: Add “quote the line you used” to any question about a document."
+    },
+    {
+      "id": "lf-1017-single-rest",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T17:00:00-04:00",
+      "caption": "Someone else has the baby? Lie down, even for 20 minutes.\n\nThe dishes, the laundry and the thank-you messages can wait.\nHand over one chore when someone offers help.\nRest counts, even if you don't fall asleep.\n\nSave this for the long days, and send it to a new parent who needs the permission.\n\n#newparents #postpartum #newborn #firsttimeparents #parenthood",
+      "first_comment": "What's the one chore you'd hand over first?",
+      "alt_text": "Littlefold single image on deep berry. A soft pink arch with a yellow moon and small stars holds one big italic berry word: Rest. Below: Someone else has the baby? Lie down. Handwritten in coral: the dishes can wait, with a heart. Label: For the long days. Two paw prints at the bottom.",
+      "images": [
+        "lf-1017-single-rest/01.jpg"
+      ]
+    },
+    {
+      "id": "ff-1017-single-yearly-check",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T17:15:00-04:00",
+      "caption": "Once a year, check these 5 things. Put a date in your calendar now.\n\nFees on every account: look for \"annual fee\" or \"expense ratio\".\nWho's named on them: beneficiaries on accounts and policies, where your country allows it.\nYour loan rates: ask your lender if a lower rate is on offer.\nYour insurance cover: does it still match your income, home and family?\nYour freedom number: what you spend in a year × 25. A rule of thumb from US market history research in the 1990s.\n\nThe catch: switching a loan or policy can carry fees or gaps in cover. Compare the full cost before you move.\n\nSave this for your yearly check-in, and send it to whoever you share money with.\n\nSource: no outside figures · As of Oct 2026\nGeneral education only, not financial advice.\n\n#moneytips #personalfinance #financialliteracy #moneyhabits #financialplanning",
+      "first_comment": "Which one have you never checked? No judgment, most of us skip at least one.",
+      "alt_text": "Fully Funded single image on cobalt blue. A taped, lined sticky note titled Once a year, check: with 5 ticked handwritten items: fees on every account, who's named on them, your loan rates, your insurance cover, your freedom number. A round Fully Funded stamp sits on the corner. Handwritten line: save for your yearly check-in.",
+      "images": [
+        "ff-1017-single-yearly-check/01.jpg"
+      ]
+    },
+    {
+      "id": "lh-1017-single-one-thing-meme",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T17:30:00-04:00",
+      "caption": "POV: you check one thing, and 40 minutes later you're deep in a rabbit hole.\n\nThe fix: keep a \"later\" list next to you.\nThought pops up? Write 3 or 4 words, then keep going.\nWhen the hour ends, work through the list.\n\nSave this, send it to the friend who \"just checks one thing\" and follow @lockedhourhq.\n\n#focus #procrastination #deepwork #productivity #studytips",
+      "first_comment": "What's your rabbit hole: news, shopping, videos or messages?",
+      "alt_text": "Locked Hour meme on cream with a dot grid. Text: Me: I'll just check one thing. Emoji of a phone, a rabbit and a hole. Handwritten in pink: me, 40 minutes later. A yellow zine card: The fix: write it on a later list. Check it when the hour ends.",
+      "images": [
+        "lh-1017-single-one-thing-meme/01.jpg"
+      ]
+    },
+    {
+      "id": "hb-1017-single-ai-awards",
+      "account": "hourback",
+      "publish_at": "2026-10-17T17:45:00-04:00",
+      "caption": "How many did you get tonight? 4 small wins for using AI the safe way.\n\nTook the names out first: no names, addresses or account numbers in the chat.\nAsked it to quote the source, then found that line yourself.\nChecked the math by hand. One step is enough.\nLogged off by 8. The prompt did the planning; you did the resting.\n\nSave this, and send it to the friend who pastes everything into AI.\n\n#aitips #onlineprivacy #productivity #eveningroutine #worklifebalance",
+      "first_comment": "Which award did you earn tonight?",
+      "alt_text": "Hourback single image on cream. Label: Tonight's awards. Headline: You used AI the safe way, with a yellow highlight. Four rosettes in indigo, yellow, orange and periwinkle, each with a star: took the names out first, asked it to quote the source, checked the math by hand, logged off by 8. Handwritten: how many did you get?",
+      "images": [
+        "hb-1017-single-ai-awards/01.jpg"
+      ]
+    },
+    {
       "id": "ff-reel-1017-raise-half",
       "account": "fullyfunded",
       "publish_at": "2026-10-17T19:00:00-04:00",
@@ -304,15 +760,6 @@
       "first_comment": "If you got a raise tomorrow, what would you do first: save, spend or invest?",
       "video": "reels/ff-reel-1017-raise-half.mp4",
       "cover": "reels/ff-reel-1017-raise-half-cover.jpg"
-    },
-    {
-      "id": "lh-reel-1017-one-tab",
-      "account": "lockedhour",
-      "publish_at": "2026-10-17T19:00:00-04:00",
-      "caption": "Get more done in your next hour: close every tab but one.\n\n1. Keep the one tab you need. Close the rest.\n2. Opened a new one? Close it and go back.\n3. Need something later? Jot it on paper.\n\nOne tab. One task. One hour.\n\nSave this, try it tomorrow and follow @lockedhourhq.\n\nClock image made with AI.\n\n#focus #deepwork #productivity #studytips #worksmarter",
-      "first_comment": "How many tabs do you have open right now? Just the number.",
-      "video": "reels/lh-reel-1017-one-tab.mp4",
-      "cover": "reels/lh-reel-1017-one-tab-cover.jpg"
     },
     {
       "id": "hb-reel-1017-offline",
@@ -331,6 +778,119 @@
       "first_comment": "What's the one job you'd hand out first? One word is perfect.",
       "video": "reels/lf-reel-1017-one-job.mp4",
       "cover": "reels/lf-reel-1017-one-job-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1017-one-tab",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T19:00:00-04:00",
+      "caption": "Get more done in your next hour: close every tab but one.\n\n1. Keep the one tab you need. Close the rest.\n2. Opened a new one? Close it and go back.\n3. Need something later? Jot it on paper.\n\nOne tab. One task. One hour.\n\nSave this, try it tomorrow and follow @lockedhourhq.\n\nClock image made with AI.\n\n#focus #deepwork #productivity #studytips #worksmarter",
+      "first_comment": "How many tabs do you have open right now? Just the number.",
+      "video": "reels/lh-reel-1017-one-tab.mp4",
+      "cover": "reels/lh-reel-1017-one-tab-cover.jpg"
+    },
+    {
+      "id": "lf-st-1017-2100-evening",
+      "account": "littlefold",
+      "publish_at": "2026-10-17T21:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1017-2100-evening.jpg",
+      "caption": "Evening check-in on lf-reel-1017-one-job: Did you give someone one job today?"
+    },
+    {
+      "id": "ff-st-1017-2105-evening",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-17T21:05:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1017-2105-evening.jpg",
+      "caption": "Evening check-in on ff-reel-1017-raise-half: Did you plan for half your next raise?"
+    },
+    {
+      "id": "lh-st-1017-2110-evening",
+      "account": "lockedhour",
+      "publish_at": "2026-10-17T21:10:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1017-2110-evening.jpg",
+      "caption": "Evening check-in on lh-reel-1017-one-tab: Did you try one tab for one hour?"
+    },
+    {
+      "id": "hb-st-1017-2115-evening",
+      "account": "hourback",
+      "publish_at": "2026-10-17T21:15:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1017-2115-evening.jpg",
+      "caption": "Evening check-in on hb-reel-1017-offline: Did you plan tomorrow in one prompt?"
+    },
+    {
+      "id": "lf-st-1018-0745-question",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T07:45:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1018-0745-question.jpg",
+      "caption": "Morning question: Night shifts at your place? A: We take turns / B: Mostly me"
+    },
+    {
+      "id": "ff-st-1018-0750-question",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T07:50:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1018-0750-question.jpg",
+      "caption": "Morning question: Do you have a will? A: Yes / B: Not yet"
+    },
+    {
+      "id": "lh-st-1018-0755-question",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T07:55:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1018-0755-question.jpg",
+      "caption": "Morning question: Fresh start: when? A: Monday / B: Tomorrow"
+    },
+    {
+      "id": "hb-st-1018-0800-question",
+      "account": "hourback",
+      "publish_at": "2026-10-18T08:00:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1018-0800-question.jpg",
+      "caption": "Morning question: School emails at your place? A: Read right away / B: Pile up"
+    },
+    {
+      "id": "lf-reel-1018am-let-them-walk",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T08:00:00-04:00",
+      "caption": "Let them walk part of the way today.\n\n1. Pick the last 5 minutes of a walk home.\n2. Unbuckle and hold hands, away from traffic.\n3. Go at their speed. Stopping to look counts.\n\nFor ages 1 to 2, the WHO suggests at least 180 minutes of physical activity a day, of any kind, spread through the day. Slow walks, play and stairs all count.\nThe WHO also suggests not keeping young children strapped in, like in a stroller, high chair or carrier, for more than an hour at a time.\n\nSave this for your next walk. Send it to a parent with a new walker.\n\nSource: WHO guidelines on physical activity, sedentary behaviour and sleep for children under 5 (2019) · As of Oct 2026\n\nGeneral information only, not medical advice.\n\n#toddlerlife #toddleractivities #newparents #parentingtips #outdoorplay",
+      "first_comment": "Walker or rider at your place right now?",
+      "alt_text": "Illustrated dawn scene: silhouettes of a parent and a toddler walking hand in hand on a path towards a low sun. Text: Let them walk part of the way. For ages 1 to 2, the WHO suggests at least 180 minutes of activity a day. Any kind counts: slow walks, play, stairs. And try not to keep them strapped in for more than an hour at a time. Today: unbuckle for the last 5 minutes home.",
+      "video": "reels/lf-reel-1018am-let-them-walk.mp4",
+      "cover": "reels/lf-reel-1018am-let-them-walk-cover.jpg"
+    },
+    {
+      "id": "ff-reel-1018am-lower-rate",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T08:15:00-04:00",
+      "caption": "Your card charges 20% a year and you've never asked if it could be lower. One call, one question.\n\n1. Call the number on the back of your card.\n2. Say: \"I've paid on time. Can you lower my interest rate?\"\n3. Write down the answer and the date.\n\nExample: a 5,000 balance kept for a year. At 20% a year that's about 1,097 in interest. At 16% it's about 861. That's about 236 less.\nSome lenders say yes, some say no. It costs one call.\nThe catch: paying the balance down helps more than any rate cut, and intro offers can jump back up after the intro period.\n\nSave this for your next free 5 minutes.\n\nExample math, compounded monthly, with no payments or new spending. Real rates and rules vary where you live. Any currency. Same math.\n\nSource: example math, no outside figures · As of Oct 2026\n\nImage made with AI.\n\nGeneral education only, not financial advice.\n\n#creditcards #debtfree #personalfinance #moneytips #interestrates",
+      "first_comment": "Have you ever asked a lender for a lower rate? What did they say?",
+      "alt_text": "Kinetic video on light blue and cobalt. Cover: Ask for a lower rate, with a halftone OK hand. Example: 5,000 on a card for a year. At 20% about 1,097 in interest; at 16% about 861; about 236 less a year from one question. The call: I've paid on time. Can you lower my interest rate? Some say yes, some say no. The catch: paying the balance down helps more; intro offers can jump back up.",
+      "video": "reels/ff-reel-1018am-lower-rate.mp4",
+      "cover": "reels/ff-reel-1018am-lower-rate-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1018am-pick-3",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T08:30:00-04:00",
+      "caption": "Sunday, 10 minutes: pick 3 things for the week and block them.\n\n1. Pick 3 things that would make this week feel good.\n2. Give each one a locked hour in your calendar.\n3. Treat it like a meeting. Moving it is fine. Deleting it isn't.\n\nYour week fills up on its own. This way, 3 hours are already yours.\n\nSave this for Sunday and follow @lockedhourhq.\n\n#weeklyplanning #timeblocking #productivity #focus #sundayreset",
+      "first_comment": "What's one of your 3 this week?",
+      "alt_text": "Kinetic video on cream with a dot grid. Text: Pick 3. Block them. Your week fills up on its own, unless you claim some of it first. Step 1: pick 3 things that would make this week good. Step 2: give each one a locked hour, as blocks drop into a Monday to Friday calendar. Step 3: treat it like a meeting. Moving it is fine. Deleting it isn't.",
+      "video": "reels/lh-reel-1018am-pick-3.mp4",
+      "cover": "reels/lh-reel-1018am-pick-3-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1018am-quiz-me",
+      "account": "hourback",
+      "publish_at": "2026-10-18T08:45:00-04:00",
+      "caption": "Learning something new? Ask AI to quiz you, not to explain it again.\n\n1. Paste the prompt below into any AI chat.\n2. Answer each question before you look anything up.\n3. Go back over what you missed.\n\nPROMPT (copy and paste):\nI'm learning [topic]. Ask me 5 questions, one at a time. Wait for my answer. Then tell me what I got right and what I missed.\n\nAnswering shows you what's still missing. AI can be wrong, so check answers against your notes or textbook.\nThe chat in the video is made up for this post.\n\nSave this for your next study hour.\n\n#studytips #aitips #learning #studymotivation #selfimprovement",
+      "first_comment": "What are you learning right now? Drop the topic.",
+      "alt_text": "Calm video on a soft sky. Text: Ask AI to quiz you. Not to explain it again. Chat bubbles: Question 1 of 5, what's the difference between, and a reply. A prompt card: I'm learning [topic]. Ask me 5 questions, one at a time. Wait for my answer. Then tell me what I got right and what I missed. Then: answering shows you what's missing. AI can be wrong; check answers against your notes or textbook.",
+      "video": "reels/hb-reel-1018am-quiz-me.mp4",
+      "cover": "reels/hb-reel-1018am-quiz-me-cover.jpg"
     },
     {
       "id": "lf-04-sleep-when-baby-sleeps",
@@ -360,6 +920,22 @@
         "ff-w03-3-guardian-will/02.jpg",
         "ff-w03-3-guardian-will/03.jpg"
       ]
+    },
+    {
+      "id": "lf-st-1018-1200-newpost",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T12:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1018-1200-newpost.jpg",
+      "caption": "New post share: lf-04-sleep-when-baby-sleeps"
+    },
+    {
+      "id": "ff-st-1018-1230-newpost",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T12:30:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1018-1230-newpost.jpg",
+      "caption": "New post share: ff-w03-3-guardian-will"
     },
     {
       "id": "lh-w2-05-restart",
@@ -396,6 +972,98 @@
       ]
     },
     {
+      "id": "lh-st-1018-1300-newpost",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T13:00:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1018-1300-newpost.jpg",
+      "caption": "New post share: lh-w2-05-restart"
+    },
+    {
+      "id": "hb-st-1018-1330-newpost",
+      "account": "hourback",
+      "publish_at": "2026-10-18T13:30:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1018-1330-newpost.jpg",
+      "caption": "New post share: hb-w02-4-renewal-changes"
+    },
+    {
+      "id": "lf-st-1018-1530-tip",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T15:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1018-1530-tip.jpg",
+      "caption": "Tip: Before the night feed, put water and a snack where you’ll sit."
+    },
+    {
+      "id": "ff-st-1018-1535-tip",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T15:35:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1018-1535-tip.jpg",
+      "caption": "Tip: Write down where your will and policies are kept, and tell one person where that note is."
+    },
+    {
+      "id": "lh-st-1018-1540-tip",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T15:40:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1018-1540-tip.jpg",
+      "caption": "Tip: Put tomorrow’s hour in your calendar tonight, with a start time."
+    },
+    {
+      "id": "hb-st-1018-1545-tip",
+      "account": "hourback",
+      "publish_at": "2026-10-18T15:45:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1018-1545-tip.jpg",
+      "caption": "Tip: After any AI summary, ask: “What did you leave out?”"
+    },
+    {
+      "id": "lf-1018-single-sign-say-it",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T17:00:00-04:00",
+      "caption": "This is your sign to tell someone how you're really doing.\n\nFeeling down, anxious or teary for a few days after birth is very common. It's often called the baby blues, and it usually goes away within 2 weeks.\nIf it lasts longer, gets worse, or you're struggling to cope, tell your doctor, midwife or health visitor, even if you only have some of the signs.\nPartners can have depression after a baby too.\n\nSend this to a new parent, and ask them how they're really doing.\n\nSource: NHS, \"Postnatal depression\" · As of Oct 2026\nGeneral information only, not medical advice. If you ever feel unsafe, call your local emergency number.\nCut-out image made with AI.\n\n#postpartum #newparents #maternalmentalhealth #postnataldepression #newborn",
+      "first_comment": "Who's the one person you could tell this week?",
+      "alt_text": "Littlefold single image on soft pink with peach and butter blobs. Big serif headline: This is your sign to say how you're really doing, with really and doing in white and yellow pills. A taped note reads: good to know: down for more than 2 weeks? Tell your doctor, midwife or health visitor. A halftone baby shoe cut-out and the handwritten line: send to a new parent.",
+      "images": [
+        "lf-1018-single-sign-say-it/01.jpg"
+      ]
+    },
+    {
+      "id": "ff-1018-single-24-hours",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T17:15:00-04:00",
+      "caption": "Want it? Wait 24 hours. Then decide if you still do.\n\nPick your line: any want over an amount you set, like 50. Any currency.\nLeave it in the cart or write it in a note, then close the app.\nTomorrow, ask: would I still pay this today? If yes, buy it calmly.\n\nThe catch: it's for wants, not bills. Rent, food and essentials don't wait, and a sale price may be gone tomorrow.\n\nSave this before your next cart, and send it to your shopping buddy.\n\nThe 24-hour rule is a rule of thumb: a popular money habit, not a study.\nSource: no outside figures · As of Oct 2026\nGeneral education only, not financial advice.\n\n#moneytips #savingmoney #budgeting #moneyhabits #personalfinance",
+      "first_comment": "What's the last thing you were glad you waited on?",
+      "alt_text": "Fully Funded single image on deep cobalt. Label: The 24-hour rule, a rule of thumb. Headline: Want it? Wait 24 hours, with 24 hours on a coral pill. A giant white 24 with the handwritten word hours and the line: then decide if you still want it. A halftone coffee cup cut-out and a taped note: the catch: for wants, not bills. Rent and essentials don't wait.",
+      "images": [
+        "ff-1018-single-24-hours/01.jpg"
+      ]
+    },
+    {
+      "id": "lh-1018-single-finger-down",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T17:30:00-04:00",
+      "caption": "Put a finger down for each one. Then fix one tomorrow.\n\n4. Phone in the first 10 minutes? Put it in another room before you start.\n3. Too many tabs? Close every tab but the one you need.\n2. Messages first? Do your first real task, then answer.\n1. \"After one more thing\"? Set a start time instead, and start then.\n\nSave this, count again on Friday and follow @lockedhourhq.\n\nGlove image made with AI.\n\n#focus #deepwork #productivity #studytips #procrastination",
+      "first_comment": "How many fingers did you put down?",
+      "alt_text": "Locked Hour single image on butter yellow with a dot grid. Headline: Put a finger down if… Four zine cards with thick black borders count down: 4, you checked your phone in the first 10 minutes. 3, you have more tabs open than you could count. 2, you answered messages before your first real task. 1, you said I'll start after one more thing. A pink glove with all 5 fingers up rises from the bottom, with the note: start at 5.",
+      "images": [
+        "lh-1018-single-finger-down/01.jpg"
+      ]
+    },
+    {
+      "id": "hb-1018-single-before-paste",
+      "account": "hourback",
+      "publish_at": "2026-10-18T17:45:00-04:00",
+      "caption": "Before you paste anything into AI, run this 5-line check.\n\nNames, addresses and account numbers out: swap them for [name], [address] and [account].\nAsk it to quote: \"Quote the line you used for each answer.\"\nCheck every line against the original before you act on it.\n\nSave this, and send it to the person who pastes whole emails into AI.\n\n#onlineprivacy #aitips #cybersecurity #productivity #aitools",
+      "first_comment": "What do you usually paste into AI: emails, documents or screenshots?",
+      "alt_text": "Hourback single image on yellow. A taped, lined sticky note titled Before you paste: with 5 ticked handwritten items: names out, addresses out, account numbers out, ask it to quote, check every line. A round indigo badge reads: privacy first.",
+      "images": [
+        "hb-1018-single-before-paste/01.jpg"
+      ]
+    },
+    {
       "id": "ff-reel-1018-rule-72",
       "account": "fullyfunded",
       "publish_at": "2026-10-18T19:00:00-04:00",
@@ -403,6 +1071,15 @@
       "first_comment": "What rate does your savings account pay? Just the number.",
       "video": "reels/ff-reel-1018-rule-72.mp4",
       "cover": "reels/ff-reel-1018-rule-72-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1018-school-email",
+      "account": "hourback",
+      "publish_at": "2026-10-18T19:00:00-04:00",
+      "caption": "Never miss a school date again: paste the newsletter and ask for the dates.\n\n1. Paste the school email into any AI chat.\n2. Ask the prompt below.\n3. Check each line against the email, then add them to your calendar.\n\nPROMPT (copy and paste):\nHere's the school newsletter: [paste it]. List every date, what to bring and anything that needs a reply. One line each, earliest first.\n\nSave this for the next newsletter, and send it to the other grown-up on pick-up duty.\n\nTip: remove personal details before you paste.\n\nExample made up for this post. Try it on yours, and double-check anything important.\n\nGlove photo made with AI.\n\n#parentinghacks #aitips #schoollife #familyorganization #momlife",
+      "first_comment": "How many school emails did you get this week? Just the number.",
+      "video": "reels/hb-reel-1018-school-email.mp4",
+      "cover": "reels/hb-reel-1018-school-email-cover.jpg"
     },
     {
       "id": "lf-reel-1018-breathe",
@@ -423,13 +1100,36 @@
       "cover": "reels/lh-reel-1018-start-ugly-cover.jpg"
     },
     {
-      "id": "hb-reel-1018-school-email",
+      "id": "lf-st-1018-2100-evening",
+      "account": "littlefold",
+      "publish_at": "2026-10-18T21:00:00-04:00",
+      "story": true,
+      "image": "stories/lf-st-1018-2100-evening.jpg",
+      "caption": "Evening check-in on lf-reel-1018-breathe: Did you save the step-away plan?"
+    },
+    {
+      "id": "ff-st-1018-2105-evening",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T21:05:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1018-2105-evening.jpg",
+      "caption": "Evening check-in on ff-reel-1018-rule-72: Did you try the rule of 72 on your rate?"
+    },
+    {
+      "id": "lh-st-1018-2110-evening",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T21:10:00-04:00",
+      "story": true,
+      "image": "stories/lh-st-1018-2110-evening.jpg",
+      "caption": "Evening check-in on lh-reel-1018-start-ugly: Did you write 3 bad sentences?"
+    },
+    {
+      "id": "hb-st-1018-2115-evening",
       "account": "hourback",
-      "publish_at": "2026-10-18T19:00:00-04:00",
-      "caption": "Never miss a school date again: paste the newsletter and ask for the dates.\n\n1. Paste the school email into any AI chat.\n2. Ask the prompt below.\n3. Check each line against the email, then add them to your calendar.\n\nPROMPT (copy and paste):\nHere's the school newsletter: [paste it]. List every date, what to bring and anything that needs a reply. One line each, earliest first.\n\nSave this for the next newsletter, and send it to the other grown-up on pick-up duty.\n\nTip: remove personal details before you paste.\n\nExample made up for this post. Try it on yours, and double-check anything important.\n\nGlove photo made with AI.\n\n#parentinghacks #aitips #schoollife #familyorganization #momlife",
-      "first_comment": "How many school emails did you get this week? Just the number.",
-      "video": "reels/hb-reel-1018-school-email.mp4",
-      "cover": "reels/hb-reel-1018-school-email-cover.jpg"
+      "publish_at": "2026-10-18T21:15:00-04:00",
+      "story": true,
+      "image": "stories/hb-st-1018-2115-evening.jpg",
+      "caption": "Evening check-in on hb-reel-1018-school-email: Did you paste the newsletter and get the dates?"
     },
     {
       "id": "lf-05-partner-week-one",
