@@ -18,3 +18,6 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - Keep the faces simple: big eyes with highlights, blush, and a clean mouth. No lashes, no eye rings, no extra face lines.
 - A7 · Sprint A7 · Product Roadmap, Products People Want (Nov 2026 – Oct 2027) · https://claude.ai/code/artifact/d5a3e44b-56e8-4f88-92da-b1c21e5fabc5 · 6 tested products sit unlisted; 5 hero products join two jobs no seller combines; 34 season-timed launches
 - A6 · Sprint A6 · Trend-Setter Lab: Firsts, Formats and the App Portfolio · https://claude.ai/code/artifact/6ca3ff33-24c1-41d5-b274-65c30b89a9e6 · 15 formats checked (1 FIRST, 14 NEAR-FIRST), 10 tools ranked, 3 specs, 3 signature bets, Now/Next/Later roadmap
+> - 7:37 pm, Dharma: REINDEER IS SCRAPPED. Don't draw or propose reindeer or caribou. Options left: A otters, B capybaras, C red pandas.
+>   - On the red pandas, Dharma said the face markings looked "broken". If you show red pandas again, use far fewer face lines.
+>   - Keep everything he liked: big characters in frame, cute bright-but-soft colours, a lovely world, and well-defined but simple faces.
