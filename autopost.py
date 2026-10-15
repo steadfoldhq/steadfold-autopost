@@ -79,7 +79,8 @@ POLL_TIMEOUT_SECONDS = 300            # Meta suggests polling for at most 5 minu
 CONTAINER_MAX_AGE = timedelta(hours=23)  # containers expire after 24h; reuse only if younger
 MAX_PUBLISH_ATTEMPTS = 3              # after this many failed runs, stop retrying a post
 MAX_COMMENT_ATTEMPTS = 5              # after this many failed runs, stop retrying a comment
-MAX_POSTS_PER_ACCOUNT_PER_RUN = 1     # a backlog drains one post per account per run
+MAX_POSTS_PER_ACCOUNT_PER_RUN = 1     # a backlog drains one feed post/Reel per account per run
+MAX_STORIES_PER_ACCOUNT_PER_RUN = 1   # and, separately, one Story per account per run
 SAFETY_CAP_PER_24H = 25               # our own cap, far below Meta's 100 posts / 24h
 HTTP_TIMEOUT_SECONDS = 60
 
@@ -267,6 +268,12 @@ class IGClient:
             data["thumb_offset"] = str(int(thumb_offset_ms))
         return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
 
+    def create_story(self, ig_user_id: str, media_url: str, is_video: bool) -> str:
+        """A Story container (image or video). Stories take no caption; link and
+        poll stickers aren't available through the API."""
+        data = {"media_type": "STORIES", ("video_url" if is_video else "image_url"): media_url}
+        return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
+
     def container_status(self, container_id: str) -> tuple[str, str]:
         body = self._request("GET", container_id, params={"fields": "status_code,status"})
         return str(body.get("status_code", "")), str(body.get("status", ""))
@@ -376,6 +383,8 @@ def load_posts(path: Path) -> list[dict]:
 def validate_post(post: dict, media_dir: Path | None) -> list[str]:
     """Return a list of problems with one post (empty list = OK)."""
     problems: list[str] = []
+    if post.get("story"):
+        return validate_story(post, media_dir)
     required = ("id", "account", "publish_at", "caption") + (() if post.get("video") else ("images",))
     for field in required:
         if not post.get(field):
@@ -434,6 +443,43 @@ def validate_post(post: dict, media_dir: Path | None) -> list[str]:
         if n_videos and len(images) < 2:
             problems.append("a single video can't be a carousel; post it as a Reel "
                             "(\"video\": ...) instead of in \"images\"")
+    return problems
+
+
+def validate_story(post: dict, media_dir: Path | None) -> list[str]:
+    """A Story: {"story": true, "id", "account", "publish_at", and exactly one of
+    "image" (.jpg, 1080x1920) or "video" (.mp4, up to 60 s)}. "caption" is optional and
+    only used as a note in the log (Stories have no caption)."""
+    problems: list[str] = []
+    for field in ("id", "account", "publish_at"):
+        if not post.get(field):
+            problems.append(f"missing '{field}'")
+    if problems:
+        return problems
+    if post["account"] not in ACCOUNTS:
+        problems.append(f"unknown account {post['account']!r} "
+                        f"(expected one of {', '.join(ACCOUNTS)})")
+    try:
+        parse_time(post["publish_at"])
+    except ValueError as exc:
+        problems.append(f"bad publish_at: {exc}")
+    image, video = post.get("image"), post.get("video")
+    if bool(image) == bool(video):
+        problems.append("a Story needs exactly one of \"image\" (.jpg) or \"video\" (.mp4)")
+        return problems
+    if post.get("images") or post.get("first_comment") or post.get("cover"):
+        problems.append("a Story can't have \"images\", \"cover\" or \"first_comment\"")
+    rel = str(image or video)
+    if image and not rel.lower().endswith(IMAGE_EXTS):
+        problems.append(f"story image {rel} is not a .jpg")
+    elif video and not rel.lower().endswith(".mp4"):
+        problems.append(f"story video {rel} is not an .mp4")
+    elif media_dir is not None:
+        fp = media_dir / rel
+        if not fp.is_file():
+            problems.append(f"story file media/{rel} is missing from the repo")
+        elif video and fp.stat().st_size > MAX_VIDEO_BYTES:
+            problems.append(f"story video media/{rel} is over {MAX_VIDEO_BYTES // 1_000_000} MB")
     return problems
 
 
@@ -635,9 +681,12 @@ class Runner:
             + (f"  LATE by {(self.now - when).total_seconds() / 3600:.1f}h - publishing "
                f"anyway" if late else ""))
 
-        if self._published_this_run.get(acct, 0) >= MAX_POSTS_PER_ACCOUNT_PER_RUN:
-            log(f"  waiting: already published {MAX_POSTS_PER_ACCOUNT_PER_RUN} post(s) "
-                f"for this account in this run; it goes out next run")
+        is_story = bool(post.get("story"))
+        run_key = f"{acct}:story" if is_story else acct
+        run_cap = MAX_STORIES_PER_ACCOUNT_PER_RUN if is_story else MAX_POSTS_PER_ACCOUNT_PER_RUN
+        if self._published_this_run.get(run_key, 0) >= run_cap:
+            log(f"  waiting: already published {run_cap} {'Story' if is_story else 'post'}"
+                f"(s) for this account in this run; it goes out next run")
             return
 
         if self.dry_run:
@@ -656,7 +705,10 @@ class Runner:
             return
 
         try:
-            self.publish(post, st, client, ig_user_id, late)
+            if is_story:
+                self.publish_story(post, st, client, ig_user_id, late)
+            else:
+                self.publish(post, st, client, ig_user_id, late)
         except StillProcessing as exc:
             log(f"  {exc}")
             self.notes.append(f"[{pid}] Instagram is still processing it; next run "
@@ -685,6 +737,13 @@ class Runner:
                 self.error(f"[{post['id']}] {exc}")
         else:
             log(f"  (no {info['token_env']} here, so the token check is skipped)")
+        if post.get("story"):
+            rel = post.get("image") or post.get("video")
+            host = self.video_url if post.get("video") else self.base_url
+            log(f"  WOULD publish a STORY ({'video' if post.get('video') else 'image'})"
+                f"{' (late)' if late else ''}:")
+            log(f"    {host}/{rel}")
+            return
         if post.get("video"):
             log(f"  WOULD publish a REEL{' (late)' if late else ''}:")
             log(f"    {self.video_url}/{post['video']}")
@@ -875,6 +934,50 @@ class Runner:
         # 6) First comment.
         if post.get("first_comment"):
             self.post_comment(post, client, media_id, attempts_so_far=0)
+
+    def publish_story(self, post: dict, st: dict, client: IGClient, ig_user_id: str,
+                      late: bool) -> None:
+        """Stories don't show in the account's media list, so the caption-based double-post
+        check can't see them. Safety instead: once publish was called for a Story, it is
+        never called again (a crash in between is reported, not retried)."""
+        pid, acct = post["id"], post["account"]
+        if st.get("publish_called"):
+            raise DoNotRetry("publish was already called for this Story in an earlier run "
+                             "and the result wasn't recorded; not posting again. Check the "
+                             "account's Stories and mark it in state/published.json by hand")
+        is_video = bool(post.get("video"))
+        rel = str(post.get("video") or post.get("image"))
+        if is_video:
+            url = self.reachable_video_url(f"{self.video_url}/{rel}", rel)
+        else:
+            url = f"{self.base_url}/{rel}"
+            self.check_image_urls([url])
+
+        container_id = st.get("container_id")
+        if container_id:
+            created = st.get("container_created_at")
+            fresh = created and self.now - parse_time(created) < CONTAINER_MAX_AGE
+            code = client.container_status(container_id)[0] if fresh else ""
+            if code in ("FINISHED", "IN_PROGRESS"):
+                log(f"  reusing story container {container_id} ({code})")
+            else:
+                container_id = None
+        if not container_id:
+            container_id = client.create_story(ig_user_id, url, is_video)
+            self.state.update(pid, account=acct, status="publishing", container_id=container_id,
+                              container_created_at=iso(self.now), publish_called=False,
+                              kind="story")
+            log(f"  created story container {container_id}")
+
+        client.wait_until_finished(container_id)
+        self.state.update(pid, publish_called=True, publish_called_at=iso(self.now))
+        media_id = client.publish(ig_user_id, container_id)
+        key = f"{acct}:story"
+        self._published_this_run[key] = self._published_this_run.get(key, 0) + 1
+        self.state.update(pid, status="published", media_id=media_id, kind="story",
+                          published_at=iso(self.now), late=late, error=None,
+                          comment_status="none", comment_attempts=0)
+        log(f"  PUBLISHED story {media_id}")
 
     def reachable_video_url(self, url: str, rel: str) -> str:
         """Video host check: jsDelivr first; if it can't serve the file, fall back to raw GitHub."""

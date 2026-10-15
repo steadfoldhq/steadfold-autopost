@@ -59,7 +59,7 @@ class Base(unittest.TestCase):
 
     def write_posts(self, posts):
         for p in posts:
-            for rel in [p[k] for k in ("video", "cover") if p.get(k)]:
+            for rel in [p[k] for k in ("video", "cover", "image") if p.get(k)]:
                 f = self.media / rel
                 f.parent.mkdir(parents=True, exist_ok=True)
                 f.write_bytes(b"fake media")
@@ -633,6 +633,81 @@ class Redaction(unittest.TestCase):
         self.assertNotIn("other", s)
 
 
+def story(pid="ff-story-1", account="fullyfunded", at="2026-10-15T12:00:00-04:00", video=False):
+    p = {"id": pid, "account": account, "publish_at": at, "story": True, "caption": "note"}
+    p["video" if video else "image"] = f"stories/{pid}.{'mp4' if video else 'jpg'}"
+    return p
+
+
+class Stories(Base):
+    def test_image_story(self):
+        self.write_posts([story()])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)
+        create = [c for c in g.posts() if c.path.endswith("/media")]
+        self.assertEqual(len(create), 1)
+        self.assertEqual(create[0].data["media_type"], "STORIES")
+        self.assertEqual(create[0].data["image_url"], f"{BASE}/stories/ff-story-1.jpg")
+        self.assertNotIn("caption", create[0].data)
+        self.assertEqual(len(g.publishes()), 1)
+        st = self.state()["ff-story-1"]
+        self.assertEqual((st["status"], st["kind"]), ("published", "story"))
+
+    def test_video_story_uses_video_host(self):
+        self.write_posts([story(video=True)])
+        g = graph()
+        self.assertEqual(self.run_main(g, env={**ENV, "GITHUB_SHA": "abc"}), 0, self.output)
+        create = [c for c in g.posts() if c.path.endswith("/media")][0]
+        self.assertTrue(create.data["video_url"].startswith("https://cdn.jsdelivr.net/gh/"))
+        self.assertEqual(len(g.publishes()), 1)
+
+    def test_story_does_not_block_feed_post_same_run(self):
+        self.write_posts([post(), story()])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(len(g.publishes()), 2)
+
+    def test_one_story_per_account_per_run(self):
+        self.write_posts([story("s1"), story("s2")])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(len(g.publishes()), 1)
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(len(g.publishes()), 2)
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(len(g.publishes()), 2)   # never re-posted
+
+    def test_never_republished_after_unrecorded_publish(self):
+        self.write_posts([story()])
+        self.state_file.write_text(json.dumps({"posts": {"ff-story-1": {
+            "account": "fullyfunded", "status": "publishing", "publish_called": True}}}))
+        g = graph()
+        self.assertNotEqual(self.run_main(g), 0)
+        self.assertEqual(len(g.publishes()), 0)
+        self.assertEqual(self.state()["ff-story-1"]["attempts"], autopost.MAX_PUBLISH_ATTEMPTS)
+
+    def test_story_validation(self):
+        bad = story()
+        bad["video"] = "stories/x.mp4"
+        self.assertTrue(any("exactly one" in e for e in autopost.validate_story(bad, None)))
+        bad = story()
+        bad["first_comment"] = "hi"
+        self.assertTrue(autopost.validate_story(bad, None))
+        bad = story()
+        bad["image"] = "stories/x.png"
+        self.assertTrue(any("not a .jpg" in e for e in autopost.validate_story(bad, None)))
+        ok = story()
+        del ok["caption"]
+        self.assertEqual(autopost.validate_story(ok, None), [])
+
+    def test_dry_run_describes_story(self):
+        self.write_posts([story()])
+        g = graph()
+        self.assertEqual(self.run_main(g, "--dry-run"), 0, self.output)
+        self.assertIn("WOULD publish a STORY (image)", self.output)
+        self.assertEqual(len(g.publishes()), 0)
+
+
 class RealSchedule(unittest.TestCase):
     """The generated schedule/posts.json must be valid and point at real files."""
 
@@ -642,12 +717,15 @@ class RealSchedule(unittest.TestCase):
         self.assertGreater(len(posts), 0)
         for p in posts:
             self.assertEqual(autopost.validate_post(p, root / "media"), [], p["id"])
-        # at most one feed post and one Reel per account per Toronto day
-        seen = set()
+        # daily ceilings per account per Toronto day (brand-system-v4 cadence, Oct 15):
+        # 2 feed posts, 2 Reels, 5 Stories
+        caps = {"feed": 2, "reel": 2, "story": 5}
+        count: dict = {}
         for p in posts:
-            key = (p["account"], p["publish_at"][:10], "reel" if p.get("video") else "feed")
-            self.assertNotIn(key, seen)
-            seen.add(key)
+            kind = "story" if p.get("story") else ("reel" if p.get("video") else "feed")
+            key = (p["account"], p["publish_at"][:10], kind)
+            count[key] = count.get(key, 0) + 1
+            self.assertLessEqual(count[key], caps[kind], key)
 
 
 if __name__ == "__main__":

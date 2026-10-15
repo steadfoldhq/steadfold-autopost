@@ -49,6 +49,7 @@ class FakeGraph:
     """
 
     def __init__(self, tokens: dict[str, tuple[str, str]]):
+        self.stories: dict[str, list[str]] = {}
         self.tokens = tokens
         self.calls: list[Call] = []
         self._n = 1000
@@ -133,6 +134,14 @@ class FakeGraph:
                 self.containers[cid] = {"kind": "reel", "status": "IN_PROGRESS",
                                         "user": user_id, **c.data}
                 return FakeResponse(200, {"id": cid})
+            if c.data.get("media_type") == "STORIES":
+                if "caption" in c.data or ("image_url" in c.data) == ("video_url" in c.data):
+                    return ig_error("bad story request")
+                is_vid = "video_url" in c.data
+                cid = self._id()
+                self.containers[cid] = {"kind": "story", "status": "IN_PROGRESS" if is_vid else "FINISHED",
+                                        "user": user_id, **c.data}
+                return FakeResponse(200, {"id": cid})
             if "image_url" in c.data:  # single image post
                 cid = self._id()
                 self.containers[cid] = {"kind": "image", "status": "FINISHED",
@@ -164,6 +173,9 @@ class FakeGraph:
             assert cont["status"] == "FINISHED", "published a container that wasn't FINISHED"
             cont["status"] = "PUBLISHED"
             mid = "m" + self._id()
+            if cont["kind"] == "story":   # Stories never show in /media
+                self.stories.setdefault(user_id, []).append(mid)
+                return FakeResponse(200, {"id": mid})
             self.media.setdefault(user_id, []).insert(0, {
                 "id": mid, "caption": cont.get("caption"), "timestamp": "2026-10-15T16:00:00+0000",
                 "permalink": f"https://www.instagram.com/p/{mid}/"})

@@ -135,7 +135,12 @@ All paths are under `/home/claude/content/design/` unless they say otherwise. A 
 ## 3. Rotation rules
 - **At least 6 different styles in any 9 consecutive tiles** on a page. Reel covers count as tiles: they sit in the grid.
 - **Loud and quiet alternate.** Never put the same style twice in a row, and never three loud or three quiet tiles in a row.
-- **Each page posts at least 2 times a day:** 1 feed post plus 1 Reel. The maximum is 1 feed post and 1 Reel per page per day (autopost rule).
+- **Cadence (from Oct 16, Dharma: "be more aggressive, but strategic"):** each page, each day:
+  - **2 Reels** (morning ~8:00 and evening 19:00). Reels are the reach engine: they reach non-followers.
+  - **1 feed post** (carousel or single, in the rotation) at the page's usual midday slot. A **second feed post** is allowed when it is a quick single tile (a One Word, sticky note or meme) at least 6 hours apart.
+  - **3–5 Stories** spread from morning to night: a teaser of today's post, a "new post" share, a poll-style question card, a behind-the-scenes or quote card, a link reminder. Stories keep followers warm; they don't sit in the grid, so the rotation rule doesn't apply to them.
+  - Autopost ceilings (tested in `tests/test_autopost.py`): 2 feed, 2 Reels, 5 Stories per page per Toronto day.
+  - The Performance desk compares reach per post before and after the ramp and can recommend dialling it back if reach per post drops for 7 days.
 - **Reels rotate four styles:** one-word slow-pan photo, kinetic big text, calm text, and silhouette (Littlefold). In one day, no two pages use the same Reel style if there are four to pick from. One page repeating a style on a given day is allowed when it is unavoidable.
 - **Each series runs about once a week per page.** Series covers share one layout so the grid looks planned.
 - **Glove posts:** at most 1 in 9 tiles per page. The royal-green or butter Fully Funded colourway counts as that one.

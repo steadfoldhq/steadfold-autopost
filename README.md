@@ -116,6 +116,21 @@ A post with `"video": "reels/<id>.mp4"` (and optionally `"cover": "reels/<id>-co
 - Instagram's own music library can't be added through the API. Our Reels carry original music made in code, so they're copyright-safe. To use a trending sound, post that Reel from the app instead.
 - Processing a Reel takes Instagram a minute or more. If it isn't ready within 5 minutes, the next run (15 minutes later) picks it up again without re-uploading.
 
+## Stories
+
+A post with `"story": true` and one file is published as an Instagram **Story**:
+
+```json
+{ "id": "ff-st-1016-1", "account": "fullyfunded", "publish_at": "2026-10-16T08:30:00-04:00",
+  "story": true, "image": "stories/ff-st-1016-1.jpg", "caption": "note for the log only" }
+```
+
+- Use `"image"` (a 1080×1920 `.jpg`) or `"video"` (a 9:16 `.mp4` up to 60 s, under 19.5 MB), never both. Keep text inside y 250–1650 so the app's top bar and reply box don't cover it.
+- Stories have no caption, cover or first comment. `"caption"` is optional and only shows in the log.
+- Link, poll, question and music stickers can't be added through the API. Put the question or "new post" note in the image itself; add a real sticker by hand in the app if one is needed.
+- Stories don't appear in the account's post list, so the usual "already on Instagram?" check can't see them. Instead, once the robot has asked Instagram to publish a Story it never asks again; if a run dies right then, the Story is marked failed and the log says to check the app.
+- Each run publishes at most one feed post or Reel **and** one Story per account, so a backlog drains over a few runs.
+
 ## Carousels with video slides
 
 A carousel's `"images"` list can mix `.jpg` photos and `.mp4` video slides, in any order:
