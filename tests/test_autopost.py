@@ -686,6 +686,16 @@ class Stories(Base):
         self.assertEqual(len(g.publishes()), 0)
         self.assertEqual(self.state()["ff-story-1"]["attempts"], autopost.MAX_PUBLISH_ATTEMPTS)
 
+    def test_refused_story_publish_is_retried(self):
+        self.write_posts([story()])
+        g = graph()
+        g.fail_publish = 1
+        self.assertNotEqual(self.run_main(g), 0)
+        self.assertEqual(self.state()["ff-story-1"]["status"], "failed")
+        self.assertFalse(self.state()["ff-story-1"]["publish_called"])
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(self.state()["ff-story-1"]["status"], "published")
+
     def test_story_validation(self):
         bad = story()
         bad["video"] = "stories/x.mp4"

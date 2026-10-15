@@ -971,7 +971,15 @@ class Runner:
 
         client.wait_until_finished(container_id)
         self.state.update(pid, publish_called=True, publish_called_at=iso(self.now))
-        media_id = client.publish(ig_user_id, container_id)
+        try:
+            media_id = client.publish(ig_user_id, container_id)
+        except IGError as exc:
+            # A clear 4xx answer means Instagram refused it, so nothing went live: safe
+            # to try again next run with a fresh container. Network errors and 5xx stay
+            # "maybe live" and are never retried.
+            if not exc.network and exc.http_status is not None and exc.http_status < 500:
+                self.state.update(pid, publish_called=False, container_id=None)
+            raise
         key = f"{acct}:story"
         self._published_this_run[key] = self._published_this_run.get(key, 0) + 1
         self.state.update(pid, status="published", media_id=media_id, kind="story",
