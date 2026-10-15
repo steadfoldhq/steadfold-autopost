@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-15T16:34:26+00:00",
+ "collected_at": "2026-10-15T20:30:12+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -14,14 +14,14 @@
      "permalink": "https://www.instagram.com/p/DehXOGKFKxv/",
      "at": "2026-10-15T16:14:34+0000",
      "first_line": "Get up to $2,000 for your kid's school, free. Here's how to claim the Canada Learning Bond.",
-     "likes": 0,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 9,
+      "reach": 2,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 1
+      "shares": 1,
+      "total_interactions": 4
      },
      "comments": []
     },
@@ -31,14 +31,14 @@
      "permalink": "https://www.instagram.com/p/DeflBIAoJde/",
      "at": "2026-10-14T23:36:40+0000",
      "first_line": "Save $5,000 in 26 paydays, starting Fri Oct 23. Here's the whole plan.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 2,
+      "views": 18,
+      "reach": 3,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 4
+      "shares": 2,
+      "total_interactions": 6
      },
      "comments": []
     },
@@ -48,14 +48,14 @@
      "permalink": "https://www.instagram.com/p/Debcj61lSrK/",
      "at": "2026-10-13T09:05:35+0000",
      "first_line": "Your paycheque has 3 jobs. Most of us only give it one 👀",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 18,
+      "views": 23,
       "reach": 2,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 4
+      "shares": 2,
+      "total_interactions": 6
      },
      "comments": []
     }
@@ -66,8 +66,25 @@
    "username": "lockedhourhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 3,
+   "media_count": 4,
    "posts": [
+    {
+     "media_id": "18110119802352799",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DehZk1DHPF7/",
+     "at": "2026-10-15T16:35:10+0000",
+     "first_line": "Reach more of your goals: write one if-then plan tonight.",
+     "likes": 3,
+     "comments_count": 1,
+     "insights": {
+      "views": 13,
+      "reach": 3,
+      "saved": 0,
+      "shares": 3,
+      "total_interactions": 7
+     },
+     "comments": []
+    },
     {
      "media_id": "18117541169005781",
      "type": "CAROUSEL_ALBUM",
@@ -77,11 +94,11 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 9,
-      "reach": 3,
+      "views": 19,
+      "reach": 4,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 5
+      "shares": 3,
+      "total_interactions": 7
      },
      "comments": []
     },
@@ -91,14 +108,14 @@
      "permalink": "https://www.instagram.com/p/Dee0PTyCfR2/",
      "at": "2026-10-14T16:30:12+0000",
      "first_line": "Writing tomorrow's to-do list helped people fall asleep faster than writing about what they'd already done.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 26,
-      "reach": 3,
+      "views": 36,
+      "reach": 4,
       "saved": 0,
-      "shares": 2,
-      "total_interactions": 5
+      "shares": 4,
+      "total_interactions": 8
      },
      "comments": []
     },
@@ -108,14 +125,14 @@
      "permalink": "https://www.instagram.com/p/DebbszunIrw/",
      "at": "2026-10-13T08:58:04+0000",
      "first_line": "Lock in for one hour, not one year 🔒",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 2,
      "insights": {
-      "views": 25,
-      "reach": 2,
+      "views": 35,
+      "reach": 3,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 5
+      "shares": 3,
+      "total_interactions": 9
      },
      "comments": []
     }
@@ -126,22 +143,39 @@
    "username": "hourbackhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 2,
+   "media_count": 3,
    "posts": [
+    {
+     "media_id": "17960402310238900",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DehfHu4lQEg/",
+     "at": "2026-10-15T17:23:40+0000",
+     "first_line": "Never guess a parking sign again. Snap the whole pole and ask one question.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 8,
+      "reach": 2,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4
+     },
+     "comments": []
+    },
     {
      "media_id": "18193502386400915",
      "type": "CAROUSEL_ALBUM",
      "permalink": "https://www.instagram.com/p/DefnvgFkRse/",
      "at": "2026-10-15T00:00:18+0000",
      "first_line": "Plan one potluck menu that works for every diet at the table. Paste your guest list and one prompt.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 1,
+      "views": 17,
+      "reach": 3,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 4
+      "shares": 4,
+      "total_interactions": 8
      },
      "comments": []
     },
@@ -151,14 +185,14 @@
      "permalink": "https://www.instagram.com/p/DebbPdGFmPv/",
      "at": "2026-10-13T08:54:03+0000",
      "first_line": "5 prompts that give you an hour back ⏳",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 3,
+      "views": 24,
+      "reach": 4,
       "saved": 0,
-      "shares": 1,
-      "total_interactions": 4
+      "shares": 4,
+      "total_interactions": 8
      },
      "comments": []
     }
@@ -167,7 +201,7 @@
   "littlefold": {
    "account": "littlefold",
    "username": "littlefoldhq",
-   "followers_count": 0,
+   "followers_count": 1,
    "follows_count": 0,
    "media_count": 1,
    "posts": [
@@ -177,14 +211,14 @@
      "permalink": "https://www.instagram.com/p/DehT4zMFsqd/",
      "at": "2026-10-15T15:45:27+0000",
      "first_line": "Pack the hospital bag you'll actually use, in one evening, about 3 weeks before your due date.",
-     "likes": 0,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 6,
+      "reach": 2,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 1
+      "shares": 2,
+      "total_interactions": 5
      },
      "comments": []
     }
