@@ -12,3 +12,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - Fur: pale fawn and caramel (#e2b48c, #ebc29e, #f3d3b2), cream muzzle, cream antlers.
 >   - Pastel clothes and world.
 >   - Faces: soft brows, a lighter eye-patch ring, big eyes with two highlights, a defined muzzle outline, and a nose with a highlight.
+- A4 · Sprint A4 · Littlefold 90-Day Backlog (Oct 19 2026 – Jan 17 2027) · https://claude.ai/code/artifact/4e40f05e-5115-47ad-b70c-ecad7a6f0a8e · 92 sourced ideas staged bump-to-toddler, Small Wins No.1–13, 2 FIRST series, 10 shareable drops
