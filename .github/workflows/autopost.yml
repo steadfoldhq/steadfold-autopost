@@ -49,6 +49,7 @@ jobs:
           IG_USERNAME_LITTLEFOLD: ${{ vars.IG_USERNAME_LITTLEFOLD }}
           MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}     # optional repo variable
           IG_API_VERSION: ${{ vars.IG_API_VERSION }}     # optional repo variable
+          VIDEO_BASE_URL: ${{ vars.VIDEO_BASE_URL }}     # optional repo variable (Reels host)
           DRY_RUN: ${{ inputs.dry_run }}
           RETRY_FAILED: ${{ inputs.retry_failed }}
         run: |

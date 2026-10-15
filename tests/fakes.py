@@ -106,6 +106,13 @@ class FakeGraph:
                 self.containers[cid] = {"kind": "carousel", "status": "IN_PROGRESS",
                                         "user": user_id, **c.data}
                 return FakeResponse(200, {"id": cid})
+            if c.data.get("media_type") == "REELS":
+                if not str(c.data.get("video_url", "")).endswith(".mp4"):
+                    return ig_error("video_url must be an mp4")
+                cid = self._id()
+                self.containers[cid] = {"kind": "reel", "status": "IN_PROGRESS",
+                                        "user": user_id, **c.data}
+                return FakeResponse(200, {"id": cid})
             if "image_url" in c.data:  # single image post
                 cid = self._id()
                 self.containers[cid] = {"kind": "image", "status": "FINISHED",

@@ -65,6 +65,7 @@ ACCOUNTS: dict[str, dict[str, str]] = {
 
 LATE_AFTER = timedelta(hours=6)       # older than this: still publish, but log LATE
 MAX_CAROUSEL_ITEMS = 10               # Instagram limit
+MAX_VIDEO_BYTES = 19_500_000          # jsDelivr serves GitHub files up to 20 MB
 CAPTION_MAX_CHARS = 2200              # Instagram caption limit
 CAPTION_MAX_HASHTAGS = 30             # Instagram hashtag limit
 POLL_INTERVAL_SECONDS = 10            # how often to ask "is the container ready?"
@@ -244,6 +245,16 @@ class IGClient:
             data["alt_text"] = alt_text
         return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
 
+    def create_reel(self, ig_user_id: str, video_url: str, caption: str,
+                    cover_url: str | None = None, thumb_offset_ms: int | None = None) -> str:
+        data = {"media_type": "REELS", "video_url": video_url, "caption": caption,
+                "share_to_feed": "true"}
+        if cover_url:
+            data["cover_url"] = cover_url
+        elif thumb_offset_ms is not None:
+            data["thumb_offset"] = str(int(thumb_offset_ms))
+        return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
+
     def container_status(self, container_id: str) -> tuple[str, str]:
         body = self._request("GET", container_id, params={"fields": "status_code,status"})
         return str(body.get("status_code", "")), str(body.get("status", ""))
@@ -353,7 +364,8 @@ def load_posts(path: Path) -> list[dict]:
 def validate_post(post: dict, media_dir: Path | None) -> list[str]:
     """Return a list of problems with one post (empty list = OK)."""
     problems: list[str] = []
-    for field in ("id", "account", "publish_at", "caption", "images"):
+    required = ("id", "account", "publish_at", "caption") + (() if post.get("video") else ("images",))
+    for field in required:
         if not post.get(field):
             problems.append(f"missing '{field}'")
     if problems:
@@ -370,6 +382,23 @@ def validate_post(post: dict, media_dir: Path | None) -> list[str]:
         problems.append(f"caption is {len(caption)} characters (max {CAPTION_MAX_CHARS})")
     if len(re.findall(r"(?<!\w)#\w", caption)) > CAPTION_MAX_HASHTAGS:
         problems.append(f"caption has more than {CAPTION_MAX_HASHTAGS} hashtags")
+    if post.get("video"):
+        video = str(post["video"])
+        if not video.lower().endswith(".mp4"):
+            problems.append(f"video {video} is not an .mp4")
+        elif media_dir is not None:
+            vp = media_dir / video
+            if not vp.is_file():
+                problems.append(f"video file media/{video} is missing from the repo")
+            elif vp.stat().st_size > MAX_VIDEO_BYTES:
+                problems.append(f"video media/{video} is over {MAX_VIDEO_BYTES // 1_000_000} MB")
+        cover = post.get("cover")
+        if cover:
+            if not str(cover).lower().endswith((".jpg", ".jpeg")):
+                problems.append(f"cover {cover} is not a .jpg")
+            elif media_dir is not None and not (media_dir / cover).is_file():
+                problems.append(f"cover file media/{cover} is missing from the repo")
+        return problems
     images = post["images"]
     if not isinstance(images, list) or not (1 <= len(images) <= MAX_CAROUSEL_ITEMS):
         problems.append(f"images must be a list of 1 to {MAX_CAROUSEL_ITEMS} files")
@@ -391,6 +420,19 @@ def media_base_url(env: dict) -> str | None:
         branch = (env.get("MEDIA_BRANCH") or "").strip() or "main"
         return f"https://raw.githubusercontent.com/{repo}/{branch}/media"
     return None
+
+
+def video_base_url(env: dict) -> str | None:
+    """Videos are served through jsDelivr (correct video/mp4 type, pinned to the commit),
+    because Instagram's video fetch is pickier than its image fetch."""
+    base = (env.get("VIDEO_BASE_URL") or "").strip()
+    if base:
+        return base.rstrip("/")
+    repo = (env.get("GITHUB_REPOSITORY") or "").strip()
+    if repo:
+        ref = (env.get("GITHUB_SHA") or "").strip() or (env.get("MEDIA_BRANCH") or "").strip() or "main"
+        return f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/media"
+    return media_base_url(env)
 
 
 def normalize_caption(text: str | None) -> str:
@@ -420,6 +462,7 @@ class Runner:
         self.poll_interval = poll_interval
         self.poll_timeout = poll_timeout
         self.base_url = media_base_url(env)
+        self.video_url = video_base_url(env)
         self.errors: list[str] = []
         self.notes: list[str] = []
         self._clients: dict[str, tuple[IGClient, str] | AccountError] = {}
@@ -611,11 +654,17 @@ class Runner:
                 self.error(f"[{post['id']}] {exc}")
         else:
             log(f"  (no {info['token_env']} here, so the token check is skipped)")
-        n = len(post["images"])
-        kind = "CAROUSEL" if n > 1 else "single IMAGE"
-        log(f"  WOULD publish a {kind} of {n} image(s){' (late)' if late else ''}:")
-        for rel in post["images"]:
-            log(f"    {self.base_url}/{rel}")
+        if post.get("video"):
+            log(f"  WOULD publish a REEL{' (late)' if late else ''}:")
+            log(f"    {self.video_url}/{post['video']}")
+            if post.get("cover"):
+                log(f"    cover {self.base_url}/{post['cover']}")
+        else:
+            n = len(post["images"])
+            kind = "CAROUSEL" if n > 1 else "single IMAGE"
+            log(f"  WOULD publish a {kind} of {n} image(s){' (late)' if late else ''}:")
+            for rel in post["images"]:
+                log(f"    {self.base_url}/{rel}")
         first_line = post["caption"].splitlines()[0]
         log(f"  caption ({len(post['caption'])} chars): {first_line[:90]}")
         if post.get("alt_text"):
@@ -642,7 +691,14 @@ class Runner:
     def publish(self, post: dict, st: dict, client: IGClient, ig_user_id: str,
                 late: bool) -> None:
         pid, acct = post["id"], post["account"]
-        urls = [f"{self.base_url}/{rel}" for rel in post["images"]]
+        is_reel = bool(post.get("video"))
+        if is_reel:
+            urls = [f"{self.video_url}/{post['video']}"]
+            cover_url = f"{self.base_url}/{post['cover']}" if post.get("cover") else None
+            if cover_url:
+                urls.append(cover_url)
+        else:
+            urls = [f"{self.base_url}/{rel}" for rel in post["images"]]
 
         # 1) Already on Instagram? (state lost, or an earlier run died mid-publish)
         try:
@@ -674,7 +730,18 @@ class Runner:
                                   f"posted again")
             return
 
-        self.check_image_urls(urls)
+        if is_reel:
+            # Video host: jsDelivr first; if it can't serve the file, fall back to raw GitHub.
+            try:
+                self.check_image_urls(urls[:1])
+            except IGError as exc:
+                raw = f"{self.base_url}/{post['video']}"
+                log(f"  video host check failed ({exc}); trying {raw}")
+                urls[0] = raw
+                self.check_image_urls(urls[:1])
+            self.check_image_urls(urls[1:])
+        else:
+            self.check_image_urls(urls)
 
         # 2) Reuse a container from an earlier run if it is still fresh and usable.
         container_id = st.get("container_id")
@@ -698,7 +765,12 @@ class Runner:
         # 3) Build containers: one per image, then the carousel.
         if not container_id:
             alt = (post.get("alt_text") or "").strip() or None
-            if len(urls) == 1:
+            if is_reel:
+                container_id = client.create_reel(
+                    ig_user_id, urls[0], post["caption"], cover_url=cover_url,
+                    thumb_offset_ms=post.get("thumb_offset_ms"))
+                children = []
+            elif len(urls) == 1:
                 container_id = self._with_alt_fallback(
                     lambda a: client.create_single_image(ig_user_id, urls[0],
                                                          post["caption"], a), alt, pid)
@@ -720,7 +792,8 @@ class Runner:
             self.state.update(pid, account=acct, status="publishing", children=children,
                               container_id=container_id,
                               container_created_at=iso(self.now), publish_called=False)
-            log(f"  created {'carousel' if children else 'image'} container {container_id}")
+            log(f"  created {'reel' if is_reel else ('carousel' if children else 'image')} "
+                f"container {container_id}")
 
         # 4) Wait until Instagram has processed it.
         client.wait_until_finished(container_id)

@@ -59,7 +59,11 @@ class Base(unittest.TestCase):
 
     def write_posts(self, posts):
         for p in posts:
-            for rel in p["images"]:
+            for rel in [p[k] for k in ("video", "cover") if p.get(k)]:
+                f = self.media / rel
+                f.parent.mkdir(parents=True, exist_ok=True)
+                f.write_bytes(b"fake media")
+            for rel in p.get("images", []):
                 f = self.media / rel
                 f.parent.mkdir(parents=True, exist_ok=True)
                 f.write_bytes(b"\xff\xd8\xff fake jpeg")
@@ -135,6 +139,30 @@ class CarouselFlow(Base):
         self.assertEqual(self.run_main(g), 0)
         self.assertEqual(g.calls, [])
         self.assertEqual(self.state(), {})
+
+    def test_reel_post(self):
+        reel = {"id": "lf-reel-1", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "Reel caption\n\n#tag", "first_comment": "Hi!",
+                "video": "reels/lf-reel-1.mp4", "cover": "reels/lf-reel-1-cover.jpg"}
+        self.write_posts([reel])
+        g = graph()
+        self.assertEqual(self.run_main(g, env={**ENV, "GITHUB_SHA": "abc123"}), 0, self.output)
+        create = [c for c in g.posts() if c.path.endswith("/media")]
+        self.assertEqual(len(create), 1)
+        self.assertEqual(create[0].data["media_type"], "REELS")
+        self.assertEqual(create[0].data["video_url"],
+                         "https://cdn.jsdelivr.net/gh/dharma/steadfold-autopost@abc123/media/reels/lf-reel-1.mp4")
+        self.assertTrue(create[0].data["cover_url"].endswith("/media/reels/lf-reel-1-cover.jpg"))
+        self.assertEqual(create[0].data["share_to_feed"], "true")
+        self.assertEqual(len(g.publishes()), 1)
+        self.assertEqual(self.state()["lf-reel-1"]["status"], "published")
+
+    def test_reel_must_be_mp4(self):
+        reel = {"id": "r2", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "c", "video": "reels/r2.mov"}
+        self.write_posts([reel])
+        self.assertNotEqual(self.run_main(graph()), 0)
+        self.assertIn("not an .mp4", self.output)
 
     def test_single_image_post(self):
         self.write_posts([post(n_images=1)])

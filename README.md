@@ -108,6 +108,14 @@ That's it. From now on the **Autopost** workflow runs every 15 minutes by itself
 
 ---
 
+## Reels
+
+A post with `"video": "reels/<id>.mp4"` (and optionally `"cover": "reels/<id>-cover.jpg"`) is published as a **Reel** instead of a carousel. It is shared to the main grid too.
+- Videos must be MP4 (H.264 + AAC), 9:16, under 19.5 MB.
+- The robot serves videos through jsDelivr, pinned to the exact commit (`cdn.jsdelivr.net/gh/<owner>/steadfold-autopost@<commit>/media/...`), because Instagram is pickier about video downloads. If jsDelivr can't serve a file, it falls back to raw GitHub. To force another host, set the repo variable `VIDEO_BASE_URL`.
+- Instagram's own music library can't be added through the API. Our Reels carry original music made in code, so they're copyright-safe. To use a trending sound, post that Reel from the app instead.
+- Processing a Reel takes Instagram a minute or more. If it isn't ready within 5 minutes, the next run (15 minutes later) picks it up again without re-uploading.
+
 ## Adding next week's posts
 
 1. Ask Claude in the Steadfold chat: *"Import next week into the autopost repo, start date YYYY-MM-DD."* Claude runs
