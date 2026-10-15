@@ -475,10 +475,10 @@ class RealSchedule(unittest.TestCase):
         self.assertGreater(len(posts), 0)
         for p in posts:
             self.assertEqual(autopost.validate_post(p, root / "media"), [], p["id"])
-        # at most one post per account per Toronto day
+        # at most one feed post and one Reel per account per Toronto day
         seen = set()
         for p in posts:
-            key = (p["account"], p["publish_at"][:10])
+            key = (p["account"], p["publish_at"][:10], "reel" if p.get("video") else "feed")
             self.assertNotIn(key, seen)
             seen.add(key)
 
