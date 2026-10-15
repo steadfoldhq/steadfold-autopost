@@ -16,3 +16,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 > - 7:33 pm, Dharma: the lighter-tone version is REJECTED. Keep the first reindeer colours: warm caramel and cocoa fur (#a8714d, #b9805a, #c58e63, #d9a576), cream muzzle and antlers, mint and pink clothes.
 >   - Faces must NOT be round. Use a deer-shaped head: a broad forehead tapering into a soft, longer muzzle with the nose near the tip.
 >   - Keep the faces simple: big eyes with highlights, blush, and a clean mouth. No lashes, no eye rings, no extra face lines.
+- A7 · Sprint A7 · Product Roadmap, Products People Want (Nov 2026 – Oct 2027) · https://claude.ai/code/artifact/d5a3e44b-56e8-4f88-92da-b1c21e5fabc5 · 6 tested products sit unlisted; 5 hero products join two jobs no seller combines; 34 season-timed launches
