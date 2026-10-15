@@ -117,6 +117,12 @@ All paths are under `/home/claude/content/design/` unless they say otherwise. A 
 | 15 | **Calm text Reel**: code-made paper, blobs or sky background, slow drift, static text | Quiet | `slowpan.py` + `slowpan_bg.py` generators `paper`, `blobs`, `sky`, `forest` |
 | 16 | **Reel cover** (dedicated, never a raw frame) | n/a | `oct16-21/reels_lib.py` `render_cover()` (2×, safe-zone and hook-size QA); older `content/video/src/covers_v3.py` |
 
+**"Put a finger down" rules (style 2, Dharma, Oct 15):**
+- Covers and Reel hooks show **3 fingers** by default.
+- Carousels count down **one finger per slide**. A Reel may step down inside its hook scene (3 → 2 → 1), but its cover and frame 0 show the starting count.
+- Vary the count across posts: 3 most often, sometimes 5 or 2. Never use the same pose twice in a row on a page.
+- Cut-outs in `assets/cutouts/`: `glove-pink-3.png` (3 fingers), `glove-pink-2.png` (2), `glove-pink-1.png` (1). The 4- and 5-finger cut-outs still need clean photos: regenerate them when the Canva AI quota resets, then matte them with `samples-v5/matte.py`.
+
 **Retired, never use:**
 - the folded-letter look (`samples-v5/build_original.py` `fold_layer()`);
 - **plain handwritten lists** (text straight on the background with no note card). Lists are always sticky-note lists.
