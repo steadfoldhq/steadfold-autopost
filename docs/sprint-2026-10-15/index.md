@@ -13,3 +13,6 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - Pastel clothes and world.
 >   - Faces: soft brows, a lighter eye-patch ring, big eyes with two highlights, a defined muzzle outline, and a nose with a highlight.
 - A4 · Sprint A4 · Littlefold 90-Day Backlog (Oct 19 2026 – Jan 17 2027) · https://claude.ai/code/artifact/4e40f05e-5115-47ad-b70c-ecad7a6f0a8e · 92 sourced ideas staged bump-to-toddler, Small Wins No.1–13, 2 FIRST series, 10 shareable drops
+> - 7:33 pm, Dharma: the lighter-tone version is REJECTED. Keep the first reindeer colours: warm caramel and cocoa fur (#a8714d, #b9805a, #c58e63, #d9a576), cream muzzle and antlers, mint and pink clothes.
+>   - Faces must NOT be round. Use a deer-shaped head: a broad forehead tapering into a soft, longer muzzle with the nose near the tip.
+>   - Keep the faces simple: big eyes with highlights, blush, and a clean mouth. No lashes, no eye rings, no extra face lines.
