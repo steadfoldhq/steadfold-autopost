@@ -8,3 +8,7 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 > - Colours are cuter and brighter: soft candy and pastel, warm and catchy. No neon and no flashing; low stimulation still applies.
 > - The world around them must look lovely.
 > - Species options with Dharma: A otters, B capybaras, C red pandas, D reindeer/caribou (added 7:30 pm; Dharma likes it). Cute reindeer: soft rounded antlers, a big round face and a cream muzzle. Never a red nose (too close to Rudolph). Fewer interior lines: Dharma said the red-panda face markings looked 'broken'. Until he picks, include reindeer as one of the top 2 in look v2. Keep the rig easy to swap species.
+> - 7:31 pm, Dharma on the reindeer: LIGHTER, cuter tones and more defined faces.
+>   - Fur: pale fawn and caramel (#e2b48c, #ebc29e, #f3d3b2), cream muzzle, cream antlers.
+>   - Pastel clothes and world.
+>   - Faces: soft brows, a lighter eye-patch ring, big eyes with two highlights, a defined muzzle outline, and a nose with a highlight.
