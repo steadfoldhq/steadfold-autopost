@@ -115,14 +115,16 @@ For each Reel: a Shorts title (100 characters or fewer, search-phrase style), a 
 - **TikTok / Pinterest caption:** After 7 pm: one prompt plans tomorrow, then lid down. Photo made with AI. #eveningroutine #aitips #worklifebalance
 
 ## Sun Oct 18
-### Fully Funded · `ff-reel-1018-beneficiary.mp4`
-- **Shorts title** (72 chars): Does your will cover your retirement account? Check the beneficiary form
+### Fully Funded · `ff-reel-1018-rule-72.mp4`
+- **Shorts title** (70 chars): Rule of 72: how long does it take to double your money? (example math)
 - **Description:**
   ```
-  In many countries, retirement accounts and life insurance follow their own beneficiary form. Rules differ; check yours.
-  General education only, not financial advice. #Shorts #estateplanning
+  Divide 72 by the yearly rate: at an example 6%, 72 ÷ 6 = 12 years, so 10,000 → about 20,508. A shortcut, not a promise.
+  General education only, not financial advice. #Shorts #investing #compoundinterest
   ```
-- **TikTok / Pinterest caption:** Your will may not cover this: check the beneficiary on each retirement account and policy, plus a backup. Rules differ where you live. General education only, not financial advice. #estateplanning #personalfinance #lifeinsurance
+- **TikTok / Pinterest caption:** How long to double your money? Divide 72 by the rate: 6% → about 12 years (example math, not a promise; real returns vary and can fall). General education only, not financial advice. #investing #personalfinance #moneytips
+
+_Replaced the beneficiary-form Reel (`ff-reel-1018-beneficiary`, not scheduled): the Oct 18 feed post `ff-w03-3-guardian-will` already covers beneficiaries._
 
 ### Littlefold · `lf-reel-1018-breathe.mp4`
 - **Shorts title** (62 chars): Baby won't stop crying? It's OK to step away for a few minutes
