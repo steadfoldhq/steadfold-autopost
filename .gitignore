@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 state/.published.*.tmp
 .DS_Store
+.upload/

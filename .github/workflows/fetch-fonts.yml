@@ -1,0 +1,34 @@
+# One-off helper: downloads open-licence (SIL OFL) handwriting/display fonts from
+# github.com/google/fonts into assets/fonts so the studio can use them. Manual only.
+name: Fetch fonts
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download OFL fonts
+        run: |
+          mkdir -p assets/fonts
+          base=https://raw.githubusercontent.com/google/fonts/main/ofl
+          for f in "caveat/Caveat%5Bwght%5D.ttf:Caveat-Variable.ttf" "caveat/OFL.txt:Caveat-OFL.txt" \
+                   "caveatbrush/CaveatBrush-Regular.ttf:CaveatBrush-Regular.ttf" "caveatbrush/OFL.txt:CaveatBrush-OFL.txt" \
+                   "gochihand/GochiHand-Regular.ttf:GochiHand-Regular.ttf" "gochihand/OFL.txt:GochiHand-OFL.txt" \
+                   "kalam/Kalam-Bold.ttf:Kalam-Bold.ttf" "kalam/Kalam-Regular.ttf:Kalam-Regular.ttf" "kalam/OFL.txt:Kalam-OFL.txt" \
+                   "playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf:PlayfairDisplay-Variable.ttf" "playfairdisplay/OFL.txt:PlayfairDisplay-OFL.txt" \
+                   "dmserifdisplay/DMSerifDisplay-Regular.ttf:DMSerifDisplay-Regular.ttf" "dmserifdisplay/OFL.txt:DMSerifDisplay-OFL.txt" \
+                   "fraunces/Fraunces%5BSOFT,WONK,opsz,wght%5D.ttf:Fraunces-Variable.ttf" "fraunces/OFL.txt:Fraunces-OFL.txt"; do
+            src="${f%%:*}"; dst="${f##*:}"
+            curl -sSfL -o "assets/fonts/$dst" "$base/$src" && echo "ok $dst" || echo "::warning::missing $src"
+          done
+          ls -la assets/fonts
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fonts
+          git diff --cached --quiet && exit 0
+          git commit -m "assets: OFL fonts for the studio"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
