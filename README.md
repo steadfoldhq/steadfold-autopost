@@ -1,12 +1,13 @@
 # Steadfold Autopost
 
-Posts Steadfold's Instagram carousels **by itself, on schedule**, for three accounts:
+Posts Steadfold's Instagram carousels **by itself, on schedule**, for four accounts:
 
 | Account | Usual time (Toronto) |
 |---|---|
 | @fullyfundedhq | 12:00 pm |
 | @lockedhourhq | 12:30 pm |
 | @hourbackhq | 1:00 pm |
+| @littlefoldhq | 11:30 am |
 
 Once it's set up, there is **no daily work**. You add a week of posts once a week, and that's it.
 
@@ -24,7 +25,7 @@ Once it's set up, there is **no daily work**. You add a week of posts once a wee
   6. writes the result (post link, time) into `state/published.json`.
 - It **never posts the same thing twice**. It saves progress after every step, and before posting it also checks the account's latest posts on Instagram.
 - If something fails, it carries on with the other posts. The run is then marked as failed, and **GitHub emails you**.
-- Once a week, a second robot renews the three Instagram tokens so they never expire (they last 60 days).
+- Once a week, a second robot renews the four Instagram tokens so they never expire (they last 60 days).
 
 It uses only Instagram's official API ("Instagram API with Instagram Login") and GitHub. It doesn't need a Facebook Page, Meta Business Suite or Chrome.
 
@@ -86,6 +87,7 @@ You'll do this once. Steps 5 to 9 can be done with **Claude in Chrome**: paste `
      | @fullyfundedhq | `IG_TOKEN_FULLYFUNDED` |
      | @lockedhourhq | `IG_TOKEN_LOCKEDHOUR` |
      | @hourbackhq | `IG_TOKEN_HOURBACK` |
+     | @littlefoldhq | `IG_TOKEN_LITTLEFOLD` |
    - Repeat for all three accounts. Log out of Instagram in the pop-up between accounts.
 
 ### Part C: The token-renewer key and the first check
