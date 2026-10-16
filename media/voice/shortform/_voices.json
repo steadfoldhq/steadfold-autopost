@@ -269,5 +269,33 @@
    "gender": "male",
    "use_case": "advertisement"
   }
+ },
+ {
+  "name": "Kayla",
+  "voice_id": "sWsBiVcjjowceAScTnu3",
+  "category": "professional",
+  "labels": {
+   "use_case": "social_media",
+   "descriptive": "casual",
+   "accent": "american",
+   "language": "en",
+   "age": "young",
+   "gender": "female",
+   "locale": "en-US"
+  }
+ },
+ {
+  "name": "Drew - Casual, Curious, Fun",
+  "voice_id": "q0IMILNRPxOgtBTS4taI",
+  "category": "professional",
+  "labels": {
+   "use_case": "social_media",
+   "age": "young",
+   "language": "en",
+   "descriptive": "upbeat",
+   "gender": "male",
+   "accent": "american",
+   "locale": "en-US"
+  }
  }
 ]

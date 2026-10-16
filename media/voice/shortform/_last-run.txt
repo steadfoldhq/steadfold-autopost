@@ -1,6 +1,12 @@
-ff-r2-who-has-more: ok
-ff-r2-spot-the-mistake: ok
-lh-r2-which-one: ok
-lh-r2-pov-7pm: ok
-hb-r2-three-words: ok
-hb-r2-never-paste: ok
+ff-r2-who-has-more-v3: ok (eleven_v3, timestamps, 912447 bytes)
+ff-r2-who-has-more-v3-t2: ok (eleven_v3, timestamps, 838051 bytes)
+ff-r2-spot-the-mistake-v3: ok (eleven_v3, timestamps, 648715 bytes)
+ff-r2-spot-the-mistake-v3-t2: ok (eleven_v3, timestamps, 685914 bytes)
+lh-r2-which-one-v3: ok (eleven_v3, timestamps, 464395 bytes)
+lh-r2-which-one-v3-t2: ok (eleven_v3, timestamps, 442661 bytes)
+lh-r2-pov-7pm-v3: ok (eleven_v3, timestamps, 494070 bytes)
+lh-r2-pov-7pm-v3-t2: ok (eleven_v3, timestamps, 511625 bytes)
+hb-r2-three-words-v3: ok (eleven_v3, timestamps, 446423 bytes)
+hb-r2-three-words-v3-t2: ok (eleven_v3, timestamps, 397940 bytes)
+hb-r2-never-paste-v3: ok (eleven_v3, timestamps, 558018 bytes)
+hb-r2-never-paste-v3-t2: ok (eleven_v3, timestamps, 574318 bytes)
