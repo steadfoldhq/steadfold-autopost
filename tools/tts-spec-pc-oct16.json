@@ -1,0 +1,18 @@
+{
+ "out": "media/voice/pc-test",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {"name": "pc-pip-a", "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "settings": {"stability": 0.35, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 1.0},
+   "text": "Ploop! I've got a plan. A big, splashy plan!"},
+  {"name": "pc-pip-b", "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+   "settings": {"stability": 0.35, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 1.0},
+   "text": "Ploop! I've got a plan. A big, splashy plan!"},
+  {"name": "pc-wren-a", "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "settings": {"stability": 0.3, "similarity_boost": 0.75, "style": 0.65, "use_speaker_boost": true, "speed": 1.05},
+   "text": "Flippity-flop... I'm UP! Me first!"},
+  {"name": "pc-wren-b", "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+   "settings": {"stability": 0.3, "similarity_boost": 0.75, "style": 0.65, "use_speaker_boost": true, "speed": 1.05},
+   "text": "Flippity-flop... I'm UP! Me first!"}
+ ]
+}
