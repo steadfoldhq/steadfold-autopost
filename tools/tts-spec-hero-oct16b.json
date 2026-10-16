@@ -1,0 +1,18 @@
+{
+ "out": "media/voice/hero2",
+ "model": "eleven_v3",
+ "items": [
+  {"name": "ff-tuesdays-v3", "voice_id": "bIHbv24MWmeRgasZH58o", "model": "eleven_v3",
+   "settings": {"stability": 0.5, "similarity_boost": 0.8},
+   "text": "[curious] What's money actually for? [short pause] Not the car. [warmly] This. A Tuesday morning that's all yours. [softly] No alarm. No traffic. [confident] Three hundred a month from twenty-five, at eight percent, grows to over a million by sixty-five. [warmly] Start small. Buy back your Tuesdays."},
+  {"name": "lf-warm-tea-v3", "voice_id": "EXAVITQu4vr4xnSDxMaL", "model": "eleven_v3",
+   "settings": {"stability": 0.5, "similarity_boost": 0.8},
+   "text": "[tired] Tea number one. Reheated... twice. [sighs] Nobody claps for this part. [gently] Then one morning, the light comes in... [warmly] and you drink it warm. [softly] That counts. Small wins count."},
+  {"name": "ff-tuesdays-v2", "voice_id": "bIHbv24MWmeRgasZH58o", "model": "eleven_multilingual_v2",
+   "settings": {"stability": 0.38, "similarity_boost": 0.8, "style": 0.4, "use_speaker_boost": true, "speed": 1.0},
+   "text": "What's money actually for? Not the car. This. A Tuesday morning that's all yours. No alarm. No traffic. Three hundred a month from twenty-five, at eight percent, grows to over a million by sixty-five. Start small. Buy back your Tuesdays."},
+  {"name": "lf-warm-tea-v2", "voice_id": "EXAVITQu4vr4xnSDxMaL", "model": "eleven_multilingual_v2",
+   "settings": {"stability": 0.38, "similarity_boost": 0.8, "style": 0.4, "use_speaker_boost": true, "speed": 0.95},
+   "text": "Tea number one. Reheated... twice. Nobody claps for this part. Then one morning, the light comes in... and you drink it warm. That counts. Small wins count."}
+ ]
+}
