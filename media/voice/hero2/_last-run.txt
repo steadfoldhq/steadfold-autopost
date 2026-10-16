@@ -1,0 +1,4 @@
+ff-tuesdays-v3: ok (eleven_v3, timestamps, 354472 bytes)
+lf-warm-tea-v3: ok (eleven_v3, timestamps, 221143 bytes)
+ff-tuesdays-v2: ok (eleven_multilingual_v2, timestamps, 291778 bytes)
+lf-warm-tea-v2: ok (eleven_multilingual_v2, timestamps, 164718 bytes)
