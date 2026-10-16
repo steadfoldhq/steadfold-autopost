@@ -57,7 +57,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--stage)}
 .par{position:absolute;inset:-6%;background-size:cover;background-position:center;will-change:transform}
 .el{position:absolute}
 .c{left:0;width:1080px;text-align:center}
-.el[style*="width:1080px;text-align:center"]{padding-left:70px;padding-right:70px}
+.cc{padding-left:70px;padding-right:70px}
 .w{display:inline-block}
 .chip{position:absolute;display:flex;align-items:center;gap:12px;border-radius:999px;padding:6px 22px 6px 6px;font:700 28px/1 Inter}
 .chip img{width:46px;height:46px;border-radius:50%;background:#fff}
@@ -74,6 +74,8 @@ def asset(name):
 
 def el(html, x=0, y=0, w=None, a="up", t=0.0, d=0.4, cls="", style="", r=0, loop=None, amp=None, **data):
     """One positioned element. x='c' centres it across the frame. a = entrance animation (see motion.js)."""
+    if x == "c":
+        cls = (cls + " cc").strip()
     pos = "left:0;width:1080px;text-align:center;" if x == "c" else f"left:{x}px;" + (f"width:{w}px;" if w else "")
     attrs = f'data-a="{a}" data-t="{t:.3f}" data-d="{d}"'
     if r:
@@ -258,7 +260,7 @@ def _worker(html_path, frames, outdir, dsf):
                 pg.set_default_timeout(45000)  # a crashed renderer raises instead of hanging
                 pg.goto(url)
                 pg.wait_for_timeout(300)
-                pg.evaluate("document.fonts.ready")
+                pg.evaluate("document.fonts.ready.then(() => window.refit && window.refit())")
                 pages.append(pg)
             state.update(b=b, hi=pages[0], lo=pages[1], n=0)
 
@@ -401,6 +403,7 @@ def overflow_check(reel, margin=30):
         pg = b.new_page(viewport={"width": W, "height": H})
         pg.goto(Path(f.name).as_uri())
         pg.wait_for_timeout(300)
+        pg.evaluate("document.fonts.ready.then(() => window.refit && window.refit())")
         for s in reel.scenes:
             for t in (s["start"] + s["dur"] * 0.6, s["start"] + s["dur"] - 0.2):
                 pg.evaluate(f"seek({t:.4f})")

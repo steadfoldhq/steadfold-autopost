@@ -345,7 +345,7 @@ def lh_one_tab():
     r.scene(1.5, "".join(['<div class="par dotsp"></div>', words("Close every tab / *but one.*", "c", 560, t=0.0, gap=0.1, cls="H", em_cls="emy",
                                                                style="font-size:150px")]), tin="glitch", td=0.2, cam="push", shake=(0.0, 0.2, 20))
     r.scene(2, "".join(['<div class="par dotsc"></div>',
-                        el('<div class="tabs"><div class="tab" style="flex:0 0 300px;background:#FFD43B">The one task</div></div><div class="win"></div>',
+                        el('<div class="tabs"><div class="tab" style="flex:0 0 520px;height:96px;background:#FFD43B;font:900 48px/86px \'Inter Display\'">The one task</div></div><div class="win"></div>',
                            60, 600, a="stamp", t=0.0, d=0.3),
                         words("Ahh.", "c", 1250, t=0.4, cls="H", style="font-size:170px")]), tin="spin", cam="push")
     steps = [("1", "Keep the one tab / you *need.*"), ("2", "Opened a new one? / *Close it.* Go back."), ("3", "Need something later? / *Jot it* on paper.")]
