@@ -151,8 +151,8 @@ def melody(key, prog, hook, r, bars, octave=1, vel=64, climb=True, hang=4, answe
         if b == bars - 1:
             # the "what's next" hang: an unresolved open note over V, leads back to bar 1
             out.append((o, 2.6, key.deg(hang, octave), vel - 2))
-            out.append((o + 3, 0.5, key.deg(hang - 1, octave), vel - 14))
-            out.append((o + 3.5, 0.5, key.deg(hook[0][2] + 1, octave), vel - 12))
+            out.append((o + 3, 0.5, key.deg(hang - 1, octave), vel - 6))
+            out.append((o + 3.5, 0.5, key.deg(hook[0][2] + 1, octave), vel - 4))
             continue
         cell = answer if (answer and b % 4 == 3) else hook
         shift = 0 if b % 4 in (0, 2) else (cdeg - prog[0][0])
@@ -219,6 +219,8 @@ def beat(bars, r, style="lofi", vel=60, start_bar=0, swing=0.0, build_from=None)
     for b in range(start_bar, bars):
         o = b * 4
         lift = 6 if (build_from is not None and b >= build_from) else 0
+        if b == bars - 1:  # soft pickup into the loop point, so bar 1 arrives smoothly
+            out += [(o + 3.5, .3, 36, vel - 14), (o + 3.75, .3, 36, vel - 18)]
         if style == "lofi":
             out += [(o, .3, 36, vel), (o + 2.5, .3, 36, vel - 14), (o + 1, .3, 37, vel - 8), (o + 3, .3, 37, vel - 6)]
             hats = [(i * 0.5 + (swing if i % 2 else 0)) for i in range(8)]
@@ -410,7 +412,7 @@ def hb_a(k, n, r):
 
 
 @track("HB-B", "hourback", "sunny-strum", 112, 67, "G major", "playful, light",
-       "Nylon-guitar strum, clarinet tune and woodblock; a clever little life-hack feel.")
+       "Nylon-guitar strum, marimba tune and woodblock; a clever little life-hack feel.")
 def hb_b(k, n, r):
     prog = [(I, "triad"), (V, "triad"), (IV, "triad"), (V, "triad")]
     hook = [(0, 0.5, 2), (0.5, 0.5, 4), (1, 1, 5), (2, 0.5, 4), (2.5, 0.5, 2), (3, 1, 0)]
@@ -418,7 +420,7 @@ def hb_b(k, n, r):
     strum = chords(k, prog, n, r, rhythm=((0, .45), (1, .45), (1.5, .45), (2.5, .45), (3, .45)), vel=48, center=60)
     return [
         P(0, 24, strum, vol=86, rev=40, pan=44),
-        P(1, 71, melody(k, prog, hook, r, n, octave=0, vel=60, hang=8, answer=answer), vol=80, rev=55, pan=80),
+        P(1, 12, melody(k, prog, hook, r, n, octave=0, vel=66, hang=8, answer=answer), vol=84, rev=50, pan=80),
         P(2, 32, bass(k, prog, n, r, rhythm=((0, 1), (1.5, .5), (2, 1), (3, 1)), vel=70, start_bar=1, walk=True), vol=92, rev=10),
         P(9, 0, beat(n, r, "snap", vel=58, start_bar=1), vol=74, rev=25),
     ]
@@ -430,7 +432,7 @@ def hb_c(k, n, r):
     prog = [(I, "7"), (VI, "7"), (II, "7"), (V, "7")]
     hook = [(0, 0.5, 7), (0.5, 0.5, 6), (1, 0.5, 4), (1.5, 0.5, 5), (2, 0.5, 6), (2.5, 1.5, 4)]
     return [
-        P(0, 8, melody(k, prog, hook, r, n, octave=1, vel=64, hang=8), vol=84, rev=55, pan=74),
+        P(0, 8, melody(k, prog, hook, r, n, octave=0, vel=62, hang=8), vol=80, rev=55, pan=74),
         P(1, 4, chords(k, prog, n, r, rhythm=((0.5, .4), (1.5, .4), (2.5, .4), (3.5, .4)), vel=44, center=60), vol=84, rev=45, pan=52, cho=25),
         P(2, 32, bass(k, prog, n, r, rhythm=tuple((i, .9) for i in range(4)), vel=70, start_bar=0, walk=True), vol=92, rev=10),
         P(9, 0, beat(n, r, "snap", vel=60, start_bar=1), vol=74, rev=25),
