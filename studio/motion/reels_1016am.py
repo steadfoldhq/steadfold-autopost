@@ -516,7 +516,7 @@ def hb_calm():
     ]), tin="pixel", td=0.4, cam="pull")
     r.scene(1.5, "".join([
         '<div class="par cream"></div>',
-        words("Read it once. / Make it *sound like you.*", "c", 560, t=0.0, gap=0.08, cls="H", style="font-size:104px"),
+        words("Make it / *sound like you.*", "c", 560, t=0.0, gap=0.08, cls="H", style="font-size:130px"),
         emoji("✏️", 420, 1060, 200, t=0.4, d=0.3, r=-10, loop="wobble"),
     ]), tin="whipL", cam="push")
     r.scene(1.5, "".join([
@@ -547,7 +547,7 @@ R["hb-reel-1016am-calm-reply"] = dict(make=hb_calm, music="hb-playful-inst-01.mp
 # =============================================================================================== build
 def build(rid, outdir, qa_only=False, dsf=2):
     spec = R[rid]
-    r = spec["make"]()
+    r = spec["make"]().stretch(12.6)
     work = Path(outdir) / rid
     if not qa_only:
         fdir, n = render_frames(r, work, dsf=dsf)

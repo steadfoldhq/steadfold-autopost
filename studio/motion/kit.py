@@ -57,6 +57,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--stage)}
 .par{position:absolute;inset:-6%;background-size:cover;background-position:center}
 .el{position:absolute}
 .c{left:0;width:1080px;text-align:center}
+.el[style*="width:1080px;text-align:center"]{padding-left:70px;padding-right:70px}
 .w{display:inline-block}
 .chip{position:absolute;display:flex;align-items:center;gap:12px;border-radius:999px;padding:6px 22px 6px 6px;font:700 28px/1 Inter}
 .chip img{width:46px;height:46px;border-radius:50%;background:#fff}
@@ -168,7 +169,7 @@ class Reel:
                 tr["d"] = 1 / FPS
         self.scenes.append(dict(start=round(self.t, 4), dur=dur, html=html, tin=tr, cam=cam, bg=bg or self.stage, cls=cls))
         if shake:
-            self.shakes.append([self.t + shake[0], shake[1], shake[2]])
+            self.shakes.append([len(self.scenes) - 1, shake[0], shake[1], shake[2]])
         self.t += dur
         return self
 
@@ -176,6 +177,22 @@ class Reel:
         """Close on the hook scene again so the last frame flows into frame 0."""
         s0 = self.scenes[0]
         return self.scene(beats, s0["html"], tin=tin, cam=s0["cam"], bg=s0["bg"], cls=s0["cls"], **kw)
+
+    def stretch(self, target=12.6):
+        """Add half beats to the wordiest scenes (never the hook) until the Reel is at least `target` s."""
+        import re as _re
+        wc = lambda h: len(_re.findall(r'class="w', h)) + len(_re.sub(r"<[^>]+>", " ", h).split()) // 3  # noqa: E731
+        k = 0
+        order = sorted(range(1, len(self.scenes)), key=lambda i: -wc(self.scenes[i]["html"]))
+        while self.duration < target and order:
+            self.scenes[order[k % len(order)]]["dur"] += 0.5 * self.beat
+            k += 1
+            t = self.scenes[0]["start"]
+            for sc in self.scenes:
+                sc["start"] = round(t, 4)
+                t += sc["dur"]
+            self.t = t
+        return self
 
     @property
     def duration(self):
@@ -185,8 +202,9 @@ class Reel:
         return [s["start"] for s in self.scenes[1:]]
 
     def html(self):
+        shakes = [[self.scenes[i]["start"] + t0, d, a] for i, t0, d, a in self.shakes]
         tl = dict(scenes=[dict(start=s["start"], dur=s["dur"], tin=s["tin"], cam=s["cam"]) for s in self.scenes],
-                  shakes=self.shakes, blurSpans=self.blur_spans)
+                  shakes=shakes, blurSpans=self.blur_spans)
         body = "".join(f'<div class="scene {s["cls"]}" style="background:{s["bg"]}"><div class="cam">{s["html"]}</div></div>'
                        for s in self.scenes)
         js = (HERE / "motion.js").read_text()

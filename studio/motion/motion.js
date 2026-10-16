@@ -22,10 +22,31 @@
     stage = document.getElementById('stage');
     ov = document.getElementById('ov');
     scenes = [...document.querySelectorAll('.scene')];
+    autofit();
     document.querySelectorAll('[data-a=type]').forEach(el => { el.dataset.full = el.textContent; });
     document.querySelectorAll('[data-a=draw]').forEach(p => {
       const L = p.getTotalLength ? p.getTotalLength() : 1000; p.dataset.len = L;
       p.style.strokeDasharray = L; p.style.strokeDashoffset = L;
+    });
+  }
+
+  // Shrink any text block whose lines would leave the safe width (x 80-1000) once the camera pushes in.
+  function autofit() {
+    scenes.forEach(sc => {
+      sc.style.display = 'block';
+      sc.querySelectorAll('.el').forEach(el => {
+        if (!el.textContent.trim() || el.querySelector('.el') || el.tagName === 'svg') return;
+        for (let k = 0; k < 6; k++) {
+          const rg = document.createRange(); rg.selectNodeContents(el);
+          let lo = 1e9, hi = -1e9;
+          for (const r of rg.getClientRects()) { if (r.width < 1) continue; lo = Math.min(lo, r.left); hi = Math.max(hi, r.right); }
+          const wdt = hi - lo;
+          if (!(wdt > 920)) break;
+          const fs = parseFloat(getComputedStyle(el).fontSize);
+          el.style.fontSize = (fs * 915 / wdt) + 'px';
+        }
+      });
+      sc.style.display = 'none';
     });
   }
 
