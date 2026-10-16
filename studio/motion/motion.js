@@ -36,6 +36,7 @@
       sc.style.display = 'block';
       sc.querySelectorAll('.el').forEach(el => {
         if (!el.textContent.trim() || el.querySelector('.el') || el.tagName === 'svg') return;
+        if (!(el.dataset.a === 'words' || el.style.width === '1080px')) return;  // text blocks only, never cards
         for (let k = 0; k < 6; k++) {
           const rg = document.createRange(); rg.selectNodeContents(el);
           let lo = 1e9, hi = -1e9;
