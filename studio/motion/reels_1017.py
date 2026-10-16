@@ -339,7 +339,7 @@ def lh_one_tab():
 """, stage="#FFE27A")
     many = "".join(f'<div class="tab" data-a="pop" data-t="{0.02 * k - 0.6:.2f}" data-d="0.2">{"✕" if k % 3 else "•"}</div>' for k in range(22))
     r.scene(2, "".join(['<div class="par dots"></div>', AM.lh_chip(),
-                        el('How many tabs<br>are <span class="em">open?</span>', "c", 400, a="none", cls="H", style="font-size:150px"),
+                        el('How many tabs<br>are <span class="em">open?</span>', "c", 430, a="none", cls="H", style="font-size:122px"),
                         el(f'<div class="tabs">{many}</div><div class="win"></div>', 60, 820, a="none", loop="buzz", amp=0.3),
                         emoji("😵", 420, 1000, 220, t=0.3, d=0.3, loop="wobble")]), cam="push")
     r.scene(1.5, "".join(['<div class="par dotsp"></div>', words("Close every tab / *but one.*", "c", 560, t=0.0, gap=0.1, cls="H", em_cls="emy",
