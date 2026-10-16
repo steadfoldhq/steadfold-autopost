@@ -1,7 +1,5 @@
 ff-s1a: ok
 ff-s1b: ok
 ff-s2: ok
-lh-s1: ok
-lh-s2: ok
-hb-s1: HTTP 404 b'{"detail":{"type":"not_found","code":"voice_not_found","message":"A voice with voice_id \'iP95p4xoKVk53GtZJBf3\' was not found.","status":"voice_not_found","request_id":"40e0af388002ea6c9b998942e69b90ac"}}'
-hb-s2: HTTP 404 b'{"detail":{"type":"not_found","code":"voice_not_found","message":"A voice with voice_id \'iP95p4xoKVk53GtZJBf3\' was not found.","status":"voice_not_found","request_id":"360ae07b4ea42a6240c628fb5700c8fb"}}'
+hb-s1: ok
+hb-s2: ok
