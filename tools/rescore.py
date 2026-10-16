@@ -4,10 +4,10 @@
     python3 tools/rescore.py --apply         # re-scores and rewrites the Reel MP4s in media/reels/
     python3 tools/rescore.py --apply --only lf-reel-1017am-read,hb-reel-1018-school-email
 
-Picks live in tools/music-picks.json:  {"fullyfunded": ["ff-a-curious-lofi.mp3", ...], ...}
-Each Reel gets one track from its page's list (stable rotation by Reel id), so a
-page's Reels don't all sound the same. Optional per-Reel override:
-  {"overrides": {"<reel id>": "lh-c-morning-drive.mp3"}}
+Picks live in tools/music-picks.json:  {"fullyfunded": ["v3/ff-c-confident-build-el.mp3", ...], ...}
+Each Reel gets one track from its page's list (alternating in publish order), so a
+page's Reels don't all sound the same. Optional per-Reel override, and Reels to leave alone (e.g. edits cut to their own beat):
+  {"overrides": {"<reel id>": "v3/lh-c-morning-drive-el.mp3"}, "keep": ["<reel id>"]}
 
 What it does, per Reel:
 - Only Reels (posts with "video", not stories) whose publish_at is still in the
@@ -26,7 +26,6 @@ Never publishes anything.
 """
 import argparse
 import datetime as dt
-import hashlib
 import json
 import os
 import subprocess
@@ -35,7 +34,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MEDIA = ROOT / "media"
-LIB = MEDIA / "music" / "library" / "v2"
+LIB = MEDIA / "music" / "library"   # picks are paths relative to this folder, e.g. "v3/ff-c-confident-build-el.mp3"
 MAX_BYTES = 19_000_000
 
 
@@ -57,14 +56,16 @@ def queued_reels(now):
     return out
 
 
-def pick_for(reel, picks):
+def pick_for(reel, picks, counters):
+    """Alternate through the page's list in publish order, so neighbouring Reels sound different."""
     if reel["id"] in picks.get("overrides", {}):
         return picks["overrides"][reel["id"]]
     choices = picks.get(reel["account"]) or []
     if not choices:
         return None
-    h = int(hashlib.sha1(reel["id"].encode()).hexdigest(), 16)
-    return choices[h % len(choices)]
+    i = counters.get(reel["account"], 0)
+    counters[reel["account"]] = i + 1
+    return choices[i % len(choices)]
 
 
 def find_vo(vid):
@@ -110,12 +111,15 @@ def main():
     picks = json.load(open(a.picks))
     now = dt.datetime.now(dt.timezone.utc)
     only = {x for x in a.only.split(",") if x}
-    log = []
-    for reel in queued_reels(now):
+    log, counters = [], {}
+    for reel in sorted(queued_reels(now), key=lambda r: r["publish_at"]):
         if only and reel["id"] not in only:
             continue
+        if reel["id"] in picks.get("keep", []):
+            print(f"keep {reel['id']}: cut to its own beat, music left as is")
+            continue
         vid = MEDIA / reel["video"]
-        track = pick_for(reel, picks)
+        track = pick_for(reel, picks, counters)
         if not track or not vid.exists():
             print(f"skip {reel['id']}: {'no pick for ' + reel['account'] if not track else 'missing video'}")
             continue

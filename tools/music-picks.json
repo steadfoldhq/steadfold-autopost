@@ -1,0 +1,31 @@
+{
+ "_note": "Default picks made by the Music agent Oct 16 (signal QA + brief). Dharma's by-ear picks replace these: edit the lists, then run: python3 tools/rescore.py --apply",
+ "fullyfunded": [
+  "v3/ff-c-confident-build-el.mp3",
+  "v3/ff-d-question-marimba-el.mp3"
+ ],
+ "lockedhour": [
+  "v3/lh-a-focus-pulse-el.mp3",
+  "v3/lh-c-morning-drive-el.mp3"
+ ],
+ "hourback": [
+  "v3/hb-a-ta-da-el.mp3",
+  "v3/hb-c-clever-celesta-el.mp3"
+ ],
+ "littlefold": [
+  "v3/lf-a-cosy-el.mp3",
+  "v3/lf-c-sunny-morning-el.mp3"
+ ],
+ "stingers": [
+  "v3/st-1-soft-rise-el.mp3",
+  "v3/st-2-ta-da-el.mp3",
+  "v3/st-3-wait-for-it-el.mp3"
+ ],
+ "overrides": {},
+ "keep": [
+  "lf-reel-1016am-tummy-time",
+  "ff-reel-1016am-buffer",
+  "lh-reel-1016am-before-email",
+  "hb-reel-1016am-calm-reply"
+ ]
+}

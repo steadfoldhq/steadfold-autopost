@@ -105,7 +105,7 @@ def check(path, kind="bed"):
     if tp > -1.0: fails.append("true-peak")
     if r["clipped"]: fails.append("clipping")
     if r["hf_8k_pct"] > 0.5 or r["hf_4_8k_pct"] > 4: fails.append("harsh-highs")
-    if r["voice_gap_db"] > -8: fails.append("voice-gap")
+    if kind == "bed" and r["voice_gap_db"] > -8: fails.append("voice-gap")  # stingers sit in pauses
     if kind == "bed" and r["hook_db"] < -6: fails.append("slow-start")
     if kind == "bed" and r["seam_ratio"] > 1.0: fails.append("loop-click")
     r["pass"] = not fails

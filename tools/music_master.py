@@ -11,7 +11,7 @@ Beds (names not starting with "st-"):
 2. Same gentle master as tools/music_post.py: HP 40 Hz, -3.5 dB @ 2.8 kHz
    (voice room), -2 dB @ 5.5 kHz, low-pass 9.5 kHz, 2:1 glue,
    two-pass loudnorm -14 LUFS / -1.5 dBTP.
-Stingers: trailing silence trimmed, 0.3 s fade, -15 LUFS.
+Stingers: trailing silence trimmed, 0.3 s fade, EQ, gain to -15 LUFS + limiter.
 Also writes OUTDIR/preview/<name> with a 1.2 s fade-out for listening.
 """
 import json
@@ -91,6 +91,18 @@ def master(src, dst, target, fade_out=0.0, dur=None):
                     "-c:a", "libmp3lame", "-b:a", "192k", dst], check=True)
 
 
+def gain_to(src, dst, target):
+    """Short stingers: loudnorm is unreliable under ~3 s, so EQ, measure, then plain gain + limiter."""
+    eq = f"/tmp/_eq_{os.path.basename(dst)}.wav"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-af", EQ, eq], check=True)
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", eq, "-af", "ebur128", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    i = float(err[err.rfind("Summary:"):].split("I:")[1].split("LUFS")[0])
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", eq, "-af", f"volume={target - i:.2f}dB,alimiter=limit=0.84:level=false",
+                    "-ar", str(SR), "-c:a", "libmp3lame", "-b:a", "192k", dst], check=True)
+    os.remove(eq)
+
+
 def main(out, files):
     os.makedirs(f"{out}/preview", exist_ok=True)
     report = []
@@ -104,14 +116,17 @@ def main(out, files):
             fl = int(0.3 * SR)
             y[-fl:] *= np.linspace(1, 0, fl)[:, None]
             write(tmp, y)
-            master(tmp, f"{out}/{name}", -15)
-            master(tmp, f"{out}/preview/{name}", -15)
+            gain_to(tmp, f"{out}/{name}", -15)
+            gain_to(tmp, f"{out}/preview/{name}", -15)
             score = None
         else:
             y, score = loop_cut(x)
             write(tmp, y)
             master(tmp, f"{out}/{name}", -14)
-            master(tmp, f"{out}/preview/{name}", -14, fade_out=1.2, dur=len(y) / SR)
+            # listening preview: the whole generated track with its own ending, mastered the same way
+            full = x[:min(len(x), active_end(x, -50) + int(0.2 * SR))]
+            write(tmp, full)
+            master(tmp, f"{out}/preview/{name}", -14, fade_out=0.6, dur=len(full) / SR)
         os.remove(tmp)
         report.append({"file": name, "seconds": round(len(y) / SR, 2), "loop_match": None if score is None else round(score, 2)})
         print(name, report[-1])

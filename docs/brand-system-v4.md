@@ -196,7 +196,7 @@ Everything is rendered at **2× and downsampled with Lanczos**:
 - Reels:
   - 1080×1920 at 30 fps, H.264 + AAC;
   - 12–18 s;
-  - music2 `warm` at about −14 LUFS;
+  - music from the library in §10 (music2 `warm` is retired), at about −14 LUFS;
   - under 19 MB.
 
 ## 8. Canva images
@@ -213,3 +213,15 @@ Notes:
 
 ## 9. Where the engine lives
 The full engine, with every sample build script and the cutouts, is packed at `studio/steadfold-studio.tgz`. See `studio/README.md` for setup and the self-test. Fonts are in `assets/fonts/`.
+
+## 10. Music (Oct 16, 2026: music2 retired)
+**Rule:** Social studio and Short-form studio score every Reel, Short and TikTok from the picked tracks in **`tools/music-picks.json`** (files in `media/music/library/v3/`). Never `music2.py` "warm": Dharma found it unpleasant and it screeched at high volume.
+- **Brief:** build curiosity and pull people to keep watching (gentle forward pulse, rising motif, light "what's next"). Suspense only for a reveal, and then only via a stinger.
+  - Fully Funded: confident, optimistic, curious lo-fi/pop. Locked Hour: focused, rhythmic, slight build. Hourback: playful, light, a "ta-da" lift. Littlefold: soft, tender, cosy, never sleepy.
+- **Source:** ElevenLabs Eleven Music via `.github/workflows/music.yml` (key stays in the `ELEVENLABS_API_KEY` secret). Starter plan: online commercial use, no attribution, 30 min of downloads a month, no streaming-platform (Spotify etc.) release. Fallback: `media/music/library/v2/` (FluidSynth real-instrument beds, MIT soundfont). Free libraries: Pixabay only without the Content ID shield icon, keep its licence certificate; not the YouTube Audio Library off YouTube.
+- **Stingers** (`st-1` soft rise, `st-2` ta-da, `st-3` wait-for-it): under 6 s, only at a reveal.
+- **Mix:** bed at −14 LUFS, true peak ≤ −1.5 dBTP, low-passed at 9.5 kHz, −3.5 dB at 2.8 kHz to leave room for a voice. With voiceover, put it in `media/reels/<id>-vo.wav`; `tools/rescore.py` keeps it on top at −16 LUFS and ducks the music under it.
+- **QA:** `python3 tools/music_check.py <file or folder>` must PASS (no clipping, no harsh highs, a hook in the first second, a click-free loop).
+- **Re-score queued Reels after a new pick:** edit `tools/music-picks.json`, then run `python3 tools/rescore.py --apply` and commit `media/`. Reels cut to their own beat go in the `keep` list. The old audio is kept in `media/reels/_orig-audio/`.
+- **Platform sounds:** Meta's Instagram Audio API (`audio_id` on Reel create, Facebook Login only) may let Autopost attach licensed library sounds. It's untested here: try it before you spend money. On TikTok, Business accounts use the free Commercial Music Library.
+

@@ -1,0 +1,82 @@
+[
+ {
+  "file": "ff-a-curious-lofi-el.mp3",
+  "seconds": 13.15,
+  "loop_match": 0.55
+ },
+ {
+  "file": "ff-b-bright-pop-el.mp3",
+  "seconds": 16.0,
+  "loop_match": 0.76
+ },
+ {
+  "file": "ff-c-confident-build-el.mp3",
+  "seconds": 15.0,
+  "loop_match": 0.98
+ },
+ {
+  "file": "ff-d-question-marimba-el.mp3",
+  "seconds": 16.25,
+  "loop_match": 0.87
+ },
+ {
+  "file": "hb-a-ta-da-el.mp3",
+  "seconds": 12.53,
+  "loop_match": 0.9
+ },
+ {
+  "file": "hb-b-sunny-strum-el.mp3",
+  "seconds": 13.49,
+  "loop_match": 0.86
+ },
+ {
+  "file": "hb-c-clever-celesta-el.mp3",
+  "seconds": 14.65,
+  "loop_match": 0.94
+ },
+ {
+  "file": "lf-a-cosy-el.mp3",
+  "seconds": 17.52,
+  "loop_match": 0.87
+ },
+ {
+  "file": "lf-b-tender-el.mp3",
+  "seconds": 14.64,
+  "loop_match": 0.81
+ },
+ {
+  "file": "lf-c-sunny-morning-el.mp3",
+  "seconds": 16.0,
+  "loop_match": 0.95
+ },
+ {
+  "file": "lh-a-focus-pulse-el.mp3",
+  "seconds": 15.09,
+  "loop_match": 0.95
+ },
+ {
+  "file": "lh-b-ticking-marimba-el.mp3",
+  "seconds": 15.01,
+  "loop_match": 0.93
+ },
+ {
+  "file": "lh-c-morning-drive-el.mp3",
+  "seconds": 16.87,
+  "loop_match": 0.9
+ },
+ {
+  "file": "st-1-soft-rise-el.mp3",
+  "seconds": 5.65,
+  "loop_match": null
+ },
+ {
+  "file": "st-2-ta-da-el.mp3",
+  "seconds": 2.4,
+  "loop_match": null
+ },
+ {
+  "file": "st-3-wait-for-it-el.mp3",
+  "seconds": 5.25,
+  "loop_match": null
+ }
+]
