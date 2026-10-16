@@ -1,0 +1,17 @@
+{"out": "media/voice/shortform", "model": "eleven_multilingual_v2",
+ "items": [
+  {"name": "ff-s1a", "voice_id": "nPczCjzI2devNBz1zQrb",
+   "text": "Two people save the same 150 a month until 65. One starts at 25. One starts at 35. Guess the gap."},
+  {"name": "ff-s1b", "voice_id": "nPczCjzI2devNBz1zQrb",
+   "text": "The late starter puts in 54,000 and ends near 150,000. The early starter puts in just 18,000 more... and ends near 299,000. Ten years. About 148,000 apart. The catch: this is example math at 6 percent a year. Real returns change, and can fall. What did you guess?"},
+  {"name": "ff-s2", "voice_id": "nPczCjzI2devNBz1zQrb",
+   "text": "POV: your first year freelancing in Canada. Clients pay you. Nobody takes tax off. It feels amazing. Then April. The CRA wants it all, at once. And if you owe more than 3,000 dollars this year, and in one of the last two, they'll want instalments every quarter too. The fix is boring: move a slice of every payment the day it lands. The catch? The right slice depends on your province and income. We built a spreadsheet that works it out."},
+  {"name": "lh-s1", "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "text": "Me: one hour of deep focus. My brain, four minutes in. Okay, the fix that actually has research behind it: an if-then plan. If I want my phone, then I write the thought down and keep going. Across 94 studies, if-then plans had a medium to large effect on reaching goals. Write yours in the comments."},
+  {"name": "lh-s2", "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "text": "Fake productivity, ranked. C tier: colour-coding your notes. Very pretty. Zero words written. B tier: a quick inbox check. It's never quick. A tier: building the perfect focus playlist for forty minutes. S tier: rewriting your to-do list. Beautifully. Again. Real work? The next ugly twenty-five minutes. Which one's yours?"},
+  {"name": "hb-s1", "voice_id": "iP95p4xoKVk53GtZJBf3",
+   "text": "POV: you need to say per my last email... without starting a war. What you typed. What you send. One line to any AI: make this kind but clear, keep it short. Then read it yourself before you hit send."},
+  {"name": "hb-s2", "voice_id": "iP95p4xoKVk53GtZJBf3",
+   "text": "214 unread in the family group chat. You need one answer: what time is dinner on Sunday. Paste it in and ask: what got decided, who's bringing what, and what do I need to reply to. Three lines. Uncle Dev still owes everyone a dessert."}
+ ]}
