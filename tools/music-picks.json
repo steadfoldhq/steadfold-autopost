@@ -1,5 +1,5 @@
 {
- "_note": "Default picks made by the Music agent Oct 16 (signal QA + brief). Dharma's by-ear picks replace these: edit the lists, then run: python3 tools/rescore.py --apply",
+ "_note": "FINAL for now: Dharma delegated the pick on Oct 16, 2:27 am ET (\"You decide for tomorrow\"). Music agent picks, by signal QA + brief. To change: edit the lists, then run: python3 tools/rescore.py --apply",
  "fullyfunded": [
   "v3/ff-c-confident-build-el.mp3",
   "v3/ff-d-question-marimba-el.mp3"

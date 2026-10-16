@@ -211,5 +211,282 @@
     "bytes": 1192972
    }
   ]
+ },
+ {
+  "at": "2026-10-16T06:28:18.336155+00:00",
+  "reels": [
+   {
+    "id": "lf-reel-1017am-read",
+    "publish_at": "2026-10-17T08:00:00-04:00",
+    "track": "v3/lf-a-cosy-el.mp3",
+    "voiceover": false,
+    "seconds": 17.0,
+    "bytes": 13148167
+   },
+   {
+    "id": "ff-reel-1017am-match",
+    "publish_at": "2026-10-17T08:15:00-04:00",
+    "track": "v3/ff-c-confident-build-el.mp3",
+    "voiceover": false,
+    "seconds": 17.2,
+    "bytes": 9970753
+   },
+   {
+    "id": "lh-reel-1017am-next-step",
+    "publish_at": "2026-10-17T08:30:00-04:00",
+    "track": "v3/lh-a-focus-pulse-el.mp3",
+    "voiceover": false,
+    "seconds": 17.0,
+    "bytes": 7385994
+   },
+   {
+    "id": "hb-reel-1017am-swap",
+    "publish_at": "2026-10-17T08:45:00-04:00",
+    "track": "v3/hb-a-ta-da-el.mp3",
+    "voiceover": false,
+    "seconds": 17.5,
+    "bytes": 1811881
+   },
+   {
+    "id": "ff-reel-1017-raise-half",
+    "publish_at": "2026-10-17T19:00:00-04:00",
+    "track": "v3/ff-d-question-marimba-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 9661324
+   },
+   {
+    "id": "hb-reel-1017-offline",
+    "publish_at": "2026-10-17T19:00:00-04:00",
+    "track": "v3/hb-c-clever-celesta-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 18602510
+   },
+   {
+    "id": "lf-reel-1017-one-job",
+    "publish_at": "2026-10-17T19:00:00-04:00",
+    "track": "v3/lf-c-sunny-morning-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 4438887
+   },
+   {
+    "id": "lh-reel-1017-one-tab",
+    "publish_at": "2026-10-17T19:00:00-04:00",
+    "track": "v3/lh-c-morning-drive-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 1651862
+   },
+   {
+    "id": "lf-reel-1018am-let-them-walk",
+    "publish_at": "2026-10-18T08:00:00-04:00",
+    "track": "v3/lf-a-cosy-el.mp3",
+    "voiceover": false,
+    "seconds": 20.0,
+    "bytes": 15875794
+   },
+   {
+    "id": "ff-reel-1018am-lower-rate",
+    "publish_at": "2026-10-18T08:15:00-04:00",
+    "track": "v3/ff-c-confident-build-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 1739009
+   },
+   {
+    "id": "lh-reel-1018am-pick-3",
+    "publish_at": "2026-10-18T08:30:00-04:00",
+    "track": "v3/lh-a-focus-pulse-el.mp3",
+    "voiceover": false,
+    "seconds": 17.5,
+    "bytes": 1783881
+   },
+   {
+    "id": "hb-reel-1018am-quiz-me",
+    "publish_at": "2026-10-18T08:45:00-04:00",
+    "track": "v3/hb-a-ta-da-el.mp3",
+    "voiceover": false,
+    "seconds": 17.0,
+    "bytes": 11428889
+   },
+   {
+    "id": "ff-reel-1018-rule-72",
+    "publish_at": "2026-10-18T19:00:00-04:00",
+    "track": "v3/ff-d-question-marimba-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 8353622
+   },
+   {
+    "id": "hb-reel-1018-school-email",
+    "publish_at": "2026-10-18T19:00:00-04:00",
+    "track": "v3/hb-c-clever-celesta-el.mp3",
+    "voiceover": false,
+    "seconds": 17.8,
+    "bytes": 1437053
+   },
+   {
+    "id": "lf-reel-1018-breathe",
+    "publish_at": "2026-10-18T19:00:00-04:00",
+    "track": "v3/lf-c-sunny-morning-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 18664896
+   },
+   {
+    "id": "lh-reel-1018-start-ugly",
+    "publish_at": "2026-10-18T19:00:00-04:00",
+    "track": "v3/lh-c-morning-drive-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 6243683
+   },
+   {
+    "id": "lf-reel-1019am-hunger-cues",
+    "publish_at": "2026-10-19T08:00:00-04:00",
+    "track": "v3/lf-a-cosy-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 7987288
+   },
+   {
+    "id": "ff-reel-1019am-gift-per-person",
+    "publish_at": "2026-10-19T08:15:00-04:00",
+    "track": "v3/ff-c-confident-build-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 13915601
+   },
+   {
+    "id": "lh-reel-1019am-pick-task",
+    "publish_at": "2026-10-19T08:30:00-04:00",
+    "track": "v3/lh-a-focus-pulse-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 1294791
+   },
+   {
+    "id": "hb-reel-1019am-just-the-asks",
+    "publish_at": "2026-10-19T08:45:00-04:00",
+    "track": "v3/hb-a-ta-da-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 7524049
+   },
+   {
+    "id": "hb-reel-1019-one-sorry",
+    "publish_at": "2026-10-19T19:00:00-04:00",
+    "track": "v3/hb-c-clever-celesta-el.mp3",
+    "voiceover": false,
+    "seconds": 16.0,
+    "bytes": 10163563
+   },
+   {
+    "id": "ff-reel-1019-late-start",
+    "publish_at": "2026-10-19T19:00:00-04:00",
+    "track": "v3/ff-d-question-marimba-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 18715499
+   },
+   {
+    "id": "lf-reel-1019-sick-day-plan",
+    "publish_at": "2026-10-19T19:00:00-04:00",
+    "track": "v3/lf-c-sunny-morning-el.mp3",
+    "voiceover": false,
+    "seconds": 16.0,
+    "bytes": 1156134
+   },
+   {
+    "id": "lh-reel-1019-odd-hours",
+    "publish_at": "2026-10-19T19:00:00-04:00",
+    "track": "v3/lh-c-morning-drive-el.mp3",
+    "voiceover": false,
+    "seconds": 16.0,
+    "bytes": 1459411
+   },
+   {
+    "id": "lf-reel-1020am-movements",
+    "publish_at": "2026-10-20T08:00:00-04:00",
+    "track": "v3/lf-a-cosy-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 10840059
+   },
+   {
+    "id": "ff-reel-1020am-three-numbers",
+    "publish_at": "2026-10-20T08:15:00-04:00",
+    "track": "v3/ff-c-confident-build-el.mp3",
+    "voiceover": false,
+    "seconds": 16.0,
+    "bytes": 1187304
+   },
+   {
+    "id": "lh-reel-1020am-nap-time",
+    "publish_at": "2026-10-20T08:30:00-04:00",
+    "track": "v3/lh-a-focus-pulse-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 8955387
+   },
+   {
+    "id": "hb-reel-1020am-driveway-text",
+    "publish_at": "2026-10-20T08:45:00-04:00",
+    "track": "v3/hb-a-ta-da-el.mp3",
+    "voiceover": false,
+    "seconds": 15.2,
+    "bytes": 999660
+   },
+   {
+    "id": "hb-reel-1020-three-tabs",
+    "publish_at": "2026-10-20T19:00:00-04:00",
+    "track": "v3/hb-c-clever-celesta-el.mp3",
+    "voiceover": false,
+    "seconds": 15.2,
+    "bytes": 1009903
+   },
+   {
+    "id": "ff-reel-1020-windfall-pause",
+    "publish_at": "2026-10-20T19:00:00-04:00",
+    "track": "v3/ff-d-question-marimba-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 9602262
+   },
+   {
+    "id": "lf-reel-1020-visitors",
+    "publish_at": "2026-10-20T19:00:00-04:00",
+    "track": "v3/lf-c-sunny-morning-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 17446520
+   },
+   {
+    "id": "lh-reel-1020-shutdown",
+    "publish_at": "2026-10-20T19:00:00-04:00",
+    "track": "v3/lh-c-morning-drive-el.mp3",
+    "voiceover": false,
+    "seconds": 16.0,
+    "bytes": 1459956
+   },
+   {
+    "id": "hb-reel-1021am-brand-email",
+    "publish_at": "2026-10-21T08:45:00-04:00",
+    "track": "v3/hb-a-ta-da-el.mp3",
+    "voiceover": false,
+    "seconds": 15.5,
+    "bytes": 7736120
+   },
+   {
+    "id": "hb-reel-1021-group-costume",
+    "publish_at": "2026-10-21T19:00:00-04:00",
+    "track": "v3/hb-c-clever-celesta-el.mp3",
+    "voiceover": false,
+    "seconds": 17.0,
+    "bytes": 1190494
+   }
+  ]
  }
 ]
