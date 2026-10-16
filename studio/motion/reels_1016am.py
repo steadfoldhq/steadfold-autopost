@@ -220,9 +220,9 @@ def ff_buffer():
         el(f'<div class="cal">{cells}</div>', 60, 820, 960, a="up", t=0.05),
         scribble_circle(128, 895, 80, 92, coral, 10, t=0.2, d=0.3),
         el('<span style="font:800 40px/1 Inter;color:#FF6A3D">today</span>', 70, 1010, a="pop", t=0.3),
-        scribble_circle(810, 895, 80, 92, "#2B3FE0", 10, t=0.5, d=0.3),
-        el('<span style="font:800 40px/1 Inter;color:#2B3FE0">payday</span>', 740, 1010, a="pop", t=0.6),
-        arrow(200, 1090, 760, 1090, "#0E1440", 8, t=0.45, d=0.4, bend=-40),
+        scribble_circle(679, 895, 80, 92, "#2B3FE0", 10, t=0.5, d=0.3),
+        el('<span style="font:800 40px/1 Inter;color:#2B3FE0">payday</span>', 612, 1010, a="pop", t=0.6),
+        arrow(200, 1090, 640, 1090, "#0E1440", 8, t=0.45, d=0.4, bend=-40),
     ]), tin="whipL", cam="left")
     r.scene(1.5, "".join([
         '<div class="par deep"></div>',
@@ -363,7 +363,7 @@ def lh_email():
     ]), tin="whipU", cam="tilt", shake=(0.75, 0.2, 14))
     r.scene(1.5, "".join([
         '<div class="par dotsp"></div>',
-        words("Now it picks / your *morning.*", "c", 600, t=0.0, gap=0.1, cls="H", em_cls="emy", style="font-size:160px"),
+        words("Now it picks / your *morning.*", "c", 600, t=0.0, gap=0.1, cls="H", em_cls="emy", style="font-size:136px"),
     ]), tin="glitch", td=0.2, cam="push", shake=(0.0, 0.25, 26))
     r.scene(1.5, "".join([
         '<div class="par dots"></div>',
@@ -488,6 +488,11 @@ def hb_calm():
         el('WAIT.', "c", 640, a="stamp", t=0.0, d=0.22, cls="Hw", style="font-size:300px;color:#FFC94D"),
         emoji("✋", 400, 1060, 280, t=0.08, d=0.25, loop="shake"),
     ]), tin="glitch", td=0.18, cam="push", shake=(0.0, 0.3, 34))
+    r.scene(1.5, "".join([
+        '<div class="par cream"></div>',
+        words("Don't send / *draft one.*", "c", 560, t=0.0, gap=0.12, cls="H", style="font-size:170px"),
+        emoji("🙅", 420, 1060, 230, t=0.35, d=0.3, loop="wobble"),
+    ]), tin="whipL", cam="push")
     prompt = ('<div class="pc"><span class="k">THE PROMPT · IN THE CAPTION</span><br>Here’s a message I got: <span class="chipy">[paste it]</span>. '
               'Here’s my draft: <span class="chipy">[paste it]</span>. Rewrite my reply so it’s calm and clear, keeps my point, under 80 words.</div>')
     r.scene(2, "".join([
@@ -501,12 +506,13 @@ def hb_calm():
            'Actually, if you’d READ my email you’d know I never got it!!</div>', 90, 760, 900, a="none", loop="buzz", amp=0.6),
         words("Ask for the / *calm version.*", "c", 380, t=0.0, gap=0.1, cls="Hw", em_cls="emo2", style="font-size:110px"),
     ]), tin="push", cam="push")
-    r.scene(2.5, "".join([
+    r.scene(3, "".join([
         '<div class="par plum"></div>',
         el('<span class="tag">CALM VERSION · EXAMPLE MADE UP</span>', "c", 470, a="pop", t=0.05),
         el('<div class="bub ai" style="font-size:58px"><div class="who">AI</div>Thanks for flagging. I didn’t receive it on Tuesday. '
            'Could you resend it? I’ll reply by 3 pm.</div>', 90, 600, 900, a="none", loop="float", amp=0.4),
         emoji("😌", 420, 1220, 240, t=0.45, d=0.35, loop="float"),
+        el('<span class="tag" style="background:#5E54C9;color:#fff">SAME POINT. NO HEAT.</span>', "c", 1520, a="stamp", t=1.0, d=0.22, r=-3),
     ]), tin="pixel", td=0.4, cam="pull")
     r.scene(1.5, "".join([
         '<div class="par cream"></div>',
@@ -523,10 +529,14 @@ def hb_calm():
     r.scene(2, "".join([
         '<div class="par cream"></div>',
         words("Draft angry. / Send *calm.*", "c", 520, t=0.0, gap=0.12, cls="H", style="font-size:160px"),
-        el('<div class="fine">Save this for your next tricky reply.<br>Prompt in the caption. Remove names before you paste.</div>', "c",
-           1000, a="up", t=0.45),
-        img("ht-cup.png", 410, 1180, 260, t=0.4, r=-8),
+        img("ht-cup.png", 410, 1000, 260, t=0.4, r=-8),
     ]), tin="stripes", color=yel, color2="#5E54C9", color3=org, cam="push")
+    r.scene(2, "".join([
+        '<div class="par indi"></div>',
+        words("The prompt's / in the *caption.*", "c", 520, t=0.0, gap=0.1, cls="Hw", em_cls="emo2", style="font-size:140px"),
+        arrow(540, 900, 540, 1250, "#FFC94D", 14, t=0.35, d=0.35, bend=40),
+        el('<div class="fine" style="color:#E4DDF5">Save it for your next tricky reply.<br>Remove names before you paste.</div>', "c", 1320, a="up", t=0.5),
+    ]), tin="whipU", cam="rise")
     r.loop(1.5, tin="flash", color=yel, color2=org)
     return r
 

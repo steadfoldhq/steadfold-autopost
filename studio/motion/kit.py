@@ -255,7 +255,7 @@ def _worker(html_path, frames, outdir, dsf):
             t = fi / FPS
             r = state["hi"].evaluate(f"seek({t:.5f})")
             n = int(r.get("blur", 1))
-            if n > 1:  # sub-frame motion blur: average 2n samples across a 0.8-frame shutter (blurred, so 1x is enough)
+            if n > 1:  # sub-frame motion blur: average 2n samples (8-12) across a 0.8-frame shutter (blurred, so 1x is enough)
                 n = 2 * n
                 acc = np.zeros((H, W, 3), np.float32)
                 for k in range(n):
@@ -307,11 +307,12 @@ def encode(fdir, n, music, out, bpm=None, fade=1.4, crf=19):
                     "-c:v", "libx264", "-preset", "slow", "-crf", str(crf), "-maxrate", "9M", "-bufsize", "18M",
                     "-pix_fmt", "yuv420p", "-profile:v", "high", "-g", "30", str(tmp)], check=True)
     af = (f"atrim=0:{dur:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.04,afade=t=out:st={dur - fade:.3f}:d={fade},"
-          f"lowpass=f=12000,alimiter=limit=0.89")
+          f"lowpass=f=9500,alimiter=limit=0.89")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp), "-stream_loop", "-1", "-i", str(music), "-filter_complex",
                     f"[1:a]{af}[a]", "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                     "-shortest", "-movflags", "+faststart", str(out)], check=True)
     tmp.unlink()
+    master_audio(out)
 
 
 def probe(path):
@@ -354,3 +355,51 @@ def qa_times(reel):
     for c in reel.cuts():
         ts += [c - 0.1, c, c + 0.1]
     return sorted(set(round(min(max(0, x), reel.duration - 1 / FPS), 3) for x in ts))
+
+
+def overflow_check(reel, margin=30):
+    """Flag any text that leaves the frame (x < margin or x > 1080 - margin) at the middle and end of each scene."""
+    from playwright.sync_api import sync_playwright
+    import tempfile as _tf
+    js = """(m) => { const out = [];
+      document.querySelectorAll('.scene').forEach((sc, i) => { if (sc.style.display !== 'block') return;
+        const tw = document.createTreeWalker(sc, NodeFilter.SHOW_TEXT); let n;
+        while ((n = tw.nextNode())) { if (!n.textContent.trim()) continue;
+          const rg = document.createRange(); rg.selectNodeContents(n);
+          for (const r of rg.getClientRects()) { if (r.width < 2) continue;
+            let op = 1, el = n.parentElement; while (el && el !== sc) { op *= +getComputedStyle(el).opacity; el = el.parentElement; }
+            if (op < 0.1) continue;
+            if (r.left < m || r.right > 1080 - m) out.push([i, n.textContent.trim().slice(0, 40), Math.round(r.left), Math.round(r.right)]); } } });
+      return out; }"""
+    with _tf.NamedTemporaryFile("w", suffix=".html", delete=False) as f:
+        f.write(reel.html())
+    bad = []
+    with sync_playwright() as p:
+        b = p.chromium.launch(executable_path=CHROME)
+        pg = b.new_page(viewport={"width": W, "height": H})
+        pg.goto(Path(f.name).as_uri())
+        pg.wait_for_timeout(300)
+        for s in reel.scenes:
+            for t in (s["start"] + s["dur"] * 0.6, s["start"] + s["dur"] - 0.2):
+                pg.evaluate(f"seek({t:.4f})")
+                bad += [(round(t, 2), *x) for x in pg.evaluate(js, margin)]
+        b.close()
+    os.unlink(f.name)
+    return bad
+
+
+def master_audio(mp4, target=-14.0, limit_db=-1.6):
+    """Bring the Reel's audio to the house loudness (tools/music_check.py: -14 LUFS +/- 1, true peak <= -1 dBTP), video untouched."""
+    mp4 = Path(mp4)
+    for _ in range(3):
+        lu = loudness(mp4)
+        if lu["I"] is not None and abs(lu["I"] - target) <= 0.4 and (lu["peak"] or 0) <= -1.2:
+            return lu
+        gain = target - (lu["I"] or target)
+        tmp = mp4.with_suffix(".m.mp4")
+        lim = 10 ** (limit_db / 20)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp4), "-map", "0:v", "-map", "0:a", "-c:v", "copy",
+                        "-af", f"volume={gain + 0.15:.2f}dB,alimiter=limit={lim:.3f}:attack=3:release=60:level=disabled",
+                        "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", str(tmp)], check=True)
+        tmp.replace(mp4)
+    return loudness(mp4)

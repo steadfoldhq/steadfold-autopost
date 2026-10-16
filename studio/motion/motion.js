@@ -54,6 +54,7 @@
       case 'fly': { // object flies in from below-right with spin and lands with overshoot
         const q = E.back(p); tf = `translate(${(1 - q) * 500}px,${(1 - q) * 900}px) rotate(${(1 - q) * 70}deg)`; op = u < 0 ? 0 : 1; break; }
       case 'drop': { const q = E.el(p); tf = `translateY(${(1 - q) * -700}px)`; op = u < 0 ? 0 : 1; break; }
+      case 'scroll': tf = `translateY(${-E.io(p) * +(el.dataset.to || 600)}px)`; op = 1; break;
       case 'wipe': el.style.clipPath = `inset(-20% ${(1 - E.io(p)) * 100}% -20% 0)`; break;
       case 'wipeD': el.style.clipPath = `inset(0 0 ${(1 - E.io(p)) * 100}% 0)`; break;
       case 'hl': el.style.backgroundSize = `${E.io(p) * 100}% 100%`; break;
@@ -145,8 +146,8 @@
         B.style.transform = `translateX(${W * (1 - e)}px)`; B.style.boxShadow = '-40px 0 80px rgba(0,0,0,.35)'; break; }
       case 'zoom': { // punch through a focus point: A rushes in, B lands from big to 1
         A.style.transformOrigin = `${fx}px ${fy}px`; B.style.transformOrigin = `${fx}px ${fy}px`;
-        if (p < .5) { const q = E.inC(p * 2); show(true, false); A.style.transform = `scale(${1 + 4 * q})`; }
-        else { const q = E.outC((p - .5) * 2); show(false, true); B.style.transform = `scale(${2.6 - 1.6 * q})`; }
+        if (p < .5) { const q = E.inC(p * 2); show(true, false); A.style.transform = `scale(${1 + 2.6 * q})`; }
+        else { const q = E.outC((p - .5) * 2); show(false, true); B.style.transform = `scale(${2.2 - 1.2 * q})`; }
         break; }
       case 'pull': { // zoom out: A shrinks away into a card, B arrives from small
         if (p < .5) { const q = E.inC(p * 2); show(true, false); A.style.transform = `scale(${1 - .75 * q}) rotate(${-8 * q}deg)`; A.style.borderRadius = '60px'; }
@@ -227,7 +228,7 @@
       animScene(inWin - 1, t - S[inWin - 1].start, t);
       animScene(inWin, t - S[inWin].start, t);
       post = trans(tr, scenes[inWin - 1], scenes[inWin], p);
-      if (FAST.has(tr.type)) blur = 4;
+      if (FAST.has(tr.type)) blur = ['zoom', 'whipL', 'whipR', 'whipU', 'whipD'].includes(tr.type) ? 6 : 4;
     } else {
       scenes[i].style.display = 'block';
       animScene(i, t - S[i].start, t);

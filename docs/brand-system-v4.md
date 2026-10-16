@@ -225,3 +225,28 @@ The full engine, with every sample build script and the cutouts, is packed at `s
 - **Re-score queued Reels after a new pick:** edit `tools/music-picks.json`, then run `python3 tools/rescore.py --apply` and commit `media/`. Reels cut to their own beat go in the `keep` list. The old audio is kept in `media/reels/_orig-audio/`.
 - **Platform sounds:** Meta's Instagram Audio API (`audio_id` on Reel create, Facebook Login only) may let Autopost attach licensed library sounds. It's untested here: try it before you spend money. On TikTok, Business accounts use the free Commercial Music Library.
 
+## 11. Motion: no slideshows (Dharma, Oct 16 2026, 12:42 am)
+"We should do those amazing transitional videos, not just some slideshow, PPT presentation thing." Every Reel is now **edited**, not a
+set of slides that fade. The tool is the motion kit in **`studio/motion/`** (README there). It renders HTML/CSS/JS frame by frame with
+Playwright at 2×, adds real sub-frame motion blur, and cuts on the page's music tempo.
+
+**The rule (every Reel, every page):**
+- **Hook in frame 0.** The hook line is fully readable at 0.00 s, and something moves within 0.3 s (a sticker pops, an object lands).
+- **A new visual beat every 0.6–1.2 s.** Scene lengths are counted in beats of the page's track (`media/music/library/*-inst-01.mp3`):
+  LF 92, FF 95, LH 100, HB 108 bpm, so 1–2 beats per scene. A scene can hold longer only if something new happens inside it
+  (a word lands, a tick pops, a number rolls).
+- **A transition on every cut,** never a plain fade: whip pans, zoom punch-ins, iris/blob/slit/stripe wipes, card slams, parallax push,
+  spin, light-leak flash, glitch, pixelate (Hourback), or a hard cut with a frame shake on impact. Mix at least 6 kinds per Reel.
+- **Kinetic type:** big words, one at a time (`words()`), readable with the sound off. Body text is never the main beat.
+- **Objects move:** stickers and emoji pop, cards fly in and land, rings and hand-drawn circles draw themselves, numbers roll, timers tick.
+  Every scene has a camera move (push, pull, drift, rise, tilt), and the background layer moves less than the content (parallax).
+- **Loop:** end on the hook layout (`r.loop()`), so the last frame flows into frame 0.
+- **Story first:** open on a moment a stranger recognises ("that's me"), then the fix. A tutorial is the middle, never the hook.
+- Keep everything else: brand palettes and fonts (section 1), text inside x 90–990 / y 300–1400, 12–20 s, H.264/AAC 1080×1920,
+  under 19 MB, soft instrument bed faded out at the end, the content rules (no fake numbers, finance as education, official parenting sources,
+  no real children).
+
+**QA before a Reel ships:** the kit writes `<id>-qa.jpg` (frames at 0 s, every second and across every cut). Look at it, then score it as
+a bored stranger at 8 am (stop? watch to the end? send?). Anything short of a strong yes gets re-edited.
+This replaces the "calm text" and "kinetic big text" slide timing in section 2 (styles 5 and 15) and the 4-scene Reel timing in
+section 7: those styles keep their look, but are cut with the kit.
