@@ -212,7 +212,7 @@ def hb_swap():
                         el('<div class="fine">And double-check anything important before you cook.</div>', "c", 1000, a="up", t=0.45)]),
             tin="iris", focus=(540, 800), color=HB["acc"], cam="push")
     r.scene(1.5, "".join(['<div class="par peach"></div>', words("Paste. Ask. / *Keep cooking.*", "c", 560, t=0.0, gap=0.12, cls="H", style="font-size:150px"),
-                          emoji("🥞", 420, 980, 230, t=0.35, d=0.3, loop="float")]), tin="stripes", color=HB["acc"], color2="#5E54C9", color3=org,
+                          emoji("🥞", 420, 1180, 230, t=0.35, d=0.3, loop="float")]), tin="stripes", color=HB["acc"], color2="#5E54C9", color3=org,
             cam="push")
     r.loop(1.5, tin="flash", color=HB["acc"], color2=org)
     return r
