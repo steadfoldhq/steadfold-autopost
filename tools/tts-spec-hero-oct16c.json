@@ -1,0 +1,12 @@
+{
+ "out": "media/voice/hero3",
+ "model": "eleven_v3",
+ "voices": "tools/voices.json",
+ "settings": {"stability": 0.5, "similarity_boost": 0.8, "use_speaker_boost": true},
+ "items": [
+  {"name": "ff-same-alarm", "voice": "Kayla", "takes": 2, "seed": 11,
+   "text": "[curious] Same alarm... [short pause] different life. [warmly] Two hundred a month, from twenty-five. [building excitement] Every year, the line moves. [confident] At eight percent... about seven hundred thousand by sixty-five. [softly] You put in ninety-six. [warmly] Time bought the mornings."},
+  {"name": "lf-ten-minutes", "voice_id": "EXAVITQu4vr4xnSDxMaL", "takes": 2, "seed": 21,
+   "text": "[tired] Hour two of crying... [sighs] and you're running on empty. [gently] Here's what the NHS says. [softly] If no one can take over... put baby safely in the cot. Close the door. Go to another room. [warmly] Ten minutes. Breathe. Then go back. [tenderly] Stepping out isn't giving up... it's how you come back calm."}
+ ]
+}
