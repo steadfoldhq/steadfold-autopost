@@ -144,7 +144,7 @@ def main(path):
 
     for q in spec.get("shared_search", []):
         try:
-            qs = urllib.parse.urlencode(dict({"page_size": 30, "language": "en", "sort": "usage_character_count_7d"}, **q))
+            qs = urllib.parse.urlencode(dict({"page_size": 30, "language": "en", "sort": "trending"}, **q))
             res = call(f"{BASE}/shared-voices?{qs}", key)
             rows = [{k: v.get(k) for k in ("public_owner_id", "voice_id", "name", "gender", "age", "accent", "descriptive",
                                            "use_case", "category", "description", "usage_character_count_7d",

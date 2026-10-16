@@ -1,0 +1,11 @@
+{
+ "out": "media/voice/audition",
+ "model": "eleven_v3",
+ "shared_search": [
+  {"gender": "female", "age": "young", "language": "en", "accent": "american", "use_cases": "social_media", "page_size": 20},
+  {"gender": "female", "age": "young", "language": "en", "accent": "american", "use_cases": "conversational", "page_size": 20},
+  {"gender": "male", "age": "young", "language": "en", "accent": "american", "use_cases": "social_media", "page_size": 20},
+  {"gender": "male", "age": "young", "language": "en", "accent": "american", "use_cases": "conversational", "page_size": 20}
+ ],
+ "items": []
+}
