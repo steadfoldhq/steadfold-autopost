@@ -79,7 +79,7 @@ def frame(t):
         put(img, Lm, 1.0, alpha=a0, dx=dx0 - (1 - min(1, intro)) * 500, dy=dy0)
         put(img, Lj, 1.0, alpha=a0, dx=dx0 + (1 - min(1, intro)) * 500, dy=dy0)
         if t >= P(K_MAYA) + 1.0:
-            emoji(img, "👑", 295, 380, 130 * min(1, pop(t, P(K_MAYA) + 1.0)), rot=-12)
+            emoji(img, "👑", 505, 425, 96 * min(1, pop(t, P(K_MAYA) + 1.0)), rot=14)   # card corner, clear of the rate line
         if guessing:   # pause-and-guess: a draining ring floats over the dimmed cards, no words
             u = (t - T_HOLD) / (P(K_MIN) - 0.05 - T_HOLD)
             L = layer()

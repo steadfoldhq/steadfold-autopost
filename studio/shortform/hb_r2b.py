@@ -75,15 +75,15 @@ def frame(t):
         box(L, (150, 400, 640, 500), 50, (120, 110, 200, 255))
         for j in range(5):
             box(L, (200, 560 + j * 95, 200 + [380, 260, 400, 320, 360][j], 596 + j * 95), 16, (220, 214, 232, 255))
-        put(img, L, 0.8 + 0.2 * min(1, a), 395, 730, alpha=min(1, a * 1.5), dx=sx)
-        emoji(img, "🚫", 600, 420, 150 * min(1, pop(t, P(K_ANS) + 0.2)), rot=-10)
+        put(img, L, 0.8 + 0.2 * min(1, a), 335, 730, alpha=min(1, a * 1.5), dx=sx)
+        emoji(img, "🚫", 540, 420, 150 * min(1, pop(t, P(K_ANS) + 0.2)), rot=-10)
         flags = [("NAME", 600, 0.0), ("BALANCE", 760, 0.5), ("ACCOUNT #", 920, 1.0)]
         for lab, y, dt in flags:
             t0 = P(K_SHOW) + dt
             if t >= t0:
                 q = min(1, pop(t, t0, 0.3))
-                T(img, lab, 860, y, 64, YEL, key=lab, scale=0.7 + 0.3 * q, words=1 if lab != "ACCOUNT #" else 1)
-                emoji(img, "👈", 680, y, 70 * q)
+                T(img, lab, 880, y, 56, YEL, key=lab, scale=0.7 + 0.3 * q, words=1)   # centred right of the pointer, clear of it
+                emoji(img, "👈", 625, y, 70 * q)
     else:
         q = pop(t, P(K_TYPE) + 0.05, 0.35)
         T(img, "TYPE JUST", W / 2, 330, 120, INK, key="type1")

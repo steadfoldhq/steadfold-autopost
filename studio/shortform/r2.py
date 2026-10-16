@@ -6,7 +6,8 @@ Round 2b (Oct 16 pm, owner feedback on sound and polish):
   pause lengthened, at its quietest point inside a natural gap.
 - NO DEAD AIR: a music bed (media/music/library) and room tone run continuously under everything; the bed ducks under
   the voice and rises in pauses. check_audio() fails the build on any > 250 ms drop below -50 dBFS.
-- LOUDNESS: two-pass loudnorm to -14 LUFS, true peak <= -1.5 dBTP; verified with tools/music_check.py.
+- LOUDNESS: 8 kHz high-shelf -6 dB (tames sibilance + whoosh air), then two-pass loudnorm to -14 LUFS,
+  true peak <= -1.5 dBTP; verified with tools/music_check.py --kind mix (loudness, peak, clipping, harsh highs).
 - CLEAN TEXT: words float with a very soft shadow only (no outline, box, band or halo). Every text's contrast against
   what is actually behind it is measured per frame (>= 3:1) and the build fails below that.
 - READABLE PACING: captions are whole short phrases with the spoken word lit; each caption rolls up to the line above
@@ -154,10 +155,10 @@ def build_voice(name, out_wav, hold=None, lead=0.25, tail=0.3, min_gap=0.0):
             break
         n = sum(1 for k in groups[g] for jj in ph[k] if _alnum(ws[jj][0]))
         have = starts[j] - starts[g] + sum(ins[g:j])
-        if have < need(n) + 0.06:
+        if have < need(n) + 0.2:     # 0.2 s spare: a transition may hide a caption for a few frames
             # lengthen the larger natural pause inside the window (sentence ends breathe best)
             i = max(range(g, j), key=lambda i: starts[i + 1] - ends[i])
-            ins[i] += need(n) + 0.06 - have
+            ins[i] += need(n) + 0.2 - have
     inserts = [(_quiet_point(a, ends[i] + 0.02, starts[i + 1] - 0.02, sr), ins[i])
                for i in range(len(groups) - 1) if ins[i] > 0.005]
     added = 0.0
@@ -758,13 +759,17 @@ def mix(S, cues, bed, amb, out_wav):
     return v, (b + am)
 
 
+TAME = "highshelf=f=8000:g=-6:t=s:w=0.7"   # keeps >8 kHz share under music_check's 0.5 %
+
+
 def master(silent, mix_wav, out, total, target=-14.0, tp=-1.5):
-    """Two-pass loudnorm to -14 LUFS, true peak <= -1.5 dBTP, muxed with the picture."""
+    """High-shelf, then two-pass loudnorm to -14 LUFS, true peak <= -1.5 dBTP, muxed with the picture.
+    `silent` may be any file with the picture (its audio is ignored), so a finished pilot can be re-mastered."""
     import re
     p = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", mix_wav, "-af",
-                        f"loudnorm=I={target}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"], capture_output=True, text=True)
+                        f"{TAME},loudnorm=I={target}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"], capture_output=True, text=True)
     m = json.loads(re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", p.stderr, re.S).group(0))
-    filt = (f"loudnorm=I={target}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+    filt = (f"{TAME},loudnorm=I={target}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
             f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", silent, "-i", mix_wav, "-map", "0:v", "-map", "1:a", "-af", filt,
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-t", f"{total:.3f}",
@@ -827,8 +832,8 @@ def check_audio(mp4, voice, bedstem, total):
     under = [float(bdb[a:b].min()) for a, b in pauses]
     sys.path.insert(0, os.path.join(REPO, "tools"))
     import music_check
-    lc = music_check.check(mp4, "bed")
-    fails = [f for f in lc["fails"] if f in ("loudness", "true-peak", "clipping")]
+    lc = music_check.check(mp4, "mix")
+    fails = lc["fails"]
     return dict(dead_air=dead, voice_pauses_over_250ms=len(pauses),
                 bed_under_pauses_min_db=round(min(under), 1) if under else None,
                 longest_voice_pause_s=round(max([(b - a) * 0.05 for a, b in pauses] or [0]), 2),
@@ -844,16 +849,18 @@ def check_reading(fps=FPS):
         if not frames:
             continue
         fr = sorted(frames)
-        runs, st, pv = [], fr[0], fr[0]
+        # a text briefly hidden by a transition (<= 8 frames) is one beat; only its visible frames count
+        runs, st, pv, cnt = [], fr[0], fr[0], 1
         for f in fr[1:]:
-            if f != pv + 1:
-                runs.append((st, pv))
-                st = f
+            if f > pv + 9:
+                runs.append((st, pv, cnt))
+                st, cnt = f, 0
             pv = f
-        runs.append((st, pv))
+            cnt += 1
+        runs.append((st, pv, cnt))
         n = LOGW.get(k, 0)
-        for a, b in runs:
-            dur = (b - a + 1) / fps
+        for a, b, c in runs:
+            dur = c / fps
             ok = n == 0 or dur + 1e-6 >= need(n)
             rows.append(dict(text=k, words=n, on=round(a / fps, 2), secs=round(dur, 2), need=round(need(n), 2), ok=ok))
             if not ok:

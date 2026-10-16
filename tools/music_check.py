@@ -1,6 +1,9 @@
 """Signal-analysis QA for music beds (we can't listen, so we measure).
 
-Usage: python3 tools/music_check.py FILE_OR_DIR [...] [--json out.json]
+Usage: python3 tools/music_check.py FILE_OR_DIR [...] [--kind bed|stinger|mix] [--json out.json]
+
+--kind mix is for a finished, voiced video (short-form pilots): loudness -14, true peak, clipping and harsh
+highs only. The bed-only rules (voice gap, hook, loop seam) don't apply once a voice sits on the bed.
 
 Per file:
 - loudness  integrated LUFS (target -14 +/- 1; stingers -15) and true peak (<= -1.0 dBTP)
@@ -99,7 +102,7 @@ def check(path, kind="bed"):
         win = np.convolve(d, np.ones(w), "valid")[::w]
         dj = np.convolve(np.diff(y) ** 2, np.ones(w), "valid")
         r["seam_ratio"] = round(float(dj[4410 - w:4410 + 1].max() / (np.percentile(win, 99) + 1e-12)), 2)
-    target = -14 if kind == "bed" else -15
+    target = -15 if kind == "stinger" else -14
     fails = []
     if abs(i - target) > 1.0: fails.append("loudness")
     if tp > -1.0: fails.append("true-peak")
@@ -115,6 +118,10 @@ def check(path, kind="bed"):
 
 def main(args):
     out = None
+    force = None
+    if "--kind" in args:
+        force = args[args.index("--kind") + 1]
+        args = args[:args.index("--kind")] + args[args.index("--kind") + 2:]
     if "--json" in args:
         out = args[args.index("--json") + 1]
         args = args[:args.index("--json")]
@@ -123,7 +130,7 @@ def main(args):
         files += sorted(os.path.join(a, f) for f in os.listdir(a) if f.endswith(".mp3")) if os.path.isdir(a) else [a]
     res = []
     for f in files:
-        kind = "stinger" if os.path.basename(f).startswith("st-") else "bed"
+        kind = force or ("stinger" if os.path.basename(f).startswith("st-") else "bed")
         r = check(f, kind)
         res.append(r)
         print(f"{'PASS' if r['pass'] else 'FAIL'} {r['file']:34s} {r['seconds']:5.1f}s {r['lufs']:6.1f} LUFS tp {r['true_peak']:5.1f} "

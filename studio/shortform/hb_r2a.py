@@ -64,7 +64,7 @@ def frame(t):
         qs = [(K_Q1, "Which days are packed?"), (K_Q2, "What must get done?"), (K_Q3, "Any gym days?")]
         if t >= P(K_ASKS):
             for j, (kk, q) in enumerate(qs):
-                bubble(img, 100, 720 + j * 150, 760, 124, False, P(kk) - 0.15, t, txt=q)
+                bubble(img, 100, 720 + j * 150, 760, 124, False, min(P(kk) - 0.15, P(K_FITS) - 2.1), t, txt=q)  # each holds >= 1.8 s
     elif t < P(K_REVEAL):
         a = pop(t, P(K_FITS) + 0.05, 0.35)
         L = layer()
