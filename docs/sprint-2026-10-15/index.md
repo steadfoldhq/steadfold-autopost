@@ -38,3 +38,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 - B4 · Puddlecrofts motion test · sent to Dharma
 - B2 · Oct 19–20 fill · 42 items
 - C1 · Steadfold Master Roadmap · v1 (Oct 2026) · https://claude.ai/code/artifact/fa9a41a4-3265-4b85-89df-3846f1690ca2
+- C2 · Red Team Review · https://claude.ai/code/artifact/ce52e042-d0a1-4a0d-afb6-84b38b3dd15a
