@@ -1,29 +1,46 @@
 {
- "collected_at": "2026-10-16T12:40:34+00:00",
+ "collected_at": "2026-10-16T16:35:20+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
-   "followers_count": 2,
+   "followers_count": 3,
    "follows_count": 0,
-   "media_count": 5,
+   "media_count": 6,
    "posts": [
+    {
+     "media_id": "17960138283215607",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dej8GxclqeK/",
+     "at": "2026-10-16T16:15:21+0000",
+     "first_line": "Your freedom number is your yearly spending × 25. Work yours out tonight.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18089840456691743",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/Deji743jnP7/",
      "at": "2026-10-16T12:35:37+0000",
      "first_line": "The car repair is today. Payday isn't. Build a small buffer so surprise bills don't land on a card.",
-     "likes": 0,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 28,
+      "reach": 15,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "shares": 1,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 6559,
+      "ig_reels_video_view_total_time": 111511
      },
      "comments": []
     },
@@ -36,13 +53,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 14,
+      "views": 21,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5033,
-      "ig_reels_video_view_total_time": 75498
+      "ig_reels_avg_watch_time": 5223,
+      "ig_reels_video_view_total_time": 88801
      },
      "comments": []
     },
@@ -55,7 +72,7 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 13,
+      "views": 14,
       "reach": 4,
       "saved": 0,
       "shares": 1,
@@ -72,7 +89,7 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 22,
+      "views": 23,
       "reach": 5,
       "saved": 0,
       "shares": 2,
@@ -89,7 +106,7 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 25,
+      "views": 26,
       "reach": 4,
       "saved": 0,
       "shares": 2,
@@ -102,7 +119,7 @@
   "lockedhour": {
    "account": "lockedhour",
    "username": "lockedhourhq",
-   "followers_count": 2,
+   "followers_count": 3,
    "follows_count": 0,
    "media_count": 6,
    "posts": [
@@ -112,16 +129,16 @@
      "permalink": "https://www.instagram.com/reel/DejjGDfFdUa/",
      "at": "2026-10-16T12:37:03+0000",
      "first_line": "Your inbox is about to pick your morning. Do your one thing first.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 8,
+      "reach": 6,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 9996,
+      "ig_reels_video_view_total_time": 69977
      },
      "comments": []
     },
@@ -134,13 +151,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 42,
-      "reach": 40,
+      "views": 49,
+      "reach": 44,
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3793,
-      "ig_reels_video_view_total_time": 159344
+      "ig_reels_avg_watch_time": 3594,
+      "ig_reels_video_view_total_time": 176135
      },
      "comments": []
     },
@@ -170,8 +187,8 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 21,
-      "reach": 5,
+      "views": 22,
+      "reach": 6,
       "saved": 0,
       "shares": 3,
       "total_interactions": 7
@@ -187,8 +204,8 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 38,
-      "reach": 5,
+      "views": 39,
+      "reach": 6,
       "saved": 0,
       "shares": 4,
       "total_interactions": 8
@@ -217,10 +234,29 @@
   "hourback": {
    "account": "hourback",
    "username": "hourbackhq",
-   "followers_count": 2,
+   "followers_count": 3,
    "follows_count": 0,
-   "media_count": 4,
+   "media_count": 5,
    "posts": [
+    {
+     "media_id": "18098669201392979",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DejoVB3iNUH/",
+     "at": "2026-10-16T13:22:51+0000",
+     "first_line": "\"Per my last email\" before your first coffee? Don't send draft one. Send the calm version.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 8,
+      "reach": 4,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 12030,
+      "ig_reels_video_view_total_time": 60153
+     },
+     "comments": []
+    },
     {
      "media_id": "17935966671392084",
      "type": "REEL",
@@ -230,13 +266,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 9,
+      "views": 12,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 1564,
-      "ig_reels_video_view_total_time": 14082
+      "ig_reels_avg_watch_time": 1589,
+      "ig_reels_video_view_total_time": 17481
      },
      "comments": []
     },
@@ -296,26 +332,43 @@
   "littlefold": {
    "account": "littlefold",
    "username": "littlefoldhq",
-   "followers_count": 1,
+   "followers_count": 2,
    "follows_count": 0,
-   "media_count": 3,
+   "media_count": 4,
    "posts": [
+    {
+     "media_id": "17937658338127792",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dej4tfskSML/",
+     "at": "2026-10-16T15:45:42+0000",
+     "first_line": "Know what's normal in your first 72 hours home, and when to call.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 5,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18116429624064659",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/Deji3MejEkG/",
      "at": "2026-10-16T12:34:55+0000",
      "first_line": "Baby hates tummy time? Try it on your chest.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 63,
+      "reach": 51,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 2918,
+      "ig_reels_video_view_total_time": 157621
      },
      "comments": []
     },
@@ -328,13 +381,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 51,
-      "reach": 44,
+      "views": 53,
+      "reach": 45,
       "saved": 1,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 3052,
-      "ig_reels_video_view_total_time": 134322
+      "ig_reels_avg_watch_time": 3011,
+      "ig_reels_video_view_total_time": 135529
      },
      "comments": []
     },
@@ -347,7 +400,7 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 14,
+      "views": 16,
       "reach": 5,
       "saved": 0,
       "shares": 2,
