@@ -1,0 +1,18 @@
+{
+ "out": "media/voice/smallweather-true",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {"name": "swt-uyuni",
+   "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+   "settings": {"stability": 0.42, "similarity_boost": 0.8, "style": 0.32, "use_speaker_boost": true, "speed": 1.06},
+   "text": "This is the flattest place on Earth. Salar de Uyuni, in Bolivia: ten thousand square kilometres of salt. Scientists mapped a patch fifty kilometres wide. Highest point to lowest? Seventy-seven centimetres. It's so flat, satellites use it as a ruler. NASA's laser measured it from orbit, while a team drove across it with GPS to check the laser's work. And after the rains... it turns into a mirror. Where the sky has nowhere to end."},
+  {"name": "swt-kyoto",
+   "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+   "settings": {"stability": 0.42, "similarity_boost": 0.8, "style": 0.32, "use_speaker_boost": true, "speed": 1.06},
+   "text": "For twelve hundred years, Kyoto has been writing down one date: the day the cherry blossoms reach full bloom. It started in old diaries and court chronicles. The first record is from the year 812. For most of those centuries, the date fell in mid-April. Then, in 2021: March 26th. The earliest in the entire record. Two years later: March 25th. Earlier still. Twelve hundred years of spring... and the two earliest both came this decade. So Kyoto keeps writing it down."},
+  {"name": "swt-baikal",
+   "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+   "settings": {"stability": 0.42, "similarity_boost": 0.8, "style": 0.32, "use_speaker_boost": true, "speed": 1.06},
+   "text": "This one lake holds as much fresh water as all five Great Lakes combined. Lake Baikal, in Siberia. It's the deepest lake on Earth, and the oldest: about twenty-five million years. In winter, the ice gets so strong that cars drive across it... and people run a marathon on top. Superior. Michigan. Huron. Erie. Ontario. All that water... in this one lake."}
+ ]
+}
