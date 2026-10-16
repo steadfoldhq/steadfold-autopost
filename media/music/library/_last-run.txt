@@ -1,4 +1,10 @@
-lf-cosy-01: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"dea1e1342e1932bfe74ff71953e4e7d4"}}'
-ff-curious-01: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"169a23010082b7cfd945afb1d11da72f"}}'
-lh-focus-01: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"6d7d5a32898389fc2976c12a07d3e5fe"}}'
-hb-playful-01: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission music_generation to execute this operation.","status":"missing_permissions","request_id":"f5dcb642d9decee00d258add1d385b48"}}'
+ff-a-curious-lofi-el: ok 321036 bytes
+ff-b-bright-pop-el: ok 321036 bytes
+lh-a-focus-pulse-el: ok 321036 bytes
+lh-b-ticking-marimba-el: ok 321036 bytes
+hb-a-ta-da-el: ok 288853 bytes
+hb-b-sunny-strum-el: ok 288853 bytes
+lf-a-cosy-el: ok 321036 bytes
+lf-b-tender-el: ok 320200 bytes
+st-1-soft-rise-el: ok 97428 bytes
+st-2-ta-da-el: ok 48945 bytes
