@@ -183,8 +183,9 @@ Photo use, Oct 16–21:
 | wheat | `lf-reel-1018-breathe` |
 | couple | `ff-1019-rich-habits-01` |
 | clock | `lh-1017-one-word-later` |
+| family (B/W) | `ff-reel-1019-late-start` (Reel + its own cover) |
 
-Still unused: family, father, piggy (photo), halftone sheets 1 and 2.
+Still unused: father, piggy (photo), halftone sheets 1 and 2. (family: used Oct 19 by B2.)
 
 ## 7. The 2× render rule
 Everything is rendered at **2× and downsampled with Lanczos**:

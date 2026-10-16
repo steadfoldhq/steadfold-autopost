@@ -36,3 +36,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 - B1 · Hourback pilots · 22 items · New relatable direction live Oct 19–21: 6 mini-scene Reels, 4 feed posts, 12 Stories, every "after" a real AI run on a made-up example (capture log in studio/b1-hourback-pilots/)
 - E1 · Creative/Entertainment pitch · https://claude.ai/code/artifact/9810221b-232a-4fa2-94be-3a80810c94a0
 - B4 · Puddlecrofts motion test · sent to Dharma
+- B2 · Oct 19–20 fill · 42 items
