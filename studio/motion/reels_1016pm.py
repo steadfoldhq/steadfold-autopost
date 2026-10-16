@@ -70,7 +70,7 @@ def lf_doing_better():
     ]), tin="flash", color=lf["peach"], color2=lf["pink"], cam="push")
     r.scene(2, "".join([
         '<div class="par blobs2"></div>',
-        words("Send this to a / *tired parent* / you love.", "c", 520, t=0.0, gap=0.1, cls="H", style="font-size:130px"),
+        words("Send this to a / *tired parent.*", "c", 520, t=0.0, gap=0.1, cls="H", style="font-size:130px"),
         emoji("💌", 420, 1060, 220, t=0.45, d=0.4, loop="float"),
         el('<div class="src">Photos made with AI.</div>', "c", 1400, a="fade", t=0.3),
     ]), tin="stripes", color=lf["pink"], color2=lf["butter"], color3=lf["peach"], cam="rise")
@@ -78,7 +78,7 @@ def lf_doing_better():
     return r
 
 
-R["lf-reel-1016-doing-better"] = dict(make=lf_doing_better, music="lf-cosy-inst-01.mp3")
+R["lf-reel-1016-doing-better"] = dict(make=lf_doing_better, music="lf-cosy-el-01.mp3")
 
 
 # =============================================================================================== Fully Funded: the 1% fee
@@ -96,14 +96,10 @@ def ff_fee():
     r.scene(1.5, "".join([
         '<div class="par lite"></div>',
         el('<span style="font:800 40px/1 Inter;letter-spacing:.14em;color:#fff;background:#2B3FE0;padding:16px 26px;border-radius:999px">'
-           'EXAMPLE MATH</span>', "c", 400, a="pop", t=0.0),
+           'EXAMPLE</span>', "c", 400, a="pop", t=0.0),
         words("200 a month / for *30 years.*", "c", 560, t=0.05, cls="H", style="font-size:140px"),
-        el('<div class="finek" style="font-size:40px">At 6% a year. Same 72,000 paid in either way.</div>', "c", 900, a="up", t=0.5),
+        el('<div class="finek" style="font-size:48px">6% a year. Not a promise.</div>', "c", 900, a="up", t=0.5),
     ]), tin="whipL", cam="push")
-    r.scene(1.5, "".join([
-        '<div class="par deep"></div>',
-        words("1% a year. / *Every year.*", "c", 600, t=0.0, gap=0.12, cls="Hw", em_cls="emw", style="font-size:170px"),
-    ]), tin="glitch", td=0.2, cam="push", shake=(0.0, 0.2, 18))
     bar = lambda lab, to, val, col, t0: (
         f'<div style="font:700 46px/1.1 Inter;color:#0E1440;margin-bottom:16px">{lab}</div>'
         f'<div class="bar" style="background:rgba(43,63,224,.12)"><div class="f" data-a="bar" data-t="{t0}" data-d="0.9" data-to="{to}" '
@@ -130,37 +126,33 @@ def ff_fee():
         words("Find *yours* / this week.", "c", 560, t=0.0, cls="Hw", em_cls="emw", style="font-size:160px"),
         emoji("🔍", 400, 1000, 260, t=0.3, d=0.35, loop="float"),
     ]), tin="whipR", cam="tilt")
-    doc = ('<div class="card" style="font:600 46px/1.6 Inter;padding:50px 56px">Account summary<br><span style="color:#8A90B8">Holdings · Activity</span><br>'
-           '<span style="position:relative;display:inline-block">Annual fee / <b>expense ratio</b></span><br><span style="color:#8A90B8">Statements</span></div>')
+    doc = ('<div class="card" style="font:600 56px/1.6 Inter;padding:50px 56px;text-align:center">'
+           '<span style="position:relative;display:inline-block">Annual fee / <b>expense ratio</b></span></div>')
     r.scene(2, "".join([
         '<div class="par lite"></div>',
-        words("Open each account. / Look for:", "c", 360, t=0.0, gap=0.08, cls="H", style="font-size:96px"),
-        el(doc, 110, 640, 860, a="fly", t=0.05, d=0.45, r=-2),
-        scribble_circle(540, 916, 400, 60, coral, 10, t=0.55, d=0.4),
-        el('<span class="note" style="font-family:\'Caveat Brush\';font-size:64px;color:#FF6A3D">“annual fee” or “expense ratio”</span>', "c",
-           1240, a="pop", t=0.8, r=-3),
+        words("In each account, / look for:", "c", 400, t=0.0, gap=0.08, cls="H", style="font-size:110px"),
+        el(doc, 110, 720, 860, a="fly", t=0.05, d=0.45, r=-2),
+        scribble_circle(540, 818, 430, 80, coral, 10, t=0.55, d=0.4),
     ]), tin="iris", focus=(540, 900), color=soft, cam="push")
     r.scene(2.5, "".join([
         '<div class="par deep"></div>',
         el('<span style="font:800 44px/1 Inter;letter-spacing:.14em;color:#fff;background:#FF6A3D;padding:16px 26px;border-radius:999px">'
            'THE CATCH</span>', "c", 400, a="stamp", t=0.0, d=0.25, r=-4),
         words("Cheaper isn't / always *better.*", "c", 560, t=0.15, gap=0.08, cls="Hw", em_cls="emw", style="font-size:120px"),
-        words("Compare funds that do the same job, / and check for other costs too.", "c", 960, t=0.5, gap=0.04, cls="Hw",
-              style="font-size:56px;opacity:.9"),
+        words("Compare like / with like.", "c", 960, t=0.5, gap=0.06, cls="Hw", style="font-size:80px;opacity:.9"),
     ]), tin="stripes", color=coral, color2="#FFFFFF", color3="#2B3FE0", cam="tilt")
     r.scene(2, "".join([
         '<div class="par lite"></div>',
-        words("Save this. Send it / to the friend who just / opened a *retirement* account.", "c", 480, t=0.0, gap=0.06, cls="H",
-              style="font-size:96px"),
+        words("Send this to a friend / with a *retirement* account.", "c", 480, t=0.0, gap=0.06, cls="H",
+              style="font-size:100px"),
         img("ht-piggy.png", 350, 900, 380, t=0.3, r=6),
-        el('<div class="finek">Example at 6% a year, compounded monthly. Not a promise. Real returns vary.<br>General education only, not financial advice.</div>',
-           "c", 1380, a="fade", t=0.3, style="padding:0 80px"),
+        el('<div class="finek">Education only. Not advice.</div>', "c", 1380, a="fade", t=0.3, style="padding:0 80px"),
     ]), tin="push", cam="push")
     r.loop(1.5, tin="whipU")
     return r
 
 
-R["ff-reel-1016-fee"] = dict(make=ff_fee, music="ff-curious-inst-01.mp3")
+R["ff-reel-1016-fee"] = dict(make=ff_fee, music="ff-curious-el-01.mp3")
 
 
 # =============================================================================================== Locked Hour: one quiet hour
@@ -175,8 +167,7 @@ def lh_quiet():
 .knob{position:absolute;left:8px;top:8px;width:94px;height:94px;border-radius:50%;background:#fff;border:5px solid #141414}
 """, stage="#FFE27A")
     lh = BRANDS["lockedhour"]
-    pings = "".join(f'<div class="mail">{a}<span>{b}</span></div>' for a, b in
-                    [("Quick call?", "Got 5 mins…"), ("Re: Re: deck", "One more thing…"), ("Group chat", "12 new"), ("Reminder", "Don't forget…")])
+    pings = "".join(f'<div class="mail"><span class="emo" style="font-size:52px">{a}</span><span>&nbsp;</span></div>' for a in "💬📩🔔💬")
     r.scene(2, "".join([
         '<div class="par dots"></div>', AM.lh_chip(),
         el('Want one<br><span class="em">quiet</span> hour?', "c", 460, a="none", cls="H", style="font-size:180px"),
@@ -228,20 +219,20 @@ def lh_quiet():
         '<div class="par dots"></div>',
         words("The messages / will still be / *there* at 11.", "c", 480, t=0.0, gap=0.08, cls="H", style="font-size:130px"),
         emoji("⭐", 160, 1100, 150, t=0.5, d=0.3, loop="float"),
-        el('<div class="B" style="font-size:46px">Most phones let calls from favourites<br>through, for real emergencies.</div>', 300, 1110, 720,
+        el('<div class="B" style="font-size:52px">Favourites can<br>still call you.</div>', 300, 1110, 720,
            a="up", t=0.55, style="text-align:left"),
     ]), tin="iris", focus=(540, 800), color="#FF5CA8", cam="rise")
     r.scene(2, "".join([
         '<div class="par dotsp"></div>',
-        words("Save this. / Send it to / *someone who* / *answers every ping.*", "c", 420, t=0.0, gap=0.07, cls="H", em_cls="emy",
-              style="font-size:92px"),
+        words("Send this to / *someone who* / *answers every ping.*", "c", 420, t=0.0, gap=0.07, cls="H", em_cls="emy",
+              style="font-size:100px"),
         el('<span class="lab">@lockedhourhq</span>', "c", 1180, a="pop", t=0.6),
     ]), tin="stripes", color="#FFD43B", color2="#FFFFFF", color3="#141414", cam="push")
     r.loop(1.5, tin="whipU")
     return r
 
 
-R["lh-reel-1016-quiet"] = dict(make=lh_quiet, music="lh-focus-inst-01.mp3")
+R["lh-reel-1016-quiet"] = dict(make=lh_quiet, music="lh-focus-el-01.mp3")
 
 
 # =============================================================================================== Hourback: just the asks
@@ -274,21 +265,18 @@ def hb_email_asks():
         words("You just need / *the asks.*", "c", 600, t=0.0, gap=0.12, cls="H", style="font-size:136px"),
         img("ht-point.png", 520, 1020, 420, a="fly", t=0.3, d=0.35, r=-20, loop="float"),
     ]), tin="zoom", focus=(540, 1000), cam="push")
-    prompt = ('<div class="pc"><span class="k">PROMPT · IN THE CAPTION</span><br>Here’s an email: <span class="chipy">[paste it]</span>. '
-              'What is it asking me to do, and by when? One line per ask. Quote the sentence each ask comes from.</div>')
+    prompt = ('<div class="pc"><span class="k">PROMPT IN CAPTION</span><br>What do they need from me, by when?</div>')
     r.scene(2.5, "".join([
         '<div class="par cream"></div>',
-        words("Paste it into / *any AI chat:*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:110px"),
+        words("Paste it in / and *ask:*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:120px"),
         el(prompt, 80, 740, 920, a="fly", t=0.1, d=0.45, r=-2),
     ]), tin="whipU", cam="rise")
-    asks = [("Send the deck", "by Thursday", "Could you send the deck before Thursday?"),
-            ("Confirm the room", "by Friday", "Please confirm the room by Friday."),
-            ("Pick a date", "no deadline", "Let me know which date works.")]
+    asks = [("Send the deck", "Thu"), ("Confirm the room", "Fri"), ("Pick a date", "anytime")]
     r.scene(3.5, "".join([
         '<div class="par plum"></div>',
-        el('<span class="tag">WHAT YOU GET · EXAMPLE MADE UP</span>', "c", 360, a="pop", t=0.0),
-        *[el(f'<div class="ask"><b>{a}</b> · {b}<q>{q}</q></div>', 80, 470 + k * 280, 920, a="left", t=0.15 + k * 0.4, d=0.3)
-          for k, (a, b, q) in enumerate(asks)],
+        el('<span class="tag">EXAMPLE · MADE UP</span>', "c", 360, a="pop", t=0.0),
+        *[el(f'<div class="ask" style="font-size:60px"><b>{a}</b> · {b}</div>', 80, 520 + k * 240, 920, a="left", t=0.15 + k * 0.4, d=0.3)
+          for k, (a, b) in enumerate(asks)],
     ]), tin="pixel", td=0.4, cam="pull")
     r.scene(2, "".join([
         '<div class="par indi"></div>',
@@ -300,20 +288,16 @@ def hb_email_asks():
         words("Then reply / to *the asks.*", "c", 560, t=0.0, gap=0.1, cls="H", style="font-size:160px"),
         el('<span class="send">Reply ➤</span>', "c", 1050, a="pop", t=0.4, loop="pulse"),
     ]), tin="iris", focus=(540, 900), color=yel, cam="push", shake=(0.4, 0.2, 10))
-    r.scene(1.5, "".join([
-        '<div class="par indi"></div>',
-        words("One line per ask. / *Quoted.*", "c", 600, t=0.0, gap=0.12, cls="Hw", em_cls="emo2", style="font-size:140px"),
-    ]), tin="whipL", cam="push")
     r.scene(2.5, "".join([
         '<div class="par plum"></div>',
-        words("Save this for / your next / *long email.*", "c", 460, t=0.0, gap=0.1, cls="Hw", em_cls="emo2", style="font-size:140px"),
-        el('<div class="fine" style="color:#CFC6E6">Tip: remove personal details before you paste.<br>Hand image made with AI.</div>', "c", 1100, a="up", t=0.4),
+        words("Save for the / next *long email.*", "c", 460, t=0.0, gap=0.1, cls="Hw", em_cls="emo2", style="font-size:140px"),
+        el('<div class="fine" style="color:#CFC6E6">Remove private details first.<br>Hand image made with AI.</div>', "c", 1100, a="up", t=0.4),
     ]), tin="stripes", color=yel, color2="#5E54C9", color3=org, cam="push")
     r.loop(2.5, tin="flash", color=yel, color2=org)
     return r
 
 
-R["hb-reel-1016-email-asks"] = dict(make=hb_email_asks, music="hb-playful-inst-01.mp3")
+R["hb-reel-1016-email-asks"] = dict(make=hb_email_asks, music="hb-playful-el-01.mp3")
 
 
 if __name__ == "__main__":

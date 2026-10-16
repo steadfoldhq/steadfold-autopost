@@ -59,13 +59,13 @@ def lf_read():
         '<div class="par" style="background:radial-gradient(circle, rgba(255,255,255,.08) 2px, transparent 2.6px) 0 0/34px 34px,#7A2149"></div>',
         el('<div class="small" style="font-size:40px">The American Academy of Pediatrics</div>', "c", 420, a="up", t=0.0),
         words("recommends reading / aloud together / *from infancy.*", "c", 540, t=0.15, gap=0.08, cls="S", em_cls="em", style="font-size:130px"),
-        el('<div class="small" style="font-size:30px;opacity:.75">Source: AAP policy statement on literacy promotion (2014), HealthyChildren.org</div>',
+        el('<div class="small" style="font-size:36px;opacity:.8">Source: AAP, 2014 · HealthyChildren.org</div>',
            "c", 1200, a="fade", t=0.4, style="padding:0 90px"),
     ]), tin="iris", focus=(540, 800), color=LF["pink"], cam="push")
     r.scene(2, "".join(['<div class="par blobs2"></div>',
                         words("Save this for / *bedtime.*", "c", 560, t=0.0, gap=0.12, cls="H", style="font-size:160px"),
                         emoji("🌙", 420, 980, 200, t=0.35, d=0.35, loop="float"),
-                        el('<div class="src">General information, not medical advice. Photo made with AI.</div>', "c", 1380, a="fade", t=0.3)]),
+                        el('<div class="src">General info, not medical advice. Photo made with AI.</div>', "c", 1380, a="fade", t=0.3)]),
             tin="stripes", color=LF["pink"], color2=LF["butter"], color3=LF["peach"], cam="push")
     r.loop(1.5, tin="flash", color=LF["peach"], color2=LF["butter"])
     return r
@@ -85,8 +85,8 @@ def ff_match():
                           emoji("🤝", 420, 1000, 220, t=0.4, d=0.3, loop="float")]), tin="whipL", cam="push")
     r.scene(2, "".join(['<div class="par deep"></div>', el(PILL("EXAMPLE MATH", "#FF6A3D"), "c", 380, a="stamp", t=0.0, d=0.25, r=-3),
                         words("Pay: 50,000 a year.", "c", 520, t=0.1, cls="Hw", style="font-size:96px"),
-                        words("They add *half* of what / you put in, up to / 6% of pay.", "c", 700, t=0.4, gap=0.06, cls="Hw", em_cls="emw",
-                              style="font-size:84px")]), tin="glitch", td=0.2, cam="tilt")
+                        words("They match *half,* / up to 6% of pay.", "c", 700, t=0.4, gap=0.06, cls="Hw", em_cls="emw",
+                              style="font-size:92px")]), tin="glitch", td=0.2, cam="tilt")
     bar = lambda lab, to, val, col, t0: (
         f'<div style="font:700 50px/1.1 Inter;color:#0E1440;margin-bottom:16px">{lab}</div>'
         f'<div class="bar" style="background:rgba(43,63,224,.12)"><div class="f" data-a="bar" data-t="{t0}" data-d="0.5" data-to="{to}" '
@@ -107,22 +107,19 @@ def ff_match():
                           el('<div class="field">🔍 <span data-a="type" data-t="0.3" data-d="0.35">match</span><span class="caret"></span></div>',
                              130, 780, a="up", t=0.1)]), tin="push", cam="push")
     r.scene(1.5, "".join(['<div class="par lite"></div>', el('<span class="num">3</span>', "c", 400, a="pop", t=0.0),
-                          words("Compare what you / put in with *the most* / they'll match.", "c", 580, t=0.05, gap=0.06, cls="H",
-                                style="font-size:100px")]), tin="iris", focus=(540, 700), color=soft, cam="push")
+                          words("Are you getting / *the full* match?", "c", 580, t=0.05, gap=0.06, cls="H",
+                                style="font-size:120px")]), tin="iris", focus=(540, 700), color=soft, cam="push")
     r.scene(2.5, "".join(['<div class="par deep"></div>', el(PILL("THE CATCH", "#FF6A3D"), "c", 380, a="stamp", t=0.0, d=0.25, r=-4),
-                          words("The match may need / you to stay a while / *(vesting).*", "c", 520, t=0.15, gap=0.06, cls="Hw", em_cls="emw",
-                                style="font-size:88px"),
-                          words("It's usually locked / until retirement age.", "c", 900, t=0.7, gap=0.05, cls="Hw", style="font-size:70px;opacity:.9"),
-                          words("Only put in what / you can keep up.", "c", 1130, t=1.1, gap=0.05, cls="Hw", em_cls="emw", style="font-size:70px")]),
+                          words("It may need you / to stay *(vesting).*", "c", 540, t=0.15, gap=0.06, cls="Hw", em_cls="emw",
+                                style="font-size:100px"),
+                          words("Usually locked / till retirement.", "c", 960, t=0.7, gap=0.05, cls="Hw", style="font-size:80px;opacity:.9")]),
             tin="stripes", color=coral, color2="#FFFFFF", color3="#2B3FE0", cam="tilt")
     r.scene(2, "".join(['<div class="par cob"></div>',
                         words("401(k) · group RRSP · / *workplace pension*", "c", 480, t=0.0, gap=0.08, cls="Hw", em_cls="emw", style="font-size:90px"),
-                        words("Rules differ where you live. / Check your plan's documents.", "c", 760, t=0.4, gap=0.05, cls="Hw",
-                              style="font-size:62px;opacity:.9"),
-                        el('<div class="fine">Example math. General education only, not financial advice.</div>', "c", 1300, a="fade", t=0.3)]),
+                        words("Rules differ. / Check your plan.", "c", 760, t=0.4, gap=0.05, cls="Hw",
+                              style="font-size:72px;opacity:.9"),
+                        el('<div class="fine">Example math. Education only, not advice.</div>', "c", 1300, a="fade", t=0.3)]),
             tin="push", cam="push")
-    r.scene(1.5, "".join(['<div class="par lite"></div>', words("Check it / *today.*", "c", 560, t=0.0, cls="H", style="font-size:190px"),
-                          img("ht-piggy.png", 360, 980, 360, t=0.3, r=-6)]), tin="flash", color=soft, color2="#FFFFFF", cam="push")
     r.loop(1.5, tin="whipU")
     return r
 
@@ -138,10 +135,9 @@ def lh_next_step():
 """, stage="#FFE27A")
     r.scene(2, "".join([
         '<div class="par dots"></div>', AM.lh_chip(),
-        el('<div class="box todo"><div style="font:900 56px/1 \'Inter Display\';margin-bottom:16px">To do</div>'
+        el('<div class="box todo">'
            '<div class="row"><span class="bx"></span>Do taxes</div><div class="row"><span class="bx"></span>Plan the trip</div>'
            '<div class="row"><span class="bx"></span>Fix my CV</div></div>', 100, 420, a="none", r=-2),
-        el('<span class="badge" style="font-size:60px">3 weeks</span>', 640, 520, a="stamp", t=0.3, d=0.25, r=10, loop="pulse"),
         el('Why won\'t it<br><span class="em">start?</span>', "c", 1050, a="none", cls="H", style="font-size:150px"),
     ]), cam="push", shake=(0.3, 0.2, 16))
     r.scene(1.5, "".join(['<div class="par dotsp"></div>',
@@ -191,25 +187,24 @@ def hb_swap():
     ]), cam="push", shake=(0.45, 0.2, 18))
     r.scene(2, "".join(['<div class="par cream"></div>',
                         el('<div class="rc"><div class="t">Pancakes</div>1 cup flour<br>1 cup milk<br><span class="strike">1 egg<span class="sk" '
-                           'data-a="strike" data-t="0.4" data-d="0.3"></span></span><br>2 tsp baking powder</div>', 120, 480, 840, a="fly", t=0.0, d=0.4, r=-3),
+                           'data-a="strike" data-t="0.4" data-d="0.3"></span></span></div>', 120, 480, 840, a="fly", t=0.0, d=0.4, r=-3),
                         emoji("😩", 420, 1240, 200, t=0.6, d=0.3, loop="wobble")]), tin="whipL", cam="tilt")
     r.scene(1.5, "".join(['<div class="par indi"></div>',
                           words("Don't run / to the *shop.*", "c", 560, t=0.0, gap=0.12, cls="Hw", em_cls="emo2", style="font-size:170px")]),
             tin="glitch", td=0.18, cam="push")
-    prompt = ('<div class="pc"><span class="k">PROMPT · IN THE CAPTION</span><br>I’m making <span class="chipy">[recipe]</span> and I’m out of '
-              '<span class="chipy">[ingredient]</span>. Give me 2 swaps most kitchens have. Say how much to use and how each changes the result.</div>')
-    r.scene(2.5, "".join(['<div class="par cream"></div>', words("Ask any AI chat / for a *swap.*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:110px"),
+    prompt = ('<div class="pc"><span class="k">PROMPT IN CAPTION</span><br>I’m out of <span class="chipy">[egg]</span>. Give me 2 swaps.</div>')
+    r.scene(2.5, "".join(['<div class="par cream"></div>', words("Ask AI / for a *swap.*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:130px"),
                           el(prompt, 80, 720, 920, a="fly", t=0.1, d=0.45, r=-2)]), tin="whipU", cam="rise")
-    r.scene(3, "".join(['<div class="par plum"></div>', el('<span class="tag">WHAT YOU GET · EXAMPLE MADE UP</span>', "c", 400, a="pop", t=0.0),
-                        el('<div class="res">🍌 <b>Mashed banana:</b> ¼ cup per egg. Sweeter, a bit denser.</div>', 80, 520, 920, a="left", t=0.1, d=0.3),
-                        el('<div class="res">🥣 <b>Plain yogurt:</b> ¼ cup per egg. Soft, a little tangy.</div>', 80, 900, 920, a="left", t=0.6, d=0.3),
+    r.scene(3, "".join(['<div class="par plum"></div>', el('<span class="tag">EXAMPLE · MADE UP</span>', "c", 400, a="pop", t=0.0),
+                        el('<div class="res" style="font-size:60px">🍌 <b>Mashed banana:</b><br>¼ cup per egg.</div>', 80, 520, 920, a="left", t=0.1, d=0.3),
+                        el('<div class="res" style="font-size:60px">🥣 <b>Plain yogurt:</b><br>¼ cup per egg.</div>', 80, 900, 920, a="left", t=0.6, d=0.3),
                         emoji("😋", 420, 1300, 200, t=1.0, d=0.3, loop="float")]), tin="pixel", td=0.4, cam="pull")
     r.scene(1.5, "".join(['<div class="par indi"></div>',
                           words("Pick the one / that *fits.*", "c", 560, t=0.0, gap=0.12, cls="Hw", em_cls="emo2", style="font-size:170px")]),
             tin="push", cam="push")
     r.scene(2, "".join(['<div class="par cream"></div>',
                         words("Allergies? / Say so in / the *prompt.*", "c", 460, t=0.0, gap=0.1, cls="H", style="font-size:140px"),
-                        el('<div class="fine">And double-check anything important before you cook.</div>', "c", 1000, a="up", t=0.45)]),
+                        el('<div class="fine">Double-check before you cook.</div>', "c", 1000, a="up", t=0.45)]),
             tin="iris", focus=(540, 800), color=HB["acc"], cam="push")
     r.scene(1.5, "".join(['<div class="par peach"></div>', words("Paste. Ask. / *Keep cooking.*", "c", 560, t=0.0, gap=0.12, cls="H", style="font-size:150px"),
                           emoji("🥞", 420, 1180, 230, t=0.35, d=0.3, loop="float")]), tin="stripes", color=HB["acc"], color2="#5E54C9", color3=org,
@@ -237,7 +232,7 @@ def ff_raise_half():
                           words("Save 100 a month / for 20 years:", "c", 420, t=0.0, gap=0.08, cls="Hw", style="font-size:96px"),
                           el('<span data-a="count" data-t="0.2" data-d="1.0" data-to="46204" data-comma="1">0</span>', "c", 690, a="none", cls="Hw",
                              style="font-size:250px;color:#FFB08F;letter-spacing:-.06em"),
-                          words("from 24,000 paid in.", "c", 1000, t=0.7, cls="Hw", style="font-size:80px")]), tin="slam", cam="push",
+                          words("24,000 paid in. / Example: 6% a year.", "c", 1000, t=0.7, cls="Hw", style="font-size:80px")]), tin="slam", cam="push",
             shake=(1.2, 0.2, 14))
     r.scene(1.5, "".join(['<div class="par cob"></div>',
                           words("Set the transfer / the day it *lands.*", "c", 520, t=0.0, gap=0.1, cls="Hw", em_cls="emw", style="font-size:120px"),
@@ -247,12 +242,11 @@ def ff_raise_half():
             tin="push", cam="push")
     r.scene(2.5, "".join(['<div class="par deep"></div>', el(PILL("THE CATCH", "#FF6A3D"), "c", 380, a="stamp", t=0.0, d=0.25, r=-4),
                           words("Only save what / you can *keep up.*", "c", 520, t=0.15, gap=0.08, cls="Hw", em_cls="emw", style="font-size:120px"),
-                          words("A smaller amount you never stop / beats a big one you cancel.", "c", 900, t=0.6, gap=0.04, cls="Hw",
-                                style="font-size:60px;opacity:.9")]), tin="stripes", color=coral, color2="#FFFFFF", color3="#2B3FE0", cam="tilt")
+                          words("Small and steady / beats big and cancelled.", "c", 900, t=0.6, gap=0.04, cls="Hw",
+                                style="font-size:72px;opacity:.9")]), tin="stripes", color=coral, color2="#FFFFFF", color3="#2B3FE0", cam="tilt")
     r.scene(2, "".join([photo("ff-street.jpg", 0.5, "30% center"),
                         words("Save this for / your *next raise.*", "c", 520, t=0.0, gap=0.1, cls="Hw", em_cls="emw", style="font-size:130px"),
-                        el('<div class="fine" style="color:#E6E9FF">Example at 6% a year, compounded monthly. Not a promise. Real returns vary, before fees, '
-                           'tax and inflation. General education only, not financial advice. Photo made with AI.</div>', "c", 1240, a="fade", t=0.3,
+                        el('<div class="fine" style="color:#E6E9FF">Not a promise. Education only.<br>Photo made with AI.</div>', "c", 1240, a="fade", t=0.3,
                            style="padding:0 90px")]), tin="flash", color=soft, color2="#FFFFFF", cam="push")
     r.loop(1.5, tin="zoom", focus=(540, 700))
     return r
@@ -266,22 +260,21 @@ def hb_offline():
 .plan{background:#FFC94D;border-radius:36px;padding:40px 46px;font:600 50px/1.5 Inter;color:#2A2238}
 """, stage="#3A2240")
     yel, org = HB["acc"], HB["acc2"]
-    chips = ["dentist?", "reply to Jo", "gym", "report draft", "buy milk", "call mum", "book car service", "laundry", "invoice", "RSVP"]
+    chips = ["dentist?", "reply to Jo", "gym", "report draft", "milk", "RSVP"]
     r.scene(2, "".join([photo("hb-clouds.jpg", 0.35), AM.hb_chip(),
                         el('Off work.<br>Brain still <span class="emo2">at work?</span>', "c", 440, a="none", cls="Hw", style="font-size:130px"),
                         emoji("🧠", 420, 940, 220, t=0.2, d=0.3, loop="buzz", amp=1.2)]), cam="push")
-    r.scene(2.5, "".join(['<div class="par plum"></div>', words("Dump *everything* / into any AI chat.", "c", 380, t=0.0, gap=0.08, cls="Hw",
+    r.scene(2.5, "".join(['<div class="par plum"></div>', words("Dump it *all* / into AI.", "c", 380, t=0.0, gap=0.08, cls="Hw",
                                                                 em_cls="emo2", style="font-size:100px"),
                           el('<div class="dump" data-a="stack" data-t="0.3" data-gap="0.07" data-d="0.3">' + "".join(f"<span>{c}</span>" for c in chips)
                              + '</div>', 70, 760, a="none")]), tin="whipL", cam="tilt")
-    prompt = ('<div class="pc"><span class="k">PROMPT · IN THE CAPTION</span><br>Here’s everything on my mind for tomorrow: <span class="chipy">[brain dump]'
-              '</span>. Pick my 3 must-dos and give me a rough schedule. Move the rest to later this week.</div>')
+    prompt = ('<div class="pc"><span class="k">PROMPT IN CAPTION</span><br>Pick my 3 must-dos and a rough schedule.</div>')
     r.scene(2.5, "".join(['<div class="par cream"></div>', words("Ask for your / *3 must-dos.*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:120px"),
                           el(prompt, 80, 740, 920, a="fly", t=0.1, d=0.45, r=-2)]), tin="whipU", cam="rise")
     r.scene(2.5, "".join(['<div class="par indi"></div>', el('<span class="tag">EXAMPLE MADE UP</span>', "c", 400, a="pop", t=0.0),
                           el('<div class="plan"><div data-a="left" data-t="0.15" data-d="0.3"><b>9:00</b> Report draft</div><div data-a="left" '
                              'data-t="0.4" data-d="0.3"><b>12:30</b> Reply to Jo</div><div data-a="left" data-t="0.65" data-d="0.3"><b>17:30</b> Gym</div>'
-                             '<div data-a="fade" data-t="1.0" data-d="0.3" style="font-size:40px;opacity:.75;margin-top:14px">Later this week: the rest</div></div>',
+                             '</div>',
                              90, 520, 900, a="none")]), tin="pixel", td=0.4, cam="pull")
     r.scene(1.5, "".join(['<div class="par cream"></div>', words("Check it. / Move what's *wrong.*", "c", 560, t=0.0, gap=0.1, cls="H", style="font-size:140px")]),
             tin="push", cam="push")
@@ -291,7 +284,7 @@ def hb_offline():
             tin="flash", color=yel, color2=org, cam="push", shake=(0.55, 0.2, 14))
     r.scene(2, "".join(['<div class="par plum"></div>',
                         words("Save this / for *tonight.*", "c", 520, t=0.0, gap=0.12, cls="Hw", em_cls="emo2", style="font-size:170px"),
-                        el('<div class="fine" style="color:#CFC6E6">Tip: remove personal details before you paste.<br>Photo made with AI.</div>', "c", 1000,
+                        el('<div class="fine" style="color:#CFC6E6">Remove private details first.<br>Photo made with AI.</div>', "c", 1000,
                            a="up", t=0.4)]), tin="stripes", color=yel, color2="#5E54C9", color3=org, cam="push")
     r.loop(1.5, tin="zoom", focus=(540, 700))
     return r
@@ -306,7 +299,7 @@ def lf_one_job():
 .job .emo{font-size:150px}
 """, stage="#FFF4E0")
     r.scene(2, "".join(['<div class="par blobs"></div>', AM.lf_chip(),
-                        el('<div class="bub">Let me know if you<br>need anything! 😊</div>', 110, 420, 860, a="none", loop="float", amp=0.5),
+                        el('<div class="bub">Need anything? 😊</div>', 110, 420, 860, a="none", loop="float", amp=0.5),
                         el('Hard to answer<br>at <span class="em">3 am.</span>', "c", 820, a="none", cls="H", style="font-size:150px"),
                         emoji("😵‍💫", 420, 1180, 200, t=0.3, d=0.3, loop="wobble")]), cam="push")
     r.scene(1.5, "".join(['<div class="par pinkbg"></div>', words("Give them / *one job.*", "c", 560, t=0.0, gap=0.14, cls="H", style="font-size:190px")]),
@@ -367,14 +360,14 @@ def photo_clock():
 
 
 R.update({
-    "lf-reel-1017am-read": dict(make=lf_read, music="lf-cosy-inst-01.mp3"),
-    "ff-reel-1017am-match": dict(make=ff_match, music="ff-curious-inst-01.mp3"),
-    "lh-reel-1017am-next-step": dict(make=lh_next_step, music="lh-focus-inst-01.mp3"),
-    "hb-reel-1017am-swap": dict(make=hb_swap, music="hb-playful-inst-01.mp3"),
-    "ff-reel-1017-raise-half": dict(make=ff_raise_half, music="ff-curious-inst-01.mp3"),
-    "hb-reel-1017-offline": dict(make=hb_offline, music="hb-playful-inst-01.mp3"),
-    "lf-reel-1017-one-job": dict(make=lf_one_job, music="lf-cosy-inst-01.mp3"),
-    "lh-reel-1017-one-tab": dict(make=lh_one_tab, music="lh-focus-inst-01.mp3"),
+    "lf-reel-1017am-read": dict(make=lf_read, music="lf-cosy-el-01.mp3"),
+    "ff-reel-1017am-match": dict(make=ff_match, music="ff-curious-el-01.mp3"),
+    "lh-reel-1017am-next-step": dict(make=lh_next_step, music="lh-focus-el-01.mp3"),
+    "hb-reel-1017am-swap": dict(make=hb_swap, music="hb-playful-el-01.mp3"),
+    "ff-reel-1017-raise-half": dict(make=ff_raise_half, music="ff-curious-el-01.mp3"),
+    "hb-reel-1017-offline": dict(make=hb_offline, music="hb-playful-el-01.mp3"),
+    "lf-reel-1017-one-job": dict(make=lf_one_job, music="lf-cosy-el-01.mp3"),
+    "lh-reel-1017-one-tab": dict(make=lh_one_tab, music="lh-focus-el-01.mp3"),
 })
 ORDER = ["lf-reel-1017am-read", "ff-reel-1017am-match", "lh-reel-1017am-next-step", "hb-reel-1017am-swap",
          "ff-reel-1017-raise-half", "hb-reel-1017-offline", "lf-reel-1017-one-job", "lh-reel-1017-one-tab"]

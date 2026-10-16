@@ -25,7 +25,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from kit import (BRANDS, FPS, Reel, asset, el, emoji, img, loudness, master_audio, probe, qa_times, render_frames,  # noqa: E402
+from kit import (BRANDS, FPS, Reel, make_readable, reading_report, asset, el, emoji, img, loudness, master_audio, probe, qa_times, render_frames,  # noqa: E402
                  ring, sheet, words)
 
 REPO = HERE.parent.parent
@@ -115,11 +115,11 @@ class HReel(Reel):
 def mix(video, out, music, cues, dur, music_from=0.0, music_gain=0.0, duck=None, extend=None, fade=1.3, eq=None):
     """music: library mp3; cues: [(path, t, gain_db, lowpass_hz)]; duck: ffmpeg volume expression on the bed;
     extend: (cut_at, xfade, restart_from) to lengthen the bed with a crossfade back into itself."""
-    inputs = ["-i", str(video), "-i", str(music)]
+    inputs = ["-i", str(video), "-stream_loop", "-1", "-i", str(music)]
     fc = []
     if extend:
         cut, xf, rs = extend
-        inputs += ["-i", str(music)]
+        inputs += ["-stream_loop", "-1", "-i", str(music)]
         fc.append(f"[1:a]atrim={music_from}:{cut},asetpts=PTS-STARTPTS[m1];[2:a]atrim={rs},asetpts=PTS-STARTPTS[m2];"
                   f"[m1][m2]acrossfade=d={xf}:c1=tri:c2=tri[mb]")
     else:
@@ -130,7 +130,7 @@ def mix(video, out, music, cues, dur, music_from=0.0, music_gain=0.0, duck=None,
     fc.append(f"[mb]{vol},apad,atrim=0:{dur:.3f}[bed]")
     labels = ["[bed]"]
     for k, (p, t, g, lp) in enumerate(cues):
-        idx = len(inputs) // 2
+        idx = inputs.count("-i")
         inputs += ["-i", str(p)]
         ms = int(t * 1000)
         fc.append(f"[{idx}:a]aformat=channel_layouts=stereo,aresample=44100,lowpass=f={lp},volume={g}dB,adelay={ms}|{ms},apad,"
@@ -407,8 +407,8 @@ HB_CSS = EXTRA_CSS + """
 .small{font:600 32px/1.3 Inter;color:#8C7F9E}
 """
 
-CHAT = [("Mum", "ok so Saturday 🎉"), ("Uncle Raj", "👍"), ("Sis", "who's doing dessert??"), ("Mum", "🎤 Voice message · 2:41"),
-        ("Dad", "did anyone ask Grandpa"), ("Sis", "WAIT what time"), ("Uncle Raj", "📷 Photo"), ("Mum", "6!! at mine")]
+# READABLE PACING: the chat is pure emoji chaos (no words to read), so the hook line is the only text on screen.
+CHAT = [("", "🎉🎉🎉"), ("", "👍"), ("", "🍰❓❓"), ("", "🎤 〰️〰️〰️〰️"), ("", "👴❓"), ("", "⏰⁉️"), ("", "📷📷"), ("", "‼️🏠‼️")]
 
 
 def hb_set():
@@ -416,7 +416,8 @@ def hb_set():
 
 
 def hb_phone(start=0, n=8, a="stack", t=0.1, gap=0.16):
-    msgs = "".join(f'<div class="m"><small>{who}</small>{txt}</div>' for who, txt in CHAT[start:start + n])
+    msgs = "".join(f'<div class="m">{f"<small>{who}</small>" if who else ""}<span style="font-size:52px">{txt}</span></div>'
+                   for who, txt in CHAT[start:start + n])
     return (f'<div class="phone"><div class="scr"><div class="hdr"><span class="emo">🏡</span>Family<span class="badge">147</span></div>'
             f'<div class="msgs el" style="position:static" data-a="{a}" data-t="{t}" data-d="0.28" data-gap="{gap}">{msgs}</div></div></div>')
 
@@ -443,16 +444,14 @@ def hb_freeze():
             tin="pixel", td=0.4, cam="push")
     r.scene(4, "".join(['<div class="cream"></div>',
                         el('<span class="chipk">ASK ANY AI</span>', "c", 330, a="pop", t=0.0),
-                        el('<div class="pc"><span data-a="type" data-t="0.2" data-d="1.1">What do I need to do, and by when? One line each.</span></div>',
+                        el('<div class="pc"><span data-a="type" data-t="0.2" data-d="1.0">What do I need to do, by when?</span></div>',
                            120, 460, 840, a="up", t=0.0),
                         img("ht-point.png", 150, 900, 470, a="fly", t=0.35, r=-32, loop="float")]),
             tin="whipL", cam="push")
-    res = ('<div class="res"><div class="small" style="margin-bottom:10px">WHAT YOU GET · EXAMPLE</div>' +
+    res = ('<div class="res"><div class="small" style="margin-bottom:10px">EXAMPLE · MADE UP</div>' +
            "".join(f'<div class="ri" data-a="left" data-t="{0.15 + k * 0.4:.2f}" data-d="0.35"><span class="e">{e}</span><span>{t}</span></div>'
                    for k, (e, t) in enumerate([("🍰", "<b>Bring dessert.</b> Sat, 6 pm, Mum's."),
-                                               ("🎁", "<b>Chip in for Grandpa's gift.</b> By Thu."),
-                                               ("💬", "Everything else: chatter.")])) +
-           '<div class="small" style="margin-top:12px">Example made up for this post.</div></div>')
+                                               ("🎁", "<b>Chip in for Grandpa's gift.</b> By Thu.")])) + '</div>')
     r.scene(4, "".join(['<div class="cream"></div>', el(res, 90, 400, 900, a="up", t=0.0)]), tin="slam", cam="rise")
     r.scene(3, "".join([hb_set(), '<div class="scrimA" style="background:rgba(58,34,64,.55)"></div>',
                         words("147 messages.", "c", 420, t=0.0, gap=0.1, cls="HP wht", style="font-size:130px"),
@@ -462,6 +461,7 @@ def hb_freeze():
                            a="pop", t=0.9)]),
             tin="zoom", focus=(540, 700), cam="push", shake=(0.45, 0.2, 18))
     r.loop(1.5, tin="spin")
+    make_readable(r)
     s3 = r.scenes[2]["start"]
     s4 = r.scenes[3]["start"]
     duck = f"if(lt(t,{s3 - 0.02:.2f}),1,if(lt(t,{s4 - 0.15:.2f}),0.0,1))"
@@ -572,9 +572,11 @@ def lf_3am():
                               a="pop", t=0.8)]),
             tin="blob", color="#FFD3AE", focus=(540, 1000), cam="push")
     r.loop(1.5, tin="flash", color="#FFD3AE", color2="#FFF4E0")
+    make_readable(r)
     rain = SFX("sfx-rain-window")
+    rains = [(rain, k * 7.6, 22, 5000) for k in range(int(r.duration // 7.6) + 1)]
     sound = dict(music=LIB / "lf-hero-3am-el.mp3", music_from=0.0, extend=(12.0, 1.5, 0.0),
-                 cues=[(rain, 0.0, 22, 5000), (rain, 7.6, 22, 5000), (SFX("sfx-whoosh-soft"), 1.4, -14, 5000)])
+                 cues=rains + [(SFX("sfx-whoosh-soft"), r.scenes[1]["start"] - 0.1, -14, 5000)])
     return r, sound
 
 
@@ -585,6 +587,7 @@ R["lf-reel-1018am-3am-windows"] = lf_3am
 def build(rid, outdir, qa_only=False, dsf=2):
     r, snd = R[rid]()
     r.stretch(12.6)
+    assert all(x["ok"] for x in reading_report(r)), reading_report(r)  # READABLE PACING
     work = Path(outdir) / rid
     if not qa_only:
         fdir, n = render_frames(r, work, dsf=dsf)

@@ -428,3 +428,92 @@ def master_audio(mp4, target=-14.0, limit_db=-1.6):
                         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", str(tmp)], check=True)
         tmp.replace(mp4)
     return loudness(mp4)
+
+
+# =============================================================================================== READABLE PACING (standard, Oct 16)
+# Every text beat holds at least 0.4 s per word + 0.6 s. A "beat" is a scene; words that animate in later
+# (data-t, kinetic word gaps) must still get their own reading time before the scene ends.
+READ_PER_WORD, READ_BASE = 0.4, 0.6
+
+
+def text_beats(html):
+    """[(appear_time_s, n_words)] for the visible text in one scene's HTML. Brand chips and emoji are not words."""
+    import re as _re
+    from html.parser import HTMLParser
+
+    word_re = _re.compile(r"[0-9A-Za-zÀ-ɏ$%#@&]")
+
+    class P(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.stack, self.out = [], []
+
+        def handle_starttag(self, tag, attrs):
+            if tag in ("br", "img", "meta", "input", "hr"):
+                return
+            a = dict(attrs)
+            cls = a.get("class", "") or ""
+            t = a.get("data-t")
+            gap = a.get("data-gap") if a.get("data-a") in ("words", "stack") else None
+            self.stack.append(dict(t=float(t) if t is not None else None, gap=float(gap) if gap else None,
+                                   skip=("chip" in cls.split() or "emo" in cls.split() or tag in ("style", "script")), k=0))
+
+        def handle_endtag(self, tag):
+            if tag in ("br", "img", "meta", "input", "hr"):
+                return
+            if self.stack:
+                self.stack.pop()
+
+        def handle_data(self, data):
+            if any(s["skip"] for s in self.stack):
+                return
+            ws = [w for w in data.split() if word_re.search(w)]
+            if not ws:
+                return
+            t, host = 0.0, None
+            for s in reversed(self.stack):
+                if s["t"] is not None:
+                    t, host = s["t"], s
+                    break
+            if host is not None and host["gap"]:
+                t += host["gap"] * (host["k"] + len(ws) - 1)
+                host["k"] += len(ws)
+            self.out.append((max(0.0, t), len(ws)))
+
+    p = P()
+    p.feed(html)
+    return p.out
+
+
+def read_need(html, per_word=READ_PER_WORD, base=READ_BASE):
+    """Seconds a scene must hold: the whole block read at 0.4 s/word + 0.6 s, and the last line to appear
+    still gets its own 0.4 s/word + 0.6 s."""
+    tb = text_beats(html)
+    if not tb:
+        return 0.0, 0
+    n = sum(k for _, k in tb)
+    last = max(t + per_word * k + base for t, k in tb)
+    return max(per_word * n + base, last), n
+
+
+def reading_report(reel):
+    rows = []
+    for i, s in enumerate(reel.scenes):
+        need, n = read_need(s["html"])
+        rows.append(dict(i=i, start=round(s["start"], 2), dur=round(s["dur"], 2), words=n, need=round(need, 2), ok=s["dur"] + 1e-3 >= need))
+    return rows
+
+
+def make_readable(reel, step_beats=0.5):
+    """Lengthen every text beat that is too fast, in half beats of the page's tempo (cuts stay on the music)."""
+    step = step_beats * reel.beat
+    for s in reel.scenes:
+        need, _ = read_need(s["html"])
+        if s["dur"] + 1e-3 < need:
+            s["dur"] = math.ceil((need - 1e-3) / step) * step
+    t = reel.scenes[0]["start"] if reel.scenes else 0.0
+    for s in reel.scenes:
+        s["start"] = round(t, 4)
+        t += s["dur"]
+    reel.t = t
+    return reel

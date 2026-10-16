@@ -12,7 +12,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from kit import (BRANDS, asset as asset_uri, Reel, arrow, chip, el, emoji, encode, img, loudness, probe, qa_times, render_frames,  # noqa: E402
+from kit import (BRANDS, make_readable, reading_report, asset as asset_uri, Reel, arrow, chip, el, emoji, encode, img, loudness, probe, qa_times, render_frames,  # noqa: E402
                  ring, scribble_circle, sheet, words)
 
 REPO = HERE.parent.parent
@@ -547,7 +547,8 @@ R["hb-reel-1016am-calm-reply"] = dict(make=hb_calm, music="hb-playful-inst-01.mp
 # =============================================================================================== build
 def build(rid, outdir, qa_only=False, dsf=2):
     spec = R[rid]
-    r = spec["make"]().stretch(12.6)
+    r = make_readable(spec["make"]()).stretch(12.6)  # READABLE PACING: every text beat >= 0.4 s/word + 0.6 s
+    assert all(x["ok"] for x in reading_report(r)), reading_report(r)
     work = Path(outdir) / rid
     if not qa_only:
         fdir, n = render_frames(r, work, dsf=dsf)
