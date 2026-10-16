@@ -10,3 +10,12 @@
 4. `python3 studio/shortform/sheet.py <module> 0,4,8` writes a preview contact sheet.
 
 Pilots of Oct 16 2026: FF-S1 Guess the Gap, FF-S2 POV First Year Freelancing, LH-S1 Brain vs Me, LH-S2 Fake Productivity Tier List, HB-S1 Typed vs Sent, HB-S2 214 Unread. The MP4s are not in this public repo. They are sent to Dharma for approval.
+
+## Round 2b (Oct 16 2026, pm): sound and polish
+- Voices: house trio in `tools/voices.json` (Kayla = Fully Funded, Laura = Locked Hour, Liam = Hourback), Eleven v3,
+  stability 0.5, audio tags + ellipses. One script = one continuous take (`tools/tts-spec-shortform-r2-v3.json`, `takes: 2`).
+- `r2.py` never cuts a take; it only lengthens a natural pause for a hold. Music bed + room tone run under everything
+  (`finish(S, frame, cues, bed=..., amb=...)`), mastered to -14 LUFS / -1.5 dBTP.
+- QA in `finish()`: reading rule (rolling 2-line captions), per-frame text contrast >= 3:1, no dead air (> 250 ms below
+  -50 dBFS), loudness via tools/music_check.py. Writes `<id>.qa.json` and `<id>-sheet.jpg`.
+- `audition_reel.py OUT.mp4` rebuilds the 30-s house-voice audition.
