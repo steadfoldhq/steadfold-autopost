@@ -1,5 +1,4 @@
-ff-s1a: ok
-ff-s1b: ok
-ff-s2: ok
-hb-s1: ok
-hb-s2: ok
+ff-s1a-v3: ok
+ff-s1b-v3: ok
+ff-s2-v3: ok
+lh-s1-v3: ok
