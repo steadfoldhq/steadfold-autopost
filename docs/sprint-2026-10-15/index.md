@@ -37,3 +37,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 - E1 · Creative/Entertainment pitch · https://claude.ai/code/artifact/9810221b-232a-4fa2-94be-3a80810c94a0
 - B4 · Puddlecrofts motion test · sent to Dharma
 - B2 · Oct 19–20 fill · 42 items
+- C1 · Steadfold Master Roadmap · v1 (Oct 2026) · https://claude.ai/code/artifact/fa9a41a4-3265-4b85-89df-3846f1690ca2
