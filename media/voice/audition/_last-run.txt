@@ -1,4 +1,4 @@
-shared {'gender': 'female', 'age': 'young', 'language': 'en', 'accent': 'american', 'use_cases': 'social_media', 'page_size': 20}: 20
-shared {'gender': 'female', 'age': 'young', 'language': 'en', 'accent': 'american', 'use_cases': 'conversational', 'page_size': 20}: 20
-shared {'gender': 'male', 'age': 'young', 'language': 'en', 'accent': 'american', 'use_cases': 'social_media', 'page_size': 20}: 20
-shared {'gender': 'male', 'age': 'young', 'language': 'en', 'accent': 'american', 'use_cases': 'conversational', 'page_size': 20}: 20
+add SF Kayla: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_write to execute this operation.","status":"missing_permissions","reques'
+add SF Drew: HTTP 401 b'{"detail":{"type":"authentication_error","code":"unauthorized","message":"The API key you used is missing the permission voices_write to execute this operation.","status":"missing_permissions","reques'
+aud-kayla: unknown voice 'SF Kayla'
+aud-drew: unknown voice 'SF Drew'
