@@ -8,10 +8,10 @@ For each Reel: a Shorts title (100 characters or fewer, search-phrase style), a 
 - **Shorts title** (63 chars): Investing for kids: 100 a month from birth to 65 (example math)
 - **Description:**
   ```
-  100 a month from birth could grow to about 645,000 by 65 at an example 6% a year. Not a promise; real returns vary.
+  100 a month from birth to 18, then left untouched, could grow to about 645,000 by 65 (example at 6% a year, compounded monthly). Not a promise; real returns vary.
   General education only, not financial advice. #Shorts #investing #personalfinance
   ```
-- **TikTok / Pinterest caption:** 100 a month from birth → about 645,000 by 65 (example at 6%, not a promise). Start small, automate it. General education only, not financial advice. #investing #moneytips #newparents
+- **TikTok / Pinterest caption:** 100 a month from birth to 18, left alone → about 645,000 by 65 (example at 6%, not a promise). Start small, automate it. General education only, not financial advice. #investing #moneytips #newparents
 
 ### Littlefold · `lf-reel-1015-safe-sleep.mp4`
 - **Shorts title** (68 chars): Safe sleep for babies: 3 quick checks before bed (alone, back, crib)
