@@ -117,7 +117,7 @@ def ff_fee():
     pig = img("ht-piggy.png", 290, 1170, 500, t=-0.5, r=-6, loop="float")
     r.scene(2, COB + head("A 1% fee / looks *tiny.*", 470, "Hw", 190, em="emw", hook=True) + pig
             + emoji("🤏", 690, 1240, 170, t=0.3, d=0.35, loop="wobble"), cam="push", shake=(0.3, 0.2, 16))
-    r.scene(2, LITE + ff_kick("EXAMPLE") + head("200 a month / for *30 years.*", 520, "H", 150, t=0.1)
+    r.scene(2, LITE + head("200 a month. / 30 years. / *6%* a year.", 470, "H", 140, t=0.0)
             + emoji("📅", 420, 1170, 220, t=0.6, d=0.35, loop="float"), tin="whipL", cam="push")
     r.scene(2, LITE + ff_bars("No fee", 200903, 100, "1% fee", 166452, 82.9), tin="slam", cam="rise")
     r.scene(2, DEEP + head("The fee took", 470, "Hw", 120, t=0.0)
@@ -164,7 +164,7 @@ def hb_email_asks():
             tin="whipL", cam="rise")
     r.scene(2, PEACH + kick("ASK AI", "#5E54C9", "#fff", y=380)
             + bub("The asks, and by when?", "me", y=620, t=0.2), tin="slam", cam="push")
-    r.scene(2, CREAM + kick("EXAMPLE", "#FFC94D", "#2A2238", y=380)
+    r.scene(2, CREAM + kick("AI REPLY", "#FFC94D", "#2A2238", y=380)
             + bub("Deck → Thu<br>Room → Fri", "ai", y=600, t=0.15, w=700), tin="pixel", cam="rise")
     r.scene(2, INDI + head("Check each *quote.* / Then reply.", 560, "Hw", 140, em="emo2")
             + emoji("✅", 430, 1170, 220, t=0.5, d=0.3, loop="pulse"), tin="glitch", td=0.2, cam="push")
@@ -273,7 +273,7 @@ def ff_match():
     r = reel("ff-reel-1017am-match", "fullyfunded", "ff-d-question-marimba-el.mp3", "#2B3FE0", FFC)
     face = emoji("🫣", 380, 1170, 320, t=-0.5, d=0.4, loop="wobble")
     r.scene(2, COB + head("Never checked / your *match?*", 470, "Hw", 160, em="emw", hook=True) + face, cam="push", shake=(0.2, 0.2, 14))
-    r.scene(2, LITE + ff_kick("EXAMPLE") + head("Pay 50,000. / They add *half,* / up to 6%.", 520, "H", 130, t=0.1),
+    r.scene(2, LITE + head("Pay 50,000. / They add *half,* / up to 6%.", 470, "H", 130, t=0.0),
             tin="whipL", cam="push")
     r.scene(2, LITE + ff_bars("You put in 3%", 750, 50, "You put in 6%", 1500, 100), tin="slam", cam="rise")
     r.scene(2, COB + head("Search your plan: / *“match”*", 540, "Hw", 140, em="emw") + emoji("🔍", 400, 1170, 260, t=0.4, d=0.35, loop="float"),
@@ -309,7 +309,7 @@ def hb_swap():
     r.scene(2, INDI + head("Don't run / to the *shop.*", 560, "Hw", 170, em="emo2") + emoji("🏃", 420, 1170, 240, t=0.3, d=0.3, loop="buzz"),
             tin="whipL", cam="push")
     r.scene(2, CREAM + kick("ASK AI", "#5E54C9", "#fff", y=400) + bub("Out of eggs. 2 swaps?", "me", y=620, t=0.2), tin="slam", cam="rise")
-    r.scene(2, PEACH + kick("EXAMPLE", "#FFC94D", "#2A2238", y=400) + bub("🍌 Banana · ¼ cup<br>🥣 Yogurt · ¼ cup", "ai", y=600, t=0.15, w=760),
+    r.scene(2, PEACH + kick("AI REPLY", "#FFC94D", "#2A2238", y=400) + bub("🍌 Banana · ¼ cup<br>🥣 Yogurt · ¼ cup", "ai", y=600, t=0.15, w=760),
             tin="pixel", cam="push")
     r.scene(2, INDI + head("Allergies? / *Say so.*", 600, "Hw", 180, em="emo2"), tin="glitch", td=0.2, cam="push")
     r.scene(2, CREAM + head("Save for your next / *half-made recipe.*", 520, "H", 120) + emoji("🥞", 400, 1170, 280, t=0.4, d=0.35, loop="float"),
@@ -322,12 +322,12 @@ def ff_raise_half():
     street = photo("ff-street.jpg", "rgba(22,32,107,.55)")
     r.scene(2, street + head("Got a raise? / Save *half.*", 500, "Hw", 180, em="emw", hook=True)
             + emoji("🎉", 420, 1170, 240, t=-0.4, d=0.35, loop="wobble"), cam="push")
-    r.scene(2, LITE + ff_kick("EXAMPLE") + head("200 more / a *month.*", 540, "H", 170, t=0.1), tin="whipL", cam="push")
+    r.scene(2, LITE + head("Raise: / 200 more / a *month.*", 470, "H", 170, t=0.0), tin="whipL", cam="push")
     split = ('<div style="display:flex;gap:40px;justify-content:center">'
              '<div class="card" style="text-align:center;width:400px"><div class="H" style="font-size:150px">100</div><div class="lbl">saved</div></div>'
              '<div class="card" style="text-align:center;width:400px;background:#FF6A3D"><div class="Hw" style="font-size:150px">100</div>'
              '<div class="lbl" style="color:#fff">enjoyed</div></div></div>')
-    r.scene(2, DEEP + head("Saved for 20 years:", 470, "Hw", 110)
+    r.scene(2, DEEP + head("Save 100 at 6%, 20 years:", 470, "Hw", 90)
             + el('<span data-a="count" data-t="0.2" data-d="0.9" data-to="46204" data-comma="1">0</span>', "c", 660, a="none", cls="Hw",
                  style="font-size:250px;color:#FFB08F;letter-spacing:-.06em")
             + head("from 24,000 in", 980, "Hw", 90, t=0.6), tin="zoom", focus=(540, 900), cam="push", shake=(1.1, 0.2, 12))
@@ -348,7 +348,7 @@ def hb_offline():
                     enumerate(["Report", "Reply Jo", "Gym", "Dentist?"]))
     r.scene(2, INDI + head("Dump it *all.*", 380, "Hw", 150, em="emo2") + tasks, tin="whipL", cam="rise")
     r.scene(2, PEACH + kick("ASK AI", "#5E54C9", "#fff", y=400) + bub("Pick my 3 must-dos.", "me", y=620, t=0.2), tin="slam", cam="push")
-    r.scene(2, CREAM + kick("EXAMPLE", "#FFC94D", "#2A2238", y=400) + bub("9:00 Report<br>12:30 Reply Jo<br>17:30 Gym", "ai", y=600, t=0.15, w=760),
+    r.scene(2, CREAM + kick("AI REPLY", "#FFC94D", "#2A2238", y=400) + bub("9:00 Report<br>12:30 Reply Jo<br>17:30 Gym", "ai", y=600, t=0.15, w=760),
             tin="pixel", cam="rise")
     r.scene(2, PLUM + head("Then *log off.*", 560, "Hw", 190, em="emo2") + stamp("CLOSED", 560, 1000, "#FFC94D", "#2A2238", t=0.7),
             tin="glitch", td=0.2, cam="push")
@@ -431,7 +431,7 @@ def ff_lower_rate():
     r = reel("ff-reel-1018am-lower-rate", "fullyfunded", "ff-c-confident-build-el.mp3", "#2B3FE0", FFC)
     phone = emoji("☎️", 380, 1170, 300, t=-0.5, d=0.4, loop="buzz")
     r.scene(2, COB + head("Ask for a / *lower rate.*", 480, "Hw", 180, em="emw", hook=True) + phone, cam="push", shake=(0.1, 0.25, 16))
-    r.scene(2, LITE + ff_kick("EXAMPLE") + head("5,000 on a card / at *20%* a year.", 520, "H", 130, t=0.1), tin="whipL", cam="push")
+    r.scene(2, LITE + head("5,000 on a card / at *20%* a year.", 500, "H", 130, t=0.0), tin="whipL", cam="push")
     r.scene(2, LITE + ff_bars("Interest at 20%", 1097, 100, "Interest at 16%", 861, 78.5), tin="slam", cam="rise")
     r.scene(2, COB + el('<div class="card"><div class="H" style="font-size:100px">“Can you lower my rate?”</div></div>',
                         90, 560, 900, a="fly", t=0.0, d=0.5, r=-2), tin="whipR", cam="push")
@@ -473,7 +473,7 @@ def hb_freeze():
     r.scene(2, PLUM + head("Copy it. / Take out *names.*", 560, "Hw", 160, em="emo2") + emoji("✂️", 420, 1170, 220, t=0.4, d=0.3, loop="wobble"),
             tin="glitch", td=0.2, cam="push")
     r.scene(2, PEACH + kick("ASK AI", "#5E54C9", "#fff", y=400) + bub("What do I do, by when?", "me", y=620, t=0.2), tin="slam", cam="rise")
-    r.scene(2, CREAM + kick("EXAMPLE", "#FFC94D", "#2A2238", y=400) + bub("Dessert · Sat<br>RSVP · Thu", "ai", y=600, t=0.15, w=760),
+    r.scene(2, CREAM + kick("AI REPLY", "#FFC94D", "#2A2238", y=400) + bub("Dessert · Sat<br>RSVP · Thu", "ai", y=600, t=0.15, w=760),
             tin="pixel", cam="push")
     r.scene(2, INDI + head("Check each line / against the *chat.*", 560, "Hw", 140, em="emo2"), tin="whipL", cam="push")
     r.scene(2, CREAM + head("Send to the one / in *every group chat.*", 520, "H", 130) + img("ht-point.png", 260, 1170, 520, t=0.3, r=-6),
@@ -487,7 +487,7 @@ def hb_school():
     r.scene(2, INDI + head("School newsletter. / *Again.*", 480, "Hw", 160, em="emo2", hook=True) + env, cam="push", shake=(0.2, 0.2, 14))
     r.scene(2, CREAM + head("Dates buried / in *paragraph 6.*", 360, "H", 130) + mail_card(800, 0.2), tin="whipL", cam="rise")
     r.scene(2, PEACH + kick("ASK AI", "#5E54C9", "#fff", y=400) + bub("List every date, earliest first.", "me", y=620, t=0.2), tin="slam", cam="push")
-    r.scene(2, CREAM + kick("EXAMPLE", "#FFC94D", "#2A2238", y=400) + bub("Thu · picture day<br>Fri · forms due", "ai", y=600, t=0.15, w=800),
+    r.scene(2, CREAM + kick("AI REPLY", "#FFC94D", "#2A2238", y=400) + bub("Thu · picture day<br>Fri · forms due", "ai", y=600, t=0.15, w=800),
             tin="pixel", cam="rise")
     r.scene(2, INDI + head("Check each line. / Add to *calendar.*", 560, "Hw", 140, em="emo2") + emoji("📅", 420, 1170, 220, t=0.4, d=0.3,
             loop="float"), tin="glitch", td=0.2, cam="push")
@@ -537,7 +537,7 @@ def ff_door():
               '<div style="position:absolute;right:40px;top:330px;width:36px;height:36px;border-radius:50%;background:#FF6A3D"></div></div>',
               330, 980, a="up", t=-0.6, d=0.6, loop="float", amp=0.4)
     r.scene(2, DEEP + head("100 a month. / From *birth.*", 450, "Hw", 170, em="emw", hook=True) + door, cam="push")
-    r.scene(2, DEEP + ff_kick("EXAMPLE", dark=True, y=380) + head("Stop at *18.* / Never touch it.", 560, "Hw", 150, em="emw", t=0.1),
+    r.scene(2, DEEP + head("Stop at *18.* / Never touch it.", 520, "Hw", 150, em="emw", t=0.0),
             tin="slit", color="#FFB08F", cam="push")
     r.scene(2, LITE + head("At 65, at 8% a year:", 460, "H", 100)
             + el('<span data-a="count" data-t="0.3" data-d="1.1" data-to="2036000" data-comma="1">0</span>', "c", 640, a="none", cls="H",
@@ -545,7 +545,6 @@ def ff_door():
     r.scene(2, DEEP + kick("THE CATCH", "#FF6A3D", "#fff", y=400, a="stamp", r=-4)
             + head("In today's money: / about *409,000.*", 560, "Hw", 140, t=0.2, em="emw"), tin="stripes", color="#FF6A3D",
             color2="#FFFFFF", color3="#2B3FE0", cam="tilt")
-    r.scene(2, COB + head("Returns swing. / *Not a promise.*", 560, "Hw", 150, em="emw"), tin="whipL", cam="push")
     r.scene(2, LITE + head("Send to / *new parents.*", 560, "H", 170) + img("ht-piggy.png", 330, 1170, 420, t=0.3, r=6), tin="push", cam="push")
     return close(r, DEEP + door, "zoom", focus=(540, 1200))
 
@@ -574,7 +573,7 @@ def ff_gift():
     names = "".join('<div class="gl" style="background:rgba(14,20,64,.14);width:%d%%"></div>' % w for w in (70, 55, 80, 62, 74, 50))
     r.scene(2, LITE + head("Write every / *name* down.", 420, "H", 150)
             + el(f'<div class="card" style="width:760px">{names}</div>', 160, 860, 760, a="fly", t=0.3, d=0.5, r=-2), tin="whipL", cam="rise")
-    r.scene(2, LITE + ff_kick("EXAMPLE") + el('14 × 25 = <span class="em">350</span>', "c", 640, a="pop", t=0.2, cls="H", style="font-size:170px"),
+    r.scene(2, LITE + head("14 people × 25:", 460, "H", 110) + el('<span class="em">350</span>', "c", 640, a="pop", t=0.2, cls="H", style="font-size:220px"),
             tin="slam", cam="push")
     r.scene(2, LITE + head("At 20 each: / *280.*", 560, "H", 190), tin="zoom", focus=(540, 800), cam="push")
     r.scene(2, DEEP + kick("THE CATCH", "#FF6A3D", "#fff", y=400, a="stamp", r=-4) + head("Use money you / *already have.*", 560, "Hw", 140,
@@ -611,7 +610,7 @@ def hb_just_asks():
     r.scene(2, INDI + head("You need / *one thing.*", 600, "Hw", 180, em="emo2") + emoji("🤨", 420, 1170, 240, t=0.4, d=0.3, loop="wobble"),
             tin="whipL", cam="push")
     r.scene(2, PEACH + kick("ASK AI", "#5E54C9", "#fff", y=400) + bub("What are the asks? Quote each.", "me", y=620, t=0.2), tin="slam", cam="rise")
-    r.scene(2, CREAM + kick("EXAMPLE", "#FFC94D", "#2A2238", y=400) + bub("Car out · Tue 7 am<br>Bike tag · Fri<br>Party · optional", "ai",
+    r.scene(2, CREAM + kick("AI REPLY", "#FFC94D", "#2A2238", y=400) + bub("Car out · Tue 7 am<br>Bike tag · Fri<br>Party · optional", "ai",
             y=600, t=0.15, w=860), tin="pixel", cam="push")
     r.scene(2, INDI + head("All 3 / *checked.*", 600, "Hw", 190, em="emo2") + emoji("✅", 430, 1170, 220, t=0.4, d=0.3, loop="pulse"),
             tin="glitch", td=0.2, cam="push")
