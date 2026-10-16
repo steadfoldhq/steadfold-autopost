@@ -44,6 +44,16 @@ def frame(t):
     if k < K_THATS:
         T(img, "NEVER PASTE THIS", W / 2, 230, 104, WHITE, key="hook")
         T(img, "1, 2 OR 3?", W / 2, 345, 76, YEL, key="hook2")
+        G = layer()  # frame 0 is never empty: three numbered ghost slots wait to be filled
+        gd = ImageDraw.Draw(G)
+        for i in range(3):
+            y = 450 + i * 230
+            if t < P(ITEMS[i][3]) + 0.1:
+                gd.rounded_rectangle((80, y, W - 80, y + 190), 34, outline=(255, 255, 255, 110), width=5)
+                gd.ellipse((110, y + 45, 210, y + 145), outline=(255, 255, 255, 140), width=5)
+                T(G, str(i + 1), 160, y + 95, 60, (255, 255, 255, 170), key="ghostn", words=0)
+                emoji(G, "❔", 540, y + 95, 90, alpha=0.6)
+        put(img, G)
         for i in range(3):
             item(img, i, t, 450 + i * 230)
     else:
@@ -65,9 +75,9 @@ def frame(t):
         if t >= P(K_TYPE):
             a2 = pop(t, P(K_TYPE), 0.3)
             L = layer()
-            box(L, (110, 1000, W - 110, 1150), 36, YEL, shadow=(0, 10, (0, 0, 0, 90)))
-            T(L, "Type: “STORE 34.99?”", W / 2, 1075, 58, INK, key="typeit")
-            put(img, L, 0.85 + 0.15 * min(1, a2), W / 2, 1075, alpha=min(1, a2 * 1.5))
+            box(L, (110, 975, W - 110, 1100), 36, YEL, shadow=(0, 10, (0, 0, 0, 90)))
+            T(L, "Type: “STORE 34.99?”", W / 2, 1037, 58, INK, key="typeit")
+            put(img, L, 0.85 + 0.15 * min(1, a2), W / 2, 1037, alpha=min(1, a2 * 1.5))
         if k >= K_LAST:
             emoji(img, "👇", W / 2, 1530 + 14 * math.sin(t * 8), 110)
     if T_HOLD <= t < P(K_ANS) - 0.05:

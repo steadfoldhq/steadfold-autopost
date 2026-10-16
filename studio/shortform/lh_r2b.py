@@ -71,8 +71,8 @@ def frame(t):
             # two rooms: desk (crossed out) vs other room
             zine(img, (90, 360, 510, 1080), CREAM)
             zine(img, (570, 360, 990, 1080), WHITE)
-            T(img, "DESK", 300, 430, 64, INK, key="desk")
-            T(img, "OTHER ROOM", 780, 430, 64, INK, key="other")
+            T(img, "DESK", 300, 430, 54, INK, key="desk")
+            T(img, "OTHER ROOM", 780, 430, 54, INK, key="other")
             emoji(img, "📱", 300, 700, 170, rot=8 if t >= P(K_FACE) else 0)
             if t >= P(K_FACE):
                 emoji(img, "❌", 300, 900, 150 * min(1, pop(t, P(K_FACE))))
@@ -85,6 +85,11 @@ def frame(t):
             zine(L, (90, 360, W - 90, 1090), WHITE)
             box(L, (250, 400, 830, 490), 45, PINK)
             T(L, "ONE 2017 STUDY", W / 2, 445, 52, WHITE, key="study")
+            if t < P(K_SCORED):  # the mini vote: phone on the desk, or behind the door?
+                emoji(L, "📱", 380, 800, 190, rot=-6 + 4 * math.sin(t * 7))
+                emoji(L, "🚪", 700, 800, 210)
+                if t >= P(K_DESK):
+                    emoji(L, "❓", W / 2, 800, 110, rot=8 * math.sin(t * 5))
             if t >= P(K_DESK):
                 T(L, "Desk vs other room", W / 2, 590, 66, INK, key="vs")
             if t >= P(K_SCORED):

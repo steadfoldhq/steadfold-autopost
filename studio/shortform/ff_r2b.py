@@ -29,9 +29,9 @@ def row(img, y, num, label, amt, t0, t, state=None, dx=0):
     T(L, amt, W - 120, y + 60, 54 if len(amt) < 8 else 44, CORAL if bad else INK, f="black", anchor="rm", key=f"a{num}{amt}")
     put(img, L, 0.85 + 0.15 * min(1, a), W / 2, y + 60, alpha=min(1, a * 1.6), dx=dx)
     if bad:
-        emoji(img, "❌", W - 70, y + 10, 90 * min(1, pop(t, P(K_FOUR))), rot=-10)
+        emoji(img, "❌", W - 120, y - 14, 84 * min(1, pop(t, P(K_FOUR))), rot=-10)
     if good:
-        emoji(img, "✅", W - 70, y + 10, 90 * min(1, pop(t, P(K_FIRST) + 0.4)), rot=8)
+        emoji(img, "✅", W - 120, y - 14, 84 * min(1, pop(t, P(K_FIRST) + 0.4)), rot=8)
 
 
 def frame(t):
@@ -52,7 +52,15 @@ def frame(t):
         sx, sy = shake(t, P(K_FOUR), 0.3, 18)
         ys = [560, 700, 840, 980]
         if t < P(K_FIRST):
-            order = [0, 1, 2, 3]
+            # frame 0 is never empty: four ghost slots wait to be filled (the "spot it" board)
+            G = layer()
+            gd = ImageDraw.Draw(G)
+            for i in range(4):
+                if t < P(K_ROWS[i]) - 0.6 + 0.12:
+                    gd.rounded_rectangle((80, ys[i], W - 80, ys[i] + 120), 30, outline=(255, 255, 255, 120), width=5)
+                    gd.ellipse((104, ys[i] + 18, 188, ys[i] + 102), outline=(255, 255, 255, 120), width=5)
+                    T(G, "?", 146, ys[i] + 60, 50, (255, 255, 255, 150), key="ghost", words=0)
+            put(img, G)
             for i, (num, lab, amt) in enumerate(ROWS):
                 st = "bad" if (i == 3 and t >= P(K_FOUR)) else None
                 row(img, ys[i], num, lab, amt, P(K_ROWS[i]) - 0.6 if i < 3 else P(K_ROWS[i]) - 0.6, t, st, dx=sx if i == 3 else 0)

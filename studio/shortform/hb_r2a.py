@@ -51,9 +51,19 @@ def frame(t):
         a = pop(t, P(K_REVEAL), 0.3)
         L = layer()
         box(L, (110, 170, W - 110, 420), 40, YEL, shadow=(0, 14, (0, 0, 0, 90)))
-        T(L, "ASK ME FIRST.", W / 2, 295, 120, INK, key="answer")
+        T(L, "ASK ME FIRST.", W / 2, 295, 104, INK, key="answer")
         put(img, L, 0.6 + 0.4 * min(1, a), W / 2, 295)
         sx, sy = shake(t, P(K_REVEAL), 0.3, 16)
+    # intro: three big locked tiles fill the frame until the demo starts (frame 0 is never empty)
+    if k < K_PLAN:
+        for j in range(3):
+            a = pop(t, 0.12 * j, 0.3) if t > 0.03 else 1.0
+            L = layer()
+            x = 90 + j * 310
+            box(L, (x, 560, x + 280, 900), 40, YEL, shadow=(0, 16, (0, 0, 0, 110)))
+            T(L, "?", x + 140, 680, 150, INK, key="q", words=0)
+            emoji(L, "🔒", x + 140, 830, 90, rot=6 * math.sin(t * 5 + j))
+            put(img, L, 0.8 + 0.2 * min(1, a), x + 140, 730)
     # chat column
     if K_PLAN <= k < K_ADD:
         bubble(img, 380, 520, 600, 124, True, P(K_PLAN) - 0.1, t, txt="Plan my week.")
@@ -79,11 +89,12 @@ def frame(t):
             for j in range(3):
                 if (d + j) % 2 == 0:
                     box(L, (x + 10, 640 + j * 130, x + 110, 740 + j * 130), 14, cols[(d + j) % 5])
+        T(L, "EXAMPLE · MADE UP", W / 2, 1072, 32, IND, f="xbold", key="example2")
         put(img, L, 0.8 + 0.2 * min(1, a), W / 2, 810, alpha=min(1, a * 1.5))
         emoji(img, "✅", 940, 540, 120 * min(1, pop(t, P(K_FITS) + 0.3)))
         if k >= K_LAST:
             emoji(img, "👇", W / 2, 1530 + 14 * math.sin(t * 8), 110)
-    if K_PLAN <= k < K_REVEAL:
+    if K_PLAN <= k < K_FITS:
         T(img, "EXAMPLE · MADE UP", W / 2, 1160, 38, YEL, f="xbold", key="example")
     captions(img, S, t, y=1300, size=100, fill=WHITE, lit=YEL, stroke=INK)
     return img
