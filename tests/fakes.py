@@ -50,6 +50,7 @@ class FakeGraph:
 
     def __init__(self, tokens: dict[str, tuple[str, str]]):
         self.stories: dict[str, list[str]] = {}
+        self.reject_trial = False
         self.tokens = tokens
         self.calls: list[Call] = []
         self._n = 1000
@@ -128,6 +129,8 @@ class FakeGraph:
                                         "user": user_id, **c.data}
                 return FakeResponse(200, {"id": cid})
             if c.data.get("media_type") == "REELS":
+                if "trial_params" in c.data and self.reject_trial:
+                    return ig_error("Invalid parameter trial_params")
                 if not str(c.data.get("video_url", "")).endswith(".mp4"):
                     return ig_error("video_url must be an mp4")
                 cid = self._id()

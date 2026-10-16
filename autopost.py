@@ -259,9 +259,16 @@ class IGClient:
         return str(self._request("POST", f"{ig_user_id}/media", data=data)["id"])
 
     def create_reel(self, ig_user_id: str, video_url: str, caption: str,
-                    cover_url: str | None = None, thumb_offset_ms: int | None = None) -> str:
+                    cover_url: str | None = None, thumb_offset_ms: int | None = None,
+                    trial: str | None = None) -> str:
         data = {"media_type": "REELS", "video_url": video_url, "caption": caption,
                 "share_to_feed": "true"}
+        if trial:
+            # Trial Reel: shown to non-followers first. "auto" lets Meta graduate it to
+            # followers if it performs; "manual" keeps it a trial until graduated in the app.
+            strategy = "SS_PERFORMANCE" if trial == "auto" else "MANUAL"
+            data["trial_params"] = json.dumps({"graduation_strategy": strategy})
+            data.pop("share_to_feed")
         if cover_url:
             data["cover_url"] = cover_url
         elif thumb_offset_ms is not None:
@@ -413,6 +420,8 @@ def validate_post(post: dict, media_dir: Path | None) -> list[str]:
                 problems.append(f"video file media/{video} is missing from the repo")
             elif vp.stat().st_size > MAX_VIDEO_BYTES:
                 problems.append(f"video media/{video} is over {MAX_VIDEO_BYTES // 1_000_000} MB")
+        if post.get("trial") not in (None, "auto", "manual"):
+            problems.append("trial must be \"auto\" or \"manual\"")
         cover = post.get("cover")
         if cover:
             if not str(cover).lower().endswith((".jpg", ".jpeg")):
@@ -862,9 +871,19 @@ class Runner:
         if not container_id:
             alt = (post.get("alt_text") or "").strip() or None
             if is_reel:
-                container_id = client.create_reel(
-                    ig_user_id, urls[0], post["caption"], cover_url=cover_url,
-                    thumb_offset_ms=post.get("thumb_offset_ms"))
+                trial = post.get("trial")
+                try:
+                    container_id = client.create_reel(
+                        ig_user_id, urls[0], post["caption"], cover_url=cover_url,
+                        thumb_offset_ms=post.get("thumb_offset_ms"), trial=trial)
+                except IGError as exc:
+                    if not trial or exc.network or (exc.http_status or 500) >= 500:
+                        raise
+                    log(f"  trial Reel was rejected ({exc}); publishing as a normal Reel")
+                    self.notes.append(f"[{pid}] Trial Reel not accepted by Instagram; posted as a normal Reel")
+                    container_id = client.create_reel(
+                        ig_user_id, urls[0], post["caption"], cover_url=cover_url,
+                        thumb_offset_ms=post.get("thumb_offset_ms"))
                 children = []
             elif len(urls) == 1:
                 container_id = self._with_alt_fallback(

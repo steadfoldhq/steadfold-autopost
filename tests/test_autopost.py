@@ -157,6 +157,30 @@ class CarouselFlow(Base):
         self.assertEqual(len(g.publishes()), 1)
         self.assertEqual(self.state()["lf-reel-1"]["status"], "published")
 
+    def test_trial_reel_auto(self):
+        reel = {"id": "t1", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "c", "video": "reels/t1.mp4", "trial": "auto"}
+        self.write_posts([reel])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)
+        create = [c for c in g.posts() if c.path.endswith("/media")][0]
+        self.assertEqual(json.loads(create.data["trial_params"]), {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertNotIn("share_to_feed", create.data)
+
+    def test_trial_rejected_falls_back_to_normal_reel(self):
+        reel = {"id": "t2", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "c", "video": "reels/t2.mp4", "trial": "manual"}
+        self.write_posts([reel])
+        g = graph(); g.reject_trial = True
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.assertEqual(len(g.publishes()), 1)
+        self.assertIn("Trial Reel not accepted", self.output)
+
+    def test_bad_trial_value(self):
+        reel = {"id": "t3", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "c", "video": "reels/t3.mp4", "trial": "yes"}
+        self.assertTrue(autopost.validate_post(reel, None))
+
     def test_reel_must_be_mp4(self):
         reel = {"id": "r2", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
                 "caption": "c", "video": "reels/r2.mov"}

@@ -116,6 +116,10 @@ A post with `"video": "reels/<id>.mp4"` (and optionally `"cover": "reels/<id>-co
 - Instagram's own music library can't be added through the API. Our Reels carry original music made in code, so they're copyright-safe. To use a trending sound, post that Reel from the app instead.
 - Processing a Reel takes Instagram a minute or more. If it isn't ready within 5 minutes, the next run (15 minutes later) picks it up again without re-uploading.
 
+## Trial Reels
+
+Add `"trial": "auto"` to a Reel entry to publish it as an Instagram **Trial Reel**: it's shown to non-followers first. With `"auto"`, Instagram moves it to your followers if it performs well with that first group. With `"manual"`, it stays a trial until you graduate it yourself in the Instagram app. If Instagram refuses the trial setting, the robot posts it as a normal Reel and says so in the log.
+
 ## Stories
 
 A post with `"story": true` and one file is published as an Instagram **Story**:
