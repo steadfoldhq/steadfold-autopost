@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-16T16:35:20+00:00",
+ "collected_at": "2026-10-16T20:32:12+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -14,14 +14,14 @@
      "permalink": "https://www.instagram.com/p/Dej8GxclqeK/",
      "at": "2026-10-16T16:15:21+0000",
      "first_line": "Your freedom number is your yearly spending × 25. Work yours out tonight.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 6,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1
+      "total_interactions": 2
      },
      "comments": []
     },
@@ -34,13 +34,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 15,
+      "views": 38,
+      "reach": 25,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 6559,
-      "ig_reels_video_view_total_time": 111511
+      "ig_reels_avg_watch_time": 5090,
+      "ig_reels_video_view_total_time": 142545
      },
      "comments": []
     },
@@ -54,7 +54,7 @@
      "comments_count": 1,
      "insights": {
       "views": 21,
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
@@ -121,8 +121,25 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 6,
+   "media_count": 7,
    "posts": [
+    {
+     "media_id": "18135463726662335",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dej__uhiY55/",
+     "at": "2026-10-16T16:49:22+0000",
+     "first_line": "Start faster tomorrow: stop mid-sentence today.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18199788004340683",
      "type": "REEL",
@@ -132,13 +149,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 8,
+      "views": 9,
       "reach": 6,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 9996,
-      "ig_reels_video_view_total_time": 69977
+      "ig_reels_avg_watch_time": 8890,
+      "ig_reels_video_view_total_time": 71123
      },
      "comments": []
     },
@@ -151,13 +168,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 49,
-      "reach": 44,
+      "views": 54,
+      "reach": 47,
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3594,
-      "ig_reels_video_view_total_time": 176135
+      "ig_reels_avg_watch_time": 3379,
+      "ig_reels_video_view_total_time": 182482
      },
      "comments": []
     },
@@ -236,8 +253,25 @@
    "username": "hourbackhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 5,
+   "media_count": 6,
    "posts": [
+    {
+     "media_id": "18005330334006302",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DekDx7rmikH/",
+     "at": "2026-10-16T17:22:25+0000",
+     "first_line": "Trip's over. Who owes who? One message turns the group chat into the fewest payments, with the math shown.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 1,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 3
+     },
+     "comments": []
+    },
     {
      "media_id": "18098669201392979",
      "type": "REEL",
@@ -247,13 +281,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 8,
+      "views": 13,
       "reach": 4,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 12030,
-      "ig_reels_video_view_total_time": 60153
+      "saved": 1,
+      "shares": 1,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 12025,
+      "ig_reels_video_view_total_time": 72155
      },
      "comments": []
     },
@@ -266,13 +300,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 10,
-      "saved": 0,
+      "views": 19,
+      "reach": 12,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 3,
-      "ig_reels_avg_watch_time": 1589,
-      "ig_reels_video_view_total_time": 17481
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 3360,
+      "ig_reels_video_view_total_time": 47042
      },
      "comments": []
     },
@@ -285,11 +319,11 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 9,
+      "views": 11,
       "reach": 3,
-      "saved": 0,
+      "saved": 1,
       "shares": 1,
-      "total_interactions": 4
+      "total_interactions": 5
      },
      "comments": []
     },
@@ -302,11 +336,11 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 19,
+      "views": 22,
       "reach": 4,
-      "saved": 0,
+      "saved": 1,
       "shares": 4,
-      "total_interactions": 8
+      "total_interactions": 9
      },
      "comments": []
     },
@@ -319,7 +353,7 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 25,
+      "views": 27,
       "reach": 5,
       "saved": 0,
       "shares": 4,
@@ -332,7 +366,7 @@
   "littlefold": {
    "account": "littlefold",
    "username": "littlefoldhq",
-   "followers_count": 2,
+   "followers_count": 3,
    "follows_count": 0,
    "media_count": 4,
    "posts": [
@@ -342,14 +376,14 @@
      "permalink": "https://www.instagram.com/p/Dej4tfskSML/",
      "at": "2026-10-16T15:45:42+0000",
      "first_line": "Know what's normal in your first 72 hours home, and when to call.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1
+      "total_interactions": 2
      },
      "comments": []
     },
@@ -362,13 +396,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 63,
-      "reach": 51,
+      "views": 75,
+      "reach": 64,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2918,
-      "ig_reels_video_view_total_time": 157621
+      "ig_reels_avg_watch_time": 2811,
+      "ig_reels_video_view_total_time": 188402
      },
      "comments": []
     },
@@ -381,13 +415,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 53,
-      "reach": 45,
+      "views": 68,
+      "reach": 59,
       "saved": 1,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 3011,
-      "ig_reels_video_view_total_time": 135529
+      "ig_reels_avg_watch_time": 2536,
+      "ig_reels_video_view_total_time": 149627
      },
      "comments": []
     },
@@ -401,7 +435,7 @@
      "comments_count": 1,
      "insights": {
       "views": 16,
-      "reach": 5,
+      "reach": 6,
       "saved": 0,
       "shares": 2,
       "total_interactions": 5
