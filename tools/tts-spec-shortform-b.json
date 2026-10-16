@@ -1,0 +1,52 @@
+{
+ "out": "media/voice/shortform",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {
+   "name": "ff-s1a",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "Same 150 a month, until 65. One starts at 25. One at 35. Guess the gap."
+  },
+  {
+   "name": "ff-s1b",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "Late starter: puts in 54,000, ends near 150,000. Early starter: just 18,000 more in... and ends near 299,000. About 148,000 apart. The catch: this is example math at 6 percent a year. Real returns change, and can fall. What did you guess?"
+  },
+  {
+   "name": "ff-s2",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "POV: your first year freelancing in Canada. Clients pay you. Nobody takes tax off. It feels amazing. Then April. The CRA wants it all, at once. Owe more than 3,000 this year, and in one of the last two? Then it's instalments every quarter too. The fix: move a slice of every payment the day it lands. The catch: the right slice depends on your province and income. Our spreadsheet works it out."
+  },
+  {
+   "name": "hb-s1",
+   "voice_id": "iP95p4xoKVk53GoZ742B",
+   "text": "POV: you need to say per my last email... without starting a war. What you typed. What you send. One line to any AI: make this kind but clear, keep it short. Then read it yourself before you hit send."
+  },
+  {
+   "name": "hb-s2",
+   "voice_id": "iP95p4xoKVk53GoZ742B",
+   "text": "214 unread in the family group chat. You need one answer: what time is dinner on Sunday. Paste it in and ask: what got decided, who's bringing what, and what do I need to reply to. Three lines. Uncle Dev still owes everyone a dessert."
+  }
+ ]
+}
