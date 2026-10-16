@@ -1,0 +1,10 @@
+{
+ "out": "media/voice/stylemenu",
+ "model": "eleven_v3",
+ "voices": "tools/voices.json",
+ "settings": {"stability": 0.5, "similarity_boost": 0.8, "use_speaker_boost": true},
+ "items": [
+  {"name": "lh-stylemenu", "voice": "Laura", "takes": 2, "seed": 43,
+   "text": "[casually] You opened your phone to check one thing. [short pause] [sighs] Forty minutes later... [playful] Try this: phone in another room. One task. One hour. [warmly] Your future self says thanks."}
+ ]
+}
