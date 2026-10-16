@@ -180,7 +180,7 @@ def lh_quiet():
     r.scene(2, "".join([
         '<div class="par dots"></div>', AM.lh_chip(),
         el('Want one<br><span class="em">quiet</span> hour?', "c", 460, a="none", cls="H", style="font-size:180px"),
-        el(f'<div class="box inbox" style="width:860px"><div data-a="stack" data-t="0.1" data-gap="0.16" data-d="0.3">{pings}</div></div>',
+        el(f'<div class="box inbox" style="width:860px"><div data-a="stack" data-t="-0.35" data-gap="0.16" data-d="0.3">{pings}</div></div>',
            110, 960, a="none", loop="buzz", amp=0.4),
     ]), cam="push", shake=(0.6, 0.2, 12))
     r.scene(1.5, "".join([
