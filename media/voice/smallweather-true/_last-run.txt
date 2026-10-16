@@ -1,0 +1,3 @@
+swt-uyuni: ok
+swt-kyoto: ok
+swt-baikal: ok
