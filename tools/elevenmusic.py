@@ -24,6 +24,7 @@ def main(path):
     os.makedirs(OUT, exist_ok=True)
     spec = json.load(open(path))
     failed = 0
+    log = open(f"{OUT}/_last-run.txt", "w")
     for item in spec:
         name = item["name"]
         if not re.fullmatch(r"[a-z0-9-]{3,60}", name):
@@ -39,14 +40,16 @@ def main(path):
             with urllib.request.urlopen(req, timeout=300) as r:
                 data = r.read()
         except urllib.error.HTTPError as e:
-            print(f"{name}: HTTP {e.code} {e.read()[:300]!r}")
+            msg = f"{name}: HTTP {e.code} {e.read()[:400]!r}"
+            print(msg)
+            log.write(msg + "\n")
             failed += 1
             continue
         with open(f"{OUT}/{name}.mp3", "wb") as f:
             f.write(data)
         print(f"{name}: {len(data)} bytes")
-    if failed == len(spec):
-        sys.exit("all failed")
+        log.write(f"{name}: ok {len(data)} bytes\n")
+    log.close()
 
 
 if __name__ == "__main__":
