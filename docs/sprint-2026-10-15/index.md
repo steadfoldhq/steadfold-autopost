@@ -31,3 +31,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - Red pandas are off the shortlist for now.
 >   - Other species get explored LATER, not tonight. Log them as an open idea and don't draw them in this sprint.
 >   - The motion test (B4) builds on otters, with a rig that can swap to capybara.
+- A8b · Look v2 · https://claude.ai/code/artifact/404265ca-ccff-4131-b366-dfbabc8f7e57 · Pick A otters (native, canon, rig-ready); otters + capybaras redrawn big-headed at 60–75% frame height, 4 expressions each, kitchen + golden-hour dock, 2 palettes each, originality fixes applied
