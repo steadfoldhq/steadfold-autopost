@@ -1,0 +1,1 @@
+Dinner for 4 came to $96, and $24 of that was drinks. Ana didn't drink. Split it fairly: food equally between all 4, drinks only between the 3 who drank. Show the math and check that it adds up to $96.

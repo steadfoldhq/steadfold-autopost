@@ -1,0 +1,18 @@
+Here's last month's card statement. Which charges look like subscriptions or repeat charges? List them with the amount and quote the line each comes from. Then give the monthly total of those.
+
+Oct 01  GROCER FRESH MARKET        64.20
+Oct 02  STREAMPLUS*MONTHLY          12.99
+Oct 03  CITY TRANSIT CARD           40.00
+Oct 04  CORNER CAFE                  4.75
+Oct 06  CLOUDBOX STORAGE 50GB        2.99
+Oct 08  PHARMA PLUS                 18.40
+Oct 09  GROCER FRESH MARKET        51.88
+Oct 11  FITLY APP ANNUAL->MONTHLY    9.99
+Oct 12  BOOKNOOK                    22.00
+Oct 14  CORNER CAFE                  4.75
+Oct 15  PHONE CO MONTHLY PLAN       45.00
+Oct 17  GROCER FRESH MARKET        58.10
+Oct 20  NEWSDAILY DIGITAL            7.50
+Oct 23  PETSTOP                     31.60
+Oct 26  CORNER CAFE                  5.25
+Oct 28  GROCER FRESH MARKET        47.35

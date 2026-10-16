@@ -1,0 +1,15 @@
+There are three asks, plus one conditional. Dates assume the email was sent this week (today is Fri, Oct 16), so "next week" Tuesday is Oct 20.
+
+1. Move your car out of the parking lot by 7 am on Tuesday (Oct 20).
+   "The painters will be here on Tuesday from 7 to 11 am, so please make sure your car is out of the lot by 7 am Tuesday, otherwise it may be towed by the contractor."
+
+2. If you have a bike in the bike room, put a name tag on it by Friday, Oct 23.
+   "If you have a bike in there, please put a name tag on it by Friday, October 23."
+
+3. Optional: if you'd like to help organise the holiday party, reply to the email by the end of the month (Oct 31).
+   "If you'd like to help organise, could you reply to this email by the end of the month?"
+
+4. Conditional, no deadline: if your radiators knock after the heating comes on Monday, tell Marta.
+   "If your radiators are making a knocking noise after that, let me know."
+
+The first two are the ones with consequences: a tow for the car, and donation of the bike if it's untagged.

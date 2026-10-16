@@ -1,0 +1,26 @@
+**Likely subscriptions (recurring monthly charges)**
+
+1. Oct 02  STREAMPLUS*MONTHLY          12.99
+2. Oct 06  CLOUDBOX STORAGE 50GB        2.99
+3. Oct 11  FITLY APP ANNUAL->MONTHLY    9.99
+4. Oct 15  PHONE CO MONTHLY PLAN       45.00
+5. Oct 20  NEWSDAILY DIGITAL            7.50
+
+**Monthly total of these: $78.47** (12.99 + 2.99 + 9.99 + 45.00 + 7.50)
+
+**Other repeat charges (habits, not subscriptions)**
+
+- Oct 04  CORNER CAFE                  4.75
+- Oct 14  CORNER CAFE                  4.75
+- Oct 26  CORNER CAFE                  5.25
+- Oct 01  GROCER FRESH MARKET        64.20
+- Oct 09  GROCER FRESH MARKET        51.88
+- Oct 17  GROCER FRESH MARKET        58.10
+- Oct 28  GROCER FRESH MARKET        47.35
+
+These recur, but the amounts vary and they happen several times a month, so they look like regular spending, not subscriptions.
+
+**Worth a second look**
+
+- Oct 03  CITY TRANSIT CARD           40.00. This could be a monthly pass or a one-time reload. It appears only once, so I left it out of the total. If it's a monthly pass, the total would be $118.47.
+- Oct 11  FITLY APP ANNUAL->MONTHLY    9.99. The wording suggests an annual plan that was switched to monthly billing. Check that you're not being charged both ways.

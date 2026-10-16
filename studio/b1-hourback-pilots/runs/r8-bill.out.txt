@@ -1,0 +1,27 @@
+Here's the fair split:
+
+**Step 1: Separate food and drinks**
+- Total: $96
+- Drinks: $24
+- Food: $96 - $24 = $72
+
+**Step 2: Split food equally among all 4**
+- $72 / 4 = $18 each
+
+**Step 3: Split drinks among the 3 who drank**
+- $24 / 3 = $8 each
+
+**What each person owes**
+- Ana: $18 (food only)
+- Person 2: $18 + $8 = $26
+- Person 3: $18 + $8 = $26
+- Person 4: $18 + $8 = $26
+
+**Check**
+- Food: 4 x $18 = $72
+- Drinks: 3 x $8 = $24
+- Total: $72 + $24 = $96, which matches the bill.
+
+Or by person: $18 + $26 + $26 + $26 = $96.
+
+If tax and tip are included in the $96, this works as is. If you're adding tip on top, you can split it in proportion (Ana's share is 18/96, about 19%, and each drinker's is 26/96, about 27%), or just apply the same tip percentage to each person's amount.

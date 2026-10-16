@@ -33,3 +33,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 >   - The motion test (B4) builds on otters, with a rig that can swap to capybara.
 - A8b · Look v2 · https://claude.ai/code/artifact/404265ca-ccff-4131-b366-dfbabc8f7e57 · Pick A otters (native, canon, rig-ready); otters + capybaras redrawn big-headed at 60–75% frame height, 4 expressions each, kitchen + golden-hour dock, 2 palettes each, originality fixes applied
 - B3 · Holiday Money Plan v1.0 built (Fully Funded, every gift gets a payday; 8 xlsx + quick-start, 10 listing images + video, 1,942 checks, gate SHIP) · US$9 launch to Nov 30, then US$14
+- B1 · Hourback pilots · 22 items · New relatable direction live Oct 19–21: 6 mini-scene Reels, 4 feed posts, 12 Stories, every "after" a real AI run on a made-up example (capture log in studio/b1-hourback-pilots/)

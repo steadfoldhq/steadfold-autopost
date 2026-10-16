@@ -1,0 +1,5 @@
+I make smoothies most mornings for 2 people and soup sometimes. Which of these 3 blenders should I get? Answer in one line first, then a short comparison table with 3 rows.
+
+Blender A: $89, 1000 W, 1.5 L glass jar, 2-year warranty, 88 dB.
+Blender B: $129, 1200 W, 1.8 L plastic jar, 7-year warranty, 95 dB.
+Blender C: $74, 900 W, 1.2 L plastic jar plus 3 to-go cups, 1-year warranty, 85 dB.
