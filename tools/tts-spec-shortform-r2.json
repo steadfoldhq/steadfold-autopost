@@ -1,0 +1,78 @@
+{
+ "out": "media/voice/shortform",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {
+   "name": "ff-r2-who-has-more",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "Two friends. Same 200 a month. Maya starts at 25. She stops at 35. Never adds another cent. Jay starts at 35. He keeps going until 65. Who has more at 65? Pause and guess. Comment 1 or 2. Maya put in 24,000. Jay put in 72,000. At 65, Jay has about 298,000. And Maya? About 400,000. A third of the money. More at the end. Her secret was time. The catch? Example math at 8% a year. Real returns swing. Fees and inflation bite. Did you guess right?"
+  },
+  {
+   "name": "ff-r2-spot-the-mistake",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "She just got paid 2,000. One of these moves is a mistake. One. Rent, 900. Two. Bills and groceries, 600. Three. Fun money, 300. Four. Savings: whatever's left. Pause and spot it. It's number four. Whatever's left tends to vanish. Flip it. Savings move first. The day the money lands. The catch? If bills eat everything, start tiny. Small and automatic. Beats big and skipped. Did you spot it?"
+  },
+  {
+   "name": "lh-r2-which-one",
+   "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "Three kinds of 'I'll start soon.' Which one are you? One. The Cleaner. Desk spotless. Work untouched. Two. The Researcher. Twelve tabs on how to start. Three. The Waiter. It's 1:47. 'I'll start at 2.' Same fix for all three. Set a two-minute timer. Do the ugliest first step. You're allowed to stop at two. Starting was the hard part. So. 1, 2 or 3?"
+  },
+  {
+   "name": "lh-r2-pov-7pm",
+   "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "POV: you sat down to study at 7. Okay. Focus. 7:01. Just checking one thing. 7:43. Wait. How is it 7:43? Try this. Phone in another room. Not face down. Another room. One 2017 study tested this. Phone on the desk, or in another room? Another room scored better. Even on silent. Later studies are mixed. But the hallway is free. What time did your 7 become?"
+  },
+  {
+   "name": "hb-r2-three-words",
+   "voice_id": "iP95p4xoKVk53GoZ742B",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "Three words make any AI way better. Guess them before the end. Watch. 'Plan my week.' You get this. Generic. Now add three words. 'Plan my week. Ask me first.' Now it asks you. Which days are packed? What must get done? Any gym days? You answer. The plan fits your real week. The three words? Ask me first. What would you have it plan?"
+  },
+  {
+   "name": "hb-r2-never-paste",
+   "voice_id": "iP95p4xoKVk53GoZ742B",
+   "settings": {
+    "stability": 0.42,
+    "similarity_boost": 0.8,
+    "style": 0.3,
+    "use_speaker_boost": true,
+    "speed": 1.0
+   },
+   "text": "One of these should never go into an AI chat. One. A recipe you want to halve. Two. Your email draft, names taken out. Three. A screenshot of your bank app, to explain one charge. Pause. 1, 2 or 3? One. Fine. Two. Fine. Three. That's the one. It can show your name, balance and account number. Type just the charge line instead. Did you pick three?"
+  }
+ ]
+}
