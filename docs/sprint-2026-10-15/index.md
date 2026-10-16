@@ -27,3 +27,7 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 - A1 · Sprint A1 · Seasons & Moments Calendar (Oct 19 2026 – Mar 31 2027) · https://claude.ai/code/artifact/d1bcaf0b-4fe0-4808-ae38-801f8b4397ea · 24-week master grid + 192 angles × 3, 11 tentpoles, 60+ dates checked on official pages; biggest window Dec 28–Jan 8; FIRST (open web): the Feb 6–14 celebrations fortnight
 - A8 · Sprint A8 · The Puddlecrofts: Characters, Look and Channel Launch · https://claude.ai/code/artifact/7696e32f-8f9f-414a-9a2a-ad0bf7904896 · Original otter cast drawn as rig-ready paper cut-outs, low-stimulation rulebook, made-for-kids launch plan
 - A3 · Sprint A3 · Locked Hour 90-Day Backlog (Oct 19 2026 – Jan 17 2027) · https://claude.ai/code/artifact/88dab709-aec1-4d17-80bc-8eb377caaaee · 91 dated ideas + 10 big bets; 13 One Word words; 3 FIRST series (Lock-in Room, Hour Audit, Week One); exam system must list by Nov 20
+> - 8:17 pm, Dharma: keep **A (otters) and B (capybaras) open** as the two finalists. Look v2 (A8b) finishes exactly these two.
+>   - Red pandas are off the shortlist for now.
+>   - Other species get explored LATER, not tonight. Log them as an open idea and don't draw them in this sprint.
+>   - The motion test (B4) builds on otters, with a rig that can swap to capybara.
