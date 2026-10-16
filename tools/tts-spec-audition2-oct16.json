@@ -6,27 +6,15 @@
   "similarity_boost": 0.8,
   "use_speaker_boost": true
  },
- "add_shared": [
-  {
-   "public_owner_id": "5fea43ed5b22f7e33d9c21c0e1574685a34da9debf755bf6977468a05896c1e2",
-   "voice_id": "sWsBiVcjjowceAScTnu3",
-   "name": "SF Kayla"
-  },
-  {
-   "public_owner_id": "675db5c1a341e2f820aefb00825680aa042d958a4a3aef3200735c799210dcb4",
-   "voice_id": "q0IMILNRPxOgtBTS4taI",
-   "name": "SF Drew"
-  }
- ],
  "items": [
   {
    "name": "aud-kayla",
-   "voice": "SF Kayla",
+   "voice_id": "sWsBiVcjjowceAScTnu3",
    "text": "[curious] Okay... quick question. Who has more at sixty-five? [excited] Wait, you're gonna LOVE this one! [sighs] It's seven forty-three... how?! [laughs] Okay. Phone in another room. Seriously... it works."
   },
   {
    "name": "aud-drew",
-   "voice": "SF Drew",
+   "voice_id": "q0IMILNRPxOgtBTS4taI",
    "text": "[curious] Okay... quick question. Who has more at sixty-five? [excited] Wait, you're gonna LOVE this one! [sighs] It's seven forty-three... how?! [laughs] Okay. Phone in another room. Seriously... it works."
   }
  ]
