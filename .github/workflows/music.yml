@@ -1,0 +1,22 @@
+# Manual: generate instrumental tracks with ElevenLabs into media/music/library/.
+name: Eleven music
+on:
+  workflow_dispatch:
+    inputs:
+      spec: {description: 'Path to a spec JSON in the repo', required: true, default: 'tools/music-spec.json'}
+permissions:
+  contents: write
+concurrency: {group: music, cancel-in-progress: false}
+jobs:
+  music:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          SPEC: ${{ inputs.spec }}
+        run: |
+          python3 tools/elevenmusic.py "$SPEC"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/music/library && git commit -m "music: generate from $SPEC" && git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
