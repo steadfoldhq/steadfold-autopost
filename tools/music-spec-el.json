@@ -1,0 +1,64 @@
+[
+ {
+  "name": "lf-cosy-el-01",
+  "seconds": 20,
+  "prompt": "Soft, warm, tender acoustic lullaby-pop instrumental: fingerpicked nylon guitar, gentle felt piano, light glockenspiel sparkle, soft brushed shaker. Cosy and happy, never sleepy. 92 BPM, major key, a sweet hook in the first second, smooth gentle loop. Mellow, no harsh highs."
+ },
+ {
+  "name": "ff-curious-el-01",
+  "seconds": 20,
+  "prompt": "Confident, optimistic, curious lo-fi pop instrumental: warm Rhodes electric piano, soft plucked bass, crisp but gentle hip-hop drums, light finger snaps. A forward pulse that makes you want to see what's next. 95 BPM, major key, a hook in the first second. Smooth and warm, no harsh highs."
+ },
+ {
+  "name": "lh-focus-el-01",
+  "seconds": 20,
+  "prompt": "Focused, rhythmic, modern instrumental with a subtle build: muted electric guitar plucks, warm sub bass, tight soft kick and clap, a gentle rising pad in the second half. Motivating morning energy, calm not aggressive. 100 BPM, a hook in the first second. Warm mix, no harsh highs."
+ },
+ {
+  "name": "hb-playful-el-01",
+  "seconds": 20,
+  "prompt": "Playful, light, feel-good instrumental: bouncy ukulele, marimba, soft claps, warm bass, a small happy 'ta-da' lift near the end. Clever and cheerful like a smart little life hack. 108 BPM, major key, a hook in the first second. Warm and soft, no harsh highs."
+ },
+ {
+  "name": "sfx-whoosh-soft",
+  "type": "sfx",
+  "seconds": 0.8,
+  "prompt": "Soft, smooth airy whoosh transition for a video cut, clean, modern, not harsh"
+ },
+ {
+  "name": "sfx-whoosh-fast",
+  "type": "sfx",
+  "seconds": 0.6,
+  "prompt": "Quick crisp swipe whoosh for a fast whip-pan video transition, clean and light"
+ },
+ {
+  "name": "sfx-pop",
+  "type": "sfx",
+  "seconds": 0.4,
+  "prompt": "Soft cute bubble pop for a text pop-in on screen, gentle and pleasant"
+ },
+ {
+  "name": "sfx-tick-ding",
+  "type": "sfx",
+  "seconds": 1.0,
+  "prompt": "Light satisfying notification ding, warm bell, pleasant UI success sound"
+ },
+ {
+  "name": "sfx-paper",
+  "type": "sfx",
+  "seconds": 0.7,
+  "prompt": "Quick paper slide and sticky note slap on a desk, crisp and satisfying"
+ },
+ {
+  "name": "sfx-cash",
+  "type": "sfx",
+  "seconds": 1.0,
+  "prompt": "Soft coins dropping into a glass jar, satisfying, warm, not loud"
+ },
+ {
+  "name": "sfx-waves",
+  "type": "sfx",
+  "seconds": 6,
+  "prompt": "Calm ocean waves gently rolling onto a sandy beach on a sunny day, relaxing"
+ }
+]
