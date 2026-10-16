@@ -1,0 +1,15 @@
+[
+ {"name": "ff-hero-horizon-el", "seconds": 18,
+  "prompt": "Cinematic, hopeful instrumental for a short film about freedom by the ocean. Opens with one soft felt-piano note and warm room tone, then at 2 seconds a gentle swell of warm strings and soft pads opens up like a door to the sea, a slow confident pulse of soft piano and low cello, warm and spacious, quietly triumphant around 12 seconds, settling softly at the end. 84 BPM, major key, no drums for the first 2 seconds, then very light soft percussion. Warm, mellow mix, no harsh highs."},
+ {"name": "lh-hero-quiet-power-el", "seconds": 18,
+  "prompt": "Cinematic focus instrumental in two halves. First 3 seconds: busy, tense, ticking clock-like muted plucks and a restless pulse. Then a sudden calm: everything drops away to a deep warm sustained pad, a slow solo felt piano melody and a soft, steady heartbeat-like low kick, building quiet power and confidence through to the end. 100 BPM. Calm, strong, warm, never aggressive, no harsh highs."},
+ {"name": "hb-hero-sitcom-el", "seconds": 18,
+  "prompt": "Playful sitcom-style instrumental, like the opening of a feel-good TV comedy: funky slap bass, bright muted guitar stabs, light snappy drums, cheerful brass hits, a comedic little pause and a happy ta-da lift near the end. 112 BPM, major key, catchy hook in the first second. Warm mix, no harsh highs."},
+ {"name": "lf-hero-3am-el", "seconds": 18,
+  "prompt": "Tender late-night lullaby instrumental, like a warm hug at 3 am: soft felt piano, a gentle music box melody, warm cello underneath, soft rain-like texture. Slow, cosy, reassuring, quietly hopeful, a little lift at the end like morning light. 76 BPM, major key, a sweet melody in the first second. Very soft, warm, no harsh highs."},
+ {"name": "sfx-door-open", "type": "sfx", "seconds": 1.6, "prompt": "A heavy wooden door latch clicks and the door swings open, then soft ocean air rushes in, cinematic, warm, clean"},
+ {"name": "sfx-record-scratch", "type": "sfx", "seconds": 1.0, "prompt": "Classic comedic vinyl record scratch freeze-frame sound effect, clean, short"},
+ {"name": "sfx-rain-window", "type": "sfx", "seconds": 8, "prompt": "Soft gentle rain on a bedroom window at night, cosy, quiet, close, no thunder"},
+ {"name": "sfx-city-rush", "type": "sfx", "seconds": 3, "prompt": "Busy overwhelming city noise: traffic, horns, phone notification pings and chatter layered, building tension, then cut"},
+ {"name": "sfx-phone-buzz", "type": "sfx", "seconds": 2, "prompt": "Smartphone vibrating repeatedly on a wooden table with several quick message notification pings, comedic, clean"}
+]

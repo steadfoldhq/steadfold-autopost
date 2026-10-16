@@ -1,0 +1,10 @@
+{
+ "out": "media/voice/hero",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {"name": "hb-hero-narrator",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true, "speed": 1.0},
+   "text": "Yep. That's me. You're probably wondering how I got here."}
+ ]
+}
