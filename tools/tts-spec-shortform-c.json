@@ -1,0 +1,47 @@
+{
+ "out": "media/voice/shortform",
+ "model": "eleven_multilingual_v2",
+ "items": [
+  {
+   "name": "ff-s1a-v3",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "Same 150 a month. Ten years apart. One ends up with double. Guess the gap."
+  },
+  {
+   "name": "ff-s1b-v3",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "Start at 35: you put in 54,000 and end near 150,000. Start at 25: just 18,000 more in... and you end near 299,000. About 148,000 apart. Example math, 6 percent a year, not a promise. What did you guess?"
+  },
+  {
+   "name": "ff-s2-v3",
+   "voice_id": "nPczCjzI2devNBz1zQrb",
+   "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.07
+   },
+   "text": "April 30. You owe the CRA. All of it, at once. Here's how it happens. First year freelancing in Canada: clients pay you, nobody takes tax off, it feels amazing. Then April. And owe over 3,000 this year and in one of the last two? Now you pay every quarter too. The fix: move a slice of every payment the day it lands. The catch: your slice depends on your province and income."
+  },
+  {
+   "name": "lh-s1-v3",
+   "voice_id": "cgSgspJ2msm6clMCkdW9",
+   "text": "Me: one hour of deep focus. My brain, four minutes in. Here's what stopped mine: an if-then plan. If I want my phone, then I write the thought down and keep going. 94 studies back this up. Write yours in the comments."
+  }
+ ]
+}
