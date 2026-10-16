@@ -229,9 +229,9 @@ def ff_raise_half():
                           words("Enjoy half.", "c", 820, t=0.4, cls="Hw", style="font-size:150px")]), tin="zoom", focus=(540, 700), cam="push")
     r.scene(2, "".join(['<div class="par lite"></div>', el(PILL("EXAMPLE MATH"), "c", 380, a="pop", t=0.0),
                         words("A raise of / *200 a month.*", "c", 520, t=0.05, cls="H", style="font-size:130px"),
-                        el('<div style="display:flex;gap:30px;justify-content:center"><div class="card" style="font:800 72px/1 \'Inter Display\';'
-                           'color:#2B3FE0">100<br><span style="font:600 34px Inter;color:#4A5180">saved</span></div><div class="card" style="font:800 72px/1 '
-                           '\'Inter Display\';color:#FF6A3D">100<br><span style="font:600 34px Inter;color:#4A5180">enjoyed</span></div></div>', "c", 860,
+                        el('<div style="display:flex;gap:40px;justify-content:center"><div class="card" style="font:800 140px/1 \'Inter Display\';'
+                           'color:#2B3FE0;padding:50px 60px">100<br><span style="font:700 48px Inter;color:#4A5180">saved</span></div><div class="card" style="font:800 140px/1 '
+                           '\'Inter Display\';color:#FF6A3D;padding:50px 60px">100<br><span style="font:700 48px Inter;color:#4A5180">enjoyed</span></div></div>', "c", 860,
                            a="up", t=0.45)]), tin="whipL", cam="push")
     r.scene(2.5, "".join(['<div class="par deep"></div>',
                           words("Save 100 a month / for 20 years:", "c", 420, t=0.0, gap=0.08, cls="Hw", style="font-size:96px"),
@@ -241,7 +241,7 @@ def ff_raise_half():
             shake=(1.2, 0.2, 14))
     r.scene(1.5, "".join(['<div class="par cob"></div>',
                           words("Set the transfer / the day it *lands.*", "c", 520, t=0.0, gap=0.1, cls="Hw", em_cls="emw", style="font-size:120px"),
-                          emoji("📆", 420, 980, 220, t=0.35, d=0.3, loop="float")]), tin="glitch", td=0.2, cam="tilt")
+                          emoji("🔁", 420, 980, 220, t=0.35, d=0.3, loop="spin", amp=2)]), tin="glitch", td=0.2, cam="tilt")
     r.scene(1.5, "".join(['<div class="par lite"></div>',
                           words("Before you get / *used to* the extra.", "c", 560, t=0.0, gap=0.1, cls="H", style="font-size:120px")]),
             tin="push", cam="push")
