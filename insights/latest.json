@@ -1,13 +1,32 @@
 {
- "collected_at": "2026-10-15T20:30:12+00:00",
+ "collected_at": "2026-10-16T04:32:15+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 3,
+   "media_count": 4,
    "posts": [
+    {
+     "media_id": "17960508015247252",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DeiF8mCCtas/",
+     "at": "2026-10-15T23:03:06+0000",
+     "first_line": "100 a month from birth could grow to about 645,000 by 65. Automate it this week.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 14,
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 3624,
+      "ig_reels_video_view_total_time": 39869
+     },
+     "comments": []
+    },
     {
      "media_id": "18167936107427892",
      "type": "CAROUSEL_ALBUM",
@@ -17,8 +36,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 2,
+      "views": 13,
+      "reach": 4,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4
@@ -34,8 +53,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 18,
-      "reach": 3,
+      "views": 22,
+      "reach": 5,
       "saved": 0,
       "shares": 2,
       "total_interactions": 6
@@ -51,8 +70,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 2,
+      "views": 25,
+      "reach": 4,
       "saved": 0,
       "shares": 2,
       "total_interactions": 6
@@ -66,8 +85,27 @@
    "username": "lockedhourhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 4,
+   "media_count": 5,
    "posts": [
+    {
+     "media_id": "18430998832146040",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DeiGO0lFtje/",
+     "at": "2026-10-15T23:05:37+0000",
+     "first_line": "Reach more of your goals: write one if-then plan tonight.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 34,
+      "reach": 33,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 3738,
+      "ig_reels_video_view_total_time": 127121
+     },
+     "comments": []
+    },
     {
      "media_id": "18110119802352799",
      "type": "CAROUSEL_ALBUM",
@@ -77,8 +115,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 3,
+      "views": 15,
+      "reach": 4,
       "saved": 0,
       "shares": 3,
       "total_interactions": 7
@@ -94,8 +132,8 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 19,
-      "reach": 4,
+      "views": 21,
+      "reach": 5,
       "saved": 0,
       "shares": 3,
       "total_interactions": 7
@@ -111,8 +149,8 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 36,
-      "reach": 4,
+      "views": 38,
+      "reach": 5,
       "saved": 0,
       "shares": 4,
       "total_interactions": 8
@@ -128,8 +166,8 @@
      "likes": 4,
      "comments_count": 2,
      "insights": {
-      "views": 35,
-      "reach": 3,
+      "views": 37,
+      "reach": 4,
       "saved": 0,
       "shares": 3,
       "total_interactions": 9
@@ -143,8 +181,27 @@
    "username": "hourbackhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 3,
+   "media_count": 4,
    "posts": [
+    {
+     "media_id": "17935966671392084",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DeiGBYDAZA8/",
+     "at": "2026-10-15T23:04:08+0000",
+     "first_line": "Never guess a parking sign again. Snap the whole pole and ask one question.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 3552,
+      "ig_reels_video_view_total_time": 10656
+     },
+     "comments": []
+    },
     {
      "media_id": "17960402310238900",
      "type": "CAROUSEL_ALBUM",
@@ -154,8 +211,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 2,
+      "views": 9,
+      "reach": 3,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4
@@ -171,8 +228,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 3,
+      "views": 19,
+      "reach": 4,
       "saved": 0,
       "shares": 4,
       "total_interactions": 8
@@ -188,8 +245,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 4,
+      "views": 25,
+      "reach": 5,
       "saved": 0,
       "shares": 4,
       "total_interactions": 8
@@ -203,8 +260,27 @@
    "username": "littlefoldhq",
    "followers_count": 1,
    "follows_count": 0,
-   "media_count": 1,
+   "media_count": 2,
    "posts": [
+    {
+     "media_id": "18112923062588579",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DeiGJd-gSnE/",
+     "at": "2026-10-15T23:04:53+0000",
+     "first_line": "Before you put baby down tonight: 3 quick checks. Alone, back, crib.",
+     "likes": 3,
+     "comments_count": 1,
+     "insights": {
+      "views": 49,
+      "reach": 43,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 5,
+      "ig_reels_avg_watch_time": 2524,
+      "ig_reels_video_view_total_time": 106034
+     },
+     "comments": []
+    },
     {
      "media_id": "17919927846244871",
      "type": "CAROUSEL_ALBUM",
@@ -214,8 +290,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 2,
+      "views": 13,
+      "reach": 4,
       "saved": 0,
       "shares": 2,
       "total_interactions": 5
