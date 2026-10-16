@@ -54,7 +54,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--stage)}
 #stage{position:absolute;inset:0;overflow:hidden}
 .scene{position:absolute;inset:0;overflow:hidden;display:none}
 .cam{position:absolute;inset:0;transform-origin:50% 45%}
-.par{position:absolute;inset:-6%;background-size:cover;background-position:center}
+.par{position:absolute;inset:-6%;background-size:cover;background-position:center;will-change:transform}
 .el{position:absolute}
 .c{left:0;width:1080px;text-align:center}
 .el[style*="width:1080px;text-align:center"]{padding-left:70px;padding-right:70px}
@@ -255,6 +255,7 @@ def _worker(html_path, frames, outdir, dsf):
             pages = []
             for scale in (dsf, 1):  # full-quality page + a 1x page for blur sub-frames
                 pg = b.new_page(viewport={"width": W, "height": H}, device_scale_factor=scale)
+                pg.set_default_timeout(45000)  # a crashed renderer raises instead of hanging
                 pg.goto(url)
                 pg.wait_for_timeout(300)
                 pg.evaluate("document.fonts.ready")
@@ -269,10 +270,13 @@ def _worker(html_path, frames, outdir, dsf):
             state["n"] += 1
             return raw, r
 
-        def frame(fi):
+        def frame(fi, safe=False):
             t = fi / FPS
             r = state["hi"].evaluate(f"seek({t:.5f})")
             n = int(r.get("blur", 1))
+            if safe:  # after repeated crashes: one 1x sample, no blur
+                im, r = shot(t, state["lo"])
+                return _post(im, r.get("post"), fi)
             if n > 1:  # sub-frame motion blur: average 2n samples (8-12) across a 0.8-frame shutter (blurred, so 1x is enough)
                 n = 2 * n
                 acc = np.zeros((H, W, 3), np.float32)
@@ -291,7 +295,7 @@ def _worker(html_path, frames, outdir, dsf):
                 fresh()
             for attempt in range(3):
                 try:
-                    im = frame(fi)
+                    im = frame(fi, safe=attempt == 2)
                     break
                 except Exception as e:  # renderer crashed: restart and redo this frame
                     print(f"frame {fi}: {str(e)[:80]} -> restart", flush=True)
