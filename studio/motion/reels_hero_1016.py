@@ -503,10 +503,10 @@ LF_CSS = EXTRA_CSS + """
 """
 
 
-def skyline(lit_from=0.0, density=0.45, seed=3, dark_at=None, static=False):
+def skyline(lit_from=0.0, density=0.45, seed=3, dark_at=None, static=False, moon=True):
     import random
     rnd = random.Random(seed)
-    out = ['<div class="night"></div><div class="moon"></div>']
+    out = ['<div class="night"></div>' + ('<div class="moon"></div>' if moon else '')]
     xs = [(-20, 260, 900), (220, 300, 1180), (500, 240, 800), (720, 380, 1050)]
     k = 0
     for x, w, h in xs:
@@ -556,7 +556,8 @@ def lf_3am():
             tin="slam", cam="push")
     for k, (emo, txt, tin) in enumerate([("💡", "Lights / *down low.*", "whipL"), ("🤫", "Voice soft. / *Not much talk.*", "whipL"),
                                          ("🛏️", "Fed and changed? / *Back down.*", "whipU")]):
-        sky = (skyline(dark_at=0.25, density=0.5, seed=5) if k == 0 else skyline(static=True, density=[0, 0.12, 0.05][k], seed=5))
+        sky = (skyline(dark_at=0.25, density=0.5, seed=5, moon=False) if k == 0
+               else skyline(static=True, density=[0, 0.12, 0.05][k], seed=5, moon=False))
         r.scene(1.25, "".join([sky, '<div class="lampglow" style="opacity:.55"></div>',
                                emoji(emo, 440, 230, 190, a="pop", t=0.0, loop="float"),
                                words(txt, "c", 450, t=0.08, gap=0.1, cls="H", style="font-size:116px")]),
