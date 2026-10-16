@@ -1,6 +1,1 @@
-sw-umbrella-el-01: ok 416749 bytes
-sw-windpost-el-01: HTTP 429 b'{"detail":{"type":"rate_limit_error","code":"system_busy","message":"The system is experiencing heavy traffic. Please try again.","status":"system_busy","request_id":"7d0d642e50616d579338155668936535","docs_url":"https://elevenlabs.io/docs/eleven-api/resources/errors#rate-limiting-and-concurrency"}}'
-sw-snowhour-el-01: ok 416749 bytes
-sw-lasttrain-el-01: ok 415913 bytes
-sw-warmjar-el-01: ok 416749 bytes
-sw-fog-el-01: ok 415913 bytes
+sw-windpost-el-01: ok 415913 bytes
