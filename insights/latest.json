@@ -1,29 +1,48 @@
 {
- "collected_at": "2026-10-16T04:32:15+00:00",
+ "collected_at": "2026-10-16T12:40:34+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 4,
+   "media_count": 5,
    "posts": [
+    {
+     "media_id": "18089840456691743",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Deji743jnP7/",
+     "at": "2026-10-16T12:35:37+0000",
+     "first_line": "The car repair is today. Payday isn't. Build a small buffer so surprise bills don't land on a card.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "17960508015247252",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/DeiF8mCCtas/",
      "at": "2026-10-15T23:03:06+0000",
      "first_line": "100 a month from birth could grow to about 645,000 by 65. Automate it this week.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 14,
-      "reach": 12,
+      "views": 17,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3624,
-      "ig_reels_video_view_total_time": 39869
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 5033,
+      "ig_reels_video_view_total_time": 75498
      },
      "comments": []
     },
@@ -33,14 +52,14 @@
      "permalink": "https://www.instagram.com/p/DehXOGKFKxv/",
      "at": "2026-10-15T16:14:34+0000",
      "first_line": "Get up to $2,000 for your kid's school, free. Here's how to claim the Canada Learning Bond.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
       "views": 13,
       "reach": 4,
       "saved": 0,
       "shares": 1,
-      "total_interactions": 4
+      "total_interactions": 5
      },
      "comments": []
     },
@@ -50,14 +69,14 @@
      "permalink": "https://www.instagram.com/p/DeflBIAoJde/",
      "at": "2026-10-14T23:36:40+0000",
      "first_line": "Save $5,000 in 26 paydays, starting Fri Oct 23. Here's the whole plan.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
       "views": 22,
       "reach": 5,
       "saved": 0,
       "shares": 2,
-      "total_interactions": 6
+      "total_interactions": 7
      },
      "comments": []
     },
@@ -67,14 +86,14 @@
      "permalink": "https://www.instagram.com/p/Debcj61lSrK/",
      "at": "2026-10-13T09:05:35+0000",
      "first_line": "Your paycheque has 3 jobs. Most of us only give it one 👀",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
       "views": 25,
       "reach": 4,
       "saved": 0,
       "shares": 2,
-      "total_interactions": 6
+      "total_interactions": 7
      },
      "comments": []
     }
@@ -85,24 +104,43 @@
    "username": "lockedhourhq",
    "followers_count": 2,
    "follows_count": 0,
-   "media_count": 5,
+   "media_count": 6,
    "posts": [
+    {
+     "media_id": "18199788004340683",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DejjGDfFdUa/",
+     "at": "2026-10-16T12:37:03+0000",
+     "first_line": "Your inbox is about to pick your morning. Do your one thing first.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18430998832146040",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/DeiGO0lFtje/",
      "at": "2026-10-15T23:05:37+0000",
      "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 1,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 34,
-      "reach": 33,
+      "views": 42,
+      "reach": 40,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3738,
-      "ig_reels_video_view_total_time": 127121
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 3793,
+      "ig_reels_video_view_total_time": 159344
      },
      "comments": []
     },
@@ -192,13 +230,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 3,
+      "views": 11,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 3552,
-      "ig_reels_video_view_total_time": 10656
+      "ig_reels_avg_watch_time": 1564,
+      "ig_reels_video_view_total_time": 14082
      },
      "comments": []
     },
@@ -260,24 +298,43 @@
    "username": "littlefoldhq",
    "followers_count": 1,
    "follows_count": 0,
-   "media_count": 2,
+   "media_count": 3,
    "posts": [
+    {
+     "media_id": "18116429624064659",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Deji3MejEkG/",
+     "at": "2026-10-16T12:34:55+0000",
+     "first_line": "Baby hates tummy time? Try it on your chest.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18112923062588579",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/DeiGJd-gSnE/",
      "at": "2026-10-15T23:04:53+0000",
      "first_line": "Before you put baby down tonight: 3 quick checks. Alone, back, crib.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 49,
-      "reach": 43,
+      "views": 51,
+      "reach": 44,
       "saved": 1,
       "shares": 0,
-      "total_interactions": 5,
-      "ig_reels_avg_watch_time": 2524,
-      "ig_reels_video_view_total_time": 106034
+      "total_interactions": 6,
+      "ig_reels_avg_watch_time": 3052,
+      "ig_reels_video_view_total_time": 134322
      },
      "comments": []
     },
@@ -290,8 +347,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 4,
+      "views": 14,
+      "reach": 5,
       "saved": 0,
       "shares": 2,
       "total_interactions": 5
