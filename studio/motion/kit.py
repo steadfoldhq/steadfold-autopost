@@ -27,6 +27,7 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 W, H, FPS = 1080, 1920, 30
+FRAME_EXT = os.environ.get("KIT_FRAME_EXT", "png")  # "jpg" (q97) cuts frame disk use ~6x when the disk is tight
 CHROME = (glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome") or glob.glob("/opt/pw-browsers/chromium*/chrome-linux/chrome"))[0]
 
 BRANDS = {
@@ -302,7 +303,10 @@ def _worker(html_path, frames, outdir, dsf):
                 except Exception as e:  # renderer crashed: restart and redo this frame
                     print(f"frame {fi}: {str(e)[:80]} -> restart", flush=True)
                     fresh()
-            im.save(f"{outdir}/{fi:05d}.png", compress_level=1)
+            if FRAME_EXT == "jpg":
+                im.save(f"{outdir}/{fi:05d}.jpg", quality=97, subsampling=0)
+            else:
+                im.save(f"{outdir}/{fi:05d}.png", compress_level=1)
         state["b"].close()
 
 
@@ -327,7 +331,7 @@ def render_frames(reel, workdir, dsf=2, workers=1, only=None):
 def encode(fdir, n, music, out, bpm=None, fade=1.4, crf=19):
     dur = n / FPS
     tmp = Path(out).with_suffix(".silent.mp4")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS), "-i", f"{fdir}/%05d.png", "-frames:v", str(n),
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS), "-i", f"{fdir}/%05d.{FRAME_EXT}", "-frames:v", str(n),
                     "-c:v", "libx264", "-preset", "slow", "-crf", str(crf), "-maxrate", "9M", "-bufsize", "18M",
                     "-pix_fmt", "yuv420p", "-profile:v", "high", "-g", "30", str(tmp)], check=True)
     af = (f"atrim=0:{dur:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.04,afade=t=out:st={dur - fade:.3f}:d={fade},"
@@ -360,7 +364,7 @@ def sheet(fdir, times, out, cols=8, scale=0.2):
     from PIL import ImageDraw
     ims = []
     for t in times:
-        f = Path(fdir) / f"{int(round(t * FPS)):05d}.png"
+        f = Path(fdir) / f"{int(round(t * FPS)):05d}.{FRAME_EXT}"
         if f.exists():
             im = Image.open(f).convert("RGB").resize((int(W * scale), int(H * scale)), Image.LANCZOS)
             ImageDraw.Draw(im).text((6, 6), f"{t:.2f}s", fill=(255, 0, 0))

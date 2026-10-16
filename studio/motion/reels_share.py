@@ -694,7 +694,8 @@ def build(rid, outdir, qa_only=False, dsf=2):
         out = work / f"{rid}.mp4"
         encode(fdir, n, LIB / r.music, out)
         from PIL import Image
-        Image.open(fdir / "00000.png").convert("RGB").save(work / f"{rid}-cover.jpg", quality=92)
+        import kit as _k
+        Image.open(fdir / f"00000.{_k.FRAME_EXT}").convert("RGB").save(work / f"{rid}-cover.jpg", quality=92)
         sheet(fdir, qa_times(r), work / f"{rid}-qa.jpg", cols=10, scale=0.16)
         info.update(probe=probe(out), lufs=loudness(out), music=r.music)
         shutil.rmtree(fdir, ignore_errors=True)  # frames are ~1 GB per Reel; the QA sheet and cover are kept
