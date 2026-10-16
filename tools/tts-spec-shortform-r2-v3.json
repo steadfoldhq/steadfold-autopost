@@ -1,0 +1,48 @@
+{
+ "out": "media/voice/shortform",
+ "model": "eleven_v3",
+ "voices": "tools/voices.json",
+ "settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8,
+  "use_speaker_boost": true
+ },
+ "items": [
+  {
+   "name": "ff-r2-who-has-more-v3",
+   "voice": "Kayla",
+   "takes": 2,
+   "text": "[curious] Two friends. Same $200 a month. Maya starts at 25. She stops at 35... and never adds another cent. Jay starts at 35. He keeps going until 65. [excited] Who has more at 65? Pause and guess... comment 1 or 2. Maya put in $24,000. Jay put in $72,000. At 65, Jay has about $298,000. And Maya? [excited] About $400,000! A third of the money. More at the end. [warmly] Her secret was time. $200 a month at 8% a year. Ten years early beat thirty years late. So... did you guess right?"
+  },
+  {
+   "name": "ff-r2-spot-the-mistake-v3",
+   "voice": "Kayla",
+   "takes": 2,
+   "text": "[curious] She just got paid $2,000. One of these moves is a mistake. One. Rent, $900. Two. Bills and groceries, $600. Three. Fun money, $300. Four. Savings... whatever's left. [whispers] Pause and spot it. [excited] It's number four! Whatever's left tends to vanish. [confident] Flip it. Savings move first. The day the money lands. [warmly] Bills eat everything? Start tiny. Small and automatic beats big and skipped. Did you spot it?"
+  },
+  {
+   "name": "lh-r2-which-one-v3",
+   "voice": "Laura",
+   "takes": 2,
+   "text": "[playful] Three kinds of 'I'll start soon.' Which one are you? One... The Cleaner. Desk spotless. Work untouched. [laughs] Two... The Researcher. Twelve tabs on how to start. Three... The Waiter. It's 1:47. [sighs] 'I'll start at 2.' [warmly] Same fix for all three. Set a two-minute timer. Do the ugliest first step. You're allowed to stop at two. [excited] Starting was the hard part. So... 1, 2 or 3?"
+  },
+  {
+   "name": "lh-r2-pov-7pm-v3",
+   "voice": "Laura",
+   "takes": 2,
+   "text": "[sighs] POV: you sat down to study at 7. Okay. Focus. 7:01. Just checking one thing... [gasps] 7:43?! How is it 7:43? [warmly] Try this. Phone in another room. Not face down. Another room. One 2017 study tested this. Phone on the desk, or in another room? Another room scored better. Even on silent. Later studies are mixed. But the hallway is free. [curious] So... what time did your 7 become?"
+  },
+  {
+   "name": "hb-r2-three-words-v3",
+   "voice": "Liam",
+   "takes": 2,
+   "text": "[mischievously] Three words make any AI way better. Guess them before the end. 'Plan my week.' [sighs] You get this. Generic. Now add three secret words. [excited] Now it asks YOU. Which days are packed? What must get done? Any gym days? The plan fits your real week. [curious] The three words? Ask me first. [laughs] What would you have it plan?"
+  },
+  {
+   "name": "hb-r2-never-paste-v3",
+   "voice": "Liam",
+   "takes": 2,
+   "text": "[curious] One of these should never go into an AI chat. One. A recipe you want to halve. Two. Your email draft, names taken out. Three. A screenshot of your bank app, to explain one charge. [whispers] Pause... 1, 2 or 3? One. Fine. Two. Fine. [serious] Three. That's the one. It can show your name, balance and account number. Type just the charge line instead. [playful] Did you pick three?"
+  }
+ ]
+}

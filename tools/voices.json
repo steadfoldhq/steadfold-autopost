@@ -1,0 +1,13 @@
+{
+ "_note": "Steadfold house voices (cast Oct 16 2026 from an 8-voice Eleven v3 audition: Sarah, Laura, Jessica, Kayla, Liam, Will, Charlie, Drew; same two test lines). Model eleven_v3, stability 0.5 (Natural), audio tags + ellipses for delivery. One script = one continuous take. Use in TTS specs as \"voice\": \"<name>\" with \"voices\": \"tools/voices.json\".",
+ "model": "eleven_v3",
+ "settings": {"stability": 0.5, "similarity_boost": 0.8, "use_speaker_boost": true},
+ "voices": [
+  {"name": "Kayla", "voice_id": "sWsBiVcjjowceAScTnu3", "gender": "female", "source": "ElevenLabs Voice Library (called by id)",
+   "use_for": "Fully Funded money shorts and reels: bright, quick, warm; big reveals and 'guess' moments", "fallback": "Jessica cgSgspJ2msm6clMCkdW9"},
+  {"name": "Laura", "voice_id": "FGY2WhTYpPnrIDTdsKH5", "gender": "female", "source": "ElevenLabs default",
+   "use_for": "Locked Hour focus/procrastination POVs: playful, sassy, big highs and sighs; also Littlefold light moments"},
+  {"name": "Liam", "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "gender": "male", "source": "ElevenLabs default",
+   "use_for": "Hourback AI and time-saving tips: energetic young creator, widest pitch movement of the males auditioned", "fallback": "Drew q0IMILNRPxOgtBTS4taI"}
+ ]
+}
