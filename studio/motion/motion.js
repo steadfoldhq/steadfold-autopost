@@ -80,7 +80,7 @@
       case 'wipe': el.style.clipPath = `inset(-20% ${(1 - E.io(p)) * 100}% -20% 0)`; break;
       case 'wipeD': el.style.clipPath = `inset(0 0 ${(1 - E.io(p)) * 100}% 0)`; break;
       case 'hl': el.style.backgroundSize = `${E.io(p) * 100}% 100%`; break;
-      case 'strike': { const sk = el.querySelector('.sk'); if (sk) sk.style.width = `${E.io(p) * 100}%`; break; }
+      case 'strike': { const sk = el.classList.contains('sk') ? el : el.querySelector('.sk'); if (sk) sk.style.width = `${E.io(p) * 100}%`; break; }
       case 'bar': el.style.width = `${E.io(p) * +(el.dataset.to || 100)}%`; break;
       case 'draw': el.style.strokeDashoffset = (+el.dataset.len) * (1 - E.io(p)); break;
       case 'type': { const f = el.dataset.full; const n = Math.round(cl(u / d) * f.length); el.textContent = f.slice(0, n); break; }

@@ -89,12 +89,12 @@ def ff_match():
                               style="font-size:84px")]), tin="glitch", td=0.2, cam="tilt")
     bar = lambda lab, to, val, col, t0: (
         f'<div style="font:700 50px/1.1 Inter;color:#0E1440;margin-bottom:16px">{lab}</div>'
-        f'<div class="bar" style="background:rgba(43,63,224,.12)"><div class="f" data-a="bar" data-t="{t0}" data-d="0.7" data-to="{to}" '
+        f'<div class="bar" style="background:rgba(43,63,224,.12)"><div class="f" data-a="bar" data-t="{t0}" data-d="0.5" data-to="{to}" '
         f'style="background:{col}"></div></div><div class="H" style="font-size:110px;margin-top:16px">+<span data-a="count" data-t="{t0}" '
-        f'data-d="0.7" data-to="{val}" data-comma="1">0</span> <span style="font-size:56px">from them</span></div>')
-    r.scene(2.5, "".join(['<div class="par lite"></div>',
+        f'data-d="0.5" data-to="{val}" data-comma="1">0</span> <span style="font-size:56px">from them</span></div>')
+    r.scene(3.5, "".join(['<div class="par lite"></div>',
                           el(bar("You put in 3%", 50, 750, soft, 0.1), 90, 420, 900, a="up", t=0.0),
-                          el(bar("You put in 6%", 100, 1500, "#2B3FE0", 0.5), 90, 860, 900, a="up", t=0.35)]), tin="slam", cam="rise")
+                          el(bar("You put in 6%", 100, 1500, "#2B3FE0", 0.45), 90, 860, 900, a="up", t=0.3)]), tin="slam", cam="rise")
     r.scene(1.5, "".join(['<div class="par cob"></div>',
                           el('+<span data-a="count" data-t="0.05" data-d="0.6" data-to="750">0</span>', "c", 480, a="none", cls="Hw",
                              style="font-size:300px;color:#FFB08F;letter-spacing:-.06em"),
@@ -166,9 +166,9 @@ def lh_next_step():
                           words("Write *that* down. / Start there.", "c", 560, t=0.0, gap=0.1, cls="H", em_cls="emy", style="font-size:140px")]),
             tin="zoom", focus=(540, 700), cam="push")
     r.scene(2, "".join(['<div class="par dots"></div>',
-                        words("Rewrite one task / *now.*", "c", 520, t=0.0, gap=0.1, cls="H", style="font-size:150px"),
-                        el('<div class="B">Save this, and follow<br>@lockedhourhq.</div>', "c", 900, a="up", t=0.4),
-                        img("ht-hourglass.png", 420, 1060, 230, t=0.45, r=8)]), tin="iris", focus=(540, 800), color="#FFFFFF", cam="push")
+                        words("Rewrite / one task / *now.*", "c", 420, t=0.0, gap=0.1, cls="H", style="font-size:150px"),
+                        el('<div class="B">Save this, and follow<br>@lockedhourhq.</div>', "c", 960, a="up", t=0.4),
+                        img("ht-hourglass.png", 420, 1120, 230, t=0.45, r=8)]), tin="iris", focus=(540, 800), color="#FFFFFF", cam="push")
     r.loop(1.5, tin="whipU")
     return r
 
