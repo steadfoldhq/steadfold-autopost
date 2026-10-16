@@ -1,0 +1,4 @@
+ff-same-alarm: ok (eleven_v3, timestamps, 327305 bytes)
+ff-same-alarm-t2: ok (eleven_v3, timestamps, 311004 bytes)
+lf-ten-minutes: ok (eleven_v3, timestamps, 347785 bytes)
+lf-ten-minutes-t2: ok (eleven_v3, timestamps, 330230 bytes)
