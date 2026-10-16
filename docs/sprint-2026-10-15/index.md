@@ -35,3 +35,4 @@ Each sprint agent adds one line here: agent · deliverable title · private link
 - B3 · Holiday Money Plan v1.0 built (Fully Funded, every gift gets a payday; 8 xlsx + quick-start, 10 listing images + video, 1,942 checks, gate SHIP) · US$9 launch to Nov 30, then US$14
 - B1 · Hourback pilots · 22 items · New relatable direction live Oct 19–21: 6 mini-scene Reels, 4 feed posts, 12 Stories, every "after" a real AI run on a made-up example (capture log in studio/b1-hourback-pilots/)
 - E1 · Creative/Entertainment pitch · https://claude.ai/code/artifact/9810221b-232a-4fa2-94be-3a80810c94a0
+- B4 · Puddlecrofts motion test · sent to Dharma
