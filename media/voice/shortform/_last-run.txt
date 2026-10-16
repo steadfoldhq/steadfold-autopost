@@ -1,4 +1,6 @@
-ff-s1a-v3: ok
-ff-s1b-v3: ok
-ff-s2-v3: ok
-lh-s1-v3: ok
+ff-r2-who-has-more: ok
+ff-r2-spot-the-mistake: ok
+lh-r2-which-one: ok
+lh-r2-pov-7pm: ok
+hb-r2-three-words: ok
+hb-r2-never-paste: ok
