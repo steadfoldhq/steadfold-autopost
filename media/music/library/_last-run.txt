@@ -1,1 +1,11 @@
-hb-c-clever-celesta-el: ok 288853 bytes
+lf-cosy-el-01: ok 320200 bytes
+ff-curious-el-01: ok 321036 bytes
+lh-focus-el-01: ok 321036 bytes
+hb-playful-el-01: ok 321036 bytes
+sfx-whoosh-soft: ok 13835 bytes
+sfx-whoosh-fast: ok 10492 bytes
+sfx-pop: HTTP 400 b'{"detail":{"status":"invalid_generation_settings","message":"Invalid setting for duration_seconds received, expected to be greater or equal to 0.5 and less or equal to 30, received 0.4."}}'
+sfx-tick-ding: ok 17179 bytes
+sfx-paper: ok 12163 bytes
+sfx-cash: ok 17179 bytes
+sfx-waves: ok 97009 bytes
