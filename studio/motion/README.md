@@ -56,5 +56,10 @@ Every other frame renders at 2× and is Lanczos-downsampled (brand rule 7).
 - Hook in frame 0: the hook line is fully on screen at t=0 (`a="none"` or a negative `t`), and something moves within 0.3 s.
 - A new visual beat every 0.6–1.2 s; a transition on every cut; big kinetic type you can read with the sound off.
 - End with `r.loop()` so the last frame flows back into the hook.
-- Memory: one renderer at a time (2 CPUs / ~4 GB here). The worker recycles Chromium every ~120 screenshots and retries a crashed frame.
-  A 15 s Reel takes about 8–10 minutes.
+- Memory: one renderer at a time (2 CPUs / ~4 GB here). Background layers (`.par`) are `will-change: transform` so Chromium
+  rasterizes them once (CSS gradients re-rastered at every camera scale leaked ~250 MB per frame). The worker recycles Chromium every
+  ~120 screenshots, times out a crashed renderer and retries the frame (third try: one 1x sample). A 13 s Reel takes about 6–7 minutes.
+- Text safety: centred blocks (`x="c"`) get 70 px side padding, and `autofit()` (re-run after fonts load) shrinks any kinetic line wider
+  than 920 px, so words stay clear of the Reel buttons. `kit.overflow_check(reel)` lists any text that still leaves x 30–1050.
+- Every Reel is stretched to at least 12.6 s (`Reel.stretch`) and its audio is mastered to -14 LUFS / <= -1.5 dBTP
+  (`master_audio`, passes `tools/music_check.py`). Reels cut to their own beat go in `tools/music-picks.json` "keep".
