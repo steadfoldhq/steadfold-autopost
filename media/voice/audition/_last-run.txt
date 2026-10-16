@@ -1,0 +1,10 @@
+shared {'gender': 'female', 'age': 'young', 'use_cases': 'social_media'}: HTTP 400 b'{"detail":{"type":"validation_error","code":"invalid_parameters","message":"Invalid sort received: usage_character_count_7d, must be one of: created_date, usage_character_count_1y, trending, cloned_by'
+shared {'gender': 'female', 'age': 'young', 'use_cases': 'conversational'}: HTTP 400 b'{"detail":{"type":"validation_error","code":"invalid_parameters","message":"Invalid sort received: usage_character_count_7d, must be one of: created_date, usage_character_count_1y, trending, cloned_by'
+shared {'gender': 'male', 'age': 'young', 'use_cases': 'social_media'}: HTTP 400 b'{"detail":{"type":"validation_error","code":"invalid_parameters","message":"Invalid sort received: usage_character_count_7d, must be one of: created_date, usage_character_count_1y, trending, cloned_by'
+shared {'gender': 'male', 'age': 'young', 'use_cases': 'conversational'}: HTTP 400 b'{"detail":{"type":"validation_error","code":"invalid_parameters","message":"Invalid sort received: usage_character_count_7d, must be one of: created_date, usage_character_count_1y, trending, cloned_by'
+aud-sarah: ok (eleven_v3, timestamps, 227830 bytes)
+aud-laura: ok (eleven_v3, timestamps, 229084 bytes)
+aud-jessica: ok (eleven_v3, timestamps, 278821 bytes)
+aud-liam: ok (eleven_v3, timestamps, 250818 bytes)
+aud-will: ok (eleven_v3, timestamps, 276314 bytes)
+aud-charlie: ok (eleven_v3, timestamps, 231592 bytes)
