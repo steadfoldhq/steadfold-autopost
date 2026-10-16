@@ -8,7 +8,7 @@ Per file:
 - harsh     share of energy above 8 kHz (< 0.5 %) and 4-8 kHz (< 4 %): no screech
 - voice gap energy 1.5-4 kHz vs 200-1500 Hz (dB; below -8 dB leaves room for a voice)
 - hook      RMS of the first second vs the whole file (>= -6 dB: no empty intro)
-- seam      beds: level step between the last and first 200 ms (<= 6 dB) -> clean loop
+- seam      beds: spectral jolt at the loop join vs the track's own strong beats (<= 1.0) -> no click
 - tempo     onset-autocorrelation BPM; key: Krumhansl chroma estimate
 """
 import json
@@ -90,8 +90,15 @@ def check(path, kind="bed"):
         "bpm_est": round(float(tempo(x, SR)), 1), "key_est": key_est(x, SR),
     }
     if kind == "bed":
-        w = int(0.2 * SR)
-        r["seam_db"] = round(abs(rms(x[-w:]) - rms(x[:w])), 1)
+        # Loop join click test: a click is a sample-level jump, so look at the first difference
+        # (a crude high-pass) of end->start. Energy in the 6 ms around the join vs the 99th
+        # percentile of 6 ms windows across the track. <= 1.0 = no worse than the music itself.
+        y = np.r_[xs.reshape(-1, 2).mean(1)[-4410:], xs.reshape(-1, 2).mean(1)[:4410]]
+        d = np.diff(xs.reshape(-1, 2).mean(1)) ** 2
+        w = 265
+        win = np.convolve(d, np.ones(w), "valid")[::w]
+        dj = np.convolve(np.diff(y) ** 2, np.ones(w), "valid")
+        r["seam_ratio"] = round(float(dj[4410 - w:4410 + 1].max() / (np.percentile(win, 99) + 1e-12)), 2)
     target = -14 if kind == "bed" else -15
     fails = []
     if abs(i - target) > 1.0: fails.append("loudness")
@@ -100,7 +107,7 @@ def check(path, kind="bed"):
     if r["hf_8k_pct"] > 0.5 or r["hf_4_8k_pct"] > 4: fails.append("harsh-highs")
     if r["voice_gap_db"] > -8: fails.append("voice-gap")
     if kind == "bed" and r["hook_db"] < -6: fails.append("slow-start")
-    if kind == "bed" and r["seam_db"] > 6: fails.append("loop-seam")
+    if kind == "bed" and r["seam_ratio"] > 1.0: fails.append("loop-click")
     r["pass"] = not fails
     r["fails"] = fails
     return r
@@ -121,7 +128,7 @@ def main(args):
         res.append(r)
         print(f"{'PASS' if r['pass'] else 'FAIL'} {r['file']:34s} {r['seconds']:5.1f}s {r['lufs']:6.1f} LUFS tp {r['true_peak']:5.1f} "
               f"clip {r['clipped']} >8k {r['hf_8k_pct']:.2f}% 4-8k {r['hf_4_8k_pct']:.1f}% gap {r['voice_gap_db']} "
-              f"hook {r['hook_db']} seam {r.get('seam_db', '-')} ~{r['bpm_est']}bpm {r['key_est']} {' '.join(r['fails'])}")
+              f"hook {r['hook_db']} seam {r.get('seam_ratio', '-')} ~{r['bpm_est']}bpm {r['key_est']} {' '.join(r['fails'])}")
     if out:
         json.dump(res, open(out, "w"), indent=1)
     return 0 if all(r["pass"] for r in res) else 1
