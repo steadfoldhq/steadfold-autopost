@@ -281,9 +281,9 @@ def hb_email_asks():
         words("Paste it into / *any AI chat:*", "c", 380, t=0.0, gap=0.1, cls="H", style="font-size:110px"),
         el(prompt, 80, 740, 920, a="fly", t=0.1, d=0.45, r=-2),
     ]), tin="whipU", cam="rise")
-    asks = [("Send the deck", "by Thursday", "“Could you send the deck before Thursday?”"),
-            ("Confirm the room", "by Friday", "“Please confirm the room by Friday.”"),
-            ("Pick a date", "no deadline", "“Let me know which date works.”")]
+    asks = [("Send the deck", "by Thursday", "Could you send the deck before Thursday?"),
+            ("Confirm the room", "by Friday", "Please confirm the room by Friday."),
+            ("Pick a date", "no deadline", "Let me know which date works.")]
     r.scene(3.5, "".join([
         '<div class="par plum"></div>',
         el('<span class="tag">WHAT YOU GET · EXAMPLE MADE UP</span>', "c", 360, a="pop", t=0.0),
