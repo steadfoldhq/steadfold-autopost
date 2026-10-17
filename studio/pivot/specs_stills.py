@@ -65,6 +65,22 @@ POSTS = {
     "hb-1019-single-group-chat": dict(brand=HB, slides=[
         dict(f="indi", text="*47* messages. / Still no plan.", emo="💬"),
     ]),
+    "hb-1020-prompt-week-01": dict(brand=HB, slides=[
+        dict(f="indi", kicker="Prompt of the Week · No.1", text="5 dinners. / *One list.*", emo="🛒"),
+        dict(f="yel", text="Paste / *one prompt.*", sub="The full prompt is in the caption."),
+        dict(f="plum", text="Shop / *once.*", sub="Check the list against your cupboards."),
+    ]),
+    "hb-1020-single-stopped-doing": dict(brand=HB, slides=[
+        dict(f="yel", text="AI reads / *the boring bits.*", emo="🥱", sub="I still check every quote."),
+    ]),
+    "hb-1021-ai-said-what-bill": dict(brand=HB, slides=[
+        dict(f="indi", text="$96 dinner. / *Ana didn't drink.*", emo="🍝"),
+        dict(f="yel", text="Ana: *$18.* / The rest: $26."),
+        dict(f="plum", text="Add: *“Show / the math.”*", sub="18 + 26 + 26 + 26 = 96. Made up; real AI reply."),
+    ]),
+    "hb-1021-single-subscriptions": dict(brand=HB, slides=[
+        dict(f="indi", text="*5* subscriptions. / One statement.", emo="🧾", sub="$78.47 a month, on a made-up statement."),
+    ]),
     # ------------------------------------------------------------------ Littlefold
     "lf-03-safe-sleep-tonight": dict(brand=LF, slides=[
         dict(f="cream", kicker="Safe sleep · tonight", text="Alone. Back. / *Crib.*", emo="🌙"),
@@ -91,6 +107,19 @@ POSTS = {
         dict(f="pink", text="Under 3 months / with a fever? / *Get seen urgently.*", emo="🌡️",
              src="Canadian Paediatric Society"),
     ]),
+    "lf-1017-single-rest": dict(brand=LF, slides=[
+        dict(f="berry", text="Baby's covered? / *Lie down.*", emo="🌙", sub="The dishes can wait."),
+    ]),
+    "lf-06-toddler-meltdown": dict(brand=LF, slides=[
+        dict(f="cream", text="Public meltdown? / *Hold your no.*", emo="🛒"),
+        dict(f="pink", text="Calm *you* / first.", sub="Slow breath. Ignore the onlookers."),
+        dict(f="butter", text="Treat to stop it? / *Skip it.*", sub="It teaches that tantrums work.",
+             src="NHS · American Academy of Pediatrics"),
+    ]),
+    "lf-1020-single-coat-check": dict(brand=LF, slides=[
+        dict(f="pink", text="Puffy coat? / *Off before buckling.*", emo="🧥", sub="Blanket over the straps, never under.",
+             src="American Academy of Pediatrics"),
+    ]),
     # ------------------------------------------------------------------ Locked Hour
     "lh-1017-single-one-thing-meme": dict(brand=LH, slides=[
         dict(f="cream", text="“Just one thing.” / *40 min later.*", emo="🐇", sub="Keep a “later” list instead."),
@@ -110,5 +139,16 @@ POSTS = {
     ]),
     "lh-1019-single-kitchen-table": dict(brand=LH, slides=[
         dict(f="dots", text="Claim one hour, / *out loud.*", emo="📣", sub="“Locked in 10 to 11. Shout if it's urgent.”"),
+    ]),
+    "lh-1017-one-word-later": dict(brand=LH, slides=[
+        dict(f="dots", kicker="One Word · No.1", text="New thought? / Write it. *Later.*", emo="📝"),
+    ]),
+    "lh-w2-07-minute-by-minute": dict(brand=LH, slides=[
+        dict(f="dots", text="One hour. / *Minute by minute.*", emo="⏱️"),
+        dict(f="cream", text="0:00 to 0:45: / *deep work.*", sub="Wi-Fi off. One task."),
+        dict(f="pink", text="0:45: *stop / mid-sentence.*", sub="0:50: walk with one question."),
+    ]),
+    "lh-1020-single-midterm": dict(brand=LH, slides=[
+        dict(f="pink", text="Midterm? / Lock *3 hours.*", emo="📚", sub="One topic per hour."),
     ]),
 }
