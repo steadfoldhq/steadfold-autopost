@@ -1,0 +1,1157 @@
+[
+ {
+  "name": "ff-x-money-moves",
+  "seconds": 20,
+  "bpm": 100,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "modern pop",
+    "trap-lite",
+    "feel-good hip-hop",
+    "100 BPM",
+    "A minor",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "catchy plucked synth hook from the first beat",
+      "finger snaps",
+      "warm sub bass hint"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "snare roll rising",
+      "filter sweep riser",
+      "tension then lift"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "big punchy drop",
+      "808 bass",
+      "tight claps",
+      "bright brass stab on the one",
+      "full catchy hook"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "confident bounce",
+      "hook repeats with counter-melody",
+      "hi-hat rolls"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Confident modern money anthem: catchy plucked synth hook, snaps, 808 bass, claps, brass stabs on the drop. 100 BPM, A minor. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "ff-x-level-up",
+  "seconds": 20,
+  "bpm": 118,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "funk-pop",
+    "upbeat",
+    "nu-disco",
+    "118 BPM",
+    "E major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "slap bass riff and horn hook right away",
+      "four-on-the-floor kick"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "drum fill build",
+      "rising horn swell",
+      "claps doubling"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "full funk-pop drop",
+      "punchy horns",
+      "disco strings stab",
+      "groovy bassline"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "groove with handclaps",
+      "horn answer phrases"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Upbeat level-up funk-pop: slap bass, punchy horn hook, four-on-the-floor, disco string stabs on the drop. 118 BPM, E major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "ff-x-big-reveal",
+  "seconds": 20,
+  "bpm": 96,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "cinematic hip-hop",
+    "epic",
+    "trailer pop",
+    "96 BPM",
+    "D minor",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "bold pizzicato strings hook from the first beat",
+      "deep kick"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "tick-tock percussion",
+      "orchestral riser",
+      "snare build"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "huge drop",
+      "boom bap drums",
+      "big brass and string chords",
+      "sub bass hit"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "swagger groove",
+      "strings ostinato",
+      "confident"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Big-reveal cinematic hip-hop: pizzicato strings hook, tick-tock build, huge brass-and-drums drop. 96 BPM, D minor. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lh-x-lock-in",
+  "seconds": 20,
+  "bpm": 126,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "future bass",
+    "electro-pop",
+    "punchy",
+    "126 BPM",
+    "F minor",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "chopped synth chord hook on beat one",
+      "stomp clap"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "riser sweep",
+      "snare roll accelerating",
+      "pitch rise"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "massive punchy drop",
+      "supersaw chords",
+      "sidechained bass",
+      "hard kick and clap"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "driving energy",
+      "hook chops repeat",
+      "bright confident"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Punchy lock-in future-bass electro-pop: chopped chord hook, riser and snare roll, massive sidechained drop. 126 BPM, F minor. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lh-x-phone-down",
+  "seconds": 20,
+  "bpm": 110,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "indie dance",
+    "stomp pop",
+    "anthemic",
+    "110 BPM",
+    "G major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "stomp stomp clap pattern and whistle hook from the first beat",
+      "bass pulse"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "building drums",
+      "claps doubling",
+      "rising synth"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "anthemic drop",
+      "driving kick",
+      "bright synth lead",
+      "group handclaps",
+      "big bass"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "unstoppable momentum",
+      "hook repeats",
+      "confident"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Anthemic stomp-pop: stomp-stomp-clap, whistle hook, driving kick and bright synth lead on the drop. 110 BPM, G major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lh-x-tick-boom",
+  "seconds": 20,
+  "bpm": 100,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "modern trap-pop",
+    "clock percussion",
+    "bold",
+    "100 BPM",
+    "C minor",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "ticking clock percussion hook and plucked marimba motif from the first beat"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "ticks speeding up",
+      "riser",
+      "reverse cymbal"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "boom drop",
+      "heavy 808",
+      "crisp trap drums",
+      "bold synth chord stabs"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "head-nod groove",
+      "marimba motif returns over 808"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Tick-boom trap-pop: ticking clock and marimba hook, ticks speed up into a heavy 808 drop with crisp drums. 100 BPM, C minor. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "hb-x-smart-bounce",
+  "seconds": 20,
+  "bpm": 115,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "playful synth-pop",
+    "glitchy",
+    "techy",
+    "115 BPM",
+    "D major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "bubbly bleep-bloop synth hook from the first beat",
+      "snappy beat"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "arpeggiator rising",
+      "glitch fills",
+      "riser"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "bouncy drop",
+      "rubbery synth bass",
+      "crisp claps",
+      "bright lead"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "clever playful groove",
+      "bleeps answering"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Clever playful synth-pop: bubbly bleep hook, glitch fills, rising arpeggio into a bouncy rubbery-bass drop. 115 BPM, D major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "hb-x-ta-da-funk",
+  "seconds": 20,
+  "bpm": 105,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "funky",
+    "playful",
+    "retro-modern",
+    "105 BPM",
+    "Bb major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "clavinet riff hook from the first beat",
+      "tight funk drums"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "drum fill",
+      "wah guitar rising",
+      "horn swell"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "ta-da brass hit on the drop",
+      "full funk groove",
+      "slap bass",
+      "tambourine"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "cheeky groove",
+      "horn answers"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Cheeky funk: clavinet hook, wah build, ta-da brass hit on the drop with slap bass and tambourine. 105 BPM, Bb major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "hb-x-future-easy",
+  "seconds": 20,
+  "bpm": 124,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "UK garage",
+    "2-step",
+    "bright house",
+    "124 BPM",
+    "A major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "chopped vocal-free pluck hook from the first beat",
+      "shuffled hats"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "filter riser",
+      "snare build",
+      "sweep"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "bright 2-step drop",
+      "warm organ bass",
+      "skippy drums",
+      "shiny chords"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "easy confident groove"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Bright 2-step garage: chopped pluck hook, shuffled hats, filter riser into a shiny skippy drop. 124 BPM, A major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lf-x-sunny-bounce",
+  "seconds": 20,
+  "bpm": 112,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "happy kids pop",
+    "ukulele pop",
+    "bright",
+    "112 BPM",
+    "C major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "bouncy ukulele and glockenspiel hook from the first beat",
+      "handclaps"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "drum build",
+      "rising whistle",
+      "toms"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "joyful full-band drop",
+      "bouncy bass",
+      "claps",
+      "bright piano",
+      "tambourine"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "sunny playful groove",
+      "glockenspiel sparkles"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Sunny playful family pop: ukulele and glockenspiel hook, claps, a joyful full-band drop. Bright and playful, not sleepy. 112 BPM, C major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lf-x-giggle-pop",
+  "seconds": 20,
+  "bpm": 120,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "bubbly pop",
+    "playful",
+    "toy piano",
+    "120 BPM",
+    "F major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "toy piano and whistle hook from the first beat",
+      "finger snaps"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "rising pizzicato",
+      "drum fill",
+      "bubble pops"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "bubbly pop drop",
+      "bouncy bass",
+      "claps",
+      "bright synth bells"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "giggly upbeat groove"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Bubbly playful pop: toy piano and whistle hook, pizzicato build, bouncy drop with claps and bells. 120 BPM, F major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "lf-x-tiny-parade",
+  "seconds": 20,
+  "bpm": 104,
+  "drop_s": 6.0,
+  "plan": {
+   "positive_global_styles": [
+    "playful marching pop",
+    "brass band pop",
+    "cheerful",
+    "104 BPM",
+    "G major",
+    "instrumental",
+    "modern",
+    "catchy",
+    "confident",
+    "warm polished mix"
+   ],
+   "negative_global_styles": [
+    "vocals",
+    "singing",
+    "lyrics",
+    "choir",
+    "spoken word",
+    "harsh highs",
+    "distortion",
+    "screechy synth",
+    "dark",
+    "sad",
+    "horror",
+    "lo-fi hiss"
+   ],
+   "sections": [
+    {
+     "section_name": "Hook",
+     "positive_local_styles": [
+      "snare cadence and cheerful brass hook from the first beat"
+     ],
+     "negative_local_styles": [
+      "silence",
+      "slow fade in",
+      "ambient intro"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Build",
+     "positive_local_styles": [
+      "drumline build",
+      "cymbal swell"
+     ],
+     "negative_local_styles": [
+      "breakdown to silence"
+     ],
+     "duration_ms": 3000,
+     "lines": []
+    },
+    {
+     "section_name": "Drop",
+     "positive_local_styles": [
+      "big cheerful drop",
+      "full brass band",
+      "bass drum",
+      "glockenspiel",
+      "handclaps"
+     ],
+     "negative_local_styles": [
+      "quiet",
+      "sparse"
+     ],
+     "duration_ms": 8000,
+     "lines": []
+    },
+    {
+     "section_name": "Ride",
+     "positive_local_styles": [
+      "proud happy march groove"
+     ],
+     "negative_local_styles": [
+      "fade out",
+      "ending"
+     ],
+     "duration_ms": 6000,
+     "lines": []
+    }
+   ]
+  },
+  "prompt": "Cheerful little-parade pop: snare cadence and brass hook, drumline build, big happy brass-band drop. 104 BPM, G major. The hook starts on the very first beat (no intro), a 3-second riser build, then a big satisfying drop at exactly 6 seconds, then the full groove rides to the end. Modern, catchy, confident, warm mix, no harsh highs, instrumental only."
+ },
+ {
+  "name": "sfx-x-whoosh-hit",
+  "type": "sfx",
+  "seconds": 1.2,
+  "prompt": "Fast airy whoosh that ends in a punchy deep impact hit, modern video transition, clean, not harsh"
+ },
+ {
+  "name": "sfx-x-riser",
+  "type": "sfx",
+  "seconds": 2.0,
+  "prompt": "Smooth rising riser sweep building tension for 2 seconds, ends right before a drop, modern, clean, no harsh highs"
+ },
+ {
+  "name": "sfx-x-bass-drop",
+  "type": "sfx",
+  "seconds": 1.5,
+  "prompt": "Deep cinematic sub bass drop boom impact with a short tail, punchy, clean, for a video drop moment"
+ },
+ {
+  "name": "sfx-x-sticker-pop",
+  "type": "sfx",
+  "seconds": 0.5,
+  "prompt": "Cute bright cartoon sticker pop, short bubbly plop, pleasant, for a sticker appearing on screen"
+ },
+ {
+  "name": "sfx-x-paper-slap",
+  "type": "sfx",
+  "seconds": 0.6,
+  "prompt": "Sheet of paper slapped down onto a wooden desk, crisp papery slap, close and satisfying"
+ },
+ {
+  "name": "sfx-x-camera-shutter",
+  "type": "sfx",
+  "seconds": 0.6,
+  "prompt": "Clean camera shutter click with a tiny mechanical wind, modern photo snap"
+ },
+ {
+  "name": "sfx-x-swoosh-in",
+  "type": "sfx",
+  "seconds": 0.7,
+  "prompt": "Quick soft swoosh as an object slides into frame, clean airy, modern UI motion"
+ },
+ {
+  "name": "sfx-x-tick-tock",
+  "type": "sfx",
+  "seconds": 2.0,
+  "prompt": "Clock ticking tick tock at a steady pace, crisp and clean, close mic, no reverb"
+ }
+]

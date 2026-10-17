@@ -36,27 +36,44 @@ def main(path):
                 "duration_seconds": item.get("seconds", 1.0),
                 "prompt_influence": 0.5,
             }).encode()
+        elif item.get("plan"):
+            # Sectioned composition: section durations are respected, so the drop lands at a known time.
+            # Falls back to the plain prompt below if the plan is rejected.
+            url, body = API, json.dumps({
+                "composition_plan": item["plan"],
+                "model_id": item.get("model", "music_v1"),
+                "respect_sections_durations": True,
+            }).encode()
         else:
             url, body = API, json.dumps({
                 "prompt": item["prompt"],
                 "music_length_ms": int(item.get("seconds", 20) * 1000),
                 "force_instrumental": True,
             }).encode()
-        req = urllib.request.Request(url, data=body, method="POST", headers={
-            "xi-api-key": key, "Content-Type": "application/json"})
-        try:
-            with urllib.request.urlopen(req, timeout=300) as r:
-                data = r.read()
-        except urllib.error.HTTPError as e:
-            msg = f"{name}: HTTP {e.code} {e.read()[:400]!r}"
-            print(msg)
-            log.write(msg + "\n")
+        attempts = [body]
+        if item.get("plan") and item.get("prompt"):
+            attempts.append(json.dumps({"prompt": item["prompt"], "music_length_ms": int(item.get("seconds", 20) * 1000),
+                                        "force_instrumental": True}).encode())
+        data, mode = None, "plan" if item.get("plan") else "prompt"
+        for k, b in enumerate(attempts):
+            req = urllib.request.Request(url, data=b, method="POST", headers={
+                "xi-api-key": key, "Content-Type": "application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    data = r.read()
+                mode = mode if k == 0 else "prompt-fallback"
+                break
+            except urllib.error.HTTPError as e:
+                msg = f"{name}: HTTP {e.code} {e.read()[:400]!r}"
+                print(msg)
+                log.write(msg + "\n")
+        if data is None:
             failed += 1
             continue
         with open(f"{OUT}/{name}.mp3", "wb") as f:
             f.write(data)
         print(f"{name}: {len(data)} bytes")
-        log.write(f"{name}: ok {len(data)} bytes\n")
+        log.write(f"{name}: ok {len(data)} bytes ({mode})\n")
     log.close()
 
 
