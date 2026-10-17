@@ -55,6 +55,14 @@ HANDLE = {"fullyfunded": "@fullyfundedhq", "hourback": "@hourbackhq", "lockedhou
 MARK = {"fullyfunded": "fullyfunded.png", "hourback": "hourback.png", "lockedhour": "lockedhour.png", "littlefold": "littlefold.png"}
 
 
+def data_uri(path):
+    """Pages rendered with set_content() are about:blank and can't load file:// images, so inline them."""
+    import base64
+    path = Path(path)
+    mime = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml"}[path.suffix.lower()]
+    return f"data:{mime};base64," + base64.b64encode(path.read_bytes()).decode()
+
+
 def field_css(brand):
     """.fx-<name> sets the text colour; .fx-<name> .em is the accent word."""
     out = []

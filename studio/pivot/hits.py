@@ -112,11 +112,11 @@ def scene_html(brand, sc, beat):
         num = (f'<span data-a="count" data-t="0.06" data-d="0.62" data-to="{sc["value"]}" data-comma="1" data-dec="{sc.get("dec", 0)}" data-pre="{sc.get("pre", "")}" '
                f'data-suf="{sc.get("unit", "")}">{sc.get("pre", "")}0{sc.get("unit", "")}</span>')
         shown = f'{sc.get("pre", "")}{sc["value"]:,.{sc.get("dec", 0)}f}{sc.get("unit", "")}'
-        nsize = min(sc.get("size", 260), int(860 / (0.58 * len(shown))))  # fits 860 px before the punch-in
+        nsize = min(sc.get("size", 260), int(780 / (0.58 * len(shown))))  # 780 px wide, 875 after the 1.12 punch-in: inside x 70-1010
         body = (el(lab, "c", 470, a="none") +
                 el(f'<div class="T" style="font-size:{nsize}px;letter-spacing:-.06em;color:{NUM_INK[brand]}">{num}</div>', "c",
                    900 - nsize // 2, a="none") +
-                scribble_circle(540, 900, 470, max(150, int(nsize * 0.62)), CIRCLE[brand], width=14, t=0.86, d=0.2) +
+                scribble_circle(540, 900, 418, max(150, int(nsize * 0.62)), CIRCLE[brand], width=14, t=0.86, d=0.2) +
                 (el(wtxt(sc["suf"], 84, t=0.5, gap=0.07), "c", 1190, a="none") if sc.get("suf") else ""))
         return f'<div data-a="punch" data-t="0.72" data-d="0.17" data-s="{sc.get("punch", 1.12)}" data-ox="540px" data-oy="900px" style="position:absolute;inset:0">{body}</div>'
     raise ValueError(k)

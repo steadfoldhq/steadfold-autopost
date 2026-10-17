@@ -13,7 +13,7 @@ sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 sys.path.insert(0, str(HERE))
-from boldkit import HANDLE, MARK, MARKS, NAME, field_css, mark_txt  # noqa: E402
+from boldkit import HANDLE, MARK, MARKS, NAME, data_uri, field_css, mark_txt  # noqa: E402
 from PIL import Image  # noqa: E402
 
 W, H = 1080, 1350
@@ -62,7 +62,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden}}
 .handle{{position:absolute;left:56px;bottom:66px;font:700 28px/1 Inter;opacity:.7}}
 .src{{position:absolute;left:0;right:0;bottom:120px;text-align:center;font:600 26px/1.2 Inter;opacity:.7}}
 </style></head><body><div class="page fx-{f} dotbg">
-<div class="chip"><img src="{(MARKS / MARK[brand]).as_uri()}">{NAME[brand]}</div>{count}
+<div class="chip"><img src="{data_uri(MARKS / MARK[brand])}">{NAME[brand]}</div>{count}
 <div class="col">{''.join(parts)}</div>
 {f'<div class="src">{src}</div>' if src else ''}
 <div class="handle">{HANDLE[brand]}</div>{swipe}
