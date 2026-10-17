@@ -107,6 +107,10 @@ def hook_scene(brand, field, text, emo=None, save=None, size=None, wtxt=None):
     f = FIELDS[brand][field]
     o = obj_for(brand, emo)
     size = min(size or 230, 230)
+    if " / " not in text and len(text.split()) >= 2:  # one long line reads small: break before the pill (or mid-way)
+        w = text.split()
+        k = next((i for i, x in enumerate(w) if x.startswith("*")), 0) or len(w) // 2
+        text = " ".join(w[:k]) + " / " + " ".join(w[k:])
     txt = wtxt(text, size, anim=False) if wtxt else f'<div class="T" style="font-size:{size}px">{mark_txt(text)}</div>'
     # lines break only at ' / '; the kit's autofit (class cc) shrinks the block to the safe width, so the size lives on the .el
     txt = txt.replace(f"font-size:{size}px", "font-size:1em;white-space:nowrap;display:inline-block", 1)

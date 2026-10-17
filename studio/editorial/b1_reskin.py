@@ -52,7 +52,7 @@ EXTRA = {  # hook-scene object + save-line, per Reel
     "driveway": dict(obj=K.obj("phone", 800, 1420, 220, 12), save="save this for the next awkward text", sy=1480),
     "blender": dict(obj=K.obj("point", 560, 1150, 420, -40, True), save="save this for your next 11 pm cart", sy=1470),
 }
-SOFT = {"#FFF8EF": F["indi"]["bg"], "#5E54C9": F["yel"]["bg"], "#EDE8FA": F["plum"]["bg"]}
+SOFT = {"#FFF8EF": F["indi"]["bg"], "#5E54C9": F["plum"]["bg"], "#EDE8FA": F["yel"]["bg"]}
 
 
 def load():
