@@ -99,3 +99,54 @@ REELS = {
         dict(k="say", f="cream", text="Name one *backup.* / Ask them / this week.", size=150),
     ]),
 }
+
+# ------------------------------------------------------------------ Littlefold + Locked Hour, editorial re-render (Oct 17 pm)
+# The seven Reels whose covers were lifted this morning but whose videos still came from the old hand-built scripts.
+# Same beats as the old cuts (alt text), tightened so every beat reads at 0.4 s/word + 0.6 s inside 18 s.
+REELS.update({
+    "lf-reel-1017-one-job": dict(brand="littlefold", track="lf-x-sunny-bounce", scenes=[
+        dict(k="hook", f="cream", text="Someone / offers help? / Give *one job.*", emo="🫶"),
+        dict(k="say", f="pink", text="*1* Dinner / on Tuesday."),
+        dict(k="say", f="butter", text="*2* Fold / one load."),
+        dict(k="say", f="berry", text="*3* Hold baby / while I shower.", drop=True),
+        dict(k="say", f="cream", text="Then let them / do it *their way.*"),
+    ]),
+    "lh-reel-1017-one-tab": dict(brand="lockedhour", track="lh-x-tick-boom", scenes=[
+        dict(k="hook", f="dots", text="How many / tabs are / *open?*", emo="🔍"),
+        dict(k="say", f="cream", text="Close every tab / *but one.*"),
+        dict(k="say", f="pink", text="Need it later? / *Jot it down.*"),
+        dict(k="say", f="dots", text="One tab. One task. / *One hour.*", drop=True),
+        dict(k="say", f="cream", text="Try it / *next hour.*"),
+    ]),
+    "lf-reel-1018am-3am-windows": dict(brand="littlefold", track="lf-x-sunny-bounce", scenes=[
+        dict(k="hook", f="pink", text="3:07 am. / *Up again?*", emo="⏰"),
+        dict(k="say", f="cream", text="See the / *lit windows?*"),
+        dict(k="say", f="butter", text="Some are parents, / *up like you.*", drop=True),
+        dict(k="list", f="berry", items=["At night:", "Lights *low*", "Voice *soft*", "Feed, then *down*"], size=110),
+    ]),
+    "lh-reel-1018am-pick-3": dict(brand="lockedhour", track="lh-x-lock-in", scenes=[
+        dict(k="hook", f="cream", text="Sunday. / *10 minutes.*", emo="⏰"),
+        dict(k="say", f="pink", text="Pick *3 things* / for the week."),
+        dict(k="list", f="dots", items=["Mon · *Gym*", "Wed · *Report*", "Fri · *Course*"], drop=True),
+        dict(k="say", f="cream", text="Like a meeting: / move it, *never delete.*"),
+    ]),
+    "lf-reel-1018-breathe": dict(brand="littlefold", track="lf-x-giggle-pop", scenes=[
+        dict(k="hook", f="butter", text="Crying / won't stop? / *Step away.*", emo="🧺"),
+        dict(k="say", f="cream", text="*1* Crib, / on their back.", drop=True),
+        dict(k="say", f="pink", text="*2* Step out. / *Breathe.*"),
+        dict(k="say", f="berry", text="*3* Go back / when calmer."),
+        dict(k="say", f="butter", text="Never shake a baby. / *Call someone in.*"),
+    ]),
+    "lh-reel-1018-mute-the-world": dict(brand="lockedhour", track="lh-x-phone-down", scenes=[
+        dict(k="hook", f="pink", text="Busy / all day. / *Nothing done.*", emo="⏳"),
+        dict(k="say", f="cream", text="Lock / *one hour.*"),
+        dict(k="list", f="dots", items=["*1* Phone out", "*2* One task", "*3* Door shut"], drop=True),
+        dict(k="say", f="pink", text="The world can wait / *an hour.*"),
+    ]),
+    "lf-reel-1019am-hunger-cues": dict(brand="littlefold", track="lf-x-sunny-bounce", scenes=[
+        dict(k="hook", f="pink", text="Crying is / a *late* / hunger sign", emo="🌙"),
+        dict(k="say", f="cream", text="Watch for / *the early cues.*"),
+        dict(k="list", f="butter", items=["*1* Lip smacking", "*2* Rooting", "*3* Squirming"], drop=True),
+        dict(k="say", f="berry", text="Missed them? / *Every parent does.*"),
+    ]),
+})
