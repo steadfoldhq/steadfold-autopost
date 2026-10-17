@@ -1,0 +1,63 @@
+{
+  "id": "LF-FIRSTS-HOL",
+  "order": 23,
+  "shop": "LITTLEFOLD",
+  "batch": "oct17-new",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')",
+    "how": "Owner says 'list batch oct17-new' -> python3 tools/etsy.py approve --batch oct17-new --said '<his exact words>' --at '<time ET>', then commit + push."
+  },
+  "content_rules": [
+    "littlefold-no-health-words"
+  ],
+  "title": "Baby's First Christmas and Holidays Memory Pages, Printable Baby Book Pages, First Holiday Keepsake, Letter and A4 PDF",
+  "description": "Your baby's first holidays, written down before they blur. Little Firsts: First Holidays is 10 printable memory pages for the season, from who held them first to the sound that made them smile.\n\nWhat's inside:\n• Cover page with name and year\n• Your first holiday season: where you were, what they wore, the little details\n• A photo page with space to write what happened\n• Who we celebrated with: a page for guests to sign\n• Our traditions: Christmas, Hanukkah, Diwali, Kwanzaa, Lunar New Year, Eid, New Year's or your own\n• Firsts this season: tick, date and one word each\n• Gifts received, with a thank-you tick\n• A letter to your baby, for when they're old enough to read it\n• Handprint and footprint frames\n• Next year, we hope: a little time capsule\n\nGood to know:\n• 2 PDFs: US Letter and A4, 10 pages each\n• A 1-page Start Here guide: printing, paper and gift tips\n• Print at home on plain paper or card stock, then fill by hand\n• Works with any holiday you celebrate\n• A sweet gift for new parents, grandparents and baby showers\n• Made with AI assistance, then designed and checked by hand\n• Digital download, nothing ships\n\nFrom Littlefold, a Steadfold studio.",
+  "price": {
+    "CAD": 4.99
+  },
+  "quantity": 999,
+  "tags": [
+    "baby first christmas",
+    "first christmas",
+    "baby memory book",
+    "baby book pages",
+    "printable baby book",
+    "first holiday",
+    "baby keepsake",
+    "new parent gift",
+    "baby milestone",
+    "holiday keepsake",
+    "baby shower gift",
+    "memory journal",
+    "newborn keepsake"
+  ],
+  "materials": [
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Baby Books",
+      "Journals & Notebooks",
+      "Art & Collectibles > Prints > Digital Prints"
+    ]
+  },
+  "photos": [
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-01-little-firsts-first-holidays.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-02-ten-pages.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-03-the-little-details.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-04-every-tradition.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-05-guests-sign.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-06-letter-and-prints.jpg",
+    "listings/media/little-firsts-holidays/LF-FIRSTS-HOL-07-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "Little-Firsts-First-Holidays-v1.1.zip",
+      "enc": "listings/files/little-firsts-holidays/Little-Firsts-First-Holidays-v1.1.zip.age",
+      "sha256": "ed8008d04d9b1c0b3b93e24e71132208652a852d3d21cb0b5bb5d103398ea4c2",
+      "size": 254043
+    }
+  ],
+  "source_note": "Copy and tags verbatim from the v1.1 listing kit. CA$4.99, LittlefoldHQ (CAD shop)."
+}

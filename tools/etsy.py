@@ -12,13 +12,19 @@ Commands (all run inside GitHub Actions; see .github/workflows/etsy-*.yml):
   auth-finish  --shop STEADFOLD|LITTLEFOLD     (code in env ETSY_AUTH_CODE)
       swaps the one-time code for tokens, checks the right shop signed in and
       saves ETSY_REFRESH_TOKEN_<SHOP>.
-  list --spec listings/<ID>.json | all   [--dry-run | --check]
+  list --spec listings/<ID>.json | all | batch:<name>   [--dry-run | --check]
+      "all" = every APPROVED spec with no "batch" (the original 12). A spec with
+      "batch": "<name>" is listed only by "batch:<name>" (or go.json "batch").
   list --go listings/go.json             [--dry-run | --check]
       --dry-run  validates and prints the plan. No network, no secrets.
       --check    read-only Etsy calls (shop, currency, category, duplicates).
       (neither)  creates, fills, publishes and verifies each listing, then
                  records it in listings/live.json and prints only its URL.
   validate                                     offline check of every spec
+  approve --batch NAME --said "owner's words" --at "when"
+      flips every WAITING spec in that batch to APPROVED with the owner's words
+      (source claude/review-queue.md) and writes listings/go.json for the batch.
+      Only ever run with words the owner actually said.
   store-secret --name NAME --from-file PATH    write one repo secret (GH_PAT)
   encrypt --src FILE --dest listings/files/... age-encrypt one customer file
                                                with keys/etsy-files.pub
@@ -72,7 +78,10 @@ CURRENCIES = ("USD", "CAD")
 APPROVAL_SOURCES = (
     "claude/automation/prompt-21b-approved-uploads.txt",
     "claude/automation/prompt-24-launch-oct16.txt",
+    "claude/review-queue.md",          # batch approvals recorded by `approve`
 )
+WAITING = "WAITING"                    # built + spec'd, owner hasn't approved: never listed
+BATCH_OK = re.compile(r"^[a-z0-9][a-z0-9-]{1,40}$")
 WHEN_MADE = ("2020_2026", "2020_2025", "2020_2024")   # tried in order ("2020 - 2026")
 
 MAX_TITLE = 140
@@ -359,13 +368,41 @@ def _mime(p: Path) -> str:
 
 
 # ----------------------------------------------------------------- specs
+def all_spec_paths() -> list[Path]:
+    return sorted(p for p in LISTINGS.glob("*.json") if p.name not in ("live.json", "go.json"))
+
+
+def spec_batch(spec: dict) -> str:
+    """The batch a spec belongs to. No "batch" field = the original "all" batch."""
+    return str(spec.get("batch") or "all")
+
+
+def _sorted(specs: list[tuple[dict, Path]]) -> list[Path]:
+    specs.sort(key=lambda sp: (sp[0].get("order", 999), sp[0]["id"]))
+    return [p for _, p in specs]
+
+
+def batch_paths(name: str) -> list[Path]:
+    """Every spec in batch <name>, whatever its status (validation refuses WAITING ones)."""
+    name = name.strip()
+    if not BATCH_OK.match(name) or name == "all":
+        raise SetupError(f"Not a batch name: {name!r}. Use batch:<name>, e.g. batch:oct17-new.")
+    specs = [(load_spec(p), p) for p in all_spec_paths()]
+    hits = [(s, p) for s, p in specs if spec_batch(s) == name]
+    if not hits:
+        known = sorted({spec_batch(s) for s, _ in specs} - {"all"})
+        raise SetupError(f"No specs in batch {name!r}. Batches: {known}")
+    return _sorted(hits)
+
+
 def spec_paths(selector: str) -> list[Path]:
+    selector = (selector or "").strip()
     if selector in ("all", "listings/all", "all-approved"):
-        paths = [p for p in LISTINGS.glob("*.json") if p.name not in ("live.json", "go.json")]
-        specs = [(load_spec(p), p) for p in paths]
-        specs = [(s, p) for s, p in specs if s.get("status") == "APPROVED"]
-        specs.sort(key=lambda sp: (sp[0].get("order", 999), sp[0]["id"]))
-        return [p for _, p in specs]
+        specs = [(load_spec(p), p) for p in all_spec_paths()]
+        specs = [(s, p) for s, p in specs if s.get("status") == "APPROVED" and spec_batch(s) == "all"]
+        return _sorted(specs)
+    if selector.startswith("batch:"):
+        return batch_paths(selector[len("batch:"):])
     p = Path(selector)
     p = p if p.is_absolute() else ROOT / p
     if not p.exists():
@@ -387,8 +424,11 @@ def _inside(root: Path, rel: str) -> Path | None:
     return p
 
 
-def validate_spec(spec: dict, path: Path | None = None, check_files: bool = True) -> list[str]:
-    """Return a list of problems (empty = OK). Pure: no network."""
+def validate_spec(spec: dict, path: Path | None = None, check_files: bool = True,
+                  allow_waiting: bool = False) -> list[str]:
+    """Return a list of problems (empty = OK). Pure: no network.
+    allow_waiting: a WAITING spec (built, not yet approved) passes as a well-formed spec.
+    Listing never sets it, so a WAITING spec is never sent to Etsy."""
     e: list[str] = []
     sid = spec.get("id", "")
     for k in ("id", "shop", "status", "approval", "title", "description", "price", "tags",
@@ -399,14 +439,24 @@ def validate_spec(spec: dict, path: Path | None = None, check_files: bool = True
         return e
     if path is not None and path.stem != sid:
         e.append(f"file name {path.name} must be {sid}.json")
-    if spec["status"] != "APPROVED":
-        e.append("status must be APPROVED (nothing else is ever listed)")
     ap = spec["approval"] if isinstance(spec["approval"], dict) else {}
-    if ap.get("source") not in APPROVAL_SOURCES:
-        e.append(f"approval.source must be one of {APPROVAL_SOURCES}")
-    for k in ("approved_by", "approved_at", "quote"):
-        if not str(ap.get(k, "")).strip():
-            e.append(f"approval.{k} is empty")
+    waiting = allow_waiting and spec["status"] == WAITING
+    if waiting:
+        if not str(ap.get("review_queue", "")).strip():
+            e.append("WAITING spec needs approval.review_queue (where the owner decides)")
+        if spec_batch(spec) == "all":
+            e.append("WAITING spec must name its own batch, never the 'all' batch")
+    else:
+        if spec["status"] != "APPROVED":
+            e.append("status must be APPROVED (nothing else is ever listed)"
+                     + (" — this spec is WAITING for the owner's approval" if spec["status"] == WAITING else ""))
+        if ap.get("source") not in APPROVAL_SOURCES:
+            e.append(f"approval.source must be one of {APPROVAL_SOURCES}")
+        for k in ("approved_by", "approved_at", "quote"):
+            if not str(ap.get(k, "")).strip():
+                e.append(f"approval.{k} is empty")
+    if "batch" in spec and not (isinstance(spec["batch"], str) and BATCH_OK.match(spec["batch"])):
+        e.append("batch must be lower-case letters, digits and dashes, e.g. oct17-new")
     if spec["shop"] not in SHOPS:
         e.append(f"shop must be one of {list(SHOPS)}")
 
@@ -766,7 +816,9 @@ class ShopSession:
 
 
 def plan_text(spec: dict) -> str:
-    lines = [f"[{spec['id']}] {SHOPS[spec['shop']]} :: {spec['title']}",
+    wait = "  (WAITING approval: will not list)" if spec.get("status") == WAITING else ""
+    lines = [f"[{spec['id']}] {SHOPS[spec['shop']]} :: {spec['title']}{wait}",
+             f"  batch: {spec_batch(spec)}",
              f"  price: " + ", ".join(f"{c} {a:.2f}" for c, a in spec["price"].items()),
              f"  category lookup: {spec['taxonomy'].get('id') or spec['taxonomy'].get('names')}",
              f"  tags ({len(spec['tags'])}): {', '.join(spec['tags'])}",
@@ -874,12 +926,18 @@ def select_specs(args, env: dict) -> list[tuple[dict, Path]]:
         if not str(go.get("owner_said", "")).strip() or not str(go.get("at", "")).strip():
             raise SetupError("listings/go.json needs the owner's words ('owner_said') and 'at'.")
         ids = go.get("ids")
-        paths = spec_paths("all")
-        if ids != "all":
+        if go.get("batch"):
+            if ids not in (None, "all"):
+                raise SetupError("go.json: give either 'batch' or 'ids', not both.")
+            paths = batch_paths(str(go["batch"]))
+        elif ids == "all":
+            paths = spec_paths("all")
+        else:
             want = set(ids or [])
-            paths = [p for p in paths if p.stem in want]
+            approved = [p for p in all_spec_paths() if load_spec(p).get("status") == "APPROVED"]
+            paths = _sorted([(load_spec(p), p) for p in approved if p.stem in want])
             missing = want - {p.stem for p in paths}
-            if missing:
+            if missing or not want:
                 raise SetupError(f"go.json names IDs with no APPROVED spec: {sorted(missing)}")
     else:
         paths = spec_paths(args.spec)
@@ -894,7 +952,7 @@ def cmd_list(args, env: dict, session=None, gh_factory=None, run=subprocess.run,
         return 0
     bad = False
     for spec, p in specs:
-        errs = validate_spec(spec, p)
+        errs = validate_spec(spec, p, allow_waiting=bool(args.dry_run))
         if errs:
             bad = True
             log(f"[{spec.get('id', p.stem)}] spec problems:\n  - " + "\n  - ".join(errs))
@@ -945,15 +1003,47 @@ def cmd_list(args, env: dict, session=None, gh_factory=None, run=subprocess.run,
 
 
 def cmd_validate() -> int:
-    paths = [p for p in LISTINGS.glob("*.json") if p.name not in ("live.json", "go.json")]
-    bad = 0
-    for p in sorted(paths):
-        errs = validate_spec(load_spec(p), p)
+    paths = all_spec_paths()
+    bad, waiting, batches = 0, 0, {}
+    for p in paths:
+        spec = load_spec(p)
+        errs = validate_spec(spec, p, allow_waiting=True)
+        waiting += spec.get("status") == WAITING
+        batches.setdefault(spec_batch(spec), []).append(f"{spec.get('id')}"
+                                                        + ("*" if spec.get("status") == WAITING else ""))
         if errs:
             bad += 1
             log(f"{p.name}:\n  - " + "\n  - ".join(errs))
-    log(f"{len(paths) - bad}/{len(paths)} specs OK")
+    for b, ids in sorted(batches.items()):
+        log(f"batch {b}: {', '.join(ids)}")
+    log(f"{len(paths) - bad}/{len(paths)} specs OK ({waiting} WAITING approval, marked *)")
     return 1 if bad else 0
+
+
+def cmd_approve(batch: str, said: str, at: str, go_path: Path | None = None) -> int:
+    """Record the owner's approval of a batch: WAITING -> APPROVED, then write go.json."""
+    if not str(said).strip() or not str(at).strip():
+        raise SetupError("approve needs the owner's exact words (--said) and when (--at).")
+    paths = batch_paths(batch)
+    flipped = []
+    for p in paths:
+        spec = load_spec(p)
+        if spec.get("status") == WAITING:
+            rq = spec.get("approval", {}).get("review_queue", "")
+            spec["status"] = "APPROVED"
+            spec["approval"] = {"source": "claude/review-queue.md", "approved_by": "Dharma",
+                                "approved_at": at.strip(), "quote": said.strip(), "review_queue": rq}
+            p.write_text(json.dumps(spec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            flipped.append(spec["id"])
+        errs = validate_spec(spec, p)
+        if errs:
+            raise SetupError(f"{p.name} is not listable after approval: {errs}")
+    go_path = go_path or (LISTINGS / "go.json")
+    go_path.write_text(json.dumps({"batch": batch, "owner_said": said.strip(), "at": at.strip()},
+                                  indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    log(f"batch {batch}: approved {flipped or 'nothing new'}; wrote {go_path.name}. "
+        f"Commit and push both to list them.")
+    return 0
 
 
 def cmd_store_secret(name: str, src: str, env: dict, gh_factory=None) -> int:
@@ -980,6 +1070,10 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     m.add_argument("--dry-run", action="store_true")
     m.add_argument("--check", action="store_true")
     sub.add_parser("validate")
+    s = sub.add_parser("approve")
+    s.add_argument("--batch", required=True)
+    s.add_argument("--said", required=True)
+    s.add_argument("--at", required=True)
     s = sub.add_parser("store-secret")
     s.add_argument("--name", required=True)
     s.add_argument("--from-file", required=True)
@@ -1000,6 +1094,8 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
             return cmd_list(args, env, **kw)
         if args.cmd == "validate":
             return cmd_validate()
+        if args.cmd == "approve":
+            return cmd_approve(args.batch, args.said, args.at)
         if args.cmd == "store-secret":
             return cmd_store_secret(args.name, args.from_file, env, gh_factory=kw.get("gh_factory"))
         if args.cmd == "encrypt":

@@ -1,0 +1,63 @@
+{
+  "id": "HB-CREATOR-LITE",
+  "order": 22,
+  "shop": "STEADFOLD",
+  "batch": "oct17-new",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')",
+    "how": "Owner says 'list batch oct17-new' -> python3 tools/etsy.py approve --batch oct17-new --said '<his exact words>' --at '<time ET>', then commit + push."
+  },
+  "title": "Creator Rate Card and Media Kit Template, Influencer Rate Calculator, UGC Rate Card, Instagram TikTok YouTube, Excel Google Sheets",
+  "description": "Know your rate before the brand asks. This kit turns your own views into a rate for every deliverable, then gives you a one-page media kit and rate card to send with your reply.\n\nWhat it does for you:\n• Rate calculator: floor, rate and ask for Reels, Stories, carousels, TikToks, Shorts and YouTube\n• Built on views, not followers, because views are what a brand pays for\n• Designed media kit and rate card: 2 pages you edit in Canva, Google Slides, PowerPoint or Keynote\n• Spreadsheet media kit: one printable page with your numbers, audience and \"rates from\", filled in for you\n• Rate card: your deliverables, add-ons for ad use, exclusivity and rush, and your terms\n• Engagement worked out per platform from your own averages\n• 3 brand replies: the first DM, a low offer and a gifted-only ask\n\nWhat's in the download:\n• 2 spreadsheets: Sample (a made-up creator) and Blank\n• The designed media kit and rate card (.pptx, 2 pages)\n• A 2-page quick-start PDF with the 3 replies\n\nGood to know:\n• Works in Microsoft 365, Excel 2019 or newer and Google Sheets\n• Any currency. Every number is yours to set, including your price per 1,000 views\n• Example numbers only, never a promise of income\n• Made with AI assistance, then built and checked by hand\n• Want a quote builder, deal tracker, invoice and 12 replies? Look for the Pro edition\n• Digital download, nothing ships\n\nFrom Hourback, a Steadfold studio.",
+  "price": {
+    "USD": 14.0,
+    "CAD": 19.0
+  },
+  "quantity": 999,
+  "tags": [
+    "media kit template",
+    "rate card",
+    "influencer media kit",
+    "creator media kit",
+    "content creator",
+    "ugc rate card",
+    "brand collaboration",
+    "influencer rate",
+    "tiktok media kit",
+    "instagram media kit",
+    "social media kit",
+    "ugc creator",
+    "small creator"
+  ],
+  "materials": [
+    "Excel",
+    "Google Sheets",
+    "PowerPoint",
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Stationery > Design & Templates > Templates",
+      "Design & Templates > Templates",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-01-creator-rate-card-media-kit.jpg",
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-02-your-rate.jpg",
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-03-designed-media-kit.jpg",
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-04-rate-card.jpg",
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-05-my-numbers.jpg",
+    "listings/media/creator-kit-lite/HB-CREATOR-LITE-06-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "Creator-Rate-Card-Media-Kit-Lite-v1.1.zip",
+      "enc": "listings/files/creator-kit-lite/Creator-Rate-Card-Media-Kit-Lite-v1.1.zip.age",
+      "sha256": "6ae8cf008325e63be21e683ac27b2914fc093c46b0b350d070b4c95fd6dc1573",
+      "size": 265841
+    }
+  ],
+  "source_note": "Lite edition only on Etsy (Pro stays on Gumroad). Copy, tags and CAD price verbatim from the v1.1 Lite kit."
+}

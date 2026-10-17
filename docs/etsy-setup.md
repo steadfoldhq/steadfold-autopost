@@ -55,3 +55,11 @@ Good to know:
 - You don't need GitHub Pages. Nothing goes through Etsy review beyond the seller-app approval in step 1.
 - The connection lasts 90 days and renews every time the lister runs. After 90 days with no listing runs, repeat step 3.
 - If a shop's Etsy name isn't exactly `SteadfoldHQ` / `LittlefoldHQ`, the lister refuses to list, to protect against the wrong account. Fix: Settings → Secrets and variables → Actions → **Variables** → add `ETSY_SHOP_NAME_STEADFOLD` or `ETSY_SHOP_NAME_LITTLEFOLD` with the real name.
+
+## Batches (added Oct 17)
+
+New products arrive as their own **batch** (for example `oct17-new`), so "list approved" / spec `all` keeps listing only the original 12. A batch's specs sit in `listings/` with status `WAITING` and are never listed until you approve them.
+
+- Say **"list batch oct17-new"** in the Learning Lab chat. An agent records your words with `python3 tools/etsy.py approve --batch oct17-new --said "<your words>" --at "<time>"` (WAITING becomes APPROVED and `listings/go.json` names the batch), then commits. The push starts **Etsy list** for that batch only.
+- Or by hand: **Actions** → **Etsy list** → spec `batch:oct17-new`, mode `check` (read-only) or `list` (after the approval commit).
+- `python3 tools/etsy.py validate` prints every batch and marks WAITING specs with `*`.

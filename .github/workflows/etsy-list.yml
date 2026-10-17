@@ -1,5 +1,7 @@
 # Lists APPROVED products on Etsy from listings/<ID>.json specs.
-#   Run workflow -> spec: listings/<ID>.json, or "all" for every APPROVED spec
+#   Run workflow -> spec: listings/<ID>.json, "all" for the APPROVED specs with no
+#   batch (the original 12), or "batch:<name>" (e.g. batch:oct17-new) for one batch.
+#   A WAITING spec (not yet approved by the owner) is never listed.
 #   mode: list (publish) | check (read-only: shop, currency, category, duplicates)
 #         | dry-run (no Etsy calls at all)
 # Also runs when listings/go.json is pushed (an agent records the owner's
@@ -11,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       spec:
-        description: 'listings/<ID>.json, or "all" for every APPROVED spec'
+        description: 'listings/<ID>.json, "all" (the 12 approved) or batch:<name> (e.g. batch:oct17-new)'
         type: string
         default: all
       mode:

@@ -27,7 +27,8 @@ KEY, SHARED = "abcd1234keystring", "sharedSECRETvalue99"
 RT_OLD, RT_NEW, AT = "111.refreshOLDtoken000", "111.refreshNEWtoken999", "111.accessTOKENabcdef"
 PAT = "github_pat_SECRET_etsy_123"
 SPEC_IDS = ["DP-CALM-P", "DP-CALM-T", "FF-HMP", "FF-MPB", "FF-MSP", "DP-RIV",
-            "LBM1", "LBP-SET", "LBP4", "LBP1", "LBP2", "LBP3"]
+            "LBM1", "LBP-SET", "LBP4", "LBP1", "LBP2", "LBP3"]          # the "all" batch: the 12 approved
+BATCHES = {"oct17-new": ["HB-SUB", "FF-SCOPE", "HB-CREATOR-LITE", "LF-FIRSTS-HOL"]}
 
 
 def real_spec(sid: str) -> dict:
@@ -145,10 +146,19 @@ def base_env(**extra):
 class SpecValidation(unittest.TestCase):
     def test_every_repo_spec_is_valid_and_approved(self):
         paths = sorted(p for p in etsy.LISTINGS.glob("*.json") if p.name not in ("live.json", "go.json"))
-        self.assertEqual(sorted(p.stem for p in paths), sorted(SPEC_IDS))
+        batch_ids = [i for ids in BATCHES.values() for i in ids]
+        self.assertEqual(sorted(p.stem for p in paths), sorted(SPEC_IDS + batch_ids))
         for p in paths:
             with self.subTest(spec=p.name):
-                self.assertEqual(etsy.validate_spec(etsy.load_spec(p), p), [])
+                spec = etsy.load_spec(p)
+                if p.stem in SPEC_IDS:
+                    self.assertEqual(etsy.validate_spec(spec, p), [])
+                    self.assertNotIn("batch", spec)
+                else:   # built, spec'd, waiting for the owner: well-formed but never listable yet
+                    self.assertEqual(etsy.validate_spec(spec, p, allow_waiting=True), [])
+                    self.assertTrue(etsy.validate_spec(spec, p))
+                    self.assertIn(spec["batch"], BATCHES)
+                    self.assertIn(p.stem, BATCHES[spec["batch"]])
 
     def test_no_unencrypted_customer_files_in_repo(self):
         for f in (ROOT / "listings" / "files").rglob("*"):
@@ -229,6 +239,9 @@ class DryRun(unittest.TestCase):
         text = out.getvalue()
         for sid in SPEC_IDS:
             self.assertIn(f"[{sid}]", text)
+        for ids in BATCHES.values():
+            for sid in ids:
+                self.assertNotIn(f"[{sid}]", text)
         self.assertIn("CALMLAUNCH", text)
 
     def test_go_file_needs_owner_words(self):
@@ -243,6 +256,133 @@ class DryRun(unittest.TestCase):
             go.write_text(json.dumps({"ids": "all", "owner_said": "list approved", "at": "now"}))
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(etsy.main(["list", "--go", str(go), "--dry-run"], env={}), 0)
+
+
+class BatchSelector(unittest.TestCase):
+    def test_all_is_only_the_original_12(self):
+        self.assertEqual(sorted(p.stem for p in etsy.spec_paths("all")), sorted(SPEC_IDS))
+
+    def test_batch_selects_only_its_specs(self):
+        for name, ids in BATCHES.items():
+            got = [p.stem for p in etsy.spec_paths(f"batch:{name}")]
+            self.assertEqual(sorted(got), sorted(ids))
+            orders = [etsy.load_spec(etsy.LISTINGS / f"{i}.json")["order"] for i in got]
+            self.assertEqual(orders, sorted(orders))
+
+    def test_unknown_or_bad_batch(self):
+        for sel in ("batch:nope", "batch:all", "batch:", "batch:Bad Name"):
+            with self.assertRaises(etsy.SetupError):
+                etsy.spec_paths(sel)
+
+    def test_waiting_batch_is_never_sent_to_etsy(self):
+        for name in BATCHES:
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                rc = etsy.main(["list", "--spec", f"batch:{name}"], env=base_env(), session=NoNetwork())
+            self.assertEqual(rc, 2)
+            self.assertIn("WAITING", out.getvalue())
+            self.assertIn("Nothing was sent to Etsy", out.getvalue())
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(etsy.main(["list", "--spec", f"batch:{name}", "--check"], env=base_env(),
+                                           session=NoNetwork()), 2)
+
+    def test_dry_run_batch_shows_plan(self):
+        for name, ids in BATCHES.items():
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                rc = etsy.main(["list", "--spec", f"batch:{name}", "--dry-run"], env={}, session=NoNetwork())
+            self.assertEqual(rc, 0, out.getvalue())
+            for sid in ids:
+                self.assertIn(f"[{sid}]", out.getvalue())
+            self.assertIn(f"batch: {name}", out.getvalue())
+            self.assertIn("WAITING approval", out.getvalue())
+            for sid in SPEC_IDS:
+                self.assertNotIn(f"[{sid}]", out.getvalue())
+
+    def test_waiting_spec_cannot_sit_in_all(self):
+        s = json.loads(json.dumps(real_spec("HB-SUB")))
+        s.pop("batch")
+        self.assertTrue(etsy.validate_spec(s, etsy.LISTINGS / "HB-SUB.json", allow_waiting=True))
+
+    def test_go_json_batch(self):
+        with tempfile.TemporaryDirectory() as d:
+            go = Path(d) / "go.json"
+            go.write_text(json.dumps({"batch": "oct17-new", "owner_said": "list batch oct17-new", "at": "now"}))
+            with contextlib.redirect_stdout(io.StringIO()):     # still WAITING in the repo: refused
+                self.assertEqual(etsy.main(["list", "--go", str(go)], env=base_env(), session=NoNetwork()), 2)
+            go.write_text(json.dumps({"batch": "oct17-new", "ids": ["HB-SUB"], "owner_said": "x", "at": "now"}))
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(etsy.main(["list", "--go", str(go), "--dry-run"], env={}), 2)
+            go.write_text(json.dumps({"ids": ["HB-SUB"], "owner_said": "x", "at": "now"}))   # ids = APPROVED only
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(etsy.main(["list", "--go", str(go), "--dry-run"], env={}), 2)
+
+
+class ApproveBatch(unittest.TestCase):
+    """approve flips WAITING -> APPROVED with the owner's words, then the batch lists like any other spec."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        (root / "listings").mkdir()
+        for sub in ("media", "files"):
+            os.symlink(etsy.LISTINGS / sub, root / "listings" / sub)
+        for p in etsy.all_spec_paths():
+            (root / "listings" / p.name).write_text(p.read_text())
+        self._saved = (etsy.ROOT, etsy.LISTINGS, etsy.LIVE_PATH, etsy.decrypt_files)
+        etsy.ROOT, etsy.LISTINGS = root, root / "listings"
+        etsy.LIVE_PATH = root / "listings" / "live.json"
+
+        def fake_decrypt(spec, key_text, outdir, run=None):
+            outdir.mkdir(parents=True, exist_ok=True)
+            res = []
+            for f in spec["files"]:
+                (outdir / f["name"]).write_bytes(b"customer file")
+                res.append((outdir / f["name"], f["name"]))
+            return res
+        etsy.decrypt_files = fake_decrypt
+
+    def tearDown(self):
+        etsy.ROOT, etsy.LISTINGS, etsy.LIVE_PATH, etsy.decrypt_files = self._saved
+        self.tmp.cleanup()
+
+    def test_approve_needs_words(self):
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(etsy.main(["approve", "--batch", "oct17-new", "--said", " ", "--at", "now"]), 2)
+        self.assertEqual(etsy.load_spec(etsy.LISTINGS / "HB-SUB.json")["status"], "WAITING")
+
+    def test_approve_then_list(self):
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = etsy.main(["approve", "--batch", "oct17-new", "--said", "list batch oct17-new",
+                            "--at", "2026-10-17 08:00 ET"])
+        self.assertEqual(rc, 0)
+        for sid in BATCHES["oct17-new"]:
+            s = etsy.load_spec(etsy.LISTINGS / f"{sid}.json")
+            self.assertEqual(s["status"], "APPROVED")
+            self.assertEqual(s["approval"]["quote"], "list batch oct17-new")
+            self.assertEqual(etsy.validate_spec(s, etsy.LISTINGS / f"{sid}.json"), [])
+        go = json.loads((etsy.LISTINGS / "go.json").read_text())
+        self.assertEqual(go["batch"], "oct17-new")
+        # the "all" batch is unchanged: still exactly the 12
+        self.assertEqual(sorted(p.stem for p in etsy.spec_paths("all")), sorted(SPEC_IDS))
+        # other batches stay WAITING
+        for name, ids in BATCHES.items():
+            if name != "oct17-new":
+                for sid in ids:
+                    self.assertEqual(etsy.load_spec(etsy.LISTINGS / f"{sid}.json")["status"], "WAITING")
+        fake = FakeEtsy()
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            rc = etsy.main(["list", "--spec", "listings/HB-SUB.json"], env=base_env(RUNNER_TEMP=self.tmp.name),
+                           session=fake, gh_factory=FakeGH().factory, sleep=lambda s: None)
+        self.assertEqual(rc, 0, out.getvalue())
+        L = fake.listings[5000]
+        self.assertEqual((L["state"], L["fields"]["price"]), ("active", "7.00"))
+        self.assertEqual(len(L["images"]), len(real_spec_at(etsy.LISTINGS, "HB-SUB")["photos"]))
+
+
+def real_spec_at(listings: Path, sid: str) -> dict:
+    return etsy.load_spec(listings / f"{sid}.json")
 
 
 class OAuth(unittest.TestCase):

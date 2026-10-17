@@ -1,0 +1,62 @@
+{
+  "id": "HB-SUB",
+  "order": 20,
+  "shop": "STEADFOLD",
+  "batch": "oct17-new",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')",
+    "how": "Owner says 'list batch oct17-new' -> python3 tools/etsy.py approve --batch oct17-new --said '<his exact words>' --at '<time ET>', then commit + push."
+  },
+  "title": "Subscription Audit & Cancel Kit: Subscription Tracker Spreadsheet, Yearly Bill, Renewal Dates and Cancel Scripts, Excel and Google Sheets",
+  "description": "See every subscription as one yearly bill, then cancel the ones you don't use. Subscription Audit & Cancel Kit turns scattered monthly charges into one clear number for Excel and Google Sheets.\n\nWhat it does for you:\n• Yearly bill: weekly, monthly and yearly prices added up for a whole year\n• Unused flags: anything you haven't opened in 30 days (you pick the window) is flagged\n• Renewal alerts: what renews in the next few days, with a cancel-by date\n• Decisions: Keep, Cancel, Pause, Downgrade or Decide later, and what each one is worth a year\n• Your 5 biggest subscriptions and a by-category breakdown\n• Cancel scripts: pick a subscription and the email, chat and phone messages fill themselves in\n• Find Them: 12 places subscriptions hide, from app stores to free trials, with a tick list\n• Ask AI: 3 prompts built from your list (never account numbers) for the AI chat you already use\n\nWhat's in the download:\n• 2 spreadsheets: a Sample file with made-up data and a Blank file for yours\n• A 3-page PDF: quick start, a printable checklist and audit sheet, and all 7 scripts\n\nGood to know:\n• Works in Microsoft 365, Excel 2019 or newer and Google Sheets\n• Any currency: $, €, £, ₹ or your own symbol\n• No bank login: you type your numbers and the sheet does the math\n• It doesn't cancel anything for you. The scripts are polite starting points, not legal advice\n• Made with AI assistance, then built and checked by hand\n• Digital download, nothing ships\n\nFrom Hourback, a Steadfold studio.",
+  "price": {
+    "USD": 7.0,
+    "CAD": 9.99
+  },
+  "quantity": 999,
+  "tags": [
+    "subscription tracker",
+    "cancel subscription",
+    "subscription audit",
+    "budget spreadsheet",
+    "google sheets budget",
+    "excel budget",
+    "money saving",
+    "bill tracker",
+    "renewal tracker",
+    "monthly bills",
+    "spending tracker",
+    "budget planner",
+    "digital download"
+  ],
+  "materials": [
+    "Excel",
+    "Google Sheets",
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/subscription-audit/HB-SUB-01-subscription-audit-cancel-kit.jpg",
+    "listings/media/subscription-audit/HB-SUB-02-one-yearly-bill.jpg",
+    "listings/media/subscription-audit/HB-SUB-03-flags-unused.jpg",
+    "listings/media/subscription-audit/HB-SUB-04-cancel-scripts.jpg",
+    "listings/media/subscription-audit/HB-SUB-05-renewals.jpg",
+    "listings/media/subscription-audit/HB-SUB-06-find-them.jpg",
+    "listings/media/subscription-audit/HB-SUB-07-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "Subscription-Audit-Cancel-Kit-v1.1.zip",
+      "enc": "listings/files/subscription-audit/Subscription-Audit-Cancel-Kit-v1.1.zip.age",
+      "sha256": "6b98bbe9baf9d91df6030e385c64b3c5102e757c62c5d99b5928f6ed4151244f",
+      "size": 518245
+    }
+  ],
+  "source_note": "Copy, tags and CAD price (CA$9.99) verbatim from the v1.1 listing kit."
+}
