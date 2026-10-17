@@ -211,3 +211,15 @@ REEL_COVERS = {
     "lh-reel-1018-mute-the-world": dict(brand=LH, f="pink", text="Busy / all day. / *Nothing done.*", obj="hourglass", save="save this for tomorrow morning"),
     "lf-reel-1019am-hunger-cues": dict(brand=LF, f="pink", text="Crying is / a *late* / hunger sign", obj="shoe", save="save this for the first feeds"),
 }
+
+# Littlefold / Locked Hour "just posted" Stories: same card, now showing the lifted covers.
+STORIES.update({
+    "lf-st-1017-1200-newpost": dict(brand=LF, k="newpost", f="pink", text="New post: / *safe sleep, tonight.*", img="lf-03-safe-sleep-tonight/01.jpg"),
+    "lf-st-1018-1200-newpost": dict(brand=LF, k="newpost", f="cream", text="New post: / split *the night.*", img="lf-04-sleep-when-baby-sleeps/01.jpg"),
+    "lf-st-1019-1200-newpost": dict(brand=LF, k="newpost", f="butter", text="New post: / *5 jobs* in week 1.", img="lf-05-partner-week-one/01.jpg"),
+    "lf-st-1020-1200-newpost": dict(brand=LF, k="newpost", f="pink", text="New post: / *hold your no.*", img="lf-06-toddler-meltdown/01.jpg"),
+    "lh-st-1017-1300-newpost": dict(brand=LH, k="newpost", f="pink", text="New post: / write it. *Later.*", img="lh-1017-one-word-later/01.jpg"),
+    "lh-st-1018-1300-newpost": dict(brand=LH, k="newpost", f="cream", text="New post: / day 1. *Again.*", img="lh-w2-05-restart/01.jpg"),
+    "lh-st-1019-1300-newpost": dict(brand=LH, k="newpost", f="pink", text="New post: / *90 hours* by Jan 16.", img="lh-w2-08-lockin-kickoff/01.jpg"),
+    "lh-st-1020-1300-newpost": dict(brand=LH, k="newpost", f="cream", text="New post: one hour, / *minute by minute.*", img="lh-w2-07-minute-by-minute/01.jpg"),
+})
