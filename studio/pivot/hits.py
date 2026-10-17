@@ -110,7 +110,7 @@ def scene_html(brand, sc, beat):
     if k == "num":
         # fixed layout so the punch-in (T7) and circle (T9) land on the number
         lab = wtxt(sc["label"], 118, gap=0.08)
-        num = (f'<span data-a="count" data-t="0.06" data-d="0.62" data-to="{sc["value"]}" data-comma="1" data-dec="{sc.get("dec", 0)}" data-from="{sc["value"] if sc["value"] < 10 else 0}" data-pre="{sc.get("pre", "")}" '
+        num = (f'<span data-a="count" data-t="0.06" data-d="0.62" data-to="{sc["value"]}" data-comma="1" data-dec="{sc.get("dec", 0)}" data-from="{sc["value"] if (sc["value"] < 10 and not sc.get("dec")) else 0}" data-pre="{sc.get("pre", "")}" '
                f'data-suf="{sc.get("unit", "")}">{sc.get("pre", "")}0{sc.get("unit", "")}</span>')
         shown = f'{sc.get("pre", "")}{sc["value"]:,.{sc.get("dec", 0)}f}{sc.get("unit", "")}'
         nsize = min(sc.get("size", 260), int(780 / (0.58 * len(shown))))  # 780 px wide, 875 after the 1.12 punch-in: inside x 70-1010
