@@ -53,6 +53,9 @@ BASE_CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1080px;height:1920px;overflow:hidden;background:var(--stage)}
 #stage{position:absolute;inset:0;overflow:hidden}
+#cap{position:absolute;inset:0;z-index:20;pointer-events:none}
+#cap>div{position:absolute;inset:0;display:none}
+.big{font-size:1.45em}
 .scene{position:absolute;inset:0;overflow:hidden;display:none}
 .cam{position:absolute;inset:0;transform-origin:50% 45%}
 .par{position:absolute;inset:-6%;background-size:cover;background-position:center;will-change:transform}
@@ -152,6 +155,35 @@ def arrow(x1, y1, x2, y2, color, width=10, t=0.0, d=0.35, bend=60):
             f'<path d="M{hx1:.1f},{hy1:.1f} L{x2},{y2} L{hx2:.1f},{hy2:.1f}" data-a="draw" data-t="{t + d * 0.8:.3f}" data-d="0.15"/></g></svg>')
 
 
+# Measured on the owner's reference Reels (studio/pivot/TRANSITIONS.md): seconds per transition type.
+REF_TD = {"leak": 0.233, "whipL": 0.17, "whipR": 0.17, "whipU": 0.17, "whipD": 0.17, "swipe": 0.17, "slamup": 0.13,
+          "land": 0.40, "glide": 0.20}
+
+
+def flicker(text, looks, base="", t=0.0, step=1 / 30, cls="T"):
+    """T3/T4: one word that cycles through `looks` (CSS strings), one per `step` s, and lands on the last.
+    step=1/30 is the reference's frame-by-frame font flicker; step=one beat is the on-beat style swap."""
+    looks = "||".join(x.replace('"', "'") for x in looks)
+    base = base.replace('"', "'")
+    return (f'<div class="{cls}" data-a="flicker" data-t="{t:.3f}" data-step="{step:.4f}" data-looks="{looks}" '
+            f'data-base="{base}" style="{base}">{text}</div>')
+
+
+def oneword(chunks, t=0.0, gap=0.45, cls="T", style=""):
+    """T5: word captions. One word or chunk at a time in the same spot, hard swap, 2-frame pop.
+    chunks = [text | (text, start_s)]; '*x*' = accent, '^x^' = the bigger emphasis size (T14)."""
+    import re as _re
+    out, tt = [], t
+    for c in chunks:
+        txt, st = (c if isinstance(c, tuple) else (c, None))
+        st = tt if st is None else st
+        txt = _re.sub(r"\^(.+?)\^", r'<span class="big">\1</span>', txt)
+        txt = _re.sub(r"\*(.+?)\*", r'<span class="em">\1</span>', txt)
+        out.append(f'<span class="ow" data-t="{st:.3f}" style="display:none">{txt}</span>')
+        tt = st + gap
+    return f'<div class="{cls}" data-a="oneword" data-t="0" style="{style}">{"".join(out)}</div>'
+
+
 class Reel:
     def __init__(self, rid, brand, bpm, css="", stage=None, beat_offset=0.0):
         self.rid, self.brand, self.bpm = rid, brand, bpm
@@ -161,19 +193,25 @@ class Reel:
         self.scenes = []        # dict(start, dur, html, tin, cam, bg)
         self.t = beat_offset
         self.shakes, self.blur_spans = [], []
+        self.captions = []      # T10 pinned captions: dict(t0, t1, html), drawn above every transition
 
     def scene(self, beats, html, tin="cut", td=None, cam="push", bg=None, focus=None, color=None, color2=None, color3=None,
               shake=None, cls=""):
         dur = beats * self.beat
         tr = None
         if self.scenes:
-            tr = dict(type=tin, d=td if td is not None else min(0.36, self.beat * 0.6), focus=focus, color=color, color2=color2, color3=color3)
+            tr = dict(type=tin, d=td if td is not None else REF_TD.get(tin, min(0.36, self.beat * 0.6)), focus=focus, color=color, color2=color2, color3=color3)
             if tin == "cut":
                 tr["d"] = 1 / FPS
         self.scenes.append(dict(start=round(self.t, 4), dur=dur, html=html, tin=tr, cam=cam, bg=bg or self.stage, cls=cls))
         if shake:
             self.shakes.append([len(self.scenes) - 1, shake[0], shake[1], shake[2]])
         self.t += dur
+        return self
+
+    def pin(self, t0, t1, html):
+        """T10: a caption pinned above the transitions (it stays put while scenes whip, push or slam under it)."""
+        self.captions.append(dict(t0=t0, t1=t1, html=html))
         return self
 
     def loop(self, beats=1.5, tin="zoom", **kw):
@@ -211,8 +249,9 @@ class Reel:
         body = "".join(f'<div class="scene {s["cls"]}" style="background:{s["bg"]}"><div class="cam">{s["html"]}</div></div>'
                        for s in self.scenes)
         js = (HERE / "motion.js").read_text()
+        caps = "".join(f'<div data-t0="{c["t0"]:.3f}" data-t1="{c["t1"]:.3f}">{c["html"]}</div>' for c in self.captions)
         return (f"<!doctype html><html><head><meta charset='utf-8'><style>{FONTS}{BASE_CSS}:root{{--stage:{self.stage}}}{self.css}</style>"
-                f"</head><body><div id='stage'>{body}<div id='ov'></div></div><script>{js}</script>"
+                f"</head><body><div id='stage'>{body}<div id='ov'></div></div><div id='cap'>{caps}</div><script>{js}</script>"
                 f"<script>motionInit({json.dumps(tl)});</script></body></html>")
 
 

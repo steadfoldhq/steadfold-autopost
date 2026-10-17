@@ -34,6 +34,8 @@ def slide_html(brand, s, i, n):
     if s.get("kicker"):
         parts.append(f'<div class="kick" style="background:{kbg};color:{kink}">{s["kicker"]}</div>')
     parts.append(f'<div class="T hook" style="font-size:{size}px">{mark_txt(s["text"])}</div>')
+    if s.get("num"):  # aggressive pivot: ONE hero number, as big as the hook allows
+        parts.append(f'<div class="T num em" style="font-size:{s.get("num_px", 230)}px;letter-spacing:-.06em">{s["num"]}</div>')
     if s.get("emo"):
         parts.append(f'<div class="emo" style="font-size:{s.get("emo_px", 190)}px">{s["emo"]}</div>')
     if s.get("sub"):
@@ -87,10 +89,10 @@ def render(posts, ids):
                 pg.evaluate("document.fonts.ready")
                 pg.wait_for_timeout(150)
                 # shrink any hook line wider than the safe width (x 70-1010)
-                pg.evaluate("""() => { const h = document.querySelector('.hook'); for (let k = 0; k < 8; k++) {
+                pg.evaluate("""() => { document.querySelectorAll('.hook, .num').forEach(h => { for (let k = 0; k < 8; k++) {
                     const r = document.createRange(); r.selectNodeContents(h); let lo = 1e9, hi = -1e9;
                     for (const q of r.getClientRects()) { lo = Math.min(lo, q.left); hi = Math.max(hi, q.right); }
-                    if (hi - lo <= 940) break; h.style.fontSize = (parseFloat(getComputedStyle(h).fontSize) * 0.94) + 'px'; } }""")
+                    if (hi - lo <= 940) break; h.style.fontSize = (parseFloat(getComputedStyle(h).fontSize) * 0.94) + 'px'; } }); }""")
                 im = Image.open(io.BytesIO(pg.screenshot(type="png"))).convert("RGB").resize((W, H), Image.LANCZOS)
                 fn = d / f"{i + 1:02d}.jpg"
                 im.save(fn, quality=92, subsampling=0)

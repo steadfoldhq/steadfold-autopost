@@ -1,33 +1,44 @@
 """Pivot (Oct 17) feed posts. One idea each; slide 1 is the thumbnail and must read at 200 px wide in one second.
 f = colour field (boldkit.FIELDS). *x* = accent, ' / ' = line break. Detail lives in the caption, not on the tile."""
 
+from ff_math import FIG
+
 FF, HB, LH, LF = "fullyfunded", "hourback", "lockedhour", "littlefold"
 
 POSTS = {
-    # ------------------------------------------------------------------ Fully Funded
+    # ------------------------------------------------------------------ Fully Funded (aggressive, Oct 17 1:15 am)
+    # 1 or 3 slides, a 3-5 word hook, ONE hero number. Figures from ff_math.FIG.
     "ff-w03-2-borrow-dont-sell": dict(brand=FF, slides=[
-        dict(f="cob", kicker="What the rich do", text="The rich *borrow.* / Most of us sell."),
-        dict(f="lite", text="They borrow / *against* their / investments.", sub="So the money stays invested."),
-        dict(f="coral", kicker="The catch", text="If they fall, / *the lender / can sell.*", sub="Ask the rate, the call level and the plan B."),
+        dict(f="cob", text="The rich / *borrow.*", emo="🏦"),
+        dict(f="lite", text="Stocks *sold:*", num="0", num_px=420, sub="They borrow against them."),
+        dict(f="coral", text="Stocks fall? / *Lender sells.*", sub="Ask the rate and the sell level first."),
     ]),
     "ff-1017-single-yearly-check": dict(brand=FF, slides=[
-        dict(f="cob", text="Book a *yearly* / money check.", emo="🔍", sub="Fees · names · rates · cover · your number"),
+        dict(f="cob", text="*5* checks, / once a year.", emo="🔍"),
     ]),
     "ff-w03-3-guardian-will": dict(brand=FF, slides=[
-        dict(f="cob", kicker="For parents", text="Kids? / Name a *guardian.*", emo="📝"),
-        dict(f="deep", text="No will? / A *court* may / decide.", sub="Who raises your kids, and who inherits."),
-        dict(f="coral", text="Pick one. / Ask them. / *Write it down.*", sub="In a will: lawyer, notary or official service."),
+        dict(f="cob", text="Kids? / Name a *guardian.*", emo="📝"),
+        dict(f="deep", text="No will? / A *court* decides."),
+        dict(f="coral", text="Pick *1* person. / Write it down."),
     ]),
     "ff-1018-single-24-hours": dict(brand=FF, slides=[
-        dict(f="coral", text="Want it? / Wait *24 hours.*", emo="⏳", sub="For wants, not bills."),
+        dict(f="coral", text="Want it? / Wait *24 hours.*", emo="⏳"),
     ]),
     "ff-1019-rich-habits-01": dict(brand=FF, slides=[
-        dict(f="cob", kicker="Rich Habits, Decoded · No.1", text="Ask: *cost / per use?*", emo="🧥"),
-        dict(f="lite", text="240 coat, / worn 120 times: / *2 a wear.*"),
-        dict(f="coral", text="60 coat, / worn 6 times: / *10 a wear.*", sub="Cheaper tag. 5× the cost."),
+        dict(f="cob", text="Price ÷ / *uses.*", emo="🧥"),
+        dict(f="lite", text="$240 coat, / 120 wears:", num=f"${FIG['coat_a']}", num_px=380),
+        dict(f="coral", text="$60 coat, / 6 wears:", num=f"${FIG['coat_b']}", num_px=380, sub="Cheaper tag. 5× the cost."),
     ]),
     "ff-1019-single-average-saver": dict(brand=FF, slides=[
-        dict(f="lite", text="The *average* saver / doesn't exist.", emo="🫠", sub="Look for the median."),
+        dict(f="lite", text="Averages / *lie.*", emo="🫠", sub="One big balance skews them."),
+    ]),
+    "ff-1020-pick-its-home": dict(brand=FF, slides=[
+        dict(f="cob", text="Same *$10,000.* / 20 years.", emo="🏠"),
+        dict(f="lite", text="Cash at 0%:", num=f"${FIG['home_0']:,}", num_px=280),
+        dict(f="coral", text="Invested at 10%:", num=f"${FIG['home_10']:,}", num_px=280, sub="Can fall. Keep cash you'll need soon."),
+    ]),
+    "ff-1020-single-money-date": dict(brand=FF, slides=[
+        dict(f="deep", text="Free hour? / Bring *3 numbers.*", emo="🕐", sub="In. Out. Left."),
     ]),
     # ------------------------------------------------------------------ Hourback
     "hb-w02-7-prove-it": dict(brand=HB, slides=[
