@@ -77,7 +77,8 @@ OBJ_AT = {  # (x, y, w, rot, flip) on a 1080x1350 tile
     ("ok", "bl"): (-40, 820, 400, 10, False), ("ok", "br"): (770, 930, 330, -8, True),
     ("piggy", "br"): (600, 900, 470, -6, False), ("piggy", "bl"): (-30, 920, 440, 6, True),
     ("clock", "br"): (720, 870, 330, 10, False), ("hourglass", "bl"): (40, 860, 250, -10, False),
-    ("cup", "bl"): (40, 880, 300, -8, False), ("shoe", "br"): (650, 940, 380, -8, False),
+    ("cup", "bl"): (40, 880, 300, -8, False), ("shoe", "br"): (650, 940, 380, -8, False), ("shoe", "bl"): (40, 960, 360, 8, True),
+    ("clock", "bl"): (40, 880, 320, -10, False), ("hourglass", "br"): (780, 860, 240, 10, False),
     ("megaphone", "bl"): (-30, 880, 420, -8, False), ("phone", "br"): (770, 820, 250, 12, False),
     ("phone", "tr"): (790, 80, 220, 14, False), ("chat", "tr"): (720, 90, 300, 8, False), ("chat", "bl"): (60, 930, 320, -6, False),
 }
@@ -112,7 +113,14 @@ def lay_pills(brand, c, W=1080, H=1350):
     st = stamp_for(brand, at, W, H)
     if at in ("tr", "tl") and c.get("kicker"):
         st = K.stamp(brand, W - 260, H - 260, 200, -12)
-    return body + place(c["obj"], at) + st + (kicker(brand, f, c["kicker"]) if c.get("kicker") else "")
+    return body + place(c["obj"], at) + st + (kicker(brand, f, c["kicker"]) if c.get("kicker") else "") + src_line(f, c.get("src"))
+
+
+def src_line(f, src, H=1350):
+    if not src:
+        return ""
+    return (f'<div style="position:absolute;left:260px;right:260px;top:{H - 70}px;text-align:center;font:500 22px/1.2 Fraunces;'
+            f'color:{f["ink"]};opacity:.7;z-index:5">Source: {src}</div>')
 
 
 def lay_sticky(brand, c, W=1080, H=1350):
@@ -185,7 +193,7 @@ def inner(brand, s, i, n, W=1080, H=1350):
     return (f'<div style="position:absolute;left:70px;right:70px;top:120px;height:1060px;display:flex;flex-direction:column;'
             f'justify-content:center;align-items:center;z-index:2">{parts}</div>'
             f'<div style="position:absolute;right:60px;top:60px;font:600 30px/1 Fraunces;color:{f["ink"]};opacity:.55">{i + 1}/{n}</div>'
-            + K.stamp(brand, 60, H - 220, 160, -12))
+            + K.stamp(brand, 60, H - 220, 160, -12) + src_line(f, s.get("src")))
 
 
 def page(brand, field, body, W, H, dark=False):
@@ -289,7 +297,7 @@ def build_feed(ids, r=None):
         assert n <= 3, pid
         body = LAYOUTS[c["lay"]](b, c)
         if n > 1:
-            body += (f'<div class="hand" style="position:absolute;right:56px;top:{1350 - 110 if c["lay"] != "line" else 60}px;'
+            body += (f'<div class="hand" style="position:absolute;right:56px;top:{1350 - 66 if c["lay"] == "sticky" else (1350 - 110 if c["lay"] != "line" else 60)}px;'
                      f'font-size:52px;z-index:5;{"color:#FFF1C9" if c["lay"] == "mosaic" else ""}">swipe →</div>'
                      if c["lay"] in ("sticky", "mosaic", "line") else "")
         files = [r.shot(page(b, c["f"], body, 1080, 1350), 1080, 1350, d / "01.jpg")]
