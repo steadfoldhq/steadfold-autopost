@@ -57,13 +57,13 @@ def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra=""):
         if tok.startswith("*"):
             on = True
         core = tok.replace("*", "")
-        (run if on else out).append(f'<span class="w">{core}</span>')
+        (run if on else out).append(core if on else f'<span class="w">{core}</span>')
         if on and (tok.endswith("*") or tok.rstrip(".,?!:;\u201d").endswith("*")):
-            k += 1
-            out.append(f'<span class="em{"" if k % 2 else " em2"}">{" ".join(run)}</span>')
+            k += 1  # the whole accent run pops in as ONE unit with its pill (no empty pill before the words land)
+            out.append(f'<span class="w em{"" if k % 2 else " em2"}">{" ".join(x for x in run if x != "<br>")}</span>')
             run, on = [], False
     if run:
-        out.append(f'<span class="em">{" ".join(run)}</span>')
+        out.append(f'<span class="w em">{" ".join(run)}</span>')
     attrs = f'data-a="words" data-t="{t:.3f}" data-d="0.32" data-gap="{gap}"' if anim else ""
     return f'<div class="T" {attrs} style="font-size:{size}px;{extra}">{" ".join(out)}</div>'
 

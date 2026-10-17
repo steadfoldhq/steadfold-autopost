@@ -187,9 +187,10 @@ def field_bg(f):
     return f'<div style="position:absolute;inset:0;background:{f["bg"]}"></div><div class="glow"></div><div class="grain"></div>'
 
 
-FIT_JS = """(maxw) => { document.querySelectorAll('.fit').forEach(h => { const mw = +(h.dataset.w || maxw);
-  for (let k = 0; k < 14; k++) { const r = document.createRange(); r.selectNodeContents(h); let lo = 1e9, hi = -1e9;
-    for (const q of r.getClientRects()) { if (q.width < 1) continue; lo = Math.min(lo, q.left); hi = Math.max(hi, q.right); }
-    const mh = +(h.dataset.h || 1e9);
-    if (hi - lo <= mw && h.getBoundingClientRect().height <= mh) break;
-    h.style.fontSize = (parseFloat(getComputedStyle(h).fontSize) * 0.95) + 'px'; } }); }"""
+FIT_JS = """(maxw) => { const textW = (h) => { let lo = 1e9, hi = -1e9; const tw = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);
+    while (tw.nextNode()) { const r = document.createRange(); r.selectNodeContents(tw.currentNode);
+      for (const q of r.getClientRects()) { if (q.width < 1) continue; lo = Math.min(lo, q.left); hi = Math.max(hi, q.right); } }
+    return hi - lo; };
+  document.querySelectorAll('.fit').forEach(h => { const mw = +(h.dataset.w || maxw), mh = +(h.dataset.h || 1e9);
+    for (let k = 0; k < 24; k++) { if (textW(h) <= mw && h.getBoundingClientRect().height <= mh) break;
+      h.style.fontSize = (parseFloat(getComputedStyle(h).fontSize) * 0.96) + 'px'; } }); }"""

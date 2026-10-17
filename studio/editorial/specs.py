@@ -49,7 +49,7 @@ POSTS = {
         dict(f="coral", text="Invested at 10%, / 20 years:", num=f"${FIG['home_10']:,}", sub="can fall. keep cash you need soon"),
     ]),
     "ff-1020-single-money-date": dict(brand=FF, cover=dict(
-        lay="sticky", f="lite", text="Free hour? / Have a *money date*", obj="clock", at="br",
+        lay="sticky", f="lite", text="Free hour? / Have a / *money date*", obj="clock", at="br",
         items=["What came in", "What went out", "What's left", "One thing to change"],
         save="clocks go back. use the hour.")),
     # ------------------------------------------------------------------ Hourback (DM Serif Display, periwinkle/peach)
@@ -199,4 +199,15 @@ STORIES = {
     "hb-st-1020-2": dict(brand=HB, k="tip", f="indi", text="31 words. / *Under 40.*", sub="text made up. reply from a real AI run.", obj="ok"),
     "hb-st-1020-3": dict(brand=HB, k="newpost", f="plum", text="New post: what I / *stopped doing.*", img="hb-1020-single-stopped-doing/01.jpg"),
     "hb-st-1020-4": dict(brand=HB, k="question", f="indi", text="One thing you'd / *stop doing?*", opts=["Reading the renewal", "Rewriting one text", "Something else"], obj="point"),
+}
+
+# Reel covers lifted without a re-render (their videos come from older hand-built scripts): 1080x1920, hook composition.
+REEL_COVERS = {
+    "lf-reel-1017-one-job": dict(brand=LF, f="cream", text="Someone / offers help? / Give *one job.*", obj="ok", save="save this for the first week home"),
+    "lh-reel-1017-one-tab": dict(brand=LH, f="dots", text="How many / tabs are / *open?*", obj="point", save="save this for your next focus hour"),
+    "lf-reel-1018am-3am-windows": dict(brand=LF, f="pink", text="3:07 am. / *Up again?*", obj="clock", save="save this for the 3 am feed"),
+    "lh-reel-1018am-pick-3": dict(brand=LH, f="cream", text="Sunday. / *10 minutes.*", obj="clock", save="save this for Sunday night"),
+    "lf-reel-1018-breathe": dict(brand=LF, f="butter", text="Crying / won't stop? / *Step away.*", obj="shoe", save="it's ok to put baby down safely"),
+    "lh-reel-1018-mute-the-world": dict(brand=LH, f="pink", text="Busy / all day. / *Nothing done.*", obj="hourglass", save="save this for tomorrow morning"),
+    "lf-reel-1019am-hunger-cues": dict(brand=LF, f="pink", text="Crying is / a *late* / hunger sign", obj="shoe", save="save this for the first feeds"),
 }

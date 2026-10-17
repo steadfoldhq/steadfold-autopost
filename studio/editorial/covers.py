@@ -323,8 +323,36 @@ def build_story(ids, r=None):
         r.close()
 
 
+def reel_cover(brand, c, W=1080, H=1920):
+    """Same composition as the re-skinned Reel hook (boldkit.hook_scene): object, serif + pills, save-line, stamp."""
+    f = K.FIELDS[brand][c["f"]]
+    body = head(brand, f, c["text"], 600, 600, 230, wmax=920)
+    body += K.save_line(c["save"], 110, 1240, 860, 76, -3, brand)
+    pos = {"point": (560, 330, 470, -52, True), "ok": (-20, 1360, 360, 10, False), "clock": (740, 1370, 290, 10, False),
+           "hourglass": (70, 1360, 230, -10, False), "shoe": (640, 1380, 340, -8, False)}[c["obj"]]
+    body += K.obj(c["obj"], *pos)
+    corner = (90, 1400) if c["obj"] == "point" else ((810, 330) if pos[0] < 500 else (90, 330))
+    return body + K.stamp(brand, corner[0], corner[1], 200, -12)
+
+
+def build_reel_covers(ids, r=None):
+    from specs import REEL_COVERS
+    own = r is None
+    r = r or R()
+    for rid in ids:
+        c = REEL_COVERS[rid]
+        r.shot(page(c["brand"], c["f"], reel_cover(c["brand"], c), 1080, 1920), 1080, 1920, REPO / "media" / "reels" / f"{rid}-cover.jpg")
+        print(rid, flush=True)
+    if own:
+        r.close()
+
+
 if __name__ == "__main__":
     mode, ids = sys.argv[1], sys.argv[2:]
+    if mode == "reelcover":
+        from specs import REEL_COVERS
+        build_reel_covers(ids or list(REEL_COVERS))
+        sys.exit()
     if mode == "feed":
         from specs import POSTS
         build_feed(ids or list(POSTS))
