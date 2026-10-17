@@ -251,3 +251,38 @@ Playwright at 2×, adds real sub-frame motion blur, and cuts on the page's music
 a bored stranger at 8 am (stop? watch to the end? send?). Anything short of a strong yes gets re-edited.
 This replaces the "calm text" and "kinetic big text" slide timing in section 2 (styles 5 and 15) and the 4-scene Reel timing in
 section 7: those styles keep their look, but are cut with the kit.
+
+---
+
+## 12. Pivot (Oct 17): bold one-idea style for all pages
+**Why (real numbers, insights of Oct 17 04:32 UTC).** The four most-viewed posts across all pages are bold, short-hook Reels:
+Littlefold "3 quick checks. Alone, back, crib." 121 views / 111 reach, Locked Hour "One quiet hour" 100 / 84, Littlefold
+"Try it on your chest" 80 / 69, Locked Hour "if-then plan" 55 / 48. Reels average 42.5 views and 34 reach; carousels 19.5 and 4.5;
+single images 6.5 and 2. Busy Fully Funded and Hourback tiles stalled (FF median about 18 views, HB about 14), and Dharma's read is that
+nobody can tell what they are in a small thumbnail. Caveat: every page has 3 followers and 6-9 posts, so this is direction, not proof.
+Saves and shares are 0-5 per post and mostly come from tiny reach (3-6), so don't optimise for them yet; optimise for reach and views.
+
+**The rule (every page, every format, from Oct 17):**
+1. **One idea per post.** If it needs a list, the list goes in the caption. The tile carries the one thing.
+2. **A giant 3-6 word hook**: FF Inter Display 800 at about 168 px, LH Inter Display 900 at about 172 px, HB Poppins 700 at about 146 px,
+   LF Lora 600 at about 150 px with an italic berry accent word (sizes at 1080 wide). One accent (colour, highlighter or italic) on the key words.
+3. **One strong colour field per frame**, from the page's own palette, with only the faint dot texture:
+   FF cobalt / deep cobalt / coral / pale blue; HB indigo / yellow / plum; LH butter / cream / pink; LF cream / pink / butter / berry.
+   At most one sticker or emoji, and the small brand chip on top. No cards, tables, charts, screenshots or photos on slide 1.
+4. **Carousels: at most 3 slides** (1 is fine): hook, the move, the number or the catch. Each slide is one big line plus at most one short sub-line.
+5. **Reels: 12-18 s, hook fully readable at frame 0**, a sticker pops within 0.3 s, one big line per beat on a full colour field,
+   a transition on every cut, scored on a **v4 impact track** (`media/music/library/v4/`) with the payoff scene starting exactly on the
+   track's measured `drop_s` (`tools/music-library.json`) and every cut on its beat grid. Readable pacing still applies (0.4 s/word + 0.6 s).
+   The cover is the hook frame. Add every new Reel id to `tools/music-picks.json` "keep".
+6. **The 200 px test**: shrink every cover and slide 1 to 200 px wide. If you can't tell what it's about in one second, redo it.
+7. **Keep checking the numbers.** After each insights run, compare views and reach of bold posts against the old style per page
+   (`insights/latest.json`, `insights/history.jsonl`). Reels are the reach engine, so put the strongest idea of the day in a Reel.
+
+**How to build it:** `studio/pivot/` (README in the file headers).
+- Feed tiles: add the post to `studio/pivot/specs_stills.py` and run `python3 studio/pivot/stills.py <id>` (2x render, Lanczos, JPEG q92, writes `media/<id>/` and removes old slides). Update `images` and `alt_text` in `schedule/posts.json`.
+- Reels: add it to `studio/pivot/specs_reels.py` (scene kinds: hook, say, ai, num, list; `drop=True` marks the payoff) and run
+  `python3 studio/pivot/reels.py <id> --plan` (timing table; it refuses scripts that are too wordy for the drop or longer than 18 s), then without `--plan` to render to `media/reels/`.
+
+This section overrides the busier styles in section 2 for slide 1 and Reel frame 0 (Look B covers with objects, Ep.01 photo editorial,
+sticky-note lists, glove countdowns, awards): those may still appear on later slides only if they stay one idea and readable.
+Photos freed by the pivot (unused again): street, clouds, couple, family (B/W).
