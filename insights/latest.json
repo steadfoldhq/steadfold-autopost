@@ -1,13 +1,49 @@
 {
- "collected_at": "2026-10-17T12:34:57+00:00",
+ "collected_at": "2026-10-17T16:30:40+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 8,
+   "media_count": 10,
    "posts": [
+    {
+     "media_id": "18014671928987663",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Demf_UAmsDa/",
+     "at": "2026-10-17T16:07:24+0000",
+     "first_line": "The rich often borrow against their investments instead of selling them.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 2,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18637565494019727",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DemJBtTjUwH/",
+     "at": "2026-10-17T12:46:56+0000",
+     "first_line": "Your employer may add +$1,500 a year that you never claimed.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 1144,
+      "ig_reels_video_view_total_time": 3434
+     },
+     "comments": []
+    },
     {
      "media_id": "18015281444960537",
      "type": "REEL",
@@ -17,13 +53,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 34,
-      "reach": 29,
+      "views": 38,
+      "reach": 33,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 2046,
-      "ig_reels_video_view_total_time": 61404
+      "ig_reels_avg_watch_time": 2217,
+      "ig_reels_video_view_total_time": 73179
      },
      "comments": []
     },
@@ -157,8 +193,27 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 9,
+   "media_count": 10,
    "posts": [
+    {
+     "media_id": "18002153877034149",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DemJG9xgG4E/",
+     "at": "2026-10-17T12:47:41+0000",
+     "first_line": "\"Do taxes\" has been on your list for 3 weeks. It's not a task, it's a project. Rewrite it as a next step.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 9,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3142,
+      "ig_reels_video_view_total_time": 21994
+     },
+     "comments": []
+    },
     {
      "media_id": "18198325825390270",
      "type": "REEL",
@@ -168,13 +223,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 110,
-      "reach": 94,
+      "views": 121,
+      "reach": 102,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2792,
-      "ig_reels_video_view_total_time": 268037
+      "ig_reels_avg_watch_time": 2758,
+      "ig_reels_video_view_total_time": 292447
      },
      "comments": []
     },
@@ -187,7 +242,7 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
+      "views": 7,
       "reach": 3,
       "saved": 0,
       "shares": 0,
@@ -325,8 +380,27 @@
    "username": "hourbackhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 8,
+   "media_count": 9,
    "posts": [
+    {
+     "media_id": "17895969018655285",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DemJOt8ESt-/",
+     "at": "2026-10-17T12:48:43+0000",
+     "first_line": "Out of eggs halfway through a recipe? Ask AI for a swap.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 33,
+      "reach": 24,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3515,
+      "ig_reels_video_view_total_time": 98443
+     },
+     "comments": []
+    },
     {
      "media_id": "17947871355067253",
      "type": "REEL",
@@ -336,13 +410,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 9,
+      "views": 17,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3510,
-      "ig_reels_video_view_total_time": 35108
+      "ig_reels_avg_watch_time": 3265,
+      "ig_reels_video_view_total_time": 35925
      },
      "comments": []
     },
@@ -476,8 +550,25 @@
    "username": "littlefoldhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 7,
+   "media_count": 8,
    "posts": [
+    {
+     "media_id": "17915309772496167",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DemdkJmm7BZ/",
+     "at": "2026-10-17T15:46:13+0000",
+     "first_line": "Make tonight's sleep safer: alone, on their back, in a crib.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18134954647647572",
      "type": "REEL",
@@ -487,13 +578,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 6,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "ig_reels_avg_watch_time": 965,
+      "ig_reels_video_view_total_time": 4827
      },
      "comments": []
     },
@@ -506,13 +597,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 41,
-      "reach": 33,
+      "views": 50,
+      "reach": 41,
       "saved": 0,
       "shares": 1,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 3460,
-      "ig_reels_video_view_total_time": 114196
+      "ig_reels_avg_watch_time": 3048,
+      "ig_reels_video_view_total_time": 124996
      },
      "comments": []
     },
@@ -560,12 +651,12 @@
      "comments_count": 1,
      "insights": {
       "views": 100,
-      "reach": 87,
+      "reach": 89,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2942,
-      "ig_reels_video_view_total_time": 261882
+      "ig_reels_avg_watch_time": 2899,
+      "ig_reels_video_view_total_time": 263844
      },
      "comments": []
     },
