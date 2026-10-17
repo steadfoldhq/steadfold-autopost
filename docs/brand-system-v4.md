@@ -286,3 +286,34 @@ Saves and shares are 0-5 per post and mostly come from tiny reach (3-6), so don'
 This section overrides the busier styles in section 2 for slide 1 and Reel frame 0 (Look B covers with objects, Ep.01 photo editorial,
 sticky-note lists, glove countdowns, awards): those may still appear on later slides only if they stay one idea and readable.
 Photos freed by the pivot (unused again): street, clouds, couple, family (B/W).
+
+### 12a. AGGRESSIVE (Dharma, Oct 17 1:15 am): overrides 12 where they differ. Fully Funded first, every page follows.
+**Why:** nobody has time to read. Fully Funded needs far more engagement, and its busy posts are the ones that stalled.
+
+1. **One idea, one number.** Every post carries ONE hero number (or one hero word when there's honestly no number).
+   Everything else goes in the caption, and the caption stays short.
+2. **Hook: 3-5 words**, giant (FF Inter Display 800 at 168 px on tiles, 178 px in Reels; other pages per 12.2), readable at 200 px wide in
+   **one second**. Shrink every cover and slide 1 to 200 px and read it with a 1-second glance; if you have to look twice, cut words.
+3. **Feed: 1 slide or 3 slides max.** Never 2, never 4+. Slide 1 = hook, slide 2 = the number, slide 3 = the move or the catch.
+   Each slide: one big line + at most one short sub-line. Hero numbers via `num=` in `studio/pivot/specs_stills.py`.
+4. **Reels: 10-15 s** (`studio/pivot/hits.py` refuses anything outside), built from `studio/pivot/specs_hits.py`:
+   hook at frame 0 → 1-3 one-line beats → **the hero number lands exactly on the v4 track's `drop_s`** (T11 land, count-up,
+   T7 punch-in, T9 circle) → T1 leak back into the hook (T15 loop). Every cut uses a reference technique from
+   `studio/pivot/TRANSITIONS.md` (T1 leak, T2 burn, T3 flicker, T5 word captions, T6 whip 170 ms, T8 slam-up, T12 glide, T16 swipe…)
+   and sits on the track's 16th-note grid. Reading pacing still applies (0.4 s/word + 0.6 s); `--plan` checks it.
+   Run `python3 studio/pivot/hits.py <id> --plan`, then render, then check the QA sheet (frames at -130 to +200 ms around every cut).
+5. **Captions: 3 lines max, then a blank line and the hashtags.** Line 1 = the claim with the number, line 2 = the move,
+   line 3 = the CTA (save/send) or, on posts that show returns, the closing line below. No "Source:" or other disclaimer lines on FF.
+6. **Money maths is stated directly**, computed in code (`studio/pivot/ff_math.py`, `FIG`): "$100 a month at 10% → $X by 65".
+   - The headline growth rate is **10% a year** (S&P 500 long-run average). Replace any 6% or 8% with 10%. **Never above 10%**: a
+     higher rate is a misleading claim. Compounded monthly. Say "before inflation" in the caption when the horizon is decades.
+   - Posts that show returns end the caption with exactly one line: **Not guaranteed. Returns vary.** Only on those posts.
+   - Every figure on screen, in the caption and in the alt text comes from `FIG`; never type a figure by hand.
+7. **Stories:** `studio/pivot/stories.py`: one giant line, one colour field, at most one card (the new cover) or two answer pills.
+
+### 12b. NEVER the word "example" (Dharma, Oct 17)
+Never use **"example"**, **"e.g."**, **"for illustration"** or **"hypothetical"** anywhere on any page: on-screen text, captions,
+first comments, alt text, Stories, kickers or labels. State the maths directly. Where honesty needs a note that a scenario isn't
+real (Hourback AI runs, made-up statements), write **"Made up for this post."** Before you push, scan the queue:
+`grep -niE "example|e\.g\.|for illustration|hypothetical" schedule/posts.json` must return nothing for queued posts, and OCR every
+new image or Reel frame (`tesseract <img> - --psm 11`) for the same words.
