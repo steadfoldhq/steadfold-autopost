@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-17T04:32:01+00:00",
+ "collected_at": "2026-10-17T12:34:57+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 10,
-      "reach": 5,
+      "views": 34,
+      "reach": 29,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 3,
-      "ig_reels_avg_watch_time": 1945,
-      "ig_reels_video_view_total_time": 9725
+      "shares": 1,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 2046,
+      "ig_reels_video_view_total_time": 61404
      },
      "comments": []
     },
@@ -36,8 +36,8 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 1,
+      "views": 8,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2
@@ -70,13 +70,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 49,
-      "reach": 35,
+      "views": 92,
+      "reach": 74,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 4621,
-      "ig_reels_video_view_total_time": 175604
+      "ig_reels_avg_watch_time": 2903,
+      "ig_reels_video_view_total_time": 229356
      },
      "comments": []
     },
@@ -168,13 +168,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 100,
-      "reach": 84,
+      "views": 110,
+      "reach": 94,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2939,
-      "ig_reels_video_view_total_time": 249872
+      "ig_reels_avg_watch_time": 2792,
+      "ig_reels_video_view_total_time": 268037
      },
      "comments": []
     },
@@ -188,7 +188,7 @@
      "comments_count": 1,
      "insights": {
       "views": 6,
-      "reach": 2,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2
@@ -245,8 +245,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3331,
-      "ig_reels_video_view_total_time": 183235
+      "ig_reels_avg_watch_time": 3284,
+      "ig_reels_video_view_total_time": 183918
      },
      "comments": []
     },
@@ -256,14 +256,14 @@
      "permalink": "https://www.instagram.com/p/DehZk1DHPF7/",
      "at": "2026-10-15T16:35:10+0000",
      "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
       "views": 16,
       "reach": 5,
       "saved": 0,
       "shares": 3,
-      "total_interactions": 7
+      "total_interactions": 8
      },
      "comments": []
     },
@@ -293,8 +293,8 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 39,
-      "reach": 6,
+      "views": 41,
+      "reach": 7,
       "saved": 0,
       "shares": 4,
       "total_interactions": 8
@@ -310,8 +310,8 @@
      "likes": 4,
      "comments_count": 2,
      "insights": {
-      "views": 37,
-      "reach": 4,
+      "views": 39,
+      "reach": 5,
       "saved": 0,
       "shares": 3,
       "total_interactions": 9
@@ -336,13 +336,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 6,
+      "views": 16,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 4744,
-      "ig_reels_video_view_total_time": 33211
+      "ig_reels_avg_watch_time": 3510,
+      "ig_reels_video_view_total_time": 35108
      },
      "comments": []
     },
@@ -352,14 +352,14 @@
      "permalink": "https://www.instagram.com/p/Dekkunkkfcx/",
      "at": "2026-10-16T22:10:20+0000",
      "first_line": "Before you trust an AI answer, check it. Ask it to show its work.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1
+      "total_interactions": 2
      },
      "comments": []
     },
@@ -389,13 +389,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 14,
-      "reach": 5,
+      "views": 15,
+      "reach": 6,
       "saved": 1,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 10402,
-      "ig_reels_video_view_total_time": 72820
+      "ig_reels_avg_watch_time": 9209,
+      "ig_reels_video_view_total_time": 73679
      },
      "comments": []
     },
@@ -476,8 +476,27 @@
    "username": "littlefoldhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 6,
+   "media_count": 7,
    "posts": [
+    {
+     "media_id": "18134954647647572",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DemEoY9AKZ8/",
+     "at": "2026-10-17T12:08:37+0000",
+     "first_line": "Too little for books? Read to them anyway, even now.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "17927897172424488",
      "type": "REEL",
@@ -487,13 +506,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 8,
+      "views": 41,
+      "reach": 33,
       "saved": 0,
       "shares": 1,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 7335,
-      "ig_reels_video_view_total_time": 66016
+      "ig_reels_avg_watch_time": 3460,
+      "ig_reels_video_view_total_time": 114196
      },
      "comments": []
     },
@@ -507,7 +526,7 @@
      "comments_count": 1,
      "insights": {
       "views": 11,
-      "reach": 3,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2
@@ -524,7 +543,7 @@
      "comments_count": 1,
      "insights": {
       "views": 14,
-      "reach": 3,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2
@@ -540,13 +559,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 80,
-      "reach": 69,
+      "views": 100,
+      "reach": 87,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2811,
-      "ig_reels_video_view_total_time": 202402
+      "ig_reels_avg_watch_time": 2942,
+      "ig_reels_video_view_total_time": 261882
      },
      "comments": []
     },
