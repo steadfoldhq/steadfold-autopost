@@ -1,0 +1,73 @@
+# One-time: makes the age keypair that protects paid customer files in this
+# PUBLIC repo. The private key goes straight into the repo secret
+# ETSY_FILES_AGE_KEY (via GH_PAT) and is never printed or committed. Only the
+# public key is committed, as keys/etsy-files.pub, so files can be encrypted
+# locally and committed as .age ciphertext.
+# Runs once when this file is first pushed; does nothing if the key exists.
+name: Etsy files key
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/etsy-files-key.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etsy
+  cancel-in-progress: false
+
+jobs:
+  key:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Stop if the key already exists
+        id: exists
+        run: |
+          if [ -f keys/etsy-files.pub ]; then
+            echo "keys/etsy-files.pub already exists. Not making a new key (old files would become unreadable)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-python@v6
+        if: steps.exists.outputs.skip != 'true'
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install
+        if: steps.exists.outputs.skip != 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq age
+          pip install -r requirements.txt
+      - name: Make the keypair and save the private key as a secret
+        if: steps.exists.outputs.skip != 'true'
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          umask 077
+          KEY="$RUNNER_TEMP/etsy-files.key"
+          age-keygen -o "$KEY" 2>/dev/null
+          echo "::add-mask::$(grep '^AGE-SECRET-KEY-' "$KEY")"
+          python tools/etsy.py store-secret --name ETSY_FILES_AGE_KEY --from-file "$KEY"
+          mkdir -p keys
+          age-keygen -y "$KEY" > keys/etsy-files.pub
+          shred -u "$KEY" || rm -f "$KEY"
+          echo "Public key: $(cat keys/etsy-files.pub)"
+      - name: Commit the public key
+        if: steps.exists.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add keys/etsy-files.pub
+          git commit -m "etsy: add public key for encrypted customer files"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::Could not push keys/etsy-files.pub"
+          exit 1
