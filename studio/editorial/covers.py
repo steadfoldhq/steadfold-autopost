@@ -204,34 +204,45 @@ def story(brand, s, W=1080, H=1920):
     if k in ("newpost", "evening"):
         body += head(brand, f, s["text"], 360, 330, 140)
         tall = k == "evening"
-        w = 560 if tall else 640
+        w = 500 if tall else 560
         body += (f'<div style="position:absolute;left:50%;top:{740 if tall else 760}px;width:{w}px;margin-left:-{w // 2}px;transform:rotate(-4deg);'
                  f'background:#fff;padding:14px;box-shadow:0 30px 60px rgba(30,30,60,.22);z-index:2">'
                  f'<img src="{K.uri(REPO / "media" / s["img"])}" style="display:block;width:100%;{"height:" + str(int((w - 28) * 1.25)) + "px;object-fit:cover;object-position:50% 30%" if tall else ""}"></div>')
         body += K.obj("point", -60, 1180 if not tall else 1250, 400, -12, False, z=4)
         if s.get("a"):
-            body += answers(brand, f, s["a"], s["b"], 1470)
+            body += answers(brand, f, [s["a"], s["b"]], 1470)
         else:
-            body += K.save_line("tap our profile to see it", 330, 1470, 680, 62, -3, brand)
+            body += K.save_line("tap our profile to see it", 300, 1520, 700, 62, -3, brand)
         body += K.stamp(brand, W - 250, 1300 if tall else 1250, 190, 12)
     else:
         body += head(brand, f, s["text"], 420, 640, 190)
         if s.get("sub"):
             body += K.save_line(s["sub"], 120, 1100, 840, 70, -3, brand)
         if k == "question":
-            body += answers(brand, f, s["a"], s["b"], 1180)
+            opts = s.get("opts") or [s["a"], s["b"]]
+            body += answers(brand, f, opts, 1180 if len(opts) == 2 else 1110)
         o = s.get("obj", "point")
-        pos = {"point": (-60, 1330, 470, -14, False), "ok": (60, 1270, 360, 8, False), "piggy": (80, 1300, 420, -6, False)}[o]
+        pos = {"point": (-60, 1330, 470, -14, False), "ok": (60, 1270, 360, 8, False), "piggy": (80, 1300, 420, -6, False),
+               "phone": (90, 1260, 240, -10, False), "chat": (60, 1330, 340, -6, False)}[o]
+        _o = s.get("opts") or ([s["a"], s["b"]] if s.get("a") else [])
+        if len(_o) > 2 or sum(len(x) for x in _o) > 16:
+            pos = (-80, 1500, 380, -14, False) if o == "point" else (pos[0], 1470, int(pos[2] * .8), pos[3], pos[4])
         body += K.obj(o, *pos)
-        body += K.stamp(brand, W - 270, 1330, 200, 12)
+        stacked = len(_o) > 2 or sum(len(x) for x in _o) > 16
+        body += K.stamp(brand, W - 260, 1560 if stacked else 1330, 190, 12)
     return body
 
 
-def answers(brand, f, a, b, top):
-    pill = (lambda t, col: f'<div class="S" style="font-size:78px;color:{f["ink"]};background:{col};border:3px solid {f["ink"]};'
-            f'border-radius:999px;padding:20px 52px 26px;box-shadow:0 8px 0 {f["ink"]}">{t}</div>')
-    return (f'<div style="position:absolute;left:0;right:0;top:{top}px;display:flex;justify-content:center;gap:34px;z-index:3">'
-            f'{pill(a, f["p1"])}{pill(b, f["p2"])}</div>')
+def answers(brand, f, opts, top):
+    """Two answer pills side by side, or three stacked (poll-style)."""
+    cols = [f["p1"], f["p2"], "#FFFFFF"]
+    pill = (lambda t, col, w="auto": f'<div class="S" style="font-size:{78 if sum(len(o) for o in opts) <= 16 else 66}px;color:{f["ink"]};background:{col};'
+            f'border:3px solid {f["ink"]};border-radius:999px;padding:20px 52px 26px;box-shadow:0 8px 0 {f["ink"]};width:{w};white-space:nowrap">{t}</div>')
+    if len(opts) == 2 and sum(len(o) for o in opts) <= 16:
+        return (f'<div style="position:absolute;left:0;right:0;top:{top}px;display:flex;justify-content:center;gap:34px;z-index:3">'
+                f'{pill(opts[0], cols[0])}{pill(opts[1], cols[1])}</div>')
+    return (f'<div style="position:absolute;left:150px;right:150px;top:{top}px;display:flex;flex-direction:column;gap:30px;z-index:3">'
+            + "".join(pill(o, cols[i % 3], "100%") for i, o in enumerate(opts)) + '</div>')
 
 
 # ------------------------------------------------------------------------------------------------ render
