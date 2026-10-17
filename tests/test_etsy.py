@@ -28,7 +28,8 @@ RT_OLD, RT_NEW, AT = "111.refreshOLDtoken000", "111.refreshNEWtoken999", "111.ac
 PAT = "github_pat_SECRET_etsy_123"
 SPEC_IDS = ["DP-CALM-P", "DP-CALM-T", "FF-HMP", "FF-MPB", "FF-MSP", "DP-RIV",
             "LBM1", "LBP-SET", "LBP4", "LBP1", "LBP2", "LBP3"]          # the "all" batch: the 12 approved
-BATCHES = {"oct17-new": ["HB-SUB", "FF-SCOPE", "HB-CREATOR-LITE", "LF-FIRSTS-HOL"]}
+BATCHES = {"oct17-new": ["HB-SUB", "FF-SCOPE", "HB-CREATOR-LITE", "LF-FIRSTS-HOL"],
+           "oct17-new-2": ["HB-LIFEADMIN", "FF-FREEDOM", "SF-AIGOV"]}
 
 
 def real_spec(sid: str) -> dict:

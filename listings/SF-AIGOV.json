@@ -1,0 +1,64 @@
+{
+  "id": "SF-AIGOV",
+  "order": 32,
+  "shop": "STEADFOLD",
+  "batch": "oct17-new-2",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)",
+    "how": "Owner says 'list batch oct17-new-2' -> python3 tools/etsy.py approve --batch oct17-new-2 --said '<his exact words>' --at '<time ET>', then commit + push."
+  },
+  "title": "AI Product Governance Kit: AI Risk Register, AI PRD Template, Evaluation Plan, Vendor Questions and Launch Gate, Excel and Word",
+  "description": "Ship the AI feature with the paperwork already done. The AI Product Governance Kit takes one feature from \"should we?\" to a launch decision with its reasons, in a workbook and a Word template.\n\nWhat it does for you:\n• Intake: 10 yes or no questions set the risk tier and list what that tier needs\n• AI PRD: 13 sections with guidance, including the \"never\" rules a test can check\n• Risk Register: likelihood x impact, before and after mitigation, with owners and a check column\n• Heat Map: where your risks sit, before and after mitigation\n• Eval Plan: write the threshold first, then enter the result. Pass or fail is worked out\n• Vendor Questions: 34 questions on data, model, security, reliability, legal, cost and exit\n• Launch Gate: reads every tab and gives GO, GO WITH CONDITIONS or NO GO, with the reasons\n• Built around the four functions of the NIST AI Risk Management Framework: Govern, Map, Measure and Manage\n\nWhat's in the download:\n• The governance workbook: a Sample worked on a made-up grocer, and a Blank for your feature\n• The AI PRD template in Word, plus the full worked example\n• A 5-page guide: quick start, framework map, printable vendor questions and a one-page launch gate\n\nGood to know:\n• Works in Excel 2019 or newer, Microsoft 365 and Google Sheets; Word, Google Docs or Pages\n• Generic and fictional: no real company's material\n• A planning tool, not legal advice or a certification. Check the rules where you operate\n• Made with AI assistance, then built and checked by hand\n• Digital download, nothing ships\n\nFrom Steadfold.",
+  "price": {
+    "USD": 49.0,
+    "CAD": 68.0
+  },
+  "quantity": 999,
+  "tags": [
+    "ai governance",
+    "ai risk assessment",
+    "risk register",
+    "product manager",
+    "prd template",
+    "ai policy",
+    "ai compliance",
+    "project template",
+    "business template",
+    "excel template",
+    "word template",
+    "startup template",
+    "product launch"
+  ],
+  "materials": [
+    "Excel",
+    "Google Sheets",
+    "Word",
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Stationery > Design & Templates > Templates",
+      "Design & Templates > Templates",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/ai-governance/SF-AIGOV-01-ai-governance-kit.jpg",
+    "listings/media/ai-governance/SF-AIGOV-02-launch-gate.jpg",
+    "listings/media/ai-governance/SF-AIGOV-03-risk-register.jpg",
+    "listings/media/ai-governance/SF-AIGOV-04-eval-plan.jpg",
+    "listings/media/ai-governance/SF-AIGOV-05-ai-prd.jpg",
+    "listings/media/ai-governance/SF-AIGOV-06-vendor-questions.jpg",
+    "listings/media/ai-governance/SF-AIGOV-07-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "AI-Product-Governance-Kit-v1.0.zip",
+      "enc": "listings/files/ai-governance/AI-Product-Governance-Kit-v1.0.zip.age",
+      "sha256": "15da6298972f008acaa0c3f169c41efc50b421ca01366bba5b1a6ef9a4774371",
+      "size": 514445
+    }
+  ],
+  "source_note": "Copy, tags and CAD price verbatim from the v1.0 listing kit. US$49 launch; the US$79 regular price is a proposal the owner hasn't set."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "FF-FREEDOM",
+  "order": 31,
+  "shop": "STEADFOLD",
+  "batch": "oct17-new-2",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)",
+    "how": "Owner says 'list batch oct17-new-2' -> python3 tools/etsy.py approve --batch oct17-new-2 --said '<his exact words>' --at '<time ET>', then commit + push."
+  },
+  "title": "Freedom Number Workbook: FIRE Number Printable, Retirement Planner Worksheets, Financial Independence Calculator Pages, Letter and A4 PDF",
+  "description": "Find the number where work becomes optional, on paper, in about an hour. $40,000 a year ÷ 3.9% = $1,025,641.\n\nWhat it does for you:\n• Step by step: your spending, your rate, your number, where you are, how long, what to trim\n• Rate table: freedom numbers at 3%, 3.5%, 3.9% and 4% for $30,000 to $100,000 a year\n• How long: $1,051 a month at 8% a year reaches $1,000,000 in 25 years, with tables for 6% and 8%\n• Growth tables that work with any amount: what today's savings and every $100 a month grow to\n• Coast number: the amount that grows into your freedom number on its own\n• Trims: $100 a month less = $1,200 a year ÷ 3.9% = $30,769 less to save\n• Milestone ladder, a yearly check-in and your number on one page\n• The catch on every page: what each number assumes, in plain words\n\nWhat's in the download:\n• The 12-page workbook in US Letter and A4 (2 PDFs)\n• A 1-page Start Here guide with print settings and a 60-minute path\n\nGood to know:\n• Print at home on plain paper, or write on a tablet PDF app\n• Any currency: the maths is the same in dollars, pounds, euros or rupees\n• 3.9% is Morningstar's 2026 safe starting withdrawal rate for a 30-year retirement (30% to 50% in stocks)\n• Rates and growth are planning assumptions, not promises. Returns vary\n• Made with AI assistance, then written, calculated and checked by hand\n• Digital download, nothing ships\n\nFrom Fully Funded, a Steadfold studio.\nGeneral education only, not financial advice.",
+  "price": {
+    "USD": 12.0,
+    "CAD": 17.0
+  },
+  "quantity": 999,
+  "tags": [
+    "fire calculator",
+    "fire number",
+    "retirement planner",
+    "financial planner",
+    "money workbook",
+    "early retirement",
+    "savings goal",
+    "finance printable",
+    "financial goals",
+    "money planner",
+    "coast fire",
+    "budget planner",
+    "digital download"
+  ],
+  "materials": [
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/freedom-number/FF-FREEDOM-01-freedom-number-workbook.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-02-your-number.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-03-pick-your-rate.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-04-how-long.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-05-coast-number.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-06-trims.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-07-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "Freedom-Number-Workbook-v1.0.zip",
+      "enc": "listings/files/freedom-number/Freedom-Number-Workbook-v1.0.zip.age",
+      "sha256": "ff7327eec614a5eef877319c969524b61a07d1a813a87e7f67138b1cd5957f24",
+      "size": 387398
+    }
+  ],
+  "source_note": "Copy, tags and CAD price verbatim from the v1.0 listing kit. Calendar slot was Jan 7 2027; listing earlier is the owner's call when he approves the batch."
+}
