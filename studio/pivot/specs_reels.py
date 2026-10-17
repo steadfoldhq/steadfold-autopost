@@ -93,9 +93,9 @@ REELS = {
     # ------------------------------------------------------------------ Littlefold (did not match its best performers)
     "lf-reel-1019-sick-day-plan": dict(brand="littlefold", track="lf-x-tiny-parade", scenes=[
         dict(k="hook", f="cream", text="First cold coming? / *Plan now.*", emo="🤧"),
-        dict(k="say", f="pink", text="Under 2s get / up to *10 colds* a year.", size=118),
+        dict(k="say", f="pink", text="Under 2s get / up to *10 colds* / a year.", size=150),
         dict(k="say", f="butter", text="Who covers / *day 1?*"),
         dict(k="say", f="berry", text="Who covers / *day 2?*", drop=True),
-        dict(k="say", f="cream", text="Name one *backup.* / Ask them this week.", size=118),
+        dict(k="say", f="cream", text="Name one *backup.* / Ask them / this week.", size=150),
     ]),
 }

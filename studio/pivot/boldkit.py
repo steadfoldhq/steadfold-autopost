@@ -79,6 +79,7 @@ SAVES = {  # handwritten save-line on each Reel's hook / cover
     "hb-reel-1018-school-email": "save this for the next newsletter",
     "hb-reel-1019am-just-the-asks": "save this for your inbox",
     "hb-reel-1019-one-sorry": "save this before you hit send",
+    "lf-reel-1019-sick-day-plan": "save this before cold season",
 }
 HOOK_OBJ = {"fullyfunded": ["point", "ok", "piggy"], "hourback": ["point", "phone", "chat"]}
 
