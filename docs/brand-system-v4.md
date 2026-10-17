@@ -305,3 +305,93 @@ first comments, alt text, Stories, kickers or labels. State the maths directly. 
 real (Hourback AI runs, made-up statements), write **"Made up for this post."** Before you push, scan the queue:
 `grep -niE "example|e\.g\.|for illustration|hypothetical" schedule/posts.json` must return nothing for queued posts, and OCR every
 new image or Reel frame (`tesseract <img> - --psm 11`) for the same words.
+
+---
+
+## 13. Teach, then point somewhere (Dharma, Oct 17, 7:07–7:37 pm). Every post from Oct 18 on
+**The look does not change.** Everything in §12 (serif + pills + halftone object + handwritten line + stamp, soft paper fields) stays
+exactly as it is. §13 changes what the content *does*: it teaches WHY, promises an outcome, asks for ONE clear action, and keeps the
+viewer moving to the next Story, the post and tomorrow's part. Every agent applies all of §13 to every feed post, Reel and Story.
+
+**What §13 replaces:** §12's "Feed: 1-3 slides" and "Captions: 3 lines", the 12–15 s Reel cap (§7, §12), the fixed cadence in §3 (now 13.6),
+and the 6% rate allowed in the older standard (now 8–10%, 13.7).
+
+### 13.1 Content mix (rotate per page, per week)
+Each feed post and each Reel is ONE of these five formats. Count them per page per Mon–Sun week.
+
+| Format | Share | Shape |
+|---|---|---|
+| **Keep** | ~20% | One thing worth saving: a sticky-note list, a formula, a script. 1–3 slides or an 18–22 s Reel. |
+| **Suggestion** | ~20% | One small move to try, with its "because". 1–3 slides or an 18–22 s Reel. |
+| **Tip** | ~20% | Tactic → why → 3-step how. 3–5 slides or a 20–26 s Reel. |
+| **Learning** | ~25% | 5–7 slides: outcome hook → the move → WHY (mechanism + an analogy or mini visual) → numbers or evidence → HOW in 3 steps → the catch / who qualifies → "Do this:" + save-line. |
+| **Deep dive** | ~15% | 7–10 slides, or a 25–40 s Reel: before → turning point → after, then "Do this:". |
+
+- **Outcome hooks:** at least half of all covers sell "what happens if I follow this", in 3–7 words, readable at 200 px wide
+  ("Cut your card rate in one call", "Fall asleep before your list does"). Not a topic label.
+- **Limits:** at most 25 words on any slide or Reel beat. Reels run 18–30 s (Deep dive Reels 25–40 s).
+- **Reel beat order:** hook (frame 0) → the move → "because…" → payoff landing on the track's `drop_s` → "Do this:" → save-line → loop to the hook.
+  The 0.4 s/word + 0.6 s reading rule still holds on every beat.
+- **Captions:** under ~120 words, in this order: the outcome line; "Why it works:" (1–2 lines); "Do this:" (the same action as the slide);
+  the catch. Then the hashtags. **Sources go in the first comment**, never in the caption.
+
+### 13.2 Teach the WHY (by page)
+Every Tip, Learning and Deep dive post has a WHY slide or beat. What counts as a WHY differs by page:
+- **Fully Funded: the mechanism.** How the money actually moves (compounding, interest on a balance, a lender's cost of losing you), with
+  an analogy or a mini visual. Every figure computed in `studio/pivot/ff_math.py` (see 13.8).
+- **Locked Hour: verified research only.** Name the study in the first comment (authors, year, journal). Before it ships, check it with
+  WebSearch against the paper or the publisher's page. Anything that can't be verified is cut, not softened.
+- **Hourback: why the AI technique works** (the model answers from what you paste; asking for quotes ties each claim to a line you can check;
+  removing names keeps private data out of the prompt). Never claim an accuracy rate or minutes saved.
+- **Littlefold: official guidance only:** NHS, CPS (caringforkids.cps.ca), AAP (healthychildren.org), Health Canada / PHAC. The source line sits small on
+  the tile and in full in the first comment. No medical advice beyond what the source says.
+
+### 13.3 ONE clear action ("Do this:")
+Some recent posts didn't say what we wanted people to do. From now on:
+- Every feed post and every Reel states **ONE** action, in plain words, on a "Do this:" line that has its own slide or its own beat.
+- Make it specific: **what, where, how much, when.** "Do this: call the number on the back of your card tonight and ask, 'Can you lower my rate?'"
+  Never "be mindful of your spending".
+- The caption repeats it word for word after "Do this:".
+- **Ship test:** "after viewing, would a stranger know exactly what to do next?" If not, rewrite it.
+
+### 13.4 Story chains (every page, every day)
+A page's Stories for the day are ONE 3–5 frame mini-journey, never unrelated cards:
+1. **Hook:** a quote or a moment on a **real photo** (people-free scenery from the licensed clip library, logged in `studio/editorial/IMAGE-USE.md`),
+   in handwriting (Caveat) with one highlighted word, plus the small page labels. Same structure as the owner's references
+   (quote on a photo → text bubbles that build → payoff → arrow).
+2. **Teaching:** text bubbles that build the story or the WHY, one idea per frame, in the editorial look (serif, pills, stamp).
+3. **Payoff:** the number, the result or the exact words to say.
+4. **Hand-off:** "Full breakdown in today's post 👆" with the post's cover, or "Part 2 tomorrow".
+- Frames read as interactive even though the API has no stickers: "Tap →", "Screenshot this", "Next Story →", an arrow on every frame but the last.
+- **Cap:** 5 Stories per page per Toronto day (autopost ceiling). Chains are 4 frames by default and 5 only on a 2-feed-post day.
+
+### 13.5 The loop (keep viewers moving)
+- At least **2 multi-day series per page** at any time, labelled on the cover and on the Story frame ("Money moves, Day 1/5").
+- Every Reel and post points to the next thing: "Part 2 tomorrow", "next Story →", "the script is on slide 6", "full breakdown in today's post".
+- A series day that misses its slot is never skipped silently: the next day's cover keeps the numbering honest.
+
+### 13.6 Dynamic cadence (re-decided every morning)
+`python3 tools/cadence.py` reads `insights/latest.json` (and `insights/history.jsonl` for the trend) and prints each page's counts for the day.
+The daily agents run it every morning **after** the Performance desk's "Today's orders" in `claude/metrics.md` (Learning Lab project), apply
+the counts to that day's queue, and say what changed in one line.
+- Window: the page's posts from the last 7 days that are at least 12 h old. Score = median reach per post, then median views as the tie-break,
+  by format (Reel / carousel / single) and, for Reels, by slot (am before 11:00 ET, eve from 17:00 ET).
+- **Winners get more slots, within the ceilings:** 2 feed, 2 Reels, 5 Stories per page per Toronto day (tested in `tests/test_autopost.py`).
+- **Weak formats or slots get fewer:** Reels drop to 1 when a page's Reel median falls under its carousel median (n ≥ 2); a Reel slot whose median
+  is under half of the other slot's (n ≥ 3 each) moves next to the stronger slot; the 2nd feed post runs only while singles hold ≥ 0.8× the
+  carousel median.
+- **Floor:** every page keeps at least 1 post a day (a teaching feed post), whatever the numbers say.
+- Thin data (n < 2 in a format) or a tie keeps yesterday's count. Today's orders from the Performance desk override the script when they disagree,
+  and the reason is written into the day's report.
+
+### 13.7 Money maths (Fully Funded)
+- Growth is **8–10% a year**, never 6%. **10% is the maximum headline rate** (the S&P 500's long-run average before inflation).
+- The viewer is in their **late 20s to mid-30s**, so horizons run to **age 55–65**: start at 28 and stop at 60; start at 33 and stop at 65.
+  No from-birth or age-18 horizons as the headline.
+- **Every figure is computed in code** (`studio/pivot/ff_math.py`, `FIG`), compounded monthly, and the spec reads it from there.
+- **Never write "example"** (12b). State the maths directly.
+- **"Not guaranteed. Returns vary."** goes in the caption only, never on a slide or a Reel beat.
+
+### 13.8 Fact check before shipping
+Every claim and number is checked against its source the day it's built. Anything that can't be verified is cut, and the cut is listed in the
+build report. Sources live in the first comment.
