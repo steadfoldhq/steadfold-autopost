@@ -1,0 +1,77 @@
+{
+  "id": "FF-CF-CA",
+  "order": 30,
+  "shop": "STEADFOLD",
+  "batch": "cf-etsy",
+  "status": "WAITING",
+  "approval": {
+    "review_queue": "RQ-46 (say 'list batch cf-etsy')",
+    "how": "Owner says 'list batch cf-etsy' -> python3 tools/etsy.py approve --batch cf-etsy --said '<his exact words>' --at '<time ET>', then commit + push. Same product and copy he approved and listed himself on Gumroad Oct 15 (live at CA$14); new here: the one-glance photo 1 and the Etsy AI-help line."
+  },
+  "title": "Canadian Freelancer Spreadsheet, Self Employed Tax and Budget Tracker, GST HST, CRA T2125, Excel and Google Sheets",
+  "description": "Know what's safe to spend after income tax, GST/HST and your expenses, and stop guessing at tax time. Made for Canadian freelancers and sole proprietors. Pay once, no bank login, built around CRA lines.\n\nWhat it does for you:\n• Safe-to-Spend: what's truly yours right now\n• Money Health Score out of 100, with the one thing to fix first\n• Do-this-now list: overdue invoices, tax to move, missing receipts, next instalment date\n• Bank Import: paste your bank's CSV download and it finds the columns, reads any date or currency format, skips transfers and anything already logged and sorts expenses into your categories\n• Ask AI: plain-English insights written by formulas, plus 6 ready-to-copy prompts built from your own totals (never client names) for the AI chat app you already use\n• Tax Calendar: your CRA instalment, balance-due and filing dates for Google Calendar or Outlook\n• T2125 summary by suggested line for your preparer, and GST/HST, PST and QST by quarter for every province and territory\n• A monthly money ritual with progress (\"8 of 10 months fully sorted\"), so the file doesn't die in March\n• Dashboard, compare any 3 periods, 5 years side by side, accounts and net worth, and a mileage log\n\nWhat's in the download:\n• 8 spreadsheets: Blank and Sample files in 4 themes (Lavender, Sage, Blush, Dark)\n• A 2-page quick-start PDF, including how to connect your bank download, AI and calendar\n• Free updates: the Move My Data tab brings your entries into new versions in about 2 minutes\n\nGood to know:\n• Works in Microsoft 365, Google Sheets and Excel 2019 or newer\n• Rates and dates checked on canada.ca in October 2026 and cited inside the file\n• The file itself doesn't use AI; the prompts work with the AI tools you already have\n• Made by Steadfold with AI help: the formulas and pages were built with Claude, then tested with 580 automated checks before release (version 7.3)\n• Digital download, nothing ships. For your own business; please don't resell or share the files\n• Launch price until Mon Nov 30, then CA$22\n\nAn educational planning tool, not tax or legal advice. Confirm your situation with the CRA or a qualified accountant.\n\nFrom Fully Funded, a Steadfold studio.\nGeneral education only, not financial advice.",
+  "price": {
+    "CAD": 14.0,
+    "USD": 10.0
+  },
+  "currency_overrides": {
+    "USD": {
+      "replace": [
+        [
+          "• Launch price until Mon Nov 30, then CA$22",
+          "• Launch price until Mon Nov 30, then US$16"
+        ]
+      ]
+    }
+  },
+  "quantity": 999,
+  "tags": [
+    "canadian freelancer",
+    "self employed canada",
+    "gst hst tracker",
+    "t2125",
+    "cra tax tracker",
+    "freelancer budget",
+    "bookkeeping sheet",
+    "tax set aside",
+    "sole proprietor",
+    "google sheets budget",
+    "excel budget",
+    "income tracker",
+    "small business tax"
+  ],
+  "materials": [
+    "Excel",
+    "Google Sheets",
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Stationery > Design & Templates > Templates",
+      "Design & Templates > Templates",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/canadian-freelancer/01-ONEGLANCE.png",
+    "listings/media/canadian-freelancer/02-safe-to-spend.jpg",
+    "listings/media/canadian-freelancer/03-money-pulse-clean.jpg",
+    "listings/media/canadian-freelancer/04-works-with-your-ai.jpg",
+    "listings/media/canadian-freelancer/05-bank-import.jpg",
+    "listings/media/canadian-freelancer/06-canadian-taxes.jpg",
+    "listings/media/canadian-freelancer/07-health-score.jpg",
+    "listings/media/canadian-freelancer/08-compare-years.jpg",
+    "listings/media/canadian-freelancer/09-themes.jpg",
+    "listings/media/canadian-freelancer/10-pay-once.jpg"
+  ],
+  "video": "listings/media/canadian-freelancer/listing-video.mp4",
+  "files": [
+    {
+      "name": "Canadian-Freelancer-Money-System-v7.3.zip",
+      "enc": "listings/files/canadian-freelancer/Canadian-Freelancer-Money-System-v7.3.zip.age",
+      "sha256": "e9dbc399753d2bbf9385fc48ad63faa39d1887a4c7111fb5818952f22ad45490",
+      "size": 2417694
+    }
+  ],
+  "source_note": "Copy = the Oct 15 Gumroad launch pack (claude/launch/2026-10-15-canadian-freelancer-gumroad.md) plus an AI-help line (standard E12), a no-resale line and the after-launch price. Launch pack: claude/launch/2026-10-17-canadian-freelancer-etsy.md. CA$14 matches Gumroad; US$10 only if SteadfoldHQ runs in USD (Oct 15 pack's US fallback). Dec 1: raise to CA$22 / US$16 and delete the launch line."
+}
