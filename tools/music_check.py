@@ -60,12 +60,16 @@ def tempo(x, sr):
     fps = sr / hop
     lags = np.arange(len(ac))
     ok = (lags >= fps * 60 / 150) & (lags <= fps * 60 / 70)
+    if not ok.any():  # clip shorter than one slow beat (short SFX): no tempo
+        return 0.0
     lag = lags[ok][np.argmax(ac[ok])]
     return 60 * fps / lag
 
 
 def key_est(x, sr):
     n = 8192
+    if len(x) < n:  # very short SFX
+        x = np.pad(x, (0, n - len(x)))
     frames = np.lib.stride_tricks.sliding_window_view(x, n)[::n // 2]
     mag = np.abs(np.fft.rfft(frames * np.hanning(n), axis=1)).mean(0)
     f = np.fft.rfftfreq(n, 1 / sr)
