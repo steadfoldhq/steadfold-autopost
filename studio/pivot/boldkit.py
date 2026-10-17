@@ -87,6 +87,14 @@ SAVES = {  # handwritten save-line on each Reel's hook / cover
     "lf-reel-1018-breathe": "it's ok to put baby down safely",
     "lh-reel-1018-mute-the-world": "save this for tomorrow morning",
     "lf-reel-1019am-hunger-cues": "save this for the first feeds",
+    "lh-reel-1019am-pick-task": "save this for tomorrow morning",
+    "lh-reel-1019-odd-hours": "send this to a friend on nights",
+    "lh-reel-1020am-nap-time": "save this for the next nap",
+    "lh-reel-1020-shutdown": "save this for tonight",
+    "lf-reel-1020am-movements": "send this to someone expecting",
+    "lf-reel-1020-visitors": "send this to the group chat",
+    "hb-reel-1021am-brand-email": "save this before you reply to a brand",
+    "hb-reel-1021-group-costume": "send this to the group chat",
 }
 HOOK_OBJ = {"fullyfunded": ["point", "ok", "piggy"], "hourback": ["point", "phone", "chat"]}
 

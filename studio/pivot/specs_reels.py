@@ -150,3 +150,58 @@ REELS.update({
         dict(k="say", f="berry", text="Missed them? / *Every parent does.*"),
     ]),
 })
+
+# ------------------------------------------------------------------ queue sweep Oct 17 pm: Reels Oct 19-21 still in the old flat style
+REELS.update({
+    "lh-reel-1019am-pick-task": dict(brand="lockedhour", track="lh-x-tick-boom", scenes=[
+        dict(k="hook", f="dots", text="Pick the task / *before the timer.*", emo="⏳"),
+        dict(k="say", f="cream", text="Write *one task.* / One line."),
+        dict(k="say", f="pink", text="Too big? / *Shrink it.*", drop=True),
+        dict(k="say", f="dots", text="Then start / *a 60-minute timer.*"),
+    ]),
+    "lh-reel-1019-odd-hours": dict(brand="lockedhour", track="lh-x-lock-in", scenes=[
+        dict(k="hook", f="pink", text="Your morning / *might be 4 pm.*", emo="⏰"),
+        dict(k="say", f="cream", text="Check this week's / *real wake-up times.*"),
+        dict(k="say", f="dots", text="Pick the *first quiet / hour* after you wake.", drop=True),
+        dict(k="say", f="pink", text="Waking up / *is the cue.*"),
+    ]),
+    "lh-reel-1020am-nap-time": dict(brand="lockedhour", track="lh-x-phone-down", scenes=[
+        dict(k="hook", f="cream", text="Nap-time hour? / *Start with 20.*", emo="⏳"),
+        dict(k="say", f="pink", text="Pick a *20-minute* task / before the nap."),
+        dict(k="list", f="dots", items=["One *email*", "One *page*", "One *form*"], drop=True),
+        dict(k="say", f="pink", text="Baby stirs at 19? / *You showed up.*"),
+    ]),
+    "lh-reel-1020-shutdown": dict(brand="lockedhour", track="lh-x-lock-in", scenes=[
+        dict(k="hook", f="dots", text="Close the laptop / on a *written plan.*", emo="⏰"),
+        dict(k="say", f="cream", text="Write *3 lines* / on paper."),
+        dict(k="list", f="pink", items=["*1* First task", "*2* Start time", "*3* Where you stopped"], drop=True),
+        dict(k="say", f="dots", text="Tonight's / *yours.*"),
+    ]),
+    "lf-reel-1020am-movements": dict(brand="littlefold", track="lf-x-giggle-pop", scenes=[
+        dict(k="hook", f="pink", text="Movements / *changed?* / Call *now.*", emo="🧺"),
+        dict(k="say", f="cream", text="Don't wait / *until tomorrow.*", drop=True),
+        dict(k="list", f="butter", items=["Moving *less*", "Not moving", "Pattern *changed*"]),
+        dict(k="say", f="berry", text="Call your *midwife* / or maternity unit."),
+        dict(k="say", f="pink", text="Even at / *3 am.*"),
+    ]),
+    "lf-reel-1020-visitors": dict(brand="littlefold", track="lf-x-sunny-bounce", scenes=[
+        dict(k="hook", f="cream", text="Visiting a / new baby? / *Come well.*", emo="🫶"),
+        dict(k="say", f="pink", text="Got a cold? / *Send love by text.*"),
+        dict(k="say", f="butter", text="*Wash your hands* / when you arrive.", drop=True),
+        dict(k="say", f="berry", text="Keep it / *smoke-free.*"),
+    ]),
+    "hb-reel-1021am-brand-email": dict(brand="hourback", track="hb-x-smart-bounce", scenes=[
+        dict(k="hook", f="indi", text="$2,000 for / *one Reel?*", emo="📧"),
+        dict(k="say", f="yel", text="“Reply within / *24 hours.*”"),
+        dict(k="ai", f="plum", text="Is this brand / email legit?"),
+        dict(k="say", f="indi", text="“No, this looks / *like a scam.*”", drop=True),
+        dict(k="list", f="yel", items=["Asks for your *login*", "A *$49* fee", "A *24-hour* rush"], size=104),
+    ]),
+    "hb-reel-1021-group-costume": dict(brand="hourback", track="hb-x-ta-da-funk", scenes=[
+        dict(k="hook", f="indi", text="6 friends. / *1 costume.*", emo="💬"),
+        dict(k="say", f="plum", text="*63 messages.* / No plan."),
+        dict(k="ai", f="yel", text="3 themes from / what we own."),
+        dict(k="list", f="indi", items=["Priya · *rain*", "Theo · *cloud*", "Mila · *sun*", "Kai · *lightning*"], size=104, drop=True),
+        dict(k="say", f="plum", text="Jonah still / *wants pirates.*"),
+    ]),
+})

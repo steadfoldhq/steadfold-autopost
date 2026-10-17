@@ -1374,9 +1374,9 @@
       "id": "hb-1021-ai-said-what-bill",
       "account": "hourback",
       "publish_at": "2026-10-21T13:00:00-04:00",
-      "caption": "AI said what? We asked it to split a $96 dinner for 4. Ana didn't drink.\n\nFood for all 4, drinks only for the 3 who drank. It answered: Ana $18, everyone else $26. We checked: 18 + 26 + 26 + 26 = 96. It passed this time.\n\nThe line that keeps it honest: \"Show the math and check that it adds up.\" Then check it yourself.\n\nFull prompt below:\nDinner for [number] came to [total], and [drinks] of that was drinks. [Name] didn't drink. Split it fairly: food equally between everyone, drinks only between the people who drank. Show the math and check that it adds up to [total].\n\nMade up for this post. The reply is from a real AI run. Any currency, same math.\n\nTip: first names are enough.\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
+      "caption": "AI said what? We asked it to split a $96 dinner for 4. Ana didn't drink. It answered: Ana $18, everyone else $26, and 18 + 26 + 26 + 26 = 96.\nThe line that keeps it honest: \"Show the math and check that it adds up.\" Then check it yourself.\nMade up for this post; the reply is from a real AI run. Any currency, same math.\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
       "first_comment": "Fair split, or everyone pays the same? Pick one.",
-      "alt_text": "Hourback 3-slide carousel, giant bold type on one solid colour. Slide 1: $96 dinner. Ana didn't drink. Slide 2: Ana: $18. The rest: $26. Slide 3: Add: “Show the math.” (18 + 26 + 26 + 26 = 96. Made up; real AI reply.)",
+      "alt_text": "Hourback 3-slide carousel. Slide 1: '“$96 dinner. Ana didn't drink.”' in a large serif with highlighted words over a wall of tiny photos, a black-and-white halftone pointing hand, and the handwritten note 'AI split it. we checked the math.'. Slide 2: Ana: $18. The rest: $26. (food split 4 ways. drinks split 3.). Slide 3: Add: “Show the math.” (18 + 26 + 26 + 26 = 96. made up for this post.).",
       "images": [
         "hb-1021-ai-said-what-bill/01.jpg",
         "hb-1021-ai-said-what-bill/02.jpg",
@@ -1403,9 +1403,9 @@
       "id": "hb-1021-single-subscriptions",
       "account": "hourback",
       "publish_at": "2026-10-21T17:45:00-04:00",
-      "caption": "5 subscriptions hiding in one card statement.\n\nWe gave AI a statement (made up for this post) and asked which charges look like subscriptions. It found streaming, cloud storage, a fitness app, the phone plan and a news subscription: $78.47 a month in this made-up list. It quoted each line, and we added them up: 12.99 + 2.99 + 9.99 + 45.00 + 7.50 = 78.47. It also flagged 2 lines for a second look, including an \"annual->monthly\" charge.\n\nFull prompt below:\nHere's last month's card statement. Which charges look like subscriptions or repeat charges? List them with the amount and quote the line each comes from. Then give the monthly total of those.\n\nStatement made up for this post. The reply is from a real AI run.\n\nTip: delete card numbers, names and addresses before you paste. The date, merchant and amount columns are enough.\n\n#subscriptions #lifeadmin #aitips #budgeting #moneytips",
+      "caption": "5 subscriptions hiding in one card statement: $78.47 a month. AI quoted each line, and we added them up: 12.99 + 2.99 + 9.99 + 45.00 + 7.50 = 78.47.\nPrompt: \"Which charges look like subscriptions? List them with the amount, quote each line, then give the monthly total.\"\nStatement made up for this post; the reply is from a real AI run. Remove card numbers before you paste.\n\n#subscriptions #lifeadmin #aitips #budgeting #moneytips",
       "first_comment": "Which subscription do you always forget you have?",
-      "alt_text": "Hourback single image, giant bold type on one solid colour. 5 subscriptions. One statement. ($78.47 a month, on a made-up statement.)",
+      "alt_text": "Hourback single image. '5 subscriptions, one statement' in a large serif with highlighted words above a yellow sticky note listing: Streaming 12.99, Cloud 2.99, Fitness 9.99, Phone 45.00, News 7.50, a black-and-white halftone pointing hand, and the handwritten note '78.47 a month. made up for this post.'.",
       "images": [
         "hb-1021-single-subscriptions/01.jpg"
       ]

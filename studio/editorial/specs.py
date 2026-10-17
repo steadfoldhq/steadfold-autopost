@@ -249,3 +249,23 @@ STORIES.update({
     "lh-st-1020-1540-tip": dict(brand=LH, k="tip", f="dots", text="A *20-minute* / task on a / sticky note.", sub="ready for the next gap in your day.", obj="hourglass"),
     "lh-st-1020-2110-evening": dict(brand=LH, k="evening", f="pink", text="Wrote tomorrow's / *first task?*", img="reels/lh-reel-1020-shutdown-cover.jpg", a="Yes", b="Not yet"),
 })
+
+# Queue sweep Oct 17 pm: Hourback Oct 21 posts + Stories were still in the old bold-sans look.
+POSTS.update({
+    "hb-1021-ai-said-what-bill": dict(brand=HB, cover=dict(
+        lay="mosaic", f="indi", text="“$96 dinner. / Ana didn't / drink.”", obj="point", at="bl",
+        save="AI split it. we checked the math."), slides=[
+        dict(f="yel", text="Ana: *$18.* / The rest: *$26.*", sub="food split 4 ways. drinks split 3."),
+        dict(f="plum", text="Add: *“Show / the math.”*", sub="18 + 26 + 26 + 26 = 96. made up for this post."),
+    ]),
+    "hb-1021-single-subscriptions": dict(brand=HB, cover=dict(
+        lay="sticky", f="yel", text="*5 subscriptions,* / one statement", obj="point", at="bl",
+        items=["Streaming 12.99", "Cloud 2.99", "Fitness 9.99", "Phone 45.00", "News 7.50"],
+        save="78.47 a month. made up for this post.")),
+})
+STORIES.update({
+    "hb-st-1021-1": dict(brand=HB, k="question", f="indi", text="Ever had a / *too-good* / brand email?", opts=["Yes, a scam", "Yes, it was real", "Not yet"], obj="phone"),
+    "hb-st-1021-2": dict(brand=HB, k="newpost", f="yel", text="New post: / *$96 dinner.*", img="hb-1021-ai-said-what-bill/01.jpg"),
+    "hb-st-1021-3": dict(brand=HB, k="tip", f="plum", text="We did / *the math too.*", sub="statement made up for this post. 78.47 matched ours.", obj="ok"),
+    "hb-st-1021-4": dict(brand=HB, k="question", f="yel", text="Weather costume: / *who are you?*", opts=["Sun or rain", "Fog or lightning"], obj="point"),
+})
