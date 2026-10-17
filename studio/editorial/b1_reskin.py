@@ -28,7 +28,8 @@ THEME = K.FONTS + f"""
 :root{{--bg:{F['indi']['bg']};--hl:{F['indi']['p1']};--hl-dark:{F['indi']['p1']};--prog-bg:transparent;--prog-fg:transparent;--strike:{ACC}}}
 .cam{{transform:none!important}}
 .pat{{background:url('{K.uri(K.GRAIN)}') 0 0/420px 420px;mix-blend-mode:multiply;opacity:.55}}
-.H{{{K.SERIF['hourback']};color:{INK}}}
+.H{{{K.SERIF['hourback']};color:{INK};line-height:1.1!important;padding-top:.06em}}  /* this engine's entrances clip to the line box */
+.B b{{color:{ACC}!important}}
 .dark .H{{color:{INK}}}
 .B{{font-family:'DM Serif Display';font-size:58px;line-height:1.15;letter-spacing:-.02em;color:{INK}}}.dark .B{{color:{INK}}}
 .fine{{font:500 36px/1.3 Fraunces;color:{INK};opacity:.75}}.dark .fine{{color:{INK}}}
