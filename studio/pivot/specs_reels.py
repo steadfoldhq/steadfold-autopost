@@ -115,7 +115,7 @@ REELS.update({
         dict(k="hook", f="dots", text="How many / tabs are / *open?*", emo="🔍"),
         dict(k="say", f="cream", text="Close every tab / *but one.*"),
         dict(k="say", f="pink", text="Need it later? / *Jot it down.*"),
-        dict(k="say", f="dots", text="One tab. One task. / *One hour.*", drop=True),
+        dict(k="say", f="dots", text="One tab. / One task. / *One hour.*", drop=True),
         dict(k="say", f="cream", text="Try it / *next hour.*"),
     ]),
     "lf-reel-1018am-3am-windows": dict(brand="littlefold", track="lf-x-sunny-bounce", scenes=[

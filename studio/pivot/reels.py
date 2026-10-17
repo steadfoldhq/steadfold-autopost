@@ -32,6 +32,7 @@ TRANS = {
     "lockedhour": ["whipU", "stripes", "glitch", "zoom", "slam", "whipL", "iris"],
     "littlefold": ["blob", "whipL", "iris", "slam", "zoom", "whipU", "push"],
 }
+CW = {"lockedhour": 0.42}  # Instrument Serif is condensed: ~0.42 em per character, so LH beats can run bigger
 CHIP = {"fullyfunded": ("#FFFFFF", None), "hourback": ("#FFF8EF", "#2A2238"), "lockedhour": ("#141414", "#FFE27A"),
         "littlefold": ("#FFFFFF", None)}
 
@@ -47,7 +48,7 @@ def col(inner, top=330, height=1080, gap=44):
               style=f"height:{height}px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:{gap}px")
 
 
-def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra=""):
+def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra="", cw=0.5):
     """Kinetic words (one at a time) or static text. *a b* = one highlighter pill behind the run, ' / ' = line break."""
     out, run, on, k = [], [], False, 0
     for tok in text.split(" "):
@@ -68,7 +69,7 @@ def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra=""):
     # pills never wrap, so cap the size by the longest authored line (serif ~0.5 em per character) to stay inside x 80-1000
     longest = max(len(ln.replace("*", "").strip()) for ln in text.split(" / "))
     if anim:  # static hooks are fitted by the kit's autofit (boldkit.hook_scene)
-        size = min(size, int(900 / (0.5 * max(longest, 1))))
+        size = min(size, int(900 / (cw * max(longest, 1))))
     return f'<div class="T" {attrs} style="font-size:{size}px;{extra}">{" ".join(out)}</div>'
 
 
@@ -83,7 +84,7 @@ def hook_html(brand, text, emo=None, size=None, field=None, save=None):
 
 def say_html(brand, text, emo=None, size=None, t=0.0):
     size = size or SAY_PX[brand]
-    return col(wtxt(text, size, t=t) + (sticker(emo, 180, 0.3, "wobble", brand) if emo else ""))
+    return col(wtxt(text, size, t=t, cw=CW.get(brand, 0.5)) + (sticker(emo, 180, 0.3, "wobble", brand) if emo else ""))
 
 
 def ai_html(brand, text, size=None):
