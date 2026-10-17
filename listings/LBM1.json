@@ -1,0 +1,78 @@
+{
+  "id": "LBM1",
+  "order": 7,
+  "shop": "LITTLEFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-24-launch-oct16.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+    "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+  },
+  "content_rules": [
+    "littlefold-no-health-words"
+  ],
+  "title": "Printable Baby Milestone Cards, 16 Pastel Monthly Cards, Newborn to One Year, First Christmas Card, 5x7 Digital Download",
+  "description": "16 calm, pastel milestone cards for photos from day one to the first birthday.\n\nWhat you get:\n- hello little one, 1 to 11 months, one whole year, first Christmas, first smile, first steps\n- 3 PDFs: single 5x7 in pages, 2 per US Letter page, 2 per A4 page (with cut lines)\n- 16 high-resolution 5x7 JPGs (300 dpi)\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
+  "price": {
+    "CAD": 9.99
+  },
+  "quantity": 999,
+  "tags": [
+    "milestone cards",
+    "baby milestone",
+    "monthly baby cards",
+    "printable cards",
+    "pastel nursery",
+    "first christmas",
+    "newborn photo prop",
+    "baby shower gift",
+    "baby keepsake",
+    "month by month",
+    "neutral baby",
+    "digital download",
+    "5x7 printable"
+  ],
+  "taxonomy": {
+    "names": [
+      "Baby Milestone Cards",
+      "Milestone Cards",
+      "Art & Collectibles > Prints > Digital Prints"
+    ]
+  },
+  "photos": [
+    "listings/media/littlefold-drop01/LBM1-01-ONEGLANCE.jpg",
+    "listings/media/littlefold-drop01/mockups/milestone-cards_flatlay.png",
+    "listings/media/littlefold-drop01/cards/card-01-hello-little-one_5x7in.jpg",
+    "listings/media/littlefold-drop01/cards/card-02-1-month_5x7in.jpg",
+    "listings/media/littlefold-drop01/cards/card-14-first-Christmas_5x7in.jpg",
+    "listings/media/littlefold-drop01/cards/card-13-one-whole-year_5x7in.jpg"
+  ],
+  "files": [
+    {
+      "name": "Littlefold-Milestone-Cards-5x7.pdf",
+      "enc": "listings/files/littlefold-drop01/Littlefold-Milestone-Cards-5x7.pdf.age",
+      "sha256": "fd51a6d1513715057bc278eca7ce4e4005de45dbee5d00774ac33ab3153f92af",
+      "size": 3689588
+    },
+    {
+      "name": "Littlefold-Milestone-Cards-Letter-2up.pdf",
+      "enc": "listings/files/littlefold-drop01/Littlefold-Milestone-Cards-Letter-2up.pdf.age",
+      "sha256": "b6c809168c2d2442649e4c679d04d5ed7520036f00cb8ef956df1fa0603aa7c0",
+      "size": 3809702
+    },
+    {
+      "name": "Littlefold-Milestone-Cards-A4-2up.pdf",
+      "enc": "listings/files/littlefold-drop01/Littlefold-Milestone-Cards-A4-2up.pdf.age",
+      "sha256": "863677693b61a5d1a601f54f1dfa644dc7d38a7a2b9b3e5faed60ab051cc9bfe",
+      "size": 3866967
+    },
+    {
+      "name": "Littlefold-Milestone-Cards-JPGs.zip",
+      "enc": "listings/files/littlefold-drop01/Littlefold-Milestone-Cards-JPGs.zip.age",
+      "sha256": "d7d9ab213711f94107ed6614b32d72f51904f552ad0c0b224b077556e2b3d073",
+      "size": 2100211
+    }
+  ],
+  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files."
+}

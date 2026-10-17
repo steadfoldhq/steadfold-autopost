@@ -1,0 +1,88 @@
+{
+  "id": "DP-RIV",
+  "order": 6,
+  "shop": "LITTLEFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-21b-approved-uploads.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+    "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+  },
+  "title": "Visual Schedule for Kids, Printable Routine Chart Bundle, Morning Bedtime Chore Chart, 96 Picture Cards, English French Bilingual",
+  "description": "Tired of repeating \"shoes, coat, backpack\" ten times before school? Riverbank Routines turns the day into pictures your child can follow and move to All done.\n\nOne complete system, not a single chart: 30 printable pages in 4 themes, in English, French or bilingual (English + French on every card), Letter and A4.\n\nWhat's inside:\n• My day board (10 steps + All done), First / Then, Now / Next / Later, Today's plan (morning, afternoon, evening)\n• Morning, after-school and bedtime routine charts, plus a blank one for your own steps\n• Helping-at-home chart with space for your own chores\n• Toilet steps picture strip\n• Raindrop jar token boards (5 and 10 drops), 30 cut-out raindrops and \"I did it!\" badges\n• 96 picture cards in two sizes (52 mm and 38 mm): morning, school and outings, play, meals, helping at home, bedtime, feelings and special days, including \"Change of plan\"\n• Blank cards and labels\n• Calm theme: a low-stimulation set with muted colours and no background decoration\n• Fillable: type your child's name, your own routine steps and blank card labels on screen before printing. What you type stays in your own file on your own device.\n• Quick-start guide in English and French\n\nHow it works: download, print at 100% (cardstock lasts longest), cut, laminate if you like, add hook-and-loop dots, and build the day together.\n\nGood to know:\n• Digital download. Nothing is shipped.\n• For your own family or your own single classroom.\n• French uses Canadian words (déjeuner, dîner, souper, tuque, mitaines).\n• This is an organising tool for families. It is not medical, sleep, toileting or developmental advice. For health questions, talk to your child's doctor.\n• The illustrations are original Steadfold artwork, created with AI assistance and finished, checked and assembled by Steadfold.\n• Launch sale: 30% off until 30 Nov 2026. Regular price CA$14.99.\n\nQuestions? Message the shop any time.",
+  "price": {
+    "CAD": 14.99
+  },
+  "quantity": 999,
+  "tags": [
+    "visual schedule",
+    "routine chart kids",
+    "toddler routine",
+    "morning routine",
+    "bedtime routine",
+    "chore chart kids",
+    "picture cards",
+    "french immersion",
+    "bilingual printable",
+    "token board",
+    "reward chart",
+    "kids daily schedule",
+    "preschool printable"
+  ],
+  "taxonomy": {
+    "names": [
+      "Chore Charts",
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/riverbank-routines/01-hero-NEW.png",
+    "listings/media/riverbank-routines/listing-02.jpg",
+    "listings/media/riverbank-routines/listing-03.jpg",
+    "listings/media/riverbank-routines/listing-04.jpg",
+    "listings/media/riverbank-routines/listing-05.jpg",
+    "listings/media/riverbank-routines/listing-06.jpg",
+    "listings/media/riverbank-routines/listing-07.jpg",
+    "listings/media/riverbank-routines/listing-08.jpg",
+    "listings/media/riverbank-routines/listing-09.jpg",
+    "listings/media/riverbank-routines/listing-10.jpg"
+  ],
+  "video": "listings/media/riverbank-routines/Riverbank-Routines-video.mp4",
+  "files": [
+    {
+      "name": "Riverbank-Routines-v1.0-EN.zip",
+      "enc": "listings/files/riverbank-routines/Riverbank-Routines-v1.0-EN.zip.age",
+      "sha256": "e007ddabebac704ab0c4d5751171e127f783dcfec5dfbcdf5d97af6a2def92f7",
+      "size": 9357280
+    },
+    {
+      "name": "Riverbank-Routines-v1.0-FR.zip",
+      "enc": "listings/files/riverbank-routines/Riverbank-Routines-v1.0-FR.zip.age",
+      "sha256": "c0eebc86725edcd6163704b3e260c79c3dce6fee2aa3c74534f8bed6d5682480",
+      "size": 9386102
+    },
+    {
+      "name": "Riverbank-Routines-v1.0-BI.zip",
+      "enc": "listings/files/riverbank-routines/Riverbank-Routines-v1.0-BI.zip.age",
+      "sha256": "7319598e1b2b5395ef63110d7ec906dac30b6bd7c5d31b119a8947c0f66f007d",
+      "size": 9638096
+    },
+    {
+      "name": "Riverbank-Routines-Quick-start.pdf",
+      "enc": "listings/files/riverbank-routines/Riverbank-Routines-Quick-start.pdf.age",
+      "sha256": "694a16e6e778fd2362bafc0c77df0a6ab14056eab6718db1a9b218a7d4d6ccd2",
+      "size": 47712
+    },
+    {
+      "name": "Riverbank-Routines-Guide-de-demarrage.pdf",
+      "enc": "listings/files/riverbank-routines/Riverbank-Routines-Guide-de-demarrage.pdf.age",
+      "sha256": "7e44805a5305e7215fed2933cb56b0642c72267222f99d3c6cf8a1b3b540987e",
+      "size": 48902
+    }
+  ],
+  "by_hand": [
+    "Etsy Shop Manager > Marketing > Sales and discounts > Run a sale: 30% off, this listing only, start today, end 30 Nov 2026, name RIVERBANKLAUNCH. Check the listing shows CA$10.49."
+  ]
+}

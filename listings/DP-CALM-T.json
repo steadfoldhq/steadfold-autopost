@@ -1,0 +1,86 @@
+{
+  "id": "DP-CALM-T",
+  "order": 2,
+  "shop": "STEADFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-21b-approved-uploads.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+    "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+  },
+  "title": "2027 Digital Planner, Hyperlinked Tablet Planner PDF for GoodNotes and Notability, Weekly Goal Planner, Reset Kit, Habit Tracker",
+  "description": "Your digital planner has 700 pages and 3,000 stickers, and you still don't know what to do this week.\nThis one keeps it small: three priorities a week on The Calm Line, a \"Not this week\" list for the rest, and a Comeback page for the weeks you miss. Every date links to its week, and a 16-tab strip gets you to any month in one tap.\n\nWHAT'S INSIDE (100 hyperlinked pages: the 99 planner pages plus a linked Home hub, Jan 1 – Dec 31, 2027)\n• 2027 Reset Kit: a look back at 2026, a theme word and vision board, three goals at most, a not-this-year list, and a habit builder with a 3-habit cap\n• 4 × 90-day plans\n• 12 month calendars + 12 monthly Calm Reset pages (a habit grid with a comebacks counter instead of streaks)\n• 53 weekly pages with The Calm Line and a 1-minute Calm Check (Light / Steady / Full, plus one suggested move)\n• No catch-up Comeback page, a \"Next 3 things\" home page, Ask AI prompt cards\n• Extras: the 2027 Calm Tracker spreadsheet (Excel + Google Sheets, 4 colour themes, Lock-In Score 0–100, a \"protect today\" habit, a comebacks counter, Ask AI prompts built from your own numbers), a reminders .ics file, 2 phone wallpapers, and a printable gift card\n\nFILES (3 downloads)\nCalm-Planner-2027-Tablet-Monday.pdf · Calm-Planner-2027-Tablet-Sunday.pdf · Calm-Planner-2027-Extras.zip (tracker, .ics, wallpapers, gift card, Quick-Start)\n\nHOW TO USE\nOpen the PDF in a PDF note app that keeps links and supports handwriting, such as GoodNotes, Notability, Xodo or Samsung Notes. Use \"Import\" or \"Open in\", not a photo import. Tap the tabs or any date to jump around. Write with a stylus or a finger.\n\nGOOD TO KNOW\n• This is a digital download. Nothing is shipped. No app is included.\n• Links are standard PDF links, and we checked every link's target in the file. We have not tested it inside every app or version, so if anything behaves oddly, email us and we'll help or refund.\n• Designed by Steadfold with AI assistance: the pages were built in code with Claude, then checked page by page. The Ask AI cards are optional prompts.\n• The listing images show the real pages, rendered from the files (a few have sample handwriting added to show the pages in use).\n• For personal use only. Questions: hello.lockedhour@gmail.com\n• Launch sale: 25% off until 30 Nov 2026. Regular price US$16.",
+  "price": {
+    "USD": 16.0,
+    "CAD": 22.0
+  },
+  "currency_overrides": {
+    "CAD": {
+      "replace": [
+        [
+          "Regular price US$16.",
+          "Regular price CA$22."
+        ]
+      ]
+    }
+  },
+  "quantity": 999,
+  "tags": [
+    "digital planner 2027",
+    "2027 planner",
+    "goodnotes planner",
+    "hyperlinked planner",
+    "ipad planner",
+    "notability planner",
+    "tablet planner",
+    "android planner",
+    "goal planner 2027",
+    "new year reset",
+    "habit tracker",
+    "calm planner",
+    "minimalist planner"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/calm-planner-2027/tablet/01-hero-NEW.jpg",
+    "listings/media/calm-planner-2027/tablet/02-tap-any-tab.jpg",
+    "listings/media/calm-planner-2027/tablet/03-whats-inside.jpg",
+    "listings/media/calm-planner-2027/tablet/04-reset-kit.jpg",
+    "listings/media/calm-planner-2027/tablet/05-calm-check.jpg",
+    "listings/media/calm-planner-2027/tablet/06-today-page.jpg",
+    "listings/media/calm-planner-2027/tablet/07-works-with-ai.jpg",
+    "listings/media/calm-planner-2027/tablet/08-calm-tracker.jpg",
+    "listings/media/calm-planner-2027/tablet/09-monday-sunday-apps.jpg",
+    "listings/media/calm-planner-2027/tablet/10-what-you-get.jpg"
+  ],
+  "video": "listings/media/calm-planner-2027/tablet/Calm-Planner-2027-Tablet.mp4",
+  "files": [
+    {
+      "name": "Calm-Planner-2027-Tablet-Monday.pdf",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Tablet-Monday.pdf.age",
+      "sha256": "006d080c1c1dc8519cd0b172ef7922fa0d20dacbb73c3a4af34be54060105c1a",
+      "size": 7819506
+    },
+    {
+      "name": "Calm-Planner-2027-Tablet-Sunday.pdf",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Tablet-Sunday.pdf.age",
+      "sha256": "1928f1a7548277ae0914d3363ccd6104750984048feda85abe55bdf38cef06f3",
+      "size": 8254649
+    },
+    {
+      "name": "Calm-Planner-2027-Extras.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Extras.zip.age",
+      "sha256": "ba819b97a85a74c4a9c3f24c4c0d2cf134147e7e5c2e45c2ab617a22d8892b6a",
+      "size": 1415425
+    }
+  ],
+  "by_hand": [
+    "Add this listing to the CALMLAUNCH sale (25% off, ends 30 Nov 2026); if the sale doesn't exist yet, create it as for DP-CALM-P."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "LBP-SET",
+  "order": 8,
+  "shop": "LITTLEFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-24-launch-oct16.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+    "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+  },
+  "content_rules": [
+    "littlefold-no-health-words"
+  ],
+  "title": "Pastel Nursery Wall Art Set of 3, Moon Bunny, Rainbow Sun, Little Cloud, Gender Neutral Printable Nursery Prints, Digital Download",
+  "description": "Three gentle prints for a calm nursery: a bunny napping on the moon, a sleepy sun over a rainbow, and a little cloud with tiny charms.\n\nWhat you get: each print in 5 ratios at 300 dpi, so you can print up to:\n- 4x5 (8x10, 16x20 in)\n- 3x4 (12x16, 15x20 in)\n- 2x3 (4x6 up to 16x24 in)\n- 11x14 in\n- ISO A sizes (A5 to A2)\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
+  "price": {
+    "CAD": 12.99
+  },
+  "quantity": 999,
+  "tags": [
+    "nursery wall art",
+    "nursery prints",
+    "set of 3 prints",
+    "pastel nursery",
+    "neutral nursery",
+    "kids room decor",
+    "moon bunny print",
+    "rainbow nursery",
+    "cloud nursery",
+    "printable wall art",
+    "baby room decor",
+    "sherbet nursery",
+    "digital download"
+  ],
+  "taxonomy": {
+    "names": [
+      "Art & Collectibles > Prints > Digital Prints",
+      "Digital Prints"
+    ]
+  },
+  "photos": [
+    "listings/media/littlefold-drop01/LBP-SET-01-ONEGLANCE.jpg",
+    "listings/media/littlefold-drop01/mockups/prints_set-of-3_wall.png",
+    "listings/media/littlefold-drop01/prints/LBP1-moon-nap_4x5_16x20in.jpg",
+    "listings/media/littlefold-drop01/prints/LBP2-sun-arch_4x5_16x20in.jpg",
+    "listings/media/littlefold-drop01/prints/LBP3-little-cloud_4x5_16x20in.jpg"
+  ],
+  "files": [
+    {
+      "name": "LBP1-moon-nap.zip",
+      "enc": "listings/files/littlefold-drop01/LBP1-moon-nap.zip.age",
+      "sha256": "bfed61063e151659ff5490b3b23e19753eaf3ea9e8598ee03d06be61e08dd4a4",
+      "size": 4899086
+    },
+    {
+      "name": "LBP2-sun-arch.zip",
+      "enc": "listings/files/littlefold-drop01/LBP2-sun-arch.zip.age",
+      "sha256": "0c02061ad4ef1613a9f63fd04bc11ec96d295cb7f7c9b21ebd78a84ca175ec8c",
+      "size": 5572758
+    },
+    {
+      "name": "LBP3-little-cloud.zip",
+      "enc": "listings/files/littlefold-drop01/LBP3-little-cloud.zip.age",
+      "sha256": "b2e708c844fb65f7beac9781c91c7e6ce6615dea06482e41bf710436268f8d98",
+      "size": 3687480
+    }
+  ],
+  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files."
+}

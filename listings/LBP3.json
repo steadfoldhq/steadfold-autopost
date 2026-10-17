@@ -1,0 +1,56 @@
+{
+  "id": "LBP3",
+  "order": 12,
+  "shop": "LITTLEFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-24-launch-oct16.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+    "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+  },
+  "content_rules": [
+    "littlefold-no-health-words"
+  ],
+  "title": "Little Cloud Nursery Print, Pastel Blue Cloud with Heart Star and Moon Charms, Printable Nursery Wall Art, Baby Room Decor",
+  "description": "A sleepy baby-blue cloud with a heart, a star, a moon and a heart hanging below.\n\nWhat you get: 5 ratios at 300 dpi (4x5, 3x4, 2x3, 11x14, ISO A sizes).\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
+  "price": {
+    "CAD": 5.99
+  },
+  "quantity": 999,
+  "tags": [
+    "cloud nursery",
+    "cloud print",
+    "nursery wall art",
+    "pastel nursery",
+    "baby blue nursery",
+    "neutral nursery",
+    "kids room decor",
+    "printable art",
+    "cute cloud art",
+    "baby room decor",
+    "heart and stars",
+    "baby shower gift",
+    "digital download"
+  ],
+  "taxonomy": {
+    "names": [
+      "Art & Collectibles > Prints > Digital Prints",
+      "Digital Prints"
+    ]
+  },
+  "photos": [
+    "listings/media/littlefold-drop01/LBP3-01-ONEGLANCE.jpg",
+    "listings/media/littlefold-drop01/prints/LBP3-little-cloud_4x5_16x20in.jpg",
+    "listings/media/littlefold-drop01/mockups/prints_set-of-3_wall.png"
+  ],
+  "files": [
+    {
+      "name": "LBP3-little-cloud.zip",
+      "enc": "listings/files/littlefold-drop01/LBP3-little-cloud.zip.age",
+      "sha256": "b2e708c844fb65f7beac9781c91c7e6ce6615dea06482e41bf710436268f8d98",
+      "size": 3687480
+    }
+  ],
+  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files."
+}
