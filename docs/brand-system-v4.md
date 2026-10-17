@@ -254,62 +254,48 @@ section 7: those styles keep their look, but are cut with the kit.
 
 ---
 
-## 12. Pivot (Oct 17): bold one-idea style for all pages
-**Why (real numbers, insights of Oct 17 04:32 UTC).** The four most-viewed posts across all pages are bold, short-hook Reels:
-Littlefold "3 quick checks. Alone, back, crib." 121 views / 111 reach, Locked Hour "One quiet hour" 100 / 84, Littlefold
-"Try it on your chest" 80 / 69, Locked Hour "if-then plan" 55 / 48. Reels average 42.5 views and 34 reach; carousels 19.5 and 4.5;
-single images 6.5 and 2. Busy Fully Funded and Hourback tiles stalled (FF median about 18 views, HB about 14), and Dharma's read is that
-nobody can tell what they are in a small thumbnail. Caveat: every page has 3 followers and 6-9 posts, so this is direction, not proof.
-Saves and shares are 0-5 per post and mostly come from tiny reach (3-6), so don't optimise for them yet; optimise for reach and views.
+## 12. Bold = the approved editorial look (restored Oct 17, 7:45 am)
+**Bold = the approved editorial look (serif + pills + halftone object + handwritten line + stamp); never bare flat cards.**
 
-**The rule (every page, every format, from Oct 17):**
-1. **One idea per post.** If it needs a list, the list goes in the caption. The tile carries the one thing.
-2. **A giant 3-6 word hook**: FF Inter Display 800 at about 168 px, LH Inter Display 900 at about 172 px, HB Poppins 700 at about 146 px,
-   LF Lora 600 at about 150 px with an italic berry accent word (sizes at 1080 wide). One accent (colour, highlighter or italic) on the key words.
-3. **One strong colour field per frame**, from the page's own palette, with only the faint dot texture:
-   FF cobalt / deep cobalt / coral / pale blue; HB indigo / yellow / plum; LH butter / cream / pink; LF cream / pink / butter / berry.
-   At most one sticker or emoji, and the small brand chip on top. No cards, tables, charts, screenshots or photos on slide 1.
-4. **Carousels: at most 3 slides** (1 is fine): hook, the move, the number or the catch. Each slide is one big line plus at most one short sub-line.
-5. **Reels: 12-18 s, hook fully readable at frame 0**, a sticker pops within 0.3 s, one big line per beat on a full colour field,
-   a transition on every cut, scored on a **v4 impact track** (`media/music/library/v4/`) with the payoff scene starting exactly on the
-   track's measured `drop_s` (`tools/music-library.json`) and every cut on its beat grid. Readable pacing still applies (0.4 s/word + 0.6 s).
-   The cover is the hook frame. Add every new Reel id to `tools/music-picks.json` "keep".
-6. **The 200 px test**: shrink every cover and slide 1 to 200 px wide. If you can't tell what it's about in one second, redo it.
-7. **Keep checking the numbers.** After each insights run, compare views and reach of bold posts against the old style per page
-   (`insights/latest.json`, `insights/history.jsonl`). Reels are the reach engine, so put the strongest idea of the day in a Reel.
+**Why:** the overnight "bold one-idea" build turned FF and HB into bare colour fields with plain sans text and an emoji.
+Dharma, Oct 17 7:39 am: "so plain and bad… why are we going backwards". He re-sent the references we had already agreed on
+(yoursocialteam: "These visual trends are going viral right now", "These carousel trends…", "I have nothing to post") and
+`docs/grids-FINAL.png`. That look is the standard. Plain flat cards are not a style.
 
-**How to build it:** `studio/pivot/` (README in the file headers).
-- Feed tiles: add the post to `studio/pivot/specs_stills.py` and run `python3 studio/pivot/stills.py <id>` (2x render, Lanczos, JPEG q92, writes `media/<id>/` and removes old slides). Update `images` and `alt_text` in `schedule/posts.json`.
-- Reels: add it to `studio/pivot/specs_reels.py` (scene kinds: hook, say, ai, num, list; `drop=True` marks the payoff) and run
-  `python3 studio/pivot/reels.py <id> --plan` (timing table; it refuses scripts that are too wordy for the drop or longer than 18 s), then without `--plan` to render to `media/reels/`.
+**Every cover, slide 1, Reel frame 0 and Story tile has all five:**
+1. **A huge editorial display serif** in a deep ink colour, tight leading, 4-6 words, readable at 200 px wide in one second.
+   FF Fraunces (opsz 60, 700) in #141A55; HB DM Serif Display in #2A1D47; LH Instrument Serif in #1B1717; LF Fraunces soft in #3A1F3D.
+2. **Rounded highlighter pills** behind the key words, in the page's two soft brand colours, drawn on a layer UNDER the words
+   (tight leading must never let a pill cover the line above).
+3. **A halftone black-and-white cut-out object or hand interacting with the type**: pointing at it, an OK sign, holding it.
+   Signature objects: FF piggy bank, glove, coins, jar, pointing hand, OK hand; HB pointing hand, phone, chat bubbles;
+   LH alarm clock, hourglass, megaphone; LF baby shoe, paw, blocks. Cut-outs live in `studio/motion/assets/ht-*.png`
+   (make new ones with `studio/editorial/cutout.py`: clean edge, white sticker rim, dot screen, no fringe).
+4. **A handwritten save-line** in the accent colour (Caveat Brush), e.g. "save this if your money disappears by the 20th".
+5. **The round brand stamp** in a corner (`edkit.stamp`).
 
-This section overrides the busier styles in section 2 for slide 1 and Reel frame 0 (Look B covers with objects, Ep.01 photo editorial,
-sticky-note lists, glove countdowns, awards): those may still appear on later slides only if they stay one idea and readable.
-Photos freed by the pivot (unused again): street, clouds, couple, family (B/W).
+On **a soft single-colour field with subtle paper texture** from the page's palette: FF soft cobalt / cream / soft coral;
+HB periwinkle / peach / cream; LH butter / pink / cream; LF Sherbet (cream / pink / butter / peach). No dark or saturated full fields.
 
-### 12a. AGGRESSIVE (Dharma, Oct 17 1:15 am): overrides 12 where they differ. Fully Funded first, every page follows.
-**Why:** nobody has time to read. Fully Funded needs far more engagement, and its busy posts are the ones that stalled.
+**Vary the grid.** Rotate the layouts: pills + object, sticky-note list, mosaic photo wall ("I have nothing to post"),
+follow-the-line, glove. Never the same layout twice in a row on one page.
 
-1. **One idea, one number.** Every post carries ONE hero number (or one hero word when there's honestly no number).
-   Everything else goes in the caption, and the caption stays short.
-2. **Hook: 3-5 words**, giant (FF Inter Display 800 at 168 px on tiles, 178 px in Reels; other pages per 12.2), readable at 200 px wide in
-   **one second**. Shrink every cover and slide 1 to 200 px and read it with a 1-second glance; if you have to look twice, cut words.
-3. **Feed: 1 slide or 3 slides max.** Never 2, never 4+. Slide 1 = hook, slide 2 = the number, slide 3 = the move or the catch.
-   Each slide: one big line + at most one short sub-line. Hero numbers via `num=` in `studio/pivot/specs_stills.py`.
-4. **Reels: 10-15 s** (`studio/pivot/hits.py` refuses anything outside), built from `studio/pivot/specs_hits.py`:
-   hook at frame 0 → 1-3 one-line beats → **the hero number lands exactly on the v4 track's `drop_s`** (T11 land, count-up,
-   T7 punch-in, T9 circle) → T1 leak back into the hook (T15 loop). Every cut uses a reference technique from
-   `studio/pivot/TRANSITIONS.md` (T1 leak, T2 burn, T3 flicker, T5 word captions, T6 whip 170 ms, T8 slam-up, T12 glide, T16 swipe…)
-   and sits on the track's 16th-note grid. Reading pacing still applies (0.4 s/word + 0.6 s); `--plan` checks it.
-   Run `python3 studio/pivot/hits.py <id> --plan`, then render, then check the QA sheet (frames at -130 to +200 ms around every cut).
-5. **Captions: 3 lines max, then a blank line and the hashtags.** Line 1 = the claim with the number, line 2 = the move,
-   line 3 = the CTA (save/send) or, on posts that show returns, the closing line below. No "Source:" or other disclaimer lines on FF.
-6. **Money maths is stated directly**, computed in code (`studio/pivot/ff_math.py`, `FIG`): "$100 a month at 10% → $X by 65".
-   - The headline growth rate is **10% a year** (S&P 500 long-run average). Replace any 6% or 8% with 10%. **Never above 10%**: a
-     higher rate is a misleading claim. Compounded monthly. Say "before inflation" in the caption when the horizon is decades.
-   - Posts that show returns end the caption with exactly one line: **Not guaranteed. Returns vary.** Only on those posts.
-   - Every figure on screen, in the caption and in the alt text comes from `FIG`; never type a figure by hand.
-7. **Stories:** `studio/pivot/stories.py`: one giant line, one colour field, at most one card (the new cover) or two answer pills.
+**Kept from the pivot (content rules, still in force):**
+- One idea per post; the hook is readable at 200 px; detail goes in the caption.
+- Feed: 1-3 slides. Reels: hook at frame 0, payoff on the track's `drop_s`, readable pacing (0.4 s/word + 0.6 s), motion and
+  transitions from `studio/pivot/TRANSITIONS.md`. The type, pills, objects and stamp are the editorial ones.
+- Captions: 3 lines, then the hashtags.
+- FF money maths from `studio/pivot/ff_math.py` (`FIG`), headline rate 10% a year, never above. Posts that show returns end the
+  caption with **Not guaranteed. Returns vary.**, in the caption only, never on a tile.
+- Never the word "example" (12b).
+
+**How to build it:**
+- Feed tiles and Stories: `studio/editorial/specs.py` + `python3 studio/editorial/covers.py feed|story <ids>`
+  (2x Chromium render, Lanczos, JPEG q92, writes `media/<id>/` or `media/stories/`).
+- Reels: `studio/pivot/hits.py` (FF) and `studio/pivot/reels.py` (HB, LF), whose look now comes from `studio/editorial/edkit.py`
+  through `studio/pivot/boldkit.py`: hook scene = the cover composition; every text beat gets the serif, pills and the stamp.
+  Save-lines per Reel: `boldkit.SAVES`.
+- **QA:** compare each cover side by side with the reference images at 200 px. If it doesn't feel like the same league, redo it.
 
 ### 12b. NEVER the word "example" (Dharma, Oct 17)
 Never use **"example"**, **"e.g."**, **"for illustration"** or **"hypothetical"** anywhere on any page: on-screen text, captions,

@@ -29,15 +29,15 @@ REPO = HERE.parent.parent
 sys.path.insert(0, str(REPO / "studio" / "motion"))
 sys.path.insert(0, str(HERE))
 from kit import Reel, chip, el, encode, flicker, loudness, oneword, probe, read_need, render_frames, scribble_circle, sheet  # noqa: E402
-from boldkit import FIELDS, FONT, field_css, mark_txt  # noqa: E402
+from boldkit import ED, FIELDS, FONT, SAVES, beat_stamp, field_css, hook_scene, mark_txt  # noqa: E402
 from reels import col, sticker, wtxt  # noqa: E402
 from PIL import Image  # noqa: E402
 
 LIB = json.loads((REPO / "tools" / "music-library.json").read_text())["tracks"]
 HOOK_PX = {"fullyfunded": 178, "lockedhour": 180, "hourback": 156, "littlefold": 156}
-SAY_PX = {"fullyfunded": 158, "lockedhour": 160, "hourback": 140, "littlefold": 140}
-NUM_INK = {"fullyfunded": "#FFFFFF", "hourback": "#FFFFFF", "lockedhour": "#141414", "littlefold": "#FFF4E0"}
-CIRCLE = {"fullyfunded": "#FF6A3D", "hourback": "#FFC94D", "lockedhour": "#FF5CA8", "littlefold": "#FFE27E"}
+SAY_PX = {"fullyfunded": 180, "lockedhour": 185, "hourback": 175, "littlefold": 165}  # editorial serif
+NUM_INK = {b: ED.FIELDS[b][next(iter(ED.FIELDS[b]))]["ink"] for b in ED.FIELDS}  # editorial: deep ink on the soft field
+CIRCLE = dict(ED.ACCENT)
 CHIP = {"fullyfunded": ("#FFFFFF", None), "hourback": ("#FFF8EF", "#2A2238"), "lockedhour": ("#141414", "#FFE27A"),
         "littlefold": ("#FFFFFF", None)}
 # T3 flicker looks: the reference cycles ~8 typefaces, one per source frame, and lands on the house style.
@@ -58,6 +58,8 @@ LOOKS["lockedhour"] = LOOKS["fullyfunded"][:-1] + [
     "font-family:'Inter Display';font-weight:900;letter-spacing:-.05em"]
 LOOKS["littlefold"] = LOOKS["fullyfunded"][:-1] + [
     "font-family:Lora;font-weight:600;letter-spacing:-.02em"]
+for _b in LOOKS:  # editorial: every flicker lands on the page's display serif
+    LOOKS[_b] = [x for x in LOOKS[_b][:-1] if "Inter" not in x and "Poppins" not in x] + [FONT[_b]]
 
 
 def _flick_text(brand, text, size, t=0.0):
@@ -81,15 +83,7 @@ def _flick_text(brand, text, size, t=0.0):
 def scene_html(brand, sc, beat):
     k, size = sc["k"], sc.get("size")
     if k == "hook":
-        bg, ink = CHIP[brand]
-        txt = wtxt(sc["text"], size or HOOK_PX[brand], anim=False)
-        if sc.get("burn"):  # T2: the hook sits on a white question-sticker card that burns away before the leak
-            f = FIELDS[brand]["lite" if brand == "fullyfunded" else list(FIELDS[brand])[0]]
-            txt = (f'<div data-a="burn" data-tend="__BURN_D__" data-d="__BURN_D__" data-to="0.62" style="position:relative;background:#fff;'
-                   f'border-radius:56px;padding:58px 54px 64px;box-shadow:0 30px 80px rgba(0,0,0,.30)">'
-                   f'<div class="fx-lite" style="color:{f["ink"]}">{wtxt(sc["text"], (size or HOOK_PX[brand]) - 14, anim=False)}</div></div>')
-        inner = txt + (sticker(sc["emo"]) if sc.get("emo") else "")
-        return chip(brand, "c", 230, bg=bg, ink=ink, a="none") + col(inner)
+        return hook_scene(brand, sc["f"], sc["text"], sc.get("emo"), sc.get("save"), size or 200, wtxt)
     if k == "say":
         if sc.get("flick"):
             inner = _flick_text(brand, sc["text"], size or SAY_PX[brand])
@@ -104,8 +98,8 @@ def scene_html(brand, sc, beat):
     if k == "card":
         inner = (f'<div data-a="{"grow" if sc.get("grow") else "none"}" data-t="0" data-d="0.3" style="background:#fff;color:#0E1440;'
                  f'border-radius:48px;padding:64px 60px;box-shadow:0 30px 80px rgba(0,0,0,.30);width:920px">'
-                 f'<div style="font:800 64px/1.1 Inter;letter-spacing:-.02em;opacity:.75">{mark_txt(sc["label"])}</div>'
-                 f'<div class="T" style="font-size:{size or 210}px;color:#2B3FE0;margin-top:18px">{mark_txt(sc["value"])}</div></div>')
+                 f'<div style="font-family:\'Caveat Brush\';font-size:76px;line-height:1.05;color:{ED.ACCENT[brand]}">{mark_txt(sc["label"])}</div>'
+                 f'<div class="T" style="font-size:{size or 210}px;color:{NUM_INK[brand]};margin-top:18px"><span class="em">{sc["value"]}</span></div></div>')
         return col(inner)
     if k == "num":
         # fixed layout so the punch-in (T7) and circle (T9) land on the number
@@ -123,15 +117,16 @@ def scene_html(brand, sc, beat):
     raise ValueError(k)
 
 
-def wrap(field, inner):
-    return f'<div class="fx-{field}" style="position:absolute;inset:0"><div class="par dotbg fx-{field}"></div>{inner}</div>'
+def wrap(field, inner, brand=None, stamp=True):
+    st = beat_stamp(brand) if (brand and stamp) else ""
+    return f'<div class="fx-{field}" style="position:absolute;inset:0"><div class="par dotbg fx-{field}"></div>{inner}{st}</div>'
 
 
 def plan(spec):
     tr = LIB[spec["track"]]
     beat, drop = 60.0 / tr["bpm"], tr["drop_s"]
     q = 0.25
-    htmls = [wrap(sc["f"], scene_html(spec["brand"], sc, beat)) for sc in spec["scenes"]]
+    htmls = [wrap(sc["f"], scene_html(spec["brand"], sc, beat), spec["brand"], sc["k"] != "hook") for sc in spec["scenes"]]
     need = [max(sc.get("min", 1.25), math.ceil((read_need(h)[0] - 1e-3) / beat / q) * q) for sc, h in zip(spec["scenes"], htmls)]
     di = next(i for i, sc in enumerate(spec["scenes"]) if sc.get("drop"))
     B = drop / beat
@@ -184,8 +179,8 @@ def make(spec):
     if spec.get("pin"):
         a, z, text = spec["pin"]
         r.pin(r.scenes[a]["start"], r.scenes[z]["start"] + r.scenes[z]["dur"],
-              el(f'<span style="display:inline-block;background:#0E1440;color:#fff;font:800 54px/1 Inter;padding:20px 34px;'
-                 f'border-radius:999px;letter-spacing:-.01em">{text}</span>', "c", 1430, a="pop", d=0.25))
+              el(f'<span style="display:inline-block;font-family:\'Caveat Brush\';font-size:80px;line-height:1;color:{ED.ACCENT[brand]};'
+                 f'transform:rotate(-3deg)">{text}</span>', "c", 1300, a="pop", d=0.25))
     s0 = r.scenes[0]  # T15 seamless loop: end on the clean hook frame (no burn), so the last frame flows into frame 0
     r.scene(loop_beats, s0["html"].replace('data-a="burn"', 'data-a="none"'), tin=spec.get("loop_tin", "leak"), cam=s0["cam"], bg=s0["bg"],
             focus=(540, 900))
@@ -241,6 +236,7 @@ if __name__ == "__main__":
     a = ap.parse_args()
     for rid in a.ids or list(REELS):
         spec = dict(REELS[rid], id=rid)
+        spec["scenes"] = [dict(spec["scenes"][0], save=SAVES.get(rid))] + spec["scenes"][1:]
         if a.plan:
             report(spec)
         else:

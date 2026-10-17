@@ -20,12 +20,12 @@ REPO = HERE.parent.parent
 sys.path.insert(0, str(REPO / "studio" / "motion"))
 sys.path.insert(0, str(HERE))
 from kit import Reel, chip, el, emoji, encode, loudness, probe, qa_times, read_need, render_frames, sheet, words  # noqa: E402
-from boldkit import FIELDS, field_css, mark_txt  # noqa: E402
+from boldkit import FIELDS, SAVES, beat_stamp, field_css, hook_scene, mark_txt, obj_for, sticker_obj  # noqa: E402
 from PIL import Image  # noqa: E402
 
 LIB = json.loads((REPO / "tools" / "music-library.json").read_text())["tracks"]
 HOOK_PX = {"fullyfunded": 170, "lockedhour": 175, "hourback": 150, "littlefold": 150}
-SAY_PX = {"fullyfunded": 150, "lockedhour": 155, "hourback": 132, "littlefold": 136}
+SAY_PX = {"fullyfunded": 175, "lockedhour": 185, "hourback": 172, "littlefold": 165}  # editorial serif reads smaller than the old sans
 TRANS = {
     "fullyfunded": ["whipL", "stripes", "zoom", "slam", "iris", "whipU", "push"],
     "hourback": ["pixel", "whipL", "zoom", "slam", "stripes", "whipU", "iris"],
@@ -48,46 +48,47 @@ def col(inner, top=330, height=1080, gap=44):
 
 
 def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra=""):
-    """Kinetic words (one at a time) or static text. *a b* = accent, ' / ' = line break."""
-    out, on = [], False
+    """Kinetic words (one at a time) or static text. *a b* = one highlighter pill behind the run, ' / ' = line break."""
+    out, run, on, k = [], [], False, 0
     for tok in text.split(" "):
         if tok == "/":
-            out.append("<br>")
+            (run if on else out).append("<br>")
             continue
         if tok.startswith("*"):
             on = True
         core = tok.replace("*", "")
-        out.append(f'<span class="w em">{core}</span>' if on else f'<span class="w">{core}</span>')
-        if tok.endswith("*") or tok.rstrip(".,?!:;\u201d").endswith("*"):
-            on = False
+        (run if on else out).append(f'<span class="w">{core}</span>')
+        if on and (tok.endswith("*") or tok.rstrip(".,?!:;\u201d").endswith("*")):
+            k += 1
+            out.append(f'<span class="em{"" if k % 2 else " em2"}">{" ".join(run)}</span>')
+            run, on = [], False
+    if run:
+        out.append(f'<span class="em">{" ".join(run)}</span>')
     attrs = f'data-a="words" data-t="{t:.3f}" data-d="0.32" data-gap="{gap}"' if anim else ""
     return f'<div class="T" {attrs} style="font-size:{size}px;{extra}">{" ".join(out)}</div>'
 
 
-def sticker(ch, size=210, t=0.12, loop="float"):
-    return (f'<span class="emo" data-a="pop" data-t="{t}" data-d="0.4" data-loop="{loop}" '
-            f'style="display:inline-block;font-size:{size}px;filter:drop-shadow(0 22px 26px rgba(0,0,0,.22))">{ch}</span>')
+def sticker(ch, size=210, t=0.12, loop="float", brand=None):
+    """Editorial: the emoji now picks the page's halftone cut-out (boldkit.obj_for)."""
+    return sticker_obj(obj_for(brand, ch), int(size * 1.6), t, loop)
 
 
-def hook_html(brand, text, emo=None, size=None):
-    size = size or HOOK_PX[brand]
-    bg, ink = CHIP[brand]
-    inner = wtxt(text, size, anim=False) + (sticker(emo) if emo else "")
-    return chip(brand, "c", 230, bg=bg, ink=ink, a="none") + col(inner)
+def hook_html(brand, text, emo=None, size=None, field=None, save=None):
+    return hook_scene(brand, field, text, emo, save, size or 200, wtxt)
 
 
 def say_html(brand, text, emo=None, size=None, t=0.0):
     size = size or SAY_PX[brand]
-    return col(wtxt(text, size, t=t) + (sticker(emo, 180, 0.3, "wobble") if emo else ""))
+    return col(wtxt(text, size, t=t) + (sticker(emo, 180, 0.3, "wobble", brand) if emo else ""))
 
 
 def ai_html(brand, text, size=None):
     """The ask, as one big chat bubble with a robot sticker (Hourback)."""
-    size = size or 96
+    size = size or 112
     card = (f'<div data-a="fly" data-t="0.08" data-d="0.45" data-r="-2" style="background:#fff;color:#2A2238;border-radius:56px;'
             f'border-bottom-left-radius:14px;padding:56px 60px;text-align:left;box-shadow:0 30px 70px rgba(0,0,0,.28);'
-            f'font:700 {size}px/1.12 Poppins;letter-spacing:-.03em">{mark_txt(text)}</div>')
-    return col(sticker("🤖", 170, 0.0, "wobble") + card, gap=30)
+            f'font-size:{size}px" class="T">{mark_txt(text)}</div>')
+    return col(sticker_obj("point", 360, 0.0, "wobble", 50) + card, gap=30)
 
 
 def num_html(brand, label, value, pre="", suf_line="", size=300):
@@ -99,7 +100,7 @@ def num_html(brand, label, value, pre="", suf_line="", size=300):
     return col(inner, gap=30)
 
 
-def list_html(brand, items, size=118, gap=0.35):
+def list_html(brand, items, size=140, gap=0.35):
     inner = "".join(f'<div class="T" data-a="pop" data-t="{i * gap:.2f}" data-d="0.35" style="font-size:{size}px">{mark_txt(it)}</div>'
                     for i, it in enumerate(items))
     return col(inner, gap=26)
@@ -108,7 +109,7 @@ def list_html(brand, items, size=118, gap=0.35):
 def scene_html(brand, sc):
     k = sc["k"]
     if k == "hook":
-        inner = hook_html(brand, sc["text"], sc.get("emo"), sc.get("size"))
+        inner = hook_html(brand, sc["text"], sc.get("emo"), sc.get("size"), sc["f"], sc.get("save"))
     elif k == "say":
         inner = say_html(brand, sc["text"], sc.get("emo"), sc.get("size"))
     elif k == "ai":
@@ -116,9 +117,11 @@ def scene_html(brand, sc):
     elif k == "num":
         inner = num_html(brand, sc["label"], sc["value"], sc.get("pre", ""), sc.get("suf", ""), sc.get("size", 300))
     elif k == "list":
-        inner = list_html(brand, sc["items"], sc.get("size", 118))
+        inner = list_html(brand, sc["items"], int(sc.get("size", 118) * 1.2))
     else:
         raise ValueError(k)
+    if k != "hook":
+        inner += beat_stamp(brand)
     return wrap(sc["f"], inner)
 
 
@@ -227,6 +230,7 @@ if __name__ == "__main__":
     a = ap.parse_args()
     for rid in a.ids or list(REELS):
         spec = dict(REELS[rid], id=rid)
+        spec["scenes"] = [dict(spec["scenes"][0], save=SAVES.get(rid))] + spec["scenes"][1:]
         if a.plan:
             report(spec)
         else:
