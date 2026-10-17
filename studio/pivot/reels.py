@@ -65,6 +65,10 @@ def wtxt(text, size, t=0.0, gap=0.11, anim=True, extra=""):
     if run:
         out.append(f'<span class="w em">{" ".join(run)}</span>')
     attrs = f'data-a="words" data-t="{t:.3f}" data-d="0.32" data-gap="{gap}"' if anim else ""
+    # pills never wrap, so cap the size by the longest authored line (serif ~0.5 em per character) to stay inside x 80-1000
+    longest = max(len(ln.replace("*", "").strip()) for ln in text.split(" / "))
+    if anim:  # static hooks are fitted by the kit's autofit (boldkit.hook_scene)
+        size = min(size, int(900 / (0.5 * max(longest, 1))))
     return f'<div class="T" {attrs} style="font-size:{size}px;{extra}">{" ".join(out)}</div>'
 
 

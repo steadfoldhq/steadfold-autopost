@@ -44,7 +44,7 @@ def field_css(brand):
         out.append(f".fx-{k}{{color:{f['ink']}}} .fx-{k} .em{{{f['em']}}} .fx-{k} .em2{{background:{f['p2']}}}"
                    f" .fx-{k}.dotbg{{background:url('{ED.uri(ED.GRAIN)}') 0 0/420px 420px,{f['bg']};background-blend-mode:multiply}}")
     out.append(f".T{{{FONT[brand]}}}")
-    out.append(".T .em,.T .em2{display:inline-block}")
+    out.append(".T .em,.T .em2{display:inline-block;white-space:nowrap}")
     return "\n".join(out)
 
 
