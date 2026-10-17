@@ -42,20 +42,21 @@ CHIP = {"fullyfunded": ("#FFFFFF", None), "hourback": ("#FFF8EF", "#2A2238"), "l
         "littlefold": ("#FFFFFF", None)}
 # T3 flicker looks: the reference cycles ~8 typefaces, one per source frame, and lands on the house style.
 LOOKS = {
-    "fullyfunded": ["font-family:'Caveat Brush';font-weight:400;letter-spacing:0;color:#FFB08F",
+    "fullyfunded": ["font-family:'Caveat Brush';font-weight:400;letter-spacing:0",
                     "font-family:'Instrument Serif';font-style:italic;font-weight:400;letter-spacing:-.01em",
-                    "font-family:Poppins;font-weight:800;letter-spacing:-.04em;color:#FF6A3D",
+                    "font-family:Poppins;font-weight:800;letter-spacing:-.04em",
                     "font-family:Fraunces;font-weight:900;letter-spacing:-.03em",
-                    "font-family:Lora;font-weight:700;font-style:italic;color:#FFB08F",
+                    "font-family:Lora;font-weight:700;font-style:italic",
                     "font-family:'Caveat';font-weight:700;letter-spacing:0",
-                    "font-family:Inter;font-weight:900;text-transform:uppercase;letter-spacing:-.04em;color:#FF6A3D",
+                    "font-family:Inter;font-weight:900;text-transform:uppercase;letter-spacing:-.04em",
                     "font-family:'Inter Display';font-weight:800;letter-spacing:-.045em"],
 }
-LOOKS["hourback"] = [x.replace("#FF6A3D", "#FFC94D").replace("#FFB08F", "#FFE6D3") for x in LOOKS["fullyfunded"][:-1]] + [
+# Looks change the face only; colour stays the field's accent (a look in the field's own colour disappears).
+LOOKS["hourback"] = LOOKS["fullyfunded"][:-1] + [
     "font-family:Poppins;font-weight:700;letter-spacing:-.035em"]
-LOOKS["lockedhour"] = [x.replace("#FF6A3D", "#FF5CA8").replace("#FFB08F", "#E8336F") for x in LOOKS["fullyfunded"][:-1]] + [
+LOOKS["lockedhour"] = LOOKS["fullyfunded"][:-1] + [
     "font-family:'Inter Display';font-weight:900;letter-spacing:-.05em"]
-LOOKS["littlefold"] = [x.replace("#FF6A3D", "#D9497A").replace("#FFB08F", "#D9497A") for x in LOOKS["fullyfunded"][:-1]] + [
+LOOKS["littlefold"] = LOOKS["fullyfunded"][:-1] + [
     "font-family:Lora;font-weight:600;letter-spacing:-.02em"]
 
 
@@ -98,7 +99,7 @@ def scene_html(brand, sc, beat):
     if k == "words":
         return col(oneword(sc["chunks"], t=0.0, gap=sc.get("gap", 0.6), style=f"font-size:{size or SAY_PX[brand]}px"))
     if k == "swap":
-        looks = sc.get("looks") or LOOKS[brand][-4:]
+        looks = sc.get("looks") or LOOKS[brand][-3:]  # 3 looks, one per beat, lands on the house style
         return col(flicker(mark_txt(sc["text"]), looks, base=f"display:block;font-size:{size or 230}px", step=beat, cls="T"))
     if k == "card":
         inner = (f'<div data-a="{"grow" if sc.get("grow") else "none"}" data-t="0" data-d="0.3" style="background:#fff;color:#0E1440;'
@@ -109,7 +110,7 @@ def scene_html(brand, sc, beat):
     if k == "num":
         # fixed layout so the punch-in (T7) and circle (T9) land on the number
         lab = wtxt(sc["label"], 118, gap=0.08)
-        num = (f'<span data-a="count" data-t="0.06" data-d="0.62" data-to="{sc["value"]}" data-comma="1" data-dec="{sc.get("dec", 0)}" data-pre="{sc.get("pre", "")}" '
+        num = (f'<span data-a="count" data-t="0.06" data-d="0.62" data-to="{sc["value"]}" data-comma="1" data-dec="{sc.get("dec", 0)}" data-from="{sc["value"] if sc["value"] < 10 else 0}" data-pre="{sc.get("pre", "")}" '
                f'data-suf="{sc.get("unit", "")}">{sc.get("pre", "")}0{sc.get("unit", "")}</span>')
         shown = f'{sc.get("pre", "")}{sc["value"]:,.{sc.get("dec", 0)}f}{sc.get("unit", "")}'
         nsize = min(sc.get("size", 260), int(780 / (0.58 * len(shown))))  # 780 px wide, 875 after the 1.12 punch-in: inside x 70-1010
