@@ -119,9 +119,12 @@ def log(msg: str = "") -> None:
     print(redact(msg), flush=True)
 
 
+SUMMARY_FILE: str | None = None
+
+
 def summary(md: str) -> None:
     """Append to the GitHub job summary (when running in Actions)."""
-    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    path = SUMMARY_FILE
     if path:
         with open(path, "a", encoding="utf-8") as fh:
             fh.write(redact(md) + "\n")
@@ -985,6 +988,8 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     s.add_argument("--dest", required=True)
     args = ap.parse_args(argv)
     env = dict(os.environ if env is None else env)
+    global SUMMARY_FILE
+    SUMMARY_FILE = env.get("GITHUB_STEP_SUMMARY") or None
     try:
         if args.cmd == "auth-start":
             return cmd_auth_start(args.shop, env, gh_factory=kw.get("gh_factory"))

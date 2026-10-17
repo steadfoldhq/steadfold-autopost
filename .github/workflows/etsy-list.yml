@@ -1,0 +1,97 @@
+# Lists APPROVED products on Etsy from listings/<ID>.json specs.
+#   Run workflow -> spec: listings/<ID>.json, or "all" for every APPROVED spec
+#   mode: list (publish) | check (read-only: shop, currency, category, duplicates)
+#         | dry-run (no Etsy calls at all)
+# Also runs when listings/go.json is pushed (an agent records the owner's
+# "list approved" there). Decrypts the customer files inside this job only,
+# publishes, verifies, and commits listings/live.json (URL, id, date).
+name: Etsy list
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: 'listings/<ID>.json, or "all" for every APPROVED spec'
+        type: string
+        default: all
+      mode:
+        description: 'list = publish · check = read-only · dry-run = no Etsy calls'
+        type: choice
+        options: [list, check, dry-run]
+        default: list
+  push:
+    branches: [main]
+    paths: ['listings/go.json']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etsy
+  cancel-in-progress: false
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq age
+          pip install -r requirements.txt
+      - name: Tests
+        run: python -m unittest discover -s tests -q
+      - name: List on Etsy
+        env:
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+          ETSY_KEYSTRING_STEADFOLD: ${{ secrets.ETSY_KEYSTRING_STEADFOLD }}
+          ETSY_SHARED_SECRET_STEADFOLD: ${{ secrets.ETSY_SHARED_SECRET_STEADFOLD }}
+          ETSY_KEYSTRING_LITTLEFOLD: ${{ secrets.ETSY_KEYSTRING_LITTLEFOLD }}
+          ETSY_SHARED_SECRET_LITTLEFOLD: ${{ secrets.ETSY_SHARED_SECRET_LITTLEFOLD }}
+          ETSY_REFRESH_TOKEN_STEADFOLD: ${{ secrets.ETSY_REFRESH_TOKEN_STEADFOLD }}
+          ETSY_REFRESH_TOKEN_LITTLEFOLD: ${{ secrets.ETSY_REFRESH_TOKEN_LITTLEFOLD }}
+          ETSY_FILES_AGE_KEY: ${{ secrets.ETSY_FILES_AGE_KEY }}
+          ETSY_SHOP_NAME_STEADFOLD: ${{ vars.ETSY_SHOP_NAME_STEADFOLD }}
+          ETSY_SHOP_NAME_LITTLEFOLD: ${{ vars.ETSY_SHOP_NAME_LITTLEFOLD }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          EVENT: ${{ github.event_name }}
+          SPEC: ${{ inputs.spec }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$EVENT" = "push" ]; then
+            python tools/etsy.py list --go listings/go.json
+          else
+            case "$MODE" in
+              check)   python tools/etsy.py list --spec "${SPEC:-all}" --check ;;
+              dry-run) python tools/etsy.py list --spec "${SPEC:-all}" --dry-run ;;
+              *)       python tools/etsy.py list --spec "${SPEC:-all}" ;;
+            esac
+          fi
+      - name: Remove decrypted files
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/etsy-files"
+      - name: Save listings/live.json
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add listings/live.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No listing changes."
+            exit 0
+          fi
+          git commit -m "etsy: update listings/live.json"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::Could not push listings/live.json (the next run still skips live listings: it checks Etsy titles first)."
+          exit 1

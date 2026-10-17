@@ -1,0 +1,70 @@
+# Connect an Etsy shop (once per shop). Two runs:
+#   1. mode = start  -> open the link in the job summary, click "Allow access"
+#   2. mode = finish -> paste the whole address Etsy sent you to into "code"
+# Saves ETSY_REFRESH_TOKEN_<SHOP> through GH_PAT. Nothing secret is printed.
+name: Etsy auth
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'start (get the Etsy link) or finish (paste the code)'
+        type: choice
+        options: [start, finish]
+        default: start
+      shop:
+        description: 'Which shop'
+        type: choice
+        options: [STEADFOLD, LITTLEFOLD]
+        default: STEADFOLD
+      code:
+        description: 'finish only: paste the whole address from the browser bar after Allow access'
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: etsy
+  cancel-in-progress: false
+
+jobs:
+  auth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Mask the code
+        env:
+          RAW_CODE: ${{ inputs.code }}
+        run: |
+          if [ -n "$RAW_CODE" ]; then
+            echo "::add-mask::$RAW_CODE"
+            C=$(printf '%s' "$RAW_CODE" | sed -n 's/.*[?&]code=\([^&#]*\).*/\1/p')
+            [ -n "$C" ] && echo "::add-mask::$C"
+          fi
+          true
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Etsy auth ${{ inputs.mode }} (${{ inputs.shop }})
+        env:
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+          ETSY_KEYSTRING_STEADFOLD: ${{ secrets.ETSY_KEYSTRING_STEADFOLD }}
+          ETSY_SHARED_SECRET_STEADFOLD: ${{ secrets.ETSY_SHARED_SECRET_STEADFOLD }}
+          ETSY_KEYSTRING_LITTLEFOLD: ${{ secrets.ETSY_KEYSTRING_LITTLEFOLD }}
+          ETSY_SHARED_SECRET_LITTLEFOLD: ${{ secrets.ETSY_SHARED_SECRET_LITTLEFOLD }}
+          ETSY_PKCE_STEADFOLD: ${{ secrets.ETSY_PKCE_STEADFOLD }}
+          ETSY_PKCE_LITTLEFOLD: ${{ secrets.ETSY_PKCE_LITTLEFOLD }}
+          ETSY_REDIRECT_URI: ${{ vars.ETSY_REDIRECT_URI }}
+          ETSY_SHOP_NAME_STEADFOLD: ${{ vars.ETSY_SHOP_NAME_STEADFOLD }}
+          ETSY_SHOP_NAME_LITTLEFOLD: ${{ vars.ETSY_SHOP_NAME_LITTLEFOLD }}
+          ETSY_AUTH_CODE: ${{ inputs.code }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          MODE: ${{ inputs.mode }}
+          SHOP: ${{ inputs.shop }}
+        run: python tools/etsy.py "auth-$MODE" --shop "$SHOP"
