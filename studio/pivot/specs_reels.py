@@ -154,25 +154,25 @@ REELS.update({
 # ------------------------------------------------------------------ queue sweep Oct 17 pm: Reels Oct 19-21 still in the old flat style
 REELS.update({
     "lh-reel-1019am-pick-task": dict(brand="lockedhour", track="lh-x-tick-boom", scenes=[
-        dict(k="hook", f="dots", text="Pick the task / *before the timer.*", emo="⏳"),
+        dict(k="hook", f="dots", text="Pick / the task / *first.*", emo="⏳"),
         dict(k="say", f="cream", text="Write *one task.* / One line."),
         dict(k="say", f="pink", text="Too big? / *Shrink it.*", drop=True),
         dict(k="say", f="dots", text="Then start / a *60-minute* / timer."),
     ]),
     "lh-reel-1019-odd-hours": dict(brand="lockedhour", track="lh-x-lock-in", scenes=[
-        dict(k="hook", f="pink", text="Your morning / *might be 4 pm.*", emo="⏰"),
+        dict(k="hook", f="pink", text="Your morning / might be / *4 pm.*", emo="⏰"),
         dict(k="say", f="cream", text="Check your / *real wake-up* / times."),
         dict(k="say", f="dots", text="Pick the first / *quiet hour* / after you wake.", drop=True),
         dict(k="say", f="pink", text="Waking up / *is the cue.*"),
     ]),
     "lh-reel-1020am-nap-time": dict(brand="lockedhour", track="lh-x-phone-down", scenes=[
-        dict(k="hook", f="cream", text="Nap-time hour? / *Start with 20.*", emo="⏳"),
+        dict(k="hook", f="cream", text="Nap-time / hour? / *Start with 20.*", emo="⏳"),
         dict(k="say", f="pink", text="Pick a / *20-minute* task / before the nap."),
         dict(k="list", f="dots", items=["One *email*", "One *page*", "One *form*"], drop=True),
         dict(k="say", f="pink", text="Baby stirs / at 19? / *You showed up.*"),
     ]),
     "lh-reel-1020-shutdown": dict(brand="lockedhour", track="lh-x-lock-in", scenes=[
-        dict(k="hook", f="dots", text="Close the laptop / on a *written plan.*", emo="⏰"),
+        dict(k="hook", f="dots", text="Close / the laptop / on a *plan.*", emo="⏰"),
         dict(k="say", f="cream", text="Write *3 lines* / on paper."),
         dict(k="list", f="pink", items=["*1* First task", "*2* Start time", "*3* Where you stopped"], drop=True),
         dict(k="say", f="dots", text="Tonight's / *yours.*"),
