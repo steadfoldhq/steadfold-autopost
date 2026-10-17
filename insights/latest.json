@@ -1,13 +1,49 @@
 {
- "collected_at": "2026-10-16T20:32:12+00:00",
+ "collected_at": "2026-10-17T04:32:01+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 6,
+   "media_count": 8,
    "posts": [
+    {
+     "media_id": "18015281444960537",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DekrRyAihu_/",
+     "at": "2026-10-16T23:07:46+0000",
+     "first_line": "A 1% yearly fee looks tiny. Over 30 years it can take about a sixth of your pot. Find yours this week.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 10,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 1945,
+      "ig_reels_video_view_total_time": 9725
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18351664246265067",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DekheDXAWNG/",
+     "at": "2026-10-16T21:41:52+0000",
+     "first_line": "Put a finger down for each one. Every finger is a 10-minute fix.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2
+     },
+     "comments": []
+    },
     {
      "media_id": "17960138283215607",
      "type": "CAROUSEL_ALBUM",
@@ -17,8 +53,8 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 3,
+      "views": 8,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2
@@ -34,13 +70,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 38,
-      "reach": 25,
+      "views": 49,
+      "reach": 35,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 5090,
-      "ig_reels_video_view_total_time": 142545
+      "ig_reels_avg_watch_time": 4621,
+      "ig_reels_video_view_total_time": 175604
      },
      "comments": []
     },
@@ -53,13 +89,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 16,
+      "views": 22,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5223,
-      "ig_reels_video_view_total_time": 88801
+      "ig_reels_avg_watch_time": 4968,
+      "ig_reels_video_view_total_time": 89427
      },
      "comments": []
     },
@@ -72,8 +108,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 14,
-      "reach": 4,
+      "views": 15,
+      "reach": 5,
       "saved": 0,
       "shares": 1,
       "total_interactions": 5
@@ -89,8 +125,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 5,
+      "views": 24,
+      "reach": 6,
       "saved": 0,
       "shares": 2,
       "total_interactions": 7
@@ -106,8 +142,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 26,
-      "reach": 4,
+      "views": 27,
+      "reach": 5,
       "saved": 0,
       "shares": 2,
       "total_interactions": 7
@@ -121,8 +157,44 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 7,
+   "media_count": 9,
    "posts": [
+    {
+     "media_id": "18198325825390270",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Dekrgd6lYcx/",
+     "at": "2026-10-16T23:09:48+0000",
+     "first_line": "Get one quiet hour tomorrow: turn on Do Not Disturb, then send one line first.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 100,
+      "reach": 84,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 2939,
+      "ig_reels_video_view_total_time": 249872
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18445791319135113",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DekhgWFAVvF/",
+     "at": "2026-10-16T21:42:10+0000",
+     "first_line": "This is your sign to book one hour with yourself tomorrow.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2
+     },
+     "comments": []
+    },
     {
      "media_id": "18135463726662335",
      "type": "CAROUSEL_ALBUM",
@@ -132,8 +204,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 6,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1
@@ -149,13 +221,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 6,
+      "views": 11,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 8890,
-      "ig_reels_video_view_total_time": 71123
+      "ig_reels_avg_watch_time": 8112,
+      "ig_reels_video_view_total_time": 81129
      },
      "comments": []
     },
@@ -168,13 +240,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 54,
-      "reach": 47,
+      "views": 55,
+      "reach": 48,
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3379,
-      "ig_reels_video_view_total_time": 182482
+      "ig_reels_avg_watch_time": 3331,
+      "ig_reels_video_view_total_time": 183235
      },
      "comments": []
     },
@@ -187,8 +259,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 4,
+      "views": 16,
+      "reach": 5,
       "saved": 0,
       "shares": 3,
       "total_interactions": 7
@@ -204,7 +276,7 @@
      "likes": 4,
      "comments_count": 0,
      "insights": {
-      "views": 22,
+      "views": 23,
       "reach": 6,
       "saved": 0,
       "shares": 3,
@@ -253,8 +325,44 @@
    "username": "hourbackhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 6,
+   "media_count": 8,
    "posts": [
+    {
+     "media_id": "17947871355067253",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DekrWi2AELc/",
+     "at": "2026-10-16T23:08:26+0000",
+     "first_line": "Get through a long email fast: paste it and ask for just the asks.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 13,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 4744,
+      "ig_reels_video_view_total_time": 33211
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18107426059960368",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/Dekkunkkfcx/",
+     "at": "2026-10-16T22:10:20+0000",
+     "first_line": "Before you trust an AI answer, check it. Ask it to show its work.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18005330334006302",
      "type": "CAROUSEL_ALBUM",
@@ -264,8 +372,8 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 1,
+      "views": 8,
+      "reach": 2,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3
@@ -281,13 +389,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 4,
+      "views": 14,
+      "reach": 5,
       "saved": 1,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 12025,
-      "ig_reels_video_view_total_time": 72155
+      "ig_reels_avg_watch_time": 10402,
+      "ig_reels_video_view_total_time": 72820
      },
      "comments": []
     },
@@ -301,12 +409,12 @@
      "comments_count": 1,
      "insights": {
       "views": 19,
-      "reach": 12,
+      "reach": 13,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3360,
-      "ig_reels_video_view_total_time": 47042
+      "ig_reels_avg_watch_time": 3173,
+      "ig_reels_video_view_total_time": 47597
      },
      "comments": []
     },
@@ -368,8 +476,44 @@
    "username": "littlefoldhq",
    "followers_count": 3,
    "follows_count": 0,
-   "media_count": 4,
+   "media_count": 6,
    "posts": [
+    {
+     "media_id": "17927897172424488",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DekrbvrjlYu/",
+     "at": "2026-10-16T23:09:07+0000",
+     "first_line": "You're doing better than you think. Read this on the long nights.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 16,
+      "reach": 8,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 5,
+      "ig_reels_avg_watch_time": 7335,
+      "ig_reels_video_view_total_time": 66016
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18081205430367588",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DekeBYcDyl5/",
+     "at": "2026-10-16T21:11:45+0000",
+     "first_line": "Feeding all day in the first weeks? 8 to 12 breastfeeds in 24 hours is typical.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 11,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2
+     },
+     "comments": []
+    },
     {
      "media_id": "17937658338127792",
      "type": "CAROUSEL_ALBUM",
@@ -379,7 +523,7 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 7,
+      "views": 14,
       "reach": 3,
       "saved": 0,
       "shares": 0,
@@ -396,13 +540,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 75,
-      "reach": 64,
+      "views": 80,
+      "reach": 69,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
       "ig_reels_avg_watch_time": 2811,
-      "ig_reels_video_view_total_time": 188402
+      "ig_reels_video_view_total_time": 202402
      },
      "comments": []
     },
@@ -415,13 +559,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 68,
-      "reach": 59,
+      "views": 121,
+      "reach": 111,
       "saved": 1,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 2536,
-      "ig_reels_video_view_total_time": 149627
+      "ig_reels_avg_watch_time": 1751,
+      "ig_reels_video_view_total_time": 192643
      },
      "comments": []
     },
