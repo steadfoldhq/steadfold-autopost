@@ -223,3 +223,29 @@ STORIES.update({
     "lh-st-1019-1300-newpost": dict(brand=LH, k="newpost", f="pink", text="New post: / *90 hours* by Jan 16.", img="lh-w2-08-lockin-kickoff/01.jpg"),
     "lh-st-1020-1300-newpost": dict(brand=LH, k="newpost", f="cream", text="New post: one hour, / *minute by minute.*", img="lh-w2-07-minute-by-minute/01.jpg"),
 })
+
+# Littlefold / Locked Hour question, tip and evening Stories (Oct 17 afternoon: lifted from the old Sherbet / zine cards).
+STORIES.update({
+    "lf-st-1017-1530-tip": dict(brand=LF, k="tip", f="butter", text="Write *3 small jobs* / on the fridge.", sub="helpers pick one without asking.", obj="point"),
+    "lf-st-1017-2100-evening": dict(brand=LF, k="evening", f="pink", text="Gave someone / *one job* today?", img="reels/lf-reel-1017-one-job-cover.jpg", a="Yes", b="Not yet"),
+    "lf-st-1018-0745-question": dict(brand=LF, k="question", f="cream", text="Night shifts / *at your place?*", a="We take turns", b="Mostly me", obj="shoe"),
+    "lf-st-1018-1530-tip": dict(brand=LF, k="tip", f="pink", text="Water + a snack / *where you'll sit.*", sub="set it up before the night feed.", obj="clock"),
+    "lf-st-1018-2100-evening": dict(brand=LF, k="evening", f="butter", text="Saved the / *step-away plan?*", img="reels/lf-reel-1018-breathe-cover.jpg", a="Yes", b="Not yet"),
+    "lf-st-1019-0745-question": dict(brand=LF, k="question", f="pink", text="Can you spot / *early hunger cues?*", a="Yes, mostly", b="Still learning", obj="shoe"),
+    "lf-st-1019-1530-tip": dict(brand=LF, k="tip", f="cream", text="Doctor's line / *in your phone.*", sub="save it under Baby, tonight.", obj="point"),
+    "lf-st-1019-2100-evening": dict(brand=LF, k="evening", f="berry", text="Picked who / *covers day 1?*", img="reels/lf-reel-1019-sick-day-plan-cover.jpg", a="Yes", b="Not yet"),
+    "lf-st-1020-0745-question": dict(brand=LF, k="question", f="butter", text="Puffy coat / *in the car seat?*", a="Coat off first", b="Didn't know", obj="shoe"),
+    "lf-st-1020-1530-tip": dict(brand=LF, k="tip", f="pink", text="Car seat / *inside* tonight.", sub="it's warm for the morning.", obj="ok"),
+    "lf-st-1020-2100-evening": dict(brand=LF, k="evening", f="cream", text="Sent the / *visitor note?*", img="reels/lf-reel-1020-visitors-cover.jpg", a="Yes", b="Not yet"),
+    "lh-st-1017-1540-tip": dict(brand=LH, k="tip", f="dots", text="Badges *off* / on your / top app.", sub="the one you check the most.", obj="point"),
+    "lh-st-1017-2110-evening": dict(brand=LH, k="evening", f="pink", text="One tab / *for one hour?*", img="reels/lh-reel-1017-one-tab-cover.jpg", a="Yes", b="Not yet"),
+    "lh-st-1018-0755-question": dict(brand=LH, k="question", f="cream", text="Fresh start: / *when?*", a="Monday", b="Tomorrow", obj="clock"),
+    "lh-st-1018-1540-tip": dict(brand=LH, k="tip", f="pink", text="Tomorrow's hour: / *in the calendar.*", sub="tonight, with a start time.", obj="clock"),
+    "lh-st-1018-2110-evening": dict(brand=LH, k="evening", f="dots", text="Locked / *one hour* today?", img="reels/lh-reel-1018-mute-the-world-cover.jpg", a="Yes", b="Not yet"),
+    "lh-st-1019-0755-question": dict(brand=LH, k="question", f="pink", text="Day 1. / *Task picked?*", a="Picked", b="Not yet", obj="point"),
+    "lh-st-1019-1540-tip": dict(brand=LH, k="tip", f="cream", text="Set a / *60-minute* timer.", sub="before you open anything else.", obj="hourglass"),
+    "lh-st-1019-2110-evening": dict(brand=LH, k="evening", f="dots", text="Found your / *hour yet?*", img="reels/lh-reel-1019-odd-hours-cover.jpg", a="Yes", b="Not yet"),
+    "lh-st-1020-0755-question": dict(brand=LH, k="question", f="cream", text="Your *sharpest* / hour?", a="Morning", b="Night", obj="clock"),
+    "lh-st-1020-1540-tip": dict(brand=LH, k="tip", f="dots", text="A *20-minute* / task on a / sticky note.", sub="ready for the next gap in your day.", obj="hourglass"),
+    "lh-st-1020-2110-evening": dict(brand=LH, k="evening", f="pink", text="Wrote tomorrow's / *first task?*", img="reels/lh-reel-1020-shutdown-cover.jpg", a="Yes", b="Not yet"),
+})

@@ -231,7 +231,9 @@ def story(brand, s, W=1080, H=1920):
             body += answers(brand, f, opts, 1180 if len(opts) == 2 else 1110)
         o = s.get("obj", "point")
         pos = {"point": (-60, 1330, 470, -14, False), "ok": (60, 1270, 360, 8, False), "piggy": (80, 1300, 420, -6, False),
-               "phone": (90, 1260, 240, -10, False), "chat": (60, 1330, 340, -6, False)}[o]
+               "phone": (90, 1260, 240, -10, False), "chat": (60, 1330, 340, -6, False),
+               "clock": (90, 1300, 280, -8, False), "hourglass": (110, 1320, 230, -10, False),
+               "shoe": (70, 1340, 330, -8, False), "megaphone": (-30, 1330, 380, -8, False)}[o]
         _o = s.get("opts") or ([s["a"], s["b"]] if s.get("a") else [])
         if len(_o) > 2 or sum(len(x) for x in _o) > 16:
             pos = (-80, 1500, 380, -14, False) if o == "point" else (pos[0], 1470, int(pos[2] * .8), pos[3], pos[4])
