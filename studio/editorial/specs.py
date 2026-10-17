@@ -269,3 +269,22 @@ STORIES.update({
     "hb-st-1021-3": dict(brand=HB, k="tip", f="plum", text="We did / *the math too.*", sub="statement made up for this post. 78.47 matched ours.", obj="ok"),
     "hb-st-1021-4": dict(brand=HB, k="question", f="yel", text="Weather costume: / *who are you?*", opts=["Sun or rain", "Fog or lightning"], obj="point"),
 })
+
+# Oct 17 owner feedback: the Learning Bond post (ff-w02-4) didn't say clearly who qualifies. Follow-up that ends on "who + how".
+# rows = a big table (inner slide); items = numbered steps (inner slide); save = handwritten save-line on an inner slide.
+# Facts: canada.ca ESDC notice 2025-1095 (Jul 2025-Jun 2026 limits) + CLB brochures (born 2004+, RESP needed, no contributions).
+POSTS.update({
+    "ff-1021-clb-who-qualifies": dict(brand=FF, cover=dict(
+        lay="pills", f="coral", kicker="canada learning bond", text="Do you / *qualify* for / *$2,000?*", obj="piggy", at="br",
+        save="the income check is on slide 2"), slides=[
+        dict(f="lite", text="Who *qualifies*", cap="adjusted family net income · Jul 2025 to Jun 2026",
+             rows=[("1 to 3 kids", "$57,375 or less"), ("4 kids", "under $64,733"), ("5 kids", "under $72,123")],
+             sub="kids born 2004 or later", src="canada.ca · ESDC notice 2025-1095 · limits change each July"),
+        dict(f="cob", text="3 steps / to *claim*",
+             items=["Open a free RESP", "Give your child's SIN", "Apply for the bond"],
+             sub="no money needed", save="save this for your bank visit"),
+    ]),
+})
+STORIES.update({
+    "ff-st-1021-1230-newpost": dict(brand=FF, k="newpost", f="lite", text="New post: do you / *qualify?*", img="ff-1021-clb-who-qualifies/01.jpg"),
+})

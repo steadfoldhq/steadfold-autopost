@@ -288,6 +288,8 @@ follow-the-line, glove. Never the same layout twice in a row on one page.
 - FF money maths from `studio/pivot/ff_math.py` (`FIG`), headline rate 10% a year, never above. Posts that show returns end the
   caption with **Not guaranteed. Returns vary.**, in the caption only, never on a tile.
 - Never the word "example" (12b).
+- Any benefit, grant or credit post ends with a clear 'Who qualifies' line or slide (thresholds, ages, how to check), in plain words.
+  (Dharma, Oct 17, after the Canada Learning Bond post left readers unsure whether they qualify.)
 
 **How to build it:**
 - Feed tiles and Stories: `studio/editorial/specs.py` + `python3 studio/editorial/covers.py feed|story <ids>`

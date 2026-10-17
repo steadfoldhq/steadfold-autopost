@@ -1806,6 +1806,27 @@
       "story": true,
       "image": "stories/lh-st-1020-2110-evening.jpg",
       "caption": "Evening check-in on lh-reel-1020-shutdown: Wrote tomorrow's first task?"
+    },
+    {
+      "id": "ff-1021-clb-who-qualifies",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-21T12:00:00-04:00",
+      "caption": "The Canada Learning Bond puts up to $2,000 in your child's RESP, and you never have to add a cent.\nYou qualify (Jul 2025 to Jun 2026) if your adjusted family net income is $57,375 or less with 1 to 3 kids, under $64,733 with 4, or under $72,123 with 5, and your child was born in 2004 or later.\nTo claim: open a free RESP, give your child's SIN, and ask the provider to apply. $500 the first eligible year, then $100 a year to age 15. Not advice.\n\n#canadalearningbond #resp #personalfinancecanada #parenting #moneytips",
+      "first_comment": "Source: canada.ca, ESDC notice 2025-1095 (Canada Learning Bond income limits, Jul 1 2025 to Jun 30 2026) and canada.ca → Canada Learning Bond. Limits are updated every July. Larger families have higher limits.",
+      "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Do you qualify for $2,000?' in a large serif with highlighted words under a 'Canada Learning Bond' label, a halftone piggy bank, and the handwritten note 'the income check is on slide 2'. Slide 2: 'Who qualifies', a table of adjusted family net income for Jul 2025 to Jun 2026: 1 to 3 kids, $57,375 or less; 4 kids, under $64,733; 5 kids, under $72,123; handwritten note 'kids born 2004 or later'; source canada.ca, ESDC notice 2025-1095, limits change each July. Slide 3: '3 steps to claim': 1 open a free RESP, 2 give your child's SIN, 3 apply for the bond; handwritten notes 'no money needed' and 'save this for your bank visit'.",
+      "images": [
+        "ff-1021-clb-who-qualifies/01.jpg",
+        "ff-1021-clb-who-qualifies/02.jpg",
+        "ff-1021-clb-who-qualifies/03.jpg"
+      ]
+    },
+    {
+      "id": "ff-st-1021-1230-newpost",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-21T12:30:00-04:00",
+      "story": true,
+      "image": "stories/ff-st-1021-1230-newpost.jpg",
+      "caption": "New post share: Do you qualify for the $2,000 Canada Learning Bond?"
     }
   ]
 }

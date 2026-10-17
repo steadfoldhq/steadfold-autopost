@@ -184,6 +184,8 @@ LAYOUTS = {"pills": lay_pills, "sticky": lay_sticky, "mosaic": lay_mosaic, "line
 def inner(brand, s, i, n, W=1080, H=1350):
     """Slides 2-3: same field + texture + serif + pills, one hero number, a handwritten note, small stamp."""
     f = K.FIELDS[brand][s["f"]]
+    if s.get("rows") or s.get("items"):
+        return inner_list(brand, s, i, n, W, H)
     parts = K.dual(s["text"], f, "S fit", f'font-size:150px;color:{f["ink"]}').replace('class="S fit"', 'class="S fit" data-w="920" data-h="520"', 1)
     if s.get("num"):
         parts += (f'<div class="S fit" data-w="920" style="font-size:330px;color:{f["ink"]};margin-top:30px">'
@@ -194,6 +196,40 @@ def inner(brand, s, i, n, W=1080, H=1350):
             f'justify-content:center;align-items:center;z-index:2">{parts}</div>'
             f'<div style="position:absolute;right:60px;top:60px;font:600 30px/1 Fraunces;color:{f["ink"]};opacity:.55">{i + 1}/{n}</div>'
             + K.stamp(brand, 60, H - 220, 160, -12) + src_line(f, s.get("src")))
+
+
+def inner_list(brand, s, i, n, W=1080, H=1350):
+    """Inner slide with a big table (rows) or numbered steps (items): serif title + pills, white card, handwritten notes, stamp."""
+    f = K.FIELDS[brand][s["f"]]
+    ink = f["ink"]
+    steps = bool(s.get("items"))
+    body = head(brand, f, s["text"], 90, 300 if steps else 200, 170)
+    top = 430 if steps else 330
+    if not steps:
+        cap = (f'<div style="font:600 24px/1.2 Fraunces;letter-spacing:.05em;text-transform:uppercase;opacity:.75;white-space:nowrap;'
+               f'padding:0 0 18px;text-align:center">{s["cap"]}</div>') if s.get("cap") else ""
+        card = cap + "".join(
+            f'<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 6px;'
+            f'{"border-top:3px solid rgba(20,26,85,.14)" if k else ""}">'
+            f'<span style="font:700 60px/1 Fraunces;white-space:nowrap">{a}</span>'
+            f'<span class="S" style="font-size:70px;white-space:nowrap"><span class="pill" style="background:{f["p1"] if k % 2 == 0 else f["p2"]}">{b}</span></span></div>'
+            for k, (a, b) in enumerate(s["rows"]))
+    else:
+        card = "".join(
+            f'<div style="display:flex;align-items:center;gap:30px;padding:28px 6px;{"border-top:3px solid rgba(20,26,85,.14)" if k else ""}">'
+            f'<span class="S" style="flex:none;width:96px;height:96px;border-radius:50%;background:{f["p1"] if k % 2 == 0 else f["p2"]};'
+            f'border:3px solid {ink};font-size:64px;line-height:88px">{k + 1}</span>'
+            f'<span style="font:700 56px/1.08 Fraunces;text-align:left">{t}</span></div>'
+            for k, t in enumerate(s["items"]))
+    body += (f'<div style="position:absolute;left:80px;right:80px;top:{top}px;background:#FFFFFF;border:3px solid {ink};border-radius:36px;'
+             f'padding:30px 46px 22px;color:{ink};box-shadow:0 14px 0 {ink};z-index:2">{card}</div>')
+    if s.get("sub"):
+        body += K.save_line(s["sub"], 300, 1010 if steps else 1020, 700, 76, -3, brand)
+    if s.get("save"):
+        body += K.save_line(s["save"], 230, 1135, 620, 54, -3, brand)
+    body += f'<div style="position:absolute;right:60px;top:40px;font:600 30px/1 Fraunces;color:{ink};opacity:.55;z-index:5">{i + 1}/{n}</div>'
+    body += (K.obj("point", -70, 1010, 360, -14, False, z=4) if steps else K.obj("ok", -20, 1010, 290, 8, False, z=4))
+    return body + K.stamp(brand, W - 230, H - 230, 170, -12) + src_line(f, s.get("src"))
 
 
 def page(brand, field, body, W, H, dark=False):
