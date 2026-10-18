@@ -171,6 +171,57 @@ def travel(r, spec, out_dir):
     return files + [last]
 
 
+# ----------------------------------------------------------------------------------------------- scenic trail (illustrated)
+def trail(r, spec, out_dir):
+    """Travelling carousel on an illustrated landscape: sky, sun, clouds, layered hills, a winding dotted path,
+    a milestone sign on every slide, and the traveller moving along the path."""
+    b, field = spec["brand"], spec["field"]
+    n = len(spec["beats"])
+    f = f_(b, field)
+    ink = f["ink"]
+    pal = spec.get("palette", dict(sky1="#FFF4E6", sky2="#FFDCE8", sun="#FFE59A", h1="#FFE3CC", h2="#FFC9D9", h3="#FFB59E", path="#D9497A"))
+    Wt = n * W
+
+    def hill(base, amp, per, phase, col, op=1):
+        pts = [f"0,{H}"] + [f"{x},{base + amp * math.sin(x / per + phase):.0f}" for x in range(0, Wt + 1, 20)] + [f"{Wt},{H}"]
+        return f'<polygon points="{" ".join(pts)}" fill="{col}" opacity="{op}"/>'
+    clouds = "".join(f'<g opacity=".9"><ellipse cx="{cx}" cy="{cy}" rx="120" ry="44" fill="#fff"/><ellipse cx="{cx + 70}" cy="{cy - 24}" rx="80" ry="40" fill="#fff"/>'
+                     f'<ellipse cx="{cx - 80}" cy="{cy + 6}" rx="70" ry="30" fill="#fff"/></g>'
+                     for cx, cy in [(W * i + 260 + 300 * (i % 2), 560 + 50 * ((i + 1) % 2)) for i in range(n)])
+    path_y = lambda x: 1040 + 55 * math.sin(x / 430 + 0.6)
+    trail_d = "M " + " L ".join(f"{x},{path_y(x):.0f}" for x in range(0, Wt + 1, 12))
+    svg = (f'<svg style="position:absolute;left:0;top:0;z-index:1" width="{Wt}" height="{H}" viewBox="0 0 {Wt} {H}">'
+           f'<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{pal["sky1"]}"/>'
+           f'<stop offset="1" stop-color="{pal["sky2"]}"/></linearGradient></defs>'
+           f'<rect width="{Wt}" height="{H}" fill="url(#sky)"/>'
+           f'<circle cx="{W - 150}" cy="660" r="95" fill="{pal["sun"]}"/>{clouds}'
+           + hill(800, 40, 520, 0.3, pal["h1"]) + hill(900, 50, 380, 1.7, pal["h2"]) + hill(1010, 36, 300, 0.9, pal["h3"])
+           + f'<path d="{trail_d}" fill="none" stroke="{pal["path"]}" stroke-width="13" stroke-dasharray="2 24" stroke-linecap="round"/></svg>')
+    body = svg
+    # milestone signs + the traveller
+    for i, bt in enumerate(spec["beats"]):
+        if bt.get("sign"):
+            sx = W * i + 760
+            sy = path_y(sx)
+            body += (f'<div style="position:absolute;left:{sx - 6}px;top:{sy - 230:.0f}px;width:12px;height:230px;background:{ink};border-radius:6px;z-index:3"></div>'
+                     f'<div style="position:absolute;left:{sx - 110}px;top:{sy - 330:.0f}px;width:220px;z-index:4;background:#fff;border:5px solid {ink};'
+                     f'border-radius:26px;box-shadow:0 8px 0 {ink};padding:10px 0 14px;text-align:center;transform:rotate({-4 + 4 * (i % 3)}deg)">'
+                     f'<div style="font-family:\'Noto Color Emoji\';font-size:86px;line-height:1">{bt["sign"]}</div></div>')
+        tx = W * i + (140 if i == 0 else 300)
+        body += K.obj(spec.get("obj", "shoe"), int(tx), int(path_y(tx + 120) - 210), 250, -6 + 5 * (i % 2), z=5)
+        top = 120
+        if bt.get("label"):
+            body += hand(b, bt["label"], W * i + 100, top, 880, 60)
+        body += txt(b, field, bt["text"], W * i + 70, top + 80, W - 140, bt.get("size", 96))
+        body += counter(i + 1, n + 1, W * i + W - 120)
+    body += f'<div style="position:absolute;inset:0;z-index:6">{K.stamp(b, 50, H - 230, 150, -12)}</div>'
+    body += hand(b, spec.get("cta", "follow the path →"), 260, H - 150, 760, 60, -2)
+    files = shot_pano(r, b, field, body, n, out_dir)
+    last = out_dir / f"{n + 1:02d}.jpg"
+    r.shot(C.page(b, spec["do_field"], do_card(b, spec["do_field"], spec["do"], spec["save"]) + counter(n + 1, n + 1), W, H), W, H, last)
+    return files + [last]
+
+
 # ----------------------------------------------------------------------------------------------- hold the dots & slide
 def jar_svg(b, level, ink, fill, w=430, h=560):
     lv = max(0.0, min(1.0, level))
@@ -252,7 +303,7 @@ def reveal(r, spec, out_dir):
     return files
 
 
-BUILD = {"follow": follow, "travel": travel, "hold": hold, "reveal": reveal}
+BUILD = {"follow": follow, "travel": travel, "trail": trail, "hold": hold, "reveal": reveal}
 
 
 def build(ids):

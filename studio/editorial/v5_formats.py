@@ -116,3 +116,22 @@ for _old in ("hb-1021-single-subscriptions",):
     _S.POSTS.pop(_old, None)
     _S.META.pop(_old, None)
     DROPPED[_old] = "replaced by hb-1021-travel-subscriptions (travelling-icon carousel)"
+
+# ------------------------------------------------------------------ Littlefold · scenic travelling carousel (Oct 22 11:30)
+fmt("lf-1022-newborn-bundle-trail", LF, "2026-10-22T11:30",
+    dict(kind="trail", field="cream", do_field="pink", obj="shoe", cta="follow baby's first trip →",
+         beats=[dict(text="New baby in Ontario? / *One form.* / *5 things done.*", size=100),
+                dict(label="stop 1", sign="📝", text="Register the birth / + order the / *birth certificate*"),
+                dict(label="stop 2", sign="🪪", text="Get baby's *SIN* / + start the / *Child Benefit*"),
+                dict(label="stop 3", sign="🎓", text="Tick *Education* / *Savings.* It helps / you open an RESP")],
+         do="Search *ontario.ca/newborn.* Do it in the *first 30 days.*", save="send this to someone expecting 🍼"),
+    "New baby in Ontario? One form. 5 things done.", "follow baby's first trip",
+    ["Register the birth and order the birth certificate.", "Get baby's SIN and start the Child Benefit.",
+     "Tick Education Savings. It helps you open an RESP.", "Search ontario.ca/newborn. Do it in the first 30 days."],
+    "New baby in Ontario? One online form does 5 things 👶\n\n1. Registers the birth\n2. Orders the birth certificate\n"
+    "3. Applies for baby's SIN\n4. Applies for the Canada child benefits (including Ontario's)\n5. An Education Savings referral, to help you open an RESP\n\n"
+    "Why it matters: the Child Benefit and the RESP grants need your baby's SIN. One form starts all of it.\n\n"
+    "Do this: search ontario.ca/newborn and do it in the first 30 days. Still free online up to 12 months.\n\n"
+    "Send this to someone expecting.\n\n#newparents #ontarioparents #canadianparents #newbaby #babymoney",
+    "Did you do the bundle? Source: ontario.ca, Register a birth (new baby): the 5-in-1 newborn bundle; register within 30 days, "
+    "free online within 12 months. Other provinces have their own service.")

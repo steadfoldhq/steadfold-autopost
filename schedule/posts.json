@@ -2130,6 +2130,21 @@
       "caption": "Story chain ff-ch-1022 frame 4: You pay it when you take it out."
     },
     {
+      "id": "lf-1022-newborn-bundle-trail",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T11:30:00-04:00",
+      "caption": "New baby in Ontario? One online form does 5 things 👶\n\n1. Registers the birth\n2. Orders the birth certificate\n3. Applies for baby's SIN\n4. Applies for the Canada child benefits (including Ontario's)\n5. An Education Savings referral, to help you open an RESP\n\nWhy it matters: the Child Benefit and the RESP grants need your baby's SIN. One form starts all of it.\n\nDo this: search ontario.ca/newborn and do it in the first 30 days. Still free online up to 12 months.\n\nSend this to someone expecting.\n\n#newparents #ontarioparents #canadianparents #newbaby #babymoney",
+      "first_comment": "Did you do the bundle? Source: ontario.ca, Register a birth (new baby): the 5-in-1 newborn bundle; register within 30 days, free online within 12 months. Other provinces have their own service.",
+      "alt_text": "Littlefold 5-slide carousel. Slide 1: 'New baby in Ontario? One form. 5 things done.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'follow baby's first trip'. Slide 2: Register the birth and order the birth certificate.. Slide 3: Get baby's SIN and start the Child Benefit.. Slide 4: Tick Education Savings. It helps you open an RESP.. Slide 5: Do this: Search ontario.ca/newborn. Do it in the first 30 days..",
+      "images": [
+        "lf-1022-newborn-bundle-trail/01.jpg",
+        "lf-1022-newborn-bundle-trail/02.jpg",
+        "lf-1022-newborn-bundle-trail/03.jpg",
+        "lf-1022-newborn-bundle-trail/04.jpg",
+        "lf-1022-newborn-bundle-trail/05.jpg"
+      ]
+    },
+    {
       "id": "lh-ch-1022-1",
       "account": "lockedhour",
       "publish_at": "2026-10-22T11:45:00-04:00",
@@ -2552,6 +2567,17 @@
       "alt_text": "Edited video in the Locked Hour editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Coffee at 4 pm? Your sleep noticed. / In a sleep study, people had caffeine 6 hours before bed. / because They slept over an hour less. They didn't notice. / About 2 to 3 cups of coffee. / Do this: Have your last coffee at least 6 hours before bed. / Send this to your coffee friend.. It loops back to the opening line.",
       "video": "reels/lh-reel-1023-caffeine.mp4",
       "cover": "reels/lh-reel-1023-caffeine-cover.jpg"
+    },
+    {
+      "id": "lf-pan-1024am-newborn-bundle",
+      "account": "littlefold",
+      "publish_at": "2026-10-24T08:00:00-04:00",
+      "caption": "New baby in Ontario? One online form does 5 things 👶\n\n1. Registers the birth\n2. Orders the birth certificate\n3. Applies for baby's SIN\n4. Applies for the Canada child benefits (including Ontario's)\n5. An Education Savings referral, to help you open an RESP\n\nWhy it matters: the Child Benefit and the RESP grants need your baby's SIN. One form starts all of it.\n\nDo this: search ontario.ca/newborn and do it in the first 30 days. Still free online up to 12 months.\n\nSend this to someone expecting.\n\n#newparents #ontarioparents #canadianparents #newbaby #babymoney",
+      "first_comment": "Did you do the bundle? Source: ontario.ca, Register a birth (new baby): the 5-in-1 newborn bundle; register within 30 days, free online within 12 months. Other provinces have their own service.",
+      "alt_text": "Video panning across an illustrated landscape: a baby shoe walks a dotted path past signs for birth registration, SIN and Child Benefit, and Education Savings, then the Do this card: search ontario.ca/newborn in the first 30 days.",
+      "video": "reels/lf-pan-1024am-newborn-bundle.mp4",
+      "cover": "reels/lf-pan-1024am-newborn-bundle-cover.jpg",
+      "trial": "auto"
     }
   ]
 }
