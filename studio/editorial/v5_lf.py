@@ -1,8 +1,8 @@
 """Littlefold content, Oct 18-21. Rewritten Oct 17 night to the ONE-READ standard (/home/claude/one-read-standard.md).
 Uses post()/reel()/chain() from specs_teach. Only this page's entries live here.
 Kids' money figures checked on canada.ca (Oct 17): CESG 20% on the first $2,500 a year (max $500/yr basic, $7,200 lifetime,
-catch-up up to $1,000 a year); CLB $500 + $100/yr up to $2,000, no contribution, born 2004+, ADFNI <= $57,375 for 1-3 kids
-(Jul 2025 - Jun 2026, ESDC notice 2025-1095)."""
+catch-up up to $1,000 a year); CLB $500 + $100/yr up to $2,000, no contribution, born 2004+, ADFNI <= $58,523 for 1-3 kids
+(Jul 2026 - Jun 2027, ESDC notice 2026-1138)."""
 from specs_teach import post, reel, chain, FF, HB, LH, LF, NG, NOT_MED, MADE, PRIV, K  # noqa: F401
 
 
@@ -26,7 +26,7 @@ CESG_SRC = ("Government of Canada, canada.ca, Canada Education Savings Grant: th
             "$1,000 of grant in one year, until the end of the year the child turns 17.")
 CLB_SRC = ("Government of Canada, canada.ca, Canada Learning Bond: $500 the first year, then $100 for each year you qualify, up to "
            "$2,000. No personal contribution needed. Children born in 2004 or later, from lower-income families. Income limit for "
-           "July 2025 to June 2026: adjusted family net income of $57,375 or less for 1 to 3 children (ESDC notice 2025-1095).")
+           "July 2026 to June 2027: adjusted family net income of $58,523 or less for 1 to 3 children (ESDC notice 2026-1138).")
 
 # ================================================================== FEED
 # Oct 18, 11:30 · REPLACES lf-04-sleep-when-baby-sleeps · kids' money 1/2
@@ -85,8 +85,8 @@ post("lf-1019-learning-bond", LF, "2026-10-19T11:30", "deep",
            size=124),
       dict(k="say", f="pink", text="*$500* to start. / *$100* more / each year. / Up to *$2,000.*",
            size=128, src="canada.ca, Canada Learning Bond"),
-      dict(k="say", f="cream", label="who qualifies", text="1 to 3 kids, and / family net income / of *$57,375* / or less.",
-           sub="for July 2025 to June 2026", size=124),
+      dict(k="say", f="cream", label="who qualifies", text="1 to 3 kids, and / family net income / of *$58,523* / or less.",
+           sub="for July 2026 to June 2027", size=124),
       dict(k="say", f="butter", label="the part nobody tells you", text="Missed it? / Kids born *2004* / *or later* can apply / *before 21.*",
            size=124),
       dict(k="do", f="pink", text="This week, ask your bank for a *free RESP* with the Learning Bond. Bring your child's SIN.",
@@ -94,7 +94,7 @@ post("lf-1019-learning-bond", LF, "2026-10-19T11:30", "deep",
      "Up to $2,000 for your child's education, and you don't have to put in a cent.\n\n"
      "It's called the Canada Learning Bond. The government puts $500 into your child's RESP, then $100 for each year your family "
      "qualifies, up to $2,000. No deposit is needed.\n\n"
-     "Who can get it: for July 2025 to June 2026, families with 1 to 3 children and an adjusted family net income of $57,375 or less. "
+     "Who can get it: for July 2026 to June 2027, families with 1 to 3 children and an adjusted family net income of $58,523 or less. "
      "Children born in 2004 or later can apply any time before they turn 21, so it's not too late if you missed it. In 2022, only about "
      "4 in 10 eligible kids had received it.\n\n"
      "Do this: this week, ask your bank for a free RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"

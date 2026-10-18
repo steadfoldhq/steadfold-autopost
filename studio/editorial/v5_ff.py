@@ -236,9 +236,9 @@ post("ff-1021-clb-who-qualifies", FF, "2026-10-21T12:00", "learning",
      [dict(k="say", f="lite", label="sound too good?", text="The government / can put up to / *$2,000* toward / your kid's school.",
            size=124, sub="and you add $0"),
       dict(k="say", f="cob", label="the Canada Learning Bond", text="*$500* to start. / *$100* more / each year. / Up to $2,000.", size=124),
-      dict(k="rows", f="lite", text="Who *qualifies*", cap="family net income, July 2025 to June 2026",
-           rows=[("1 to 3 kids", "$57,375 or less"), ("4 kids", "under $64,733"), ("5 kids", "under $72,123")],
-           sub="kids born in 2004 or later", src="canada.ca · ESDC notice 2025-1095 · limits change each July"),
+      dict(k="rows", f="lite", text="Who *qualifies*", cap="family net income, July 2026 to June 2027",
+           rows=[("1 to 3 kids", "$58,523 or less"), ("4 kids", "under $66,036"), ("5 kids", "under $73,577")],
+           sub="kids born in 2004 or later", src="canada.ca · ESDC notice 2026-1138 · limits change each July"),
       dict(k="say", f="coral", label="the part nobody mentions", text="It only lands / in an *RESP:* / a savings account / for school.",
            size=124),
       dict(k="say", f="cob", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
@@ -249,15 +249,15 @@ post("ff-1021-clb-who-qualifies", FF, "2026-10-21T12:00", "learning",
            size=100, save="send this to a new parent")],
      "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\n"
      "It's called the Canada Learning Bond. It starts with $500, then adds $100 every year, up to $2,000.\n\n"
-     "Who qualifies (July 2025 to June 2026): kids born in 2004 or later, in families with net income of $57,375 or less for 1 to 3 kids, "
-     "under $64,733 for 4 kids, or under $72,123 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands "
+     "Who qualifies (July 2026 to June 2027): kids born in 2004 or later, in families with net income of $58,523 or less for 1 to 3 kids, "
+     "under $66,036 for 4 kids, or under $73,577 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands "
      "in an RESP, a savings account for school. Many banks open one for free. In 2022, about 2.5 million eligible kids had never received it. "
      "Didn't apply when they were a baby? You can still apply until your child turns 21.\n\n"
      "Do this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
      "Money Foundations, Part 4. Send this to a new parent.\n\n#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
      "Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional year "
      "up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under 21 when applying. "
-     "Income limits: ESDC notice 2025-1095, July 1, 2025 to June 30, 2026 (adjusted family net income). Take-up: Godbout & Samoisette, "
+     "Income limits: ESDC notice 2026-1138, July 1, 2026 to June 30, 2027 (adjusted family net income). Take-up: Godbout & Samoisette, "
      "C.D. Howe Institute, \"On Its Anniversary, Has the Goal of the Canada Learning Bond Been Achieved?\", citing ESDC's 2022 Canada "
      "Education Savings Program statistical review: take-up rose from 29.1% (2013) to 42.5% (2022); 2.5 million of 4.4 million eligible "
      "children had not received it.")
