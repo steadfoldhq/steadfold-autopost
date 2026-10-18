@@ -216,13 +216,14 @@ class SpecValidation(unittest.TestCase):
         self.assertEqual(len(s["files"]), 5)
         self.assertEqual(s["price"], {"USD": 16.0, "CAD": 22.0})
         self.assertTrue(s["description"].endswith("• Launch sale: 25% off until 30 Nov 2026. Regular price US$16."))
-        self.assertEqual(real_spec("DP-RIV")["price"], {"CAD": 14.99})
+        self.assertEqual(real_spec("DP-RIV")["price"], {"CAD": 14.99, "USD": 10.99})   # USD added Oct 18 (shops list in USD)
+        self.assertIn("Regular price US$10.99.", etsy.description_for(real_spec("DP-RIV"), "USD"))
         self.assertNotIn("video", real_spec("FF-MSP"))          # the kit video shows the bundle
         self.assertEqual(len(real_spec("FF-MSP")["photos"]), 8)
         for sid in ("LBM1", "LBP-SET", "LBP1", "LBP2", "LBP3", "LBP4"):
             s = real_spec(sid)
             self.assertIn("ONEGLANCE", s["photos"][0])
-            self.assertEqual(list(s["price"]), ["CAD"])
+            self.assertIn("CAD", s["price"])
         for sid in SPEC_IDS:
             self.assertEqual(len(real_spec(sid)["tags"]), 13, sid)
 
