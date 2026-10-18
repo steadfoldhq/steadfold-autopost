@@ -1196,17 +1196,6 @@
       "trial": "auto"
     },
     {
-      "id": "hb-reel-1019am-just-the-asks",
-      "account": "hourback",
-      "publish_at": "2026-10-19T08:45:00-04:00",
-      "caption": "A huge email from your boss, before coffee. What do they actually need from you?\n\nPaste it into AI and ask: \"What do they need from me? Quote the line.\" You get the asks as a short list.\n\nWhy the quote matters: AI sometimes fills gaps with guesses. A quote shows you it's really in the email, and you can find it in seconds.\n\nWhere not to trust it: if it can't quote a line, treat that ask as a guess. And check your work's rules before you paste work email into any AI.\n\nPart 2 tonight: writing your reply.\n\nSend this to the long-email coworker.\n\nMade up for this post. Check anything important yourself.\n\n#inbox #aitips #email #productivity #worklife",
-      "first_comment": "The email shown is made up for this post. Many workplaces have rules about which AI tools you can use with work email; check yours first.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: A huge email from your boss. Before coffee. / Somewhere in there are the three things they need from you. / What do they need from me? Quote the line. / The slides · Tue, The budget · Fri, Lunch · optional / because AI sometimes guesses. A quote proves it's really in there. / Do this: Next long email, ask AI what they need from you, and to quote the line. / send this to the long-email coworker. It loops back to the opening line.",
-      "video": "reels/hb-reel-1019am-just-the-asks.mp4",
-      "cover": "reels/hb-reel-1019am-just-the-asks-cover.jpg",
-      "trial": "auto"
-    },
-    {
       "id": "lf-ch-1019-clb-1",
       "account": "littlefold",
       "publish_at": "2026-10-19T10:30:00-04:00",
@@ -1315,28 +1304,28 @@
       ]
     },
     {
-      "id": "hb-ch-1019-1",
+      "id": "hb-ch-1019b-1",
       "account": "hourback",
       "publish_at": "2026-10-19T12:00:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1019-1.jpg",
-      "caption": "Story chain hb-ch-1019 frame 1: quick quiz"
+      "image": "stories/hb-ch-1019b-1.jpg",
+      "caption": "Story chain hb-ch-1019b frame 1: quick quiz"
     },
     {
-      "id": "hb-ch-1019-2",
+      "id": "hb-ch-1019b-2",
       "account": "hourback",
       "publish_at": "2026-10-19T12:01:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1019-2.jpg",
-      "caption": "Story chain hb-ch-1019 frame 2: 78%"
+      "image": "stories/hb-ch-1019b-2.jpg",
+      "caption": "Story chain hb-ch-1019b frame 2: “On my way!”"
     },
     {
-      "id": "hb-ch-1019-3",
+      "id": "hb-ch-1019b-3",
       "account": "hourback",
       "publish_at": "2026-10-19T12:02:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1019-3.jpg",
-      "caption": "Story chain hb-ch-1019 frame 3: That's a lot of calendar in one head."
+      "image": "stories/hb-ch-1019b-3.jpg",
+      "caption": "Story chain hb-ch-1019b frame 3: Type @@. Get your whole email."
     },
     {
       "id": "ff-ch-1019-4",
@@ -1369,28 +1358,27 @@
       "caption": "Story chain lh-ch-1019 frame 4: The sentence that works"
     },
     {
-      "id": "hb-w02-8-12-automations-kickoff",
+      "id": "hb-1019-text-shortcut",
       "account": "hourback",
       "publish_at": "2026-10-19T13:00:00-04:00",
-      "caption": "Who's doing Thursday swim? Nobody, it turns out.\n\nYour calendar says free. Theirs says free. Then the school note says early pickup on Thursday.\n\nWhy AI helps: paste both calendars and the note, and it lines everything up by day, so the clashes jump out.\n\nDo this: Sunday night, paste both calendars into AI and ask \"Where do we clash this week?\"\n\nWhere not to trust it: AI can mix up times, or am and pm. Check anything it flags against the real calendars. Take out addresses and the kids' full names before you paste.\n\nSend this to the other half of your calendar.\n\nMade up for this post. Check anything important yourself.\n\n#aitips #familycalendar #lifeadmin #momlife #organization",
-      "first_comment": "The week shown is made up for this post. AI tools can misread times and time zones, so treat its list as a starting point and check the calendars. Story quiz: Pew Research Center (May 2023, survey fall 2022): among U.S. mothers living with a spouse or partner and children under 18, 78% say they do more than their partner managing their children's schedules and activities.",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: 'Who's doing Thursday swim?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'nobody, it turns out'. Slide 2: sunday night, every week Your calendar says free. So does theirs. Then the school note: early pickup.. Slide 3: why AI is good at this Paste both calendars and the note. AI lines up the days, so clashes jump out.. Slide 4: it found Nobody's free for Thursday swim. Better to know Sunday than 4 pm Thursday.. Slide 5: but double-check AI can mix up am and pm. Check what it flags in the real calendars.. Slide 6: Do this: Sunday night, paste both calendars into AI and ask: “Where do we clash this week?”.",
+      "caption": "Forms, emails, delivery apps: you type your full address and email over and over.\n\nThe swap: make a shortcut once. Type @@ and your phone writes your whole email. Type hhh and it writes your address.\n\nDo this (iPhone): Settings → General → Keyboard → Text Replacement → +. Phrase: your email. Shortcut: @@. Pick shortcuts you'd never type by accident.\n\nAndroid: Gboard has a personal dictionary where each word can have a shortcut; look under Gboard's Dictionary settings (menus vary by phone).\n\nSend this to the friend who types it all out.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #iphone #typing",
+      "first_comment": "Source: AbilityNet, 'How to use text replacement in iOS 26' (Settings → General → Keyboard → Text Replacement). iPhones come with one shortcut already: omw → On my way!",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Stop typing your address. Type @@.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'your phone can finish it'. Slide 2: sound familiar? Forms. Emails. Delivery apps. Your full address, again and again.. Slide 3: The swap you type: @@; it writes: your email; you type: hhh; it writes: your address. Slide 4: iPhone, once 1. Settings → General → Keyboard; 2. Text Replacement → +; 3. Phrase: your email. Shortcut: @@. Slide 5: Do this: Tonight, make one shortcut: @@ for your email. Then try it in any app..",
       "images": [
-        "hb-w02-8-12-automations-kickoff/01.jpg",
-        "hb-w02-8-12-automations-kickoff/02.jpg",
-        "hb-w02-8-12-automations-kickoff/03.jpg",
-        "hb-w02-8-12-automations-kickoff/04.jpg",
-        "hb-w02-8-12-automations-kickoff/05.jpg",
-        "hb-w02-8-12-automations-kickoff/06.jpg"
+        "hb-1019-text-shortcut/01.jpg",
+        "hb-1019-text-shortcut/02.jpg",
+        "hb-1019-text-shortcut/03.jpg",
+        "hb-1019-text-shortcut/04.jpg",
+        "hb-1019-text-shortcut/05.jpg"
       ]
     },
     {
-      "id": "hb-ch-1019-4",
+      "id": "hb-ch-1019b-4",
       "account": "hourback",
       "publish_at": "2026-10-19T13:15:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1019-4.jpg",
-      "caption": "Story chain hb-ch-1019 frame 4: Who's doing Thursday swim?"
+      "image": "stories/hb-ch-1019b-4.jpg",
+      "caption": "Story chain hb-ch-1019b frame 4: Stop typing your address."
     },
     {
       "id": "lf-1019-single-fever-under-3m",
@@ -1407,20 +1395,18 @@
       ]
     },
     {
-      "id": "hb-1019-single-homework",
+      "id": "hb-1019-buzz-batch",
       "account": "hourback",
       "publish_at": "2026-10-19T17:45:00-04:00",
-      "caption": "Grade 5 math. You can't do it anymore either? Same.\n\nYou could look up the answer, but then your kid still doesn't get it. Instead, paste the question into AI and ask it to explain the steps like you're 10, without giving the answer. Now you can explain it to your kid instead of guessing.\n\nWhere not to trust it: AI can get math wrong. Use it for the steps, then check the answer together, or against the answer key if there is one.\n\nDo this: tonight, paste one homework question into AI and ask \"Explain it like I'm 10. No answer.\"\n\nSend this to a homework-night parent.\n\n#homework #aitips #parenting #schoollife #momlife",
-      "first_comment": "AI chatbots can make arithmetic and reasoning mistakes, so check the final answer yourself. Asking it to hide the answer keeps the thinking with your kid.",
-      "alt_text": "Hourback 7-slide carousel. Slide 1: 'Grade 5 math. I can't do it anymore.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'you're not the only one'. Slide 2: sound familiar? 7 pm. Homework. Your kid asks “why?” and you have no idea. 😅. Slide 3: You could just look up the answer. But then they still don't get it.. Slide 4: here's the trick Ask AI to explain the steps like they're 10. Then you explain it.. Slide 5: the magic words “Explain it like I'm 10. Don't tell me the answer.”. Slide 6: but don't trust it blindly AI can get math wrong. So check the answer together.. Slide 7: Do this: Tonight, paste one homework question into AI and ask: “Explain it like I'm 10. No answer.”.",
+      "caption": "Buzz. You stop what you're doing, check your phone, and it's a flash sale.\n\nThe swap: a Scheduled Summary. The apps you choose stop buzzing and arrive together, at the times you pick. Apps you leave out, like Messages, still come through right away.\n\nDo this (iPhone): Settings → Notifications → Scheduled Summary → turn it on, add your shopping and news apps, and pick a time like 6 pm. The list even shows how many notifications each app sends you a day.\n\nSend this to the friend whose phone never stops.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #notifications #digitalwellbeing",
+      "first_comment": "Source: Apple (Use notifications on your iPhone) and iOS guides: Settings → Notifications → Scheduled Summary, choose apps and times. Only the apps you add are held back.",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Buzz. Buzz. It was a coupon.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'there's a setting for that'. Slide 2: sound familiar? You stop what you're doing. Check the phone. A flash sale.. Slide 3: the swap Not-urgent apps wait, then arrive together, when you pick. (texts from people still come right away). Slide 4: iPhone 1. Settings → Notifications; 2. Scheduled Summary → on; 3. Add shopping and news apps. Slide 5: Do this: Today, put your shopping apps in a Scheduled Summary at 6 pm. Leave Messages out..",
       "images": [
-        "hb-1019-single-homework/01.jpg",
-        "hb-1019-single-homework/02.jpg",
-        "hb-1019-single-homework/03.jpg",
-        "hb-1019-single-homework/04.jpg",
-        "hb-1019-single-homework/05.jpg",
-        "hb-1019-single-homework/06.jpg",
-        "hb-1019-single-homework/07.jpg"
+        "hb-1019-buzz-batch/01.jpg",
+        "hb-1019-buzz-batch/02.jpg",
+        "hb-1019-buzz-batch/03.jpg",
+        "hb-1019-buzz-batch/04.jpg",
+        "hb-1019-buzz-batch/05.jpg"
       ]
     },
     {
@@ -1434,14 +1420,14 @@
       "cover": "reels/ff-reel-1019-late-start-cover.jpg"
     },
     {
-      "id": "hb-reel-1019-one-sorry",
+      "id": "hb-reel-1019-wifi-qr",
       "account": "hourback",
       "publish_at": "2026-10-19T19:00:00-04:00",
-      "caption": "Part 2 of this morning's Reel: now you're writing the reply, and it has four sorries in it. Count them.\n\nPaste your draft into AI and ask: \"Keep my words. Say sorry once.\" You get the same message, with one sorry, still in your voice.\n\nWhy \"keep my words\" matters: without it, AI tends to rewrite the whole thing in its own voice.\n\nWhere not to trust it: read it out loud before you send. If a line doesn't sound like you, change it back.\n\nCalm replies, part 1 of 2. Part 2 tomorrow.\n\nSend this to the friend who over-apologises.\n\nMade up for this post. Check anything important yourself.\n\n#email #aitips #communication #worklife #writing",
-      "first_comment": "The email shown is made up for this post.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Part 2: your reply has four sorries. / Sorry for the delay. Sorry, sorry, sorry. / because Tell AI to keep your words, or it rewrites you into a robot. / Now there's one sorry, and it still sounds like you. / Read it out loud. If a line isn't you, change it back. / Do this: Paste your draft into AI and ask: “Keep my words. Say sorry once.” / send this to the friend who over-apologises. It loops back to the opening line.",
-      "video": "reels/hb-reel-1019-one-sorry.mp4",
-      "cover": "reels/hb-reel-1019-one-sorry-cover.jpg"
+      "caption": "\"What's the Wi-Fi?\" And you're behind the TV reading a tiny sticker.\n\nThe swap: your iPhone can show the Wi-Fi password as a QR code. Guests point their camera at it and they're on. No more \"capital Q, zero, not O…\"\n\nDo this (iPhone, iOS 18 or later): Passwords app → Wi-Fi → your network → Show Network QR Code.\nAndroid: open Wi-Fi settings, tap your network, then Share (menus vary by phone).\n\nAnyone who scans it gets the password, so share it with people you trust.\n\nSend this to whoever owns the router.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #wifi #guests",
+      "first_comment": "Source: AppleInsider, 'How to share a Wi-Fi QR code in iOS 18' (Passwords → Wi-Fi → network → Show Network QR Code); Apple Passwords User Guide ('Show Network QR Code').",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: “What's the Wi-Fi?” / And you're behind the TV, reading a tiny sticker. / because Your iPhone can turn the password into a QR code. / They scan it., They're on. / No more “capital Q, zero, not O…” / Do this: Passwords app → Wi-Fi → your network → Show Network QR Code. / send this to whoever owns the router. It loops back to the opening line.",
+      "video": "reels/hb-reel-1019-wifi-qr.mp4",
+      "cover": "reels/hb-reel-1019-wifi-qr-cover.jpg"
     },
     {
       "id": "lf-reel-1019-resp-50-month",
@@ -1494,17 +1480,6 @@
       "alt_text": "Edited video in the Locked Hour editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: The baby's finally asleep. Now what? / Halfway through a task, the baby wakes up. Your mind keeps chewing on it. / because Researchers found a one-minute note helps your brain let go of it. / Do this: When the baby wakes, write “stopped at ___, next is ___.” / Send this to a friend with a newborn.. It loops back to the opening line.",
       "video": "reels/lh-reel-1020am-nap-time.mp4",
       "cover": "reels/lh-reel-1020am-nap-time-cover.jpg",
-      "trial": "auto"
-    },
-    {
-      "id": "hb-reel-1020am-driveway-text",
-      "account": "hourback",
-      "publish_at": "2026-10-20T08:45:00-04:00",
-      "caption": "7:52 am. A text from your neighbour: your guest blocked their driveway. Again.\n\nPaste the text into AI and ask for a calm reply under 40 words. You get one sorry and a plan, not a paragraph.\n\nWhy the word limit works: short replies sound calm. Long ones sound guilty.\n\nWhere not to trust it: it's still your text. Change any word you wouldn't say, and take names out before you paste.\n\nCalm replies, part 2 of 2.\n\nSend this to the friend who over-explains.\n\nMade up for this post. Check anything important yourself.\n\n#neighbours #aitips #communication #texting #lifeadmin",
-      "first_comment": "The text shown is made up for this post.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 7:52 am. A text from your neighbour. / Your guest blocked their driveway. Again. / because Give AI a word limit. Short replies sound calm. Long ones sound guilty. / It wrote one sorry and a promise: car moved by 8. / Change any word you wouldn't say. It's still your text. / Do this: Paste the text into AI and ask for a calm reply under 40 words. / send this to the friend who over-explains. It loops back to the opening line.",
-      "video": "reels/hb-reel-1020am-driveway-text.mp4",
-      "cover": "reels/hb-reel-1020am-driveway-text-cover.jpg",
       "trial": "auto"
     },
     {
@@ -1624,36 +1599,36 @@
       ]
     },
     {
-      "id": "hb-ch-1020-1",
+      "id": "hb-ch-1020b-1",
       "account": "hourback",
       "publish_at": "2026-10-20T12:00:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1020-1.jpg",
-      "caption": "Story chain hb-ch-1020 frame 1: “What's for dinner?”"
+      "image": "stories/hb-ch-1020b-1.jpg",
+      "caption": "Story chain hb-ch-1020b frame 1: Delete. Delete. Delete."
     },
     {
-      "id": "hb-ch-1020-2",
+      "id": "hb-ch-1020b-2",
       "account": "hourback",
       "publish_at": "2026-10-20T12:01:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1020-2.jpg",
-      "caption": "Story chain hb-ch-1020 frame 2: every single night"
+      "image": "stories/hb-ch-1020b-2.jpg",
+      "caption": "Story chain hb-ch-1020b frame 2: sound familiar?"
     },
     {
-      "id": "hb-ch-1020-3",
+      "id": "hb-ch-1020b-3",
       "account": "hourback",
       "publish_at": "2026-10-20T12:02:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1020-3.jpg",
-      "caption": "Story chain hb-ch-1020 frame 3: here's the trick"
+      "image": "stories/hb-ch-1020b-3.jpg",
+      "caption": "Story chain hb-ch-1020b frame 3: the swap"
     },
     {
-      "id": "hb-ch-1020-4",
+      "id": "hb-ch-1020b-4",
       "account": "hourback",
       "publish_at": "2026-10-20T12:03:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1020-4.jpg",
-      "caption": "Story chain hb-ch-1020 frame 4: It doesn't know allergies."
+      "image": "stories/hb-ch-1020b-4.jpg",
+      "caption": "Story chain hb-ch-1020b frame 4: Do it on a computer."
     },
     {
       "id": "ff-ch-1020-5",
@@ -1686,28 +1661,27 @@
       "caption": "Story chain lh-ch-1020 frame 4: Your phone is still costing you"
     },
     {
-      "id": "hb-1020-prompt-week-01",
+      "id": "hb-1020-inbox-filter",
       "account": "hourback",
       "publish_at": "2026-10-20T13:00:00-04:00",
-      "caption": "5 pm. What's for dinner? Again.\n\nTell AI what's in the fridge, who eats what, and how much time you have. It plans around your rules: five dinners and one shopping list, sorted by aisle. You shop once.\n\nDo this: tonight, tell AI what's in your fridge and ask \"Plan 5 easy dinners and one shopping list.\"\n\nWhere not to trust it: AI doesn't know about allergies unless you tell it, and it can still make mistakes. Read every ingredient, and check the cupboards before you shop.\n\nSend this to whoever cooks at your place.\n\n#mealplanning #aitips #dinnerideas #familydinner #lifeadmin",
-      "first_comment": "AI meal plans only know what you tell them. For allergies, always read the ingredients yourself; AI can still include something you said to avoid.",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: '5 pm. What's for dinner?' in a large serif with highlighted words above a sticky note listing Half a chicken, Rice, Spinach, Two picky kids, a halftone cut-out and the handwritten note 'the fridge, honestly'. Slide 2: every single night 5 pm. Everyone's hungry. You stare at the fridge like it owes you an answer.. Slide 3: why it works Tell AI what's in the fridge and who eats what. It plans around that.. Slide 4: and you get Five dinners and one shopping list. You shop once. 🙌. Slide 5: but check this yourself AI won't know about allergies unless you tell it. Read every ingredient.. Slide 6: Do this: Tonight, tell AI what's in your fridge and ask for 5 easy dinners and one shopping list..",
+      "caption": "Delete. Delete. Delete. Every morning, the same store emails.\n\nThe swap: one Gmail filter. That sender's emails skip your inbox from now on, and they're still there if you search.\n\nDo this, on a computer (the Gmail app can't make filters): open one of those emails → ⋮ → Filter messages like these → Create filter → tick Skip the Inbox (Archive it) → Create filter.\n\nWhat you get back: you open your inbox and it's just people.\n\nSend this to the friend at 2,481 unread.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #gmail #inboxzero #email",
+      "first_comment": "Source: Gmail filter steps (open an email → ⋮ → Filter messages like these → Create filter → Skip the Inbox). Filters are made on the computer version of Gmail and then work on your phone too.",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Delete. Delete. Delete. Every morning.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'there's a one-time fix'. Slide 2: the swap Make a filter once. That store's emails skip your inbox from now on. (still there if you search). Slide 3: On a computer 1. Open one of those emails; 2. ⋮ → Filter messages like these; 3. Create filter → Skip the Inbox. Slide 4: what you get back Open your inbox: just people. Not stores.. Slide 5: Do this: Tonight, pick the one store that emails you most. Make its filter. Done..",
       "images": [
-        "hb-1020-prompt-week-01/01.jpg",
-        "hb-1020-prompt-week-01/02.jpg",
-        "hb-1020-prompt-week-01/03.jpg",
-        "hb-1020-prompt-week-01/04.jpg",
-        "hb-1020-prompt-week-01/05.jpg",
-        "hb-1020-prompt-week-01/06.jpg"
+        "hb-1020-inbox-filter/01.jpg",
+        "hb-1020-inbox-filter/02.jpg",
+        "hb-1020-inbox-filter/03.jpg",
+        "hb-1020-inbox-filter/04.jpg",
+        "hb-1020-inbox-filter/05.jpg"
       ]
     },
     {
-      "id": "hb-ch-1020-5",
+      "id": "hb-ch-1020b-5",
       "account": "hourback",
       "publish_at": "2026-10-20T13:15:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1020-5.jpg",
-      "caption": "Story chain hb-ch-1020 frame 5: 5 pm. What's for dinner?"
+      "image": "stories/hb-ch-1020b-5.jpg",
+      "caption": "Story chain hb-ch-1020b frame 5: Delete. Delete. Delete."
     },
     {
       "id": "lf-1020-single-coat-check",
@@ -1724,20 +1698,18 @@
       ]
     },
     {
-      "id": "hb-1020-single-error-code",
+      "id": "hb-1020-speedy-meetings",
       "account": "hourback",
       "publish_at": "2026-10-20T17:45:00-04:00",
-      "caption": "The dishwasher says E24. Now what?\n\nHere's the part nobody tells you: ask AI what an error code means and it may guess, while sounding totally sure. The same code can mean different things on different brands.\n\nThe fix: give it your manual. Take a photo of the error-code page, give it to AI, and ask what to do first. Now it's reading your manual, not guessing. No paper manual? Most brands have it online if you search the model number.\n\nUnplug it before you touch anything inside.\n\nSend this to the family fixer.\n\n#homehacks #aitips #lifeadmin #appliances #techtips",
-      "first_comment": "Error codes differ by brand and model, and AI can state a wrong meaning confidently. Giving it your own manual page keeps the answer tied to your machine.",
-      "alt_text": "Hourback 7-slide carousel. Slide 1: 'The dishwasher says E24. Now what?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'careful who you ask'. Slide 2: sound familiar? Beeping. Blinking. E24. You grab your phone and ask AI.. Slide 3: here's the part nobody tells you AI may guess what E24 means, and sound totally sure.. Slide 4: why it guesses The same code can mean different things on different brands.. Slide 5: the fix Give AI your manual. Now it's reading, not guessing. 📖. Slide 6: no paper manual? Search your model number online. Most brands post the manual.. Slide 7: Do this: Snap the error-code page in your manual. Give it to AI and ask: “What do I do first?”.",
+      "caption": "One meeting ends at 10. The next one starts at 10. Coffee? No.\n\nThe swap: Speedy meetings in Google Calendar. Meetings you book end early on their own: 30-minute meetings end at 25, hour-long ones at 50. That's your gap for water, the bathroom, or a breath.\n\nDo this: Google Calendar on a computer → ⚙ → Settings → Event settings → tick Speedy meetings.\n\nIt only changes meetings you create. Other people's invites keep their times.\n\nSend this to the friend with back-to-backs.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #googlecalendar #meetings #worklife",
+      "first_comment": "Source: How-To Geek, 'How to automatically shorten meeting durations in Google Calendar': Settings → Event settings → Speedy meetings; 30 and 45 minute events end 5 minutes early, longer events 10 minutes early.",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Back-to-backs. No bathroom break.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'your calendar can fix that'. Slide 2: sound familiar? One meeting ends at 10. The next starts at 10. Coffee? No.. Slide 3: Speedy meetings 30 min: ends at 25; 60 min: ends at 50. Slide 4: Turn it on 1. Google Calendar on a computer; 2. ⚙ → Settings → Event settings; 3. Tick Speedy meetings. Slide 5: Do this: Today, tick Speedy meetings. Every meeting you book now ends a few minutes early..",
       "images": [
-        "hb-1020-single-error-code/01.jpg",
-        "hb-1020-single-error-code/02.jpg",
-        "hb-1020-single-error-code/03.jpg",
-        "hb-1020-single-error-code/04.jpg",
-        "hb-1020-single-error-code/05.jpg",
-        "hb-1020-single-error-code/06.jpg",
-        "hb-1020-single-error-code/07.jpg"
+        "hb-1020-speedy-meetings/01.jpg",
+        "hb-1020-speedy-meetings/02.jpg",
+        "hb-1020-speedy-meetings/03.jpg",
+        "hb-1020-speedy-meetings/04.jpg",
+        "hb-1020-speedy-meetings/05.jpg"
       ]
     },
     {
@@ -1751,14 +1723,14 @@
       "cover": "reels/ff-reel-1020-wills-cover.jpg"
     },
     {
-      "id": "hb-reel-1020-three-tabs",
+      "id": "hb-reel-1020-grocery-list",
       "account": "hourback",
       "publish_at": "2026-10-20T19:00:00-04:00",
-      "caption": "11 pm. Three tabs. Three blenders that all look the same.\n\nPaste the three product pages into AI and tell it how you'll use it. That gives it a reason to pick one.\n\nDo this: ask \"Which fits how I'll use it?\"\n\nWhere not to trust it: AI can get specs wrong. Check the price and specs on the shop page before you pay.\n\nSend this to the 40-tab friend.\n\nMade up for this post. Check anything important yourself.\n\n#shoppingtips #aitips #kitchen #lifeadmin #techtips",
-      "first_comment": "Products shown are made up for this post. Never paste card details into an AI chat.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 11 pm. Three tabs. Three blenders. / They all look the same, and you're too tired to compare. / because Tell AI how you'll use it. Now it has a reason to pick. / Smoothies every day? It picked Blender B. Tabs closed. / It can get specs wrong. Check the shop page before you pay. / Do this: Paste the three product pages into AI and ask: “Which fits how I'll use it?” / send this to the 40-tab friend. It loops back to the opening line.",
-      "video": "reels/hb-reel-1020-three-tabs.mp4",
-      "cover": "reels/hb-reel-1020-three-tabs-cover.jpg"
+      "caption": "\"Do we need milk?\" texted from aisle 7. No reply. Now there are three milks.\n\nThe swap: one shared grocery list the whole house adds to all week. On iPhone, Reminders sorts it into sections like Produce and Frozen as you type.\n\nDo this (iPhone, iOS 17 or later, iCloud on for Reminders): Reminders → Add List → List Type → Groceries. Then share the list with your house.\nAndroid: a shared list in Google Keep works too.\n\nSend this to whoever does the shopping.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #grocerylist #mealplanning #familylife",
+      "first_comment": "Source: Apple Support, 'Create grocery lists in Reminders on your iPhone' (List Type: Groceries, auto-sorted into categories, iOS 17 and later).",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: “Do we need milk?” texted from aisle 7. / No reply. You buy milk. Now there are three milks. / because One shared list the whole house adds to all week. / Produce · bananas, Dairy · milk, Frozen · peas / On iPhone, Reminders sorts it by section for you. / Do this: Reminders → Add List → List Type: Groceries. Then share it with your house. / send this to whoever does the shopping. It loops back to the opening line.",
+      "video": "reels/hb-reel-1020-grocery-list.mp4",
+      "cover": "reels/hb-reel-1020-grocery-list-cover.jpg"
     },
     {
       "id": "lf-reel-1020-visitors",
@@ -1812,16 +1784,6 @@
       "video": "reels/lh-pan-1021am-follow-the-line.mp4",
       "cover": "reels/lh-pan-1021am-follow-the-line-cover.jpg",
       "trial": "auto"
-    },
-    {
-      "id": "hb-reel-1021am-parcel-text",
-      "account": "hourback",
-      "publish_at": "2026-10-21T08:45:00-04:00",
-      "caption": "\"Your parcel is on hold. Pay $1.99.\" And you ARE waiting for a parcel.\n\nBefore you tap, screenshot the text and ask AI: \"Is this a scam? What are the red flags?\" It has seen the classic tricks: a tiny fee, a rush, a strange link.\n\nWhere not to trust it: if AI says it looks fine, that doesn't make it safe. Check your parcel in the courier's own app or website, never through the link.\n\nSend this to your mum.\n\nMade up for this post. Check anything important yourself.\n\n#scamalert #aitips #textscam #onlinesafety #lifeadmin",
-      "first_comment": "Fake delivery texts asking for a small fee are a common scam; the Canadian Anti-Fraud Centre (antifraudcentre-centreantifraude.ca) lists them. Check deliveries only in the courier's own app or site.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: “Your parcel is on hold. Pay $1.99.” / You are waiting for a parcel. So you almost tap. / because AI has seen the classic scam tricks, so it spots them fast. / A tiny fee, A rush, A strange link / “Looks fine” doesn't mean safe. Check in the courier's own app. / Do this: Weird text? Don't tap the link. Screenshot it and ask AI for the red flags. / send this to your mum. It loops back to the opening line.",
-      "video": "reels/hb-reel-1021am-parcel-text.mp4",
-      "cover": "reels/hb-reel-1021am-parcel-text-cover.jpg"
     },
     {
       "id": "lf-ch-1021-1",
@@ -1933,28 +1895,28 @@
       ]
     },
     {
-      "id": "hb-ch-1021-1",
+      "id": "hb-ch-1021b-1",
       "account": "hourback",
       "publish_at": "2026-10-21T12:00:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1021-1.jpg",
-      "caption": "Story chain hb-ch-1021 frame 1: quick quiz"
+      "image": "stories/hb-ch-1021b-1.jpg",
+      "caption": "Story chain hb-ch-1021b frame 1: quick quiz"
     },
     {
-      "id": "hb-ch-1021-2",
+      "id": "hb-ch-1021b-2",
       "account": "hourback",
       "publish_at": "2026-10-21T12:01:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1021-2.jpg",
-      "caption": "Story chain hb-ch-1021 frame 2: 45%"
+      "image": "stories/hb-ch-1021b-2.jpg",
+      "caption": "Story chain hb-ch-1021b frame 2: iPhone XS and newer"
     },
     {
-      "id": "hb-ch-1021-3",
+      "id": "hb-ch-1021b-3",
       "account": "hourback",
       "publish_at": "2026-10-21T12:02:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1021-3.jpg",
-      "caption": "Story chain hb-ch-1021 frame 3: Make AI show its work."
+      "image": "stories/hb-ch-1021b-3.jpg",
+      "caption": "Story chain hb-ch-1021b frame 3: Copy it. Don't type it."
     },
     {
       "id": "ff-ch-1021-4",
@@ -1987,28 +1949,27 @@
       "caption": "Story chain lh-ch-1021 frame 4: Multitasking feels fast."
     },
     {
-      "id": "hb-1021-ai-said-what-bill",
+      "id": "hb-1021-copy-from-photo",
       "account": "hourback",
       "publish_at": "2026-10-21T13:00:00-04:00",
-      "caption": "$96 dinner. Ana didn't drink. Who pays what?\n\nTell AI what everyone had and ask it to split it fairly and show the math. It said: Ana pays $18, everyone else $26. That adds up to $96.\n\nWhy show the math: AI can get things wrong. When it shows its work, you can check it in 5 seconds.\n\nDo this: next shared bill, tell AI what everyone had and add \"Show the math.\"\n\nSend this to the friend who always says \"evenly\".\n\nMade up for this post. Check anything important yourself.\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
-      "first_comment": "The bill: $72 of food split 4 ways ($18 each) and $24 of drinks split 3 ways ($8 each). Ana $18, everyone else $26. 18 + 26 + 26 + 26 = 96. Chat AIs can make arithmetic mistakes, which is why you ask for the working. Story quiz: European Broadcasting Union and BBC, News Integrity in AI Assistants (Oct 2025): 45% of more than 3,000 AI answers to news questions had at least one significant issue (22 public service media organisations, 18 countries).",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: '“$96 dinner. Ana didn't drink.”' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'so who pays what?'. Slide 2: you know this moment The bill lands. Someone says “just split it evenly.” Ana had water. 💧. Slide 3: so ask AI Tell it who had what. Ask it to split it fairly and show the math.. Slide 4: it said Ana pays $18. Everyone else pays $26. (that adds up to $96. we checked.). Slide 5: why show the math? AI can get sums wrong. With the math, you can check it in 5 seconds.. Slide 6: Do this: Next shared bill, tell AI who had what and add: “Show the math.”.",
+      "caption": "Squinting at a tracking number, typing it in, getting one digit wrong.\n\nThe swap: copy the text straight out of a photo. On iPhone it's called Live Text: open the photo, touch and hold the words, tap Copy. Phone numbers and emails become tappable too. On Android, Google Lens does the same.\n\nDo this: next time you need a code, a number or a recipe, photo it, touch and hold, Copy.\n\nWhere not to trust it: it can misread small or blurry text (0 and O look alike). Check it before you send or pay.\n\nSend this to the friend who retypes everything.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #livetext #googlelens",
+      "first_comment": "Source: Apple Support, 'Copy and translate text from photos on your iPhone or iPad': Live Text works on iPhone XS, iPhone XR and later with iOS 15 or later (turn on in Settings → General → Language & Region).",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Stop typing what's already in a photo.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'your camera can copy it'. Slide 2: sound familiar? Squinting at a tracking number. Typing it in. One digit wrong.. Slide 3: the swap Open the photo. Touch and hold the text. Tap Copy. (on iPhone it's called Live Text). Slide 4: Works on iPhone: XS and newer; Android: Google Lens. Slide 5: Do this: Next code or number you see: photo it, touch and hold, Copy. Check it before you send..",
       "images": [
-        "hb-1021-ai-said-what-bill/01.jpg",
-        "hb-1021-ai-said-what-bill/02.jpg",
-        "hb-1021-ai-said-what-bill/03.jpg",
-        "hb-1021-ai-said-what-bill/04.jpg",
-        "hb-1021-ai-said-what-bill/05.jpg",
-        "hb-1021-ai-said-what-bill/06.jpg"
+        "hb-1021-copy-from-photo/01.jpg",
+        "hb-1021-copy-from-photo/02.jpg",
+        "hb-1021-copy-from-photo/03.jpg",
+        "hb-1021-copy-from-photo/04.jpg",
+        "hb-1021-copy-from-photo/05.jpg"
       ]
     },
     {
-      "id": "hb-ch-1021-4",
+      "id": "hb-ch-1021b-4",
       "account": "hourback",
       "publish_at": "2026-10-21T13:15:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1021-4.jpg",
-      "caption": "Story chain hb-ch-1021 frame 4: $96 dinner. Ana didn't drink."
+      "image": "stories/hb-ch-1021b-4.jpg",
+      "caption": "Story chain hb-ch-1021b frame 4: Stop typing what's in a photo."
     },
     {
       "id": "lf-1021-reveal-50-a-month",
@@ -2026,18 +1987,18 @@
       ]
     },
     {
-      "id": "hb-1021-travel-subscriptions",
+      "id": "hb-1021-refund-email",
       "account": "hourback",
       "publish_at": "2026-10-21T17:45:00-04:00",
-      "caption": "Charges you forgot you pay. Everyone has a few 🙈\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" Spotting the same charge every month is easy for AI, and boring for you.\n\nWhere not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out before you paste.\n\nDo this: tonight, paste last month's statement into AI, ask \"What repeats?\", then cancel one you don't use.\n\nSend this to your money buddy.\n\nMade up for this post. Check anything important yourself.\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
-      "first_comment": "How many repeats did you find? Never paste full card or account numbers into an AI chat.",
-      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Charges you forgot you pay' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'follow the trail'. Slide 2: $12.99 here. $2.99 there. You forgot half of them.. Slide 3: Paste last month's statement into AI. Ask: What repeats?. Slide 4: It can miss yearly charges. Scroll back a year yourself.. Slide 5: Do this: Tonight, take out card numbers, paste last month's statement into AI, ask What repeats? Cancel one..",
+      "caption": "Too angry. Delete. Too polite. Delete. An hour later, the refund email still isn't sent.\n\nThe swap: give AI just the facts (what you bought, what went wrong, what you want) and ask for a calm 5-line email. You get a draft in seconds, and you only edit.\n\nWhere not to trust it: AI can invent a return policy, a law or a date. Cut anything you didn't tell it. And leave out card numbers, account numbers and your address.\n\nDo this: tonight, give AI your 3 facts and ask for a 5-line refund email.\n\nSend this to the friend still drafting it.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #aitips #refund #customerservice",
+      "first_comment": "Chat AIs can state rules or policies that don't exist, so keep the email to facts you gave it and check any policy on the store's own site. Never paste card or account numbers into an AI chat.",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Still writing that refund email?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'this is where AI earns its keep'. Slide 2: sound familiar? Too angry. Delete. Too polite. Delete. An hour later, still not sent.. Slide 3: the swap Give AI the facts: what you bought, what went wrong, what you want. (ask for 5 calm lines). Slide 4: but don't trust it blindly AI can invent a policy or a law. Cut anything you didn't tell it.. Slide 5: Do this: Tonight, give AI your 3 facts and ask for a 5-line refund email. Leave out card numbers..",
       "images": [
-        "hb-1021-travel-subscriptions/01.jpg",
-        "hb-1021-travel-subscriptions/02.jpg",
-        "hb-1021-travel-subscriptions/03.jpg",
-        "hb-1021-travel-subscriptions/04.jpg",
-        "hb-1021-travel-subscriptions/05.jpg"
+        "hb-1021-refund-email/01.jpg",
+        "hb-1021-refund-email/02.jpg",
+        "hb-1021-refund-email/03.jpg",
+        "hb-1021-refund-email/04.jpg",
+        "hb-1021-refund-email/05.jpg"
       ]
     },
     {
@@ -2049,16 +2010,6 @@
       "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: What waiting just 1 year costs you by 65. 25: $183,246 · 28: $135,921 · 30: $111,375 · 33: $82,611 · 35: $67,692. Do this: Start this payday with any amount, even $50. Raise it later.",
       "video": "reels/ff-cheat-1021-one-year-wait.mp4",
       "cover": "reels/ff-cheat-1021-one-year-wait-cover.jpg"
-    },
-    {
-      "id": "hb-reel-1021-group-costume",
-      "account": "hourback",
-      "publish_at": "2026-10-21T19:00:00-04:00",
-      "caption": "6 friends. One group costume. 63 messages and no plan. Halloween is in 10 days.\n\nPaste the chat into AI, tell it what everyone already owns, and ask for 3 group costumes. The ideas come from your closets, not the shops. Ours: the weather.\n\nWhere not to trust it: it can't know who'll actually show up in it. That's what the vote is for.\n\nSend this to the group chat.\n\nMade up for this post. Check anything important yourself.\n\n#halloween #groupcostume #aitips #friends #halloweencostume",
-      "first_comment": "Names and chat made up for this post. Take real names and numbers out before you paste a group chat.",
-      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 6 friends. One group costume. 63 messages. / Everyone has ideas. Nobody has a plan. / because Tell AI what everyone already owns. Then the ideas come from your closets. / Priya · rain, Theo · cloud, Mila · sun, Kai · lightning / It can't know who'll actually show up in it. That's what the vote is for. / Do this: Paste the chat into AI and ask for 3 group costumes from what we own. / send this to the group chat. It loops back to the opening line.",
-      "video": "reels/hb-reel-1021-group-costume.mp4",
-      "cover": "reels/hb-reel-1021-group-costume-cover.jpg"
     },
     {
       "id": "ff-cheat-1022am-tfsa-rrsp-fhsa",
@@ -2081,6 +2032,76 @@
       "video": "reels/hb-pan-1022am-travel-subscriptions.mp4",
       "cover": "reels/hb-pan-1022am-travel-subscriptions-cover.jpg",
       "trial": "auto"
+    },
+    {
+      "id": "hb-ch-1022-1",
+      "account": "hourback",
+      "publish_at": "2026-10-22T12:00:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1022-1.jpg",
+      "caption": "Story chain hb-ch-1022 frame 1: “Unknown number.” Again."
+    },
+    {
+      "id": "hb-ch-1022-2",
+      "account": "hourback",
+      "publish_at": "2026-10-22T12:01:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1022-2.jpg",
+      "caption": "Story chain hb-ch-1022 frame 2: sound familiar?"
+    },
+    {
+      "id": "hb-ch-1022-3",
+      "account": "hourback",
+      "publish_at": "2026-10-22T12:02:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1022-3.jpg",
+      "caption": "Story chain hb-ch-1022 frame 3: the swap"
+    },
+    {
+      "id": "hb-ch-1022-4",
+      "account": "hourback",
+      "publish_at": "2026-10-22T12:03:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1022-4.jpg",
+      "caption": "Story chain hb-ch-1022 frame 4: Save the dentist."
+    },
+    {
+      "id": "hb-1022-unknown-callers",
+      "account": "hourback",
+      "publish_at": "2026-10-22T13:00:00-04:00",
+      "caption": "Unknown number. Again. You answer and it's \"Congratulations, you've been selected…\"\n\nThe swap: let unknown numbers go to voicemail. Calls from people in your contacts still ring through.\n\nDo this (iPhone): Settings → Apps → Phone → Screen Unknown Callers → Silence. First, save the numbers you can't miss: doctor, school, dentist, daycare.\n\nThe catch: silenced calls still leave voicemails, so check them. On Android, look in your Phone app's settings for spam and unknown-caller options (menus vary by phone).\n\nSend this to the friend who still answers.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #spamcalls #iphone",
+      "first_comment": "Source: Apple Support, 'Manage unknown callers on iPhone' (Settings → Apps → Phone → Screen Unknown Callers → Silence: unknown numbers are silenced and sent to voicemail).",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: 'Unknown number. Again.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'you don't have to pick up'. Slide 2: sound familiar? You answer. “Congratulations, you've been selected…”. Slide 3: the swap Unknown numbers go straight to voicemail. (your people still ring through). Slide 4: iPhone 1. Settings → Apps → Phone; 2. Screen Unknown Callers; 3. Choose Silence. Slide 5: Do this: Today, save your doctor, school and dentist as contacts. Then turn on Silence..",
+      "images": [
+        "hb-1022-unknown-callers/01.jpg",
+        "hb-1022-unknown-callers/02.jpg",
+        "hb-1022-unknown-callers/03.jpg",
+        "hb-1022-unknown-callers/04.jpg",
+        "hb-1022-unknown-callers/05.jpg"
+      ]
+    },
+    {
+      "id": "hb-ch-1022-5",
+      "account": "hourback",
+      "publish_at": "2026-10-22T13:15:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1022-5.jpg",
+      "caption": "Story chain hb-ch-1022 frame 5: Unknown number. Again."
+    },
+    {
+      "id": "hb-1022-brain-dump",
+      "account": "hourback",
+      "publish_at": "2026-10-22T17:45:00-04:00",
+      "caption": "11 pm. Book the vet, email the school, buy a gift, and 20 more things your brain won't stop listing.\n\nThe swap: say it all into a note (tap the mic on your keyboard; messy is fine). Paste it into AI and ask it to sort it into today, this week, and later. You get a short list instead of a loop in your head.\n\nWhere not to trust it: AI can drop a line or merge two. Skim your note before you delete it. Leave out names, addresses and anything private.\n\nDo this: tonight, talk your whole list into Notes, then ask AI to sort it.\n\nSend this to the friend who lies awake listing things.\n\n#timesaver #lifehacks #iphonetips #productivity #hourback #todolist #aitips #mentalload",
+      "first_comment": "Chat AIs can leave items out when they reorganise a list, so check it against your original note. Tip: take names, numbers and addresses out before you paste.",
+      "alt_text": "Hourback 5-slide carousel. Slide 1: '11 pm. Your brain won't stop listing.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'dump it, sort it, sleep'. Slide 2: sound familiar? Book the vet. Email the school. Buy a gift. And 20 more.. Slide 3: the swap Talk it into a note. Then ask AI to sort it. (today · this week · later). Slide 4: but don't trust it blindly AI can drop a line. Skim your note before you delete it.. Slide 5: Do this: Tonight, talk your list into Notes. Ask AI to sort it: today, this week, later..",
+      "images": [
+        "hb-1022-brain-dump/01.jpg",
+        "hb-1022-brain-dump/02.jpg",
+        "hb-1022-brain-dump/03.jpg",
+        "hb-1022-brain-dump/04.jpg",
+        "hb-1022-brain-dump/05.jpg"
+      ]
     }
   ]
 }
