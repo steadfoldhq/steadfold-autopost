@@ -37,6 +37,12 @@ def real_spec(sid: str) -> dict:
     return etsy.load_spec(etsy.LISTINGS / f"{sid}.json")
 
 
+
+def _unmasked(text):
+    """Drop GitHub's '::add-mask::<secret>' lines: printing those IS how a secret gets hidden from the log
+    (they only appear when the tests run inside GitHub Actions). Every other line must stay secret-free."""
+    return "\n".join(l for l in text.splitlines() if not l.startswith("::add-mask::"))
+
 class NoNetwork:
     def request(self, *a, **k):
         raise AssertionError("network used in a dry run")
@@ -477,7 +483,7 @@ class OAuth(unittest.TestCase):
             pk = json.loads(gh.secrets["ETSY_PKCE_STEADFOLD"])
             md = summ.read_text()
             self.assertIn("https://www.etsy.com/oauth/connect?", md)
-            self.assertNotIn(pk["verifier"], md + out.getvalue())
+            self.assertNotIn(pk["verifier"], md + _unmasked(out.getvalue()))
             self.assertIn(pk["state"], md)
 
     def finish(self, fake, code_text, gh, pk=None):
@@ -487,7 +493,7 @@ class OAuth(unittest.TestCase):
             rc = etsy.main(["auth-finish", "--shop", "STEADFOLD"],
                            env=base_env(ETSY_PKCE_STEADFOLD=json.dumps(pk), ETSY_AUTH_CODE=code_text),
                            session=fake, gh_factory=gh.factory)
-        return rc, out.getvalue()
+        return rc, _unmasked(out.getvalue())
 
     def test_finish_saves_refresh_token(self):
         gh = FakeGH()
@@ -542,7 +548,7 @@ class ListingFlow(unittest.TestCase):
             rc = etsy.main(["list", "--spec", spec, *extra],
                            env=base_env(RUNNER_TEMP=self.tmp.name, **env),
                            session=fake, gh_factory=gh.factory, sleep=lambda s: None)
-        return rc, out.getvalue(), gh
+        return rc, _unmasked(out.getvalue()), gh
 
     def test_lists_publishes_verifies_and_records(self):
         fake = FakeEtsy()
