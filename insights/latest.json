@@ -1,27 +1,63 @@
 {
- "collected_at": "2026-10-17T20:28:53+00:00",
+ "collected_at": "2026-10-18T04:31:54+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 8,
    "follows_count": 3,
-   "media_count": 10,
+   "media_count": 12,
    "posts": [
+    {
+     "media_id": "18033351860887203",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DenPSLeHZ48/",
+     "at": "2026-10-17T23:00:47+0000",
+     "first_line": "Got a raise? Save $100 a month of it at 10% a year → $75,937 in 20 years.",
+     "likes": 4,
+     "comments_count": 1,
+     "insights": {
+      "views": 18,
+      "reach": 11,
+      "saved": 4,
+      "shares": 1,
+      "total_interactions": 14,
+      "ig_reels_avg_watch_time": 8379,
+      "ig_reels_video_view_total_time": 108934
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18099696305435020",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DenF0I9mR2a/",
+     "at": "2026-10-17T21:37:57+0000",
+     "first_line": "5 checks, once a year: fees, beneficiaries, loan rates, insurance cover, your freedom number.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 17,
+      "reach": 5,
+      "saved": 3,
+      "shares": 0,
+      "total_interactions": 10
+     },
+     "comments": []
+    },
     {
      "media_id": "18014671928987663",
      "type": "CAROUSEL_ALBUM",
      "permalink": "https://www.instagram.com/p/Demf_UAmsDa/",
      "at": "2026-10-17T16:07:24+0000",
      "first_line": "The rich often borrow against their investments instead of selling them.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 7,
-      "saved": 3,
+      "views": 39,
+      "reach": 8,
+      "saved": 4,
       "shares": 1,
-      "total_interactions": 10
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -34,13 +70,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 9,
-      "saved": 3,
+      "views": 33,
+      "reach": 25,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 11765,
-      "ig_reels_video_view_total_time": 129418
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 5483,
+      "ig_reels_video_view_total_time": 153529
      },
      "comments": []
     },
@@ -50,16 +86,16 @@
      "permalink": "https://www.instagram.com/reel/DekrRyAihu_/",
      "at": "2026-10-16T23:07:46+0000",
      "first_line": "A 1% yearly fee looks tiny. Over 30 years it can take about a sixth of your pot. Find yours this week.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 56,
-      "reach": 40,
-      "saved": 2,
+      "views": 58,
+      "reach": 41,
+      "saved": 3,
       "shares": 1,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4938,
-      "ig_reels_video_view_total_time": 212349
+      "total_interactions": 14,
+      "ig_reels_avg_watch_time": 5140,
+      "ig_reels_video_view_total_time": 236485
      },
      "comments": []
     },
@@ -69,14 +105,14 @@
      "permalink": "https://www.instagram.com/p/DekheDXAWNG/",
      "at": "2026-10-16T21:41:52+0000",
      "first_line": "Put a finger down for each one. Every finger is a 10-minute fix.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 5,
-      "saved": 2,
+      "views": 20,
+      "reach": 6,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 13
      },
      "comments": []
     },
@@ -86,14 +122,14 @@
      "permalink": "https://www.instagram.com/p/Dej8GxclqeK/",
      "at": "2026-10-16T16:15:21+0000",
      "first_line": "Your freedom number is your yearly spending × 25. Work yours out tonight.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 7,
-      "saved": 2,
+      "views": 24,
+      "reach": 8,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 7
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -103,16 +139,16 @@
      "permalink": "https://www.instagram.com/reel/Deji743jnP7/",
      "at": "2026-10-16T12:35:37+0000",
      "first_line": "The car repair is today. Payday isn't. Build a small buffer so surprise bills don't land on a card.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 101,
-      "reach": 79,
-      "saved": 2,
+      "views": 103,
+      "reach": 80,
+      "saved": 3,
       "shares": 1,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 3632,
-      "ig_reels_video_view_total_time": 312375
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 3682,
+      "ig_reels_video_view_total_time": 324050
      },
      "comments": []
     },
@@ -125,13 +161,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 33,
-      "reach": 22,
-      "saved": 2,
+      "views": 35,
+      "reach": 23,
+      "saved": 3,
       "shares": 1,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 8061,
-      "ig_reels_video_view_total_time": 193474
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 7746,
+      "ig_reels_video_view_total_time": 201404
      },
      "comments": []
     },
@@ -141,14 +177,14 @@
      "permalink": "https://www.instagram.com/p/DehXOGKFKxv/",
      "at": "2026-10-15T16:14:34+0000",
      "first_line": "Get up to $2,000 for your kid's school, free. Here's how to claim the Canada Learning Bond.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 9,
-      "saved": 2,
+      "views": 29,
+      "reach": 10,
+      "saved": 3,
       "shares": 1,
-      "total_interactions": 10
+      "total_interactions": 14
      },
      "comments": []
     },
@@ -158,14 +194,14 @@
      "permalink": "https://www.instagram.com/p/DeflBIAoJde/",
      "at": "2026-10-14T23:36:40+0000",
      "first_line": "Save $5,000 in 26 paydays, starting Fri Oct 23. Here's the whole plan.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 38,
-      "reach": 11,
-      "saved": 2,
+      "views": 43,
+      "reach": 12,
+      "saved": 3,
       "shares": 2,
-      "total_interactions": 11
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -175,14 +211,14 @@
      "permalink": "https://www.instagram.com/p/Debcj61lSrK/",
      "at": "2026-10-13T09:05:35+0000",
      "first_line": "Your paycheque has 3 jobs. Most of us only give it one 👀",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 35,
-      "reach": 9,
-      "saved": 2,
+      "views": 40,
+      "reach": 11,
+      "saved": 3,
       "shares": 2,
-      "total_interactions": 11
+      "total_interactions": 15
      },
      "comments": []
     }
@@ -193,8 +229,44 @@
    "username": "lockedhourhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 11,
+   "media_count": 13,
    "posts": [
+    {
+     "media_id": "18073945682580980",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DenPi86FAVA/",
+     "at": "2026-10-17T23:03:11+0000",
+     "first_line": "Get more done in your next hour: close every tab but one.",
+     "likes": 5,
+     "comments_count": 1,
+     "insights": {
+      "views": 18,
+      "reach": 11,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 4272,
+      "ig_reels_video_view_total_time": 59817
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17987159519886672",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DenF22eGYAL/",
+     "at": "2026-10-17T21:38:19+0000",
+     "first_line": "POV: you check one thing, and 40 minutes later you're deep in a rabbit hole.",
+     "likes": 5,
+     "comments_count": 1,
+     "insights": {
+      "views": 9,
+      "reach": 5,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 9
+     },
+     "comments": []
+    },
     {
      "media_id": "18132680593815357",
      "type": "IMAGE",
@@ -204,11 +276,11 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 3,
-      "saved": 2,
+      "views": 21,
+      "reach": 4,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -218,16 +290,16 @@
      "permalink": "https://www.instagram.com/reel/DemJG9xgG4E/",
      "at": "2026-10-17T12:47:41+0000",
      "first_line": "\"Do taxes\" has been on your list for 3 weeks. It's not a task, it's a project. Rewrite it as a next step.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 30,
-      "reach": 19,
-      "saved": 2,
+      "views": 42,
+      "reach": 30,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 9586,
-      "ig_reels_video_view_total_time": 182137
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 6905,
+      "ig_reels_video_view_total_time": 220963
      },
      "comments": []
     },
@@ -237,16 +309,16 @@
      "permalink": "https://www.instagram.com/reel/Dekrgd6lYcx/",
      "at": "2026-10-16T23:09:48+0000",
      "first_line": "Get one quiet hour tomorrow: turn on Do Not Disturb, then send one line first.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 131,
-      "reach": 106,
-      "saved": 2,
+      "views": 136,
+      "reach": 108,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 3106,
-      "ig_reels_video_view_total_time": 347932
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 3203,
+      "ig_reels_video_view_total_time": 371658
      },
      "comments": []
     },
@@ -256,14 +328,14 @@
      "permalink": "https://www.instagram.com/p/DekhgWFAVvF/",
      "at": "2026-10-16T21:42:10+0000",
      "first_line": "This is your sign to book one hour with yourself tomorrow.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 5,
-      "saved": 2,
+      "views": 25,
+      "reach": 9,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 7
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -273,14 +345,14 @@
      "permalink": "https://www.instagram.com/p/Dej__uhiY55/",
      "at": "2026-10-16T16:49:22+0000",
      "first_line": "Start faster tomorrow: stop mid-sentence today.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 19,
-      "reach": 6,
-      "saved": 2,
+      "views": 27,
+      "reach": 8,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 6
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -293,13 +365,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 18,
-      "reach": 11,
-      "saved": 2,
+      "views": 21,
+      "reach": 13,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 6,
-      "ig_reels_avg_watch_time": 7717,
-      "ig_reels_video_view_total_time": 108045
+      "total_interactions": 9,
+      "ig_reels_avg_watch_time": 7490,
+      "ig_reels_video_view_total_time": 119842
      },
      "comments": []
     },
@@ -309,16 +381,16 @@
      "permalink": "https://www.instagram.com/reel/DeiGO0lFtje/",
      "at": "2026-10-15T23:05:37+0000",
      "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 60,
-      "reach": 50,
-      "saved": 2,
+      "views": 64,
+      "reach": 51,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 3855,
-      "ig_reels_video_view_total_time": 231350
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 3927,
+      "ig_reels_video_view_total_time": 243491
      },
      "comments": []
     },
@@ -328,14 +400,14 @@
      "permalink": "https://www.instagram.com/p/DehZk1DHPF7/",
      "at": "2026-10-15T16:35:10+0000",
      "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 22,
-      "reach": 7,
-      "saved": 2,
+      "views": 31,
+      "reach": 8,
+      "saved": 3,
       "shares": 3,
-      "total_interactions": 12
+      "total_interactions": 16
      },
      "comments": []
     },
@@ -345,14 +417,14 @@
      "permalink": "https://www.instagram.com/p/DefkTDLjbBP/",
      "at": "2026-10-14T23:30:09+0000",
      "first_line": "\"Put your phone in another room.\" The retest found nothing.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 35,
-      "reach": 8,
-      "saved": 2,
+      "views": 39,
+      "reach": 9,
+      "saved": 3,
       "shares": 3,
-      "total_interactions": 11
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -362,14 +434,14 @@
      "permalink": "https://www.instagram.com/p/Dee0PTyCfR2/",
      "at": "2026-10-14T16:30:12+0000",
      "first_line": "Writing tomorrow's to-do list helped people fall asleep faster than writing about what they'd already done.",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 54,
-      "reach": 9,
-      "saved": 2,
+      "views": 59,
+      "reach": 10,
+      "saved": 3,
       "shares": 4,
-      "total_interactions": 12
+      "total_interactions": 16
      },
      "comments": []
     },
@@ -379,14 +451,14 @@
      "permalink": "https://www.instagram.com/p/DebbszunIrw/",
      "at": "2026-10-13T08:58:04+0000",
      "first_line": "Lock in for one hour, not one year 🔒",
-     "likes": 6,
+     "likes": 7,
      "comments_count": 2,
      "insights": {
-      "views": 47,
-      "reach": 7,
-      "saved": 2,
+      "views": 53,
+      "reach": 10,
+      "saved": 3,
       "shares": 3,
-      "total_interactions": 13
+      "total_interactions": 17
      },
      "comments": []
     }
@@ -397,22 +469,58 @@
    "username": "hourbackhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 10,
+   "media_count": 12,
    "posts": [
+    {
+     "media_id": "18127943120302974",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DenPW2-iWOq/",
+     "at": "2026-10-17T23:01:34+0000",
+     "first_line": "Plan tomorrow in one prompt after 7 pm, then close the laptop.",
+     "likes": 6,
+     "comments_count": 1,
+     "insights": {
+      "views": 38,
+      "reach": 27,
+      "saved": 2,
+      "shares": 1,
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 5394,
+      "ig_reels_video_view_total_time": 156443
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17926651620428175",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DenIsh-jzom/",
+     "at": "2026-10-17T22:03:08+0000",
+     "first_line": "Logged off by 8? That's the win. Let AI plan tomorrow, then rest. Here are 4 small wins for using AI the safe way. How many did you get toni",
+     "likes": 4,
+     "comments_count": 1,
+     "insights": {
+      "views": 9,
+      "reach": 4,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 10
+     },
+     "comments": []
+    },
     {
      "media_id": "18179899729437655",
      "type": "CAROUSEL_ALBUM",
      "permalink": "https://www.instagram.com/p/DemmmWyG88k/",
      "at": "2026-10-17T17:05:10+0000",
      "first_line": "Can you sublet? Make AI quote the lease, so every answer is one you can check. Add one line to your question.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 11,
+      "views": 13,
       "reach": 4,
       "saved": 3,
       "shares": 0,
-      "total_interactions": 9
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -422,16 +530,16 @@
      "permalink": "https://www.instagram.com/reel/DemJOt8ESt-/",
      "at": "2026-10-17T12:48:43+0000",
      "first_line": "Out of eggs halfway through a recipe? Ask AI for a swap.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 51,
-      "reach": 39,
+      "views": 56,
+      "reach": 43,
       "saved": 3,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 4412,
-      "ig_reels_video_view_total_time": 189724
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 4185,
+      "ig_reels_video_view_total_time": 205070
      },
      "comments": []
     },
@@ -441,16 +549,16 @@
      "permalink": "https://www.instagram.com/reel/DekrWi2AELc/",
      "at": "2026-10-16T23:08:26+0000",
      "first_line": "Get through a long email fast: paste it and ask for just the asks.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 14,
+      "views": 25,
+      "reach": 15,
       "saved": 3,
       "shares": 0,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 6781,
-      "ig_reels_video_view_total_time": 115278
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 6359,
+      "ig_reels_video_view_total_time": 127185
      },
      "comments": []
     },
@@ -460,14 +568,14 @@
      "permalink": "https://www.instagram.com/p/Dekkunkkfcx/",
      "at": "2026-10-16T22:10:20+0000",
      "first_line": "Before you trust an AI answer, check it. Ask it to show its work.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 17,
+      "views": 18,
       "reach": 6,
       "saved": 3,
       "shares": 0,
-      "total_interactions": 9
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -477,14 +585,14 @@
      "permalink": "https://www.instagram.com/p/DekDx7rmikH/",
      "at": "2026-10-16T17:22:25+0000",
      "first_line": "Trip's over. Who owes who? One message turns the group chat into the fewest payments, with the math shown.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 22,
+      "views": 23,
       "reach": 5,
       "saved": 4,
       "shares": 0,
-      "total_interactions": 9
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -494,16 +602,16 @@
      "permalink": "https://www.instagram.com/reel/DejoVB3iNUH/",
      "at": "2026-10-16T13:22:51+0000",
      "first_line": "\"Per my last email\" before your first coffee? Don't send draft one. Send the calm version.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 9,
+      "views": 27,
+      "reach": 10,
       "saved": 4,
       "shares": 1,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 13614,
-      "ig_reels_video_view_total_time": 149762
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 10606,
+      "ig_reels_video_view_total_time": 159090
      },
      "comments": []
     },
@@ -513,16 +621,16 @@
      "permalink": "https://www.instagram.com/reel/DeiGBYDAZA8/",
      "at": "2026-10-15T23:04:08+0000",
      "first_line": "Never guess a parking sign again. Snap the whole pole and ask one question.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 16,
+      "views": 26,
+      "reach": 17,
       "saved": 4,
       "shares": 0,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4715,
-      "ig_reels_video_view_total_time": 84877
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 4342,
+      "ig_reels_video_view_total_time": 91197
      },
      "comments": []
     },
@@ -532,14 +640,14 @@
      "permalink": "https://www.instagram.com/p/DehfHu4lQEg/",
      "at": "2026-10-15T17:23:40+0000",
      "first_line": "Never guess a parking sign again. Snap the whole pole and ask one question.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 20,
+      "views": 21,
       "reach": 6,
       "saved": 4,
       "shares": 1,
-      "total_interactions": 11
+      "total_interactions": 13
      },
      "comments": []
     },
@@ -549,14 +657,14 @@
      "permalink": "https://www.instagram.com/p/DefnvgFkRse/",
      "at": "2026-10-15T00:00:18+0000",
      "first_line": "Plan one potluck menu that works for every diet at the table. Paste your guest list and one prompt.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 35,
+      "views": 36,
       "reach": 7,
       "saved": 4,
       "shares": 4,
-      "total_interactions": 15
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -566,14 +674,14 @@
      "permalink": "https://www.instagram.com/p/DebbPdGFmPv/",
      "at": "2026-10-13T08:54:03+0000",
      "first_line": "5 prompts that give you an hour back ⏳",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 36,
+      "views": 37,
       "reach": 8,
       "saved": 3,
       "shares": 4,
-      "total_interactions": 14
+      "total_interactions": 16
      },
      "comments": []
     }
@@ -584,22 +692,58 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 8,
+   "media_count": 10,
    "posts": [
+    {
+     "media_id": "18206419024373588",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DenPdZHI3ng/",
+     "at": "2026-10-17T23:02:28+0000",
+     "first_line": "Someone offers help? Give them one job: dinner on Tuesday, one load of laundry, or holding the baby while you shower.",
+     "likes": 4,
+     "comments_count": 1,
+     "insights": {
+      "views": 144,
+      "reach": 129,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 9,
+      "ig_reels_avg_watch_time": 1886,
+      "ig_reels_video_view_total_time": 243383
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17976152387935104",
+     "type": "IMAGE",
+     "permalink": "https://www.instagram.com/p/DenCDtDAfUM/",
+     "at": "2026-10-17T21:05:06+0000",
+     "first_line": "Someone else has the baby? Lie down, even for 20 minutes.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 15,
+      "reach": 5,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 6
+     },
+     "comments": []
+    },
     {
      "media_id": "17915309772496167",
      "type": "CAROUSEL_ALBUM",
      "permalink": "https://www.instagram.com/p/DemdkJmm7BZ/",
      "at": "2026-10-17T15:46:13+0000",
      "first_line": "Make tonight's sleep safer: alone, on their back, in a crib.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 17,
+      "views": 19,
       "reach": 5,
-      "saved": 3,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -609,16 +753,16 @@
      "permalink": "https://www.instagram.com/reel/DemEoY9AKZ8/",
      "at": "2026-10-17T12:08:37+0000",
      "first_line": "Too little for books? Read to them anyway, even now.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 10,
-      "saved": 3,
+      "views": 26,
+      "reach": 17,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 9697,
-      "ig_reels_video_view_total_time": 96979
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 6327,
+      "ig_reels_video_view_total_time": 132884
      },
      "comments": []
     },
@@ -631,13 +775,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 67,
-      "reach": 54,
+      "views": 73,
+      "reach": 59,
       "saved": 3,
       "shares": 1,
       "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3641,
-      "ig_reels_video_view_total_time": 200258
+      "ig_reels_avg_watch_time": 3393,
+      "ig_reels_video_view_total_time": 206996
      },
      "comments": []
     },
@@ -647,14 +791,14 @@
      "permalink": "https://www.instagram.com/p/DekeBYcDyl5/",
      "at": "2026-10-16T21:11:45+0000",
      "first_line": "Feeding all day in the first weeks? 8 to 12 breastfeeds in 24 hours is typical.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 21,
       "reach": 7,
-      "saved": 3,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 9
+      "total_interactions": 12
      },
      "comments": []
     },
@@ -684,13 +828,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 106,
+      "views": 107,
       "reach": 92,
       "saved": 3,
       "shares": 0,
       "total_interactions": 9,
-      "ig_reels_avg_watch_time": 3162,
-      "ig_reels_video_view_total_time": 300420
+      "ig_reels_avg_watch_time": 3139,
+      "ig_reels_video_view_total_time": 301356
      },
      "comments": []
     },
