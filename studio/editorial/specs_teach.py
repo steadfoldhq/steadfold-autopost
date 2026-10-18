@@ -206,7 +206,7 @@ post("hb-1019-single-group-chat", HB, "2026-10-19T17:45", "keep",
      dict(lay="pills", f="yel", text="*47 messages.* / Still no *plan.*", obj="chat", at="tr", save="send this to the group chat that needs it"),
      [dict(k="do", f="indi", text="Paste the chat. Ask: / *“Give 3 options and / the one most / people agreed on.”*",
            save="then you book it")],
-     f"Keep this for the next group chat that goes in circles.\n\nWhy it works: AI can read 47 messages faster than you can scroll them and pull "
+     f"Keep this for the next group chat that goes in circles.\n\nWhy it works: asking for options plus the one most people agreed on makes AI pull "
      f"out what people actually said yes to.\n\nDo this: paste the chat and ask: \"Give 3 options and the one most people agreed on.\"\n\n"
      f"The catch: check it against the chat before you book.\n\n{PRIV}\n\n#groupchat #aitips #friends #lifeadmin #planning",
      "Remove names and phone numbers before you paste a group chat.")
@@ -663,7 +663,7 @@ reel("lf-reel-1020am-movements", LF, "2026-10-20T08:00", "tip", "lf-x-giggle-pop
     dict(k="save", f="pink", text="send this to / someone expecting"),
 ], f"Baby's movements changed? Call now, not tomorrow.\n\nWhy it works: NHS maternity guidance says contact your midwife or maternity unit "
    f"immediately if movements slow, stop or change, day or night.\n\nDo this: today, save your maternity unit's number in your phone.\n\n"
-   f"The catch: don't use a home doppler to check. Call.\n\n{NOT_MED}\n\n#pregnancy #babymovements #pregnant #thirdtrimester #midwife",
+   f"The catch: it's never a bother. Maternity units take calls day and night.\n\n{NOT_MED}\n\n#pregnancy #babymovements #pregnant #thirdtrimester #midwife",
    "Source: NHS, Cambridge University Hospitals, Reduced fetal movements: contact the midwives immediately; please do not wait until the next day.")
 
 reel("lf-reel-1020-visitors", LF, "2026-10-20T19:00", "suggestion", "lf-x-sunny-bounce", "send this to the group chat", [
