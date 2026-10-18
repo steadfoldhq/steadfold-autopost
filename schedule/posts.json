@@ -2354,6 +2354,16 @@
       "cover": "reels/lh-reel-1022-walk-cover.jpg"
     },
     {
+      "id": "lf-reel-1023am-screens-bed",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T08:00:00-04:00",
+      "caption": "Bedtime battles every night? Look at the hour before bed.\n\nThe Canadian Paediatric Society says to avoid screens for at least 1 hour before bedtime, and to keep screen-free times every day, especially meals and reading together.\n\nDo this: tonight, put the tablet and TV away 1 hour before bed. Swap it for a book together.\n\nSend this to someone in bedtime battles.\n\nGeneral information only, not medical advice.\n\n#toddlerlife #bedtimeroutine #screentime #canadianparents #toddlersleep",
+      "first_comment": "Source: Canadian Paediatric Society, Screen time and young children: promoting health and development in a digital world (2017, reaffirmed), and caringforkids.cps.ca: avoid screens for at least 1 hour before bedtime; keep daily screen-free times, especially family meals and book-sharing.",
+      "alt_text": "Edited video in the Littlefold editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Bedtime battles every night? / Screens right before bed can make it harder to settle. / because Canada's paediatricians say no screens in the hour before bed. / Swap that hour for a book together. / Do this: Tonight, put the tablet away 1 hour before bed. / send this to someone in bedtime battles. It loops back to the opening line.",
+      "video": "reels/lf-reel-1023am-screens-bed.mp4",
+      "cover": "reels/lf-reel-1023am-screens-bed-cover.jpg"
+    },
+    {
       "id": "ff-cheat-1023am-cpp-oas",
       "account": "fullyfunded",
       "publish_at": "2026-10-23T08:15:00-04:00",
@@ -2532,6 +2542,16 @@
       "alt_text": "Canada-edition cheat sheet in the littlefold editorial look. Title: Late on the RESP? Grant you can still get. a newborn: $7,200 · 5 years old: $7,200 · 10 years old: $7,200 · 12 years old: $6,000 · 14 years old: $4,000. Do this: Opening late? Ask your bank about catch-up grants.",
       "video": "reels/lf-cheat-1023-resp-catch-up.mp4",
       "cover": "reels/lf-cheat-1023-resp-catch-up-cover.jpg"
+    },
+    {
+      "id": "lh-reel-1023-caffeine",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T19:00:00-04:00",
+      "caption": "Coffee at 4 pm? Your sleep noticed.\n\nWhy it works: in a sleep study, people had 400 mg of caffeine, about 2 to 3 cups of coffee, 6 hours before bed. They slept more than an hour less, measured in the lab, and they didn't even notice it.\n\nDo this: have your last coffee at least 6 hours before bed. Going to bed at 10? Last cup by 4, earlier if you can.\n\nSend this to the friend on their 4th coffee.\n\n#sleep #caffeine #coffee #focus #healthyhabits",
+      "first_comment": "Source: Drake, Roehrs, Shambroom & Roth (2013), Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed, Journal of Clinical Sleep Medicine 9(11). 400 mg of caffeine (about 2 to 3 cups of coffee, per the AASM summary) taken 6 hours before bed reduced objectively measured total sleep by more than 1 hour; participants didn't report the disruption.",
+      "alt_text": "Edited video in the Locked Hour editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Coffee at 4 pm? Your sleep noticed. / In a sleep study, people had caffeine 6 hours before bed. / because They slept over an hour less. They didn't notice. / About 2 to 3 cups of coffee. / Do this: Have your last coffee at least 6 hours before bed. / Send this to your coffee friend.. It loops back to the opening line.",
+      "video": "reels/lh-reel-1023-caffeine.mp4",
+      "cover": "reels/lh-reel-1023-caffeine-cover.jpg"
     }
   ]
 }
