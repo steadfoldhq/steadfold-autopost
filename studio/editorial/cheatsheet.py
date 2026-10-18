@@ -99,6 +99,12 @@ def build(pid, spec):
 
 
 if __name__ == "__main__":
-    import v5_cheats as V
+    import importlib
+    ALL = {}
+    for mod in ("v5_cheats", "v5_hb_cheats"):
+        try:
+            ALL.update(importlib.import_module(mod).CHEATS)
+        except ModuleNotFoundError:
+            pass
     for pid in sys.argv[1:]:
-        build(pid, V.CHEATS[pid])
+        build(pid, ALL[pid])
