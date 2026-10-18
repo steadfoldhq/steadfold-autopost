@@ -1,4 +1,4 @@
-"""Littlefold content, Oct 18-20. Rewritten Oct 17 night to the ONE-READ standard (/home/claude/one-read-standard.md).
+"""Littlefold content, Oct 18-21. Rewritten Oct 17 night to the ONE-READ standard (/home/claude/one-read-standard.md).
 Uses post()/reel()/chain() from specs_teach. Only this page's entries live here.
 Kids' money figures checked on canada.ca (Oct 17): CESG 20% on the first $2,500 a year (max $500/yr basic, $7,200 lifetime,
 catch-up up to $1,000 a year); CLB $500 + $100/yr up to $2,000, no contribution, born 2004+, ADFNI <= $57,375 for 1-3 kids
@@ -81,35 +81,37 @@ post("lf-1018-single-sign-say-it", LF, "2026-10-18T17:00", "keep",
 post("lf-1019-learning-bond", LF, "2026-10-19T11:30", "deep",
      dict(lay="sticky", f="cream", kicker="baby money · part 2", text="Up to / *$2,000,* / no deposit",
           obj="point", at="bl", items=["$500 to start", "$100 a year after", "Into your child's RESP"], save="see who qualifies"),
-     [dict(k="say", f="butter", text="It's called the / *Canada Learning Bond.* / It goes into your / child's RESP, and / you don't add a cent.",
-           size=120),
-      dict(k="say", f="pink", text="It starts with *$500.* / Then the government / adds *$100* for each / year you qualify, / up to *$2,000.*",
-           size=120, src="canada.ca, Canada Learning Bond"),
-      dict(k="say", f="cream", label="who qualifies", text="Families with 1 to 3 / kids and a net / income of *$57,375* / or less can qualify.",
-           sub="for July 2025 to June 2026", size=120),
-      dict(k="say", f="butter", label="the part nobody tells you", text="Missed it? Kids born / in *2004 or later* can / claim it any time / *before they turn 21.*",
-           size=120),
+     [dict(k="say", f="butter", text="It's called the / *Canada Learning* / *Bond.* You don't / add a cent.",
+           size=124),
+      dict(k="say", f="pink", text="*$500* to start. / *$100* more / each year. / Up to *$2,000.*",
+           size=128, src="canada.ca, Canada Learning Bond"),
+      dict(k="say", f="cream", label="who qualifies", text="1 to 3 kids, and / family net income / of *$57,375* / or less.",
+           sub="for July 2025 to June 2026", size=124),
+      dict(k="say", f="butter", label="the part nobody tells you", text="Missed it? / Kids born *2004* / *or later* can apply / *before 21.*",
+           size=124),
       dict(k="do", f="pink", text="This week, ask your bank for a *free RESP* with the Learning Bond. Bring your child's SIN.",
            save="send this to a parent who should check")],
      "Up to $2,000 for your child's education, and you don't have to put in a cent.\n\n"
      "It's called the Canada Learning Bond. The government puts $500 into your child's RESP, then $100 for each year your family "
      "qualifies, up to $2,000. No deposit is needed.\n\n"
      "Who can get it: for July 2025 to June 2026, families with 1 to 3 children and an adjusted family net income of $57,375 or less. "
-     "Children born in 2004 or later can apply any time before they turn 21, so it's not too late if you missed it.\n\n"
+     "Children born in 2004 or later can apply any time before they turn 21, so it's not too late if you missed it. In 2022, only about "
+     "4 in 10 eligible kids had received it.\n\n"
      "Do this: this week, ask your bank for a free RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
      "Send this to a parent who should check.\n\n"
      "#RESP #CanadaLearningBond #newparents #canadianparents #babymoney",
-     "Source: " + CLB_SRC)
+     "Source: " + CLB_SRC + " Take-up: C.D. Howe Institute (Godbout & Samoisette), citing ESDC's 2022 Canada Education Savings Program "
+     "statistical review: 42.5% of eligible children had received the bond in 2022, up from 29.1% in 2013.")
 
 # Oct 19, 17:00 · REWRITE (same id) · fever under 3 months
 post("lf-1019-single-fever-under-3m", LF, "2026-10-19T17:00", "keep",
      dict(lay="pills", f="pink", text="Baby under / 3 months / *with a fever?*", obj="point", at="bl",
           save="this one can't wait for morning", src="American Academy of Pediatrics"),
-     [dict(k="say", f="butter", text="For babies this young, / a fever of *38°C* or / higher means you call / the doctor *right away.*",
-           size=120, src="American Academy of Pediatrics, healthychildren.org"),
-      dict(k="say", f="cream", text="Older babies have / different rules. This / one is only for the / *first 3 months.* / Don't wait to see / if it passes.",
-           size=120),
-      dict(k="do", f="pink", text="Today, find the number to call your doctor *at night,* and save it. Can't reach anyone? Go to *emergency.*",
+     [dict(k="say", f="butter", text="Under 3 months / and *38°C* or higher? / Call the doctor / *right away.*",
+           size=128, src="American Academy of Pediatrics, healthychildren.org"),
+      dict(k="say", f="cream", text="This rule is / for the *first* / *3 months.* / Don't wait to see / if it passes.",
+           size=124),
+      dict(k="do", f="pink", text="Today, save your doctor's *after-hours number.* Can't reach anyone? Go to *emergency.*",
            save="send this to your babysitter")],
      "A fever in a baby under 3 months can't wait for morning.\n\n"
      "The American Academy of Pediatrics says: if your baby is younger than 3 months and has a temperature of 38.0°C (100.4°F) or "
@@ -124,13 +126,13 @@ post("lf-1019-single-fever-under-3m", LF, "2026-10-19T17:00", "keep",
 post("lf-06-toddler-meltdown", LF, "2026-10-20T11:30", "learning",
      dict(lay="sticky", f="cream", text="Meltdown / in the *cereal aisle?*", obj="ok", at="bl",
           items=["Stay calm", "Keep your no", "Distract early"], save="save this for the next shop"),
-     [dict(k="say", f="pink", text="Tantrums often start / around *18 months.* / Your toddler wants / to tell you something / but doesn't have / the words yet.",
-           size=120, src="NHS, Temper tantrums"),
-      dict(k="say", f="butter", label="here's the hard part", text="If you give in to / stop it, your child / learns that / *tantrums work.* / So keep your no, / calmly.",
-           size=120),
-      dict(k="say", f="cream", label="catch it early", text="When you see one / building, point at / something fun: / *“Look, a red truck!”* / Sound excited.",
-           size=120),
-      dict(k="say", f="pink", text="Ignore the people / staring. Shouting / back won't end it, / so *breathe* and / stay close.", size=120),
+     [dict(k="say", f="pink", text="Tantrums often / start around / *18 months.* / They don't have / the words yet.",
+           size=124, src="NHS, Temper tantrums"),
+      dict(k="say", f="butter", label="here's the hard part", text="Give in, and / they learn / *tantrums work.* / So keep your no, / calmly.",
+           size=124),
+      dict(k="say", f="cream", label="catch it early", text="See one building? / Point at / something fun: / *“Look, a red truck!”*",
+           size=124),
+      dict(k="say", f="pink", text="Ignore the stares. / *Breathe,* and / stay close.", size=132),
       dict(k="do", f="butter", text="Next shop, keep it *short* and give your toddler *one job,* like finding the bananas.",
            save="send this to a parent of a two-year-old")],
      "Meltdown in the cereal aisle? Here's what actually helps.\n\n"
@@ -147,11 +149,11 @@ post("lf-06-toddler-meltdown", LF, "2026-10-20T11:30", "learning",
 post("lf-1020-single-coat-check", LF, "2026-10-20T17:00", "suggestion",
      dict(lay="pills", f="butter", text="Puffy coat / in the *car seat?*", obj="shoe", at="bl",
           save="take it off first. here's why."),
-     [dict(k="say", f="pink", text="In a crash, a puffy / coat *squashes flat.* / That leaves the / straps loose, and a / child can slip out.",
-           size=120, src="American Academy of Pediatrics, healthychildren.org"),
-      dict(k="say", f="cream", label="the 2-second check", text="Buckle up, then try / to *pinch the strap* / at the shoulder. / If you can pinch it, / it's too loose.",
+     [dict(k="say", f="pink", text="In a crash, / a puffy coat / *squashes flat.* / The straps end up / *loose.*",
+           size=124, src="American Academy of Pediatrics, healthychildren.org"),
+      dict(k="say", f="cream", label="the 2-second check", text="Buckle up. Then / *pinch the strap* / at the shoulder. / Can you pinch it? / Too loose.",
            size=120),
-      dict(k="do", f="pink", text="Next drive, take the coat off, *buckle up,* then put the coat on backwards *over the straps.*",
+      dict(k="do", f="pink", text="Take the coat off, *buckle up,* then put the coat on backwards *over the straps.*",
            save="send this to whoever does drop-off")],
      "Puffy coat in the car seat? Take it off first.\n\n"
      "The American Academy of Pediatrics explains why: in a crash, the padding in a puffy coat squashes flat. That leaves the straps "
@@ -162,6 +164,35 @@ post("lf-1020-single-coat-check", LF, "2026-10-20T17:00", "suggestion",
      f"{NOT_MED}\n\n#carseatsafety #winter #newparents #toddlers #babysafety",
      "Source: American Academy of Pediatrics, healthychildren.org, Winter car seat safety tips (bulky coats should not be worn under "
      "the harness; padding flattens in a crash; pinch test; coat on backwards or blanket over the buckled straps).")
+
+# Oct 21, 11:30 · NEW · kids' money: naming a guardian in your will
+WILL_SRC = ("Sources: Angus Reid Institute (January 2018): 51% of Canadians say they do not have a will. Ontario: under the Children's "
+            "Law Reform Act, a parent can appoint in a will a person to care for their children after death; the appointment is "
+            "temporary (90 days) and the person must then apply to court. Rules differ by province. General information, not legal advice.")
+
+post("lf-1021-name-a-guardian", LF, "2026-10-21T11:30", "learning",
+     dict(lay="pills", f="pink", kicker="baby money · the big one", text="Who would / raise *your kids?*", obj="point", at="bl",
+          save="a hard question, a 2-minute talk"),
+     [dict(k="say", f="butter", label="the question nobody asks", text="If something / happened to / you both, who / would *raise* / *your kids?*",
+           size=124),
+      dict(k="say", f="cream", text="You can write / your answer down. / You *name a guardian* / in your will.", size=124),
+      dict(k="say", f="pink", text="Yet this many / Canadians say they / have *no will:*", num="51%", size=124,
+           src="Angus Reid Institute, 2018"),
+      dict(k="say", f="butter", label="without one", text="Your family has / to ask a court, and / *your wish isn't* / *written down.*",
+           size=124),
+      dict(k="say", f="cream", label="start tonight", text="Ask your partner: / *who would we pick?* / Then ask them / if they'd say yes.",
+           size=124),
+      dict(k="do", f="pink", text="This week, book a call with a *wills lawyer.* Bring the name you both chose.",
+           save="send this to your partner")],
+     "Who would raise your kids if something happened to you both? It's the question nobody wants to ask.\n\n"
+     "Your will is where you write the answer down: you can name a guardian, the person you'd trust to raise them. Yet 51% of Canadians "
+     "say they have no will at all. Without one, your family has to go to court, and your wish isn't written down anywhere.\n\n"
+     "Start small: tonight, ask your partner who you'd pick. Then ask that person if they'd say yes.\n\n"
+     "Do this: this week, book a call with a wills lawyer, and bring the name you both chose.\n\n"
+     "Rules differ by province. General information, not legal advice.\n\n"
+     "Send this to your partner.\n\n#wills #guardianship #newparents #canadianparents #estateplanning",
+     WILL_SRC)
+
 
 
 # ================================================================== REELS
@@ -285,14 +316,14 @@ chain("lf-ch-1018-resp", LF, "2026-10-18", "lf18", "baby money · part 1", [
 ])
 
 # Oct 19 · REPLACES lf-ch-1019 · hands off to lf-1019-learning-bond
-chain("lf-ch-1019-clb", LF, "2026-10-19", "lf19", "baby money · part 2", [
-    dict(k="photo", text="“We can't / afford to save / *right now.*”", sub="some help needs *no deposit* →", ink="dark", y=560),
-    dict(k="bubbles", f="cream", label="a text from a friend", bubbles=[
-        ("in", "we can't afford to put anything in an RESP"),
-        ("out", "you might not have to"),
-        ("out", "the *Canada Learning Bond* adds up to *$2,000.* no deposit.")], obj="ok"),
-    dict(k="payoff", f="butter", label="families with 1 to 3 kids can qualify", text="Net income / *$57,375* or less",
-         sub="July 2025 to June 2026", obj="point"),
+chain("lf-ch-1019-clb", LF, "2026-10-19", "lf19", "baby money · part 2", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="A *free $2,000* / for kids' school…", bubbles=[
+        ("in", "how many eligible kids actually get it?"), ("out", "A) about 9 in 10"), ("out", "B) about 4 in 10")],
+         obj="shoe", tap="guess, then tap →"),
+    dict(k="payoff", f="butter", label="the answer: B", text="Only / *42.5%*", sub="of eligible kids had it in 2022", obj="point",
+         tap="source: C.D. Howe Institute, ESDC data · tap →"),
+    dict(k="payoff", f="pink", label="why it matters", text="Open the RESP. / *Get the bond.*", sub="most families just never opened one",
+         obj="clock", tap="next story →"),
     dict(k="handoff", f="cream", text="Up to / *$2,000,* / no deposit", img="lf-1019-learning-bond/01.jpg", next="who qualifies, inside"),
 ])
 
@@ -301,9 +332,50 @@ chain("lf-ch-1020", LF, "2026-10-20", "lf20", "calmer toddler days", [
     dict(k="photo", text="“Not in the / *cereal aisle…*”", sub="here's what *actually helps* →", ink="light", y=1050),
     dict(k="bubbles", f="cream", label="the parents' group chat", bubbles=[
         ("in", "she screamed until I gave her the cookie"),
-        ("out", "been there. but giving in teaches her *tantrums work*"),
+        ("out", "been there. but now she knows *tantrums work*"),
         ("out", "next time, keep your no. *calmly.*")], obj="ok"),
     dict(k="payoff", f="butter", label="see one building? point at something fun", text="“Look, a / *big red truck!*”",
          sub="sound excited", obj="shoe"),
     dict(k="handoff", f="cream", text="Calmer / *meltdowns*", img="lf-06-toddler-meltdown/01.jpg", next="save it for the next shop"),
 ])
+
+# Oct 21 · NEW · day B: guess-and-reveal quiz -> lf-1021-name-a-guardian
+chain("lf-ch-1021", LF, "2026-10-21", "lf21", "baby money · the big one", [
+    dict(k="bubbles", f="cream", label="quick quiz", title="Canadians / with *no will…*", bubbles=[
+        ("in", "what share say they don't have one?"), ("out", "A) about 1 in 10"), ("out", "B) about half")],
+         obj="shoe", tap="guess, then tap →"),
+    dict(k="payoff", f="butter", label="the answer: B", text="*51%*", sub="say they have no will", obj="point",
+         tap="source: Angus Reid Institute, 2018 · tap →"),
+    dict(k="payoff", f="pink", label="why it matters", text="A will is where / you *name a guardian.*", sub="the person who'd raise your kids",
+         obj="ok", tap="next story →"),
+    dict(k="handoff", f="cream", text="Who would / raise *your kids?*", img="lf-1021-name-a-guardian/01.jpg", next="a 2-minute talk tonight"),
+])
+
+
+# ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
+# so forced line breaks never re-wrap (one line on screen = one line in the source).
+def _fit_sizes(brand, em=0.45, cap=136, floor=88):
+    """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
+    (em = average glyph width for this page's serif) and all its lines fit the box height. Then nothing re-wraps.
+    Oct 19-21 feed slides only."""
+    import re as _re
+    from specs_teach import POSTS, META
+
+    def _len(s):
+        return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
+
+    for _pid, _sp in POSTS.items():
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+            continue
+        for _s in _sp["slides"]:
+            if _s.get("k") in ("do", "rows", "steps"):
+                continue
+            lines = _s["text"].split(" / ")
+            box_h = 430 if (_s.get("num") or _s.get("bars")) else 540
+            w = 900 / (em * max(_len(x) for x in lines))
+            h = box_h / (0.9 * len(lines))
+            _s["size"] = int(max(floor, min(cap, w, h)))
+
+
+
+_fit_sizes(LF)

@@ -1,4 +1,4 @@
-"""Locked Hour content, Oct 18-20. ONE-READ rewrite #2 (Oct 17, ~23:00): full sentences, one research finding per item,
+"""Locked Hour content, Oct 18-21. ONE-READ rewrite #2 (Oct 17, ~23:00): full sentences, one research finding per item,
 told through an everyday moment. Uses post()/reel()/chain() from specs_teach. Only this page's entries live here.
 
 Removed from the queue (replaced in the same slots): lh-reel-1018am-pick-3, lh-reel-1019am-pick-task,
@@ -74,14 +74,14 @@ post("lh-w2-05-restart", LH, "2026-10-18T12:30", "learning",
 post("lh-1019-one-sentence", LH, "2026-10-19T12:30", "deep",
      dict(lay="sticky", f="cream", kicker="lock-in week · day 2/3", text="One sentence got / *twice as many people* / to exercise", obj="clock", at="br",
           items=["The study", "The sentence", "Your version"], save="slide 3 has the sentence"),
-     [dict(k="say", f="pink", label="the study", text="UK researchers asked / people to exercise more / for two weeks. / One group got / *one extra step.*",
+     [dict(k="say", f="pink", label="the study", text="People were asked / to exercise more. / One group got / *one extra step.*",
            sub="here's what it was →"),
       dict(k="say", f="dots", label="the extra step", text="They filled in / one sentence: / “I'll exercise on *[day]* / at *[time]* in *[place].*”"),
-      dict(k="say", f="cream", text="Of the people who wrote it, / this many actually exercised:", num="91%", sub="in the other groups, under 4 in 10 did",
+      dict(k="say", f="cream", text="Of the people / who wrote it, / this many exercised:", num="91%", sub="the other groups? under 4 in 10",
            src="Milne, Orbell & Sheeran, British Journal of Health Psychology, 2002"),
-      dict(k="why", f="pink", text="When you decide / *when and where* early, / there's nothing left / to decide. You just go.",
+      dict(k="why", f="pink", text="Decide *when and where* / ahead of time. / Then you just go.",
            sub="plans like this helped in 94 studies"),
-      dict(k="do", f="dots", text="Fill in your own sentence: “I'll work on ___ at ___ in ___.” Then *put it in your calendar.*",
+      dict(k="do", f="dots", text="Fill in yours: “I'll work on ___ at ___ in ___.” Then *put it in your calendar.*",
            save="send this to your “someday” friend")],
      "One sentence more than doubled how many people exercised.\n\n"
      "Why it works: in a UK study, people were asked to exercise more for two weeks. One group also filled in a sentence: \"I'll exercise on "
@@ -94,11 +94,11 @@ post("lh-1019-one-sentence", LH, "2026-10-19T12:30", "deep",
 post("lh-1020-phone-other-room", LH, "2026-10-20T12:30", "learning",
      dict(lay="sticky", f="dots", kicker="lock-in week · day 3/3", text="Your phone is off. / It's still / *costing you.*", obj="clock", at="br",
           items=["The study", "The strange part", "The fix"], save="save this"),
-     [dict(k="say", f="cream", label="the study", text="About 800 people / took tricky brain tests. / Some left their phone / on the desk. Some put it / *in another room.*"),
-      dict(k="say", f="pink", text="Phone in another room? / *Best scores.* / Phone on the desk? / *Worst scores,* / even face down and off.",
+     [dict(k="say", f="cream", label="the study", text="About 800 people / took tricky brain tests. / Some put their phone / *in another room.*"),
+      dict(k="say", f="pink", text="Phone in another room? / *Best scores.* / Phone on the desk? / *Worst,* even switched off.",
            src="Ward, Duke, Gneezy & Bos, 2017"),
-      dict(k="say", f="dots", label="the strangest part", text="Almost everyone said / their phone had / *no effect on them.* / They couldn't feel it."),
-      dict(k="why", f="cream", label="why it happens", text="Part of your brain / is busy *not checking* / your phone. That uses up / focus you need for work."),
+      dict(k="say", f="dots", label="the strangest part", text="Almost everyone said / their phone had / *no effect on them.*"),
+      dict(k="why", f="cream", label="why it happens", text="Part of your brain / is busy *not checking* / your phone. / That's focus you lose."),
       dict(k="do", f="pink", text="Next time you work, put your phone *in another room.* Face down isn't enough.",
            save="send this to the friend who studies with their phone out")],
      "Your phone can drain your focus even when it's switched off.\n\n"
@@ -108,6 +108,31 @@ post("lh-1020-phone-other-room", LH, "2026-10-20T12:30", "learning",
      "Do this: before your next hour of work, put your phone in another room, not just face down.\n\n"
      "Send this to the friend who studies with their phone on the desk.\n\n#focus #studytips #deepwork #productivity #phonefree",
      SRC_WARD)
+
+# Oct 21, 12:30 · NEW · task switching (APA)
+SRC_APA = ("Source: American Psychological Association, \"Multitasking: Switching costs\" (March 20, 2006): drawing on research by "
+           "Rubinstein, Meyer and Evans (2001), even brief mental blocks created by shifting between tasks can cost as much as 40 percent "
+           "of someone's productive time (David Meyer, University of Michigan).")
+
+post("lh-1021-switching-cost", LH, "2026-10-21T12:30", "learning",
+     dict(lay="sticky", f="pink", kicker="focus science", text="Multitasking / feels *fast.* / It isn't.", obj="clock", at="br",
+          items=["What switching costs", "The 40% number", "The fix"], save="save this"),
+     [dict(k="say", f="cream", label="sound familiar?", text="Email open. Chat pinging. / *Busy all morning,* / and the report / is half done."),
+      dict(k="say", f="dots", text="Your brain can't do / two hard things at once. / It *switches,* / back and forth."),
+      dict(k="say", f="pink", text="All that switching / can eat up to this much / of your productive time:", num="40%",
+           src="American Psychological Association, Multitasking: Switching costs"),
+      dict(k="why", f="cream", label="think of it like this", text="Every switch has / a little *loading screen.* / They add up fast."),
+      dict(k="say", f="dots", label="the fix", text="Do *one task* at a time. / Put the small stuff, / like email, / in one block."),
+      dict(k="do", f="pink", text="Tomorrow, close email and chat for your *first hour.* One task only.",
+           save="send this to the friend with 30 tabs open")],
+     "Multitasking feels fast. It isn't.\n\n"
+     "Why it works: your brain can't really do two hard things at once. It switches back and forth, and every switch costs a little time "
+     "while it gets back up to speed, like a tiny loading screen. The American Psychological Association says those switches can eat up "
+     "to 40% of your productive time.\n\n"
+     "Do this: tomorrow, close email and chat for your first hour and do one task only. Put the small stuff, like email, in one block later.\n\n"
+     "Send this to the friend with 30 tabs open.\n\n#focus #multitasking #productivity #deepwork #worklife",
+     SRC_APA)
+
 
 
 # ================================================================== REELS (08:30 and 19:00)
@@ -210,19 +235,61 @@ chain("lh-ch-1018", LH, "2026-10-18", "lh18", "lock-in week · day 1/3", [
     dict(k="payoff", f="pink", label="the trick", text="Keep it *small.* / One hour, / not a new life.", sub="tomorrow is your clean page", obj="clock"),
     dict(k="handoff", f="dots", text="Why Monday / *really works*", img="lh-w2-05-restart/01.jpg", next="day 2 tomorrow"),
 ])
-chain("lh-ch-1019", LH, "2026-10-19", "lh19", "lock-in week · day 2/3", [
-    dict(k="photo", text="“I'll work out / *when I feel like it.*”", sub="one sentence fixes this →", ink="light", y=760),
-    dict(k="bubbles", f="cream", label="a real study", bubbles=[
-        ("out", "people were asked to exercise more"), ("out", "one group wrote down *when and where* they'd do it"),
-        ("in", "and?"), ("out", "*91%* of them did it. the others? fewer than 4 in 10")], obj="clock"),
-    dict(k="payoff", f="pink", label="the sentence", text="“I'll work at *7 pm* / at the *kitchen table.*”", sub="now write yours", obj="hourglass"),
+chain("lh-ch-1019", LH, "2026-10-19", "lh19", "lock-in week · day 2/3", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="They wrote down / *when* and *where…*", bubbles=[
+        ("in", "how many actually exercised?"), ("out", "A) about 4 in 10"),
+        ("out", "B) about 9 in 10")], obj="clock", tap="guess, then tap →"),
+    dict(k="payoff", f="pink", label="the answer: B", text="*91%*", sub="the other groups? under 4 in 10", obj="clock",
+         tap="source: Milne, Orbell & Sheeran, 2002 · tap →"),
+    dict(k="payoff", f="dots", label="why it matters", text="Decide *when* / and *where.*", sub="then there's nothing left to decide",
+         obj="hourglass", tap="next story →"),
     dict(k="handoff", f="dots", text="The sentence / *that works*", img="lh-1019-one-sentence/01.jpg", next="day 3 tomorrow"),
 ])
 chain("lh-ch-1020", LH, "2026-10-20", "lh20", "lock-in week · day 3/3", [
     dict(k="photo", text="“My phone's off. / *It's fine.*”", sub="it's not →", ink="dark", y=1300),
     dict(k="bubbles", f="cream", label="a real study", bubbles=[
-        ("in", "my phone's face down, it doesn't bother me"), ("out", "a study of 800 people says it does"),
-        ("out", "a phone *on the desk* lowered test scores, even switched off"), ("in", "wait, what?")], obj="hourglass"),
+        ("in", "my phone's face down. it's fine"), ("out", "a study of 800 people says no"),
+        ("out", "a phone *on the desk* lowered scores, even when off"), ("in", "wait, what?")], obj="hourglass"),
     dict(k="payoff", f="pink", label="what worked best", text="Phone in / *another room.*", sub="not face down. not on silent. gone.", obj="clock"),
     dict(k="handoff", f="dots", text="Your phone is / *still costing you*", img="lh-1020-phone-other-room/01.jpg", next="lock-in week · done"),
 ])
+
+# Oct 21 · NEW · day B: guess-and-reveal quiz -> lh-1021-switching-cost
+chain("lh-ch-1021", LH, "2026-10-21", "lh21", "focus science", [
+    dict(k="bubbles", f="cream", label="quick quiz", title="Switching tasks / *all day…*", bubbles=[
+        ("in", "how much of your productive time can it cost?"), ("out", "A) about 5%"), ("out", "B) up to 40%")],
+         obj="clock", tap="guess, then tap →"),
+    dict(k="payoff", f="pink", label="the answer: B", text="Up to / *40%*", sub="of your productive time", obj="clock",
+         tap="source: American Psychological Association · tap →"),
+    dict(k="payoff", f="dots", label="why it matters", text="Busy isn't / *done.*", sub="every switch costs a little time",
+         obj="hourglass", tap="next story →"),
+    dict(k="handoff", f="dots", text="Multitasking / feels *fast.*", img="lh-1021-switching-cost/01.jpg", next="save it for tomorrow"),
+])
+
+
+# ------------------------------------------------------------------ AIR PASS (Oct 18 am): rewrap lines over 19 characters.
+def _fit_sizes(brand, em=0.33, cap=160, floor=88):
+    """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
+    (em = average glyph width for this page's serif) and all its lines fit the box height. Then nothing re-wraps.
+    Oct 19-21 feed slides only."""
+    import re as _re
+    from specs_teach import POSTS, META
+
+    def _len(s):
+        return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
+
+    for _pid, _sp in POSTS.items():
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+            continue
+        for _s in _sp["slides"]:
+            if _s.get("k") in ("do", "rows", "steps"):
+                continue
+            lines = _s["text"].split(" / ")
+            box_h = 430 if (_s.get("num") or _s.get("bars")) else 540
+            w = 900 / (em * max(_len(x) for x in lines))
+            h = box_h / (0.9 * len(lines))
+            _s["size"] = int(max(floor, min(cap, w, h)))
+
+
+
+_fit_sizes(LH)

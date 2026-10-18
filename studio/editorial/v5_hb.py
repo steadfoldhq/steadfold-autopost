@@ -96,38 +96,36 @@ reel("hb-reel-1019am-just-the-asks", HB, "2026-10-19T08:45", "deep", "hb-x-futur
     dict(k="list", f="indi", items=["The slides · *Tue*", "The budget · *Fri*", "Lunch · *optional*"], size=104, drop=True),
     dict(k="because", f="plum", kicker="why ask for the quote?", text="AI sometimes guesses. A quote proves *it's really in there.*"),
     dict(k="do", f="yel", text="Next long email, ask AI what they need from you, and to *quote the line.*"),
-    dict(k="save", f="indi", text="send this to / the long-email coworker"),
+    dict(k="save", f="indi", text="send this to / the long-email coworker", next="part 2 tonight: your reply →"),
 ], "A huge email from your boss, before coffee. What do they actually need from you?\n\n"
    "Paste it into AI and ask: \"What do they need from me? Quote the line.\" You get the asks as a short list.\n\n"
    "Why the quote matters: AI sometimes fills gaps with guesses. A quote shows you it's really in the email, and you can find it in seconds.\n\n"
    "Where not to trust it: if it can't quote a line, treat that ask as a guess. And check your work's rules before you paste work email into any AI.\n\n"
-   f"Send this to the long-email coworker.\n\n{MADE}\n\n#inbox #aitips #email #productivity #worklife",
+   f"Part 2 tonight: writing your reply.\n\nSend this to the long-email coworker.\n\n{MADE}\n\n#inbox #aitips #email #productivity #worklife",
    "The email shown is made up for this post. Many workplaces have rules about which AI tools you can use with work email; check yours first.")
 
-chain("hb-ch-1019", HB, "2026-10-19", "hb19", "ai evenings · day 2/4", [
-    dict(k="photo", text="“Who's doing / *Thursday swim?*”", sub="nobody, it turns out →", ink="light", y=640),
-    dict(k="bubbles", f="indi", label="sunday night", bubbles=[
-        ("in", "my calendar says I'm free Thursday"), ("out", "mine too 👍"), ("in", "school note says *early pickup* though"),
-        ("out", "…oh no")]),
-    dict(k="bubbles", f="yel", label="here's the trick", bubbles=[
-        ("out", "paste both calendars and the note into AI"), ("out", "ask: *where do we clash this week?*"),
-        ("ai", "Thursday: nobody is free for swim.")], obj="phone"),
-    dict(k="payoff", f="plum", label="but double-check it", text="AI can mix up / *am and pm.*",
-         sub="check what it flags in the real calendars", obj="point", tap="next story →"),
+chain("hb-ch-1019", HB, "2026-10-19", "hb19", "ai evenings · day 2/4", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="indi", label="quick quiz", title="Moms with a partner: / who runs the *kids' calendar?*", bubbles=[
+        ("in", "how many say it's mostly them?"), ("out", "A) about half"),
+        ("out", "B) about 8 in 10")], tap="guess, then tap →"),
+    dict(k="payoff", f="yel", label="the answer: B", text="*78%*", sub="of moms say it's mostly them", obj="phone",
+         tap="source: Pew Research Center, 2023 · tap →"),
+    dict(k="payoff", f="plum", label="why it matters", text="That's a lot of / calendar in *one head.*", sub="let AI spot the clashes for you",
+         obj="point", tap="next story →"),
     dict(k="handoff", f="indi", text="Who's doing / *Thursday swim?*", img="hb-w02-8-12-automations-kickoff/01.jpg", next="day 3 tomorrow"),
 ])
 
 post("hb-w02-8-12-automations-kickoff", HB, "2026-10-19T13:00", "learning",
      dict(lay="pills", f="indi", kicker="ai evenings · day 2/4", text="Who's doing / *Thursday swim?*", obj="phone", at="br",
           save="nobody, it turns out"),
-     [dict(k="say", f="yel", label="sunday night, every week", size=120,
-           text="Your calendar says free. Theirs says free. Then the school note says *early pickup on Thursday.*"),
-      dict(k="why", f="plum", label="why AI is good at this", size=122,
-           text="Paste both calendars and the note, and AI lines everything up by day. *Clashes jump out.*"),
-      dict(k="say", f="indi", label="it found", size=122,
-           text="Nobody is free for *Thursday swim.* Better to find out on Sunday than at 4 pm Thursday."),
-      dict(k="say", f="yel", label="but double-check this", size=122,
-           text="AI can mix up *times* and *am or pm.* Check anything it flags against the real calendars."),
+     [dict(k="say", f="yel", label="sunday night, every week", size=126,
+           text="Your calendar / says free. / So does theirs. / Then the school note: / *early pickup.*"),
+      dict(k="why", f="plum", label="why AI is good at this", size=126,
+           text="Paste both calendars / and the note. / AI lines up the days, / so *clashes jump out.*"),
+      dict(k="say", f="indi", label="it found", size=130,
+           text="Nobody's free for / *Thursday swim.* / Better to know Sunday / than 4 pm Thursday."),
+      dict(k="say", f="yel", label="but double-check", size=130,
+           text="AI can mix up / *am and pm.* / Check what it flags / in the real calendars."),
       dict(k="do", f="plum", text="Sunday night, paste both calendars into AI and ask: *“Where do we clash this week?”*",
            save="send this to the other half of your calendar")],
      "Who's doing Thursday swim? Nobody, it turns out.\n\n"
@@ -137,31 +135,43 @@ post("hb-w02-8-12-automations-kickoff", HB, "2026-10-19T13:00", "learning",
      "Where not to trust it: AI can mix up times, or am and pm. Check anything it flags against the real calendars. "
      "Take out addresses and the kids' full names before you paste.\n\n"
      f"Send this to the other half of your calendar.\n\n{MADE}\n\n#aitips #familycalendar #lifeadmin #momlife #organization",
-     "The week shown is made up for this post. AI tools can misread times and time zones, so treat its list as a starting point and check the calendars.")
+     "The week shown is made up for this post. AI tools can misread times and time zones, so treat its list as a starting point and check "
+     "the calendars. Story quiz: Pew Research Center (May 2023, survey fall 2022): among U.S. mothers living with a spouse or partner and "
+     "children under 18, 78% say they do more than their partner managing their children's schedules and activities.")
 
+# Oct 19, 17:45 · was a 3-slide single; now a 7-slide carousel (singles are weakest everywhere)
 post("hb-1019-single-homework", HB, "2026-10-19T17:45", "keep",
      dict(lay="pills", f="yel", text="Grade 5 math. / *I can't* / *do it anymore.*", obj="chat", at="tr", save="you're not the only one"),
-     [dict(k="say", f="plum", label="here's the trick", size=124,
-           text="AI can *explain the steps* like you're 10. It can get math wrong too, so *check the answer together.*"),
-      dict(k="do", f="indi", text="Paste the homework question into AI and ask: *“Explain it like I'm 10, but don't tell me the answer.”*",
+     [dict(k="say", f="plum", label="sound familiar?", size=132,
+           text="7 pm. Homework. / Your kid asks *“why?”* / and you have / *no idea.* 😅"),
+      dict(k="say", f="indi", size=132,
+           text="You could just / look up the answer. / But then *they* / still don't get it."),
+      dict(k="why", f="yel", label="here's the trick", size=132,
+           text="Ask AI to explain / the steps *like* / *they're 10.* / Then *you* explain it."),
+      dict(k="say", f="plum", label="the magic words", size=128,
+           text="“Explain it like / I'm 10. / *Don't tell me* / *the answer.*”"),
+      dict(k="say", f="indi", label="but don't trust it blindly", size=132,
+           text="AI can get / math *wrong.* / So check the answer / *together.*"),
+      dict(k="do", f="yel", text="Tonight, paste one homework question into AI and ask: *“Explain it like I'm 10. No answer.”*",
            save="send this to a homework-night parent")],
      "Grade 5 math. You can't do it anymore either? Same.\n\n"
-     "Paste the homework question into AI and ask it to explain it like you're 10, without giving the answer. "
-     "Now you can explain it to your kid instead of guessing.\n\n"
+     "You could look up the answer, but then your kid still doesn't get it. Instead, paste the question into AI and ask it to explain "
+     "the steps like you're 10, without giving the answer. Now you can explain it to your kid instead of guessing.\n\n"
      "Where not to trust it: AI can get math wrong. Use it for the steps, then check the answer together, "
      "or against the answer key if there is one.\n\n"
+     "Do this: tonight, paste one homework question into AI and ask \"Explain it like I'm 10. No answer.\"\n\n"
      "Send this to a homework-night parent.\n\n#homework #aitips #parenting #schoollife #momlife",
      "AI chatbots can make arithmetic and reasoning mistakes, so check the final answer yourself. Asking it to hide the answer keeps the thinking with your kid.")
 
 reel("hb-reel-1019-one-sorry", HB, "2026-10-19T19:00", "deep", "hb-x-smart-bounce", "count them…", [
-    dict(k="hook", f="indi", text="Your email / has *four sorries.*", emo="🙇"),
+    dict(k="hook", f="indi", text="Part 2: / your reply has / *four sorries.*", emo="🙇"),
     dict(k="say", f="yel", text="Sorry for the / delay. / *Sorry, sorry,* / *sorry.*"),
     dict(k="because", f="plum", kicker="here's the trick", text="Tell AI to *keep your words,* or it rewrites you into a robot."),
     dict(k="say", f="yel", text="Now there's / *one sorry,* / and it still / sounds like you.", drop=True),
     dict(k="say", f="plum", text="Read it out / loud. If a line / isn't you, / *change it back.*"),
     dict(k="do", f="indi", text="Paste your draft into AI and ask: *“Keep my words. Say sorry once.”*"),
     dict(k="save", f="plum", text="send this to the friend / who over-apologises", next="tomorrow: the awkward text"),
-], "Your email has four sorries in it. Count them.\n\n"
+], "Part 2 of this morning's Reel: now you're writing the reply, and it has four sorries in it. Count them.\n\n"
    "Paste your draft into AI and ask: \"Keep my words. Say sorry once.\" You get the same message, with one sorry, still in your voice.\n\n"
    "Why \"keep my words\" matters: without it, AI tends to rewrite the whole thing in its own voice.\n\n"
    "Where not to trust it: read it out loud before you send. If a line doesn't sound like you, change it back.\n\n"
@@ -191,8 +201,8 @@ chain("hb-ch-1020", HB, "2026-10-20", "hb20", "ai evenings · day 3/4", [
     dict(k="bubbles", f="indi", label="every single night", bubbles=[
         ("in", "what's for dinner?"), ("out", "there's half a chicken and some spinach"), ("in", "so… *pizza?*")]),
     dict(k="bubbles", f="yel", label="here's the trick", bubbles=[
-        ("out", "tell AI what's in the fridge and who eats what"), ("out", "ask for *5 dinners and one shopping list*"),
-        ("ai", "Monday: chicken and spinach rice, 25 minutes…")], obj="phone"),
+        ("out", "tell AI what's in the fridge"), ("out", "ask for *5 dinners and one shopping list*"),
+        ("ai", "Monday: chicken and spinach rice, 25 min…")], obj="phone"),
     dict(k="payoff", f="plum", label="but check this yourself", text="It doesn't know / *allergies.*",
          sub="tell it, then read every ingredient", obj="point", tap="next story →"),
     dict(k="handoff", f="indi", text="5 pm. / *What's for dinner?*", img="hb-1020-prompt-week-01/01.jpg", next="day 4 tomorrow"),
@@ -201,15 +211,15 @@ chain("hb-ch-1020", HB, "2026-10-20", "hb20", "ai evenings · day 3/4", [
 post("hb-1020-prompt-week-01", HB, "2026-10-20T13:00", "learning",
      dict(lay="sticky", f="indi", kicker="ai evenings · day 3/4", text="5 pm. / *What's for dinner?*", obj="point", at="bl",
           items=["Half a chicken", "Rice", "Spinach", "Two picky kids"], save="the fridge, honestly"),
-     [dict(k="say", f="yel", label="every single night", size=122,
-           text="It's 5 pm, everyone's hungry, and you're staring into the fridge like it *owes you an answer.*"),
-      dict(k="why", f="plum", label="why it works", size=118,
-           text="Tell AI what's in the fridge, who eats what, and how much time you have. *It plans around that.*"),
-      dict(k="say", f="indi", label="and you get", size=126,
-           text="Five dinners for the week and *one shopping list,* sorted by aisle. You shop once."),
-      dict(k="say", f="yel", label="but check this yourself", size=118,
-           text="AI doesn't know about *allergies* unless you tell it, and it can still make mistakes. Read every ingredient."),
-      dict(k="do", f="plum", text="Tonight, tell AI what's in your fridge and ask: *“Plan 5 easy dinners and one shopping list.”*",
+     [dict(k="say", f="yel", label="every single night", size=130,
+           text="5 pm. / Everyone's hungry. / You stare at / the fridge like it / *owes you an answer.*"),
+      dict(k="why", f="plum", label="why it works", size=130,
+           text="Tell AI what's in / the fridge and / who eats what. / *It plans around that.*"),
+      dict(k="say", f="indi", label="and you get", size=136,
+           text="*Five dinners* and / *one shopping list.* / You shop once. 🙌"),
+      dict(k="say", f="yel", label="but check this yourself", size=130,
+           text="AI won't know about / *allergies* unless / you tell it. / Read every ingredient."),
+      dict(k="do", f="plum", text="Tonight, tell AI what's in your fridge and ask for *5 easy dinners and one shopping list.*",
            save="send this to whoever cooks at your place")],
      "5 pm. What's for dinner? Again.\n\n"
      "Tell AI what's in the fridge, who eats what, and how much time you have. It plans around your rules: five dinners and one "
@@ -220,16 +230,25 @@ post("hb-1020-prompt-week-01", HB, "2026-10-20T13:00", "learning",
      "Send this to whoever cooks at your place.\n\n#mealplanning #aitips #dinnerideas #familydinner #lifeadmin",
      "AI meal plans only know what you tell them. For allergies, always read the ingredients yourself; AI can still include something you said to avoid.")
 
+# Oct 20, 17:45 · was a 3-slide single; now a 7-slide carousel
 post("hb-1020-single-error-code", HB, "2026-10-20T17:45", "keep",
      dict(lay="pills", f="plum", text="The dishwasher / says *E24.* / *Now what?*", obj="phone", at="br", save="careful who you ask"),
-     [dict(k="say", f="indi", label="here's the part nobody tells you", size=126,
-           text="Ask AI what an error code means and it may *guess,* while sounding totally sure."),
-      dict(k="do", f="yel", text="Photograph the error-code page in your manual. Give it to AI and ask *what to do first.*",
+     [dict(k="say", f="indi", label="sound familiar?", size=134,
+           text="Beeping. Blinking. / *E24.* / You grab your phone / and ask AI."),
+      dict(k="say", f="yel", label="here's the part nobody tells you", size=134,
+           text="AI may *guess* / what E24 means, / and sound / *totally sure.*"),
+      dict(k="why", f="plum", label="why it guesses", size=134,
+           text="The same code / can mean *different* / *things* on / different brands."),
+      dict(k="say", f="indi", label="the fix", size=134,
+           text="Give AI / *your manual.* / Now it's reading, / not guessing. 📖"),
+      dict(k="say", f="yel", label="no paper manual?", size=134,
+           text="Search your / *model number* online. / Most brands post / the manual."),
+      dict(k="do", f="plum", text="Snap the error-code page in your manual. Give it to AI and ask: *“What do I do first?”*",
            save="send this to the family fixer")],
      "The dishwasher says E24. Now what?\n\n"
      "Here's the part nobody tells you: ask AI what an error code means and it may guess, while sounding totally sure. "
      "The same code can mean different things on different brands.\n\n"
-     "Do this: take a photo of the error-code page in your manual, give it to AI, and ask what to do first. Now it's reading "
+     "The fix: give it your manual. Take a photo of the error-code page, give it to AI, and ask what to do first. Now it's reading "
      "your manual, not guessing. No paper manual? Most brands have it online if you search the model number.\n\n"
      "Unplug it before you touch anything inside.\n\nSend this to the family fixer.\n\n#homehacks #aitips #lifeadmin #appliances #techtips",
      "Error codes differ by brand and model, and AI can state a wrong meaning confidently. Giving it your own manual page keeps the answer tied to your machine.")
@@ -267,13 +286,13 @@ reel("hb-reel-1021am-parcel-text", HB, "2026-10-21T08:45", "deep", "hb-x-smart-b
    "Fake delivery texts asking for a small fee are a common scam; the Canadian Anti-Fraud Centre (antifraudcentre-centreantifraude.ca) "
    "lists them. Check deliveries only in the courier's own app or site.")
 
-chain("hb-ch-1021", HB, "2026-10-21", "hb21", "ai evenings · day 4/4", [
-    dict(k="photo", text="“Let's just split / it *evenly.*”", sub="Ana had water all night →", ink="light", y=700),
-    dict(k="bubbles", f="indi", label="$96 dinner, 4 friends", bubbles=[
-        ("in", "Ana didn't drink"), ("in", "evenly feels unfair"), ("out", "ask AI to split it fairly *and show the math*")], obj="chat"),
-    dict(k="bubbles", f="yel", label="it said", bubbles=[
-        ("ai", "Ana: *$18*"), ("ai", "everyone else: *$26*"), ("ai", "18 + 26 + 26 + 26 = *96*")]),
-    dict(k="payoff", f="plum", label="why show the math?", text="So you can / *check it.*", sub="AI can get sums wrong", obj="ok",
+chain("hb-ch-1021", HB, "2026-10-21", "hb21", "ai evenings · day 4/4", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="indi", label="quick quiz", title="AI answering / *news questions…*", bubbles=[
+        ("in", "how many answers had a big problem?"), ("out", "A) about 1 in 10"), ("out", "B) almost half")],
+         tap="guess, then tap →"),
+    dict(k="payoff", f="yel", label="the answer: B", text="*45%*", sub="had at least one big problem", obj="phone",
+         tap="source: EBU and BBC study, Oct 2025 · tap →"),
+    dict(k="payoff", f="plum", label="why it matters", text="Make AI / *show its work.*", sub="then you can check it in seconds", obj="ok",
          tap="next story →"),
     dict(k="handoff", f="indi", text="$96 dinner. / *Ana didn't drink.*", img="hb-1021-ai-said-what-bill/01.jpg", next="ai evenings · done"),
 ])
@@ -281,36 +300,49 @@ chain("hb-ch-1021", HB, "2026-10-21", "hb21", "ai evenings · day 4/4", [
 post("hb-1021-ai-said-what-bill", HB, "2026-10-21T13:00", "learning",
      dict(lay="mosaic", f="indi", kicker="ai evenings · day 4/4", text="“$96 dinner. / Ana didn't / drink.”", obj="chat", at="bl",
           save="so who pays what?"),
-     [dict(k="say", f="yel", label="you know this moment", size=126,
-           text="The bill lands. Someone says *“just split it evenly”.* Ana had water all night."),
-      dict(k="say", f="plum", label="so ask AI", size=126,
-           text="Tell it what everyone had, and ask it to *split it fairly and show the math.*"),
-      dict(k="say", f="indi", label="it said", size=136,
-           text="Ana pays *$18.* Everyone else pays *$26.* That adds up to $96.", sub="food split 4 ways, drinks split 3 ways"),
-      dict(k="why", f="yel", label="why show the math?", size=126,
-           text="AI can get sums wrong. When it shows its work, you can *check it in 5 seconds.*"),
-      dict(k="do", f="plum", text="Next shared bill, tell AI what everyone had and add: *“Show the math.”*",
+     [dict(k="say", f="yel", label="you know this moment", size=132,
+           text="The bill lands. / Someone says / *“just split* / *it evenly.”* / Ana had water. 💧"),
+      dict(k="say", f="plum", label="so ask AI", size=132,
+           text="Tell it who / had what. Ask it to / *split it fairly* / *and show the math.*"),
+      dict(k="say", f="indi", label="it said", size=140,
+           text="Ana pays *$18.* / Everyone else / pays *$26.*", sub="that adds up to $96. we checked."),
+      dict(k="why", f="yel", label="why show the math?", size=132,
+           text="AI can get sums / *wrong.* With the math, / you can *check it* / *in 5 seconds.*"),
+      dict(k="do", f="plum", text="Next shared bill, tell AI who had what and add: *“Show the math.”*",
            save="send this to the friend who always says “evenly”")],
      "$96 dinner. Ana didn't drink. Who pays what?\n\n"
      "Tell AI what everyone had and ask it to split it fairly and show the math. It said: Ana pays $18, everyone else $26. "
      "That adds up to $96.\n\n"
-     "Why show the math: AI can get sums wrong. When it shows its work, you can check it in 5 seconds.\n\n"
+     "Why show the math: AI can get things wrong. When it shows its work, you can check it in 5 seconds.\n\n"
      "Do this: next shared bill, tell AI what everyone had and add \"Show the math.\"\n\n"
      f"Send this to the friend who always says \"evenly\".\n\n{MADE}\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
      "The bill: $72 of food split 4 ways ($18 each) and $24 of drinks split 3 ways ($8 each). Ana $18, everyone else $26. "
-     "18 + 26 + 26 + 26 = 96. Chat AIs can make arithmetic mistakes, which is why you ask for the working.")
+     "18 + 26 + 26 + 26 = 96. Chat AIs can make arithmetic mistakes, which is why you ask for the working. Story quiz: European "
+     "Broadcasting Union and BBC, News Integrity in AI Assistants (Oct 2025): 45% of more than 3,000 AI answers to news questions had at "
+     "least one significant issue (22 public service media organisations, 18 countries).")
 
+# Oct 21, 17:45 · was a 3-slide single; now a 7-slide carousel
 post("hb-1021-single-subscriptions", HB, "2026-10-21T17:45", "keep",
      dict(lay="sticky", f="yel", text="Charges / you *forgot* / you pay", obj="point", at="bl",
           items=["Streaming 12.99", "Cloud 2.99", "Fitness 9.99", "Phone 45.00", "News 7.50"], save="78.47 a month, made up for this post"),
-     [dict(k="why", f="indi", label="why AI helps", size=120,
-           text="AI is great at spotting charges that *repeat every month.* It can miss yearly ones, so scroll back a year."),
-      dict(k="do", f="plum", text="Paste one month of your bank statement into AI, card numbers removed, and ask: *“What repeats?”*",
+     [dict(k="say", f="indi", label="sound familiar?", size=136,
+           text="$12.99 here. / $2.99 there. / You *forgot* / half of them."),
+      dict(k="say", f="plum", label="here's the trick", size=132,
+           text="Paste one month / of your statement / into AI. Ask: / *“What repeats?”*"),
+      dict(k="why", f="yel", label="why AI is good at this", size=132,
+           text="Spotting the *same* / *charge every month* / is easy for AI. / Boring for you. 😴"),
+      dict(k="say", f="indi", label="but don't trust it blindly", size=132,
+           text="It can miss / *yearly* charges. / Scroll back a year / yourself."),
+      dict(k="say", f="plum", label="before you paste", size=132,
+           text="Take out *card* / *and account numbers.* / AI doesn't / need them."),
+      dict(k="do", f="yel", text="Tonight, paste last month's statement into AI and ask: *“What repeats?”* Then cancel one.",
            save="send this to your money buddy")],
      "Charges you forgot you pay. Everyone has a few.\n\n"
-     "Paste one month of your bank statement into AI and ask \"What repeats?\" It's great at spotting charges that come back every month.\n\n"
+     "Paste one month of your bank statement into AI and ask \"What repeats?\" Spotting the same charge every month is easy for AI, "
+     "and boring for you.\n\n"
      "Where not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out "
      "before you paste.\n\n"
+     "Do this: tonight, paste last month's statement into AI, ask \"What repeats?\", then cancel one you don't use.\n\n"
      f"Send this to your money buddy.\n\n{MADE}\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
      "The statement on the cover is made up; its five charges add up to 78.47 a month. Never paste full card or account numbers into an AI chat.")
 
@@ -328,3 +360,32 @@ reel("hb-reel-1021-group-costume", HB, "2026-10-21T19:00", "deep", "hb-x-ta-da-f
    "Where not to trust it: it can't know who'll actually show up in it. That's what the vote is for.\n\n"
    f"Send this to the group chat.\n\n{MADE}\n\n#halloween #groupcostume #aitips #friends #halloweencostume",
    "Names and chat made up for this post. Take real names and numbers out before you paste a group chat.")
+
+
+# ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
+# so forced line breaks never re-wrap (one line on screen = one line in the source).
+def _fit_sizes(brand, em=0.39, cap=140, floor=88):
+    """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
+    (em = average glyph width for this page's serif) and all its lines fit the box height. Then nothing re-wraps.
+    Oct 19-21 feed slides only."""
+    import re as _re
+    from specs_teach import POSTS, META
+
+    def _len(s):
+        return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
+
+    for _pid, _sp in POSTS.items():
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+            continue
+        for _s in _sp["slides"]:
+            if _s.get("k") in ("do", "rows", "steps"):
+                continue
+            lines = _s["text"].split(" / ")
+            box_h = 430 if (_s.get("num") or _s.get("bars")) else 540
+            w = 900 / (em * max(_len(x) for x in lines))
+            h = box_h / (0.9 * len(lines))
+            _s["size"] = int(max(floor, min(cap, w, h)))
+
+
+
+_fit_sizes(HB)

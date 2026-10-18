@@ -106,27 +106,26 @@ post("ff-1019-rich-habits-01", FF, "2026-10-19T12:00", "learning",
      dict(lay="line", f="lite", text="The *cheap* coat / costs *5 times more*", obj="ok", at="br",
           dots=[("$240 coat", "worn 120 times", f"${K['coat_a']} a wear"), ("$60 coat", "worn 6 times", f"${K['coat_b']} a wear")],
           save="money foundations · part 2"),
-     [dict(k="say", f="cob", text="You buy a *$60 coat* on sale. / It's falling apart after *6 wears.*", size=126),
-      dict(k="say", f="lite", text="Your friend pays *$240* for a good one. / She wears it *120 times.*", size=126),
-      dict(k="say", f="coral", text="Divide the price by the times you wear it. / Your cheap coat costs you this, every wear:",
-           num=f"${K['coat_b']}", size=100),
-      dict(k="say", f="lite", text="Her expensive coat costs her just this, every wear:", num=f"${K['coat_a']}", size=110,
-           sub="that's 5 times less than yours"),
-      dict(k="why", f="cob", label="here's the trick",
-           text="The price tag tells you what you pay today. / The cost per wear tells you what you *really* pay.", size=110),
-      dict(k="say", f="coral", label="the honest part",
-           text="This only works if you really use it. / A $240 coat that stays in the closet is *$240 a wear.*", size=104),
-      dict(k="do", f="lite", text="Before your next buy over $50, ask yourself: how many times will I *really* use this?",
-           size=92, save="send this to your sale-loving friend")],
-     f"The cheap coat can cost you 5 times more.\n\nYou buy a $60 coat on sale and it's falling apart after 6 wears. That's ${K['coat_b']} "
+     [dict(k="say", f="cob", label="sound familiar?", text="A *$60 coat* / on sale. / It's done after / *6 wears.*", size=124),
+      dict(k="say", f="lite", text="Your friend's / coat cost *$240.* / She's worn it / *120 times.*", size=124),
+      dict(k="say", f="coral", text="Your cheap coat / costs you this, / every wear:", num=f"${K['coat_b']}", size=112),
+      dict(k="say", f="lite", text="Hers costs her / just this:", num=f"${K['coat_a']}", size=128, sub="5 times less than yours"),
+      dict(k="say", f="cob", label="it has a name", text="It's called / *cost per wear.*", size=150,
+           sub="the price, divided by how often you'll use it"),
+      dict(k="say", f="coral", label="the honest part", text="A $240 coat / that never leaves / the closet? / *$240 a wear.*", size=118),
+      dict(k="do", f="lite", text="Before your next buy over $50, ask: how many times will I *really* use this?",
+           size=100, save="send this to your sale-loving friend")],
+     f"The cheap coat can cost you 5 times more.\n\nYou buy a $60 coat on sale and it's done after 6 wears. That's ${K['coat_b']} "
      f"every time you put it on. Your friend pays $240 for a good one and wears it 120 times. That's ${K['coat_a']} a wear.\n\n"
-     f"The price tag tells you what you pay today. The cost per wear tells you what you really pay.\n\nThe honest part: it only works if "
+     f"It's called cost per wear: the price, divided by how often you'll use it. The price tag tells you what you pay today. "
+     f"The cost per wear tells you what you really pay.\n\nThe honest part: it only works if "
      f"you really use it. A $240 coat that stays in the closet is $240 a wear.\n\nDo this: before your next buy over $50, ask yourself "
      f"how many times you'll really use it.\n\nMoney Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\n"
      f"Send this to your sale-loving friend. Save it for your next shopping trip.\n\n"
      f"#moneytips #budgeting #personalfinance #costperwear #moneyfoundations",
      f"Maths: price divided by times used. $240 ÷ 120 = ${K['coat_a']}. $60 ÷ 6 = ${K['coat_b']}. $10 is 5 times $2. Count your own uses: "
-     f"they will differ.")
+     f"they will differ. Story quiz: Ellen MacArthur Foundation, A New Textiles Economy (2017): the average number of times a garment is "
+     f"worn has fallen 36% compared with 15 years earlier.")
 
 reel("ff-reel-1019-late-start", FF, "2026-10-19T19:00", "deep", "ff-x-big-reveal", "save this if you feel behind", [
     dict(k="hook", f="cob", text="Started / investing late? / *It's not too late.*", emo="⏳"),
@@ -144,16 +143,15 @@ reel("ff-reel-1019-late-start", FF, "2026-10-19T19:00", "deep", "ff-x-big-reveal
    "year, no fees or taxes. Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). "
    "Education, not advice.", series="Start early · part 2/2")
 
-chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [
-    dict(k="photo", text="“It was *on sale,* / though.”", sub="why it *cost more* →", ink="light", y=640),
-    dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
-        ("in", "look at this coat. it was only $60!"), ("out", "nice! how many times will you wear it?"),
-        ("in", "honestly? maybe 6. it's kind of thin.")]),
-    dict(k="bubbles", f="cob", label="here's the part nobody does", bubbles=[
-        ("out", "$60 for 6 wears is *$10* every time you put it on."), ("out", "a $240 coat worn 120 times is *$2* a wear.")], obj="phone"),
-    dict(k="payoff", f="coral", label="the cheap one costs", text="*5 times more* / per wear.",
-         sub="divide the price by how often you'll use it", obj="ok"),
-    dict(k="handoff", f="lite", text="Money Foundations, / *Part 2*", img="ff-1019-rich-habits-01/01.jpg", next="part 3 tomorrow"),
+chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="lite", label="quick quiz", title="Each piece of clothing: / worn *more* or *less?*", bubbles=[
+        ("in", "2015 vs 2000, on average…"), ("out", "A) about the same"), ("out", "B) about a third less")],
+         tap="guess, then tap →"),
+    dict(k="payoff", f="coral", label="the answer: B", text="*36%* / fewer", sub="wears per piece, 2000 to 2015", obj="ok",
+         tap="source: Ellen MacArthur Foundation, 2017 · tap →"),
+    dict(k="payoff", f="cob", label="why it matters", text="Fewer wears means / *paying more*", sub="for every single wear", obj="piggy",
+         tap="next story →"),
+    dict(k="handoff", f="lite", text="The *cheap* coat / costs *5 times more*", img="ff-1019-rich-habits-01/01.jpg", next="part 3 tomorrow"),
 ])
 
 
@@ -179,18 +177,18 @@ reel("ff-reel-1020am-tfsa-rrsp", FF, "2026-10-20T08:15", "deep", "ff-x-level-up"
 post("ff-1020-foundations-3-index-funds", FF, "2026-10-20T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 3", text="Own a tiny piece / of *500 companies*", obj="point", at="bl",
           save="index funds, in plain words"),
-     [dict(k="say", f="lite", text="Picking the winning stock is hard. / In 2025, about *8 in 10* professional big-company funds did worse than the market.",
-           size=96, src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025"),
-      dict(k="say", f="cob", text="An *index fund* skips the guessing. / It buys a little of every company on a list, like the S&P 500.",
-           size=100),
-      dict(k="why", f="lite", label="think of a fruit basket",
-           text="Instead of betting on one apple, you buy the whole basket. / One bad apple barely matters.", size=110),
-      dict(k="say", f="coral", text="Since 1957, the S&P 500 has grown about this much a year, on average:", num="10%", size=104,
+     [dict(k="say", f="lite", label="picking stocks is hard", text="In 2025, about / *8 in 10* pro funds / did worse than / the market.",
+           size=124, src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025 (large-cap funds)"),
+      dict(k="say", f="cob", label="the other way", text="An *index fund* / buys a bit of / *everything.*",
+           size=130, sub="no guessing needed"),
+      dict(k="why", f="lite", label="think of a fruit basket", text="Don't bet on / one apple. / Buy the *whole* / *basket.*",
+           size=130, sub="one bad apple barely matters"),
+      dict(k="say", f="coral", text="Since 1957, the / S&P 500 grew, / on average:", num="10%", size=116, sub="a year, before inflation",
            src="Fidelity, S&P 500 average return, before inflation"),
-      dict(k="say", f="lite", label="the honest part",
-           text="Some years it drops hard. In 2008, it fell about *37%.* / Index funds work best when you leave them alone.", size=100),
-      dict(k="do", f="cob", text="Open your investing app and search “S&P 500 index fund.” Just look. No need to buy today.",
-           size=88, save="send this to the friend who picks stocks")],
+      dict(k="say", f="lite", label="the honest part", text="Some years / it drops hard. / In 2008, it / fell about *37%.*", size=120,
+           sub="so leave it alone for years"),
+      dict(k="do", f="cob", text="Open your investing app and search *“S&P 500 index fund.”* Just look today.",
+           size=100, save="send this to the friend who picks stocks")],
      "Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500.\n\n"
      "An index fund skips the guessing. It buys a little of every company on a list, like the 500 big US companies in the S&P 500. "
      "Think of a fruit basket: instead of betting on one apple, you buy the whole basket, so one bad apple barely matters.\n\n"
@@ -220,11 +218,11 @@ reel("ff-reel-1020-wills", FF, "2026-10-20T19:00", "deep", "ff-x-money-moves", "
 chain("ff-ch-1020", FF, "2026-10-20", "ff20", "money foundations · part 3", [
     dict(k="photo", text="“I don't know / which stocks / *to pick.*”", sub="good news: you *don't have to* →", ink="light", y=760),
     dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
-        ("in", "everyone at work talks about stocks. I have no clue which to buy."), ("out", "you don't have to pick one."),
+        ("in", "everyone at work talks stocks. I have no clue 😅"), ("out", "you don't have to pick one."),
         ("out", "you can buy a little of *all of them.*")]),
     dict(k="bubbles", f="cob", label="here's how", bubbles=[
         ("out", "an *index fund* buys a little of every company on a list."),
-        ("out", "the S&P 500 list is 500 of the biggest US companies.")], obj="phone"),
+        ("out", "like the S&P 500: 500 big US companies.")], obj="phone"),
     dict(k="payoff", f="coral", label="since 1957, on average", text="about / *10% a year*",
          sub="not every year. some years it drops.", obj="piggy"),
     dict(k="handoff", f="lite", text="Money Foundations, / *Part 3*", img="ff-1020-foundations-3-index-funds/01.jpg", next="part 4 tomorrow"),
@@ -235,39 +233,71 @@ chain("ff-ch-1020", FF, "2026-10-20", "ff20", "money foundations · part 3", [
 post("ff-1021-clb-who-qualifies", FF, "2026-10-21T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 4", text="Free *$2,000* / for your kid's / *education*", obj="point", at="bl",
           save="check if you qualify on slide 4"),
-     [dict(k="say", f="lite", text="The government will put up to *$2,000* toward your child's education. / You don't have to add a dollar.",
-           size=110),
-      dict(k="say", f="cob", label="the Canada Learning Bond",
-           text="It starts with *$500.* / Then it adds *$100* every year, up to *$2,000.*", size=120),
+     [dict(k="say", f="lite", label="sound too good?", text="The government / can put up to / *$2,000* toward / your kid's school.",
+           size=124, sub="and you add $0"),
+      dict(k="say", f="cob", label="the Canada Learning Bond", text="*$500* to start. / *$100* more / each year. / Up to $2,000.", size=124),
       dict(k="rows", f="lite", text="Who *qualifies*", cap="family net income, July 2025 to June 2026",
            rows=[("1 to 3 kids", "$57,375 or less"), ("4 kids", "under $64,733"), ("5 kids", "under $72,123")],
            sub="kids born in 2004 or later", src="canada.ca · ESDC notice 2025-1095 · limits change each July"),
-      dict(k="say", f="coral", label="the part nobody mentions",
-           text="The money only lands in an *RESP:* a savings account for school. / Many banks open one for free.", size=106),
-      dict(k="say", f="lite", text="Didn't apply when they were a baby? / You can still apply until your child turns *21.*", size=116,
+      dict(k="say", f="coral", label="the part nobody mentions", text="It only lands / in an *RESP:* / a savings account / for school.",
+           size=124),
+      dict(k="say", f="cob", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
+           size=124, src="C.D. Howe Institute, using ESDC 2022 data"),
+      dict(k="say", f="lite", label="good news", text="You can still / apply until your / child turns *21.*", size=128,
            src="canada.ca · Canada Learning Bond"),
-      dict(k="do", f="cob", text="This week, ask your bank to open an *RESP* with the *Canada Learning Bond.* Bring your child's SIN.",
-           size=90, save="send this to a new parent")],
+      dict(k="do", f="cob", text="This week, ask your bank for an *RESP with the Learning Bond.* Bring your child's SIN.",
+           size=100, save="send this to a new parent")],
      "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\n"
      "It's called the Canada Learning Bond. It starts with $500, then adds $100 every year, up to $2,000.\n\n"
      "Who qualifies (July 2025 to June 2026): kids born in 2004 or later, in families with net income of $57,375 or less for 1 to 3 kids, "
      "under $64,733 for 4 kids, or under $72,123 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands "
-     "in an RESP, a savings account for school. Many banks open one for free. Didn't apply when they were a baby? You can still apply until "
-     "your child turns 21.\n\nDo this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
+     "in an RESP, a savings account for school. Many banks open one for free. In 2022, about 2.5 million eligible kids had never received it. "
+     "Didn't apply when they were a baby? You can still apply until your child turns 21.\n\n"
+     "Do this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
      "Money Foundations, Part 4. Send this to a new parent.\n\n#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
      "Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional year "
      "up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under 21 when applying. "
-     "Income limits: ESDC notice 2025-1095, July 1, 2025 to June 30, 2026 (adjusted family net income).")
+     "Income limits: ESDC notice 2025-1095, July 1, 2025 to June 30, 2026 (adjusted family net income). Take-up: Godbout & Samoisette, "
+     "C.D. Howe Institute, \"On Its Anniversary, Has the Goal of the Canada Learning Bond Been Achieved?\", citing ESDC's 2022 Canada "
+     "Education Savings Program statistical review: take-up rose from 29.1% (2013) to 42.5% (2022); 2.5 million of 4.4 million eligible "
+     "children had not received it.")
 
-chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [
-    dict(k="photo", text="“Do we even / *qualify?*”", sub="a *$2,000* bond for your kid →", ink="dark", y=640),
-    dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
-        ("in", "is the $2,000 for kids thing real?"), ("out", "yes. it's called the *Canada Learning Bond.*"),
-        ("out", "and you don't have to put in a single dollar.")]),
-    dict(k="bubbles", f="cob", label="here's how it works", bubbles=[
-        ("out", "it starts with *$500.*"), ("out", "then *$100* a year, up to *$2,000.*"),
-        ("out", "it lands in an *RESP*, a savings account for school.")], obj="phone"),
-    dict(k="payoff", f="coral", label="1 to 3 kids? you may qualify with", text="family income / *$57,375* / or less",
-         sub="kids born in 2004 or later", obj="point"),
-    dict(k="handoff", f="lite", text="Money Foundations, / *Part 4*", img="ff-1021-clb-who-qualifies/01.jpg", next="save it for your bank visit"),
+chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="lite", label="quick quiz", title="A *free $2,000* / for kids' school…", bubbles=[
+        ("in", "how many eligible kids never got it?"), ("out", "A) about 250,000"), ("out", "B) about 2.5 million")],
+         tap="guess, then tap →"),
+    dict(k="payoff", f="coral", label="the answer: B", text="*2.5 million*", sub="eligible kids, never paid (2022)", obj="ok",
+         tap="source: C.D. Howe Institute, ESDC data · tap →"),
+    dict(k="payoff", f="cob", label="why it matters", text="No RESP, / *no bond.*", sub="the money only lands in an RESP", obj="piggy",
+         tap="next story →"),
+    dict(k="handoff", f="lite", text="Free *$2,000* / for your kid", img="ff-1021-clb-who-qualifies/01.jpg", next="save it for your bank visit"),
 ])
+
+
+# ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
+# so forced line breaks never re-wrap (one line on screen = one line in the source).
+def _fit_sizes(brand, em=0.47, cap=136, floor=88):
+    """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
+    (em = average glyph width for this page's serif) and all its lines fit the box height. Then nothing re-wraps.
+    Oct 19-21 feed slides only."""
+    import re as _re
+    from specs_teach import POSTS, META
+
+    def _len(s):
+        return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
+
+    for _pid, _sp in POSTS.items():
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+            continue
+        for _s in _sp["slides"]:
+            if _s.get("k") in ("do", "rows", "steps"):
+                continue
+            lines = _s["text"].split(" / ")
+            box_h = 430 if (_s.get("num") or _s.get("bars")) else 540
+            w = 900 / (em * max(_len(x) for x in lines))
+            h = box_h / (0.9 * len(lines))
+            _s["size"] = int(max(floor, min(cap, w, h)))
+
+
+
+_fit_sizes(FF)

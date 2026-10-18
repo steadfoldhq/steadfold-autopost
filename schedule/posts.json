@@ -1161,7 +1161,8 @@
       "first_comment": "Source: Financial and Consumer Services Commission (FCNB, a Canadian provincial regulator), \"Life insurance\": term covers you for a specific time period and its premiums are \"generally less expensive\"; permanent covers you for life and generally builds cash value. fcnb.ca/en/insurance/life-insurance. Education, not advice: talk to a licensed advisor about your own needs.",
       "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: One kind of life insurance costs much less. / Term life covers you for a set time, like 20 years. It costs less. / Whole life covers you forever and builds some savings inside. It costs much more. / because Term is built for the years people depend on your pay: young kids, a big mortgage. / Do this: Tonight, ask your HR or benefits team how much life insurance you already have. / Send this to your partner.. It loops back to the opening line.",
       "video": "reels/ff-reel-1019am-term-vs-whole.mp4",
-      "cover": "reels/ff-reel-1019am-term-vs-whole-cover.jpg"
+      "cover": "reels/ff-reel-1019am-term-vs-whole-cover.jpg",
+      "trial": "auto"
     },
     {
       "id": "lh-reel-1019am-pings",
@@ -1178,11 +1179,12 @@
       "id": "hb-reel-1019am-just-the-asks",
       "account": "hourback",
       "publish_at": "2026-10-19T08:45:00-04:00",
-      "caption": "A huge email from your boss, before coffee. What do they actually need from you?\n\nPaste it into AI and ask: \"What do they need from me? Quote the line.\" You get the asks as a short list.\n\nWhy the quote matters: AI sometimes fills gaps with guesses. A quote shows you it's really in the email, and you can find it in seconds.\n\nWhere not to trust it: if it can't quote a line, treat that ask as a guess. And check your work's rules before you paste work email into any AI.\n\nSend this to the long-email coworker.\n\nMade up for this post. Check anything important yourself.\n\n#inbox #aitips #email #productivity #worklife",
+      "caption": "A huge email from your boss, before coffee. What do they actually need from you?\n\nPaste it into AI and ask: \"What do they need from me? Quote the line.\" You get the asks as a short list.\n\nWhy the quote matters: AI sometimes fills gaps with guesses. A quote shows you it's really in the email, and you can find it in seconds.\n\nWhere not to trust it: if it can't quote a line, treat that ask as a guess. And check your work's rules before you paste work email into any AI.\n\nPart 2 tonight: writing your reply.\n\nSend this to the long-email coworker.\n\nMade up for this post. Check anything important yourself.\n\n#inbox #aitips #email #productivity #worklife",
       "first_comment": "The email shown is made up for this post. Many workplaces have rules about which AI tools you can use with work email; check yours first.",
       "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: A huge email from your boss. Before coffee. / Somewhere in there are the three things they need from you. / What do they need from me? Quote the line. / The slides · Tue, The budget · Fri, Lunch · optional / because AI sometimes guesses. A quote proves it's really in there. / Do this: Next long email, ask AI what they need from you, and to quote the line. / send this to the long-email coworker. It loops back to the opening line.",
       "video": "reels/hb-reel-1019am-just-the-asks.mp4",
-      "cover": "reels/hb-reel-1019am-just-the-asks-cover.jpg"
+      "cover": "reels/hb-reel-1019am-just-the-asks-cover.jpg",
+      "trial": "auto"
     },
     {
       "id": "lf-ch-1019-clb-1",
@@ -1190,7 +1192,7 @@
       "publish_at": "2026-10-19T10:30:00-04:00",
       "story": true,
       "image": "stories/lf-ch-1019-clb-1.jpg",
-      "caption": "Story chain lf-ch-1019-clb frame 1: “We can't afford to save right now.”"
+      "caption": "Story chain lf-ch-1019-clb frame 1: quick quiz"
     },
     {
       "id": "lf-ch-1019-clb-2",
@@ -1198,7 +1200,7 @@
       "publish_at": "2026-10-19T10:31:00-04:00",
       "story": true,
       "image": "stories/lf-ch-1019-clb-2.jpg",
-      "caption": "Story chain lf-ch-1019-clb frame 2: a text from a friend"
+      "caption": "Story chain lf-ch-1019-clb frame 2: Only 42.5%"
     },
     {
       "id": "lf-ch-1019-clb-3",
@@ -1206,7 +1208,7 @@
       "publish_at": "2026-10-19T10:32:00-04:00",
       "story": true,
       "image": "stories/lf-ch-1019-clb-3.jpg",
-      "caption": "Story chain lf-ch-1019-clb frame 3: Net income $57,375 or less"
+      "caption": "Story chain lf-ch-1019-clb frame 3: Open the RESP. Get the bond."
     },
     {
       "id": "ff-ch-1019-1",
@@ -1214,7 +1216,7 @@
       "publish_at": "2026-10-19T11:00:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1019-1.jpg",
-      "caption": "Story chain ff-ch-1019 frame 1: “It was on sale, though.”"
+      "caption": "Story chain ff-ch-1019 frame 1: quick quiz"
     },
     {
       "id": "ff-ch-1019-2",
@@ -1222,7 +1224,7 @@
       "publish_at": "2026-10-19T11:01:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1019-2.jpg",
-      "caption": "Story chain ff-ch-1019 frame 2: sound familiar?"
+      "caption": "Story chain ff-ch-1019 frame 2: 36% fewer"
     },
     {
       "id": "ff-ch-1019-3",
@@ -1230,23 +1232,15 @@
       "publish_at": "2026-10-19T11:02:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1019-3.jpg",
-      "caption": "Story chain ff-ch-1019 frame 3: here's the part nobody does"
-    },
-    {
-      "id": "ff-ch-1019-4",
-      "account": "fullyfunded",
-      "publish_at": "2026-10-19T11:03:00-04:00",
-      "story": true,
-      "image": "stories/ff-ch-1019-4.jpg",
-      "caption": "Story chain ff-ch-1019 frame 4: 5 times more per wear."
+      "caption": "Story chain ff-ch-1019 frame 3: Fewer wears means paying more"
     },
     {
       "id": "lf-1019-learning-bond",
       "account": "littlefold",
       "publish_at": "2026-10-19T11:30:00-04:00",
-      "caption": "Up to $2,000 for your child's education, and you don't have to put in a cent.\n\nIt's called the Canada Learning Bond. The government puts $500 into your child's RESP, then $100 for each year your family qualifies, up to $2,000. No deposit is needed.\n\nWho can get it: for July 2025 to June 2026, families with 1 to 3 children and an adjusted family net income of $57,375 or less. Children born in 2004 or later can apply any time before they turn 21, so it's not too late if you missed it.\n\nDo this: this week, ask your bank for a free RESP with the Canada Learning Bond. Bring your child's SIN.\n\nSend this to a parent who should check.\n\n#RESP #CanadaLearningBond #newparents #canadianparents #babymoney",
-      "first_comment": "Source: Government of Canada, canada.ca, Canada Learning Bond: $500 the first year, then $100 for each year you qualify, up to $2,000. No personal contribution needed. Children born in 2004 or later, from lower-income families. Income limit for July 2025 to June 2026: adjusted family net income of $57,375 or less for 1 to 3 children (ESDC notice 2025-1095).",
-      "alt_text": "Littlefold 6-slide carousel. Slide 1: 'Up to $2,000, no deposit' in a large serif with highlighted words above a sticky note listing $500 to start, $100 a year after, Into your child's RESP, a halftone cut-out and the handwritten note 'see who qualifies'. Slide 2: It's called the Canada Learning Bond. It goes into your child's RESP, and you don't add a cent.. Slide 3: It starts with $500. Then the government adds $100 for each year you qualify, up to $2,000.. Slide 4: who qualifies Families with 1 to 3 kids and a net income of $57,375 or less can qualify. (for July 2025 to June 2026). Slide 5: the part nobody tells you Missed it? Kids born in 2004 or later can claim it any time before they turn 21.. Slide 6: Do this: This week, ask your bank for a free RESP with the Learning Bond. Bring your child's SIN..",
+      "caption": "Up to $2,000 for your child's education, and you don't have to put in a cent.\n\nIt's called the Canada Learning Bond. The government puts $500 into your child's RESP, then $100 for each year your family qualifies, up to $2,000. No deposit is needed.\n\nWho can get it: for July 2025 to June 2026, families with 1 to 3 children and an adjusted family net income of $57,375 or less. Children born in 2004 or later can apply any time before they turn 21, so it's not too late if you missed it. In 2022, only about 4 in 10 eligible kids had received it.\n\nDo this: this week, ask your bank for a free RESP with the Canada Learning Bond. Bring your child's SIN.\n\nSend this to a parent who should check.\n\n#RESP #CanadaLearningBond #newparents #canadianparents #babymoney",
+      "first_comment": "Source: Government of Canada, canada.ca, Canada Learning Bond: $500 the first year, then $100 for each year you qualify, up to $2,000. No personal contribution needed. Children born in 2004 or later, from lower-income families. Income limit for July 2025 to June 2026: adjusted family net income of $57,375 or less for 1 to 3 children (ESDC notice 2025-1095). Take-up: C.D. Howe Institute (Godbout & Samoisette), citing ESDC's 2022 Canada Education Savings Program statistical review: 42.5% of eligible children had received the bond in 2022, up from 29.1% in 2013.",
+      "alt_text": "Littlefold 6-slide carousel. Slide 1: 'Up to $2,000, no deposit' in a large serif with highlighted words above a sticky note listing $500 to start, $100 a year after, Into your child's RESP, a halftone cut-out and the handwritten note 'see who qualifies'. Slide 2: It's called the Canada Learning Bond. You don't add a cent.. Slide 3: $500 to start. $100 more each year. Up to $2,000.. Slide 4: who qualifies 1 to 3 kids, and family net income of $57,375 or less. (for July 2025 to June 2026). Slide 5: the part nobody tells you Missed it? Kids born 2004 or later can apply before 21.. Slide 6: Do this: This week, ask your bank for a free RESP with the Learning Bond. Bring your child's SIN..",
       "images": [
         "lf-1019-learning-bond/01.jpg",
         "lf-1019-learning-bond/02.jpg",
@@ -1270,7 +1264,7 @@
       "publish_at": "2026-10-19T11:45:00-04:00",
       "story": true,
       "image": "stories/lh-ch-1019-1.jpg",
-      "caption": "Story chain lh-ch-1019 frame 1: “I'll work out when I feel like it.”"
+      "caption": "Story chain lh-ch-1019 frame 1: quick quiz"
     },
     {
       "id": "lh-ch-1019-2",
@@ -1278,7 +1272,7 @@
       "publish_at": "2026-10-19T11:46:00-04:00",
       "story": true,
       "image": "stories/lh-ch-1019-2.jpg",
-      "caption": "Story chain lh-ch-1019 frame 2: a real study"
+      "caption": "Story chain lh-ch-1019 frame 2: 91%"
     },
     {
       "id": "lh-ch-1019-3",
@@ -1286,15 +1280,15 @@
       "publish_at": "2026-10-19T11:47:00-04:00",
       "story": true,
       "image": "stories/lh-ch-1019-3.jpg",
-      "caption": "Story chain lh-ch-1019 frame 3: “I'll work at 7 pm at the kitchen table.”"
+      "caption": "Story chain lh-ch-1019 frame 3: Decide when and where."
     },
     {
       "id": "ff-1019-rich-habits-01",
       "account": "fullyfunded",
       "publish_at": "2026-10-19T12:00:00-04:00",
-      "caption": "The cheap coat can cost you 5 times more.\n\nYou buy a $60 coat on sale and it's falling apart after 6 wears. That's $10 every time you put it on. Your friend pays $240 for a good one and wears it 120 times. That's $2 a wear.\n\nThe price tag tells you what you pay today. The cost per wear tells you what you really pay.\n\nThe honest part: it only works if you really use it. A $240 coat that stays in the closet is $240 a wear.\n\nDo this: before your next buy over $50, ask yourself how many times you'll really use it.\n\nMoney Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\nSend this to your sale-loving friend. Save it for your next shopping trip.\n\n#moneytips #budgeting #personalfinance #costperwear #moneyfoundations",
-      "first_comment": "Maths: price divided by times used. $240 ÷ 120 = $2. $60 ÷ 6 = $10. $10 is 5 times $2. Count your own uses: they will differ.",
-      "alt_text": "Fully Funded 8-slide carousel. Slide 1: 'The cheap coat costs 5 times more' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'money foundations · part 2'. Slide 2: You buy a $60 coat on sale. It's falling apart after 6 wears.. Slide 3: Your friend pays $240 for a good one. She wears it 120 times.. Slide 4: Divide the price by the times you wear it. Your cheap coat costs you this, every wear: $10. Slide 5: Her expensive coat costs her just this, every wear: $2 (that's 5 times less than yours). Slide 6: here's the trick The price tag tells you what you pay today. The cost per wear tells you what you really pay.. Slide 7: the honest part This only works if you really use it. A $240 coat that stays in the closet is $240 a wear.. Slide 8: Do this: Before your next buy over $50, ask yourself: how many times will I really use this?.",
+      "caption": "The cheap coat can cost you 5 times more.\n\nYou buy a $60 coat on sale and it's done after 6 wears. That's $10 every time you put it on. Your friend pays $240 for a good one and wears it 120 times. That's $2 a wear.\n\nIt's called cost per wear: the price, divided by how often you'll use it. The price tag tells you what you pay today. The cost per wear tells you what you really pay.\n\nThe honest part: it only works if you really use it. A $240 coat that stays in the closet is $240 a wear.\n\nDo this: before your next buy over $50, ask yourself how many times you'll really use it.\n\nMoney Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\nSend this to your sale-loving friend. Save it for your next shopping trip.\n\n#moneytips #budgeting #personalfinance #costperwear #moneyfoundations",
+      "first_comment": "Maths: price divided by times used. $240 ÷ 120 = $2. $60 ÷ 6 = $10. $10 is 5 times $2. Count your own uses: they will differ. Story quiz: Ellen MacArthur Foundation, A New Textiles Economy (2017): the average number of times a garment is worn has fallen 36% compared with 15 years earlier.",
+      "alt_text": "Fully Funded 8-slide carousel. Slide 1: 'The cheap coat costs 5 times more' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'money foundations · part 2'. Slide 2: sound familiar? A $60 coat on sale. It's done after 6 wears.. Slide 3: Your friend's coat cost $240. She's worn it 120 times.. Slide 4: Your cheap coat costs you this, every wear: $10. Slide 5: Hers costs her just this: $2 (5 times less than yours). Slide 6: it has a name It's called cost per wear. (the price, divided by how often you'll use it). Slide 7: the honest part A $240 coat that never leaves the closet? $240 a wear.. Slide 8: Do this: Before your next buy over $50, ask: how many times will I really use this?.",
       "images": [
         "ff-1019-rich-habits-01/01.jpg",
         "ff-1019-rich-habits-01/02.jpg",
@@ -1312,7 +1306,7 @@
       "publish_at": "2026-10-19T12:00:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1019-1.jpg",
-      "caption": "Story chain hb-ch-1019 frame 1: “Who's doing Thursday swim?”"
+      "caption": "Story chain hb-ch-1019 frame 1: quick quiz"
     },
     {
       "id": "hb-ch-1019-2",
@@ -1320,7 +1314,7 @@
       "publish_at": "2026-10-19T12:01:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1019-2.jpg",
-      "caption": "Story chain hb-ch-1019 frame 2: sunday night"
+      "caption": "Story chain hb-ch-1019 frame 2: 78%"
     },
     {
       "id": "hb-ch-1019-3",
@@ -1328,23 +1322,15 @@
       "publish_at": "2026-10-19T12:02:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1019-3.jpg",
-      "caption": "Story chain hb-ch-1019 frame 3: here's the trick"
+      "caption": "Story chain hb-ch-1019 frame 3: That's a lot of calendar in one head."
     },
     {
-      "id": "hb-ch-1019-4",
-      "account": "hourback",
-      "publish_at": "2026-10-19T12:03:00-04:00",
-      "story": true,
-      "image": "stories/hb-ch-1019-4.jpg",
-      "caption": "Story chain hb-ch-1019 frame 4: AI can mix up am and pm."
-    },
-    {
-      "id": "ff-ch-1019-5",
+      "id": "ff-ch-1019-4",
       "account": "fullyfunded",
       "publish_at": "2026-10-19T12:15:00-04:00",
       "story": true,
-      "image": "stories/ff-ch-1019-5.jpg",
-      "caption": "Story chain ff-ch-1019 frame 5: Money Foundations, Part 2"
+      "image": "stories/ff-ch-1019-4.jpg",
+      "caption": "Story chain ff-ch-1019 frame 4: The cheap coat costs 5 times more"
     },
     {
       "id": "lh-1019-one-sentence",
@@ -1352,7 +1338,7 @@
       "publish_at": "2026-10-19T12:30:00-04:00",
       "caption": "One sentence more than doubled how many people exercised.\n\nWhy it works: in a UK study, people were asked to exercise more for two weeks. One group also filled in a sentence: \"I'll exercise on [day] at [time] in [place].\" 91% of them exercised. In the other groups, fewer than 4 in 10 did. When you decide when and where ahead of time, there's nothing left to decide in the moment. You just go. Across 94 studies, plans like this helped people reach their goals.\n\nDo this: write one sentence for this week, \"I'll work on ___ at ___ in ___,\" and put it in your calendar.\n\nSend this to the friend who says \"I'll go when I feel like it.\"\n\n#habits #productivity #goals #focus #motivation",
       "first_comment": "Sources: Milne, Orbell & Sheeran (2002), British Journal of Health Psychology 7(2), 248 people over 2 weeks: 91% of the group that wrote down day, time and place exercised, versus under 40% in the other groups. Gollwitzer & Sheeran (2006), meta-analysis of 94 tests of if-then plans, Advances in Experimental Social Psychology 38.",
-      "alt_text": "Locked Hour 6-slide carousel. Slide 1: 'One sentence got twice as many people to exercise' in a large serif with highlighted words above a sticky note listing The study, The sentence, Your version, a halftone cut-out and the handwritten note 'slide 3 has the sentence'. Slide 2: the study UK researchers asked people to exercise more for two weeks. One group got one extra step. (here's what it was →). Slide 3: the extra step They filled in one sentence: “I'll exercise on [day] at [time] in [place].”. Slide 4: Of the people who wrote it, this many actually exercised: 91% (in the other groups, under 4 in 10 did). Slide 5: When you decide when and where early, there's nothing left to decide. You just go. (plans like this helped in 94 studies). Slide 6: Do this: Fill in your own sentence: “I'll work on ___ at ___ in ___.” Then put it in your calendar..",
+      "alt_text": "Locked Hour 6-slide carousel. Slide 1: 'One sentence got twice as many people to exercise' in a large serif with highlighted words above a sticky note listing The study, The sentence, Your version, a halftone cut-out and the handwritten note 'slide 3 has the sentence'. Slide 2: the study People were asked to exercise more. One group got one extra step. (here's what it was →). Slide 3: the extra step They filled in one sentence: “I'll exercise on [day] at [time] in [place].”. Slide 4: Of the people who wrote it, this many exercised: 91% (the other groups? under 4 in 10). Slide 5: Decide when and where ahead of time. Then you just go. (plans like this helped in 94 studies). Slide 6: Do this: Fill in yours: “I'll work on ___ at ___ in ___.” Then put it in your calendar..",
       "images": [
         "lh-1019-one-sentence/01.jpg",
         "lh-1019-one-sentence/02.jpg",
@@ -1375,8 +1361,8 @@
       "account": "hourback",
       "publish_at": "2026-10-19T13:00:00-04:00",
       "caption": "Who's doing Thursday swim? Nobody, it turns out.\n\nYour calendar says free. Theirs says free. Then the school note says early pickup on Thursday.\n\nWhy AI helps: paste both calendars and the note, and it lines everything up by day, so the clashes jump out.\n\nDo this: Sunday night, paste both calendars into AI and ask \"Where do we clash this week?\"\n\nWhere not to trust it: AI can mix up times, or am and pm. Check anything it flags against the real calendars. Take out addresses and the kids' full names before you paste.\n\nSend this to the other half of your calendar.\n\nMade up for this post. Check anything important yourself.\n\n#aitips #familycalendar #lifeadmin #momlife #organization",
-      "first_comment": "The week shown is made up for this post. AI tools can misread times and time zones, so treat its list as a starting point and check the calendars.",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: 'Who's doing Thursday swim?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'nobody, it turns out'. Slide 2: sunday night, every week Your calendar says free. Theirs says free. Then the school note says early pickup on Thursday.. Slide 3: why AI is good at this Paste both calendars and the note, and AI lines everything up by day. Clashes jump out.. Slide 4: it found Nobody is free for Thursday swim. Better to find out on Sunday than at 4 pm Thursday.. Slide 5: but double-check this AI can mix up times and am or pm. Check anything it flags against the real calendars.. Slide 6: Do this: Sunday night, paste both calendars into AI and ask: “Where do we clash this week?”.",
+      "first_comment": "The week shown is made up for this post. AI tools can misread times and time zones, so treat its list as a starting point and check the calendars. Story quiz: Pew Research Center (May 2023, survey fall 2022): among U.S. mothers living with a spouse or partner and children under 18, 78% say they do more than their partner managing their children's schedules and activities.",
+      "alt_text": "Hourback 6-slide carousel. Slide 1: 'Who's doing Thursday swim?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'nobody, it turns out'. Slide 2: sunday night, every week Your calendar says free. So does theirs. Then the school note: early pickup.. Slide 3: why AI is good at this Paste both calendars and the note. AI lines up the days, so clashes jump out.. Slide 4: it found Nobody's free for Thursday swim. Better to know Sunday than 4 pm Thursday.. Slide 5: but double-check AI can mix up am and pm. Check what it flags in the real calendars.. Slide 6: Do this: Sunday night, paste both calendars into AI and ask: “Where do we clash this week?”.",
       "images": [
         "hb-w02-8-12-automations-kickoff/01.jpg",
         "hb-w02-8-12-automations-kickoff/02.jpg",
@@ -1387,12 +1373,12 @@
       ]
     },
     {
-      "id": "hb-ch-1019-5",
+      "id": "hb-ch-1019-4",
       "account": "hourback",
       "publish_at": "2026-10-19T13:15:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1019-5.jpg",
-      "caption": "Story chain hb-ch-1019 frame 5: Who's doing Thursday swim?"
+      "image": "stories/hb-ch-1019-4.jpg",
+      "caption": "Story chain hb-ch-1019 frame 4: Who's doing Thursday swim?"
     },
     {
       "id": "lf-1019-single-fever-under-3m",
@@ -1400,7 +1386,7 @@
       "publish_at": "2026-10-19T17:00:00-04:00",
       "caption": "A fever in a baby under 3 months can't wait for morning.\n\nThe American Academy of Pediatrics says: if your baby is younger than 3 months and has a temperature of 38.0°C (100.4°F) or higher, call the doctor right away. Older babies have different rules, so ask your doctor about yours.\n\nDo this: today, save your doctor's after-hours number in your phone. If you can't reach anyone, go to emergency.\n\nSend this to your babysitter, and anyone who looks after your baby.\n\nGeneral information only, not medical advice.\n\n#newborn #babyhealth #newparents #fever #parenting",
       "first_comment": "Source: American Academy of Pediatrics, healthychildren.org, Fever: when to call the pediatrician (younger than 3 months and 100.4°F / 38.0°C or higher: call right away).",
-      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Baby under 3 months with a fever?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'this one can't wait for morning'. Slide 2: For babies this young, a fever of 38°C or higher means you call the doctor right away.. Slide 3: Older babies have different rules. This one is only for the first 3 months. Don't wait to see if it passes.. Slide 4: Do this: Today, find the number to call your doctor at night, and save it. Can't reach anyone? Go to emergency..",
+      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Baby under 3 months with a fever?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'this one can't wait for morning'. Slide 2: Under 3 months and 38°C or higher? Call the doctor right away.. Slide 3: This rule is for the first 3 months. Don't wait to see if it passes.. Slide 4: Do this: Today, save your doctor's after-hours number. Can't reach anyone? Go to emergency..",
       "images": [
         "lf-1019-single-fever-under-3m/01.jpg",
         "lf-1019-single-fever-under-3m/02.jpg",
@@ -1412,14 +1398,48 @@
       "id": "hb-1019-single-homework",
       "account": "hourback",
       "publish_at": "2026-10-19T17:45:00-04:00",
-      "caption": "Grade 5 math. You can't do it anymore either? Same.\n\nPaste the homework question into AI and ask it to explain it like you're 10, without giving the answer. Now you can explain it to your kid instead of guessing.\n\nWhere not to trust it: AI can get math wrong. Use it for the steps, then check the answer together, or against the answer key if there is one.\n\nSend this to a homework-night parent.\n\n#homework #aitips #parenting #schoollife #momlife",
+      "caption": "Grade 5 math. You can't do it anymore either? Same.\n\nYou could look up the answer, but then your kid still doesn't get it. Instead, paste the question into AI and ask it to explain the steps like you're 10, without giving the answer. Now you can explain it to your kid instead of guessing.\n\nWhere not to trust it: AI can get math wrong. Use it for the steps, then check the answer together, or against the answer key if there is one.\n\nDo this: tonight, paste one homework question into AI and ask \"Explain it like I'm 10. No answer.\"\n\nSend this to a homework-night parent.\n\n#homework #aitips #parenting #schoollife #momlife",
       "first_comment": "AI chatbots can make arithmetic and reasoning mistakes, so check the final answer yourself. Asking it to hide the answer keeps the thinking with your kid.",
-      "alt_text": "Hourback 3-slide carousel. Slide 1: 'Grade 5 math. I can't do it anymore.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'you're not the only one'. Slide 2: here's the trick AI can explain the steps like you're 10. It can get math wrong too, so check the answer together.. Slide 3: Do this: Paste the homework question into AI and ask: “Explain it like I'm 10, but don't tell me the answer.”.",
+      "alt_text": "Hourback 7-slide carousel. Slide 1: 'Grade 5 math. I can't do it anymore.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'you're not the only one'. Slide 2: sound familiar? 7 pm. Homework. Your kid asks “why?” and you have no idea. 😅. Slide 3: You could just look up the answer. But then they still don't get it.. Slide 4: here's the trick Ask AI to explain the steps like they're 10. Then you explain it.. Slide 5: the magic words “Explain it like I'm 10. Don't tell me the answer.”. Slide 6: but don't trust it blindly AI can get math wrong. So check the answer together.. Slide 7: Do this: Tonight, paste one homework question into AI and ask: “Explain it like I'm 10. No answer.”.",
       "images": [
         "hb-1019-single-homework/01.jpg",
         "hb-1019-single-homework/02.jpg",
-        "hb-1019-single-homework/03.jpg"
+        "hb-1019-single-homework/03.jpg",
+        "hb-1019-single-homework/04.jpg",
+        "hb-1019-single-homework/05.jpg",
+        "hb-1019-single-homework/06.jpg",
+        "hb-1019-single-homework/07.jpg"
       ]
+    },
+    {
+      "id": "ff-reel-1019-late-start",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-19T19:00:00-04:00",
+      "caption": "Started investing late? It's not too late.\n\nA friend invests $300 a month from age 28. You start at 33. To catch up by 60, at 10% a year, you'd invest about $508 a month. You have fewer years, so each dollar has to do more work.\n\nDo this: this payday, raise your automatic transfer by $25. Raise it again with every raise at work.\n\nSend this to the friend who thinks it's too late. Part 2 of 2.\n\nNot guaranteed. Returns vary.\n\n#investing #personalfinance #moneytips #retirement #moneyfoundations",
+      "first_comment": "Maths: the monthly amount from 33 to 60 that reaches the same total as $300 a month from 28 to 60, both compounded monthly at 10% a year, no fees or taxes. Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). Education, not advice.",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Started investing late? It's not too late. / A friend invests $300 a month from age 28. You start at 33. / To catch up by 60, invest about: $508 / because You have fewer years, so each dollar has to do more work. / Do this: This payday, raise your automatic transfer by $25. Raise it again with every raise. / Send this to the friend who thinks it's too late.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1019-late-start.mp4",
+      "cover": "reels/ff-reel-1019-late-start-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1019-one-sorry",
+      "account": "hourback",
+      "publish_at": "2026-10-19T19:00:00-04:00",
+      "caption": "Part 2 of this morning's Reel: now you're writing the reply, and it has four sorries in it. Count them.\n\nPaste your draft into AI and ask: \"Keep my words. Say sorry once.\" You get the same message, with one sorry, still in your voice.\n\nWhy \"keep my words\" matters: without it, AI tends to rewrite the whole thing in its own voice.\n\nWhere not to trust it: read it out loud before you send. If a line doesn't sound like you, change it back.\n\nCalm replies, part 1 of 2. Part 2 tomorrow.\n\nSend this to the friend who over-apologises.\n\nMade up for this post. Check anything important yourself.\n\n#email #aitips #communication #worklife #writing",
+      "first_comment": "The email shown is made up for this post.",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Part 2: your reply has four sorries. / Sorry for the delay. Sorry, sorry, sorry. / because Tell AI to keep your words, or it rewrites you into a robot. / Now there's one sorry, and it still sounds like you. / Read it out loud. If a line isn't you, change it back. / Do this: Paste your draft into AI and ask: “Keep my words. Say sorry once.” / send this to the friend who over-apologises. It loops back to the opening line.",
+      "video": "reels/hb-reel-1019-one-sorry.mp4",
+      "cover": "reels/hb-reel-1019-one-sorry-cover.jpg"
+    },
+    {
+      "id": "lf-reel-1019-resp-50-month",
+      "account": "littlefold",
+      "publish_at": "2026-10-19T19:00:00-04:00",
+      "caption": "What $50 a month turns into by the time your baby is 18.\n\nPut $50 a month into an RESP from birth. The government adds 20% through the Canada Education Savings Grant, so it's really $60 a month. If it grows at 8% a year, that's about $28,000 by 18. You put in $10,800. The rest is the grant and the growth.\n\nIt's like a snowball: the earlier it starts rolling, the bigger it gets.\n\nDo this: this week, ask your bank to open an RESP and set up $50 a month.\n\nSend this to a new parent.\n\nAssumes 8% a year, compounded monthly, with the 20% grant paid until the year your child turns 17. Not guaranteed. Returns vary.\n\n#RESP #newparents #babymoney #canadianparents #compoundinterest",
+      "first_comment": "Source: Government of Canada, canada.ca, Canada Education Savings Grant: the government adds 20% of the first $2,500 you put into an RESP each year (up to $500 a year), up to $7,200 per child in total. Unused grant room carries forward, up to $1,000 of grant in one year, until the end of the year the child turns 17. Growth figure: $50 a month plus the 20% grant, 8% a year compounded monthly for 18 years, grant paid to the end of the year the child turns 17; rounded down to the nearest $1,000.",
+      "alt_text": "Edited video in the Littlefold editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: What $50 a month turns into by age 18 / because In an RESP, the government adds 20%, and it grows like a snowball. / by 18, about $28,000 / You put in $10,800. / Do this: This week, ask your bank to open an RESP. / send this to a new parent. It loops back to the opening line.",
+      "video": "reels/lf-reel-1019-resp-50-month.mp4",
+      "cover": "reels/lf-reel-1019-resp-50-month-cover.jpg"
     },
     {
       "id": "lh-reel-1019-odd-hours",
@@ -1432,6 +1452,28 @@
       "cover": "reels/lh-reel-1019-odd-hours-cover.jpg"
     },
     {
+      "id": "lf-reel-1020am-movements",
+      "account": "littlefold",
+      "publish_at": "2026-10-20T08:00:00-04:00",
+      "caption": "Baby moving less than usual today? Don't wait until tomorrow.\n\nThe NHS says to call your midwife or maternity unit right away if your baby is moving less than usual, you can't feel them moving, or their usual pattern changes. Even in the middle of the night. You are never a bother.\n\nDo this: today, save your hospital's birth unit number in your phone.\n\nSend this to someone expecting.\n\nGeneral information only, not medical advice.\n\n#pregnancy #babymovements #pregnant #thirdtrimester #midwife",
+      "first_comment": "Source: NHS, Your baby's movements (nhs.uk): call your midwife or maternity unit immediately if your baby is moving less than usual, you cannot feel your baby moving anymore, or there is a change to the usual pattern. Do not wait until the next day.",
+      "alt_text": "Edited video in the Littlefold editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Baby in your bump moving less than usual? / Don't wait to see if it's better tomorrow. / because Call your midwife or hospital right away, even at night. / Moving less, Not moving, A new pattern / Do this: Today, save your hospital's birth unit number in your phone. / send this to someone expecting. It loops back to the opening line.",
+      "video": "reels/lf-reel-1020am-movements.mp4",
+      "cover": "reels/lf-reel-1020am-movements-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "ff-reel-1020am-tfsa-rrsp",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-20T08:15:00-04:00",
+      "caption": "TFSA or RRSP? Here's the simple difference.\n\nAn RRSP saves you tax now: what you put in can lower your taxes this year. You pay the tax later, when you take the money out.\n\nA TFSA is the opposite. No tax break when you put money in, but you never pay tax on the growth or when you take it out.\n\nSo which one? If your tax rate is higher now than it will be in retirement, the RRSP often wins. If not, the TFSA often does. Plenty of people use both.\n\nDo this tonight: log in to your CRA My Account and check your TFSA room and RRSP limit.\n\nSend this to the friend who asks every tax season.\n\n#TFSA #RRSP #canadianfinance #personalfinance #moneyfoundations",
+      "first_comment": "Source: CIBC, \"Should you contribute to your TFSA or your RRSP?\": RRSP contributions may be tax-deductible and withdrawals are taxable; TFSA contributions are not deductible and withdrawals are tax-free if you follow the rules. Your TFSA contribution room and RRSP deduction limit are shown in CRA My Account (canada.ca). Education, not tax advice.",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: TFSA or RRSP? Here's the simple difference. / An RRSP saves you tax now. You pay it later, when you take money out. / A TFSA is the opposite. No tax break now, but no tax on the growth, ever. / because Higher tax rate now than in retirement? The RRSP often wins. If not, the TFSA. / Do this: Tonight, check your TFSA and RRSP room in your CRA account. / Send this to the friend who asks every tax season.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1020am-tfsa-rrsp.mp4",
+      "cover": "reels/ff-reel-1020am-tfsa-rrsp-cover.jpg",
+      "trial": "auto"
+    },
+    {
       "id": "lh-reel-1020am-nap-time",
       "account": "lockedhour",
       "publish_at": "2026-10-20T08:30:00-04:00",
@@ -1440,6 +1482,17 @@
       "alt_text": "Edited video in the Locked Hour editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: The baby's finally asleep. Now what? / Halfway through a task, the baby wakes up. Your mind keeps chewing on it. / because Researchers found a one-minute note helps your brain let go of it. / Do this: When the baby wakes, write “stopped at ___, next is ___.” / Send this to a friend with a newborn.. It loops back to the opening line.",
       "video": "reels/lh-reel-1020am-nap-time.mp4",
       "cover": "reels/lh-reel-1020am-nap-time-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "hb-reel-1020am-driveway-text",
+      "account": "hourback",
+      "publish_at": "2026-10-20T08:45:00-04:00",
+      "caption": "7:52 am. A text from your neighbour: your guest blocked their driveway. Again.\n\nPaste the text into AI and ask for a calm reply under 40 words. You get one sorry and a plan, not a paragraph.\n\nWhy the word limit works: short replies sound calm. Long ones sound guilty.\n\nWhere not to trust it: it's still your text. Change any word you wouldn't say, and take names out before you paste.\n\nCalm replies, part 2 of 2.\n\nSend this to the friend who over-explains.\n\nMade up for this post. Check anything important yourself.\n\n#neighbours #aitips #communication #texting #lifeadmin",
+      "first_comment": "The text shown is made up for this post.",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 7:52 am. A text from your neighbour. / Your guest blocked their driveway. Again. / because Give AI a word limit. Short replies sound calm. Long ones sound guilty. / It wrote one sorry and a promise: car moved by 8. / Change any word you wouldn't say. It's still your text. / Do this: Paste the text into AI and ask for a calm reply under 40 words. / send this to the friend who over-explains. It loops back to the opening line.",
+      "video": "reels/hb-reel-1020am-driveway-text.mp4",
+      "cover": "reels/hb-reel-1020am-driveway-text-cover.jpg",
       "trial": "auto"
     },
     {
@@ -1504,7 +1557,7 @@
       "publish_at": "2026-10-20T11:30:00-04:00",
       "caption": "Meltdown in the cereal aisle? Here's what actually helps.\n\nThe NHS says tantrums usually start around 18 months. Your toddler wants to tell you something but doesn't have the words yet.\n\nThe hard part: if you give in to stop it, your child learns that tantrums work. So keep your no, calmly. Shouting back won't end it either. And if you see one building, distract them straight away: point at something interesting and sound excited.\n\nDo this: next shop, keep it short and give your toddler one job, like finding the bananas.\n\nSend this to a parent of a two-year-old.\n\nGeneral information only, not medical advice.\n\n#toddlers #tantrums #parenting #toddlermom #gentleparenting",
       "first_comment": "Source: NHS, Temper tantrums (nhs.uk): tantrums usually start around 18 months; giving in will not help in the long term; shouting back will not end it; distract early; keep shopping trips short and involve your child.",
-      "alt_text": "Littlefold 6-slide carousel. Slide 1: 'Meltdown in the cereal aisle?' in a large serif with highlighted words above a sticky note listing Stay calm, Keep your no, Distract early, a halftone cut-out and the handwritten note 'save this for the next shop'. Slide 2: Tantrums often start around 18 months. Your toddler wants to tell you something but doesn't have the words yet.. Slide 3: here's the hard part If you give in to stop it, your child learns that tantrums work. So keep your no, calmly.. Slide 4: catch it early When you see one building, point at something fun: “Look, a red truck!” Sound excited.. Slide 5: Ignore the people staring. Shouting back won't end it, so breathe and stay close.. Slide 6: Do this: Next shop, keep it short and give your toddler one job, like finding the bananas..",
+      "alt_text": "Littlefold 6-slide carousel. Slide 1: 'Meltdown in the cereal aisle?' in a large serif with highlighted words above a sticky note listing Stay calm, Keep your no, Distract early, a halftone cut-out and the handwritten note 'save this for the next shop'. Slide 2: Tantrums often start around 18 months. They don't have the words yet.. Slide 3: here's the hard part Give in, and they learn tantrums work. So keep your no, calmly.. Slide 4: catch it early See one building? Point at something fun: “Look, a red truck!”. Slide 5: Ignore the stares. Breathe, and stay close.. Slide 6: Do this: Next shop, keep it short and give your toddler one job, like finding the bananas..",
       "images": [
         "lf-06-toddler-meltdown/01.jpg",
         "lf-06-toddler-meltdown/02.jpg",
@@ -1552,7 +1605,7 @@
       "publish_at": "2026-10-20T12:00:00-04:00",
       "caption": "Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500.\n\nAn index fund skips the guessing. It buys a little of every company on a list, like the 500 big US companies in the S&P 500. Think of a fruit basket: instead of betting on one apple, you buy the whole basket, so one bad apple barely matters.\n\nSince 1957, the S&P 500 has grown about 10% a year on average. The honest part: some years it drops hard. In 2008 it fell about 37%. Index funds work best when you leave them alone for years.\n\nDo this: open your investing app and search \"S&P 500 index fund.\" Just look. No need to buy today.\n\nMoney Foundations, Part 3. Part 4 tomorrow: free money for your kid's education.\n\nSend this to the friend who picks stocks.\n\nNot guaranteed. Returns vary.\n\n#indexfunds #investing #personalfinance #moneyfoundations #canadianfinance",
       "first_comment": "Sources: S&P Dow Jones Indices, SPIVA U.S. Year-End 2025: 79% of active large-cap U.S. equity funds underperformed the S&P 500 in 2025. Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). S&P 500 total return in 2008: about -37% (S&P Dow Jones Indices). Education, not advice.",
-      "alt_text": "Fully Funded 7-slide carousel. Slide 1: 'Own a tiny piece of 500 companies' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'index funds, in plain words'. Slide 2: Picking the winning stock is hard. In 2025, about 8 in 10 professional big-company funds did worse than the market.. Slide 3: An index fund skips the guessing. It buys a little of every company on a list, like the S&P 500.. Slide 4: think of a fruit basket Instead of betting on one apple, you buy the whole basket. One bad apple barely matters.. Slide 5: Since 1957, the S&P 500 has grown about this much a year, on average: 10%. Slide 6: the honest part Some years it drops hard. In 2008, it fell about 37%. Index funds work best when you leave them alone.. Slide 7: Do this: Open your investing app and search “S&P 500 index fund.” Just look. No need to buy today..",
+      "alt_text": "Fully Funded 7-slide carousel. Slide 1: 'Own a tiny piece of 500 companies' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'index funds, in plain words'. Slide 2: picking stocks is hard In 2025, about 8 in 10 pro funds did worse than the market.. Slide 3: the other way An index fund buys a bit of everything. (no guessing needed). Slide 4: think of a fruit basket Don't bet on one apple. Buy the whole basket. (one bad apple barely matters). Slide 5: Since 1957, the S&P 500 grew, on average: 10% (a year, before inflation). Slide 6: the honest part Some years it drops hard. In 2008, it fell about 37%. (so leave it alone for years). Slide 7: Do this: Open your investing app and search “S&P 500 index fund.” Just look today..",
       "images": [
         "ff-1020-foundations-3-index-funds/01.jpg",
         "ff-1020-foundations-3-index-funds/02.jpg",
@@ -1609,7 +1662,7 @@
       "publish_at": "2026-10-20T12:30:00-04:00",
       "caption": "Your phone can drain your focus even when it's switched off.\n\nWhy it works: in a study of about 800 people, those who left their phone in another room did best on brain tests. People with the phone on the desk did worst, even when it was face down and off. Almost everyone said the phone didn't affect them. Part of your brain stays busy not checking it, and that uses up focus. (To be fair: later studies found mixed results. Moving your phone takes ten seconds.)\n\nDo this: before your next hour of work, put your phone in another room, not just face down.\n\nSend this to the friend who studies with their phone on the desk.\n\n#focus #studytips #deepwork #productivity #phonefree",
       "first_comment": "Source: Ward, Duke, Gneezy & Bos (2017), Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available Cognitive Capacity, Journal of the Association for Consumer Research 2(2). About 800 people. Phone in another room scored best, phone on the desk worst, whether it was on or off. Later replications found mixed results.",
-      "alt_text": "Locked Hour 6-slide carousel. Slide 1: 'Your phone is off. It's still costing you.' in a large serif with highlighted words above a sticky note listing The study, The strange part, The fix, a halftone cut-out and the handwritten note 'save this'. Slide 2: the study About 800 people took tricky brain tests. Some left their phone on the desk. Some put it in another room.. Slide 3: Phone in another room? Best scores. Phone on the desk? Worst scores, even face down and off.. Slide 4: the strangest part Almost everyone said their phone had no effect on them. They couldn't feel it.. Slide 5: why it happens Part of your brain is busy not checking your phone. That uses up focus you need for work.. Slide 6: Do this: Next time you work, put your phone in another room. Face down isn't enough..",
+      "alt_text": "Locked Hour 6-slide carousel. Slide 1: 'Your phone is off. It's still costing you.' in a large serif with highlighted words above a sticky note listing The study, The strange part, The fix, a halftone cut-out and the handwritten note 'save this'. Slide 2: the study About 800 people took tricky brain tests. Some put their phone in another room.. Slide 3: Phone in another room? Best scores. Phone on the desk? Worst, even switched off.. Slide 4: the strangest part Almost everyone said their phone had no effect on them.. Slide 5: why it happens Part of your brain is busy not checking your phone. That's focus you lose.. Slide 6: Do this: Next time you work, put your phone in another room. Face down isn't enough..",
       "images": [
         "lh-1020-phone-other-room/01.jpg",
         "lh-1020-phone-other-room/02.jpg",
@@ -1633,7 +1686,7 @@
       "publish_at": "2026-10-20T13:00:00-04:00",
       "caption": "5 pm. What's for dinner? Again.\n\nTell AI what's in the fridge, who eats what, and how much time you have. It plans around your rules: five dinners and one shopping list, sorted by aisle. You shop once.\n\nDo this: tonight, tell AI what's in your fridge and ask \"Plan 5 easy dinners and one shopping list.\"\n\nWhere not to trust it: AI doesn't know about allergies unless you tell it, and it can still make mistakes. Read every ingredient, and check the cupboards before you shop.\n\nSend this to whoever cooks at your place.\n\n#mealplanning #aitips #dinnerideas #familydinner #lifeadmin",
       "first_comment": "AI meal plans only know what you tell them. For allergies, always read the ingredients yourself; AI can still include something you said to avoid.",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: '5 pm. What's for dinner?' in a large serif with highlighted words above a sticky note listing Half a chicken, Rice, Spinach, Two picky kids, a halftone cut-out and the handwritten note 'the fridge, honestly'. Slide 2: every single night It's 5 pm, everyone's hungry, and you're staring into the fridge like it owes you an answer.. Slide 3: why it works Tell AI what's in the fridge, who eats what, and how much time you have. It plans around that.. Slide 4: and you get Five dinners for the week and one shopping list, sorted by aisle. You shop once.. Slide 5: but check this yourself AI doesn't know about allergies unless you tell it, and it can still make mistakes. Read every ingredient.. Slide 6: Do this: Tonight, tell AI what's in your fridge and ask: “Plan 5 easy dinners and one shopping list.”.",
+      "alt_text": "Hourback 6-slide carousel. Slide 1: '5 pm. What's for dinner?' in a large serif with highlighted words above a sticky note listing Half a chicken, Rice, Spinach, Two picky kids, a halftone cut-out and the handwritten note 'the fridge, honestly'. Slide 2: every single night 5 pm. Everyone's hungry. You stare at the fridge like it owes you an answer.. Slide 3: why it works Tell AI what's in the fridge and who eats what. It plans around that.. Slide 4: and you get Five dinners and one shopping list. You shop once. 🙌. Slide 5: but check this yourself AI won't know about allergies unless you tell it. Read every ingredient.. Slide 6: Do this: Tonight, tell AI what's in your fridge and ask for 5 easy dinners and one shopping list..",
       "images": [
         "hb-1020-prompt-week-01/01.jpg",
         "hb-1020-prompt-week-01/02.jpg",
@@ -1657,7 +1710,7 @@
       "publish_at": "2026-10-20T17:00:00-04:00",
       "caption": "Puffy coat in the car seat? Take it off first.\n\nThe American Academy of Pediatrics explains why: in a crash, the padding in a puffy coat squashes flat. That leaves the straps loose, and a child can slip out.\n\nThe 2-second check: buckle up, then try to pinch the strap at the shoulder. If you can pinch it, tighten it.\n\nDo this: next drive, take the coat off, buckle up, then put the coat on backwards over the straps (or tuck a blanket on top).\n\nSend this to whoever does daycare drop-off.\n\nGeneral information only, not medical advice.\n\n#carseatsafety #winter #newparents #toddlers #babysafety",
       "first_comment": "Source: American Academy of Pediatrics, healthychildren.org, Winter car seat safety tips (bulky coats should not be worn under the harness; padding flattens in a crash; pinch test; coat on backwards or blanket over the buckled straps).",
-      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Puffy coat in the car seat?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'take it off first. here's why.'. Slide 2: In a crash, a puffy coat squashes flat. That leaves the straps loose, and a child can slip out.. Slide 3: the 2-second check Buckle up, then try to pinch the strap at the shoulder. If you can pinch it, it's too loose.. Slide 4: Do this: Next drive, take the coat off, buckle up, then put the coat on backwards over the straps..",
+      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Puffy coat in the car seat?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'take it off first. here's why.'. Slide 2: In a crash, a puffy coat squashes flat. The straps end up loose.. Slide 3: the 2-second check Buckle up. Then pinch the strap at the shoulder. Can you pinch it? Too loose.. Slide 4: Do this: Take the coat off, buckle up, then put the coat on backwards over the straps..",
       "images": [
         "lf-1020-single-coat-check/01.jpg",
         "lf-1020-single-coat-check/02.jpg",
@@ -1669,14 +1722,48 @@
       "id": "hb-1020-single-error-code",
       "account": "hourback",
       "publish_at": "2026-10-20T17:45:00-04:00",
-      "caption": "The dishwasher says E24. Now what?\n\nHere's the part nobody tells you: ask AI what an error code means and it may guess, while sounding totally sure. The same code can mean different things on different brands.\n\nDo this: take a photo of the error-code page in your manual, give it to AI, and ask what to do first. Now it's reading your manual, not guessing. No paper manual? Most brands have it online if you search the model number.\n\nUnplug it before you touch anything inside.\n\nSend this to the family fixer.\n\n#homehacks #aitips #lifeadmin #appliances #techtips",
+      "caption": "The dishwasher says E24. Now what?\n\nHere's the part nobody tells you: ask AI what an error code means and it may guess, while sounding totally sure. The same code can mean different things on different brands.\n\nThe fix: give it your manual. Take a photo of the error-code page, give it to AI, and ask what to do first. Now it's reading your manual, not guessing. No paper manual? Most brands have it online if you search the model number.\n\nUnplug it before you touch anything inside.\n\nSend this to the family fixer.\n\n#homehacks #aitips #lifeadmin #appliances #techtips",
       "first_comment": "Error codes differ by brand and model, and AI can state a wrong meaning confidently. Giving it your own manual page keeps the answer tied to your machine.",
-      "alt_text": "Hourback 3-slide carousel. Slide 1: 'The dishwasher says E24. Now what?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'careful who you ask'. Slide 2: here's the part nobody tells you Ask AI what an error code means and it may guess, while sounding totally sure.. Slide 3: Do this: Photograph the error-code page in your manual. Give it to AI and ask what to do first..",
+      "alt_text": "Hourback 7-slide carousel. Slide 1: 'The dishwasher says E24. Now what?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'careful who you ask'. Slide 2: sound familiar? Beeping. Blinking. E24. You grab your phone and ask AI.. Slide 3: here's the part nobody tells you AI may guess what E24 means, and sound totally sure.. Slide 4: why it guesses The same code can mean different things on different brands.. Slide 5: the fix Give AI your manual. Now it's reading, not guessing. 📖. Slide 6: no paper manual? Search your model number online. Most brands post the manual.. Slide 7: Do this: Snap the error-code page in your manual. Give it to AI and ask: “What do I do first?”.",
       "images": [
         "hb-1020-single-error-code/01.jpg",
         "hb-1020-single-error-code/02.jpg",
-        "hb-1020-single-error-code/03.jpg"
+        "hb-1020-single-error-code/03.jpg",
+        "hb-1020-single-error-code/04.jpg",
+        "hb-1020-single-error-code/05.jpg",
+        "hb-1020-single-error-code/06.jpg",
+        "hb-1020-single-error-code/07.jpg"
       ]
+    },
+    {
+      "id": "ff-reel-1020-wills",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-20T19:00:00-04:00",
+      "caption": "Not married? No will? Your partner may get nothing.\n\nIn Ontario, if you die without a will, the law decides who gets your things. Those rules give nothing to a common-law partner, even after years together. Other provinces have their own rules, so check yours.\n\nA will is how you decide, not the law.\n\nDo this: this week, find a wills lawyer near you and book a first call. Do it together.\n\nSend this to your partner. Tonight.\n\n#wills #estateplanning #commonlaw #personalfinance #moneyfoundations",
+      "first_comment": "Source: Steps to Justice (CLEO, Community Legal Education Ontario): under Ontario's intestacy rules, \"The intestacy rules give nothing to a common-law partner\" (a partner may be able to make other claims in court). stepstojustice.ca. Rules differ by province. General information, not legal advice.",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Not married? No will? Your partner may get nothing. / In Ontario, if you die without a will, the law decides who gets your things. / because Those rules give nothing to a common-law partner, even after years together. / Do this: This week, find a wills lawyer near you and book a first call. Do it together. / Send this to your partner. Tonight.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1020-wills.mp4",
+      "cover": "reels/ff-reel-1020-wills-cover.jpg"
+    },
+    {
+      "id": "hb-reel-1020-three-tabs",
+      "account": "hourback",
+      "publish_at": "2026-10-20T19:00:00-04:00",
+      "caption": "11 pm. Three tabs. Three blenders that all look the same.\n\nPaste the three product pages into AI and tell it how you'll use it. That gives it a reason to pick one.\n\nDo this: ask \"Which fits how I'll use it?\"\n\nWhere not to trust it: AI can get specs wrong. Check the price and specs on the shop page before you pay.\n\nSend this to the 40-tab friend.\n\nMade up for this post. Check anything important yourself.\n\n#shoppingtips #aitips #kitchen #lifeadmin #techtips",
+      "first_comment": "Products shown are made up for this post. Never paste card details into an AI chat.",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 11 pm. Three tabs. Three blenders. / They all look the same, and you're too tired to compare. / because Tell AI how you'll use it. Now it has a reason to pick. / Smoothies every day? It picked Blender B. Tabs closed. / It can get specs wrong. Check the shop page before you pay. / Do this: Paste the three product pages into AI and ask: “Which fits how I'll use it?” / send this to the 40-tab friend. It loops back to the opening line.",
+      "video": "reels/hb-reel-1020-three-tabs.mp4",
+      "cover": "reels/hb-reel-1020-three-tabs-cover.jpg"
+    },
+    {
+      "id": "lf-reel-1020-visitors",
+      "account": "littlefold",
+      "publish_at": "2026-10-20T19:00:00-04:00",
+      "caption": "Visitors coming to meet the new baby? One small ask keeps them safe.\n\nThe NHS says a cold sore can pass to a baby through a kiss, and it can be very serious for a newborn, whose immune system isn't ready to fight it yet. Anyone with a cold sore shouldn't kiss the baby, and everyone should wash their hands first.\n\nDo this: today, text your visitors: \"Wash hands, no kisses, come when you're well.\"\n\nSend this to the family group chat.\n\nGeneral information only, not medical advice.\n\n#newborn #newparents #visitors #babysafety #parenting",
+      "first_comment": "Source: NHS, Neonatal herpes (nhs.uk): the virus can pass to a baby through a cold sore when someone kisses them; herpes can be very serious for a young baby; wash hands before handling the baby; don't kiss the baby if you have a cold sore.",
+      "alt_text": "Edited video in the Littlefold editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Visitors coming to see the baby? / A cold sore can pass to a baby through one kiss. / because Newborns can't fight it off well. It can get serious. / Wash hands, No kisses, Sick? Visit later / Do this: Text your visitors: “Wash hands, no kisses, come when well.” / send this to the family chat. It loops back to the opening line.",
+      "video": "reels/lf-reel-1020-visitors.mp4",
+      "cover": "reels/lf-reel-1020-visitors-cover.jpg"
     },
     {
       "id": "lh-reel-1020-shutdown",
@@ -1689,12 +1776,36 @@
       "cover": "reels/lh-reel-1020-shutdown-cover.jpg"
     },
     {
+      "id": "lf-ch-1021-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T10:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1021-1.jpg",
+      "caption": "Story chain lf-ch-1021 frame 1: quick quiz"
+    },
+    {
+      "id": "lf-ch-1021-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T10:31:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1021-2.jpg",
+      "caption": "Story chain lf-ch-1021 frame 2: 51%"
+    },
+    {
+      "id": "lf-ch-1021-3",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T10:32:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1021-3.jpg",
+      "caption": "Story chain lf-ch-1021 frame 3: A will is where you name a guardian."
+    },
+    {
       "id": "ff-ch-1021-1",
       "account": "fullyfunded",
       "publish_at": "2026-10-21T11:00:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1021-1.jpg",
-      "caption": "Story chain ff-ch-1021 frame 1: “Do we even qualify?”"
+      "caption": "Story chain ff-ch-1021 frame 1: quick quiz"
     },
     {
       "id": "ff-ch-1021-2",
@@ -1702,7 +1813,7 @@
       "publish_at": "2026-10-21T11:01:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1021-2.jpg",
-      "caption": "Story chain ff-ch-1021 frame 2: sound familiar?"
+      "caption": "Story chain ff-ch-1021 frame 2: 2.5 million"
     },
     {
       "id": "ff-ch-1021-3",
@@ -1710,23 +1821,64 @@
       "publish_at": "2026-10-21T11:02:00-04:00",
       "story": true,
       "image": "stories/ff-ch-1021-3.jpg",
-      "caption": "Story chain ff-ch-1021 frame 3: here's how it works"
+      "caption": "Story chain ff-ch-1021 frame 3: No RESP, no bond."
     },
     {
-      "id": "ff-ch-1021-4",
-      "account": "fullyfunded",
-      "publish_at": "2026-10-21T11:03:00-04:00",
+      "id": "lf-1021-name-a-guardian",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T11:30:00-04:00",
+      "caption": "Who would raise your kids if something happened to you both? It's the question nobody wants to ask.\n\nYour will is where you write the answer down: you can name a guardian, the person you'd trust to raise them. Yet 51% of Canadians say they have no will at all. Without one, your family has to go to court, and your wish isn't written down anywhere.\n\nStart small: tonight, ask your partner who you'd pick. Then ask that person if they'd say yes.\n\nDo this: this week, book a call with a wills lawyer, and bring the name you both chose.\n\nRules differ by province. General information, not legal advice.\n\nSend this to your partner.\n\n#wills #guardianship #newparents #canadianparents #estateplanning",
+      "first_comment": "Sources: Angus Reid Institute (January 2018): 51% of Canadians say they do not have a will. Ontario: under the Children's Law Reform Act, a parent can appoint in a will a person to care for their children after death; the appointment is temporary (90 days) and the person must then apply to court. Rules differ by province. General information, not legal advice.",
+      "alt_text": "Littlefold 7-slide carousel. Slide 1: 'Who would raise your kids?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'a hard question, a 2-minute talk'. Slide 2: the question nobody asks If something happened to you both, who would raise your kids?. Slide 3: You can write your answer down. You name a guardian in your will.. Slide 4: Yet this many Canadians say they have no will: 51%. Slide 5: without one Your family has to ask a court, and your wish isn't written down.. Slide 6: start tonight Ask your partner: who would we pick? Then ask them if they'd say yes.. Slide 7: Do this: This week, book a call with a wills lawyer. Bring the name you both chose..",
+      "images": [
+        "lf-1021-name-a-guardian/01.jpg",
+        "lf-1021-name-a-guardian/02.jpg",
+        "lf-1021-name-a-guardian/03.jpg",
+        "lf-1021-name-a-guardian/04.jpg",
+        "lf-1021-name-a-guardian/05.jpg",
+        "lf-1021-name-a-guardian/06.jpg",
+        "lf-1021-name-a-guardian/07.jpg"
+      ]
+    },
+    {
+      "id": "lf-ch-1021-4",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T11:45:00-04:00",
       "story": true,
-      "image": "stories/ff-ch-1021-4.jpg",
-      "caption": "Story chain ff-ch-1021 frame 4: family income $57,375 or less"
+      "image": "stories/lf-ch-1021-4.jpg",
+      "caption": "Story chain lf-ch-1021 frame 4: Who would raise your kids?"
+    },
+    {
+      "id": "lh-ch-1021-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-21T11:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1021-1.jpg",
+      "caption": "Story chain lh-ch-1021 frame 1: quick quiz"
+    },
+    {
+      "id": "lh-ch-1021-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-21T11:46:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1021-2.jpg",
+      "caption": "Story chain lh-ch-1021 frame 2: Up to 40%"
+    },
+    {
+      "id": "lh-ch-1021-3",
+      "account": "lockedhour",
+      "publish_at": "2026-10-21T11:47:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1021-3.jpg",
+      "caption": "Story chain lh-ch-1021 frame 3: Busy isn't done."
     },
     {
       "id": "ff-1021-clb-who-qualifies",
       "account": "fullyfunded",
       "publish_at": "2026-10-21T12:00:00-04:00",
-      "caption": "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\nIt's called the Canada Learning Bond. It starts with $500, then adds $100 every year, up to $2,000.\n\nWho qualifies (July 2025 to June 2026): kids born in 2004 or later, in families with net income of $57,375 or less for 1 to 3 kids, under $64,733 for 4 kids, or under $72,123 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands in an RESP, a savings account for school. Many banks open one for free. Didn't apply when they were a baby? You can still apply until your child turns 21.\n\nDo this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\nMoney Foundations, Part 4. Send this to a new parent.\n\n#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
-      "first_comment": "Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional year up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under 21 when applying. Income limits: ESDC notice 2025-1095, July 1, 2025 to June 30, 2026 (adjusted family net income).",
-      "alt_text": "Fully Funded 7-slide carousel. Slide 1: 'Free $2,000 for your kid's education' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'check if you qualify on slide 4'. Slide 2: The government will put up to $2,000 toward your child's education. You don't have to add a dollar.. Slide 3: the Canada Learning Bond It starts with $500. Then it adds $100 every year, up to $2,000.. Slide 4: Who qualifies 1 to 3 kids: $57,375 or less; 4 kids: under $64,733; 5 kids: under $72,123 (kids born in 2004 or later). Slide 5: the part nobody mentions The money only lands in an RESP: a savings account for school. Many banks open one for free.. Slide 6: Didn't apply when they were a baby? You can still apply until your child turns 21.. Slide 7: Do this: This week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN..",
+      "caption": "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\nIt's called the Canada Learning Bond. It starts with $500, then adds $100 every year, up to $2,000.\n\nWho qualifies (July 2025 to June 2026): kids born in 2004 or later, in families with net income of $57,375 or less for 1 to 3 kids, under $64,733 for 4 kids, or under $72,123 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands in an RESP, a savings account for school. Many banks open one for free. In 2022, about 2.5 million eligible kids had never received it. Didn't apply when they were a baby? You can still apply until your child turns 21.\n\nDo this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\nMoney Foundations, Part 4. Send this to a new parent.\n\n#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
+      "first_comment": "Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional year up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under 21 when applying. Income limits: ESDC notice 2025-1095, July 1, 2025 to June 30, 2026 (adjusted family net income). Take-up: Godbout & Samoisette, C.D. Howe Institute, \"On Its Anniversary, Has the Goal of the Canada Learning Bond Been Achieved?\", citing ESDC's 2022 Canada Education Savings Program statistical review: take-up rose from 29.1% (2013) to 42.5% (2022); 2.5 million of 4.4 million eligible children had not received it.",
+      "alt_text": "Fully Funded 8-slide carousel. Slide 1: 'Free $2,000 for your kid's education' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'check if you qualify on slide 4'. Slide 2: sound too good? The government can put up to $2,000 toward your kid's school. (and you add $0). Slide 3: the Canada Learning Bond $500 to start. $100 more each year. Up to $2,000.. Slide 4: Who qualifies 1 to 3 kids: $57,375 or less; 4 kids: under $64,733; 5 kids: under $72,123 (kids born in 2004 or later). Slide 5: the part nobody mentions It only lands in an RESP: a savings account for school.. Slide 6: you're not alone In 2022, 2.5 million eligible kids never got it.. Slide 7: good news You can still apply until your child turns 21.. Slide 8: Do this: This week, ask your bank for an RESP with the Learning Bond. Bring your child's SIN..",
       "images": [
         "ff-1021-clb-who-qualifies/01.jpg",
         "ff-1021-clb-who-qualifies/02.jpg",
@@ -1734,7 +1886,8 @@
         "ff-1021-clb-who-qualifies/04.jpg",
         "ff-1021-clb-who-qualifies/05.jpg",
         "ff-1021-clb-who-qualifies/06.jpg",
-        "ff-1021-clb-who-qualifies/07.jpg"
+        "ff-1021-clb-who-qualifies/07.jpg",
+        "ff-1021-clb-who-qualifies/08.jpg"
       ]
     },
     {
@@ -1743,7 +1896,7 @@
       "publish_at": "2026-10-21T12:00:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1021-1.jpg",
-      "caption": "Story chain hb-ch-1021 frame 1: “Let's just split it evenly.”"
+      "caption": "Story chain hb-ch-1021 frame 1: quick quiz"
     },
     {
       "id": "hb-ch-1021-2",
@@ -1751,7 +1904,7 @@
       "publish_at": "2026-10-21T12:01:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1021-2.jpg",
-      "caption": "Story chain hb-ch-1021 frame 2: $96 dinner, 4 friends"
+      "caption": "Story chain hb-ch-1021 frame 2: 45%"
     },
     {
       "id": "hb-ch-1021-3",
@@ -1759,31 +1912,48 @@
       "publish_at": "2026-10-21T12:02:00-04:00",
       "story": true,
       "image": "stories/hb-ch-1021-3.jpg",
-      "caption": "Story chain hb-ch-1021 frame 3: it said"
+      "caption": "Story chain hb-ch-1021 frame 3: Make AI show its work."
     },
     {
-      "id": "hb-ch-1021-4",
-      "account": "hourback",
-      "publish_at": "2026-10-21T12:03:00-04:00",
-      "story": true,
-      "image": "stories/hb-ch-1021-4.jpg",
-      "caption": "Story chain hb-ch-1021 frame 4: So you can check it."
-    },
-    {
-      "id": "ff-ch-1021-5",
+      "id": "ff-ch-1021-4",
       "account": "fullyfunded",
       "publish_at": "2026-10-21T12:15:00-04:00",
       "story": true,
-      "image": "stories/ff-ch-1021-5.jpg",
-      "caption": "Story chain ff-ch-1021 frame 5: Money Foundations, Part 4"
+      "image": "stories/ff-ch-1021-4.jpg",
+      "caption": "Story chain ff-ch-1021 frame 4: Free $2,000 for your kid"
+    },
+    {
+      "id": "lh-1021-switching-cost",
+      "account": "lockedhour",
+      "publish_at": "2026-10-21T12:30:00-04:00",
+      "caption": "Multitasking feels fast. It isn't.\n\nWhy it works: your brain can't really do two hard things at once. It switches back and forth, and every switch costs a little time while it gets back up to speed, like a tiny loading screen. The American Psychological Association says those switches can eat up to 40% of your productive time.\n\nDo this: tomorrow, close email and chat for your first hour and do one task only. Put the small stuff, like email, in one block later.\n\nSend this to the friend with 30 tabs open.\n\n#focus #multitasking #productivity #deepwork #worklife",
+      "first_comment": "Source: American Psychological Association, \"Multitasking: Switching costs\" (March 20, 2006): drawing on research by Rubinstein, Meyer and Evans (2001), even brief mental blocks created by shifting between tasks can cost as much as 40 percent of someone's productive time (David Meyer, University of Michigan).",
+      "alt_text": "Locked Hour 7-slide carousel. Slide 1: 'Multitasking feels fast. It isn't.' in a large serif with highlighted words above a sticky note listing What switching costs, The 40% number, The fix, a halftone cut-out and the handwritten note 'save this'. Slide 2: sound familiar? Email open. Chat pinging. Busy all morning, and the report is half done.. Slide 3: Your brain can't do two hard things at once. It switches, back and forth.. Slide 4: All that switching can eat up to this much of your productive time: 40%. Slide 5: think of it like this Every switch has a little loading screen. They add up fast.. Slide 6: the fix Do one task at a time. Put the small stuff, like email, in one block.. Slide 7: Do this: Tomorrow, close email and chat for your first hour. One task only..",
+      "images": [
+        "lh-1021-switching-cost/01.jpg",
+        "lh-1021-switching-cost/02.jpg",
+        "lh-1021-switching-cost/03.jpg",
+        "lh-1021-switching-cost/04.jpg",
+        "lh-1021-switching-cost/05.jpg",
+        "lh-1021-switching-cost/06.jpg",
+        "lh-1021-switching-cost/07.jpg"
+      ]
+    },
+    {
+      "id": "lh-ch-1021-4",
+      "account": "lockedhour",
+      "publish_at": "2026-10-21T12:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1021-4.jpg",
+      "caption": "Story chain lh-ch-1021 frame 4: Multitasking feels fast."
     },
     {
       "id": "hb-1021-ai-said-what-bill",
       "account": "hourback",
       "publish_at": "2026-10-21T13:00:00-04:00",
-      "caption": "$96 dinner. Ana didn't drink. Who pays what?\n\nTell AI what everyone had and ask it to split it fairly and show the math. It said: Ana pays $18, everyone else $26. That adds up to $96.\n\nWhy show the math: AI can get sums wrong. When it shows its work, you can check it in 5 seconds.\n\nDo this: next shared bill, tell AI what everyone had and add \"Show the math.\"\n\nSend this to the friend who always says \"evenly\".\n\nMade up for this post. Check anything important yourself.\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
-      "first_comment": "The bill: $72 of food split 4 ways ($18 each) and $24 of drinks split 3 ways ($8 each). Ana $18, everyone else $26. 18 + 26 + 26 + 26 = 96. Chat AIs can make arithmetic mistakes, which is why you ask for the working.",
-      "alt_text": "Hourback 6-slide carousel. Slide 1: '“$96 dinner. Ana didn't drink.”' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'so who pays what?'. Slide 2: you know this moment The bill lands. Someone says “just split it evenly”. Ana had water all night.. Slide 3: so ask AI Tell it what everyone had, and ask it to split it fairly and show the math.. Slide 4: it said Ana pays $18. Everyone else pays $26. That adds up to $96. (food split 4 ways, drinks split 3 ways). Slide 5: why show the math? AI can get sums wrong. When it shows its work, you can check it in 5 seconds.. Slide 6: Do this: Next shared bill, tell AI what everyone had and add: “Show the math.”.",
+      "caption": "$96 dinner. Ana didn't drink. Who pays what?\n\nTell AI what everyone had and ask it to split it fairly and show the math. It said: Ana pays $18, everyone else $26. That adds up to $96.\n\nWhy show the math: AI can get things wrong. When it shows its work, you can check it in 5 seconds.\n\nDo this: next shared bill, tell AI what everyone had and add \"Show the math.\"\n\nSend this to the friend who always says \"evenly\".\n\nMade up for this post. Check anything important yourself.\n\n#billsplit #aitips #dinnerwithfriends #lifeadmin #moneytips",
+      "first_comment": "The bill: $72 of food split 4 ways ($18 each) and $24 of drinks split 3 ways ($8 each). Ana $18, everyone else $26. 18 + 26 + 26 + 26 = 96. Chat AIs can make arithmetic mistakes, which is why you ask for the working. Story quiz: European Broadcasting Union and BBC, News Integrity in AI Assistants (Oct 2025): 45% of more than 3,000 AI answers to news questions had at least one significant issue (22 public service media organisations, 18 countries).",
+      "alt_text": "Hourback 6-slide carousel. Slide 1: '“$96 dinner. Ana didn't drink.”' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'so who pays what?'. Slide 2: you know this moment The bill lands. Someone says “just split it evenly.” Ana had water. 💧. Slide 3: so ask AI Tell it who had what. Ask it to split it fairly and show the math.. Slide 4: it said Ana pays $18. Everyone else pays $26. (that adds up to $96. we checked.). Slide 5: why show the math? AI can get sums wrong. With the math, you can check it in 5 seconds.. Slide 6: Do this: Next shared bill, tell AI who had what and add: “Show the math.”.",
       "images": [
         "hb-1021-ai-said-what-bill/01.jpg",
         "hb-1021-ai-said-what-bill/02.jpg",
@@ -1794,24 +1964,28 @@
       ]
     },
     {
-      "id": "hb-ch-1021-5",
+      "id": "hb-ch-1021-4",
       "account": "hourback",
       "publish_at": "2026-10-21T13:15:00-04:00",
       "story": true,
-      "image": "stories/hb-ch-1021-5.jpg",
-      "caption": "Story chain hb-ch-1021 frame 5: $96 dinner. Ana didn't drink."
+      "image": "stories/hb-ch-1021-4.jpg",
+      "caption": "Story chain hb-ch-1021 frame 4: $96 dinner. Ana didn't drink."
     },
     {
       "id": "hb-1021-single-subscriptions",
       "account": "hourback",
       "publish_at": "2026-10-21T17:45:00-04:00",
-      "caption": "Charges you forgot you pay. Everyone has a few.\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" It's great at spotting charges that come back every month.\n\nWhere not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out before you paste.\n\nSend this to your money buddy.\n\nMade up for this post. Check anything important yourself.\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
+      "caption": "Charges you forgot you pay. Everyone has a few.\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" Spotting the same charge every month is easy for AI, and boring for you.\n\nWhere not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out before you paste.\n\nDo this: tonight, paste last month's statement into AI, ask \"What repeats?\", then cancel one you don't use.\n\nSend this to your money buddy.\n\nMade up for this post. Check anything important yourself.\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
       "first_comment": "The statement on the cover is made up; its five charges add up to 78.47 a month. Never paste full card or account numbers into an AI chat.",
-      "alt_text": "Hourback 3-slide carousel. Slide 1: 'Charges you forgot you pay' in a large serif with highlighted words above a sticky note listing Streaming 12.99, Cloud 2.99, Fitness 9.99, Phone 45.00, News 7.50, a halftone cut-out and the handwritten note '78.47 a month, made up for this post'. Slide 2: why AI helps AI is great at spotting charges that repeat every month. It can miss yearly ones, so scroll back a year.. Slide 3: Do this: Paste one month of your bank statement into AI, card numbers removed, and ask: “What repeats?”.",
+      "alt_text": "Hourback 7-slide carousel. Slide 1: 'Charges you forgot you pay' in a large serif with highlighted words above a sticky note listing Streaming 12.99, Cloud 2.99, Fitness 9.99, Phone 45.00, News 7.50, a halftone cut-out and the handwritten note '78.47 a month, made up for this post'. Slide 2: sound familiar? $12.99 here. $2.99 there. You forgot half of them.. Slide 3: here's the trick Paste one month of your statement into AI. Ask: “What repeats?”. Slide 4: why AI is good at this Spotting the same charge every month is easy for AI. Boring for you. 😴. Slide 5: but don't trust it blindly It can miss yearly charges. Scroll back a year yourself.. Slide 6: before you paste Take out card and account numbers. AI doesn't need them.. Slide 7: Do this: Tonight, paste last month's statement into AI and ask: “What repeats?” Then cancel one..",
       "images": [
         "hb-1021-single-subscriptions/01.jpg",
         "hb-1021-single-subscriptions/02.jpg",
-        "hb-1021-single-subscriptions/03.jpg"
+        "hb-1021-single-subscriptions/03.jpg",
+        "hb-1021-single-subscriptions/04.jpg",
+        "hb-1021-single-subscriptions/05.jpg",
+        "hb-1021-single-subscriptions/06.jpg",
+        "hb-1021-single-subscriptions/07.jpg"
       ]
     }
   ]
