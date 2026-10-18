@@ -1823,14 +1823,14 @@
       "trial": "auto"
     },
     {
-      "id": "ff-cheat-1021am-paycheque-goals",
+      "id": "ff-cheat-1021am-fees-eat",
       "account": "fullyfunded",
       "publish_at": "2026-10-21T08:15:00-04:00",
-      "caption": "How much to save each paycheque to hit your goal in one year 🇨🇦 (paid every 2 weeks)\n\n$1,000 emergency fund → $39\n$5,000 trip → $193\n$7,000 · fill your TFSA → $270\n$8,000 · fill your FHSA → $308\n$10,000 → $385\n$25,000 → $962\n\nWhy it works: an automatic transfer on payday moves the money before you can spend it. You never see it, so you never miss it.\n\nDo this: set the transfer for your next payday.\n\nSave this, and send it to your payday buddy.\n\n#personalfinancecanada #tfsa #fhsa #savingmoney #paycheque",
-      "first_comment": "Which goal are you saving for? Maths: goal ÷ 26 paycheques, rounded up. 2026 TFSA limit $7,000; FHSA $8,000 a year, $40,000 lifetime (CRA).",
-      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: Hit your goal in 1 year: save this each paycheque. $1,000 emergency fund: $39 · $5,000 trip: $193 · $7,000 · fill your TFSA: $270 · $8,000 · fill your FHSA: $308 · $10,000: $385 · $25,000: $962. Do this: Set it as an automatic transfer on payday.",
-      "video": "reels/ff-cheat-1021am-paycheque-goals.mp4",
-      "cover": "reels/ff-cheat-1021am-paycheque-goals-cover.jpg",
+      "caption": "A 1% fee sounds tiny. Here's what it takes 🇨🇦\n\n$300 a month from 28 to 60, growing 10% a year before fees:\n0.25% fee → fees take about $46,762\n0.5% fee → fees take about $90,660\n1% fee → fees take about $170,583\n1.5% fee → fees take about $241,094\n2% fee → fees take about $303,350\n2.5% fee → fees take about $358,362\n\nWhy: the fee comes out every year, from your whole balance, and the money it takes can't grow for you anymore.\n\nDo this: look up your fund's MER (the yearly fee) this week. Over 1%? Ask what a low-fee index fund would cost you.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#mer #investingcanada #indexfunds #personalfinancecanada #fees",
+      "first_comment": "What's your fund's MER? Maths: $300 at the end of each month for 32 years, 10% a year minus the fee, compounded monthly; shown is the difference vs no fee.",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: A 1% fee sounds tiny. Here's what it takes. 0.25%: $46,762 · 0.5%: $90,660 · 1%: $170,583 · 1.5%: $241,094 · 2%: $303,350 · 2.5%: $358,362. Do this: Look up your fund's MER this week. Over 1%? Ask what a low-fee index fund costs.",
+      "video": "reels/ff-cheat-1021am-fees-eat.mp4",
+      "cover": "reels/ff-cheat-1021am-fees-eat-cover.jpg",
       "trial": "auto"
     },
     {
@@ -2074,14 +2074,14 @@
       ]
     },
     {
-      "id": "ff-cheat-1021-million-per-day",
+      "id": "ff-cheat-1021-one-year-wait",
       "account": "fullyfunded",
       "publish_at": "2026-10-21T19:00:00-04:00",
-      "caption": "$1 million by 65: how much to invest per day, by the age you start 🇨🇦\n\nAge 25: $5.20 a day ($158 a month)\nAge 28: $7.06 a day ($215 a month)\nAge 30: $8.66 a day ($263 a month)\nAge 33: $11.80 a day ($359 a month)\nAge 35: $14.54 a day ($442 a month)\nAge 40: $24.78 a day ($754 a month)\nAge 45: $43.29 a day ($1,317 a month)\n\nWhy waiting costs so much: every year you wait, your money has one less year to grow, so you have to put in far more.\n\nDo this: pick your row and set that monthly amount to invest automatically, in a TFSA or RRSP.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#investingcanada #tfsa #compounding #millionaire #personalfinancecanada",
-      "first_comment": "What age did you start? Maths: monthly contributions at 10% a year compounded monthly to age 65; per day = monthly × 12 ÷ 365.",
-      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: $1 million by 65: what to invest a day. age 25: $5.20 ($158) · age 28: $7.06 ($215) · age 30: $8.66 ($263) · age 33: $11.80 ($359) · age 35: $14.54 ($442) · age 40: $24.78 ($754) · age 45: $43.29 ($1,317). Do this: Pick your row. Set that monthly amount to invest automatically.",
-      "video": "reels/ff-cheat-1021-million-per-day.mp4",
-      "cover": "reels/ff-cheat-1021-million-per-day-cover.jpg"
+      "caption": "What waiting just one year costs you by 65 🇨🇦\n\n$300 a month, growing 10% a year:\nAge 25: waiting one year costs about $183,246\nAge 28: waiting one year costs about $135,921\nAge 30: waiting one year costs about $111,375\nAge 33: waiting one year costs about $82,611\nAge 35: waiting one year costs about $67,692\n\nWhy so much? The year you skip is the one that would have grown the longest.\n\nDo this: start this payday with any amount, even $50. You can raise it later.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#investingcanada #tfsa #compounding #startnow #personalfinancecanada",
+      "first_comment": "How old are you? Maths: $300 at the end of each month to 65 at 10% a year compounded monthly; cost = value starting now minus value starting a year later.",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: What waiting just 1 year costs you by 65. 25: $183,246 · 28: $135,921 · 30: $111,375 · 33: $82,611 · 35: $67,692. Do this: Start this payday with any amount, even $50. Raise it later.",
+      "video": "reels/ff-cheat-1021-one-year-wait.mp4",
+      "cover": "reels/ff-cheat-1021-one-year-wait-cover.jpg"
     },
     {
       "id": "hb-reel-1021-group-costume",

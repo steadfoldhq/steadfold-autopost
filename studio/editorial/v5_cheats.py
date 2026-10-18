@@ -20,35 +20,44 @@ def cheat(pid, at, spec, caption, comment):
     META[pid] = dict(at=at, caption=caption, comment=comment)
 
 
-# ---------------------------------------------------------------- FF · paycheque goals (Oct 21 08:15)
-GOALS = [("$1,000 emergency fund", 1000), ("$5,000 trip", 5000), ("$7,000 · fill your TFSA", 7000),
-         ("$8,000 · fill your FHSA", 8000), ("$10,000", 10000), ("$25,000", 25000)]
-cheat("ff-cheat-1021am-paycheque-goals", "2026-10-21T08:15",
-      dict(brand=FF, field="lite", track="ff-x-level-up",
-           title="Hit your goal in *1 year:* / save this *each paycheque*", head=("goal", "every 2 weeks"),
-           rows=[(g, f"${math.ceil(v / 26):,}") for g, v in GOALS],
-           do="Set it as an *automatic transfer* on payday.", save="save this for payday 🔖",
-           src="26 paycheques a year, rounded up. TFSA limit 2026: $7,000 · FHSA: $8,000 a year (CRA)."),
-      "How much to save each paycheque to hit your goal in one year 🇨🇦 (paid every 2 weeks)\n\n"
-      + "\n".join(f"{g} → ${math.ceil(v / 26):,}" for g, v in GOALS)
-      + "\n\nWhy it works: an automatic transfer on payday moves the money before you can spend it. You never see it, so you never miss it.\n\n"
-      "Do this: set the transfer for your next payday.\n\nSave this, and send it to your payday buddy.\n\n#personalfinancecanada #tfsa #fhsa #savingmoney #paycheque",
-      "Which goal are you saving for? Maths: goal ÷ 26 paycheques, rounded up. 2026 TFSA limit $7,000; FHSA $8,000 a year, $40,000 lifetime (CRA).")
+# ---------------------------------------------------------------- FF · what fees cost you (Oct 21 08:15)
+def fv(pmt, years, rate):
+    r, n = rate / 12, years * 12
+    return pmt * ((1 + r) ** n - 1) / r
 
-# ---------------------------------------------------------------- FF · $1M by 65 per day (Oct 21 19:00)
-AGES = [25, 28, 30, 33, 35, 40, 45]
-cheat("ff-cheat-1021-million-per-day", "2026-10-21T19:00",
+
+BASE = fv(300, 32, 0.10)
+FEES = [0.25, 0.5, 1.0, 1.5, 2.0, 2.5]
+cheat("ff-cheat-1021am-fees-eat", "2026-10-21T08:15",
+      dict(brand=FF, field="lite", track="ff-x-level-up",
+           title="A *1% fee* sounds tiny. / Here's what it *takes*", head=("yearly fee (MER)", "fees take from you"),
+           rows=[(f"{f:g}%", f"${BASE - fv(300, 32, 0.10 - f / 100):,.0f}") for f in FEES],
+           do="Look up your fund's *MER* this week. Over 1%? Ask what a *low-fee index fund* costs.",
+           save="send this to someone with a bank mutual fund", do_top=1300,
+           src="$300 a month from 28 to 60, 10% a year before fees, compounded monthly. Fee shown = value lost by 60. Not guaranteed."),
+      "A 1% fee sounds tiny. Here's what it takes 🇨🇦\n\n$300 a month from 28 to 60, growing 10% a year before fees:\n"
+      + "\n".join(f"{f:g}% fee → fees take about ${BASE - fv(300, 32, 0.10 - f / 100):,.0f}" for f in FEES)
+      + "\n\nWhy: the fee comes out every year, from your whole balance, and the money it takes can't grow for you anymore.\n\n"
+      "Do this: look up your fund's MER (the yearly fee) this week. Over 1%? Ask what a low-fee index fund would cost you.\n\n"
+      f"{NG}\n\n#mer #investingcanada #indexfunds #personalfinancecanada #fees",
+      "What's your fund's MER? Maths: $300 at the end of each month for 32 years, 10% a year minus the fee, compounded monthly; "
+      "shown is the difference vs no fee.")
+
+# ---------------------------------------------------------------- FF · the price of waiting one year (Oct 21 19:00)
+WAIT = [25, 28, 30, 33, 35]
+cheat("ff-cheat-1021-one-year-wait", "2026-10-21T19:00",
       dict(brand=FF, field="cob", track="ff-x-big-reveal",
-           title="*$1 million* by 65: / what to invest *a day*", head=("start at", "per day (per month)"),
-           rows=[(f"age {a}", f"${per_month_for_million(a) * 12 / 365:,.2f} (${per_month_for_million(a):,.0f})") for a in AGES],
-           do="Pick your row. Set that *monthly amount* to invest automatically.", do_top=1420, save="send this to your “I'll start later” friend",
-           src="10% a year (S&P 500 long-run average), compounded monthly, no fees or taxes. Not guaranteed."),
-      "$1 million by 65: how much to invest per day, by the age you start 🇨🇦\n\n"
-      + "\n".join(f"Age {a}: ${per_month_for_million(a) * 12 / 365:,.2f} a day (${per_month_for_million(a):,.0f} a month)" for a in AGES)
-      + "\n\nWhy waiting costs so much: every year you wait, your money has one less year to grow, so you have to put in far more.\n\n"
-      f"Do this: pick your row and set that monthly amount to invest automatically, in a TFSA or RRSP.\n\n{NG}\n\n"
-      "#investingcanada #tfsa #compounding #millionaire #personalfinancecanada",
-      "What age did you start? Maths: monthly contributions at 10% a year compounded monthly to age 65; per day = monthly × 12 ÷ 365.")
+           title="What waiting *just 1 year* / costs you by 65", head=("if you're", "one year of waiting costs"),
+           rows=[(f"{a}", f"${fv(300, 65 - a, 0.10) - fv(300, 64 - a, 0.10):,.0f}") for a in WAIT],
+           do="Start this payday with *any amount,* even $50. Raise it later.", save="send this to your “next year” friend",
+           do_top=1220,
+           src="$300 a month to 65, 10% a year (S&P 500 long-run average), compounded monthly. Not guaranteed."),
+      "What waiting just one year costs you by 65 🇨🇦\n\n$300 a month, growing 10% a year:\n"
+      + "\n".join(f"Age {a}: waiting one year costs about ${fv(300, 65 - a, 0.10) - fv(300, 64 - a, 0.10):,.0f}" for a in WAIT)
+      + "\n\nWhy so much? The year you skip is the one that would have grown the longest.\n\n"
+      f"Do this: start this payday with any amount, even $50. You can raise it later.\n\n{NG}\n\n"
+      "#investingcanada #tfsa #compounding #startnow #personalfinancecanada",
+      "How old are you? Maths: $300 at the end of each month to 65 at 10% a year compounded monthly; cost = value starting now minus value starting a year later.")
 
 # ---------------------------------------------------------------- LF · money for families (Oct 21 08:00)
 cheat("lf-cheat-1021am-family-money", "2026-10-21T08:00",
