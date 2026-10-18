@@ -145,6 +145,33 @@ def base_env(**extra):
     return env
 
 
+class _WaitingRepo:
+    """A temp copy of listings/ in which every batch spec is back to WAITING, as it was before the owner approved it.
+    The real batches are approved now (Oct 18); these tests keep checking the WAITING safety rules on a copy."""
+
+    def __enter__(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        (root / "listings").mkdir()
+        for sub in ("media", "files"):
+            os.symlink(etsy.LISTINGS / sub, root / "listings" / sub)
+        for p in etsy.all_spec_paths():
+            spec = json.loads(p.read_text())
+            if spec.get("batch"):
+                rq = (spec.get("approval") or {}).get("review_queue", "")
+                spec["status"] = "WAITING"
+                spec["approval"] = {"review_queue": rq, "how": "Owner approves the batch first."}
+            (root / "listings" / p.name).write_text(json.dumps(spec, indent=2, ensure_ascii=False) + "\n")
+        self._saved = (etsy.ROOT, etsy.LISTINGS, etsy.LIVE_PATH)
+        etsy.ROOT, etsy.LISTINGS = root, root / "listings"
+        etsy.LIVE_PATH = root / "listings" / "live.json"
+        return root
+
+    def __exit__(self, *a):
+        etsy.ROOT, etsy.LISTINGS, etsy.LIVE_PATH = self._saved
+        self.tmp.cleanup()
+
+
 class SpecValidation(unittest.TestCase):
     def test_every_repo_spec_is_valid_and_approved(self):
         paths = sorted(p for p in etsy.LISTINGS.glob("*.json") if p.name not in ("live.json", "go.json"))
@@ -156,9 +183,13 @@ class SpecValidation(unittest.TestCase):
                 if p.stem in SPEC_IDS:
                     self.assertEqual(etsy.validate_spec(spec, p), [])
                     self.assertNotIn("batch", spec)
-                else:   # built, spec'd, waiting for the owner: well-formed but never listable yet
+                else:   # batch specs: WAITING (well-formed, never listable) until the owner approves, then listable
                     self.assertEqual(etsy.validate_spec(spec, p, allow_waiting=True), [])
-                    self.assertTrue(etsy.validate_spec(spec, p))
+                    if spec.get("status") == "APPROVED":
+                        self.assertEqual(etsy.validate_spec(spec, p), [])
+                        self.assertEqual(spec["approval"].get("approved_by"), "Dharma")
+                    else:
+                        self.assertTrue(etsy.validate_spec(spec, p))
                     self.assertIn(spec["batch"], BATCHES)
                     self.assertIn(p.stem, BATCHES[spec["batch"]])
 
@@ -277,6 +308,10 @@ class BatchSelector(unittest.TestCase):
                 etsy.spec_paths(sel)
 
     def test_waiting_batch_is_never_sent_to_etsy(self):
+        with _WaitingRepo():
+            self._test_waiting_batch_is_never_sent_to_etsy()
+
+    def _test_waiting_batch_is_never_sent_to_etsy(self):
         for name in BATCHES:
             out = io.StringIO()
             with contextlib.redirect_stdout(out):
@@ -289,6 +324,10 @@ class BatchSelector(unittest.TestCase):
                                            session=NoNetwork()), 2)
 
     def test_dry_run_batch_shows_plan(self):
+        with _WaitingRepo():
+            self._test_dry_run_batch_shows_plan()
+
+    def _test_dry_run_batch_shows_plan(self):
         for name, ids in BATCHES.items():
             out = io.StringIO()
             with contextlib.redirect_stdout(out):
@@ -302,11 +341,19 @@ class BatchSelector(unittest.TestCase):
                 self.assertNotIn(f"[{sid}]", out.getvalue())
 
     def test_waiting_spec_cannot_sit_in_all(self):
+        with _WaitingRepo():
+            self._test_waiting_spec_cannot_sit_in_all()
+
+    def _test_waiting_spec_cannot_sit_in_all(self):
         s = json.loads(json.dumps(real_spec("HB-SUB")))
         s.pop("batch")
         self.assertTrue(etsy.validate_spec(s, etsy.LISTINGS / "HB-SUB.json", allow_waiting=True))
 
     def test_go_json_batch(self):
+        with _WaitingRepo():
+            self._test_go_json_batch()
+
+    def _test_go_json_batch(self):
         with tempfile.TemporaryDirectory() as d:
             go = Path(d) / "go.json"
             go.write_text(json.dumps({"batch": "oct17-new", "owner_said": "list batch oct17-new", "at": "now"}))
@@ -330,7 +377,12 @@ class ApproveBatch(unittest.TestCase):
         for sub in ("media", "files"):
             os.symlink(etsy.LISTINGS / sub, root / "listings" / sub)
         for p in etsy.all_spec_paths():
-            (root / "listings" / p.name).write_text(p.read_text())
+            spec = json.loads(p.read_text())
+            if spec.get("batch"):
+                rq = (spec.get("approval") or {}).get("review_queue", "")
+                spec["status"] = "WAITING"
+                spec["approval"] = {"review_queue": rq, "how": "Owner approves the batch first."}
+            (root / "listings" / p.name).write_text(json.dumps(spec, indent=2, ensure_ascii=False) + "\n")
         self._saved = (etsy.ROOT, etsy.LISTINGS, etsy.LIVE_PATH, etsy.decrypt_files)
         etsy.ROOT, etsy.LISTINGS = root, root / "listings"
         etsy.LIVE_PATH = root / "listings" / "live.json"

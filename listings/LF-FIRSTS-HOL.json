@@ -3,10 +3,13 @@
   "order": 23,
   "shop": "LITTLEFOLD",
   "batch": "oct17-new",
-  "status": "WAITING",
+  "status": "APPROVED",
   "approval": {
-    "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')",
-    "how": "Owner says 'list batch oct17-new' -> python3 tools/etsy.py approve --batch oct17-new --said '<his exact words>' --at '<time ET>', then commit + push."
+    "source": "claude/review-queue.md",
+    "approved_by": "Dharma",
+    "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+    "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+    "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')"
   },
   "content_rules": [
     "littlefold-no-health-words"
