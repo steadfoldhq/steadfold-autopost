@@ -135,3 +135,25 @@ fmt("lf-1022-newborn-bundle-trail", LF, "2026-10-22T11:30",
     "Send this to someone expecting.\n\n#newparents #ontarioparents #canadianparents #newbaby #babymoney",
     "Did you do the bundle? Source: ontario.ca, Register a birth (new baby): the 5-in-1 newborn bundle; register within 30 days, "
     "free online within 12 months. Other provinces have their own service.")
+
+# ------------------------------------------------------------------ Fully Funded · scenic travelling carousel (Oct 24 12:00)
+fmt("ff-1024-paycheque-trail", FF, "2026-10-24T12:00",
+    dict(kind="trail", field="lite", do_field="cob", obj="piggy", cta="follow your paycheque →",
+         palette=dict(sky1="#F7F1E6", sky2="#CFD8F8", sun="#FFC6B2", h1="#E4E9FB", h2="#C9D3F7", h3="#A9B8F3", path="#E04E28"),
+         beats=[dict(text="Payday. / Where should / *the money go first?*", size=100),
+                dict(label="stop 1", sign="🛟", text="*One month* of bills / in savings. / Your safety net."),
+                dict(label="stop 2", sign="🎁", text="Work matches your / savings? Take the / *full match.* Free money."),
+                dict(label="stop 3", sign="📈", text="Then invest in / your *TFSA,* in a / *low-fee index fund.*")],
+         do="This payday, set up *one automatic transfer* to stop 1. Add stop 2 and 3 as you go.",
+         save="send this to your first-job friend"),
+    "Payday. Where should the money go first?", "follow your paycheque",
+    ["One month of bills in savings. Your safety net.", "Work matches your savings? Take the full match.",
+     "Then invest in your TFSA, in a low-fee index fund.", "This payday, set up one automatic transfer to stop 1."],
+    "Payday. Where should the money go first? 🇨🇦 A simple order a lot of planners use:\n\n"
+    "1. A safety net: one month of bills in savings, then build toward 3 to 6 months.\n"
+    "2. If your employer matches retirement savings, put in enough to get the full match. It's free money.\n"
+    "3. Then invest in your TFSA, in a low-fee index fund, and leave it alone.\n\n"
+    "Why this order: the safety net stops a surprise bill from landing on a credit card. The match is an instant return. Then time does the rest.\n\n"
+    f"Do this: this payday, set up one automatic transfer to stop 1. Add the others as you go.\n\n{NG} Education, not advice.\n\n"
+    "#personalfinancecanada #payday #tfsa #emergencyfund #moneytips",
+    "Which stop are you at? Your situation may differ (high-interest debt usually comes before investing). 2026 TFSA limit: $7,000 (CRA).")
