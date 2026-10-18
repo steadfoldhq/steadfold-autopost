@@ -2066,6 +2066,16 @@
       "trial": "auto"
     },
     {
+      "id": "lh-reel-1022am-bundle",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T08:30:00-04:00",
+      "caption": "Can't make yourself go to the gym? Make the gym the only place you get your favourite thing.\n\nWhy it works: researchers at Wharton let people listen to gripping audiobooks, but only at the gym. At first, they went 51% more often than people with no deal. It's called temptation bundling: you pair something you want with something you keep putting off. The honest part: the boost faded after a holiday break, so restart it when life gets busy.\n\nDo this: pick one show or podcast you love, and only play it during the chore you avoid, like the treadmill or folding laundry.\n\nSend this to the friend who keeps skipping the gym.\n\n#habits #motivation #gymmotivation #productivity #behaviorchange",
+      "first_comment": "Source: Milkman, Minson & Volpp (2014), Holding the Hunger Games hostage at the gym: an evaluation of temptation bundling, Management Science 60(2). Participants who could only listen to tempting audiobooks at the gym initially visited the gym 51% more often than the control group; the effect faded after the Thanksgiving break.",
+      "alt_text": "Edited video in the Locked Hour editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Can't make yourself go to the gym? / People could play gripping audiobooks, but only at the gym. / because At first, they went to the gym 51% more often. / It's called temptation bundling. / Do this: Save your favourite show for the chore you avoid. / Send this to the friend who skips the gym.. It loops back to the opening line.",
+      "video": "reels/lh-reel-1022am-bundle.mp4",
+      "cover": "reels/lh-reel-1022am-bundle-cover.jpg"
+    },
+    {
       "id": "hb-pan-1022am-travel-subscriptions",
       "account": "hourback",
       "publish_at": "2026-10-22T08:45:00-04:00",
@@ -2293,6 +2303,16 @@
       ]
     },
     {
+      "id": "ff-reel-1022-refund-29k",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T19:00:00-04:00",
+      "caption": "Spend the refund, or turn it into $29,000?\n\nPut $5,000 in an RRSP while earning $80,000 in Ontario, and your tax drops by about $1,480. It feels like a little bonus.\n\nHere's the part nobody tells you: invest that $1,480 at 30, let it grow 10% a year, and leave it alone. By 60 it's about $29,000. One refund. Like a snowball, it just needs time.\n\nDo this: when the refund lands, move it into your TFSA that same day, before it disappears into everyday spending.\n\nSend this to the friend planning a refund trip.\n\nNot guaranteed. Returns vary.\n\n#RRSP #taxrefund #TFSA #canadianfinance #moneyfoundations",
+      "first_comment": "Sources: Richter, \"2026 Ontario Income Tax Tables\": combined federal + Ontario marginal rate of 29.65% on taxable income from $58,523 to $94,907 (2026). So a $5,000 RRSP deduction at $80,000 of income lowers tax by about $1,480. CRA (canada.ca), RRSPs: contributions are deductible, and withdrawals are taxed as income; contributions made in the first 60 days of 2027 (by March 1, 2027) can be deducted on your 2026 return. Your RRSP deduction limit is on your notice of assessment and in CRA My Account. Education, not tax advice. Maths: $1,480 invested at 30, compounded monthly at 10% a year for 30 years, no fees or taxes ≈ $29,400 (shown rounded down). 10% = the S&P 500's long-run average (Fidelity), before inflation.",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Spend the refund, or turn it into $29,000? / An RRSP refund of $1,480 feels like a little bonus. / because Invest it at 30, growing 10% a year, and leave it alone until 60. / by age 60: $29,000 / Do this: When the refund lands, move it into your TFSA that same day. / Send this to the friend planning a refund trip.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1022-refund-29k.mp4",
+      "cover": "reels/ff-reel-1022-refund-29k-cover.jpg"
+    },
+    {
       "id": "hb-cheat-1022-travel-admin",
       "account": "hourback",
       "publish_at": "2026-10-22T19:00:00-04:00",
@@ -2301,6 +2321,144 @@
       "alt_text": "Canada-edition cheat sheet in the Hourback editorial look. Title: Travel admin, the fast way. Renew a passport: online · Standard wait: 20 business days · Need it sooner?: go in person · Flying home?: declare ahead · How early?: up to 72 h. Do this: Flying home? Do the Advance Declaration in ArriveCAN.",
       "video": "reels/hb-cheat-1022-travel-admin.mp4",
       "cover": "reels/hb-cheat-1022-travel-admin-cover.jpg"
+    },
+    {
+      "id": "lf-ch-1023-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T10:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1023-1.jpg",
+      "caption": "Story chain lf-ch-1023 frame 1: quick quiz"
+    },
+    {
+      "id": "lf-ch-1023-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T10:31:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1023-2.jpg",
+      "caption": "Story chain lf-ch-1023 frame 2: $7,200"
+    },
+    {
+      "id": "lf-ch-1023-3",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T10:32:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1023-3.jpg",
+      "caption": "Story chain lf-ch-1023 frame 3: Started late? You can catch up."
+    },
+    {
+      "id": "ff-ch-1023-1",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T11:00:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1023-1.jpg",
+      "caption": "Story chain ff-ch-1023 frame 1: quick quiz"
+    },
+    {
+      "id": "ff-ch-1023-2",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T11:01:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1023-2.jpg",
+      "caption": "Story chain ff-ch-1023 frame 2: $858"
+    },
+    {
+      "id": "ff-ch-1023-3",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T11:02:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1023-3.jpg",
+      "caption": "Story chain ff-ch-1023 frame 3: CPP is a floor, not a plan."
+    },
+    {
+      "id": "lf-1023-resp-catch-up",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T11:30:00-04:00",
+      "caption": "Never opened an RESP? It's not too late.\n\nThe part nobody tells you: your child's grant room builds up every year from birth, even if you never opened an RESP. The government matches 20% of what you save. Usually that's up to $500 a year, but with unused room it can add up to $1,000 a year (when you put in $5,000), until the full $7,200 per child is used. Grants stop at the end of the year your child turns 17.\n\nDo this: this week, ask your bank to open an RESP and use your catch-up room. Bring your child's SIN.\n\nTonight at 7: how much you can still get, by your child's age.\n\nSend this to a parent who never opened one.\n\n#RESP #canadianparents #savingforkids #CESG #babymoney",
+      "first_comment": "Source: Government of Canada, canada.ca, Canada Education Savings Grant: the government adds 20% of the first $2,500 you put into an RESP each year (up to $500 a year), up to $7,200 per child in total. Unused grant room carries forward, up to $1,000 of grant in one year, until the end of the year the child turns 17. Children aged 16 or 17 qualify only if at least $2,000 was contributed before the end of the year they turned 15, or $100 a year in any 4 earlier years.",
+      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Never opened an RESP?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'it's not too late'. Slide 2: the part nobody tells you Grant room builds every year from birth, even with no RESP.. Slide 3: Start late, and the government can add up to: $1,000 (a year, until the full $7,200 is used). Slide 4: Do this: This week, ask your bank to open an RESP and use your catch-up room..",
+      "images": [
+        "lf-1023-resp-catch-up/01.jpg",
+        "lf-1023-resp-catch-up/02.jpg",
+        "lf-1023-resp-catch-up/03.jpg",
+        "lf-1023-resp-catch-up/04.jpg"
+      ]
+    },
+    {
+      "id": "lf-ch-1023-4",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T11:45:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1023-4.jpg",
+      "caption": "Story chain lf-ch-1023 frame 4: Never opened an RESP?"
+    },
+    {
+      "id": "lh-ch-1023-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T11:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1023-1.jpg",
+      "caption": "Story chain lh-ch-1023 frame 1: quick quiz"
+    },
+    {
+      "id": "lh-ch-1023-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T11:46:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1023-2.jpg",
+      "caption": "Story chain lh-ch-1023 frame 2: 40 seconds"
+    },
+    {
+      "id": "lh-ch-1023-3",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T11:47:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1023-3.jpg",
+      "caption": "Story chain lh-ch-1023 frame 3: Look at green, not your phone."
+    },
+    {
+      "id": "ff-1023-cpp-enough",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T12:00:00-04:00",
+      "caption": "Will CPP pay your bills? Here's the real number.\n\nThe average new CPP pension at 65 is about $858 a month (canada.ca, 2026). The most anyone can get at 65 is about $1,508.\n\nThe part nobody tells you: CPP was built to replace part of your pay, not all of it. Think of it as the floor of your house, not the whole house. Your own savings, like a TFSA or RRSP, build the rest.\n\nDo this: this payday, set up $50 a month into your TFSA. Raise it with every raise.\n\nMoney Foundations, Part 6. Tonight at 7: take CPP at 60, or wait until 70?\n\nSend this to the friend counting on CPP.\n\nNot guaranteed. Returns vary.\n\n#CPP #retirementcanada #TFSA #personalfinancecanada #moneyfoundations",
+      "first_comment": "Sources (canada.ca): Canada Pension Plan, Pensions and benefits monthly amounts: retirement pension at 65, average for new beneficiaries $858.34 a month, 2026 maximum $1,507.65 a month. When to start your pension: payments decrease 0.6% each month before 65 (up to 36% at 60) and increase 0.7% each month after 65 (up to 42% at 70). The CPP is designed to replace part of your earnings, not all of them. Education, not advice.",
+      "alt_text": "Fully Funded 4-slide carousel. Slide 1: 'Will CPP pay your bills?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'the real number: slide 2'. Slide 2: canada.ca, 2026 The average new CPP pension at 65 is about: $858 (a month. the most is about $1,508). Slide 3: the part nobody tells you CPP replaces part of your pay, not all of it. Your savings fill the gap.. Slide 4: Do this: This payday, set up $50 a month into your TFSA. That's your gap-filler..",
+      "images": [
+        "ff-1023-cpp-enough/01.jpg",
+        "ff-1023-cpp-enough/02.jpg",
+        "ff-1023-cpp-enough/03.jpg",
+        "ff-1023-cpp-enough/04.jpg"
+      ]
+    },
+    {
+      "id": "ff-ch-1023-4",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T12:15:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1023-4.jpg",
+      "caption": "Story chain ff-ch-1023 frame 4: Will CPP pay your bills?"
+    },
+    {
+      "id": "lh-1023-green-break",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T12:30:00-04:00",
+      "caption": "A 40-second break that actually works.\n\nWhy it works: in a study at the University of Melbourne, people doing a long, boring focus task took a 40-second break to look at a roof. Some saw a roof covered in green plants, some saw plain concrete. The green-roof group made fewer mistakes afterwards. Green gives tired attention a short rest. Scrolling doesn't.\n\nDo this: between tasks today, look out a window at trees or plants for 40 seconds. Leave your phone face down.\n\nSend this to the friend who scrolls on every break.\n\n#focus #productivity #breaks #nature #worklife",
+      "first_comment": "Source: Lee, Williams, Sargent, Williams & Johnson (2015), 40-second green roof views sustain attention: the role of micro-breaks in attention restoration, Journal of Environmental Psychology 42. During a sustained-attention task, people who looked at a flowering green roof for 40 seconds made fewer errors afterwards than people who looked at a concrete roof.",
+      "alt_text": "Locked Hour 4-slide carousel. Slide 1: 'A 40-second break that works.' in a large serif with highlighted words above a sticky note listing The green roof study, What changed, The fix, a halftone cut-out and the handwritten note 'save this'. Slide 2: a real study Tired people took a 40-second break to look at a roof. (some saw a green roof. some saw concrete.). Slide 3: The green roof group made fewer mistakes afterwards. (green gives tired attention a rest). Slide 4: Do this: Between tasks today, look at trees or plants for 40 seconds. Not your phone..",
+      "images": [
+        "lh-1023-green-break/01.jpg",
+        "lh-1023-green-break/02.jpg",
+        "lh-1023-green-break/03.jpg",
+        "lh-1023-green-break/04.jpg"
+      ]
+    },
+    {
+      "id": "lh-ch-1023-4",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T12:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1023-4.jpg",
+      "caption": "Story chain lh-ch-1023 frame 4: A 40-second break that works."
     }
   ]
 }
