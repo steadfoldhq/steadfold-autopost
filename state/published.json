@@ -1745,6 +1745,54 @@
       "comment_id": "18194204980394368",
       "comment_error": null,
       "commented_at": "2026-10-18T12:45:23Z"
+    },
+    "lf-ch-1018-resp-1": {
+      "account": "littlefold",
+      "status": "published",
+      "container_id": "17881113759544608",
+      "container_created_at": "2026-10-18T14:52:49Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-18T14:53:05Z",
+      "publish_called_at": "2026-10-18T14:52:49Z",
+      "media_id": "18112995182176016",
+      "published_at": "2026-10-18T14:52:49Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "lf-ch-1018-resp-2": {
+      "account": "littlefold",
+      "status": "published",
+      "container_id": "17881113795544608",
+      "container_created_at": "2026-10-18T14:52:49Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-18T14:53:21Z",
+      "publish_called_at": "2026-10-18T14:52:49Z",
+      "media_id": "18125170195903097",
+      "published_at": "2026-10-18T14:52:49Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "lf-ch-1018-resp-3": {
+      "account": "littlefold",
+      "status": "published",
+      "container_id": "17881113840544608",
+      "container_created_at": "2026-10-18T14:52:49Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-18T14:53:37Z",
+      "publish_called_at": "2026-10-18T14:52:49Z",
+      "media_id": "17948277279356970",
+      "published_at": "2026-10-18T14:52:49Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
