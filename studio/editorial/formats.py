@@ -62,6 +62,9 @@ def shot_pano(r, b, field, body, n, out_dir):
         p = out_dir / f"{i + 1:02d}.jpg"
         im.crop((i * W, 0, (i + 1) * W, H)).save(p, quality=92, subsampling=0)
         files.append(p)
+    keep = Path("/home/claude/rq/pano")
+    keep.mkdir(parents=True, exist_ok=True)
+    im.save(keep / f"{out_dir.name}.jpg", quality=92)
     tmp.unlink()
     return files
 
@@ -98,7 +101,9 @@ def follow(r, spec, out_dir):
         y = starts[k]
         body += (f'<div style="position:absolute;left:60px;top:{y}px;width:640px;z-index:4;background:#fff;border:4px solid {f["ink"]};'
                  f'border-left:22px solid {ln["col"]};border-radius:22px;padding:16px 24px;box-shadow:0 8px 0 {f["ink"]}">'
-                 f'<div class="S" style="font-size:54px;line-height:1.05;text-align:left;color:{f["ink"]}">{K.pills(ln["start"], f)}</div></div>')
+                 f'<div class="S" style="font-size:54px;line-height:1.05;text-align:left;color:{f["ink"]}">{K.pills(ln["start"], f)}</div></div>'
+                 f'<div style="position:absolute;left:{560}px;top:{y - 40}px;z-index:6;font-family:\'Noto Color Emoji\';font-size:110px;'
+                 f'transform:rotate({-8 + 8 * k}deg);filter:drop-shadow(0 10px 12px rgba(0,0,0,.18))">{ln.get("icon", "")}</div>')
     body += hand(b, "pick one · follow its line →", 140, H - 190, 800, 60)
     # middle slides: little nudges
     for j, note in enumerate(spec["notes"], 1):
@@ -186,8 +191,8 @@ def hold(r, spec, out_dir):
     n = 1 + len(frames) + 1
     files = []
     cov = (txt(b, field, spec["hook"], 60, 200, W - 120, 112)
-           + hand(b, "hold the dots ↓ and slide →", 120, 980, 840, 74, -3)
-           + f'<div style="position:absolute;left:0;right:0;top:1120px;text-align:center;font-size:64px;color:{f["ink"]}">↓ &nbsp; ↓ &nbsp; ↓</div>'
+           + hand(b, "swipe and watch it grow →", 120, 980, 840, 74, -3)
+
            + K.obj("piggy", 640, 640, 380, -6) + K.stamp(b, 60, H - 260, 160, -12) + counter(1, n))
     p = out_dir / "01.jpg"
     files.append(r.shot(C.page(b, field, cov, W, H), W, H, p))
@@ -198,7 +203,7 @@ def hold(r, spec, out_dir):
                 f'<span class="pill" style="background:{f["p1"]}">${v:,.0f}</span></div>'
                 f'<div style="position:absolute;left:{(W - 430) // 2}px;top:480px;z-index:3">{jar_svg(b, v / vmax, f["ink"], K.ACCENT[b])}</div>'
                 + hand(b, sub, 120, 1090, 840, 58, -2)
-                + hand(b, "keep holding…" if i < n - 1 else "let go 👀", 300, 1200, 480, 50, -3)
+                + hand(b, "keep swiping…" if i < n - 1 else "👀", 300, 1200, 480, 50, -3)
                 + counter(i, n))
         files.append(r.shot(C.page(b, field, body, W, H), W, H, out_dir / f"{i:02d}.jpg"))
     files.append(r.shot(C.page(b, spec["do_field"], do_card(b, spec["do_field"], spec["do"], spec["save"]) + counter(n, n), W, H),
@@ -210,8 +215,8 @@ def hold(r, spec, out_dir):
 def reveal(r, spec, out_dir):
     b, field = spec["brand"], spec["field"]
     f = f_(b, field)
-    levels = spec.get("levels", [60, 34, 18, 9])
-    n = 1 + len(levels) + 1 + 1 + 1        # cover, blurred steps, clear answer, why, do
+    levels = spec.get("levels", [46, 16])
+    n = 1 + len(levels) + 1 + 1            # cover, blurred steps (with hanging lines), the answer, do
     files = []
     cov = (txt(b, field, spec["hook"], 60, 180, W - 120, 100)
            + hand(b, spec["guess"], 120, 820, 840, 66, -3)
@@ -226,18 +231,22 @@ def reveal(r, spec, out_dir):
     clear = out_dir / "_clear.jpg"
     r.shot(C.page(b, field, ans_body, W, H), W, H, clear)
     im = Image.open(clear)
+    hang = spec.get("hang", [])
     for k, px in enumerate(levels, 2):
         small = im.resize((max(1, W // px), max(1, H // px)), Image.BILINEAR)
-        small.resize((W, H), Image.NEAREST).save(out_dir / f"{k:02d}.jpg", quality=92)
+        bp = out_dir / f"_b{k}.jpg"
+        small.resize((W, H), Image.NEAREST).save(bp, quality=92)
+        over = (f'<img src="{K.uri(bp)}" style="position:absolute;inset:0;width:{W}px;height:{H}px;z-index:1">'
+                f'<div style="position:absolute;left:70px;right:70px;top:880px;z-index:5;background:#fff;border:5px solid {f["ink"]};'
+                f'border-radius:40px;box-shadow:0 14px 0 {f["ink"]};padding:34px 40px;font-size:62px;line-height:1.08;color:{f["ink"]}">'
+                f'{K.dual(hang[k - 2] if k - 2 < len(hang) else "keep sliding…", f)}</div>' + counter(k, n))
+        r.shot(C.page(b, field, over, W, H), W, H, out_dir / f"{k:02d}.jpg")
+        bp.unlink()
         files.append(out_dir / f"{k:02d}.jpg")
     k = 2 + len(levels)
     im.save(out_dir / f"{k:02d}.jpg", quality=92, subsampling=0)
     files.append(out_dir / f"{k:02d}.jpg")
     clear.unlink()
-    why = (hand(b, spec["why_label"], 120, 230, 840, 66, -3) + txt(b, spec["do_field"], spec["why"], 80, 380, W - 160, 84)
-           + f'<div class="S" style="position:absolute;left:60px;right:60px;top:{H - 110}px;font-size:24px;opacity:.6">{spec["src"]}</div>'
-           + counter(k + 1, n))
-    files.append(r.shot(C.page(b, spec["do_field"], why, W, H), W, H, out_dir / f"{k + 1:02d}.jpg"))
     files.append(r.shot(C.page(b, field, do_card(b, field, spec["do"], spec["save"]) + counter(n, n), W, H), W, H, out_dir / f"{n:02d}.jpg"))
     # fix the cover counter total is n; blurred slides carry none on purpose (they are frames)
     return files
