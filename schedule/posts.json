@@ -1812,6 +1812,28 @@
       "cover": "reels/lh-reel-1020-shutdown-cover.jpg"
     },
     {
+      "id": "lf-cheat-1021am-family-money",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T08:00:00-04:00",
+      "caption": "Money your family can get in Canada, for each child 🇨🇦\n\nCanada Child Benefit: up to $8,157 a year under 6, up to $6,883 a year age 6 to 17 (July 2026 to June 2027, less as family income rises).\nRESP grant: 20% on what you save, up to $500 a year and $7,200 lifetime.\nCanada Learning Bond: up to $2,000 for lower-income families, no deposit needed.\n\nThe part people miss: the Child Benefit is based on your tax return. Both parents need to file every year, even with no income.\n\nDo this: file your taxes every year, and open an RESP to collect the grants.\n\nSend this to a new parent.\n\n#canadachildbenefit #newparents #canadianparents #RESP #babymoney",
+      "first_comment": "Did you know both parents have to file? Sources: canada.ca (CCB: how much you can get, July 2026–June 2027), Canada Education Savings Grant, ESDC notice 2026-1138 (Learning Bond).",
+      "alt_text": "Canada-edition cheat sheet in the littlefold editorial look. Title: Money your family can get for each child. Canada Child Benefit, under 6: $8,157/yr · Canada Child Benefit, 6 to 17: $6,883/yr · RESP grant (20% match): $500/yr · RESP grant, lifetime: $7,200 · Canada Learning Bond: $2,000. Do this: File your taxes every year, both parents, even with no income. That's how you get the benefit.",
+      "video": "reels/lf-cheat-1021am-family-money.mp4",
+      "cover": "reels/lf-cheat-1021am-family-money-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "ff-cheat-1021am-paycheque-goals",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-21T08:15:00-04:00",
+      "caption": "How much to save each paycheque to hit your goal in one year 🇨🇦 (paid every 2 weeks)\n\n$1,000 emergency fund → $39\n$5,000 trip → $193\n$7,000 · fill your TFSA → $270\n$8,000 · fill your FHSA → $308\n$10,000 → $385\n$25,000 → $962\n\nWhy it works: an automatic transfer on payday moves the money before you can spend it. You never see it, so you never miss it.\n\nDo this: set the transfer for your next payday.\n\nSave this, and send it to your payday buddy.\n\n#personalfinancecanada #tfsa #fhsa #savingmoney #paycheque",
+      "first_comment": "Which goal are you saving for? Maths: goal ÷ 26 paycheques, rounded up. 2026 TFSA limit $7,000; FHSA $8,000 a year, $40,000 lifetime (CRA).",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: Hit your goal in 1 year: save this each paycheque. $1,000 emergency fund: $39 · $5,000 trip: $193 · $7,000 · fill your TFSA: $270 · $8,000 · fill your FHSA: $308 · $10,000: $385 · $25,000: $962. Do this: Set it as an automatic transfer on payday.",
+      "video": "reels/ff-cheat-1021am-paycheque-goals.mp4",
+      "cover": "reels/ff-cheat-1021am-paycheque-goals-cover.jpg",
+      "trial": "auto"
+    },
+    {
       "id": "hb-reel-1021am-parcel-text",
       "account": "hourback",
       "publish_at": "2026-10-21T08:45:00-04:00",
@@ -2052,6 +2074,16 @@
       ]
     },
     {
+      "id": "ff-cheat-1021-million-per-day",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-21T19:00:00-04:00",
+      "caption": "$1 million by 65: how much to invest per day, by the age you start 🇨🇦\n\nAge 25: $5.20 a day ($158 a month)\nAge 28: $7.06 a day ($215 a month)\nAge 30: $8.66 a day ($263 a month)\nAge 33: $11.80 a day ($359 a month)\nAge 35: $14.54 a day ($442 a month)\nAge 40: $24.78 a day ($754 a month)\nAge 45: $43.29 a day ($1,317 a month)\n\nWhy waiting costs so much: every year you wait, your money has one less year to grow, so you have to put in far more.\n\nDo this: pick your row and set that monthly amount to invest automatically, in a TFSA or RRSP.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#investingcanada #tfsa #compounding #millionaire #personalfinancecanada",
+      "first_comment": "What age did you start? Maths: monthly contributions at 10% a year compounded monthly to age 65; per day = monthly × 12 ÷ 365.",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: $1 million by 65: what to invest a day. age 25: $5.20 ($158) · age 28: $7.06 ($215) · age 30: $8.66 ($263) · age 33: $11.80 ($359) · age 35: $14.54 ($442) · age 40: $24.78 ($754) · age 45: $43.29 ($1,317). Do this: Pick your row. Set that monthly amount to invest automatically.",
+      "video": "reels/ff-cheat-1021-million-per-day.mp4",
+      "cover": "reels/ff-cheat-1021-million-per-day-cover.jpg"
+    },
+    {
       "id": "hb-reel-1021-group-costume",
       "account": "hourback",
       "publish_at": "2026-10-21T19:00:00-04:00",
@@ -2060,6 +2092,17 @@
       "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: 6 friends. One group costume. 63 messages. / Everyone has ideas. Nobody has a plan. / because Tell AI what everyone already owns. Then the ideas come from your closets. / Priya · rain, Theo · cloud, Mila · sun, Kai · lightning / It can't know who'll actually show up in it. That's what the vote is for. / Do this: Paste the chat into AI and ask for 3 group costumes from what we own. / send this to the group chat. It loops back to the opening line.",
       "video": "reels/hb-reel-1021-group-costume.mp4",
       "cover": "reels/hb-reel-1021-group-costume-cover.jpg"
+    },
+    {
+      "id": "ff-cheat-1022am-tfsa-rrsp-fhsa",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T08:15:00-04:00",
+      "caption": "TFSA vs RRSP vs FHSA, in one look 🇨🇦\n\nTFSA: $7,000 of new room in 2026. No tax break going in, tax-free coming out. Use it for anything.\nRRSP: 18% of last year's income, up to $33,810. Tax break now, taxed when you take it out. Best for retirement, especially on a higher income.\nFHSA: $8,000 a year, $40,000 total. Tax break going in AND tax-free out, if it's for your first home.\n\nDo this: buying a first home? Open the FHSA first. Otherwise, start with the TFSA.\n\nSave this before tax season.\n\n#tfsa #rrsp #fhsa #personalfinancecanada #firsthome",
+      "first_comment": "Which one did you open first? Sources: CRA 2026 limits (TFSA $7,000; RRSP $33,810 or 18% of 2025 earned income; FHSA $8,000/yr, $40,000 lifetime).",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: TFSA vs RRSP vs FHSA in one look. TFSA: $7,000 room in 2026; No tax break going in; Tax-free coming out · RRSP: 18% of income, max $33,810; Tax break now; Taxed when you take it out · FHSA: $8,000 a year, $40,000 total; Tax break now; Tax-free for your first home. Do this: Buying a first home? FHSA first. Otherwise, start with the TFSA.",
+      "video": "reels/ff-cheat-1022am-tfsa-rrsp-fhsa.mp4",
+      "cover": "reels/ff-cheat-1022am-tfsa-rrsp-fhsa-cover.jpg",
+      "trial": "auto"
     }
   ]
 }
