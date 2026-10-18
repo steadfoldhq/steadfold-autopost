@@ -1154,6 +1154,16 @@
       "trial": "auto"
     },
     {
+      "id": "ff-reel-1019am-term-vs-whole",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-19T08:15:00-04:00",
+      "caption": "There are two main kinds of life insurance, and one costs much less.\n\nTerm life covers you for a set time, like 20 years. If you die in that time, your family gets paid. It usually costs less.\n\nWhole life covers you for your whole life and builds some savings inside the policy. It usually costs much more each month.\n\nTerm is built for the years people depend on your pay: young kids, a big mortgage. Many people get some life insurance through work, so check what you already have first.\n\nDo this tonight: ask your HR or benefits team how much life insurance you already have.\n\nSend this to your partner.\n\n#lifeinsurance #termlife #personalfinance #newparents #moneyfoundations",
+      "first_comment": "Source: Financial and Consumer Services Commission (FCNB, a Canadian provincial regulator), \"Life insurance\": term covers you for a specific time period and its premiums are \"generally less expensive\"; permanent covers you for life and generally builds cash value. fcnb.ca/en/insurance/life-insurance. Education, not advice: talk to a licensed advisor about your own needs.",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: One kind of life insurance costs much less. / Term life covers you for a set time, like 20 years. It costs less. / Whole life covers you forever and builds some savings inside. It costs much more. / because Term is built for the years people depend on your pay: young kids, a big mortgage. / Do this: Tonight, ask your HR or benefits team how much life insurance you already have. / Send this to your partner.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1019am-term-vs-whole.mp4",
+      "cover": "reels/ff-reel-1019am-term-vs-whole-cover.jpg"
+    },
+    {
       "id": "lh-reel-1019am-pings",
       "account": "lockedhour",
       "publish_at": "2026-10-19T08:30:00-04:00",
@@ -1163,6 +1173,16 @@
       "video": "reels/lh-reel-1019am-pings.mp4",
       "cover": "reels/lh-reel-1019am-pings-cover.jpg",
       "trial": "auto"
+    },
+    {
+      "id": "hb-reel-1019am-just-the-asks",
+      "account": "hourback",
+      "publish_at": "2026-10-19T08:45:00-04:00",
+      "caption": "A huge email from your boss, before coffee. What do they actually need from you?\n\nPaste it into AI and ask: \"What do they need from me? Quote the line.\" You get the asks as a short list.\n\nWhy the quote matters: AI sometimes fills gaps with guesses. A quote shows you it's really in the email, and you can find it in seconds.\n\nWhere not to trust it: if it can't quote a line, treat that ask as a guess. And check your work's rules before you paste work email into any AI.\n\nSend this to the long-email coworker.\n\nMade up for this post. Check anything important yourself.\n\n#inbox #aitips #email #productivity #worklife",
+      "first_comment": "The email shown is made up for this post. Many workplaces have rules about which AI tools you can use with work email; check yours first.",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: A huge email from your boss. Before coffee. / Somewhere in there are the three things they need from you. / What do they need from me? Quote the line. / The slides · Tue, The budget · Fri, Lunch · optional / because AI sometimes guesses. A quote proves it's really in there. / Do this: Next long email, ask AI what they need from you, and to quote the line. / send this to the long-email coworker. It loops back to the opening line.",
+      "video": "reels/hb-reel-1019am-just-the-asks.mp4",
+      "cover": "reels/hb-reel-1019am-just-the-asks-cover.jpg"
     },
     {
       "id": "lf-ch-1019-clb-1",
