@@ -80,7 +80,7 @@ CONTAINER_MAX_AGE = timedelta(hours=23)  # containers expire after 24h; reuse on
 MAX_PUBLISH_ATTEMPTS = 3              # after this many failed runs, stop retrying a post
 MAX_COMMENT_ATTEMPTS = 5              # after this many failed runs, stop retrying a comment
 MAX_POSTS_PER_ACCOUNT_PER_RUN = 1     # a backlog drains one feed post/Reel per account per run
-MAX_STORIES_PER_ACCOUNT_PER_RUN = 1   # and, separately, one Story per account per run
+MAX_STORIES_PER_ACCOUNT_PER_RUN = 5   # a Story chain (up to 5 frames) goes out together, in order, so viewers tap straight through
 SAFETY_CAP_PER_24H = 25               # our own cap, far below Meta's 100 posts / 24h
 HTTP_TIMEOUT_SECONDS = 60
 

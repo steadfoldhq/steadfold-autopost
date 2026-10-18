@@ -691,15 +691,16 @@ class Stories(Base):
         self.assertEqual(self.run_main(g), 0, self.output)
         self.assertEqual(len(g.publishes()), 2)
 
-    def test_one_story_per_account_per_run(self):
-        self.write_posts([story("s1"), story("s2")])
+    def test_story_chain_posts_together_up_to_cap(self):
+        n = autopost.MAX_STORIES_PER_ACCOUNT_PER_RUN
+        self.write_posts([story(f"s{i}") for i in range(n + 1)])
         g = graph()
         self.assertEqual(self.run_main(g), 0, self.output)
-        self.assertEqual(len(g.publishes()), 1)
+        self.assertEqual(len(g.publishes()), n)
         self.assertEqual(self.run_main(g), 0, self.output)
-        self.assertEqual(len(g.publishes()), 2)
+        self.assertEqual(len(g.publishes()), n + 1)
         self.assertEqual(self.run_main(g), 0, self.output)
-        self.assertEqual(len(g.publishes()), 2)   # never re-posted
+        self.assertEqual(len(g.publishes()), n + 1)   # never re-posted
 
     def test_never_republished_after_unrecorded_publish(self):
         self.write_posts([story()])
