@@ -2077,6 +2077,76 @@
       "trial": "auto"
     },
     {
+      "id": "ff-ch-1022-1",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T11:00:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1022-1.jpg",
+      "caption": "Story chain ff-ch-1022 frame 1: “Refund's in. Trip time!”"
+    },
+    {
+      "id": "ff-ch-1022-2",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T11:01:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1022-2.jpg",
+      "caption": "Story chain ff-ch-1022 frame 2: sound familiar?"
+    },
+    {
+      "id": "ff-ch-1022-3",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T11:02:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1022-3.jpg",
+      "caption": "Story chain ff-ch-1022 frame 3: here's how"
+    },
+    {
+      "id": "ff-ch-1022-4",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T11:03:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1022-4.jpg",
+      "caption": "Story chain ff-ch-1022 frame 4: You pay it when you take it out."
+    },
+    {
+      "id": "lh-ch-1022-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T11:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1022-1.jpg",
+      "caption": "Story chain lh-ch-1022 frame 1: “I'm fine on 6 hours.”"
+    },
+    {
+      "id": "lh-ch-1022-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T11:46:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1022-2.jpg",
+      "caption": "Story chain lh-ch-1022 frame 2: sound familiar?"
+    },
+    {
+      "id": "lh-ch-1022-3",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T11:47:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1022-3.jpg",
+      "caption": "Story chain lh-ch-1022 frame 3: You can't feel the damage."
+    },
+    {
+      "id": "ff-1022-rrsp-refund",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T12:00:00-04:00",
+      "caption": "Your RRSP refund isn't a bonus. Here's where it comes from.\n\nEarn $80,000 in Ontario and put $5,000 in an RRSP, and your tax for the year drops by about $1,480. Your job already took tax off every paycheque, so the CRA sends the extra back as a refund.\n\nThe part nobody tells you: it's your own tax, coming back. You pay tax on that money later, when you take it out, ideally in retirement when your income (and tax rate) is lower. So the refund is a head start, not a gift.\n\nDo this: before March 1, 2027 (the deadline for your 2026 taxes), check your RRSP limit in CRA My Account.\n\nMoney Foundations, Part 5. Tonight at 7: what one refund can grow into.\n\nSend this to the friend who spends the refund.\n\n#RRSP #taxrefund #canadianfinance #personaltax #moneyfoundations",
+      "first_comment": "Sources: Richter, \"2026 Ontario Income Tax Tables\": combined federal + Ontario marginal rate of 29.65% on taxable income from $58,523 to $94,907 (2026). So a $5,000 RRSP deduction at $80,000 of income lowers tax by about $1,480. CRA (canada.ca), RRSPs: contributions are deductible, and withdrawals are taxed as income; contributions made in the first 60 days of 2027 (by March 1, 2027) can be deducted on your 2026 return. Your RRSP deduction limit is on your notice of assessment and in CRA My Account. Education, not tax advice.",
+      "alt_text": "Fully Funded 4-slide carousel. Slide 1: 'Your RRSP refund isn't a bonus' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'here's where it comes from'. Slide 2: earn $80,000 in Ontario? Put $5,000 in an RRSP. Your tax drops by about: $1,480. Slide 3: the part nobody tells you It's your own tax, coming back. You pay it when you take it out. (a head start, not a gift). Slide 4: Do this: Before March 1, 2027, check your RRSP limit in CRA My Account..",
+      "images": [
+        "ff-1022-rrsp-refund/01.jpg",
+        "ff-1022-rrsp-refund/02.jpg",
+        "ff-1022-rrsp-refund/03.jpg",
+        "ff-1022-rrsp-refund/04.jpg"
+      ]
+    },
+    {
       "id": "hb-ch-1022-1",
       "account": "hourback",
       "publish_at": "2026-10-22T12:00:00-04:00",
@@ -2109,6 +2179,36 @@
       "caption": "Story chain hb-ch-1022 frame 4: Save the dentist."
     },
     {
+      "id": "ff-ch-1022-5",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-22T12:15:00-04:00",
+      "story": true,
+      "image": "stories/ff-ch-1022-5.jpg",
+      "caption": "Story chain ff-ch-1022 frame 5: Your RRSP refund isn't a bonus"
+    },
+    {
+      "id": "lh-1022-six-hours",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T12:30:00-04:00",
+      "caption": "6 hours of sleep feels fine. Your brain disagrees.\n\nWhy it works: in a sleep-lab study, people slept 6 hours a night for two weeks. Their focus got worse every single day. By day 14, it was as bad as going 1 to 2 nights with no sleep at all. The scary part: they only felt a little sleepier, so they couldn't tell.\n\nCanada's sleep guidelines say adults need 7 to 9 hours.\n\nDo this: tonight, set a bedtime alarm 8 hours before your wake-up alarm. When it rings, start winding down.\n\nSend this to the friend who \"runs on 6 hours.\"\n\n#sleep #focus #productivity #sleepdeprivation #healthyhabits",
+      "first_comment": "Sources: Van Dongen, Maislin, Mullington & Dinges (2003), The cumulative cost of additional wakefulness, Sleep 26(2): restricting sleep to 6 hours a night for 14 days produced cognitive deficits equivalent to up to 2 nights of total sleep deprivation, while people rated themselves only slightly sleepy. Canadian 24-Hour Movement Guidelines for Adults (CSEP, 2020): adults 18-64 should get 7 to 9 hours of good-quality sleep on a regular basis.",
+      "alt_text": "Locked Hour 4-slide carousel. Slide 1: '6 hours of sleep feels fine.' in a large serif with highlighted words above a sticky note listing What 2 weeks did, Why you can't tell, The fix, a halftone cut-out and the handwritten note 'save this'. Slide 2: a real sleep-lab study People slept 6 hours a night for two weeks. (their focus got worse every day). Slide 3: By day 14, focus was as bad as 1 to 2 nights with no sleep. (and they barely felt sleepier). Slide 4: Do this: Tonight, set a bedtime alarm 8 hours before your wake-up alarm..",
+      "images": [
+        "lh-1022-six-hours/01.jpg",
+        "lh-1022-six-hours/02.jpg",
+        "lh-1022-six-hours/03.jpg",
+        "lh-1022-six-hours/04.jpg"
+      ]
+    },
+    {
+      "id": "lh-ch-1022-4",
+      "account": "lockedhour",
+      "publish_at": "2026-10-22T12:45:00-04:00",
+      "story": true,
+      "image": "stories/lh-ch-1022-4.jpg",
+      "caption": "Story chain lh-ch-1022 frame 4: 6 hours of sleep feels fine."
+    },
+    {
       "id": "hb-1022-unknown-callers",
       "account": "hourback",
       "publish_at": "2026-10-22T13:00:00-04:00",
@@ -2130,6 +2230,52 @@
       "story": true,
       "image": "stories/hb-ch-1022-5.jpg",
       "caption": "Story chain hb-ch-1022 frame 5: Unknown number. Again."
+    },
+    {
+      "id": "lf-ch-1022-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T16:30:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1022-1.jpg",
+      "caption": "Story chain lf-ch-1022 frame 1: “She finally fell asleep on me.”"
+    },
+    {
+      "id": "lf-ch-1022-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T16:31:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1022-2.jpg",
+      "caption": "Story chain lf-ch-1022 frame 2: 2 am, the group chat"
+    },
+    {
+      "id": "lf-ch-1022-3",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T16:32:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1022-3.jpg",
+      "caption": "Story chain lf-ch-1022 frame 3: On her back. Own crib. Nothing else."
+    },
+    {
+      "id": "lf-1022-safe-sleep",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T17:00:00-04:00",
+      "caption": "Where should your baby sleep? Health Canada keeps it simple.\n\nEvery sleep, naps too: on their back, in their own crib, cradle or bassinet, on a firm, flat mattress, with nothing in there but a fitted sheet. No pillows, blankets, bumpers or toys.\n\nThe part people miss: keep baby's crib in your room for at least the first 6 months. Share your room, not your bed.\n\nDo this: tonight, take everything out of the crib except the fitted sheet. A sleep sack can keep them warm instead of a blanket.\n\nSend this to someone expecting.\n\nGeneral information only, not medical advice.\n\n#safesleep #newborn #newparents #canadianparents #babysleep",
+      "first_comment": "Sources: Health Canada, Safe sleep for your baby (canada.ca): put your baby to sleep on their back, every time, including naps; use a crib, cradle or bassinet that meets current Canadian regulations, with a firm, flat mattress and only a fitted sheet (no pillows, quilts, comforters, bumper pads or toys); room-share (baby in their own sleep space in your room) for at least the first 6 months. Canadian Paediatric Society, caringforkids.cps.ca, Safe sleep for babies: same guidance.",
+      "alt_text": "Littlefold 4-slide carousel. Slide 1: 'Where should baby sleep?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'Health Canada's rules, in one look'. Slide 2: Every sleep, naps too Position: On their back; Where: Own crib, your room; Mattress: Firm and flat; In the crib: Only a fitted sheet. Slide 3: the part people miss Share your room, not your bed, for at least the first 6 months. (baby close by, in their own crib). Slide 4: Do this: Tonight, take everything out of the crib except the fitted sheet..",
+      "images": [
+        "lf-1022-safe-sleep/01.jpg",
+        "lf-1022-safe-sleep/02.jpg",
+        "lf-1022-safe-sleep/03.jpg",
+        "lf-1022-safe-sleep/04.jpg"
+      ]
+    },
+    {
+      "id": "lf-ch-1022-4",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T17:15:00-04:00",
+      "story": true,
+      "image": "stories/lf-ch-1022-4.jpg",
+      "caption": "Story chain lf-ch-1022 frame 4: Where should baby sleep?"
     },
     {
       "id": "hb-1022-brain-dump",
