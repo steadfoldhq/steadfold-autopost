@@ -98,7 +98,8 @@ def because_html(brand, sc):
     """'because…' beat: small handwritten 'because' kicker over the serif line."""
     k = (f'<div data-a="pop" data-t="0" data-d="0.25" style="font-family:\'Caveat Brush\';font-size:96px;line-height:1;'
          f'color:{ED.ACCENT[brand]};transform:rotate(-3deg)">{sc.get("kicker", "because…")}</div>')
-    return RP.col(k + RP.wtxt(sc["text"], sc.get("size", RP.SAY_PX[brand] - 20), t=0.2, cw=RP.CW.get(brand, 0.5)), gap=34)
+    return RP.col(k + RP.wtxt(rewrap(sc["text"], sc.get("chars", 14)), sc.get("size", RP.SAY_PX[brand] - 30), t=0.2,
+                              cw=RP.CW.get(brand, 0.5)), gap=34)
 
 
 def scene_html(brand, sc):
