@@ -41,6 +41,34 @@
       "shop": "SteadfoldHQ",
       "listed_at": "2026-10-18T21:32:55+00:00",
       "price": "CAD 14.00"
+    },
+    "HB-SUB": {
+      "listing_id": 4598257567,
+      "url": "https://www.etsy.com/listing/4598257567/subscription-audit-cancel-kit",
+      "shop": "SteadfoldHQ",
+      "listed_at": "2026-10-18T21:35:12+00:00",
+      "price": "CAD 9.99"
+    },
+    "FF-SCOPE": {
+      "listing_id": 4598279058,
+      "url": "https://www.etsy.com/listing/4598279058/freelancer-scope-reply-pack-24-client",
+      "shop": "SteadfoldHQ",
+      "listed_at": "2026-10-18T21:35:20+00:00",
+      "price": "CAD 17.00"
+    },
+    "HB-CREATOR-LITE": {
+      "listing_id": 4598279124,
+      "url": "https://www.etsy.com/listing/4598279124/creator-rate-card-and-media-kit-template",
+      "shop": "SteadfoldHQ",
+      "listed_at": "2026-10-18T21:35:28+00:00",
+      "price": "CAD 19.00"
+    },
+    "LF-FIRSTS-HOL": {
+      "listing_id": 4598279192,
+      "url": "https://www.etsy.com/listing/4598279192/babys-first-christmas-and-holidays",
+      "shop": "LittlefoldHQ",
+      "listed_at": "2026-10-18T21:35:45+00:00",
+      "price": "CAD 4.99"
     }
   },
   "drafts": {}
