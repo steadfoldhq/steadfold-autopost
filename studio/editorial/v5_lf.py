@@ -334,6 +334,117 @@ chain("lf-ch-1021", LF, "2026-10-21", "lf21", "baby money · the big one", [
 ])
 
 
+# ================================================================== Oct 22 (11:30 is reserved for the orchestrator's travelling carousel)
+CCB_SRC = ("Source: CRA (canada.ca), RC4476-ON, Birth Registration and Canada Child Benefits (Ontario): register online with "
+           "ServiceOntario's Newborn Registration Service and choose the option 'Canada child benefits'; with your consent your "
+           "information goes to the CRA, and you should not re-apply through CRA My Account or Form RC66. The primary caregiver "
+           "applies and gives their SIN. Maximum CCB, July 2026 to June 2027: up to $8,157 a year per child under 6 (canada.ca; "
+           "income-tested).")
+
+reel("lf-reel-1022-ccb-at-birth", LF, "2026-10-22T19:00", "learning", "lf-x-tiny-parade", "send this to someone expecting", [
+    dict(k="hook", f="pink", text="New baby in Ontario? / *One click* starts / your Child Benefit.", emo="🍼"),
+    dict(k="say", f="cream", text="Register the birth / online, and tick / *Canada child* / *benefits.*"),
+    dict(k="because", f="butter", kicker="here's why", text="Your info goes *straight to the CRA.* No extra form."),
+    dict(k="say", f="berry", text="Then *don't* / *apply again.*", drop=True),
+    dict(k="do", f="cream", text="Have the main caregiver's *SIN* ready when you register."),
+    dict(k="save", f="pink", text="send this to / someone expecting"),
+], "New baby in Ontario? One click can start your Canada Child Benefit.\n\n"
+   "When you register the birth online with ServiceOntario's Newborn Registration Service, choose the option \"Canada child benefits\". "
+   "With your OK, your information goes straight to the CRA, so there's no separate form. Then don't apply again: the CRA already has it.\n\n"
+   "Why it matters: the benefit can be up to $8,157 a year for a child under 6 (July 2026 to June 2027, less as family income rises).\n\n"
+   "Do this: have the main caregiver's SIN ready when you register the birth. The main caregiver is the parent who applies.\n\n"
+   "Send this to someone expecting a baby.\n\n#newparents #canadachildbenefit #ontarioparents #babymoney #expectingparents",
+   CCB_SRC)
+
+
+SLEEP_SRC = ("Sources: Health Canada, Safe sleep for your baby (canada.ca): put your baby to sleep on their back, every time, including "
+             "naps; use a crib, cradle or bassinet that meets current Canadian regulations, with a firm, flat mattress and only a fitted "
+             "sheet (no pillows, quilts, comforters, bumper pads or toys); room-share (baby in their own sleep space in your room) for at "
+             "least the first 6 months. Canadian Paediatric Society, caringforkids.cps.ca, Safe sleep for babies: same guidance.")
+
+# Oct 22, 17:00 · NEW · safe sleep (the 11:30 slot belongs to the orchestrator)
+post("lf-1022-safe-sleep", LF, "2026-10-22T17:00", "learning",
+     dict(lay="pills", f="pink", kicker="safe sleep", text="Where should / baby *sleep?*", obj="ok", at="bl",
+          save="Health Canada's rules, in one look"),
+     [dict(k="rows", f="cream", text="Every sleep, *naps too*", cap="Health Canada's safe sleep basics",
+           rows=[("Position", "On their back"), ("Where", "Own crib, your room"), ("Mattress", "Firm and flat"),
+                 ("In the crib", "Only a fitted sheet")],
+           src="Health Canada · Canadian Paediatric Society"),
+      dict(k="say", f="butter", label="the part people miss", text="Share your *room,* / not your *bed,* / for at least the / first *6 months.*",
+           sub="baby close by, in their own crib", src="Health Canada, Safe sleep for your baby"),
+      dict(k="do", f="pink", text="Tonight, take *everything* out of the crib except the fitted sheet.",
+           save="send this to someone expecting")],
+     "Where should your baby sleep? Health Canada keeps it simple.\n\n"
+     "Every sleep, naps too: on their back, in their own crib, cradle or bassinet, on a firm, flat mattress, with nothing in there but a "
+     "fitted sheet. No pillows, blankets, bumpers or toys.\n\n"
+     "The part people miss: keep baby's crib in your room for at least the first 6 months. Share your room, not your bed.\n\n"
+     "Do this: tonight, take everything out of the crib except the fitted sheet. A sleep sack can keep them warm instead of a blanket.\n\n"
+     "Send this to someone expecting.\n\n"
+     f"{NOT_MED}\n\n#safesleep #newborn #newparents #canadianparents #babysleep",
+     SLEEP_SRC)
+
+chain("lf-ch-1022", LF, "2026-10-22", "lf22", "safe sleep", [
+    dict(k="photo", text="“She *finally* / fell asleep / on me.”", sub="do I move her? *yes* →", ink="light", y=1000),
+    dict(k="bubbles", f="cream", label="2 am, the group chat", bubbles=[
+        ("in", "she fell asleep on my chest. do I move her?"), ("out", "yes. gently, on her back, in her crib"),
+        ("out", "and *nothing* else in there. no blanket, no toys")], obj="shoe"),
+    dict(k="payoff", f="butter", label="Health Canada's rule", text="On her *back.* / Own crib. / *Nothing else.*",
+         sub="every sleep, naps too", obj="ok"),
+    dict(k="handoff", f="cream", text="Where should / baby *sleep?*", img="lf-1022-safe-sleep/01.jpg", next="the rules, in one look"),
+], times=["16:30", "16:31", "16:32", "17:15"])
+
+
+# ================================================================== Oct 23 (day B: quiz) · RESP catch-up + screens before bed
+SCREEN_SRC = ("Source: Canadian Paediatric Society, Screen time and young children: promoting health and development in a digital "
+              "world (2017, reaffirmed), and caringforkids.cps.ca: avoid screens for at least 1 hour before bedtime; keep daily "
+              "screen-free times, especially family meals and book-sharing.")
+
+reel("lf-reel-1023am-screens-bed", LF, "2026-10-23T08:00", "tip", "lf-x-giggle-pop", "send this to someone in bedtime battles", [
+    dict(k="hook", f="butter", text="Bedtime battles / *every night?*", emo="🌙"),
+    dict(k="say", f="cream", text="Screens right before / bed can make it / *harder* to settle."),
+    dict(k="because", f="pink", kicker="here's why", text="Canada's paediatricians say *no screens* in the hour before bed."),
+    dict(k="say", f="berry", text="Swap that hour / for a *book* / *together.*", drop=True),
+    dict(k="do", f="cream", text="Tonight, put the tablet *away 1 hour* before bed."),
+    dict(k="save", f="pink", text="send this to someone / in bedtime battles"),
+], "Bedtime battles every night? Look at the hour before bed.\n\n"
+   "The Canadian Paediatric Society says to avoid screens for at least 1 hour before bedtime, and to keep screen-free times every day, "
+   "especially meals and reading together.\n\n"
+   "Do this: tonight, put the tablet and TV away 1 hour before bed. Swap it for a book together.\n\n"
+   "Send this to someone in bedtime battles.\n\n"
+   f"{NOT_MED}\n\n#toddlerlife #bedtimeroutine #screentime #canadianparents #toddlersleep",
+   SCREEN_SRC)
+
+post("lf-1023-resp-catch-up", LF, "2026-10-23T11:30", "learning",
+     dict(lay="pills", f="butter", kicker="baby money", text="Never opened / an *RESP?*", obj="point", at="bl",
+          save="it's not too late"),
+     [dict(k="say", f="cream", label="the part nobody tells you", text="Grant room builds / *every year* from birth, / even with *no RESP.*",
+           src="canada.ca, Canada Education Savings Grant"),
+      dict(k="say", f="pink", text="Start late, and / the government can / add up to:", num="$1,000",
+           sub="a year, until the full $7,200 is used", src="canada.ca, Canada Education Savings Grant"),
+      dict(k="do", f="butter", text="This week, ask your bank to open an RESP and *use your catch-up room.*",
+           save="send this to a parent who never opened one")],
+     "Never opened an RESP? It's not too late.\n\n"
+     "The part nobody tells you: your child's grant room builds up every year from birth, even if you never opened an RESP. "
+     "The government matches 20% of what you save. Usually that's up to $500 a year, but with unused room it can add up to $1,000 a year "
+     "(when you put in $5,000), until the full $7,200 per child is used. Grants stop at the end of the year your child turns 17.\n\n"
+     "Do this: this week, ask your bank to open an RESP and use your catch-up room. Bring your child's SIN.\n\n"
+     "Tonight at 7: how much you can still get, by your child's age.\n\n"
+     "Send this to a parent who never opened one.\n\n#RESP #canadianparents #savingforkids #CESG #babymoney",
+     "Source: " + CESG_SRC + " Children aged 16 or 17 qualify only if at least $2,000 was contributed before the end of the year they "
+     "turned 15, or $100 a year in any 4 earlier years.")
+
+chain("lf-ch-1023", LF, "2026-10-23", "lf22", "baby money", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="Free RESP money, / *per child…*", bubbles=[
+        ("in", "what's the most grant one child can get?"), ("out", "A) $2,500"), ("out", "B) $7,200")],
+         obj="shoe", tap="guess, then tap →"),
+    dict(k="payoff", f="butter", label="the answer: B", text="*$7,200*", sub="per child, over the years", obj="point",
+         tap="source: canada.ca · tap →"),
+    dict(k="payoff", f="pink", label="why it matters", text="Started late? / You can *catch up.*", sub="up to $1,000 of grant a year",
+         obj="clock", tap="next story →"),
+    dict(k="handoff", f="cream", text="Never opened / an *RESP?*", img="lf-1023-resp-catch-up/01.jpg", next="by age: tonight at 7"),
+])
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
 # so forced line breaks never re-wrap (one line on screen = one line in the source).
 def _fit_sizes(brand, em=0.45, cap=136, floor=88):
@@ -347,7 +458,7 @@ def _fit_sizes(brand, em=0.45, cap=136, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

@@ -253,6 +253,125 @@ chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [  
 ])
 
 
+# ================================================================== Oct 22 · Part 5: the RRSP refund (Story chain day)
+# Facts checked Oct 18: Ontario 2026 combined marginal rate 29.65% on taxable income $58,523-$94,907 (Richter, 2026 Ontario
+# income tax tables). 2026 RRSP contributions count if made by March 1, 2027 (first 60 days of 2027, CRA).
+REFUND = int(round(5000 * 0.2965 / 10) * 10)                      # 1,480
+REFUND_60 = int((REFUND * (1 + 0.10 / 12) ** 360) // 1000 * 1000)  # 29,000 (rounded down)
+assert (REFUND, REFUND_60) == (1480, 29000), (REFUND, REFUND_60)
+SRC_REFUND = ("Sources: Richter, \"2026 Ontario Income Tax Tables\": combined federal + Ontario marginal rate of 29.65% on taxable "
+              "income from $58,523 to $94,907 (2026). So a $5,000 RRSP deduction at $80,000 of income lowers tax by about $1,480. "
+              "CRA (canada.ca), RRSPs: contributions are deductible, and withdrawals are taxed as income; contributions made in the "
+              "first 60 days of 2027 (by March 1, 2027) can be deducted on your 2026 return. Your RRSP deduction limit is on your "
+              "notice of assessment and in CRA My Account. Education, not tax advice.")
+
+reel("ff-reel-1022-refund-29k", FF, "2026-10-22T19:00", "deep", "ff-x-big-reveal", "save this for refund day", [
+    dict(k="hook", f="cob", text="Spend the refund, / or turn it into / *$29,000?*", emo="💸"),
+    dict(k="say", f="lite", text=f"An RRSP refund / of *${REFUND:,}* / feels like / a little bonus.", size=112),
+    dict(k="because", f="coral", kicker="the part nobody tells you",
+         text="Invest it at 30, growing *10% a year,* and leave it alone until 60.", size=110),
+    dict(k="num", f="deep", label="by age 60:", value=REFUND_60, pre="$", suf="from one refund", size=220, drop=True),
+    dict(k="do", f="lite", text="When the refund lands, move it into your *TFSA* that same day.", size=96, chars=18),
+    dict(k="save", f="cob", text="Send this to / the friend planning / a refund trip."),
+], f"Spend the refund, or turn it into $29,000?\n\nPut $5,000 in an RRSP while earning $80,000 in Ontario, and your tax drops by "
+   f"about ${REFUND:,}. It feels like a little bonus.\n\nHere's the part nobody tells you: invest that ${REFUND:,} at 30, let it grow 10% "
+   f"a year, and leave it alone. By 60 it's about ${REFUND_60:,}. One refund. Like a snowball, it just needs time.\n\n"
+   f"Do this: when the refund lands, move it into your TFSA that same day, before it disappears into everyday spending.\n\n"
+   f"Send this to the friend planning a refund trip.\n\n{NG}\n\n#RRSP #taxrefund #TFSA #canadianfinance #moneyfoundations",
+   SRC_REFUND + f" Maths: ${REFUND:,} invested at 30, compounded monthly at 10% a year for 30 years, no fees or taxes ≈ $29,400 "
+   "(shown rounded down). 10% = the S&P 500's long-run average (Fidelity), before inflation.",
+   series="RRSP refund · part 2/2")
+
+
+post("ff-1022-rrsp-refund", FF, "2026-10-22T12:00", "learning",
+     dict(lay="pills", f="coral", kicker="money foundations · part 5", text="Your RRSP refund / isn't a *bonus*", obj="point", at="bl",
+          save="here's where it comes from"),
+     [dict(k="say", f="lite", label="earn $80,000 in Ontario?", text="Put *$5,000* / in an RRSP. / Your tax drops / by about:",
+           num=f"${REFUND:,}", src="2026 Ontario combined rate: 29.65% · Richter 2026 tax tables"),
+      dict(k="say", f="cob", label="the part nobody tells you", text="It's *your own tax,* / coming back. / You pay it when / you *take it out.*",
+           sub="a head start, not a gift"),
+      dict(k="do", f="lite", text="Before *March 1, 2027,* check your RRSP limit in *CRA My Account.*",
+           size=96, save="send this to the friend who spends the refund")],
+     f"Your RRSP refund isn't a bonus. Here's where it comes from.\n\n"
+     f"Earn $80,000 in Ontario and put $5,000 in an RRSP, and your tax for the year drops by about ${REFUND:,}. Your job already "
+     f"took tax off every paycheque, so the CRA sends the extra back as a refund.\n\n"
+     f"The part nobody tells you: it's your own tax, coming back. You pay tax on that money later, when you take it out, ideally in "
+     f"retirement when your income (and tax rate) is lower. So the refund is a head start, not a gift.\n\n"
+     f"Do this: before March 1, 2027 (the deadline for your 2026 taxes), check your RRSP limit in CRA My Account.\n\n"
+     f"Money Foundations, Part 5. Tonight at 7: what one refund can grow into.\n\n"
+     f"Send this to the friend who spends the refund.\n\n#RRSP #taxrefund #canadianfinance #personaltax #moneyfoundations",
+     SRC_REFUND)
+
+chain("ff-ch-1022", FF, "2026-10-22", "ff22", "money foundations · part 5", [
+    dict(k="photo", text="“Refund's in. / *Trip time!*”", sub="wait, where did it *come from?* →", ink="dark", y=930),
+    dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
+        ("in", f"got ${REFUND:,} back from my RRSP 🎉"), ("out", "nice! but it's not free money."),
+        ("out", "it's *your own tax,* coming back.")]),
+    dict(k="bubbles", f="cob", label="here's how", bubbles=[
+        ("out", "your job already took tax off every paycheque."),
+        ("out", "the RRSP lowered your tax bill, so the CRA *sends the extra back.*")], obj="phone"),
+    dict(k="payoff", f="coral", label="and later?", text="You pay it / *when you* / *take it out.*",
+         sub="a head start, not a bonus", obj="piggy"),
+    dict(k="handoff", f="lite", text="Your RRSP refund / isn't a *bonus*", img="ff-1022-rrsp-refund/01.jpg", next="part 2 tonight at 7"),
+])
+
+
+# ================================================================== Oct 23 · Part 6: CPP (day B: Reels carry it, Story = quiz)
+# Facts checked Oct 18 on canada.ca: average new CPP retirement pension at 65 $858.34/month; 2026 maximum at 65 $1,507.65;
+# 0.6% less per month before 65 (36% at 60), 0.7% more per month after 65 (42% at 70).
+CPP_MAX = 1507.65
+CPP_70 = int(CPP_MAX * 1.42 // 10 * 10)  # 2,140
+assert CPP_70 == 2140
+SRC_CPP = ("Sources (canada.ca): Canada Pension Plan, Pensions and benefits monthly amounts: retirement pension at 65, average for "
+           "new beneficiaries $858.34 a month, 2026 maximum $1,507.65 a month. When to start your pension: payments decrease 0.6% each "
+           "month before 65 (up to 36% at 60) and increase 0.7% each month after 65 (up to 42% at 70). The CPP is designed to replace "
+           "part of your earnings, not all of them. Education, not advice.")
+
+post("ff-1023-cpp-enough", FF, "2026-10-23T12:00", "learning",
+     dict(lay="pills", f="cob", kicker="money foundations · part 6", text="Will CPP / *pay your bills?*", obj="point", at="bl",
+          save="the real number: slide 2"),
+     [dict(k="say", f="lite", label="canada.ca, 2026", text="The average new / CPP pension / at 65 is about:", num="$858",
+           sub="a month. the most is about $1,508", src="canada.ca, CPP monthly amounts"),
+      dict(k="say", f="coral", label="the part nobody tells you", text="CPP replaces / *part* of your pay, / not all of it. / *Your savings* / fill the gap."),
+      dict(k="do", f="cob", text="This payday, set up *$50 a month* into your TFSA. That's your gap-filler.",
+           size=96, save="send this to the friend counting on CPP")],
+     "Will CPP pay your bills? Here's the real number.\n\n"
+     "The average new CPP pension at 65 is about $858 a month (canada.ca, 2026). The most anyone can get at 65 is about $1,508.\n\n"
+     "The part nobody tells you: CPP was built to replace part of your pay, not all of it. Think of it as the floor of your house, not "
+     "the whole house. Your own savings, like a TFSA or RRSP, build the rest.\n\n"
+     "Do this: this payday, set up $50 a month into your TFSA. Raise it with every raise.\n\n"
+     "Money Foundations, Part 6. Tonight at 7: take CPP at 60, or wait until 70?\n\n"
+     f"Send this to the friend counting on CPP.\n\n{NG}\n\n#CPP #retirementcanada #TFSA #personalfinancecanada #moneyfoundations",
+     SRC_CPP)
+
+reel("ff-reel-1023-cpp-60-or-70", FF, "2026-10-23T19:00", "deep", "ff-x-money-moves", "save this for your parents", [
+    dict(k="hook", f="cob", text="Take CPP at 60, / or wait / *until 70?*", emo="⏳"),
+    dict(k="say", f="lite", text="Start at *60,* / and your cheque / is up to *36%* / smaller. For life.", size=112),
+    dict(k="because", f="coral", kicker="the part nobody tells you",
+         text="Wait until *70,* and it's up to 42% bigger. Every month, for life.", size=110),
+    dict(k="num", f="deep", label="the 2026 max at 70:", value=CPP_70, pre="$", suf="a month, vs $1,508 at 65", size=220, drop=True),
+    dict(k="do", f="lite", text="Tonight, check your *CPP estimate* in My Service Canada Account.", size=96, chars=18),
+    dict(k="save", f="cob", text="Send this to / your parents. / Seriously."),
+], f"Take CPP at 60, or wait until 70?\n\n"
+   f"Start at 60, and your cheque is up to 36% smaller, for life. Wait until 70, and it's up to 42% bigger, every month, for life. "
+   f"At the 2026 maximum, that's about ${CPP_MAX:,.0f} a month at 65, or about ${CPP_70:,} at 70.\n\n"
+   f"The honest part: waiting isn't right for everyone. Your health, your savings and when you stop working all matter.\n\n"
+   f"Do this: tonight, check your CPP estimate in My Service Canada Account.\n\n"
+   f"Send this to your parents. Seriously.\n\n#CPP #retirementcanada #retirementplanning #personalfinancecanada #moneyfoundations",
+   SRC_CPP + f" Maths: $1,507.65 × 1.42 ≈ ${CPP_70:,} (shown rounded down; the pension is also indexed to inflation).",
+   series="CPP · part 2/2")
+
+chain("ff-ch-1023", FF, "2026-10-23", "ff22", "money foundations · part 6", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="lite", label="quick quiz", title="The average new / *CPP at 65…*", bubbles=[
+        ("in", "how much is it a month?"), ("out", "A) about $858"), ("out", "B) about $1,500")], tap="guess, then tap →"),
+    dict(k="payoff", f="coral", label="the answer: A", text="*$858*", sub="a month, on average (2026)", obj="ok",
+         tap="source: canada.ca · tap →"),
+    dict(k="payoff", f="cob", label="why it matters", text="CPP is a / *floor,* not a plan.", sub="your savings build the rest", obj="piggy",
+         tap="next story →"),
+    dict(k="handoff", f="lite", text="Will CPP / *pay your bills?*", img="ff-1023-cpp-enough/01.jpg", next="60 or 70? tonight at 7"),
+])
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
 # so forced line breaks never re-wrap (one line on screen = one line in the source).
 def _fit_sizes(brand, em=0.47, cap=136, floor=88):
@@ -266,7 +385,7 @@ def _fit_sizes(brand, em=0.47, cap=136, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

@@ -258,6 +258,128 @@ chain("lh-ch-1021", LH, "2026-10-21", "lh21", "focus science", [
 ])
 
 
+# ================================================================== Oct 22 (Story chain day)
+SRC_BUNDLE = ("Source: Milkman, Minson & Volpp (2014), Holding the Hunger Games hostage at the gym: an evaluation of temptation bundling, "
+              "Management Science 60(2). Participants who could only listen to tempting audiobooks at the gym initially visited the gym "
+              "51% more often than the control group; the effect faded after the Thanksgiving break.")
+SRC_WALK = ("Source: Oppezzo & Schwartz (2014), Give your ideas some legs: the positive effect of walking on creative thinking, Journal "
+            "of Experimental Psychology: Learning, Memory, and Cognition 40(4). Stanford News (April 24, 2014): creative output rose by "
+            "an average of 60% when people walked; walking on a treadmill facing a blank wall worked too.")
+
+reel("lh-reel-1022am-bundle", LH, "2026-10-22T08:30", "learning", "lh-x-tick-boom", "save this for your next skipped workout", [
+    dict(k="hook", f="cream", text="Can't make / yourself go / *to the gym?*", emo="🎧"),
+    dict(k="say", f="pink", text="People could play / gripping audiobooks, / but *only at the gym.*"),
+    dict(k="because", f="dots", kicker="the result", text="At first, they went to the gym *51% more often.*", drop=True),
+    dict(k="say", f="cream", text="It's called / *temptation* / *bundling.*"),
+    dict(k="do", f="pink", text="Save your favourite show for *the chore you avoid.*"),
+    dict(k="save", f="cream", text="Send this to the friend / who skips the gym."),
+], "Can't make yourself go to the gym? Make the gym the only place you get your favourite thing.\n\n"
+   "Why it works: researchers at Wharton let people listen to gripping audiobooks, but only at the gym. At first, they went 51% more "
+   "often than people with no deal. It's called temptation bundling: you pair something you want with something you keep putting off. "
+   "The honest part: the boost faded after a holiday break, so restart it when life gets busy.\n\n"
+   "Do this: pick one show or podcast you love, and only play it during the chore you avoid, like the treadmill or folding laundry.\n\n"
+   "Send this to the friend who keeps skipping the gym.\n\n#habits #motivation #gymmotivation #productivity #behaviorchange",
+   SRC_BUNDLE)
+
+reel("lh-reel-1022-walk", LH, "2026-10-22T19:00", "suggestion", "lh-x-lock-in", "save this for the next time you're stuck", [
+    dict(k="hook", f="pink", text="Stuck on / a problem? / *Stand up.*", emo="🚶"),
+    dict(k="say", f="cream", text="Stanford tested / people's ideas, / *sitting* vs / *walking.*"),
+    dict(k="because", f="dots", kicker="the result", text="Walking raised creative ideas by about *60%* on average.", drop=True),
+    dict(k="say", f="pink", text="It even worked / on a treadmill / *facing a wall.*"),
+    dict(k="do", f="cream", text="Next time you're stuck, take a *10-minute walk.* No phone."),
+    dict(k="save", f="pink", text="Send this to the friend / glued to their desk."),
+], "Stuck on a problem? Stand up.\n\n"
+   "Why it works: Stanford researchers tested people's ideas while they sat and while they walked. Walking raised creative output by "
+   "about 60% on average. It even worked on a treadmill facing a blank wall, so it's the walking itself, not the view.\n\n"
+   "Do this: next time you're stuck, take a 10-minute walk. Bring the problem with you, and leave your phone behind.\n\n"
+   "Send this to the friend stuck at their desk all day.\n\n#creativity #focus #productivity #walking #worklife",
+   SRC_WALK)
+
+
+SRC_SIX = ("Sources: Van Dongen, Maislin, Mullington & Dinges (2003), The cumulative cost of additional wakefulness, Sleep 26(2): "
+           "restricting sleep to 6 hours a night for 14 days produced cognitive deficits equivalent to up to 2 nights of total sleep "
+           "deprivation, while people rated themselves only slightly sleepy. Canadian 24-Hour Movement Guidelines for Adults (CSEP, "
+           "2020): adults 18-64 should get 7 to 9 hours of good-quality sleep on a regular basis.")
+
+post("lh-1022-six-hours", LH, "2026-10-22T12:30", "learning",
+     dict(lay="sticky", f="pink", kicker="focus science", text="6 hours of sleep / *feels* fine.", obj="clock", at="br",
+          items=["What 2 weeks did", "Why you can't tell", "The fix"], save="save this"),
+     [dict(k="say", f="cream", label="a real sleep-lab study", text="People slept / *6 hours* a night / for two weeks.",
+           sub="their focus got worse every day"),
+      dict(k="say", f="dots", text="By day 14, focus / was as bad as / *1 to 2 nights* / with no sleep.",
+           sub="and they barely felt sleepier", src="Van Dongen et al., Sleep, 2003"),
+      dict(k="do", f="pink", text="Tonight, set a *bedtime alarm* 8 hours before your wake-up alarm.",
+           save="send this to the friend who “runs on 6 hours”")],
+     "6 hours of sleep feels fine. Your brain disagrees.\n\n"
+     "Why it works: in a sleep-lab study, people slept 6 hours a night for two weeks. Their focus got worse every single day. By day 14, "
+     "it was as bad as going 1 to 2 nights with no sleep at all. The scary part: they only felt a little sleepier, so they couldn't tell.\n\n"
+     "Canada's sleep guidelines say adults need 7 to 9 hours.\n\n"
+     "Do this: tonight, set a bedtime alarm 8 hours before your wake-up alarm. When it rings, start winding down.\n\n"
+     "Send this to the friend who \"runs on 6 hours.\"\n\n#sleep #focus #productivity #sleepdeprivation #healthyhabits",
+     SRC_SIX)
+
+chain("lh-ch-1022", LH, "2026-10-22", "lh22", "focus science", [
+    dict(k="photo", text="“I'm fine / on *6 hours.*”", sub="your brain *disagrees* →", ink="dark", y=560),
+    dict(k="bubbles", f="cream", label="sound familiar?", bubbles=[
+        ("in", "6 hours again. feel fine though"), ("out", "a sleep lab tested that"),
+        ("out", "after 2 weeks, focus was like *1 to 2 nights with no sleep*"), ("in", "but I don't feel tired?")], obj="clock"),
+    dict(k="payoff", f="pink", label="the scary part", text="You *can't feel* / the damage.", sub="they felt only a little sleepier",
+         obj="hourglass"),
+    dict(k="handoff", f="dots", text="6 hours of sleep / *feels* fine.", img="lh-1022-six-hours/01.jpg", next="save it for bedtime"),
+])
+
+
+# ================================================================== Oct 23 (day B: quiz)
+SRC_GREEN = ("Source: Lee, Williams, Sargent, Williams & Johnson (2015), 40-second green roof views sustain attention: the role of "
+             "micro-breaks in attention restoration, Journal of Environmental Psychology 42. During a sustained-attention task, people "
+             "who looked at a flowering green roof for 40 seconds made fewer errors afterwards than people who looked at a concrete roof.")
+SRC_CAFF = ("Source: Drake, Roehrs, Shambroom & Roth (2013), Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed, "
+            "Journal of Clinical Sleep Medicine 9(11). 400 mg of caffeine (about 2 to 3 cups of coffee, per the AASM summary) taken 6 "
+            "hours before bed reduced objectively measured total sleep by more than 1 hour; participants didn't report the disruption.")
+
+post("lh-1023-green-break", LH, "2026-10-23T12:30", "learning",
+     dict(lay="sticky", f="dots", kicker="focus science", text="A *40-second* / break that / works.", obj="clock", at="br",
+          items=["The green roof study", "What changed", "The fix"], save="save this"),
+     [dict(k="say", f="cream", label="a real study", text="Tired people took / a *40-second* break / to look at a roof.",
+           sub="some saw a green roof. some saw concrete."),
+      dict(k="say", f="pink", text="The *green roof* / group made / fewer mistakes / afterwards.",
+           sub="green gives tired attention a rest", src="Lee et al., Journal of Environmental Psychology, 2015"),
+      dict(k="do", f="dots", text="Between tasks today, look at *trees or plants* for 40 seconds. Not your phone.",
+           save="send this to the friend who scrolls on breaks")],
+     "A 40-second break that actually works.\n\n"
+     "Why it works: in a study at the University of Melbourne, people doing a long, boring focus task took a 40-second break to look at "
+     "a roof. Some saw a roof covered in green plants, some saw plain concrete. The green-roof group made fewer mistakes afterwards. "
+     "Green gives tired attention a short rest. Scrolling doesn't.\n\n"
+     "Do this: between tasks today, look out a window at trees or plants for 40 seconds. Leave your phone face down.\n\n"
+     "Send this to the friend who scrolls on every break.\n\n#focus #productivity #breaks #nature #worklife",
+     SRC_GREEN)
+
+chain("lh-ch-1023", LH, "2026-10-23", "lh22", "focus science", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="A break that / *helps focus…*", bubbles=[
+        ("in", "how long did they look at a green roof?"), ("out", "A) 40 seconds"), ("out", "B) 10 minutes")],
+         obj="clock", tap="guess, then tap →"),
+    dict(k="payoff", f="pink", label="the answer: A", text="*40* / seconds", sub="and they made fewer mistakes after", obj="clock",
+         tap="source: Lee et al., 2015 · tap →"),
+    dict(k="payoff", f="dots", label="why it matters", text="Look at *green,* / not your phone.", sub="a real rest for tired focus",
+         obj="hourglass", tap="next story →"),
+    dict(k="handoff", f="dots", text="A *40-second* / break that works.", img="lh-1023-green-break/01.jpg", next="save it for your next break"),
+])
+
+reel("lh-reel-1023-caffeine", LH, "2026-10-23T19:00", "keep", "lh-x-phone-down", "save this for your afternoon coffee", [
+    dict(k="hook", f="dots", text="Coffee at 4 pm? / *Your sleep* / *noticed.*", emo="☕"),
+    dict(k="say", f="cream", text="In a sleep study, / people had caffeine / *6 hours* before bed."),
+    dict(k="because", f="pink", kicker="the result", text="They slept *over an hour less.* They didn't notice.", drop=True),
+    dict(k="say", f="dots", text="About *2 to 3* / *cups* of coffee."),
+    dict(k="do", f="cream", text="Have your last coffee *at least 6 hours* before bed."),
+    dict(k="save", f="pink", text="Send this to / your coffee friend."),
+], "Coffee at 4 pm? Your sleep noticed.\n\n"
+   "Why it works: in a sleep study, people had 400 mg of caffeine, about 2 to 3 cups of coffee, 6 hours before bed. They slept more "
+   "than an hour less, measured in the lab, and they didn't even notice it.\n\n"
+   "Do this: have your last coffee at least 6 hours before bed. Going to bed at 10? Last cup by 4, earlier if you can.\n\n"
+   "Send this to the friend on their 4th coffee.\n\n#sleep #caffeine #coffee #focus #healthyhabits",
+   SRC_CAFF)
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): rewrap lines over 19 characters.
 def _fit_sizes(brand, em=0.33, cap=160, floor=88):
     """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
@@ -270,7 +392,7 @@ def _fit_sizes(brand, em=0.33, cap=160, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

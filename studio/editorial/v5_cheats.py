@@ -95,6 +95,98 @@ cheat("ff-cheat-1022am-tfsa-rrsp-fhsa", "2026-10-22T08:15",
       "Which one did you open first? Sources: CRA 2026 limits (TFSA $7,000; RRSP $33,810 or 18% of 2025 earned income; FHSA $8,000/yr, $40,000 lifetime).")
 
 
+# ---------------------------------------------------------------- LF · sleep and screens by age (Oct 22 08:00)
+cheat("lf-cheat-1022am-sleep-screens", "2026-10-22T08:00",
+      dict(brand=LF, field="cream", track="lf-x-giggle-pop",
+           title="Sleep and screens, / *by age* (0 to 4)", head=("age", "sleep a day · screens"),
+           rows=[("0 to 3 months", "14–17 h · none"), ("4 to 11 months", "12–16 h · none"), ("1 year", "11–14 h · none"),
+                 ("2 years", "11–14 h · under 1 h"), ("3 to 4 years", "10–13 h · under 1 h")],
+           do="Make *family meals* screen-free, starting with dinner tonight.", save="send this to a tired parent 🌙",
+           do_top=1300,
+           src="Sleep includes naps. Canadian 24-Hour Movement Guidelines for the Early Years (CSEP) · Canadian Paediatric Society, Screen time and young children (video chats are fine)."),
+      "Sleep and screens by age, Canada edition 🇨🇦\n\n0 to 3 months: 14 to 17 hours of sleep a day, no screens\n"
+      "4 to 11 months: 12 to 16 hours, no screens\n1 year: 11 to 14 hours, no screens\n2 years: 11 to 14 hours, under 1 hour of screens\n"
+      "3 to 4 years: 10 to 13 hours, under 1 hour of screens\n\nSleep counts naps. Video chats with grandma don't count as screen time.\n\n"
+      "Do this: make family meals screen-free, starting with dinner tonight.\n\nSend this to a tired parent.\n\n"
+      "General information only, not medical advice.\n\n#toddlersleep #screentime #babysleep #canadianparents #newparents",
+      "Which row surprised you? Sources: Canadian 24-Hour Movement Guidelines for the Early Years (0-4 years), Canadian Society for "
+      "Exercise Physiology: sleep including naps, 14-17 h (0-3 months), 12-16 h (4-11 months), 11-14 h (1-2 years), 10-13 h (3-4 years); "
+      "screen time not recommended under 2, no more than 1 hour a day for ages 2-4. Canadian Paediatric Society position statement, "
+      "Screen time and young children (2017): screen time for children under 2 is not recommended, except video-chatting; under 1 hour a "
+      "day for ages 2 to 5; screen-free times, especially family meals.")
+
+# ---------------------------------------------------------------- FF · CPP and OAS (Oct 23 08:15)
+cheat("ff-cheat-1023am-cpp-oas", "2026-10-23T08:15",
+      dict(brand=FF, field="lite", track="ff-x-level-up",
+           title="What CPP and OAS / *pay you* in 2026", head=("CPP and OAS", "per month"),
+           rows=[("Average new CPP at 65", "$858"), ("Max CPP at 65", "$1,508"), ("Start CPP at 60", "up to 36% less"),
+                 ("Wait to 70", "up to 42% more"), ("OAS, ages 65 to 74", "up to $763")],
+           do="Check your *CPP estimate* in My Service Canada Account.", save="send this to the friend counting on CPP",
+           do_top=1300,
+           src="canada.ca: CPP average for new pensions at 65 and 2026 maximum · when to start CPP · OAS maximum, October to December 2026."),
+      "What your government pension pays, 2026 🇨🇦\n\nAverage new CPP at 65: about $858 a month\nMost you can get at 65: about $1,508 a month\n"
+      "Start CPP at 60: up to 36% less, for life\nWait until 70: up to 42% more, for life\nOAS at 65 to 74: up to about $763 a month\n\n"
+      "Why it matters: together, that's well short of most people's bills. Your TFSA and RRSP fill the gap.\n\n"
+      "Do this: log in to My Service Canada Account and check your CPP estimate. It takes 5 minutes.\n\n"
+      "Send this to the friend counting on CPP.\n\n#CPP #OAS #retirementcanada #personalfinancecanada #moneyfoundations",
+      "Did you guess higher? Sources (canada.ca): CPP retirement pension at 65, average for new beneficiaries $858.34/month and 2026 "
+      "maximum $1,507.65/month; when to start: 0.6% less per month before 65 (up to 36% at 60), 0.7% more per month after 65 (up to 42% "
+      "at 70); OAS maximum, October to December 2026: $762.50/month (ages 65 to 74), $838.75 (75+).")
+
+# ---------------------------------------------------------------- LH · focus science, in numbers (Oct 23 08:30)
+cheat("lh-cheat-1023am-focus-numbers", "2026-10-23T08:30",
+      dict(brand=LH, field="cream", track="lh-x-lock-in",
+           title="Focus science / in *5 numbers*", head=("the study", "found"),
+           rows=[("New habit feels automatic", "66 days"), ("Switching tasks can eat", "40% of time"), ("A walk lifts new ideas", "+60%"),
+                 ("Wrote down when and where", "91% did it"), ("Coffee 6 h before bed", "−1 h sleep")],
+           do="Try *one row* this week. Start with *the walk.*", save="save this for a slow Monday",
+           do_top=1300,
+           src="Lally et al. 2010 · APA 2006 · Oppezzo & Schwartz 2014 · Milne, Orbell & Sheeran 2002 · Drake et al. 2013 (400 mg caffeine)."),
+      "Focus science, in 5 numbers\n\nA new habit takes about 66 days to feel automatic.\nSwitching tasks can eat up to 40% of your "
+      "productive time.\nA walk lifted creative ideas by about 60%.\nPeople who wrote down when and where they'd exercise: 91% did it.\n"
+      "Strong coffee 6 hours before bed cut sleep by more than an hour.\n\n"
+      "Do this: this week, try one row. Start with a 10-minute walk before your hardest task.\n\nSave this for a slow Monday.\n\n"
+      "#focus #habits #productivity #deepwork #studytips",
+      "Which one will you try? Sources: Lally et al. (2010), European Journal of Social Psychology: median 66 days to automaticity. "
+      "American Psychological Association (2006), Multitasking: switching costs, up to 40% of productive time. Oppezzo & Schwartz (2014): "
+      "creative output up about 60% when walking. Milne, Orbell & Sheeran (2002), British Journal of Health Psychology: 91% of the "
+      "implementation-intention group exercised. Drake et al. (2013), Journal of Clinical Sleep Medicine: 400 mg caffeine 6 hours "
+      "before bed reduced total sleep by more than 1 hour.")
+
+# ---------------------------------------------------------------- LF · RESP catch-up by age (Oct 23 19:00)
+def cesg_catch_up(start_age):
+    """Most CESG still collectable if the RESP starts at `start_age` and you put in enough each year: $500/yr of grant room
+    builds from birth, at most $1,000 of grant a year, paid to the end of the year the child turns 17, $7,200 lifetime."""
+    room, got = 0, 0
+    for age in range(0, 18):
+        room += 500
+        if age >= start_age:
+            g = min(1000, room, 7200 - got)
+            got, room = got + g, room - g
+    return got
+
+
+CATCH = [0, 5, 10, 12, 14]
+assert [cesg_catch_up(a) for a in CATCH] == [7200, 7200, 7200, 6000, 4000]
+cheat("lf-cheat-1023-resp-catch-up", "2026-10-23T19:00",
+      dict(brand=LF, field="butter", track="lf-x-sunny-bounce",
+           title="Late on the RESP? / Grant you can *still get*", head=("start when they're", "grant still there"),
+           rows=[("a newborn" if a == 0 else f"{a} years old", f"${cesg_catch_up(a):,}") for a in CATCH],
+           do="Opening late? Ask your bank about *catch-up grants.*", save="send this to a parent who never opened one",
+           do_top=1300,
+           src="canada.ca, Canada Education Savings Grant: 20% match, up to $500 a year or $1,000 with unused room, $7,200 lifetime, to age 17. Assumes up to $5,000 a year to catch up."),
+      "Late on the RESP? Here's the grant you can still get 🇨🇦\n\n"
+      + "\n".join(f"Start at {'birth' if a == 0 else 'age ' + str(a)}: up to ${cesg_catch_up(a):,}" for a in CATCH)
+      + "\n\nWhy: grant room builds up every year from birth, even with no RESP. Later, the government can pay up to $1,000 a year "
+      "(20% of $5,000) until the full $7,200 is used, as long as you start in time.\n\n"
+      "Do this: opening late? Ask your bank about catch-up grants, and bring your child's SIN.\n\n"
+      "Send this to a parent who never opened one.\n\n#RESP #canadianparents #savingforkids #CESG #babymoney",
+      "How old was your kid when you opened it? Source: canada.ca, Canada Education Savings Grant: 20% on the first $2,500 a year "
+      "(up to $500), up to $1,000 a year with unused grant room, $7,200 lifetime, paid until the end of the calendar year the child "
+      "turns 17. Children aged 16 or 17 qualify only if at least $2,000 was contributed before the end of the year they turned 15 (or "
+      "$100 a year in any 4 earlier years). Maths: $500 of room a year from birth, max $1,000 of grant a year, starting at each age.")
+
+
 def add_to_schedule(path):
     import json
     from pathlib import Path
