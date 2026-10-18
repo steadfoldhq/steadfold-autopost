@@ -1077,6 +1077,26 @@
       "caption": "Story chain hb-ch-1018 frame 5: The price didn't change. Something else did."
     },
     {
+      "id": "ff-1018-hold-the-jar",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-18T17:00:00-04:00",
+      "caption": "Hold the dots and slide to watch it grow 👀\n\n$300 a month from age 28, growing 10% a year (the S&P 500's long-run average), reaches about $835,500 by 60. You put in $115,200. The rest is growth.\n\nWhy it speeds up: your money earns money, then that money earns money too. That's compounding. Notice how the jar barely moves for years, then jumps.\n\nDo this: this payday, set up $300 a month, or what you can, into a broad index fund. Then leave it alone.\n\nMoney Foundations, Part 1 bonus. Save this for payday.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#compounding #investing #indexfunds #personalfinance #moneytips",
+      "first_comment": "How old were you when you started investing? Maths: $300 at the end of each month, 10% a year compounded monthly, no fees or taxes.",
+      "alt_text": "Fully Funded 10-slide carousel. Slide 1: 'Watch $300 a month grow, from 28 to 60' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'hold the dots and slide'. Slide 2: Age 32: $17,600. you've put in $14,400.. Slide 3: Age 36: $43,900. you've put in $28,800.. Slide 4: Age 40: $82,900. you've put in $43,200.. Slide 5: Age 44: $141,100. you've put in $57,600.. Slide 6: Age 48: $227,800. you've put in $72,000.. Slide 7: Age 52: $356,900. you've put in $86,400.. Slide 8: Age 56: $549,200. you've put in $100,800.. Slide 9: Age 60: $835,500. you've put in $115,200.. Slide 10: Do this: This payday, set up $300 a month (or what you can) into an index fund. Then leave it alone..",
+      "images": [
+        "ff-1018-hold-the-jar/01.jpg",
+        "ff-1018-hold-the-jar/02.jpg",
+        "ff-1018-hold-the-jar/03.jpg",
+        "ff-1018-hold-the-jar/04.jpg",
+        "ff-1018-hold-the-jar/05.jpg",
+        "ff-1018-hold-the-jar/06.jpg",
+        "ff-1018-hold-the-jar/07.jpg",
+        "ff-1018-hold-the-jar/08.jpg",
+        "ff-1018-hold-the-jar/09.jpg",
+        "ff-1018-hold-the-jar/10.jpg"
+      ]
+    },
+    {
       "id": "lf-1018-single-sign-say-it",
       "account": "littlefold",
       "publish_at": "2026-10-18T17:00:00-04:00",
@@ -1088,6 +1108,22 @@
         "lf-1018-single-sign-say-it/02.jpg",
         "lf-1018-single-sign-say-it/03.jpg",
         "lf-1018-single-sign-say-it/04.jpg"
+      ]
+    },
+    {
+      "id": "lh-1018-follow-the-line",
+      "account": "lockedhour",
+      "publish_at": "2026-10-18T17:00:00-04:00",
+      "caption": "Can't focus? It's usually one of three things. Pick yours and follow the line 👉\n\n📱 Phone keeps pulling you away? Put it in another room. In one study, people did worse on focus tests with the phone on the desk, even face-down and silent, than with it in another room.\n\n🟡 Can't get started? Write one sentence: \"At 7 pm, at the kitchen table, I'll start.\" Plans with a when and a where get followed far more often.\n\n🔵 Keep getting interrupted? Before you switch, jot one line: \"Next, I'll…\". It helps your brain let go, and getting back in is faster.\n\nDo this: tonight, pick your line and try its fix tomorrow for one hour.\n\nWhich line was yours? Tell us below 👇\n\n#focus #deepwork #productivity #studytips #habits",
+      "first_comment": "Which line was yours: 📱, 🟡 or 🔵? Sources: Ward, Duke, Gneezy & Bos 2017 (\"Brain Drain\"; a later replication was mixed); Gollwitzer & Sheeran 2006 (94 studies on if-then plans); Leroy & Glomb 2018 (ready-to-resume plans).",
+      "alt_text": "Locked Hour 6-slide carousel. Slide 1: 'Can't focus? Pick your problem. Follow its line.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'pick one · follow its line'. Slide 2: Phone, starting, or interruptions: three problems, three lines.. Slide 3: Keep following your line.. Slide 4: Two more swipes.. Slide 5: Phone: another room. Starting: one when-and-where sentence. Interrupted: a one-line note before you switch.. Slide 6: Do this: Tonight, pick your line and try its fix tomorrow for one hour..",
+      "images": [
+        "lh-1018-follow-the-line/01.jpg",
+        "lh-1018-follow-the-line/02.jpg",
+        "lh-1018-follow-the-line/03.jpg",
+        "lh-1018-follow-the-line/04.jpg",
+        "lh-1018-follow-the-line/05.jpg",
+        "lh-1018-follow-the-line/06.jpg"
       ]
     },
     {
@@ -1776,6 +1812,16 @@
       "cover": "reels/lh-reel-1020-shutdown-cover.jpg"
     },
     {
+      "id": "hb-reel-1021am-parcel-text",
+      "account": "hourback",
+      "publish_at": "2026-10-21T08:45:00-04:00",
+      "caption": "\"Your parcel is on hold. Pay $1.99.\" And you ARE waiting for a parcel.\n\nBefore you tap, screenshot the text and ask AI: \"Is this a scam? What are the red flags?\" It has seen the classic tricks: a tiny fee, a rush, a strange link.\n\nWhere not to trust it: if AI says it looks fine, that doesn't make it safe. Check your parcel in the courier's own app or website, never through the link.\n\nSend this to your mum.\n\nMade up for this post. Check anything important yourself.\n\n#scamalert #aitips #textscam #onlinesafety #lifeadmin",
+      "first_comment": "Fake delivery texts asking for a small fee are a common scam; the Canadian Anti-Fraud Centre (antifraudcentre-centreantifraude.ca) lists them. Check deliveries only in the courier's own app or site.",
+      "alt_text": "Edited video in the Hourback editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: “Your parcel is on hold. Pay $1.99.” / You are waiting for a parcel. So you almost tap. / because AI has seen the classic scam tricks, so it spots them fast. / A tiny fee, A rush, A strange link / “Looks fine” doesn't mean safe. Check in the courier's own app. / Do this: Weird text? Don't tap the link. Screenshot it and ask AI for the red flags. / send this to your mum. It loops back to the opening line.",
+      "video": "reels/hb-reel-1021am-parcel-text.mp4",
+      "cover": "reels/hb-reel-1021am-parcel-text-cover.jpg"
+    },
+    {
       "id": "lf-ch-1021-1",
       "account": "littlefold",
       "publish_at": "2026-10-21T10:30:00-04:00",
@@ -1972,20 +2018,37 @@
       "caption": "Story chain hb-ch-1021 frame 4: $96 dinner. Ana didn't drink."
     },
     {
-      "id": "hb-1021-single-subscriptions",
+      "id": "lf-1021-reveal-50-a-month",
+      "account": "littlefold",
+      "publish_at": "2026-10-21T17:00:00-04:00",
+      "caption": "Did you guess right? 👀\n\n$50 a month into an RESP from birth, plus the 20% government grant ($10 a month), growing 8% a year, is about $28,800 by 18. You put in $10,800.\n\nWhy: the Canada Education Savings Grant adds 20% on the first $2,500 you save each year. Free money, then 18 years of growth.\n\nDo this: this week, ask your bank to open an RESP for your baby and set up $50 a month. Have their SIN ready.\n\nSend this to someone with a new baby.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#RESP #babymoney #newparents #canadianparents #savingforkids",
+      "first_comment": "What was your guess? Source: canada.ca, Canada Education Savings Grant (20% on the first $2,500 a year, up to $500 a year, $7,200 lifetime). Maths: $60 a month at the end of each month, 8% a year compounded monthly, 18 years.",
+      "alt_text": "Littlefold 8-slide carousel. Slide 1: '$50 a month from birth to 18. What does it grow into?' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'slide to reveal'. Slide 2: (blurred). Slide 3: (less blurred). Slide 4: (almost). Slide 5: (clearer). Slide 6: About $28,800. You put in $10,800.. Slide 7: The government adds 20% to RESP savings, then it grows for 18 years.. Slide 8: Do this: This week, ask your bank to open an RESP and set up $50 a month..",
+      "images": [
+        "lf-1021-reveal-50-a-month/01.jpg",
+        "lf-1021-reveal-50-a-month/02.jpg",
+        "lf-1021-reveal-50-a-month/03.jpg",
+        "lf-1021-reveal-50-a-month/04.jpg",
+        "lf-1021-reveal-50-a-month/05.jpg",
+        "lf-1021-reveal-50-a-month/06.jpg",
+        "lf-1021-reveal-50-a-month/07.jpg",
+        "lf-1021-reveal-50-a-month/08.jpg"
+      ]
+    },
+    {
+      "id": "hb-1021-travel-subscriptions",
       "account": "hourback",
       "publish_at": "2026-10-21T17:45:00-04:00",
-      "caption": "Charges you forgot you pay. Everyone has a few.\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" Spotting the same charge every month is easy for AI, and boring for you.\n\nWhere not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out before you paste.\n\nDo this: tonight, paste last month's statement into AI, ask \"What repeats?\", then cancel one you don't use.\n\nSend this to your money buddy.\n\nMade up for this post. Check anything important yourself.\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
-      "first_comment": "The statement on the cover is made up; its five charges add up to 78.47 a month. Never paste full card or account numbers into an AI chat.",
-      "alt_text": "Hourback 7-slide carousel. Slide 1: 'Charges you forgot you pay' in a large serif with highlighted words above a sticky note listing Streaming 12.99, Cloud 2.99, Fitness 9.99, Phone 45.00, News 7.50, a halftone cut-out and the handwritten note '78.47 a month, made up for this post'. Slide 2: sound familiar? $12.99 here. $2.99 there. You forgot half of them.. Slide 3: here's the trick Paste one month of your statement into AI. Ask: “What repeats?”. Slide 4: why AI is good at this Spotting the same charge every month is easy for AI. Boring for you. 😴. Slide 5: but don't trust it blindly It can miss yearly charges. Scroll back a year yourself.. Slide 6: before you paste Take out card and account numbers. AI doesn't need them.. Slide 7: Do this: Tonight, paste last month's statement into AI and ask: “What repeats?” Then cancel one..",
+      "caption": "Charges you forgot you pay. Everyone has a few 🙈\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" Spotting the same charge every month is easy for AI, and boring for you.\n\nWhere not to trust it: it can miss yearly charges, so scroll back through the year yourself. And take card and account numbers out before you paste.\n\nDo this: tonight, paste last month's statement into AI, ask \"What repeats?\", then cancel one you don't use.\n\nSend this to your money buddy.\n\nMade up for this post. Check anything important yourself.\n\n#subscriptions #aitips #budgeting #moneytips #lifeadmin",
+      "first_comment": "How many repeats did you find? Never paste full card or account numbers into an AI chat.",
+      "alt_text": "Hourback 6-slide carousel. Slide 1: 'Charges you forgot you pay' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'follow the trail'. Slide 2: $12.99 here. $2.99 there. You forgot half of them.. Slide 3: Paste last month's statement into AI. Ask: What repeats?. Slide 4: Spotting the same charge every month is easy for AI.. Slide 5: It can miss yearly charges. Scroll back a year yourself.. Slide 6: Do this: Tonight, take out card numbers, paste last month's statement into AI, ask What repeats? Cancel one..",
       "images": [
-        "hb-1021-single-subscriptions/01.jpg",
-        "hb-1021-single-subscriptions/02.jpg",
-        "hb-1021-single-subscriptions/03.jpg",
-        "hb-1021-single-subscriptions/04.jpg",
-        "hb-1021-single-subscriptions/05.jpg",
-        "hb-1021-single-subscriptions/06.jpg",
-        "hb-1021-single-subscriptions/07.jpg"
+        "hb-1021-travel-subscriptions/01.jpg",
+        "hb-1021-travel-subscriptions/02.jpg",
+        "hb-1021-travel-subscriptions/03.jpg",
+        "hb-1021-travel-subscriptions/04.jpg",
+        "hb-1021-travel-subscriptions/05.jpg",
+        "hb-1021-travel-subscriptions/06.jpg"
       ]
     }
   ]

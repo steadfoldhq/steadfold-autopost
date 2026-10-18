@@ -65,4 +65,4 @@ DROPPED = {
 }
 
 # Page content lives in v5_<page>.py (ONE-READ rewrite, Oct 17 night).
-import v5_ff, v5_lh, v5_hb, v5_lf  # noqa: E402,F401
+import v5_ff, v5_lh, v5_hb, v5_lf, v5_formats  # noqa: E402,F401
