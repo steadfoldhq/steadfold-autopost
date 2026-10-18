@@ -157,3 +157,91 @@ fmt("ff-1024-paycheque-trail", FF, "2026-10-24T12:00",
     f"Do this: this payday, set up one automatic transfer to stop 1. Add the others as you go.\n\n{NG} Education, not advice.\n\n"
     "#personalfinancecanada #payday #tfsa #emergencyfund #moneytips",
     "Which stop are you at? Your situation may differ (high-interest debt usually comes before investing). 2026 TFSA limit: $7,000 (CRA).")
+
+# ================================================================== Oct 24-25 interactives (built Oct 18 pm; FF's is ff-1024-paycheque-trail)
+# ------------------------------------------------------------------ Locked Hour · swipe to reveal (Oct 24 12:30)
+fmt("lh-1024-reveal-47-seconds", LH, "2026-10-24T12:30",
+    dict(kind="reveal", field="cream", do_field="cream",
+         hook="In 2004, people / stayed on one screen / *2.5 minutes.* / Now?",
+         guess="guess first!", levels=[64, 30],
+         hang=["It dropped in / *every* study. *Keep sliding…*", "Shorter than / *one song.* One more →"],
+         ans_label="on one screen, before switching", answer="47 sec",
+         ans_sub="Gloria Mark's studies, / *2016 to 2020.*",
+         why_label="here's why", why="Every switch leaves part of your mind behind.",
+         src="Gloria Mark, Attention Span (2023) · UC Newsroom 2024",
+         do="For your next task, go *full screen.* One window. Nothing else.", save="send this to your 40-tabs friend"),
+    "In 2004, people stayed on one screen 2.5 minutes. Now?", "slide to reveal",
+    ["It dropped in every study. Keep sliding.", "Shorter than one song. One more.",
+     "47 seconds on one screen, on average (2016 to 2020).", "For your next task, go full screen. One window. Nothing else."],
+    "Did you guess lower or higher? 👀\n\n"
+    "Researcher Gloria Mark has timed how long people stay on one screen before switching. In 2004: about two and a half minutes. "
+    "In her studies from 2016 to 2020: 47 seconds, on average.\n\n"
+    "Why it matters: every switch costs a little focus, and 47-second hops add up to a day that felt busy but didn't get far.\n\n"
+    "Do this: for your next task, go full screen. One window, nothing else, until it's done.\n\n"
+    "Send this to your 40-tabs friend.\n\n#focus #attentionspan #deepwork #productivity #studytips",
+    "What was your guess? Source: Gloria Mark (UC Irvine), Attention Span (2023); UC Newsroom (2024), 'How to sharpen your "
+    "attention': about two and a half minutes on one screen in her 2004 study (2003 data), 47 seconds on average in studies from 2016 to 2020.")
+
+# ------------------------------------------------------------------ Hourback · follow the line (Oct 24 17:45)
+HB_LINES = [
+    dict(col="#E0306C", icon="⏰", start="I'm always / running late",
+         fix="Turn on *Time to Leave.* Calendar tells you when to go, based on travel time."),
+    dict(col="#E8B800", icon="🔢", start="My texts are / full of codes",
+         fix="Turn on *Delete After Use.* Codes clear themselves once used."),
+    dict(col="#3B3B98", icon="📸", start="I screenshot / all day",
+         fix="Turn on *Back Tap.* Double-tap the back of your phone."),
+]
+fmt("hb-1024-follow-settings", HB, "2026-10-24T17:45",
+    dict(kind="follow", field="plum", do_field="orng", pano=3, lines=HB_LINES,
+         hook="3 iPhone settings. / Pick *your problem.*", notes=["keep following…"],
+         src="Settings → Apps → Calendar → Default Alert Times · Settings → General → AutoFill & Passwords · Settings → Accessibility → Touch → Back Tap",
+         do="Tonight, follow *your line* and turn on that one setting. It takes 2 minutes.",
+         save="send this to the friend who's always late"),
+    "3 iPhone settings. Pick your problem.", "pick one · follow its line",
+    ["Keep following your line.",
+     "Late: Time to Leave. Codes: Delete After Use. Screenshots: Back Tap.",
+     "Tonight, follow your line and turn on that one setting. It takes 2 minutes."],
+    "3 iPhone settings. Pick your problem and follow its line 👉\n\n"
+    "⏰ Always running late? Settings → Apps → Calendar → Default Alert Times → turn on Time to Leave. Events with an address now "
+    "alert you when it's time to go, based on travel time (Location Services on for Calendar).\n\n"
+    "🔢 Texts full of verification codes? Settings → General → AutoFill & Passwords → turn on Delete After Use. Codes clear themselves "
+    "once they've been filled in.\n\n"
+    "📸 Screenshot all day? Settings → Accessibility → Touch → Back Tap → Double Tap → Screenshot. Then double-tap the back of your phone "
+    "(iPhone 8 or later).\n\n"
+    "Do this: tonight, turn on the one setting for your line. It takes 2 minutes.\n\nWhich line was yours? Tell us below 👇\n\n"
+    "Send this to the friend who's always late.\n\n#iphonetips #iphonesettings #timesaver #lifehacks #hourback",
+    "Which line was yours? Sources: Apple Support, 'Use Back Tap on your iPhone' (Settings → Accessibility → Touch → Back Tap; iPhone 8 "
+    "or later); iPhone Life, Time to Leave (Settings → Apps → Calendar → Default Alert Times) and auto-delete verification codes "
+    "(Settings → General → AutoFill & Passwords → Delete After Use). Paths checked for iOS 18; menus can move between iOS versions.")
+
+# ------------------------------------------------------------------ Littlefold · follow the line (Oct 25 11:30)
+LF_LINES = [
+    dict(col="#E86A92", icon="🍼", start="Last feed / a while ago?",
+         fix="Offer a *feed.* Hunger is often the reason."),
+    dict(col="#E8A93A", icon="🧷", start="Fed, but still / fussing?",
+         fix="Check the *diaper,* and whether they're *too hot or cold.*"),
+    dict(col="#6E8FC4", icon="🤗", start="Fed, dry, / still crying?",
+         fix="Hold them close and *sway,* or go for a *stroller walk.*"),
+]
+fmt("lf-1025-follow-crying", LF, "2026-10-25T11:30",
+    dict(kind="follow", field="cream", do_field="pink", pano=3, lines=LF_LINES,
+         hook="Baby won't stop / crying? Follow / *your line.*", notes=["keep following…"],
+         src="Source: NHS, Soothing a crying baby · if baby seems unwell or the cry sounds different, call your doctor or 811",
+         do="Save your health line now: *811* in most provinces. Then you're ready at 3 am.",
+         save="send this to someone with a newborn"),
+    "Baby won't stop crying? Follow your line.", "pick one · follow its line",
+    ["Keep following your line.",
+     "Hungry: offer a feed. Fussing: check the diaper and temperature. Still crying: hold, sway, or a stroller walk.",
+     "Save your health line now: 811 in most provinces."],
+    "Baby won't stop crying? Pick the line that fits and follow it 👉\n\n"
+    "🍼 Last feed a while ago? Offer a feed. Hunger is often the reason.\n"
+    "🧷 Fed, but still fussing? Check the diaper, and whether they're too hot or too cold.\n"
+    "🤗 Fed, dry, still crying? Hold them close and sway, sing, or go for a walk with the stroller.\n\n"
+    "If baby seems unwell (fever, not feeding) or the cry doesn't sound like their usual cry, call your doctor or your health line. "
+    "And if it's all too much, put baby down safely on their back in the crib and step away for a few minutes. That's OK.\n\n"
+    "Do this: save your health line in your phone now: 811 in most provinces (Manitoba: Health Links, 1-888-315-9257).\n\n"
+    "Send this to someone with a newborn.\n\nGeneral information only, not medical advice.\n\n"
+    "#newborn #babycrying #newparents #canadianparents #fourthtrimester",
+    "Which line is your baby? Sources: NHS, 'Soothing a crying baby' (reasons babies cry: hunger, a wet or dirty nappy, tiredness, "
+    "wanting a cuddle, wind, too hot or cold; soothing: hold close and sway, rock in a pram or go for a walk; call a doctor if baby "
+    "seems unwell). Heart & Stroke, 'Medical services by phone': 811 in BC, AB, SK, ON, QC, NB, NS, PEI, NL and Yukon.")

@@ -445,6 +445,119 @@ chain("lf-ch-1023", LF, "2026-10-23", "lf22", "baby money", [  # day B: guess-an
 ])
 
 
+# ================================================================== Oct 24 (Story chain day; 08:00 = lf-pan-1024am-newborn-bundle)
+# Facts checked Oct 18 pm (sources in each first comment).
+HONEY_SRC = ("Source: Health Canada (canada.ca), Infant botulism: 'Do not give any type of honey to infants (babies who are less than "
+             "one year old)'; 'Never add honey to an infant's food, water, formula, or soother.' Spores can be in pasteurized and "
+             "unpasteurized honey and resist heat. Contact your doctor immediately if a baby has constipation, weak muscles, is too "
+             "weak to cry or suck as usual, has a wobbly head, trouble breathing or can't swallow. After 1, healthy children's gut "
+             "bacteria protect them.")
+GRAN_SRC = ("Sources: canada.ca, 'How the RESP and related benefits work together': 'Any adult can open an RESP account for a child: "
+            "parents, guardians, grandparents, other relatives, and friends'; contributions are needed to receive the CESG. "
+            + CESG_SRC + " The grant limits are per child, across all of that child's RESPs.")
+
+chain("lf-ch-1024", LF, "2026-10-24", "lf18", "baby safety", [
+    dict(k="photo", text="“Just a little / honey on / *the soother?*”", sub="not before age 1 →", ink="light", y=620),
+    dict(k="bubbles", f="cream", label="sound familiar?", bubbles=[
+        ("in", "grandma says honey helps her settle 🍯"), ("out", "not before her *first birthday*"), ("in", "even a tiny bit?")],
+         obj="shoe"),
+    dict(k="bubbles", f="pink", label="here's why", bubbles=[
+        ("out", "honey can carry *botulism spores*"), ("out", "a baby's tummy can't fight them yet"),
+        ("out", "and cooking *doesn't* kill them")]),
+    dict(k="payoff", f="butter", label="Health Canada's rule", text="*No honey* / before 1.", sub="not in food, water, formula or soothers",
+         obj="ok"),
+    dict(k="handoff", f="cream", text="Honey for baby? / *Not yet.*", img="lf-1024-no-honey/01.jpg", next="the rule, in one look"),
+])
+
+post("lf-1024-no-honey", LF, "2026-10-24T11:30", "learning",
+     dict(lay="pills", f="butter", kicker="baby safety", text="Honey for baby? / *Not before 1.*", obj="ok", at="bl",
+          save="not even a tiny bit"),
+     [dict(k="rows", f="cream", text="*No honey* before 1", cap="Health Canada",
+           rows=[("In food", "no"), ("In water or formula", "no"), ("On a soother", "no"), ("Cooked or pasteurized", "still no")],
+           src="Health Canada, Infant botulism"),
+      dict(k="say", f="pink", label="here's why", text="Honey can carry / *botulism* spores. / A baby's gut / can't fight them *yet.*",
+           sub="after 1, healthy kids are fine", src="Health Canada, Infant botulism"),
+      dict(k="do", f="butter", text="Today, check baby's snacks and cereals for *honey* on the label. Then tell the grandparents.",
+           save="send this to the grandparents")],
+     "Honey for baby? Not before their first birthday. Not even a tiny bit.\n\n"
+     "Health Canada says: no honey of any kind for babies under 1. Not in food, water or formula, and never on a soother. "
+     "Cooked or pasteurized honey isn't safe either.\n\n"
+     "Here's why: honey can carry botulism spores. Heat doesn't kill them, and a baby's gut can't fight them yet. After age 1, "
+     "healthy kids have the gut bacteria to handle them.\n\n"
+     "Call your doctor right away if a baby is constipated, floppy, too weak to cry or suck as usual, or has trouble breathing or swallowing.\n\n"
+     "Do this: today, check baby's snacks and cereals for honey on the label. Then tell the grandparents.\n\n"
+     f"Send this to the grandparents.\n\n{NOT_MED}\n\n#babyfood #newparents #canadianparents #babysafety #startingsolids",
+     HONEY_SRC)
+
+reel("lf-reel-1024-grandma-resp", LF, "2026-10-24T19:00", "learning", "lf-x-tiny-parade", "send this to grandma", [
+    dict(k="hook", f="pink", text="Grandma's gift / could get a / *20% top-up.*", emo="🎂"),
+    dict(k="say", f="cream", text="Put her *$100* / in the *RESP.*"),
+    dict(k="because", f="butter", kicker="here's why", text="The government adds *20%.* So $100 becomes *$120.*"),
+    dict(k="say", f="berry", text="Up to *$500* / a year, / *per child.*", drop=True),
+    dict(k="do", f="cream", text="This birthday, ask for *gift money in the RESP.*"),
+    dict(k="save", f="pink", text="send this to / grandma"),
+], "Grandma's birthday money could get a 20% top-up.\n\n"
+   "Put her $100 in your child's RESP, and the Canada Education Savings Grant adds $20. The government matches 20% of what goes in, "
+   "up to $500 a year and $7,200 per child in total. Then it all grows until school.\n\n"
+   "Did you know? Any adult can open an RESP for a child, grandparents included. The grant limit is per child, though, so it's "
+   "shared across all of that child's RESPs.\n\n"
+   "Do this: this birthday, ask family for gift money in the RESP, and deposit it at your bank.\n\n"
+   "Send this to grandma.\n\n#RESP #grandparents #canadianparents #savingforkids #babymoney",
+   GRAN_SRC)
+
+
+# ================================================================== Oct 25 (day B: quiz · Reels carry the crying lesson, part 1 -> 2)
+CRY_SRC = ("Sources: NHS (South Tees Hospitals, ICON 'Babies cry, you can cope'): crying often starts around 2 weeks, peaks at around "
+           "6 to 8 weeks for a term baby, then gradually decreases; 'It's OK to walk away if you have checked the baby is safe and the "
+           "crying is getting to you'; 'Never ever shake or hurt a baby.' NHS, 'Soothing a crying baby': if it's overwhelming, put "
+           "baby safely in their cot, step into another room for a set time like 10 minutes, then go back; contact a doctor if baby "
+           "seems unwell or the cry doesn't sound like their normal cry.")
+
+reel("lf-reel-1025am-crying-peak", LF, "2026-10-25T08:00", "tip", "lf-x-sunny-bounce", "send this to someone in the newborn weeks", [
+    dict(k="hook", f="butter", text="Baby crying / *more* each week?", emo="🍼"),
+    dict(k="say", f="cream", text="It often starts / building around / *2 weeks.*"),
+    dict(k="because", f="pink", kicker="the NHS says", text="It usually peaks at *6 to 8 weeks.* Then it eases."),
+    dict(k="say", f="berry", text="It's a *normal* / *stage.*", drop=True),
+    dict(k="do", f="cream", text="Today, ask someone to take *one hour* so you can rest."),
+    dict(k="save", f="pink", text="send this to / a new parent", next="part 2 tonight at 7"),
+], "Baby crying more every week? You're not alone.\n\n"
+   "The NHS says crying often starts building around 2 weeks, usually peaks around 6 to 8 weeks, and then slowly eases. "
+   "It's a normal stage, not a sign you're doing it wrong.\n\n"
+   "If the cry sounds different from usual, or baby seems unwell (fever, not feeding), call your doctor or your health line "
+   "(811 in most provinces).\n\n"
+   "Do this: today, ask someone to take one hour so you can rest. Asking for help is normal.\n\n"
+   f"Send this to someone in the newborn weeks. Part 2 tonight at 7.\n\n{NOT_MED}\n\n"
+   "#newborn #newparents #babycrying #canadianparents #fourthtrimester",
+   CRY_SRC, series="Crying · part 1/2")
+
+chain("lf-ch-1025", LF, "2026-10-25", "lf22", "calmer newborn days", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="Newborn crying / *peaks* at…", bubbles=[
+        ("in", "when is it usually worst?"), ("out", "A) the first week"), ("out", "B) 6 to 8 weeks")],
+         obj="shoe", tap="guess, then tap →"),
+    dict(k="payoff", f="butter", label="the answer: B", text="*6 to 8* / weeks", sub="then it slowly eases", obj="point",
+         tap="source: NHS · tap →"),
+    dict(k="payoff", f="pink", label="so for now", text="Try one thing / *at a time.*", sub="feed, diaper, cuddle", obj="clock",
+         tap="next story →"),
+    dict(k="handoff", f="cream", text="Baby won't stop / *crying?*", img="lf-1025-follow-crying/01.jpg", next="follow your line"),
+])
+
+reel("lf-reel-1025-step-away", LF, "2026-10-25T19:00", "suggestion", "lf-x-tiny-parade", "send this to every new parent", [
+    dict(k="hook", f="pink", text="Crying won't stop. / You're *at* / *your limit.*", emo="🤍"),
+    dict(k="say", f="cream", text="It's OK to / *step away.*"),
+    dict(k="because", f="butter", kicker="the NHS says", text="Put baby *on their back* in the crib. Step out *10 minutes.*"),
+    dict(k="say", f="berry", text="*Never* shake / a baby.", drop=True),
+    dict(k="do", f="cream", text="Tonight, pick the *person you'll text* when it's too much."),
+    dict(k="save", f="pink", text="send this to / every new parent", next="crying · part 2/2"),
+], "Crying won't stop, and you're at your limit? That happens to loving parents too.\n\n"
+   "The NHS says it's OK to step away. Put baby down safely on their back in the crib, close the door, and go to another room for "
+   "a set time, like 10 minutes. Breathe. Then go back.\n\n"
+   "And never shake a baby. Shaking can cause brain damage.\n\n"
+   "If baby seems unwell, or the cry sounds different, call your doctor or your health line (811 in most provinces).\n\n"
+   "Do this: tonight, pick your step-away person, the one you'll text when it's too much.\n\n"
+   f"Send this to every new parent. Part 2 of 2.\n\n{NOT_MED}\n\n#newparents #newborn #babycrying #parentingsupport #canadianparents",
+   CRY_SRC, series="Crying · part 2/2")
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
 # so forced line breaks never re-wrap (one line on screen = one line in the source).
 def _fit_sizes(brand, em=0.45, cap=136, floor=88):
@@ -458,7 +571,7 @@ def _fit_sizes(brand, em=0.45, cap=136, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

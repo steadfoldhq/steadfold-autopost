@@ -89,6 +89,47 @@ cheat("hb-cheat-1022-travel-admin", "2026-10-22T19:00",
       "standard, faster options in person only; CBSA, 'ArriveCAN: Advance CBSA Declaration' (submit up to 72 hours before arrival, "
       "participating airports).")
 
+# ---------------------------------------------------------------- Oct 24 08:45 · computer shortcuts (built Oct 18 pm)
+cheat("hb-cheat-1024am-shortcuts", "2026-10-24T08:45",
+      dict(brand=HB, field="plum", track="hb-x-ta-da-funk",
+           title="Computer shortcuts / that *save clicks*", head=("to…", "Windows · Mac"),
+           rows=[("Reopen a closed tab", "Ctrl+Shift+T · ⌘+Shift+T"), ("Snip part of the screen", "Win+Shift+S · ⌘+Shift+4"),
+                 ("Switch apps", "Alt+Tab · ⌘+Tab"), ("Open any app", "Win, type · ⌘+Space"),
+                 ("Your last 25 copies", "Win+V · Windows only")],
+           do="Close a tab by mistake today? Press *Ctrl+Shift+T.* It comes back.",
+           save="send this to the friend who clicks everything",
+           src="Microsoft: clipboard history (Win+V, 25 items), Snipping Tool (Win+Shift+S) · Apple: screenshots (⌘+Shift+4), Spotlight (⌘+Space) · Chrome, Edge, Firefox, Safari: reopen tab."),
+      "Computer shortcuts that save clicks 💻\n\n"
+      "Reopen a tab you just closed: Ctrl+Shift+T (Windows) or Command+Shift+T (Mac).\n"
+      "Screenshot just part of the screen: Windows+Shift+S, or Command+Shift+4.\n"
+      "Jump between open apps: Alt+Tab, or Command+Tab.\n"
+      "Open any app or file: press the Windows key and type, or Command+Space and type.\n"
+      "See the last 25 things you copied: Windows+V (turn it on the first time). Windows only.\n\n"
+      "Do this: next time you close a tab by mistake, press Ctrl+Shift+T. It comes right back.\n\n"
+      f"Send this to the friend who clicks everything.\n\n{TAGS} #keyboardshortcuts #windows #mac",
+      "Which one did you not know? Sources: Microsoft, 'Clipboard history' (Windows logo key + V, turn on the first time, up to 25 "
+      "items); Microsoft Snipping Tool (Windows logo key + Shift + S); Apple, 'Take a screenshot on your Mac' (Command-Shift-4) and "
+      "Spotlight (Command-Space); Online Tech Tips, reopen closed tab: Ctrl+Shift+T on Windows (Chrome, Edge, Firefox), "
+      "Command+Shift+T on Mac (Chrome, Safari, Firefox).")
+
+# ---------------------------------------------------------------- Oct 25 19:00 · voice typing commands (part 2 of 2)
+cheat("hb-cheat-1025-voice-words", "2026-10-25T19:00",
+      dict(brand=HB, field="plum", track="hb-x-ta-da-funk",
+           title="Talk-to-text: / the *magic words*", head=("say…", "you get"),
+           rows=[("“comma”", ","), ("“period”", "."), ("“question mark”", "?"), ("“new line”", "a new line"),
+                 ("“new paragraph”", "a blank line")],
+           do="Next text, tap the *mic* and say *“question mark”* out loud.",
+           save="send this to the slowest texter you know",
+           src="Apple Support, Commands for dictating text (comma, period, question mark, new line, new paragraph). Android's Gboard voice typing has similar commands."),
+      "Talk-to-text: the magic words 🎙️ Part 2 of 2.\n\n"
+      "Say \"comma\" and you get a comma.\nSay \"period\" for a full stop.\nSay \"question mark\" for a question mark.\n"
+      "Say \"new line\" to start a new line.\nSay \"new paragraph\" for a blank line.\n\n"
+      "Newer iPhones add a lot of punctuation on their own, and these words fill the gaps.\n\n"
+      "Do this: next text, tap the mic on your keyboard and say \"question mark\" out loud. Then read it once before you send.\n\n"
+      f"Send this to the slowest texter you know.\n\n{TAGS} #voicetyping #iphonetips #texting",
+      "Which word will you use most? Source: Apple Support, 'Commands for dictating text' (comma, period, question mark, "
+      "exclamation mark, new line, new paragraph). Android's Gboard voice typing supports similar spoken punctuation; menus vary by phone.")
+
 
 def add_to_schedule(path):
     import json

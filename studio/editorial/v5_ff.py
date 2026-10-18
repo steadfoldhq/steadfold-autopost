@@ -372,6 +372,133 @@ chain("ff-ch-1023", FF, "2026-10-23", "ff22", "money foundations · part 6", [  
 ])
 
 
+# ================================================================== Oct 24 (Story chain day; 12:00 = ff-1024-paycheque-trail, the page's interactive)
+# Facts checked Oct 18 pm. EI sickness 2026: 55% of average insurable weekly earnings, max $729/week, up to 26 weeks (canada.ca).
+# Ontario estate administration tax: $0 on the first $50,000, $15 per $1,000 above; RRSP/RRIF/TFSA with a beneficiary designation
+# and life insurance paid to a named beneficiary are left out of the estate value (ontario.ca).
+EI_MAX = 729
+EI_SHARE_80K = EI_MAX / (80000 / 52)          # 0.47 -> "less than half"
+assert EI_SHARE_80K < 0.5
+EAT_100K = (100000 - 50000) // 1000 * 15      # 750
+assert EAT_100K == 750
+
+reel("ff-reel-1024am-sick-pay-gap", FF, "2026-10-24T08:15", "deep", "ff-x-level-up", "check this before you need it", [
+    dict(k="hook", f="cob", text="Too sick to work / for months? / *Here's what EI pays.*", emo="🩺"),
+    dict(k="say", f="lite", text="EI sickness pays / *55%* of your pay, / up to *$729 a week.*", size=112),
+    dict(k="say", f="coral", text="Earn *$80,000?* / That's *less than* / *half* your pay.", size=112),
+    dict(k="because", f="deep", kicker="the part nobody tells you",
+         text="After 26 weeks, it stops. That's what *disability insurance* is for.", size=104, drop=True),
+    dict(k="do", f="lite", text="This week, ask HR: do I have *long-term disability,* and what does it pay?", size=92, chars=18),
+    dict(k="save", f="cob", text="Send this to / the friend who / says “I'm healthy.”"),
+], f"Too sick to work for months? Here's what EI pays.\n\n"
+   f"EI sickness benefits pay 55% of your average weekly earnings, up to ${EI_MAX} a week in 2026, for up to 26 weeks. Earn $80,000 "
+   f"a year and that's less than half your usual pay. After 26 weeks, EI sickness stops.\n\n"
+   f"The part nobody tells you: some illnesses and injuries keep people off work much longer. Disability insurance replaces part of "
+   f"your pay while you can't work. Many people have some through work (group long-term disability), but don't know how much.\n\n"
+   f"Do this: this week, ask HR or check your benefits booklet: do I have long-term disability, how much does it pay, and for how long?\n\n"
+   f"Send this to the friend who says \"I'm healthy.\"\n\n#disabilityinsurance #EI #personalfinancecanada #insurance #moneyfoundations",
+   "Source: canada.ca, 'EI sickness benefits: How much you could receive': 55% of your average insurable weekly earnings, up to a "
+   "maximum of $729 a week in 2026, for up to 26 weeks. Maths: $80,000 ÷ 52 ≈ $1,538 a week; $729 is about 47% of that. "
+   "Education, not advice: talk to a licensed advisor about your own coverage.")
+
+chain("ff-ch-1024", FF, "2026-10-24", "ff19", "money foundations", [
+    dict(k="photo", text="“Payday! / Where does it / *all go?*”", sub="start with *stop 1* →", ink="dark", y=560),
+    dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
+        ("in", "payday was friday. it's *already gone* 😩"), ("out", "did any of it go to *you* first?"), ("in", "…like, savings?")]),
+    dict(k="bubbles", f="cob", label="here's the order", bubbles=[
+        ("out", "1. a month of bills in *savings*"), ("out", "2. any *work match* on savings"), ("out", "3. then your *TFSA*")],
+         obj="phone"),
+    dict(k="payoff", f="coral", label="the trick", text="Make it / *automatic.*", sub="it moves on payday, before you can spend it",
+         obj="piggy"),
+    dict(k="handoff", f="lite", text="Payday. Where should / *the money go first?*", img="ff-1024-paycheque-trail/01.jpg",
+         next="follow the trail"),
+])
+
+reel("ff-reel-1024-beneficiary", FF, "2026-10-24T19:00", "deep", "ff-x-money-moves", "check this tonight", [
+    dict(k="hook", f="cob", text="Your TFSA has / a blank line. / *Fill it in.*", emo="📝"),
+    dict(k="say", f="lite", text="It asks who gets / the money *if you die.* / It's called a / *beneficiary.*", size=108),
+    dict(k="because", f="coral", kicker="here's why it matters",
+         text="With a name there, the money goes *straight to them,* outside your estate.", size=108),
+    dict(k="num", f="deep", label="Ontario estate tax on $100,000:", value=EAT_100K, pre="$", suf="a named beneficiary skips it",
+         size=220, drop=True),
+    dict(k="do", f="lite", text="Tonight, log in to your bank and check who's named on your *TFSA* and *RRSP.*", size=96, chars=18),
+    dict(k="save", f="cob", text="Send this to / your partner."),
+], f"Your TFSA has a blank line. Fill it in.\n\n"
+   f"When you open a TFSA or RRSP, it asks who gets the money if you die. That person is your beneficiary (for a spouse on a TFSA, "
+   f"it can be a \"successor holder\").\n\n"
+   f"Why it matters: with a name there, the money can go straight to that person, outside your estate. In Ontario, the estate "
+   f"administration tax is $15 for every $1,000 over $50,000, so $100,000 going through the estate costs about ${EAT_100K}. "
+   f"Money paid to a named beneficiary isn't counted. It's also usually faster.\n\n"
+   f"Do this: tonight, log in to your bank and check who's named on your TFSA and RRSP. Moved in with someone, had a baby, "
+   f"or split up since you opened it? Update it.\n\n"
+   f"Rules differ by province (in Quebec, most designations go in your will). Send this to your partner.\n\n"
+   f"#beneficiary #TFSA #RRSP #estateplanning #moneyfoundations",
+   "Source: ontario.ca, 'Estate Administration Tax': no tax on the first $50,000, $15 per $1,000 (or part) above it; RRSPs, RRIFs "
+   "and TFSAs with a beneficiary designation, and life insurance paid to a named beneficiary, are not included in the estate's value. "
+   f"Maths: ($100,000 − $50,000) ÷ 1,000 × $15 = ${EAT_100K}. General information, not legal or tax advice.")
+
+
+# ================================================================== Oct 25 (day B: quiz; 08:15 = ff-pan-1025am-paycheque-trail)
+# TFSA: room since 2009 = $109,000 for someone 18+ and resident since 2009; withdrawals come back January 1 of the next year;
+# excess contributions are taxed 1% a month (CRA rules, summarised by TD).
+TFSA_LIMITS = {2009: 5000, 2010: 5000, 2011: 5000, 2012: 5000, 2013: 5500, 2014: 5500, 2015: 10000, 2016: 5500, 2017: 5500,
+               2018: 5500, 2019: 6000, 2020: 6000, 2021: 6000, 2022: 6000, 2023: 6500, 2024: 7000, 2025: 7000, 2026: 7000}
+TFSA_TOTAL = sum(TFSA_LIMITS.values())
+assert TFSA_TOTAL == 109000
+SRC_TFSA = ("Sources: CRA TFSA dollar limits 2009 to 2026 (total $109,000 if you were 18 or older and a resident of Canada since "
+            "2009); TD, 'TFSA contribution room and withdrawal rules': withdrawals are added back to your room the following year "
+            "(January 1); over-contributions are taxed 1% per month on the highest excess amount, for every month it stays in. "
+            "Your exact room is in CRA My Account (as of January 1, so subtract this year's deposits). Education, not tax advice.")
+
+post("ff-1025-tfsa-room", FF, "2026-10-25T12:00", "learning",
+     dict(lay="pills", f="coral", kicker="money foundations · part 7", text="Your TFSA room / could be / *$109,000*", obj="point", at="bl",
+          save="if you were 18 by 2009"),
+     [dict(k="rows", f="lite", text="How it *adds up*", cap="TFSA room, CRA limits",
+           rows=[("18 by 2009?", "$109,000 total"), ("New room in 2026", "$7,000"), ("Never used it?", "still all there")],
+           src="CRA TFSA limits, 2009 to 2026"),
+      dict(k="say", f="coral", label="the part nobody tells you", text="Put in *too much,* / and the CRA / charges *1%* / every month.",
+           sub="on the extra, until it comes out"),
+      dict(k="do", f="cob", text="Before your next deposit, check your *TFSA room* in CRA My Account.",
+           size=96, save="send this to the friend who just opened a TFSA")],
+     f"Your TFSA room could be ${TFSA_TOTAL:,}.\n\n"
+     f"If you were 18 or older in 2009 and have lived in Canada since, every year's limit has added up: ${TFSA_TOTAL:,} by 2026. "
+     f"Unused room never expires. It just waits for you.\n\n"
+     f"The part nobody tells you: put in more than your room, and the CRA charges 1% a month on the extra, every month it stays in. "
+     f"The number in CRA My Account is as of January 1, so subtract anything you've already put in this year.\n\n"
+     f"Do this: before your next deposit, check your TFSA room in CRA My Account.\n\n"
+     f"Money Foundations, Part 7. Tonight at 7: the withdrawal trap.\n\n"
+     f"Send this to the friend who just opened a TFSA.\n\n#TFSA #personalfinancecanada #CRA #investingcanada #moneyfoundations",
+     SRC_TFSA)
+
+chain("ff-ch-1025", FF, "2026-10-25", "ff22", "money foundations · part 7", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="lite", label="quick quiz", title="Total TFSA room / *since 2009…*", bubbles=[
+        ("in", "if you were 18 in 2009?"), ("out", "A) about $70,000"), ("out", "B) about $109,000")], tap="guess, then tap →"),
+    dict(k="payoff", f="coral", label="the answer: B", text="*$109,000*", sub="if you've never put a dollar in", obj="ok",
+         tap="source: CRA limits · tap →"),
+    dict(k="payoff", f="cob", label="why it matters", text="Unused room / *never expires.*", sub="it waits for you", obj="piggy",
+         tap="next story →"),
+    dict(k="handoff", f="lite", text="Your TFSA room / could be *$109,000*", img="ff-1025-tfsa-room/01.jpg", next="tonight: the withdrawal trap"),
+])
+
+reel("ff-reel-1025-tfsa-withdrawal-trap", FF, "2026-10-25T19:00", "deep", "ff-x-big-reveal", "save this before you withdraw", [
+    dict(k="hook", f="cob", text="Took money out / of your TFSA? / *Don't rush it back.*", emo="⚠️"),
+    dict(k="say", f="lite", text="You take out / *$5,000* in March. / You put it back / in *June.*", size=112),
+    dict(k="because", f="coral", kicker="here's the trap",
+         text="The room from a withdrawal comes back on *January 1.* Not the same year.", size=108),
+    dict(k="say", f="deep", text="No room left? / The CRA charges / *1% a month* / on the extra.", size=112, drop=True),
+    dict(k="do", f="lite", text="Before you put money back, check your *room* in CRA My Account.", size=96, chars=18),
+    dict(k="save", f="cob", text="Send this to / your TFSA friend."),
+], "Took money out of your TFSA? Don't rush it back in.\n\n"
+   "You take out $5,000 in March and put it back in June. Feels harmless. But the room from a withdrawal only comes back on "
+   "January 1 of the next year. If you had no other room left, that $5,000 is an over-contribution, and the CRA charges 1% a month "
+   "on it until it's out.\n\n"
+   "Do this: before you put money back, check your room in CRA My Account (it shows your room as of January 1). Moving money "
+   "between banks? Ask for a direct transfer, which doesn't count as a withdrawal.\n\n"
+   "Send this to your TFSA friend.\n\n#TFSA #personalfinancecanada #CRA #taxtips #moneyfoundations",
+   SRC_TFSA + " Direct transfers between your own TFSAs at different institutions are not withdrawals (CRA).",
+   series="TFSA · part 2/2")
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): size each Oct 19-21 slide to its longest line,
 # so forced line breaks never re-wrap (one line on screen = one line in the source).
 def _fit_sizes(brand, em=0.47, cap=136, floor=88):
@@ -385,7 +512,7 @@ def _fit_sizes(brand, em=0.47, cap=136, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-25"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

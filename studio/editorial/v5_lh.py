@@ -380,6 +380,134 @@ reel("lh-reel-1023-caffeine", LH, "2026-10-23T19:00", "keep", "lh-x-phone-down",
    SRC_CAFF)
 
 
+# ================================================================== Oct 24 (Story chain day; 12:30 = lh-1024-reveal-47-seconds in v5_formats)
+# Facts checked Oct 18 pm. Avoided: Ariely & Wertenbroch 2002 (deadlines) - retracted in 2026 for data problems.
+SRC_FLOSS = ("Source: Judah, Gardner & Aunger (2013), Forming a flossing habit: an exploratory study of the psychological determinants "
+             "of habit formation, British Journal of Health Psychology 18(2). 50 people were randomly asked to floss before or after "
+             "brushing; the after-brushing group built stronger flossing habits (automaticity), and still did at 8 months.")
+SRC_LYRICS = ("Source: Perham & Currie (2014), Does listening to preferred music improve reading comprehension performance?, Applied "
+              "Cognitive Psychology 28(2). 30 students read and answered questions in quiet, with instrumental music, or with lyrical "
+              "music they liked or disliked. Lyrical music, liked or not, gave significantly worse scores than quiet; instrumental "
+              "music was not significantly different from quiet. A small study.")
+SRC_MARK = ("Source: Gloria Mark (UC Irvine), Attention Span (2023), and UC Newsroom (2024), 'How to sharpen your attention': attention "
+            "on a single screen averaged about two and a half minutes in her 2004 study (2003 data) and 47 seconds in studies from "
+            "2016 to 2020.")
+
+reel("lh-reel-1024am-floss-after", LH, "2026-10-24T08:30", "learning", "lh-x-tick-boom", "save this for your next new habit", [
+    dict(k="hook", f="cream", text="Floss *before* / or *after* / brushing?", emo="🪥"),
+    dict(k="say", f="pink", text="Researchers asked / 50 people to floss, / *before* or *after* / brushing."),
+    dict(k="because", f="dots", kicker="the result", text="The *after* group built the stronger habit. Still true 8 months later.",
+         drop=True),
+    dict(k="say", f="cream", text="Brushing became / the *reminder.*"),
+    dict(k="do", f="pink", text="Tonight, floss *right after* you brush. Same spot, every night."),
+    dict(k="save", f="cream", text="Send this to the friend / who never flosses."),
+], "Floss before or after brushing? For building the habit, it matters.\n\n"
+   "Why it works: researchers asked 50 people to floss every day, either just before or just after brushing. The \"after\" group built "
+   "the stronger habit, and they still had it 8 months later. Brushing became the reminder for flossing. It's called habit stacking: "
+   "you hang a new habit on one you already do.\n\n"
+   "Do this: tonight, floss right after you brush. Same spot, every night. Then try the same trick with any habit you keep forgetting.\n\n"
+   "Send this to the friend who never flosses.\n\n#habits #habitstacking #selfimprovement #productivity #behaviorchange",
+   SRC_FLOSS)
+
+chain("lh-ch-1024", LH, "2026-10-24", "lh18", "focus science", [
+    dict(k="photo", text="“I'll just check / *one thing.*”", sub="45 minutes later… →", ink="light", y=1150),
+    dict(k="bubbles", f="cream", label="sound familiar?", bubbles=[
+        ("in", "opened my laptop to send *one email*"), ("out", "and?"), ("in", "45 min later I'm on *tab 14*")]),
+    dict(k="bubbles", f="pink", label="the research", bubbles=[
+        ("out", "a researcher timed how long we stay on *one screen*"), ("out", "in 2004: about *2.5 minutes*"),
+        ("in", "and now??")], obj="clock"),
+    dict(k="payoff", f="dots", label="guess first", text="It's *way* / shorter.", sub="the answer is in today's post", obj="hourglass"),
+    dict(k="handoff", f="dots", text="*2.5 minutes* / then. Now?", img="lh-1024-reveal-47-seconds/01.jpg", next="swipe to reveal"),
+])
+
+reel("lh-reel-1024-lyrics", LH, "2026-10-24T19:00", "suggestion", "lh-x-lock-in", "save this for your next study session", [
+    dict(k="hook", f="pink", text="Studying with / *your playlist* / on?", emo="🎧"),
+    dict(k="say", f="cream", text="Researchers tested / reading while / people listened / to music."),
+    dict(k="because", f="dots", kicker="the result", text="Songs *with words* lowered scores. Even songs people *liked.*", drop=True),
+    dict(k="say", f="pink", text="Music *without* / words did about / as well as *quiet.*"),
+    dict(k="do", f="cream", text="For your next focus hour, switch to music *without words,* or none."),
+    dict(k="save", f="pink", text="Send this to / your study buddy."),
+], "Studying with your playlist on? Check the words.\n\n"
+   "Why it works: in a study, students read and answered questions in quiet, with instrumental music, or with songs with lyrics. "
+   "Songs with words lowered their scores, even songs they liked. Music without words did about as well as quiet. Your brain tries to "
+   "follow the lyrics and the page at the same time.\n\n"
+   "The honest part: it was a small study (30 students), about reading. But it's an easy switch.\n\n"
+   "Do this: for your next focus hour, switch to music without words, or none.\n\n"
+   "Send this to your study buddy.\n\n#studytips #focus #studymusic #productivity #deepwork",
+   SRC_LYRICS)
+
+
+# ================================================================== Oct 25 (day B: quiz · Reels carry the planning lesson, part 1 -> 2)
+SRC_PLAN = ("Source: Buehler, Griffin & Ross (1994), Exploring the 'planning fallacy': why people underestimate their task completion "
+            "times, Journal of Personality and Social Psychology 67(3). 37 students predicted their senior thesis would take 33.9 days "
+            "on average (48.6 days if everything went as poorly as possible); it took 55.5 days. About 30% finished in the time "
+            "they predicted.")
+SRC_UNPACK = ("Sources: Kruger & Evans (2004), If you don't want to be late, enumerate: unpacking reduces the planning fallacy, Journal "
+              "of Experimental Social Psychology 40. Listing a task's parts before predicting led to longer, less optimistic estimates; "
+              "it works less well for tasks with few parts (as summarised by Wiese, Buehler & Griffin, 2016, Judgment and Decision Making).")
+SRC_PROGRESS = ("Source: Amabile & Kramer, The Progress Principle (Harvard Business Review Press, 2011) and HBS Working Knowledge: "
+                "238 people at 7 companies filled in about 12,000 daily diaries; making progress in meaningful work, even a small win, "
+                "was by far the most common event on people's best days, and setbacks on their worst.")
+
+reel("lh-reel-1025am-planning-fallacy", LH, "2026-10-25T08:30", "learning", "lh-x-tick-boom", "save this before you plan your week", [
+    dict(k="hook", f="dots", text="Why does / *everything* / take longer?", emo="⏳"),
+    dict(k="say", f="cream", text="Students guessed / their thesis would / take *34 days.*"),
+    dict(k="because", f="pink", kicker="the result", text="It took *56 days.* Even their worst case was too short.", drop=True),
+    dict(k="say", f="dots", text="It's called the / *planning fallacy.*"),
+    dict(k="do", f="cream", text="Today, add *half again* to your next time guess."),
+    dict(k="save", f="pink", text="Send this to / your “quick” friend.", next="part 2 tonight: the fix"),
+], "Why does everything take longer than you think?\n\n"
+   "Why it happens: students guessed their thesis would take 34 days. It took 56, on average. Even their worst-case guess, 49 days, "
+   "was too short. It's called the planning fallacy: we picture the day where everything goes right, not a real one.\n\n"
+   "Do this: today, add half again to your next time guess. Think 2 hours? Plan 3.\n\n"
+   "Send this to the friend who says \"it'll be quick.\" Part 2 tonight at 7: the fix that's backed by research.\n\n"
+   "#planning #productivity #timemanagement #focus #procrastination",
+   SRC_PLAN, series="Planning · part 1/2")
+
+chain("lh-ch-1025", LH, "2026-10-25", "lh22", "focus science", [  # day B: guess-and-reveal quiz
+    dict(k="bubbles", f="cream", label="quick quiz", title="On people's / *best* work days…", bubbles=[
+        ("in", "what mattered most?"), ("out", "A) praise from the boss"), ("out", "B) making *progress*")],
+         obj="clock", tap="guess, then tap →"),
+    dict(k="payoff", f="pink", label="the answer: B", text="*Progress*", sub="even a small win", obj="clock",
+         tap="source: Amabile & Kramer, 12,000 diaries · tap →"),
+    dict(k="payoff", f="dots", label="why it matters", text="Seeing it / *keeps you going.*", sub="so write it down",
+         obj="hourglass", tap="next story →"),
+    dict(k="handoff", f="dots", text="Felt like you / did *nothing?*", img="lh-1025-done-list/01.jpg", next="save it for Friday"),
+])
+
+post("lh-1025-done-list", LH, "2026-10-25T12:30", "learning",
+     dict(lay="sticky", f="cream", kicker="focus science", text="Felt like you / did *nothing* / this week?", obj="clock", at="br",
+          items=["The diary study", "What mattered most", "The fix"], save="save this"),
+     [dict(k="say", f="pink", label="a real study", text="238 people wrote / a *work diary* / every day. About / *12,000* entries."),
+      dict(k="say", f="dots", text="Their best days / had one thing / in common: / *progress.*", sub="even a small win counted",
+           src="Amabile & Kramer, The Progress Principle, 2011"),
+      dict(k="do", f="cream", text="Tonight, write down *3 things you finished* this week. Small ones count.",
+           save="send this to the friend who feels behind")],
+     "Felt like you did nothing this week? You probably did more than you think.\n\n"
+     "Why it works: Harvard researchers had 238 people write a short diary every workday, about 12,000 entries in all. On people's "
+     "best days, one thing showed up far more than anything else: making progress on work that mattered, even a small win. On their "
+     "worst days: setbacks. A to-do list only shows what's left. A done list shows the progress.\n\n"
+     "Do this: tonight, write down 3 things you finished this week. Small ones count. Then do it every Friday.\n\n"
+     "Send this to the friend who feels behind.\n\n#productivity #motivation #worklife #focus #smallwins",
+     SRC_PROGRESS)
+
+reel("lh-reel-1025-unpack", LH, "2026-10-25T19:00", "suggestion", "lh-x-lock-in", "save this for Monday", [
+    dict(k="hook", f="cream", text="Your *“quick”* task / isn't quick.", emo="📝"),
+    dict(k="say", f="pink", text="Before you guess / how long, *list* / *every step.*"),
+    dict(k="because", f="dots", kicker="the research", text="People who *listed the steps* guessed more realistic times.",
+         drop=True),
+    dict(k="say", f="cream", text="Best for tasks / with *lots of parts.*"),
+    dict(k="do", f="pink", text="Tonight, write the *steps* of Monday's biggest task. Then guess the time."),
+    dict(k="save", f="cream", text="Send this to / your Monday / planner friend.", next="planning · part 2/2"),
+], "Your \"quick\" task isn't quick. Here's the fix.\n\n"
+   "Why it works: in a study, people who listed every step of a task before guessing how long it would take made longer, more "
+   "realistic guesses. Hidden steps are where the time goes. It works best for tasks with lots of parts, like moving, a report, "
+   "or getting the kids out the door.\n\n"
+   "Do this: tonight, take Monday's biggest task, write down its steps, then guess the time.\n\n"
+   "Send this to your Monday planner friend. Part 2 of 2.\n\n#planning #productivity #timemanagement #focus #mondaymotivation",
+   SRC_UNPACK, series="Planning · part 2/2")
+
+
 # ------------------------------------------------------------------ AIR PASS (Oct 18 am): rewrap lines over 19 characters.
 def _fit_sizes(brand, em=0.33, cap=160, floor=88):
     """AIR PASS: keep the hand-written line breaks and pick each slide's size so its longest line fits the 920px text box
@@ -392,7 +520,7 @@ def _fit_sizes(brand, em=0.33, cap=160, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in POSTS.items():
-        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"):
+        if _sp["brand"] != brand or META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-25"):
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):

@@ -375,6 +375,189 @@ hpost("hb-1022-brain-dump", HB, "2026-10-22T17:45", "keep",
       f"{PRIV}")
 
 
+# ================================================================== Oct 23-25 (built Oct 18 pm). Facts checked Oct 18 (sources in each first comment).
+# Themes alternate post to post: Oct 22 ended plum (19:00 cheat) -> Oct 23 starts indi.
+# Oct 23 = quiz day (Reels carry it: photo search part 1 -> duplicates part 2), Oct 24 = Story chain day, Oct 25 = quiz day.
+
+# ------------------------------------------------------------------ Oct 23 (quiz day)
+reel("hb-reel-1023am-photo-search", HB, "2026-10-23T08:45", "deep", "hb-x-future-easy", "stop scrolling for it", [
+    dict(k="hook", f="indi", text="Scrolling for / *one photo.* / Again.", emo="📸"),
+    dict(k="say", f="yel", text="The parking spot. / The receipt. / Somewhere in / *4,000 photos.*"),
+    dict(k="because", f="indi", kicker="here's the swap", text="Your phone already knows *what's in* your photos."),
+    dict(k="list", f="yel", items=["Type *receipt*", "Type *dog*", "Type *passport*"], size=120, drop=True),
+    dict(k="say", f="indi", text="It can even find / *words* inside / a photo."),
+    dict(k="do", f="yel", text="Open Photos, tap *Search,* and type one word: *receipt.*"),
+    dict(k="save", f="indi", text="send this to / the friend with / 9,000 photos", next="part 2 tonight: storage full?"),
+], "Scrolling for one photo. Again. The parking spot, the receipt, somewhere in 4,000 photos.\n\n"
+   "The swap: search your photos by what's in them. Your phone already recognises things like receipts, dogs and documents, and it "
+   "can find words written inside a photo too.\n\n"
+   "Do this (iPhone): open Photos, tap Search (the magnifying glass at the bottom in iOS 26), and type one word, like \"receipt\".\n"
+   "Android: open Google Photos, tap Search, and type the same.\n\n"
+   "Where not to trust it: it can miss a photo, so if it's not there, scroll the date you think it was taken.\n\n"
+   f"Send this to the friend with 9,000 photos. Part 2 tonight at 7: storage full?\n\n{HBTAGS} #iphonephotos #googlephotos",
+   "Sources: Apple iPhone User Guide, 'Search for photos and videos in Photos'; SwitchingToMac, 'How to search photos on iPhone (iOS 26)': "
+   "Search has its own tab in iOS 26 and matches against an on-device index of recognised faces, places, objects and text in images.",
+   series="Photo time-savers · part 1/2")
+
+hchain("hb-ch-1023", HB, "2026-10-23", "hb19", "hourback · quick quiz", [
+    dict(k="bubbles", f="plum", label="quick quiz", title="Find the receipt / photo *fast.*", bubbles=[
+        ("in", "what's quicker?"), ("out", "A) scroll back by date"), ("out", "B) type *receipt* in Search")], tap="guess, then tap →"),
+    dict(k="payoff", f="orng", label="the answer: B", text="Type / *“receipt.”*", sub="Photos knows what's in your pictures", obj="phone",
+         tap="source: Apple · tap →"),
+    dict(k="payoff", f="plum", label="it even reads", text="Words *inside* / a photo.", sub="signs, labels, screenshots", obj="point",
+         tap="next story →"),
+    dict(k="handoff", f="orng", label="today's swap", text="Expired licence? / *Get a reminder.*", img="hb-1023-renewal-reminders/01.jpg",
+         next="tonight: storage full?"),
+])
+
+hpost("hb-1023-renewal-reminders", HB, "2026-10-23T13:00", "keep",
+      dict(lay="pills", f="plum", kicker="hourback · ontario", text="“Your licence / expired / *last month.*”", obj="point", at="bl",
+           save="Ontario has a free fix"),
+      [dict(k="say", f="orng", label="sound familiar?", size=126,
+            text="Licence. Health card. / Plate. Photo card. / Each one expires / *on its own date.*"),
+       dict(k="rows", f="plum", text="The *free* reminder", cap="ServiceOntario · Ontario only",
+            rows=[("You pick", "email, text or call"), ("First one", "60 days before"), ("Second one", "30 days before")]),
+       dict(k="do", f="orng", text="Today, search *ServiceOntario renewal reminders* and sign up. Have your licence and health card handy.",
+            save="send this to your Ontario friends")],
+      "\"Your licence expired last month.\" Not what you want to hear at the counter.\n\n"
+      "The swap: ServiceOntario's free renewal reminders. Sign up once and get an email, text or phone call 60 days and 30 days before "
+      "your driver's licence, health card, licence plate or Ontario Photo Card expires.\n\n"
+      "Do this: search \"ServiceOntario renewal reminders\" (ontario.ca) and sign up. Have your licence, health card and plate number "
+      "handy, and make sure your address is up to date first.\n\n"
+      "Outside Ontario? Check your province's website for the same kind of reminder.\n\n"
+      f"Send this to your Ontario friends.\n\n{HBTAGS} #ontario #serviceontario #lifeadmin",
+      "Source: ontario.ca, 'Get ServiceOntario renewal reminders': free reminders by email, text or phone call for licence plates, "
+      "driver's licences, health cards and Ontario Photo Cards, 60 and 30 days before expiry (plus one 30 days after, if not renewed).")
+
+reel("hb-reel-1023-duplicates", HB, "2026-10-23T19:00", "deep", "hb-x-smart-bounce", "free up space tonight", [
+    dict(k="hook", f="plum", text="*“Storage full.”* / Again.", emo="📱"),
+    dict(k="say", f="orng", text="And some of it / is the *same photo,* / saved twice."),
+    dict(k="because", f="plum", kicker="here's the swap", text="Photos gathers your *duplicates* into one album for you."),
+    dict(k="list", f="orng", items=["Collections", "Utilities", "*Duplicates*"], size=120, drop=True),
+    dict(k="say", f="plum", text="Tap *Merge.* / It keeps the / *best copy.*"),
+    dict(k="do", f="orng", text="Tonight: Photos → Collections → Utilities → *Duplicates* → Merge."),
+    dict(k="save", f="plum", text="send this to / whoever's phone / is always full", next="photo time-savers · part 2/2"),
+], "\"Storage full.\" Again. And some of it is the same photo, saved twice.\n\n"
+   "The swap: your iPhone's Photos app gathers duplicates into one album. Tap Merge and it keeps the best-quality copy, with the "
+   "details from both. The extra copies go to Recently Deleted, so you can still get them back for a while.\n\n"
+   "Do this (iPhone, iOS 16 or later): Photos → Collections → Utilities → Duplicates → Merge.\n\n"
+   "Where not to trust it: some pairs are only near-copies. Look before you merge those.\n\n"
+   f"Send this to whoever's phone is always full. Part 2 of 2.\n\n{HBTAGS} #iphonestorage #iphonephotos",
+   "Sources: Technobezz, 'How to remove duplicate photos on iPhone' (Photos → Collections → Utilities → Duplicates; needs iOS 16 or "
+   "later; Merge keeps the best-quality copy and relevant metadata, others go to Recently Deleted); Cult of Mac (merging only exact "
+   "copies vs all selected).",
+   series="Photo time-savers · part 2/2")
+
+# ------------------------------------------------------------------ Oct 24 (Story chain day)
+hchain("hb-ch-1024", HB, "2026-10-24", "hb21", "hourback · the swap", [
+    dict(k="photo", text="“Leaving now!” / typed at a / *red light.*", sub="there's a safer way →", ink="light", y=560),
+    dict(k="bubbles", f="indi", label="sound familiar?", bubbles=[
+        ("in", "where are you??"), ("out", "5 min!"), ("in", "you said that *20 min ago*")], obj="phone"),
+    dict(k="bubbles", f="yel", label="the swap", bubbles=[
+        ("out", "start directions in Maps"), ("out", "tap *Share ETA*"), ("in", "so I can see you coming?"),
+        ("out", "yes. it *updates* if I'm late")]),
+    dict(k="payoff", f="indi", label="the catch", text="Do it / *before* / you drive.", sub="in Ontario, a red light still counts",
+         obj="point", tap="next story →"),
+    dict(k="handoff", f="yel", label="today's swap", text="Stop texting / *“5 more minutes.”*", img="hb-1024-share-eta/01.jpg",
+         next="tonight: dinner from the fridge"),
+])
+
+hpost("hb-1024-share-eta", HB, "2026-10-24T13:00", "keep",
+      dict(lay="pills", f="indi", kicker="hourback · the swap", text="Stop texting / *“5 more* / *minutes.”*", obj="phone", at="br",
+           save="your map can do it"),
+      [dict(k="say", f="yel", label="the swap", size=126,
+            text="Start directions. / Tap *Share ETA.* / They see when / you'll *really* arrive.", sub="it updates if you're running late"),
+       dict(k="rows", f="indi", text="Where to *find it*", cap="tap it before you pull out",
+            rows=[("iPhone", "Maps · Share ETA"), ("Android", "Google Maps · Share trip")]),
+       dict(k="do", f="yel", text="Next drive, tap *Share ETA* before you pull out. Pick the person waiting.",
+            save="send this to the friend who's always 5 minutes away")],
+      "\"Where are you?\" \"5 minutes!\" (It was not 5 minutes.)\n\n"
+      "The swap: share your arrival time from your map app. They see when you'll really get there, and it updates if traffic slows "
+      "you down. Sharing stops on its own when you arrive.\n\n"
+      "Do this: start directions, then tap Share ETA (Apple Maps) or tap the trip card → Share trip progress (Google Maps), and pick "
+      "the person waiting.\n\n"
+      "The catch: set it up before you drive. In Ontario, holding your phone is illegal even when you're stopped at a red light.\n\n"
+      f"Send this to the friend who's always 5 minutes away.\n\n{HBTAGS} #applemaps #googlemaps #commute",
+      "Sources: Popular Science, 'How to share your ETA in Google Maps or Apple Maps' (Share ETA ends automatically on arrival; "
+      "Google Maps: tap the bottom card → Share trip progress); Apple iPhone User Guide, 'Share your ETA in Maps'; ontario.ca, "
+      "'What counts as distracted driving' (applies when stopped in traffic or at a red light; $615 fine for a first conviction "
+      "settled out of court).")
+
+reel("hb-reel-1024-fridge-dinner", HB, "2026-10-24T19:00", "deep", "hb-x-smart-bounce", "dinner, sorted", [
+    dict(k="hook", f="indi", text="6 pm. / Full fridge. / *Nothing* for dinner.", emo="🥕"),
+    dict(k="say", f="yel", text="Half a pepper. / Three eggs. / Some *spinach.*"),
+    dict(k="because", f="indi", kicker="here's where AI helps", text="Snap the fridge. AI suggests *dinners* from what's really there."),
+    dict(k="list", f="yel", items=["Spinach omelette · *10 min*", "Pepper fried eggs · *15 min*"], size=96, drop=True),
+    dict(k="say", f="indi", text="But it *can't tell* / if food's gone off, / and it can / *misread* a label."),
+    dict(k="do", f="yel", text="Tonight, photo your fridge, ask AI for *3 dinners,* and tell it any allergies."),
+    dict(k="save", f="indi", text="send this to / whoever cooks / tonight"),
+], "6 pm. Full fridge. Nothing for dinner.\n\n"
+   "Where AI helps: take a photo of your fridge and ask a chat AI for 3 dinners using what's in it. Half a pepper, three eggs and "
+   "some spinach become an omelette in 10 minutes.\n\n"
+   "Where not to trust it: it can't tell if food has gone off, and it can misread what it sees. Check dates yourself, and always "
+   "tell it about allergies.\n\n"
+   "Do this: tonight, photo your fridge, ask AI for 3 dinners, and say any allergies.\n\n"
+   f"Send this to whoever cooks tonight.\n\n{MADE}\n\n{HBTAGS} #mealideas #aitips #dinnerideas",
+   "The fridge and dinner ideas in this Reel are made up for this post. Chat AIs that accept photos can misidentify foods and can't "
+   "judge freshness or food safety: when in doubt, throw it out.")
+
+# ------------------------------------------------------------------ Oct 25 (quiz day)
+reel("hb-reel-1025am-talk-dont-type", HB, "2026-10-25T08:45", "deep", "hb-x-future-easy", "save your thumbs", [
+    dict(k="hook", f="plum", text="Long text? / *Stop typing it.*", emo="🎙️"),
+    dict(k="say", f="orng", text="Stanford tested / *talking* vs *typing* / on a phone."),
+    dict(k="because", f="plum", kicker="the result", text="Talking was about *3 times faster,* with fewer mistakes.", drop=True),
+    dict(k="say", f="orng", text="Tap the *mic* / on your keyboard. / Just talk."),
+    dict(k="say", f="plum", text="Check *names* / and *numbers* / before you send."),
+    dict(k="do", f="orng", text="Next long message, tap the *mic* on your keyboard and say it."),
+    dict(k="save", f="plum", text="send this to / the slowest texter / you know", next="part 2 tonight: the magic words"),
+], "Long text? Stop typing it.\n\n"
+   "Stanford researchers tested talking against typing on a phone. Talking was about 3 times faster in English, with about 20% "
+   "fewer errors.\n\n"
+   "The swap: tap the microphone on your keyboard and just say it.\n\n"
+   "Where not to trust it: names, numbers and addresses come out wrong the most. Read it once before you send.\n\n"
+   "Do this: next long message, tap the mic and talk.\n\n"
+   f"Send this to the slowest texter you know. Part 2 tonight at 7: the words that add punctuation.\n\n{HBTAGS} #voicetyping #texting",
+   "Source: Stanford News (Aug 24, 2016), 'Smartphone speech recognition can write text messages three times faster than human "
+   "typing': 32 people aged 19 to 32; speech was about 3x faster than typing in English with a 20.4% lower error rate (Ruan, "
+   "Wobbrock, Liou, Ng & Landay, with Baidu).",
+   series="Talk, don't type · part 1/2")
+
+hchain("hb-ch-1025", HB, "2026-10-25", "hb20", "hourback · quick quiz", [
+    dict(k="bubbles", f="indi", label="quick quiz", title="Family Sharing / on your iPhone?", bubbles=[
+        ("in", "you already have…"), ("out", "A) nothing extra"), ("out", "B) a shared *Family* calendar")], tap="guess, then tap →"),
+    dict(k="payoff", f="yel", label="the answer: B", text="A *Family* / calendar", sub="made for you, on everyone's iPhone", obj="phone",
+         tap="source: Apple · tap →"),
+    dict(k="payoff", f="indi", label="so use it", text="Who's driving / *to hockey?*", sub="add it once, everyone sees it", obj="point",
+         tap="next story →"),
+    dict(k="handoff", f="yel", label="today's swap", text="“Wait, *who's* / *driving?*”", img="hb-1025-family-calendar/01.jpg",
+         next="tonight: the magic words"),
+])
+
+hpost("hb-1025-family-calendar", HB, "2026-10-25T13:00", "keep",
+      dict(lay="pills", f="indi", kicker="hourback · the swap", text="“Wait, *who's* / *driving* / to hockey?”", obj="chat", at="bl",
+           save="one calendar fixes it"),
+      [dict(k="say", f="yel", label="sound familiar?", size=126,
+            text="Dentist. Hockey. / Grandma's birthday. / All in *one* / person's head."),
+       dict(k="say", f="indi", label="the swap", size=126,
+            text="One *shared* / calendar. / Add it once, / *everyone* sees it.", sub="your phone may have made one already"),
+       dict(k="rows", f="yel", text="Where to *find it*", cap="made when you set up a family group",
+            rows=[("iPhone", "Calendar · Family"), ("Android", "Google Calendar · Family")]),
+       dict(k="do", f="indi", text="Tonight, add *this week's* plans to the Family calendar. Then tell everyone to look there.",
+            save="send this to your family group chat")],
+      "Dentist, hockey, grandma's birthday: all in one person's head.\n\n"
+      "The swap: one shared calendar the whole house can see. Add a plan once and it shows up on everyone's phone.\n\n"
+      "You may already have one. On iPhone, Family Sharing creates a shared calendar called Family. On Google, creating a family "
+      "group creates a Family calendar too.\n\n"
+      "Do this: tonight, add this week's plans to the Family calendar, then tell everyone to check there before they ask.\n\n"
+      f"Send this to your family group chat.\n\n{HBTAGS} #familycalendar #momlife #familylife",
+      "Sources: Apple Family Sharing guide ('a shared calendar called Family is automatically created in the Calendar app'); Google "
+      "Calendar Help, 'Use a family calendar on Google' ('When you create a family on Google, a calendar called \"Family\" is "
+      "automatically created').")
+
+# ------------------------------------------------------------------ AIR PASS for Oct 23-25 (same rule as below)
+_NEW_DAYS = ("2026-10-23", "2026-10-24", "2026-10-25")
+
+
 # ================================================================== retired ids (Oct 18 am rebuild: "it has to be really Hourback")
 for _old in ("hb-reel-1019am-just-the-asks", "hb-w02-8-12-automations-kickoff", "hb-1019-single-homework", "hb-reel-1019-one-sorry",
              "hb-reel-1020am-driveway-text", "hb-1020-prompt-week-01", "hb-1020-single-error-code", "hb-reel-1020-three-tabs",
@@ -402,7 +585,7 @@ def _fit_sizes(brand, em=0.39, cap=140, floor=88):
         return len(_re.sub(r"\*", "", s)) + 2 * len(_re.findall(r"[\U0001F300-\U0001FAFF]", s))
 
     for _pid, _sp in _POSTS.items():
-        if _sp["brand"] != brand or _META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22"):
+        if _sp["brand"] != brand or _META[_pid]["at"][:10] not in ("2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22") + _NEW_DAYS:
             continue
         for _s in _sp["slides"]:
             if _s.get("k") in ("do", "rows", "steps"):
