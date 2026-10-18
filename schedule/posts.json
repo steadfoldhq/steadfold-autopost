@@ -2334,6 +2334,16 @@
       "cover": "reels/hb-cheat-1022-travel-admin-cover.jpg"
     },
     {
+      "id": "lf-reel-1022-ccb-at-birth",
+      "account": "littlefold",
+      "publish_at": "2026-10-22T19:00:00-04:00",
+      "caption": "New baby in Ontario? One click can start your Canada Child Benefit.\n\nWhen you register the birth online with ServiceOntario's Newborn Registration Service, choose the option \"Canada child benefits\". With your OK, your information goes straight to the CRA, so there's no separate form. Then don't apply again: the CRA already has it.\n\nWhy it matters: the benefit can be up to $8,157 a year for a child under 6 (July 2026 to June 2027, less as family income rises).\n\nDo this: have the main caregiver's SIN ready when you register the birth. The main caregiver is the parent who applies.\n\nSend this to someone expecting a baby.\n\n#newparents #canadachildbenefit #ontarioparents #babymoney #expectingparents",
+      "first_comment": "Source: CRA (canada.ca), RC4476-ON, Birth Registration and Canada Child Benefits (Ontario): register online with ServiceOntario's Newborn Registration Service and choose the option 'Canada child benefits'; with your consent your information goes to the CRA, and you should not re-apply through CRA My Account or Form RC66. The primary caregiver applies and gives their SIN. Maximum CCB, July 2026 to June 2027: up to $8,157 a year per child under 6 (canada.ca; income-tested).",
+      "alt_text": "Edited video in the Littlefold editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: New baby in Ontario? One click starts your Child Benefit. / Register the birth online, and tick Canada child benefits. / because Your info goes straight to the CRA. No extra form. / Then don't apply again. / Do this: Have the main caregiver's SIN ready when you register. / send this to someone expecting. It loops back to the opening line.",
+      "video": "reels/lf-reel-1022-ccb-at-birth.mp4",
+      "cover": "reels/lf-reel-1022-ccb-at-birth-cover.jpg"
+    },
+    {
       "id": "lh-reel-1022-walk",
       "account": "lockedhour",
       "publish_at": "2026-10-22T19:00:00-04:00",
@@ -2502,6 +2512,16 @@
       "story": true,
       "image": "stories/lh-ch-1023-4.jpg",
       "caption": "Story chain lh-ch-1023 frame 4: A 40-second break that works."
+    },
+    {
+      "id": "ff-reel-1023-cpp-60-or-70",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T19:00:00-04:00",
+      "caption": "Take CPP at 60, or wait until 70?\n\nStart at 60, and your cheque is up to 36% smaller, for life. Wait until 70, and it's up to 42% bigger, every month, for life. At the 2026 maximum, that's about $1,508 a month at 65, or about $2,140 at 70.\n\nThe honest part: waiting isn't right for everyone. Your health, your savings and when you stop working all matter.\n\nDo this: tonight, check your CPP estimate in My Service Canada Account.\n\nSend this to your parents. Seriously.\n\n#CPP #retirementcanada #retirementplanning #personalfinancecanada #moneyfoundations",
+      "first_comment": "Sources (canada.ca): Canada Pension Plan, Pensions and benefits monthly amounts: retirement pension at 65, average for new beneficiaries $858.34 a month, 2026 maximum $1,507.65 a month. When to start your pension: payments decrease 0.6% each month before 65 (up to 36% at 60) and increase 0.7% each month after 65 (up to 42% at 70). The CPP is designed to replace part of your earnings, not all of them. Education, not advice. Maths: $1,507.65 × 1.42 ≈ $2,140 (shown rounded down; the pension is also indexed to inflation).",
+      "alt_text": "Edited video in the Fully Funded editorial look: big serif lines on soft paper colours with highlighted words, a halftone cut-out and the round stamp, cut on the music. Text: Take CPP at 60, or wait until 70? / Start at 60, and your cheque is up to 36% smaller. For life. / because Wait until 70, and it's up to 42% bigger. Every month, for life. / the 2026 max at 70: $2,140 / Do this: Tonight, check your CPP estimate in My Service Canada Account. / Send this to your parents. Seriously.. It loops back to the opening line.",
+      "video": "reels/ff-reel-1023-cpp-60-or-70.mp4",
+      "cover": "reels/ff-reel-1023-cpp-60-or-70-cover.jpg"
     },
     {
       "id": "lf-cheat-1023-resp-catch-up",
