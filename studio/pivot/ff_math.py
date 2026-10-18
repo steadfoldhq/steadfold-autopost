@@ -63,6 +63,11 @@ FIG["split_ra"] = r(2000 * 6000 / 10000)
 FIG["split_rb"] = 2000 - FIG["split_ra"]
 FIG["gift_n"], FIG["gift_each"] = 14, 25
 
+# ---- ONE-READ rewrite (Oct 17 night): Money Foundations ---------------------------------------------------------------
+FIG["snow_y1"] = r(grow(10000, 1) - 10000, 100)                     # $10,000 invested at 30: interest earned in year 1 (10%)
+FIG["snow_y30"] = r(grow(10000, 30) - grow(10000, 29), 100)         # ... interest earned in year 30 alone (age 59 -> 60)
+FIG["s_gap_r"] = r(FIG["s_gap"], 1000)                              # start-28 vs start-33 gap, rounded for the screen
+
 
 if __name__ == "__main__":
     for k, v in FIG.items():
