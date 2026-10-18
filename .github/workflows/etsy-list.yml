@@ -47,7 +47,15 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq age
           pip install -r requirements.txt
       - name: Tests
-        run: python -m unittest discover -s tests -q
+        run: |
+          set +e
+          python -m unittest discover -s tests -q > tests.out 2>&1
+          rc=$?
+          tail -3 tests.out
+          if [ $rc -ne 0 ]; then
+            grep -E "^(FAIL|ERROR):|Error:|Error\b" tests.out | head -25 | while IFS= read -r l; do echo "::error::$l"; done
+          fi
+          exit $rc
       - name: List on Etsy
         env:
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
