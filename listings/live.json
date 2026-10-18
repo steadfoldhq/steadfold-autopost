@@ -1,4 +1,12 @@
 {
-  "listings": {},
+  "listings": {
+    "DP-CALM-P": {
+      "listing_id": 4598245397,
+      "url": "https://www.etsy.com/listing/4598245397/2027-planner-printable-weekly-planner",
+      "shop": "SteadfoldHQ",
+      "listed_at": "2026-10-18T21:12:49+00:00",
+      "price": "CAD 22.00"
+    }
+  },
   "drafts": {}
 }
