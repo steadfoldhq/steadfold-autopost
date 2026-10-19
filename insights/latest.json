@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-19T16:39:31+00:00",
+ "collected_at": "2026-10-19T20:36:43+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -14,14 +14,14 @@
      "permalink": "https://www.instagram.com/p/DerpUHalDaN/",
      "at": "2026-10-19T16:05:04+0000",
      "first_line": "The cheap coat can cost you 5 times more. And the difference can grow into something big.",
-     "likes": 0,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 1
+      "views": 5,
+      "reach": 3,
+      "saved": 2,
+      "shares": 3,
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -31,16 +31,16 @@
      "permalink": "https://www.instagram.com/reel/DerQykME3y_/",
      "at": "2026-10-19T12:31:01+0000",
      "first_line": "New baby, new mortgage: which life insurance? Here's the difference in plain words.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 7,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 4059,
-      "ig_reels_video_view_total_time": 28417
+      "views": 20,
+      "reach": 13,
+      "saved": 2,
+      "shares": 3,
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 3312,
+      "ig_reels_video_view_total_time": 46373
      },
      "comments": []
     },
@@ -53,13 +53,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 89,
-      "reach": 67,
+      "views": 90,
+      "reach": 70,
       "saved": 4,
       "shares": 0,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 4226,
-      "ig_reels_video_view_total_time": 304332
+      "ig_reels_avg_watch_time": 4089,
+      "ig_reels_video_view_total_time": 306710
      },
      "comments": []
     },
@@ -73,7 +73,7 @@
      "comments_count": 1,
      "insights": {
       "views": 34,
-      "reach": 10,
+      "reach": 11,
       "saved": 3,
       "shares": 0,
       "total_interactions": 10
@@ -90,7 +90,7 @@
      "comments_count": 1,
      "insights": {
       "views": 31,
-      "reach": 9,
+      "reach": 10,
       "saved": 2,
       "shares": 0,
       "total_interactions": 10
@@ -345,14 +345,14 @@
      "permalink": "https://www.instagram.com/p/Ders-B3FqRL/",
      "at": "2026-10-19T16:36:51+0000",
      "first_line": "One sentence more than doubled how many people exercised. Here's the sentence, and how to write yours.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
-      "saved": 0,
+      "views": 6,
+      "reach": 1,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 1
+      "total_interactions": 4
      },
      "comments": []
     },
@@ -362,16 +362,16 @@
      "permalink": "https://www.instagram.com/reel/DerWMK6jbvK/",
      "at": "2026-10-19T13:18:34+0000",
      "first_line": "Every ping costs you more than time. Here's the 2-minute setup that fixes it, and why it works.",
-     "likes": 0,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 3,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1404,
-      "ig_reels_video_view_total_time": 4212
+      "views": 14,
+      "reach": 9,
+      "saved": 2,
+      "shares": 4,
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 3596,
+      "ig_reels_video_view_total_time": 35962
      },
      "comments": []
     },
@@ -384,13 +384,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 20,
+      "views": 30,
+      "reach": 21,
       "saved": 2,
       "shares": 0,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4413,
-      "ig_reels_video_view_total_time": 101506
+      "ig_reels_avg_watch_time": 4237,
+      "ig_reels_video_view_total_time": 105932
      },
      "comments": []
     },
@@ -403,7 +403,7 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 25,
+      "views": 26,
       "reach": 9,
       "saved": 4,
       "shares": 0,
@@ -420,7 +420,7 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 22,
+      "views": 23,
       "reach": 7,
       "saved": 2,
       "shares": 0,
@@ -437,13 +437,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 52,
+      "views": 53,
       "reach": 44,
       "saved": 3,
-      "shares": 1,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 2395,
-      "ig_reels_video_view_total_time": 105394
+      "shares": 5,
+      "total_interactions": 17,
+      "ig_reels_avg_watch_time": 2405,
+      "ig_reels_video_view_total_time": 108264
      },
      "comments": []
     },
@@ -456,13 +456,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 42,
+      "views": 43,
       "reach": 35,
       "saved": 2,
-      "shares": 0,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 2160,
-      "ig_reels_video_view_total_time": 82089
+      "shares": 4,
+      "total_interactions": 16,
+      "ig_reels_avg_watch_time": 2169,
+      "ig_reels_video_view_total_time": 84629
      },
      "comments": []
     },
@@ -475,11 +475,11 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 12,
+      "views": 13,
       "reach": 7,
-      "saved": 1,
-      "shares": 0,
-      "total_interactions": 10
+      "saved": 2,
+      "shares": 4,
+      "total_interactions": 16
      },
      "comments": []
     },
@@ -492,11 +492,11 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 23,
+      "views": 24,
       "reach": 6,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 12
+      "shares": 4,
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -509,13 +509,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 66,
+      "views": 67,
       "reach": 54,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 5012,
-      "ig_reels_video_view_total_time": 270699
+      "shares": 4,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 4971,
+      "ig_reels_video_view_total_time": 273409
      },
      "comments": []
     },
@@ -528,13 +528,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 144,
+      "views": 145,
       "reach": 116,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3266,
-      "ig_reels_video_view_total_time": 405061
+      "shares": 4,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 3259,
+      "ig_reels_video_view_total_time": 407406
      },
      "comments": []
     },
@@ -547,11 +547,11 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 36,
+      "views": 38,
       "reach": 17,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 12
+      "shares": 4,
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -564,11 +564,11 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 31,
+      "views": 33,
       "reach": 12,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 11
+      "shares": 4,
+      "total_interactions": 16
      },
      "comments": []
     },
@@ -581,13 +581,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 24,
+      "views": 26,
       "reach": 15,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 6512,
-      "ig_reels_video_view_total_time": 123729
+      "shares": 4,
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 6303,
+      "ig_reels_video_view_total_time": 126063
      },
      "comments": []
     },
@@ -600,13 +600,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 68,
+      "views": 69,
       "reach": 55,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 4133,
-      "ig_reels_video_view_total_time": 272836
+      "shares": 4,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 4202,
+      "ig_reels_video_view_total_time": 281581
      },
      "comments": []
     },
@@ -619,11 +619,11 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 35,
+      "views": 37,
       "reach": 12,
       "saved": 3,
-      "shares": 3,
-      "total_interactions": 17
+      "shares": 7,
+      "total_interactions": 22
      },
      "comments": []
     },
@@ -636,11 +636,11 @@
      "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 50,
+      "views": 52,
       "reach": 16,
       "saved": 3,
-      "shares": 3,
-      "total_interactions": 16
+      "shares": 7,
+      "total_interactions": 21
      },
      "comments": []
     },
@@ -653,11 +653,11 @@
      "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 69,
+      "views": 72,
       "reach": 14,
       "saved": 3,
-      "shares": 4,
-      "total_interactions": 17
+      "shares": 8,
+      "total_interactions": 22
      },
      "comments": []
     },
@@ -670,11 +670,11 @@
      "likes": 7,
      "comments_count": 2,
      "insights": {
-      "views": 61,
+      "views": 63,
       "reach": 17,
       "saved": 3,
-      "shares": 3,
-      "total_interactions": 18
+      "shares": 7,
+      "total_interactions": 23
      },
      "comments": []
     }
@@ -685,24 +685,41 @@
    "username": "hourbackhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 17,
+   "media_count": 18,
    "posts": [
+    {
+     "media_id": "17957676168247744",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DerxZ5-IM10/",
+     "at": "2026-10-19T17:15:36+0000",
+     "first_line": "AI stopped talking. It started doing.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 4,
+      "reach": 2,
+      "saved": 1,
+      "shares": 4,
+      "total_interactions": 8
+     },
+     "comments": []
+    },
     {
      "media_id": "18152236141546556",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/DerWUqKDfHu/",
      "at": "2026-10-19T13:19:25+0000",
      "first_line": "Skip the CRA hold music 🇨🇦",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "views": 5,
+      "reach": 3,
+      "saved": 1,
+      "shares": 4,
+      "total_interactions": 8,
+      "ig_reels_avg_watch_time": 5814,
+      "ig_reels_video_view_total_time": 17444
      },
      "comments": []
     },
@@ -715,13 +732,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 29,
+      "views": 31,
       "reach": 21,
       "saved": 3,
       "shares": 0,
       "total_interactions": 15,
-      "ig_reels_avg_watch_time": 2780,
-      "ig_reels_video_view_total_time": 61163
+      "ig_reels_avg_watch_time": 2904,
+      "ig_reels_video_view_total_time": 66814
      },
      "comments": []
     },
@@ -731,14 +748,14 @@
      "permalink": "https://www.instagram.com/p/DeprixxAQMt/",
      "at": "2026-10-18T21:46:05+0000",
      "first_line": "Everything you paste into an AI chat leaves your phone.",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 16,
+      "views": 20,
       "reach": 8,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 10
+      "shares": 7,
+      "total_interactions": 18
      },
      "comments": []
     },
@@ -748,14 +765,14 @@
      "permalink": "https://www.instagram.com/p/DepM7_XmgdP/",
      "at": "2026-10-18T17:18:38+0000",
      "first_line": "Same price as last year doesn't mean nothing changed.",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 27,
+      "views": 31,
       "reach": 7,
-      "saved": 2,
-      "shares": 0,
-      "total_interactions": 8
+      "saved": 3,
+      "shares": 7,
+      "total_interactions": 19
      },
      "comments": []
     },
@@ -765,16 +782,16 @@
      "permalink": "https://www.instagram.com/reel/Deot88CEkZk/",
      "at": "2026-10-18T12:48:17+0000",
      "first_line": "147 unread messages in the family chat, and one of them is your job.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 34,
+      "views": 36,
       "reach": 17,
-      "saved": 2,
-      "shares": 1,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 4431,
-      "ig_reels_video_view_total_time": 88631
+      "saved": 3,
+      "shares": 5,
+      "total_interactions": 17,
+      "ig_reels_avg_watch_time": 4740,
+      "ig_reels_video_view_total_time": 99551
      },
      "comments": []
     },
@@ -784,16 +801,16 @@
      "permalink": "https://www.instagram.com/reel/DenPW2-iWOq/",
      "at": "2026-10-17T23:01:34+0000",
      "first_line": "Plan tomorrow in one prompt after 7 pm, then close the laptop.",
-     "likes": 7,
+     "likes": 8,
      "comments_count": 1,
      "insights": {
-      "views": 89,
+      "views": 90,
       "reach": 67,
-      "saved": 3,
-      "shares": 1,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 4155,
-      "ig_reels_video_view_total_time": 307510
+      "saved": 4,
+      "shares": 5,
+      "total_interactions": 23,
+      "ig_reels_avg_watch_time": 4165,
+      "ig_reels_video_view_total_time": 312414
      },
      "comments": []
     },
@@ -806,11 +823,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 20,
+      "views": 23,
       "reach": 6,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 15
+      "shares": 4,
+      "total_interactions": 19
      },
      "comments": []
     },
@@ -823,11 +840,11 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 20,
+      "views": 22,
       "reach": 6,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 13
+      "shares": 4,
+      "total_interactions": 18
      },
      "comments": []
     },
@@ -840,13 +857,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 77,
+      "views": 78,
       "reach": 61,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3816,
-      "ig_reels_video_view_total_time": 259526
+      "shares": 4,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 3796,
+      "ig_reels_video_view_total_time": 261971
      },
      "comments": []
     },
@@ -859,13 +876,13 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 31,
-      "reach": 17,
+      "views": 33,
+      "reach": 18,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 6329,
-      "ig_reels_video_view_total_time": 151899
+      "shares": 4,
+      "total_interactions": 20,
+      "ig_reels_avg_watch_time": 5950,
+      "ig_reels_video_view_total_time": 154711
      },
      "comments": []
     },
@@ -878,11 +895,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 23,
+      "views": 25,
       "reach": 7,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 14
+      "shares": 4,
+      "total_interactions": 19
      },
      "comments": []
     },
@@ -895,11 +912,11 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 28,
+      "views": 29,
       "reach": 7,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 13
+      "shares": 4,
+      "total_interactions": 18
      },
      "comments": []
     },
@@ -912,13 +929,13 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 32,
+      "views": 33,
       "reach": 13,
       "saved": 4,
-      "shares": 1,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 9011,
-      "ig_reels_video_view_total_time": 171220
+      "shares": 5,
+      "total_interactions": 21,
+      "ig_reels_avg_watch_time": 8690,
+      "ig_reels_video_view_total_time": 173804
      },
      "comments": []
     },
@@ -931,13 +948,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 32,
+      "views": 34,
       "reach": 20,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 14,
-      "ig_reels_avg_watch_time": 4130,
-      "ig_reels_video_view_total_time": 107402
+      "shares": 4,
+      "total_interactions": 19,
+      "ig_reels_avg_watch_time": 4206,
+      "ig_reels_video_view_total_time": 113577
      },
      "comments": []
     },
@@ -950,11 +967,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 25,
+      "views": 28,
       "reach": 8,
       "saved": 4,
-      "shares": 1,
-      "total_interactions": 15
+      "shares": 5,
+      "total_interactions": 20
      },
      "comments": []
     },
@@ -967,11 +984,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 43,
+      "views": 49,
       "reach": 9,
       "saved": 4,
-      "shares": 4,
-      "total_interactions": 18
+      "shares": 8,
+      "total_interactions": 23
      },
      "comments": []
     },
@@ -984,11 +1001,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 42,
+      "views": 44,
       "reach": 9,
       "saved": 3,
-      "shares": 4,
-      "total_interactions": 17
+      "shares": 8,
+      "total_interactions": 22
      },
      "comments": []
     }
@@ -1007,14 +1024,14 @@
      "permalink": "https://www.instagram.com/p/DerpGRllPVP/",
      "at": "2026-10-19T16:03:11+0000",
      "first_line": "Up to $2,000 for your child's education, and you don't have to put in a cent. Part 2 of baby money.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 1
+      "views": 10,
+      "reach": 2,
+      "saved": 1,
+      "shares": 4,
+      "total_interactions": 8
      },
      "comments": []
     },
@@ -1024,16 +1041,16 @@
      "permalink": "https://www.instagram.com/reel/DerQqDnjOHM/",
      "at": "2026-10-19T12:30:13+0000",
      "first_line": "Your newborn is talking to you long before they cry. Here's how to hear it.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 137,
-      "reach": 130,
-      "saved": 0,
-      "shares": 1,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 6343,
-      "ig_reels_video_view_total_time": 818342
+      "views": 141,
+      "reach": 133,
+      "saved": 1,
+      "shares": 5,
+      "total_interactions": 9,
+      "ig_reels_avg_watch_time": 6476,
+      "ig_reels_video_view_total_time": 854962
      },
      "comments": []
     },
@@ -1046,13 +1063,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 125,
+      "views": 126,
       "reach": 117,
       "saved": 2,
-      "shares": 0,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 1531,
-      "ig_reels_video_view_total_time": 182195
+      "shares": 4,
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 1548,
+      "ig_reels_video_view_total_time": 185791
      },
      "comments": []
     },
@@ -1065,11 +1082,11 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 24,
+      "views": 26,
       "reach": 11,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 11
+      "shares": 4,
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -1082,11 +1099,11 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 16,
+      "views": 18,
       "reach": 7,
-      "saved": 1,
-      "shares": 0,
-      "total_interactions": 10
+      "saved": 2,
+      "shares": 4,
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -1099,13 +1116,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 157,
+      "views": 158,
       "reach": 144,
-      "saved": 2,
-      "shares": 1,
-      "total_interactions": 14,
-      "ig_reels_avg_watch_time": 1915,
-      "ig_reels_video_view_total_time": 277736
+      "saved": 3,
+      "shares": 5,
+      "total_interactions": 19,
+      "ig_reels_avg_watch_time": 1929,
+      "ig_reels_video_view_total_time": 281752
      },
      "comments": []
     },
@@ -1118,13 +1135,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 149,
+      "views": 150,
       "reach": 135,
-      "saved": 2,
-      "shares": 0,
-      "total_interactions": 12,
-      "ig_reels_avg_watch_time": 1953,
-      "ig_reels_video_view_total_time": 267571
+      "saved": 3,
+      "shares": 4,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 1962,
+      "ig_reels_video_view_total_time": 270775
      },
      "comments": []
     },
@@ -1134,14 +1151,14 @@
      "permalink": "https://www.instagram.com/p/DenCDtDAfUM/",
      "at": "2026-10-17T21:05:06+0000",
      "first_line": "Someone else has the baby? Lie down, even for 20 minutes.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 18,
+      "views": 21,
       "reach": 7,
-      "saved": 2,
-      "shares": 0,
-      "total_interactions": 10
+      "saved": 3,
+      "shares": 4,
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -1154,11 +1171,11 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 22,
+      "views": 25,
       "reach": 7,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 13
+      "shares": 4,
+      "total_interactions": 18
      },
      "comments": []
     },
@@ -1171,13 +1188,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 34,
+      "views": 35,
       "reach": 25,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 14,
-      "ig_reels_avg_watch_time": 5060,
-      "ig_reels_video_view_total_time": 156861
+      "shares": 4,
+      "total_interactions": 19,
+      "ig_reels_avg_watch_time": 5039,
+      "ig_reels_video_view_total_time": 161277
      },
      "comments": []
     },
@@ -1190,13 +1207,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 81,
+      "views": 82,
       "reach": 65,
       "saved": 3,
-      "shares": 1,
-      "total_interactions": 14,
-      "ig_reels_avg_watch_time": 3561,
-      "ig_reels_video_view_total_time": 242159
+      "shares": 5,
+      "total_interactions": 19,
+      "ig_reels_avg_watch_time": 3555,
+      "ig_reels_video_view_total_time": 245299
      },
      "comments": []
     },
@@ -1209,11 +1226,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 23,
+      "views": 25,
       "reach": 8,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 14
+      "shares": 4,
+      "total_interactions": 19
      },
      "comments": []
     },
@@ -1226,11 +1243,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 30,
+      "views": 32,
       "reach": 8,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 12
+      "shares": 4,
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -1243,13 +1260,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 108,
+      "views": 109,
       "reach": 93,
       "saved": 3,
-      "shares": 0,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 3114,
-      "ig_reels_video_view_total_time": 305207
+      "shares": 4,
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 3124,
+      "ig_reels_video_view_total_time": 309295
      },
      "comments": []
     },
@@ -1262,13 +1279,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 127,
+      "views": 128,
       "reach": 113,
       "saved": 4,
-      "shares": 0,
-      "total_interactions": 12,
-      "ig_reels_avg_watch_time": 1810,
-      "ig_reels_video_view_total_time": 208203
+      "shares": 4,
+      "total_interactions": 17,
+      "ig_reels_avg_watch_time": 1818,
+      "ig_reels_video_view_total_time": 210954
      },
      "comments": []
     },
@@ -1281,11 +1298,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 21,
+      "views": 22,
       "reach": 8,
       "saved": 3,
-      "shares": 2,
-      "total_interactions": 14
+      "shares": 6,
+      "total_interactions": 19
      },
      "comments": []
     }
