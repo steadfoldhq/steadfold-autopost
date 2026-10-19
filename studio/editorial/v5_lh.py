@@ -46,6 +46,9 @@ SRC_FRESH = ("Source: Dai, Milkman & Riis (2014), The Fresh Start Effect: Tempor
 SRC_MILNE = ("Sources: Milne, Orbell & Sheeran (2002), British Journal of Health Psychology 7(2), 248 people over 2 weeks: 91% of the "
              "group that wrote down day, time and place exercised, versus under 40% in the other groups. "
              "Gollwitzer & Sheeran (2006), meta-analysis of 94 tests of if-then plans, Advances in Experimental Social Psychology 38.")
+SRC_LALLY = ("Lally, van Jaarsveld, Potts & Wardle (2010), How are habits formed, European Journal of Social Psychology 40(6): "
+             "96 people, median 66 days to automaticity (range 18 to an estimated 254); missing one opportunity did not materially "
+             "affect the process.")
 SRC_WARD = ("Source: Ward, Duke, Gneezy & Bos (2017), Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available "
             "Cognitive Capacity, Journal of the Association for Consumer Research 2(2). About 800 people. Phone in another room "
             "scored best, phone on the desk worst, whether it was on or off. Later replications found mixed results.")
@@ -54,8 +57,12 @@ SRC_WARD = ("Source: Ward, Duke, Gneezy & Bos (2017), Brain Drain: The Mere Pres
 post("lh-w2-05-restart", LH, "2026-10-18T12:30", "learning",
      dict(lay="sticky", f="pink", kicker="lock-in week · day 1/3", text="“I'll start Monday.” / *Science agrees.*", obj="clock", at="br",
           items=["Why Mondays work", "What a gym study found", "How to use tomorrow"], save="save this"),
-     [dict(k="why", f="dots", label="what researchers found", text="At one university gym, / visits *jumped* / *by a third* / every Monday.",
-           sub="a new week feels like a new chapter", src="Dai, Milkman & Riis, Management Science, 2014"),
+     [dict(k="say", f="cream", label="sound familiar?", text="You planned a great week. / By Wednesday, it was *gone.* / Now you're waiting / for Monday.",
+           sub="turns out, that's not lazy →"),
+      dict(k="why", f="dots", label="what researchers found", text="At one university gym, / visits *jumped by a third* / every Monday.",
+           sub="it went up after birthdays, too", src="Dai, Milkman & Riis, Management Science, 2014"),
+      dict(k="say", f="pink", label="why it happens", text="A new week feels like / *a new chapter.* / Last week's mess / belongs to the old one.",
+           sub="it's called the fresh start effect"),
       dict(k="say", f="cream", label="how to use it", text="Don't plan / a whole new life. / Plan *one hour* / for Monday. That's it."),
       dict(k="do", f="dots", text="Tonight, open your calendar / and book *one hour tomorrow* / for the thing you keep putting off.",
            save="send this to your “I'll start Monday” friend")],
@@ -67,31 +74,58 @@ post("lh-w2-05-restart", LH, "2026-10-18T12:30", "learning",
      "Send this to the friend who always starts on Monday.\n\n#productivity #habits #focus #freshstart #selfimprovement",
      SRC_FRESH)
 
+# DEPTH rewrite (Oct 18, 22:00): the full method (the study, the exact sentence, how to make it specific, plan B for bad
+# days, the 94-study backing) and the rule that stays: "Decide once. Then just go."
 post("lh-1019-one-sentence", LH, "2026-10-19T12:30", "deep",
      dict(lay="sticky", f="cream", kicker="lock-in week · day 2/3", text="One sentence got / *twice as many people* / to exercise", obj="clock", at="br",
-          items=["The sentence", "The result", "Your version"], save="slide 2 has the sentence"),
-     [dict(k="say", f="pink", label="the study", text="People were asked / to exercise more. / One group also / filled in *one sentence:*",
-           sub="“I'll exercise on [day] at [time] in [place].”"),
-      dict(k="say", f="cream", label="the result", text="Of the people / who wrote it, / this many exercised:", num="91%",
-           sub="the other groups? under 4 in 10", src="Milne, Orbell & Sheeran, British Journal of Health Psychology, 2002"),
-      dict(k="do", f="dots", text="Fill in yours: “I'll work on ___ at ___ in ___.” Then *put it in your calendar.*",
+          items=["The study", "The sentence", "Your version", "Plan B"], save="swipe for it"),
+     [dict(k="say", f="pink", label="the study", text="248 people in the UK / wanted to exercise more. / One group got / *one extra step.*",
+           sub="here's what it was →"),
+      dict(k="say", f="dots", label="the extra step", text="They filled in / one sentence: / “I'll exercise on *[day]* / at *[time]* in *[place].*”",
+           sub="no pep talk. just that."),
+      dict(k="say", f="cream", text="Two weeks later, / of the people / who wrote it:", num="91%", sub="the other groups? under 4 in 10",
+           src="Milne, Orbell & Sheeran, British Journal of Health Psychology, 2002"),
+      dict(k="why", f="pink", text="You decide *once,* / ahead of time. / When the moment comes, / you *just go.*",
+           sub="no new decision to fight. it held across 94 tests.", src="Gollwitzer & Sheeran, 2006"),
+      dict(k="steps", f="dots", text="Write yours / *like this*",
+           items=["Pick ONE task", "Name the exact time and place", "Copy it into your calendar"]),
+      dict(k="say", f="cream", label="make it specific", text="Not *“I'll study* / *this week.”* / Try: *“Tuesday, 7 pm,* / *kitchen table,* / *chapter 4.”*",
+           sub="vague plans don't fire"),
+      dict(k="say", f="pink", label="plan B for bad days", text="Add one if-then: / *“If I'm too tired at 7,* / *I'll do just* / *10 minutes.”*",
+           sub="a small win still counts"),
+      dict(k="say", f="dots", label="picture this", text="Week 1: you *just go.* / Month 1: no more / debating with yourself. / Month 2: *it's automatic.*",
+           src="Lally et al., 2010: about 66 days on average", sub="the rule: decide once. then just go."),
+      dict(k="do", f="cream", text="Tonight, write: “I'll work on ___ on ___ at ___ in ___.” Put it in your calendar *with an alarm.*",
            save="send this to your “someday” friend")],
-     "One sentence more than doubled how many people exercised.\n\n"
-     "Why it works: in a UK study, people were asked to exercise more for two weeks. One group also filled in a sentence: \"I'll exercise on "
-     "[day] at [time] in [place].\" 91% of them exercised. In the other groups, fewer than 4 in 10 did. When you decide when and where ahead of "
-     "time, there's nothing left to decide in the moment. You just go. Across 94 studies, plans like this helped people reach their goals.\n\n"
-     "Do this: write one sentence for this week, \"I'll work on ___ at ___ in ___,\" and put it in your calendar.\n\n"
+     "One sentence more than doubled how many people exercised. Here's the sentence, and how to write yours.\n\n"
+     "THE STUDY: 248 people in the UK were asked to exercise more over two weeks. One group did one extra thing: they filled in a sentence, "
+     "\"I'll exercise on [day] at [time] in [place].\" Two weeks later, 91% of them had exercised. In the other groups, fewer than 4 in 10 had.\n\n"
+     "WHY IT WORKS: you make the decision once, ahead of time. When Tuesday at 7 comes, there's nothing to decide and nothing to argue with. "
+     "The time and place become the trigger, so you just go. Researchers call these if-then plans, and across 94 tests they clearly helped "
+     "people reach their goals.\n\n"
+     "HOW TO WRITE YOURS:\n"
+     "1. Pick ONE task. Not \"get my life together\". \"Chapter 4\" or \"the budget sheet\".\n"
+     "2. Name the exact time: \"Tuesday, 7 pm\", not \"this week\".\n"
+     "3. Name the exact place: \"kitchen table\", not \"at home\".\n"
+     "4. Put it in your calendar with an alarm, using the same words.\n\n"
+     "PLAN B FOR BAD DAYS: add one more if-then for the thing that usually stops you. \"If I'm too tired at 7, I'll do just 10 minutes.\" "
+     "\"If the kids are still up, I'll start at 8:30.\" A small win still counts, and it keeps the habit alive.\n\n"
+     "The rule that stays: decide once, then just go.\n\n"
+     "WHAT TO EXPECT: the first week, you still have to remember. Then the time and place start doing the remembering for you. "
+     "In a study of 96 people building a daily habit, it took about 66 days on average to feel automatic (anywhere from 18 to 254). "
+     "Missing one day didn't undo it.\n\n"
+     "Do this: tonight, write \"I'll work on ___ on ___ at ___ in ___,\" and put it in your calendar with an alarm.\n\n"
      "Send this to the friend who says \"I'll go when I feel like it.\"\n\n#habits #productivity #goals #focus #motivation",
-     SRC_MILNE)
+     SRC_MILNE + " " + SRC_LALLY)
 
 post("lh-1020-phone-other-room", LH, "2026-10-20T12:30", "learning",
      dict(lay="sticky", f="dots", kicker="lock-in week · day 3/3", text="Your phone is off. / It's still / *costing you.*", obj="clock", at="br",
           items=["The study", "The strange part", "The fix"], save="save this"),
-     [dict(k="say", f="cream", label="about 800 people, tricky brain tests",
-           text="Phone in another room? / *Best scores.* / Phone on the desk? / *Worst,* even switched off.",
+     [dict(k="say", f="cream", label="the study", text="About 800 people / took tricky brain tests. / Some put their phone / *in another room.*"),
+      dict(k="say", f="pink", text="Phone in another room? / *Best scores.* / Phone on the desk? / *Worst,* even switched off.",
            src="Ward, Duke, Gneezy & Bos, 2017"),
-      dict(k="say", f="dots", label="the strangest part", text="Almost everyone said / their phone had / *no effect on them.*",
-           sub="but part of your brain is busy not checking it"),
+      dict(k="say", f="dots", label="the strangest part", text="Almost everyone said / their phone had / *no effect on them.*"),
+      dict(k="why", f="cream", label="why it happens", text="Part of your brain / is busy *not checking* / your phone. / That's focus you lose."),
       dict(k="do", f="pink", text="Next time you work, put your phone *in another room.* Face down isn't enough.",
            save="send this to the friend who studies with their phone out")],
      "Your phone can drain your focus even when it's switched off.\n\n"
@@ -110,10 +144,12 @@ SRC_APA = ("Source: American Psychological Association, \"Multitasking: Switchin
 post("lh-1021-switching-cost", LH, "2026-10-21T12:30", "learning",
      dict(lay="sticky", f="pink", kicker="focus science", text="Multitasking / feels *fast.* / It isn't.", obj="clock", at="br",
           items=["What switching costs", "The 40% number", "The fix"], save="save this"),
-     [dict(k="say", f="cream", label="sound familiar?", text="Email open. Chat pinging. / *Busy all morning,* / and the report / is half done.",
-           sub="your brain isn't multitasking. it's switching."),
-      dict(k="say", f="dots", text="Every switch has / a little *loading screen.* / They can eat up to:", num="40%",
-           sub="of your productive time", src="American Psychological Association, Multitasking: Switching costs"),
+     [dict(k="say", f="cream", label="sound familiar?", text="Email open. Chat pinging. / *Busy all morning,* / and the report / is half done."),
+      dict(k="say", f="dots", text="Your brain can't do / two hard things at once. / It *switches,* / back and forth."),
+      dict(k="say", f="pink", text="All that switching / can eat up to this much / of your productive time:", num="40%",
+           src="American Psychological Association, Multitasking: Switching costs"),
+      dict(k="why", f="cream", label="think of it like this", text="Every switch has / a little *loading screen.* / They add up fast."),
+      dict(k="say", f="dots", label="the fix", text="Do *one task* at a time. / Put the small stuff, / like email, / in one block."),
       dict(k="do", f="pink", text="Tomorrow, close email and chat for your *first hour.* One task only.",
            save="send this to the friend with 30 tabs open")],
      "Multitasking feels fast. It isn't.\n\n"
@@ -157,33 +193,71 @@ reel("lh-reel-1018-mute-the-world", LH, "2026-10-18T19:00", "suggestion", "lh-x-
    "Source: Leroy (2009), Why is it so hard to do my work? The challenge of attention residue when switching between work tasks, "
    "Organizational Behavior and Human Decision Processes 109(2).", series="Lock one hour · part 1/2")
 
-reel("lh-reel-1019am-pings", LH, "2026-10-19T08:30", "learning", "lh-x-tick-boom", "save this for your next busy day", [
-    dict(k="hook", f="dots", text="Interruptions / don't slow you / down. *They do* / *something worse.*", emo="⏳"),
-    dict(k="because", f="cream", kicker="the surprise", text="Interrupted workers finished *a bit faster.* Their work was just as good."),
-    dict(k="say", f="dots", text="But their / *stress* shot up. / They were / racing the clock.", drop=True),
-    dict(k="do", f="pink", text="Turn on *Do Not Disturb* for your most important hour."),
-    dict(k="save", f="cream", text="Send this to the coworker / who answers every ping."),
-], "Interruptions don't make you slower. They make you more stressed.\n\n"
-   "Why it works: in a study led by Gloria Mark of UC Irvine, 48 people wrote work emails while being interrupted again and again. They finished a little "
-   "faster than people who weren't interrupted, and their work was just as good. But their stress, frustration and effort went way up. "
-   "They were racing to make up for lost time.\n\n"
-   "Do this: today, turn on Do Not Disturb for one hour while you do your most important task.\n\n"
+# DEPTH rewrite (Oct 18, 22:00): the full Do Not Disturb setup (who to allow, repeated calls, the "call twice" text,
+# batch-check at the end) + why (Mark 2008: faster but more stressed; Kushlev & Dunn 2015: batching email lowered stress).
+# Rule that stays: "Urgent calls twice."
+reel("lh-reel-1019am-pings", LH, "2026-10-19T08:30", "deep", "lh-x-tick-boom", "save this for your next busy day", [
+    dict(k="hook", f="dots", text="Every ping / costs you / *more than* / *time.*", emo="⏳"),
+    dict(k="because", f="cream", kicker="a UC Irvine study", text="Interrupted workers finished *faster.* Same quality."),
+    dict(k="say", f="dots", text="But their *stress* / and frustration / *shot up.*", drop=True),
+    dict(k="say", f="pink", text="1. Turn on / *Do Not Disturb* / for one hour."),
+    dict(k="say", f="cream", text="2. Allow *repeated* / *calls.* A second / call rings through."),
+    dict(k="say", f="dots", text="3. Text family: / *“Urgent?* / *Call twice.”*"),
+    dict(k="do", f="pink", text="Check it all *once,* at the end."),
+    dict(k="save", f="cream", text="Send this to the / always-online coworker."),
+], "Every ping costs you more than time. Here's the 2-minute setup that fixes it, and why it works.\n\n"
+   "THE SURPRISE: in a UC Irvine study, 48 people wrote work emails while being interrupted again and again. They finished a little "
+   "faster than people who weren't interrupted, and their work was just as good. But their stress and frustration went way up. They were "
+   "racing to make up for lost time. Interruptions don't just steal minutes. They wind you up.\n\n"
+   "THE SETUP (do it once, use it every day):\n"
+   "1. Turn on Do Not Disturb for one hour. iPhone: Settings > Focus > Do Not Disturb. Android: Settings > Notifications > Do Not Disturb "
+   "(names vary a little by phone).\n"
+   "2. Allow 2 or 3 people only: your partner, your kid's school, whoever looks after a parent. Everyone else waits an hour.\n"
+   "3. Turn on repeated calls. On iPhone, a second call from the same person within 3 minutes rings through. On most Android phones, "
+   "\"repeat callers\" does the same within 15 minutes.\n"
+   "4. Text the people who matter, once: \"I silence my phone 9 to 10 each morning. If it's ever urgent, call twice.\"\n"
+   "5. At the end of the hour, check everything in one go.\n\n"
+   "WHY BATCHING WORKS: in a University of British Columbia study, 124 adults spent one week checking email only three times a day and "
+   "one week checking whenever they liked. In the three-times-a-day week, they felt less stressed.\n\n"
+   "IF YOU SLIP: caught yourself checking? Don't write off the day. Put the phone back, turn Do Not Disturb on again and finish the hour.\n\n"
+   "The rule that stays: urgent calls twice. Everything else can wait an hour.\n\n"
    "Send this to the coworker who answers every ping in ten seconds.\n\n#focus #worklife #productivity #stress #deepwork",
-   "Source: Mark, Gudith & Klocke (2008), The cost of interrupted work: more speed and stress, Proceedings of CHI 2008. 48 participants; "
-   "interrupted groups finished faster with no difference in quality, but reported higher stress, frustration, time pressure and effort.")
+   "Sources: Mark, Gudith & Klocke (2008), The cost of interrupted work: more speed and stress, Proceedings of CHI 2008. 48 participants; "
+   "interrupted groups finished faster with no difference in quality, but reported higher stress, frustration, time pressure and effort. "
+   "Kushlev & Dunn (2015), Checking email less frequently reduces stress, Computers in Human Behavior 43: 124 adults, one week limited to "
+   "three checks a day vs one week unlimited; lower daily stress in the limited week. Repeated-calls windows: Apple Support (Focus settings, "
+   "3 minutes) and Android Do Not Disturb settings (repeat callers, 15 minutes); menus vary by phone and software version.")
 
-reel("lh-reel-1019-odd-hours", LH, "2026-10-19T19:00", "suggestion", "lh-x-lock-in", "send this to a friend on nights", [
-    dict(k="hook", f="pink", text="Which hour? / *Right after* / *you wake up.*", emo="⏰"),
-    dict(k="because", f="cream", kicker="here's why", text="Plans tied to something you *already do* stick better. Everyone wakes up."),
-    dict(k="say", f="dots", text="So: *“After I* / *wake up, I work* / *one hour.”*", drop=True),
-    dict(k="do", f="pink", text="Write that on a sticky note *by your coffee maker.*"),
-    dict(k="save", f="cream", text="Send this to the friend / who works nights.", next="part 2 of 2"),
-], "Which hour should you protect? The one right after you wake up, whenever that is.\n\n"
-   "Why it works: plans tied to something you already do get done far more often. Across 94 studies, these \"after X, I'll do Y\" plans "
-   "helped people reach their goals. And waking up happens every single day, even on night shifts.\n\n"
-   "Do this: tonight, write \"After I wake up and make coffee, I work for one hour\" on a sticky note and put it on your coffee maker.\n\n"
+# DEPTH rewrite (Oct 18, 22:00): part 2 of "Lock one hour" (part 1 aired Oct 18, 19:00, promising "which hour to pick").
+# Method: anchor the hour to something you already do (BJ Fogg's recipe + if-then plans), the cue on a sticky note where
+# the cue happens, a 10-minute plan B. Rule that stays: "Anchor it. Don't float it."
+reel("lh-reel-1019-odd-hours", LH, "2026-10-19T19:00", "deep", "lh-x-lock-in", "send this to a friend on nights", [
+    dict(k="hook", f="pink", text="Which hour / should you / *lock?*", emo="⏰"),
+    dict(k="because", f="cream", kicker="here's the trick", text="Tie it to something you *already do* daily."),
+    dict(k="say", f="dots", text="*After coffee.* / *After drop-off.* / *After your shift.*", drop=True),
+    dict(k="say", f="pink", text="Pick the one / you can *protect* / *every day,* not / your dream hour."),
+    dict(k="say", f="cream", text="Write it: / *“After I ___,* / *I work one hour.”*"),
+    dict(k="do", f="dots", text="Stick the note *where it happens,* like the coffee maker."),
+    dict(k="save", f="pink", text="Send this to the friend / who works nights.", next="part 2 of 2"),
+], "Which hour should you lock? Not the perfect one. The one that comes right after something you already do.\n\n"
+   "WHY: a habit needs a trigger. Stanford researcher BJ Fogg's recipe is \"After I [something I already do], I will [new habit].\" "
+   "If-then plans like this, tied to a clear when and where, helped people reach their goals across 94 tests. \"Sometime tomorrow\" "
+   "has no trigger. \"After I pour my coffee\" does.\n\n"
+   "PICK YOUR ANCHOR:\n"
+   "- Office day: after you put your coffee down at your desk.\n"
+   "- Parent: after school drop-off, or after the kids' bedtime.\n"
+   "- Night shift: after you wake up and eat, whatever time that is.\n"
+   "Choose the one you can protect most days, not your dream hour.\n\n"
+   "MAKE IT STICK:\n"
+   "1. Write it: \"After I ___, I work for one hour on ___.\"\n"
+   "2. Put the note where the anchor happens: on the coffee maker, the car dashboard, the fridge.\n"
+   "3. Book it in your calendar as a repeating event called \"Locked hour\", so meetings can't land on it.\n"
+   "4. Plan B: \"If I only have 10 minutes, I'll do 10 minutes.\" Starting small still keeps the habit going.\n\n"
+   "The rule that stays: anchor it, don't float it.\n\n"
+   "Do this: tonight, write your sentence on a sticky note and stick it where the anchor happens.\n\n"
    "Part 2 of 2.\n\nSend this to the friend who works nights.\n\n#shiftwork #nightshift #productivity #habits #focus",
-   "Source: Gollwitzer & Sheeran (2006), Implementation intentions and goal achievement: a meta-analysis of effects and processes, "
+   "Sources: Fogg, BJ (2019), Tiny Habits: The Small Changes That Change Everything (Houghton Mifflin Harcourt), the \"After I..., I will...\" "
+   "recipe. Gollwitzer & Sheeran (2006), Implementation intentions and goal achievement: a meta-analysis of effects and processes, "
    "Advances in Experimental Social Psychology 38. 94 independent tests, medium-to-large effect (d = .65).",
    series="Lock one hour · part 2/2")
 
@@ -232,8 +306,11 @@ chain("lh-ch-1019", LH, "2026-10-19", "lh19", "lock-in week · day 2/3", [  # da
         ("out", "B) about 9 in 10")], obj="clock", tap="guess, then tap →"),
     dict(k="payoff", f="pink", label="the answer: B", text="*91%*", sub="the other groups? under 4 in 10", obj="clock",
          tap="source: Milne, Orbell & Sheeran, 2002 · tap →"),
-    dict(k="payoff", f="dots", label="why it matters", text="Decide *when* / and *where.*", sub="then there's nothing left to decide",
-         obj="hourglass", tap="next story →"),
+    dict(k="bubbles", f="pink", label="the exact sentence", bubbles=[
+        ("out", "“I'll exercise on *[day]* at *[time]* in *[place].*”"), ("in", "wait, that's it??"),
+        ("out", "that's it. you decide *once*, ahead of time")], obj="hourglass", tap="tap →"),
+    dict(k="payoff", f="dots", label="the rule", text="Decide *once.* / Then just go.", sub="plan B: “if I'm tired, just 10 minutes”",
+         obj="clock", tap="next story →"),
     dict(k="handoff", f="dots", text="The sentence / *that works*", img="lh-1019-one-sentence/01.jpg", next="day 3 tomorrow"),
 ])
 chain("lh-ch-1020", LH, "2026-10-20", "lh20", "lock-in week · day 3/3", [

@@ -21,12 +21,21 @@ reel("ff-reel-1018am-emergency-fund", FF, "2026-10-18T08:15", "deep", "ff-x-big-
 
 post("ff-1018-foundations-1-snowball", FF, "2026-10-18T12:00", "learning",
      dict(lay="pills", f="cob", kicker="money foundations · part 1", text="Money that / *makes its own* / *money*", obj="point", at="bl",
-          save="slide 2 will surprise you"),
-     [dict(k="say", f="cob", label="it grows like a snowball",
-           text=f"Invest *$10,000* at 30. / Year one, it earns / about ${K['snow_y1']:,}. / By 60, it earns this / in *one* year:",
-           num=f"${K['snow_y30']:,}", size=104, src="10% a year: the S&P 500's long-run average"),
+          save="slide 5 is the surprising part"),
+     [dict(k="say", f="lite", text="When your money earns money, that new money starts earning *too.* / That's called *compounding.*",
+           size=118),
+      dict(k="why", f="coral", label="it's a snowball",
+           text="Think of a snowball rolling downhill. / The *bigger* it gets, the more snow it picks up.", size=118),
+      dict(k="say", f="lite", text="Invest *$10,000* at 30. / If it grows 10% a year, the first year earns you about:",
+           num=f"${K['snow_y1']:,}", size=96, src="10% a year: the S&P 500's long-run average"),
+      dict(k="say", f="cob", text="Leave it alone until 60. / Now it earns this much in *one* year, with nothing added:",
+           num=f"${K['snow_y30']:,}", size=96),
+      dict(k="say", f="lite", text="Here's the whole snowball. / Most of the growth shows up in the *last 10 years.*", size=104,
+           sub="$10,000 at 30, at 10% a year",
+           bars=[("30", K["k10_steps"][0], "$10K"), ("40", K["k10_steps"][1], f"${K['k10_steps'][1] // 1000}K"),
+                 ("50", K["k10_steps"][2], f"${K['k10_steps'][2] // 1000}K"), ("60", K["k10_steps"][3], f"${K['k10_steps'][3] // 1000}K")]),
       dict(k="say", f="coral", label="the honest part",
-           text="Some years, markets / drop a lot. / So this is for money / you won't need / for *10+ years.*", size=118),
+           text="Some years, markets drop a lot. / So this is for money you won't need for *10+ years.*", size=112),
       dict(k="do", f="lite", text="Open your banking app and check what your savings earned *last month.* Near $0? Your snowball hasn't started.",
            size=84, save="send this to your “next year” friend")],
      f"Money can make its own money. It's called compounding, and it works like a snowball rolling downhill: the bigger it gets, "
@@ -74,62 +83,122 @@ chain("ff-ch-1018", FF, "2026-10-18", "ff18", "money foundations · part 1", [
     dict(k="handoff", f="lite", text="Money Foundations, / *Part 1*", img="ff-1018-foundations-1-snowball/01.jpg", next="part 2 tomorrow"),
 ])
 
-# ================================================================== Oct 19 · Part 2: the cheap coat
+# ================================================================== Oct 19 · Part 2: the cheap coat (DEPTH pass, Oct 18 night)
+# Facts checked Oct 18 night: PolicyMe "How much is life insurance in Canada?" (rates as of Sept 2026): 20-year term, $500,000,
+# non-smoker age 30: about $20/month (women), $28/month (men); whole life, woman 30: about $50/month for $100,000.
+# FSRA (Ontario regulator), "Life insurance policy types": term usually has lower premiums and no cash value; group coverage
+# "usually terminates when you leave your job". ATB Wealth: most group life is based on one to two times your salary.
+# Statistics Canada, Survey of Household Spending 2023: households spent an average of $2,739 on clothing and accessories.
+SRC_LIFE = ("Sources: PolicyMe, \"How Much Is Life Insurance in Canada?\" (rates as of September 2026): 20-year term, $500,000, "
+            "non-smoker age 30: about $20 a month for women and $28 for men; whole life for a 30-year-old woman: about $50 a month "
+            "for $100,000. FSRA (Financial Services Regulatory Authority of Ontario), \"Life insurance policy types\": term "
+            "\"usually [has] lower premiums than permanent policies\" and no cash value; group coverage \"usually terminates when you "
+            "leave your job\". ATB Wealth, \"Are my group benefits enough?\": \"Most group life insurance policies are based on one to "
+            "two times your salary.\" Your own price depends on age, health and smoking. Education, not advice: talk to a licensed "
+            "advisor about your needs.")
+
 reel("ff-reel-1019am-term-vs-whole", FF, "2026-10-19T08:15", "deep", "ff-x-level-up", "save this before you buy life insurance", [
-    dict(k="hook", f="cob", text="One kind of / life insurance / costs *much less.*", emo="🛡️"),
-    dict(k="say", f="lite", text="*Term life* covers / you for a set time, / like 20 years. / It costs *less.*", size=112),
-    dict(k="say", f="coral", text="*Whole life* covers / you forever and / builds some savings / inside. It costs / *much more.*", size=106),
-    dict(k="because", f="deep", kicker="so which one?", text="Term is built for the years people depend on your pay: young kids, a big mortgage.",
-         size=104, drop=True),
-    dict(k="do", f="lite", text="Tonight, ask your HR or benefits team how much *life insurance* you already have.", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / your partner."),
-], "There are two main kinds of life insurance, and one costs much less.\n\nTerm life covers you for a set time, like 20 years. If you die "
-   "in that time, your family gets paid. It usually costs less.\n\nWhole life covers you for your whole life and builds some savings "
-   "inside the policy. It usually costs much more each month.\n\nTerm is built for the years people depend on your pay: young kids, a "
-   "big mortgage. Many people get some life insurance through work, so check what you already have first.\n\nDo this tonight: ask your "
-   "HR or benefits team how much life insurance you already have.\n\nSend this to your partner.\n\n"
-   "#lifeinsurance #termlife #personalfinance #newparents #moneyfoundations",
-   "Source: Financial and Consumer Services Commission (FCNB, a Canadian provincial regulator), \"Life insurance\": term covers you for a "
-   "specific time period and its premiums are \"generally less expensive\"; permanent covers you for life and generally builds cash value. "
-   "fcnb.ca/en/insurance/life-insurance. Education, not advice: talk to a licensed advisor about your own needs.")
+    dict(k="hook", f="cob", text="New baby. / New mortgage. / *Which life insurance?*", emo="🛡️"),
+    dict(k="say", f="lite", text="*Term life* covers / a set time, like / *20 years.*", size=112),
+    dict(k="num", f="deep", label="$500,000 of 20-year / term, woman, 30:", value=20, pre="$", suf="a month, on average",
+         size=240, drop=True),
+    dict(k="say", f="coral", text="*Whole life* lasts / forever. Same woman: / *$50 a month* buys / just *$100,000.*", size=106),
+    dict(k="because", f="coral", kicker="why term fits",
+         text="At 30: *big* mortgage, *tiny* kids. By 50: mortgage *paid down,* kids *grown.*", size=100),
+    dict(k="do", f="lite", text="Tonight, open your *benefits portal.* Write down your *life insurance* amount.", size=94, chars=18),
+    dict(k="save", f="cob", text="Cover the years / people *need* you."),
+], "New baby, new mortgage: which life insurance? Here's the difference in plain words.\n\n"
+   "TERM LIFE covers you for a set time, like 20 years. If you die in that time, your family gets the full amount. If you don't, "
+   "it ends. Average price for a non-smoking 30-year-old, $500,000 for 20 years: about $20 a month for a woman, $28 for a man.\n\n"
+   "WHOLE LIFE covers you for your whole life and builds some cash value inside the policy. That costs more: the same 30-year-old "
+   "woman pays about $50 a month for just $100,000.\n\n"
+   "Why term fits most young families: you need the most cover while the kids are small and the mortgage is big. Every year, the "
+   "mortgage shrinks, the kids grow, and your savings grow. A 20- or 25-year term covers exactly those years.\n\n"
+   "The part people miss about work coverage: most group life pays 1 to 2 times your salary, and it usually ends when you leave "
+   "your job.\n\n"
+   "Do this tonight (10 minutes):\n"
+   "1. Open your benefits portal (or booklet) and find \"Life insurance\". Write down the amount.\n"
+   "2. On paper, add up: your mortgage balance + the years your kids would need your pay.\n"
+   "3. Big gap? Get 2 or 3 term quotes for that gap, for as many years as the kids need you. Ask each one: \"Is this price "
+   "fixed for the whole term?\"\n\n"
+   "The rule to remember: cover the years people need you.\n\n"
+   "Send this to your partner.\n\n#lifeinsurance #termlife #newparents #personalfinancecanada #moneyfoundations",
+   SRC_LIFE)
 
 post("ff-1019-rich-habits-01", FF, "2026-10-19T12:00", "learning",
      dict(lay="line", f="lite", text="The *cheap* coat / costs *5 times more*", obj="ok", at="br",
           dots=[("$240 coat", "worn 120 times", f"${K['coat_a']} a wear"), ("$60 coat", "worn 6 times", f"${K['coat_b']} a wear")],
           save="money foundations · part 2"),
-     [dict(k="say", f="cob", label="sound familiar?", text="Your *$60* sale coat / lasts *6 wears.* / Each wear costs you:",
-           num=f"${K['coat_b']}", sub=f"her $240 coat, 120 wears: ${K['coat_a']} a wear"),
-      dict(k="say", f="coral", label="it has a name", text="The price tag is / what you pay *today.* / *Cost per wear* is / what you *really* pay.",
-           sub="never worn? $240 a wear"),
-      dict(k="do", f="lite", text="Before your next buy over $50, ask: how many times will I *really* use this?",
-           size=100, save="send this to your sale-loving friend")],
-     f"The cheap coat can cost you 5 times more.\n\nYou buy a $60 coat on sale and it's done after 6 wears. That's ${K['coat_b']} "
-     f"every time you put it on. Your friend pays $240 for a good one and wears it 120 times. That's ${K['coat_a']} a wear.\n\n"
-     f"It's called cost per wear: the price, divided by how often you'll use it. The price tag tells you what you pay today. "
-     f"The cost per wear tells you what you really pay.\n\nThe honest part: it only works if "
-     f"you really use it. A $240 coat that stays in the closet is $240 a wear.\n\nDo this: before your next buy over $50, ask yourself "
-     f"how many times you'll really use it.\n\nMoney Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\n"
+     [dict(k="say", f="cob", label="sound familiar?", text="A *$60 coat* / on sale. / By February / it's pilling. / *Done after 6 wears.*"),
+      dict(k="say", f="lite", text="Your friend paid / *$240* for hers. / She wears it / all winter: / *120 times* in 3 years."),
+      dict(k="rows", f="coral", text="What each coat / *really* costs", cap="the price, split over every wear",
+           rows=[("Sale coat", f"${K['coat_b']} a wear"), ("Good coat", f"${K['coat_a']} a wear")],
+           sub="5 times less, every wear"),
+      dict(k="say", f="cob", label="it has a name", text="It's called / *cost per wear.* / The price tag is / today's cost. / "
+           "Cost per wear is / the *real* cost."),
+      dict(k="why", f="lite", label="why sales fool us", text="A sale shows / what you *save today.* / It hides how soon / "
+           "you'll *buy it again.*"),
+      dict(k="steps", f="coral", text="The *60-second* check", items=["Guess your uses this year", "Divide the price by that",
+                                                                     "Do the same for the cheap one"],
+           sub="lower number wins"),
+      dict(k="say", f="cob", label="Canada edition", text="Canadian households / spent *$2,739* / on clothes in 2023. / "
+           "Wear things *twice as long,* / buy *half as often.*", src="Statistics Canada, Survey of Household Spending 2023"),
+      dict(k="say", f="coral", label="the honest part", text="Pricey isn't always / better. A $240 coat / that never leaves / "
+           "the closet is / *$240 a wear.*"),
+      dict(k="do", f="lite", text="Before any buy over *$50,* divide the price by *uses this year.* Lower wins. Unsure? *Wait 48 hours.*",
+           size=92, save="send this to your sale-loving friend")],
+     f"The cheap coat can cost you 5 times more.\n\n"
+     f"You buy a $60 coat on sale. By February it's pilling, and you're done after 6 wears. That's ${K['coat_b']} every time you "
+     f"put it on. Your friend paid $240 for hers and wears it all winter: 120 times in 3 years. That's ${K['coat_a']} a wear.\n\n"
+     f"It's called cost per wear. The price tag is today's cost. Cost per wear is the real cost.\n\n"
+     f"Why sales fool us: a sale shows what you save today. It hides how soon you'll buy it again.\n\n"
+     f"The 60-second check, before any buy over $50:\n"
+     f"1. Guess honestly how many times you'll use it this year (look at how often you used the last one).\n"
+     f"2. Divide the price by that number.\n"
+     f"3. Do the same for the cheaper option. The lower number wins.\n"
+     f"Still unsure? Put it in your cart and wait 48 hours. If you've forgotten about it, you didn't need it.\n\n"
+     f"Canada edition: households spent an average of $2,739 on clothing and accessories in 2023 (Statistics Canada). Wear "
+     f"things twice as long and you buy them half as often.\n\n"
+     f"The honest part: pricey isn't always better. Check the seams, the reviews and the return policy. A $240 coat that never "
+     f"leaves the closet is $240 a wear.\n\n"
+     f"Money Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\n"
      f"Send this to your sale-loving friend. Save it for your next shopping trip.\n\n"
-     f"#moneytips #budgeting #personalfinance #costperwear #moneyfoundations",
-     f"Maths: price divided by times used. $240 ÷ 120 = ${K['coat_a']}. $60 ÷ 6 = ${K['coat_b']}. $10 is 5 times $2. Count your own uses: "
-     f"they will differ. Story quiz: Ellen MacArthur Foundation, A New Textiles Economy (2017): the average number of times a garment is "
-     f"worn has fallen 36% compared with 15 years earlier.")
+     f"#moneytips #budgeting #personalfinancecanada #costperwear #moneyfoundations",
+     f"Maths: price divided by times used. $240 ÷ 120 = ${K['coat_a']}. $60 ÷ 6 = ${K['coat_b']}. $10 is 5 times $2. Count your own "
+     f"uses: they will differ. Canada figure: Statistics Canada, The Daily, May 21, 2025, Survey of Household Spending 2023: "
+     f"\"households spent an average of $2,739 on clothing and accessories\". Story quiz: Ellen MacArthur Foundation, A New "
+     f"Textiles Economy (2017): the average number of times a garment is worn has fallen 36% compared with 15 years earlier.")
 
 reel("ff-reel-1019-late-start", FF, "2026-10-19T19:00", "deep", "ff-x-big-reveal", "save this if you feel behind", [
-    dict(k="hook", f="cob", text="Started / investing late? / *It's not too late.*", emo="⏳"),
-    dict(k="say", f="lite", text="A friend invests / *$300 a month* / from age 28. / You start at *33.*", size=116),
-    dict(k="num", f="deep", label="To catch up by 60, / invest about:", value=K["catch_pmt"], pre="$", suf="a month, at 10% a year", drop=True),
-    dict(k="because", f="coral", kicker="here's why", text="You have fewer years, so each dollar has to do *more work.*", size=116),
-    dict(k="do", f="lite", text="This payday, raise your automatic transfer by *$25.* Raise it again with every raise.", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / the friend who / thinks it's too late.", next="start early · part 2/2"),
-], f"Started investing late? It's not too late.\n\nA friend invests $300 a month from age 28. You start at 33. To catch up by 60, at 10% "
-   f"a year, you'd invest about ${K['catch_pmt']} a month. You have fewer years, so each dollar has to do more work.\n\n"
-   f"Do this: this payday, raise your automatic transfer by $25. Raise it again with every raise at work.\n\n"
+    dict(k="hook", f="cob", text="Started at 33? / *You can* / *catch up.*", emo="⏳"),
+    dict(k="say", f="lite", text=f"Friend: *$300 a month* / from 28. At 60: / *${K['s28_60']:,}.*", size=108),
+    dict(k="say", f="coral", text=f"You: same $300, / from 33. At 60: / *${K['s33_60']:,}.*", size=108),
+    dict(k="because", f="deep", kicker="why so big?", text="Her first dollars grew the *longest.*", size=116),
+    dict(k="num", f="lite", label="Fix 1: invest", value=K["catch_pmt"], pre="$", suf="a month from 33, not $300",
+         size=260, drop=True),
+    dict(k="say", f="cob", text=f"Fix 2: keep $300, / invest until *65.* / Same *${K['s28_60']:,}.*", size=108),
+    dict(k="do", f="lite", text="This payday, raise your *TFSA auto-transfer* by *$25.*", size=94, chars=18),
+    dict(k="save", f="coral", text="Late? Pay a bit more, / or go a bit longer."),
+], f"Started investing at 33, not 28? You can catch up. Here's exactly how.\n\n"
+   f"Your friend invests $300 a month from 28. At 10% a year, by 60 that's about ${K['s28_60']:,}.\n"
+   f"You invest the same $300 a month, but from 33. By 60: about ${K['s33_60']:,}.\n\n"
+   f"Why the gap is so big: her first 5 years of deposits had the longest to grow. Like a snowball that started rolling sooner.\n\n"
+   f"Two ways to catch up:\n"
+   f"1. Invest about ${K['catch_pmt']} a month instead of $300, until 60. That's ${K['catch_pmt'] * 12:,} a year, which fits inside "
+   f"one year's TFSA room ($7,000 in 2026).\n"
+   f"2. Keep $300 a month and keep investing until 65. You land at about the same ${K['s28_60']:,}.\n"
+   f"Or mix them: a bit more each month, a couple of years longer.\n\n"
+   f"Do this, this payday (5 minutes):\n"
+   f"1. Open your bank app and go to Transfers, then Scheduled or Recurring transfers.\n"
+   f"2. Find the automatic transfer into your TFSA (no transfer yet? set one up for payday).\n"
+   f"3. Raise it by $25. Every time you get a raise, raise it again.\n\n"
+   f"The rule to remember: start 5 years late, and you either pay a bit more or go 5 years longer.\n\n"
    f"Send this to the friend who thinks it's too late. Part 2 of 2.\n\n{NG}\n\n"
-   f"#investing #personalfinance #moneytips #retirement #moneyfoundations",
-   "Maths: the monthly amount from 33 to 60 that reaches the same total as $300 a month from 28 to 60, both compounded monthly at 10% a "
-   "year, no fees or taxes. Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). "
-   "Education, not advice.", series="Start early · part 2/2")
+   f"#investing #TFSA #personalfinancecanada #retirement #moneyfoundations",
+   f"Maths: $300 at the end of each month, compounded monthly at 10% a year, no fees or taxes: 28 to 60 ≈ ${K['s28_60']:,}; "
+   f"33 to 60 ≈ ${K['s33_60']:,}; 33 to 65 ≈ ${K['s28_60']:,} (the same 32 years of deposits). ${K['catch_pmt']} a month from 33 to "
+   f"60 reaches the same total as $300 from 28. Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 "
+   f"(before inflation). TFSA limit 2026: $7,000 (CRA). Education, not advice.", series="Start early · part 2/2")
 
 chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [  # day B: guess-and-reveal quiz
     dict(k="bubbles", f="lite", label="quick quiz", title="Each piece of clothing: / worn *more* or *less?*", bubbles=[
@@ -137,9 +206,13 @@ chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [  
          tap="guess, then tap →"),
     dict(k="payoff", f="coral", label="the answer: B", text="*36%* / fewer", sub="wears per piece, 2000 to 2015", obj="ok",
          tap="source: Ellen MacArthur Foundation, 2017 · tap →"),
-    dict(k="payoff", f="cob", label="why it matters", text="Fewer wears means / *paying more*", sub="for every single wear", obj="piggy",
-         tap="next story →"),
-    dict(k="handoff", f="lite", text="The *cheap* coat / costs *5 times more*", img="ff-1019-rich-habits-01/01.jpg", next="part 3 tomorrow"),
+    dict(k="bubbles", f="cob", label="what that costs you", bubbles=[
+        ("out", "Canadian households spent *$2,739* on clothes in 2023."),
+        ("out", "fewer wears means you pay it *again, sooner.*"),
+        ("in", "so how do I check before I buy?")], obj="phone", tap="source: Statistics Canada · tap →"),
+    dict(k="payoff", f="lite", label="the 60-second check", text="Price, divided / by *uses this year*",
+         sub="do it for the cheap one too. lower wins.", obj="piggy", tap="next story →"),
+    dict(k="handoff", f="cob", text="The *cheap* coat / costs *5 times more*", img="ff-1019-rich-habits-01/01.jpg", next="part 3 tomorrow"),
 ])
 
 
@@ -165,11 +238,16 @@ reel("ff-reel-1020am-tfsa-rrsp", FF, "2026-10-20T08:15", "deep", "ff-x-level-up"
 post("ff-1020-foundations-3-index-funds", FF, "2026-10-20T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 3", text="Own a tiny piece / of *500 companies*", obj="point", at="bl",
           save="index funds, in plain words"),
-     [dict(k="say", f="lite", label="picking stocks is hard", text="In 2025, nearly / *8 in 10* pro funds / did worse than / the market.",
-           sub="an index fund just buys all of them", src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025 (large-cap funds)"),
-      dict(k="say", f="coral", text="Since 1957, the / S&P 500 grew, / on average:", num="10%",
-           sub="a year, but some years it drops: about 37% in 2008",
-           src="Fidelity, S&P 500 average return, before inflation · S&P Dow Jones Indices"),
+     [dict(k="say", f="lite", label="picking stocks is hard", text="In 2025, about / *8 in 10* pro funds / did worse than / the market.",
+           size=124, src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025 (large-cap funds)"),
+      dict(k="say", f="cob", label="the other way", text="An *index fund* / buys a bit of / *everything.*",
+           size=130, sub="no guessing needed"),
+      dict(k="why", f="lite", label="think of a fruit basket", text="Don't bet on / one apple. / Buy the *whole* / *basket.*",
+           size=130, sub="one bad apple barely matters"),
+      dict(k="say", f="coral", text="Since 1957, the / S&P 500 grew, / on average:", num="10%", size=116, sub="a year, before inflation",
+           src="Fidelity, S&P 500 average return, before inflation"),
+      dict(k="say", f="lite", label="the honest part", text="Some years / it drops hard. / In 2008, it / fell about *37%.*", size=120,
+           sub="so leave it alone for years"),
       dict(k="do", f="cob", text="Open your investing app and search *“S&P 500 index fund.”* Just look today.",
            size=100, save="send this to the friend who picks stocks")],
      "Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500.\n\n"
@@ -215,15 +293,19 @@ chain("ff-ch-1020", FF, "2026-10-20", "ff20", "money foundations · part 3", [
 # ================================================================== Oct 21 · Part 4: the Canada Learning Bond
 post("ff-1021-clb-who-qualifies", FF, "2026-10-21T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 4", text="Free *$2,000* / for your kid's / *education*", obj="point", at="bl",
-          save="check if you qualify on slide 3"),
-     [dict(k="say", f="cob", label="Canada Learning Bond", text="*$500* to start, / then *$100* a year, / up to *$2,000.*",
-           sub="you add $0. it goes into an RESP, a school savings account", src="canada.ca · Canada Learning Bond"),
+          save="check if you qualify on slide 4"),
+     [dict(k="say", f="lite", label="sound too good?", text="The government / can put up to / *$2,000* toward / your kid's school.",
+           size=124, sub="and you add $0"),
+      dict(k="say", f="cob", label="the Canada Learning Bond", text="*$500* to start. / *$100* more / each year. / Up to $2,000.", size=124),
       dict(k="rows", f="lite", text="Who *qualifies*", cap="family net income, July 2026 to June 2027",
            rows=[("1 to 3 kids", "$58,523 or less"), ("4 kids", "under $66,036"), ("5 kids", "under $73,577")],
            sub="kids born in 2004 or later", src="canada.ca · ESDC notice 2026-1138 · limits change each July"),
-      dict(k="say", f="coral", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
-           sub="good news: you can apply until your child turns 21",
-           src="C.D. Howe Institute, using ESDC 2022 data · canada.ca"),
+      dict(k="say", f="coral", label="the part nobody mentions", text="It only lands / in an *RESP:* / a savings account / for school.",
+           size=124),
+      dict(k="say", f="cob", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
+           size=124, src="C.D. Howe Institute, using ESDC 2022 data"),
+      dict(k="say", f="lite", label="good news", text="You can still / apply until your / child turns *21.*", size=128,
+           src="canada.ca · Canada Learning Bond"),
       dict(k="do", f="cob", text="This week, ask your bank for an *RESP with the Learning Bond.* Bring your child's SIN.",
            size=100, save="send this to a new parent")],
      "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\n"

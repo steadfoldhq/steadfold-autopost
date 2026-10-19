@@ -48,7 +48,7 @@ fmt("lh-1018-follow-the-line", LH, "2026-10-18T17:00",
     "Gollwitzer & Sheeran 2006 (94 studies on if-then plans); Leroy & Glomb 2018 (ready-to-resume plans).")
 
 # ------------------------------------------------------------------ Fully Funded · hold the dots (today 17:00)
-FF_FRAMES = [(f"Age {a}", round(fv_monthly(300, a - 28), -2), f"you've put in ${300 * 12 * (a - 28):,}") for a in (40, 50, 60)]
+FF_FRAMES = [(f"Age {a}", round(fv_monthly(300, a - 28), -2), f"you've put in ${300 * 12 * (a - 28):,}") for a in range(32, 61, 4)]
 FF_12 = round(fv_monthly(300, 32, 0.12), -3)
 FF_FRAMES[-1] = (FF_FRAMES[-1][0], FF_FRAMES[-1][1], f"you put in $115,200 · at 12% a year: ${FF_12 / 1e6:.2f}M")
 fmt("ff-1018-hold-the-jar", FF, "2026-10-18T17:00",
@@ -72,15 +72,21 @@ LF_VAL = round(fv_monthly(60, 18, 0.08), -2)
 fmt("lf-1021-reveal-50-a-month", LF, "2026-10-21T17:00",
     dict(kind="reveal", field="pink", do_field="cream",
          hook="*$50 a month* / from birth to 18. / What does it / *grow into?*",
-         guess="guess first!", levels=[64, 30],
-         hang=["Compounding is slow at first. / *Keep sliding…*", "The early years look small. / Then it *takes off.* One more →"],
+         guess="guess first!", levels=[80, 64, 46, 30],
+         hang=[f"Age 5: about *${round(fv_monthly(60, 5, 0.08), -2):,.0f}.* / You've put in $3,000. / The grant adds *$10* / to every $50.",
+               f"Age 10: about *${round(fv_monthly(60, 10, 0.08), -2):,.0f}.* / You've put in $6,000. / Growth is starting / to *earn growth.*",
+               f"Age 15: about *${round(fv_monthly(60, 15, 0.08), -2):,.0f}.* / You've put in $9,000. / The last years add / the *most.* Keep sliding…",
+               "The early years look small. / Then it *takes off.* / One more →"],
          ans_label="with the 20% grant, at 8% a year", answer=f"${LF_VAL:,.0f}",
          ans_sub=f"You put in *$10,800.* / The rest is grant / and growth.",
          why_label="here's why", why="The government adds *20%* to what you save in an RESP. Then it all grows *for 18 years.*",
          src="Canada Education Savings Grant: 20% on the first $2,500 a year (canada.ca). Growth not guaranteed.",
          do="This week, ask your bank to *open an RESP* and set up *$50 a month.*", save="send this to someone with a new baby"),
     "$50 a month from birth to 18. What does it grow into?", "slide to reveal",
-    ["Compounding is slow at first. Keep sliding.", "The early years look small. Then it takes off.",
+    [f"Age 5: about ${round(fv_monthly(60, 5, 0.08), -2):,.0f}. You've put in $3,000.",
+     f"Age 10: about ${round(fv_monthly(60, 10, 0.08), -2):,.0f}. You've put in $6,000.",
+     f"Age 15: about ${round(fv_monthly(60, 15, 0.08), -2):,.0f}. You've put in $9,000.",
+     "The early years look small. Then it takes off.",
      f"About ${LF_VAL:,.0f}. You put in $10,800.",
      "This week, ask your bank to open an RESP and set up $50 a month."],
     f"Did you guess right? 👀\n\n$50 a month into an RESP from birth, plus the 20% government grant ($10 a month), growing 8% a year, "
@@ -96,12 +102,13 @@ fmt("hb-1021-travel-subscriptions", HB, "2026-10-21T17:45",
          beats=[dict(text="Charges / you *forgot* / you pay", size=118),
                 dict(label="sound familiar?", text="*$12.99* here. / *$2.99* there. / You forgot / half of them."),
                 dict(label="here's the trick", text="Paste last month's / statement into AI. / Ask: *“What repeats?”*", size=84),
+                dict(label="why it works", text="Spotting the *same* / *charge* every month / is easy for AI."),
                 dict(label="but check this", text="It can miss *yearly* / charges. Scroll back / a year yourself.")],
          do="Tonight, take out *card numbers,* paste last month's statement into AI, ask *“What repeats?”* Cancel one.",
          save="send this to your money buddy"),
     "Charges you forgot you pay", "follow the trail",
     ["$12.99 here. $2.99 there. You forgot half of them.", "Paste last month's statement into AI. Ask: What repeats?",
-     "It can miss yearly charges. Scroll back a year yourself.",
+     "Spotting the same charge every month is easy for AI.", "It can miss yearly charges. Scroll back a year yourself.",
      "Tonight, take out card numbers, paste last month's statement into AI, ask What repeats? Cancel one."],
     "Charges you forgot you pay. Everyone has a few 🙈\n\nPaste one month of your bank statement into AI and ask \"What repeats?\" "
     "Spotting the same charge every month is easy for AI, and boring for you.\n\nWhere not to trust it: it can miss yearly charges, "
