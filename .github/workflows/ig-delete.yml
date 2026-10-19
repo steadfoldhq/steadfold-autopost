@@ -1,0 +1,38 @@
+name: Instagram delete
+on:
+  workflow_dispatch:
+    inputs:
+      posts:
+        description: "Post ids to delete (space separated, from state/published.json)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: autopost
+  cancel-in-progress: false
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Delete
+        env:
+          IG_TOKEN_FULLYFUNDED: ${{ secrets.IG_TOKEN_FULLYFUNDED }}
+          IG_TOKEN_LOCKEDHOUR: ${{ secrets.IG_TOKEN_LOCKEDHOUR }}
+          IG_TOKEN_HOURBACK: ${{ secrets.IG_TOKEN_HOURBACK }}
+          IG_TOKEN_LITTLEFOLD: ${{ secrets.IG_TOKEN_LITTLEFOLD }}
+          POSTS: ${{ inputs.posts }}
+        run: python tools/ig_delete.py $POSTS
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/published.json
+          git diff --cached --quiet && exit 0
+          git commit -m "ig-delete: update state/published.json"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0; sleep $((i*5)); done
+          exit 1
