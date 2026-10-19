@@ -1074,8 +1074,13 @@ def cmd_replace_hero(ids: list[str] | None, env: dict, session=None, gh_factory=
             ss.client.call("POST", f"/shops/{ss.shop_id}/listings/{rec['listing_id']}/images",
                            data={"rank": "1", "overwrite": "true"},
                            files={"image": (img.name, img.read_bytes(), _mime(img))})
-            rows.append(f"| {sid} | image 1 replaced ({img.name}) |")
-            log(f"[{sid}] image 1 replaced")
+            imgs = sorted(ss.client.images(rec["listing_id"]), key=lambda x: x.get("rank", 99))
+            first = imgs[0] if imgs else {}
+            rows.append(f"| {sid} | image 1 replaced ({img.name}); {len(imgs)} images |")
+            log(f"[{sid}] image 1 replaced; {len(imgs)} images; rank1 id {first.get('listing_image_id')} "
+                f"created {first.get('created_timestamp')}")
+            print(f"::notice::{sid}: image 1 replaced, {len(imgs)} images, rank1 created {first.get('created_timestamp')}",
+                  flush=True)
         except (EtsyError, SetupError) as exc:
             failed = True
             rows.append(f"| {sid} | FAILED: {redact(exc)} |")
