@@ -3029,6 +3029,44 @@
       "comment_id": "18115036934083653",
       "comment_error": null,
       "commented_at": "2026-10-19T21:11:56Z"
+    },
+    "hb-1019-trail-how-ai-answers": {
+      "account": "hourback",
+      "status": "published",
+      "children": [
+        "18126514966799084",
+        "18126514984799084",
+        "18126515002799084",
+        "18126515020799084",
+        "18126515038799084",
+        "18126515056799084",
+        "18126515074799084"
+      ],
+      "children_media": [
+        "hb-1019-trail-how-ai-answers/01.jpg",
+        "hb-1019-trail-how-ai-answers/02.jpg",
+        "hb-1019-trail-how-ai-answers/03.jpg",
+        "hb-1019-trail-how-ai-answers/04.jpg",
+        "hb-1019-trail-how-ai-answers/05.jpg",
+        "hb-1019-trail-how-ai-answers/06.jpg",
+        "hb-1019-trail-how-ai-answers/07.jpg"
+      ],
+      "children_created_at": "2026-10-19T22:12:15Z",
+      "updated_at": "2026-10-19T22:12:50Z",
+      "container_id": "18126515092799084",
+      "container_created_at": "2026-10-19T22:12:15Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-19T22:12:15Z",
+      "media_id": "18142794892678076",
+      "published_at": "2026-10-19T22:12:15Z",
+      "late": false,
+      "error": null,
+      "comment_status": "done",
+      "comment_attempts": 0,
+      "permalink": "https://www.instagram.com/p/DesTZIxlE85/",
+      "comment_id": "18097851092417520",
+      "comment_error": null,
+      "commented_at": "2026-10-19T22:12:15Z"
     }
   }
 }
