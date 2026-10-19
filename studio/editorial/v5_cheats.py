@@ -38,7 +38,13 @@ cheat("ff-cheat-1021am-fees-eat", "2026-10-21T08:15",
       "A 1% fee sounds tiny. Here's what it takes 🇨🇦\n\n$300 a month from 28 to 60, growing 10% a year before fees:\n"
       + "\n".join(f"{f:g}% fee → fees take about ${BASE - fv(300, 32, 0.10 - f / 100):,.0f}" for f in FEES)
       + "\n\nWhy: the fee comes out every year, from your whole balance, and the money it takes can't grow for you anymore.\n\n"
-      "Do this: look up your fund's MER (the yearly fee) this week. Over 1%? Ask what a low-fee index fund would cost you.\n\n"
+      "Do this this week (10 minutes):\n1. Log in to your investing account and open each fund.\n"
+      "2. Find the MER (management expense ratio), usually on the fund's page or its \"Fund Facts\" sheet.\n"
+      "3. Over 1%? Ask your bank or broker: \"What would a broad, low-fee index fund cost me instead?\" Ask about any fee to switch.\n\n"
+      "The mindset: you can't control the market, but you can control what you pay. The Simple Path to Wealth makes the same "
+      "case: own the whole market, as cheaply as you can.\n\n"
+      "The rule to remember: every 1% you pay is 1% that stops growing for you.\n\n"
+      "Send this to someone with a bank mutual fund.\n\n"
       f"{NG}\n\n#mer #investingcanada #indexfunds #personalfinancecanada #fees",
       "What's your fund's MER? Maths: $300 at the end of each month for 32 years, 10% a year minus the fee, compounded monthly; "
       "shown is the difference vs no fee.")
@@ -54,8 +60,14 @@ cheat("ff-cheat-1021-one-year-wait", "2026-10-21T19:00",
            src="$300 a month to 65, 10% a year (S&P 500 long-run average), compounded monthly. Not guaranteed."),
       "What waiting just one year costs you by 65 🇨🇦\n\n$300 a month, growing 10% a year:\n"
       + "\n".join(f"Age {a}: waiting one year costs about ${fv(300, 65 - a, 0.10) - fv(300, 64 - a, 0.10):,.0f}" for a in WAIT)
-      + "\n\nWhy so much? The year you skip is the one that would have grown the longest.\n\n"
-      f"Do this: start this payday with any amount, even $50. You can raise it later.\n\n{NG}\n\n"
+      + "\n\nWhy so much? The year you skip is the one that would have grown the longest. You don't lose the first year, "
+      "you lose the last one, the biggest.\n\n"
+      "Do this, this payday (5 minutes):\n1. Open your bank app and set a recurring transfer into your TFSA for payday.\n"
+      "2. Start with any amount, even $50. Starting matters more than the size.\n"
+      "3. Every time you get a raise, raise the transfer too.\n\n"
+      "The mindset: The Psychology of Money's big lesson is that time does the heavy lifting. Waiting for the perfect moment "
+      "costs more than starting small.\n\n"
+      f"The rule to remember: the best year to start was last year. The second best is this payday.\n\n{NG}\n\n"
       "#investingcanada #tfsa #compounding #startnow #personalfinancecanada",
       "How old are you? Maths: $300 at the end of each month to 65 at 10% a year compounded monthly; cost = value starting now minus value starting a year later.")
 
@@ -90,7 +102,12 @@ cheat("ff-cheat-1022am-tfsa-rrsp-fhsa", "2026-10-22T08:15",
       "TFSA vs RRSP vs FHSA, in one look 🇨🇦\n\nTFSA: $7,000 of new room in 2026. No tax break going in, tax-free coming out. Use it for anything.\n"
       "RRSP: 18% of last year's income, up to $33,810. Tax break now, taxed when you take it out. Best for retirement, especially on a higher income.\n"
       "FHSA: $8,000 a year, $40,000 total. Tax break going in AND tax-free out, if it's for your first home.\n\n"
-      "Do this: buying a first home? Open the FHSA first. Otherwise, start with the TFSA.\n\nSave this before tax season.\n\n"
+      "How to pick, in order:\n1. Buying a first home in the next 15 years? Open the FHSA first. Room only starts building once "
+      "it's open, so even $0 inside today counts.\n"
+      "2. Higher income now than you expect in retirement? The RRSP's tax break is worth more to you.\n"
+      "3. Everything else, or not sure? The TFSA. Take money out any time; the room comes back next January 1.\n\n"
+      "Do this tonight: log in to CRA My Account and write down your TFSA room and RRSP deduction limit.\n\n"
+      "The rule to remember: home first? FHSA. Big tax bracket? RRSP. Everything else? TFSA.\n\nSave this before tax season.\n\n"
       "#tfsa #rrsp #fhsa #personalfinancecanada #firsthome",
       "Which one did you open first? Sources: CRA 2026 limits (TFSA $7,000; RRSP $33,810 or 18% of 2025 earned income; FHSA $8,000/yr, $40,000 lifetime).")
 
@@ -127,7 +144,10 @@ cheat("ff-cheat-1023am-cpp-oas", "2026-10-23T08:15",
       "What your government pension pays, 2026 🇨🇦\n\nAverage new CPP at 65: about $858 a month\nMost you can get at 65: about $1,508 a month\n"
       "Start CPP at 60: up to 36% less, for life\nWait until 70: up to 42% more, for life\nOAS at 65 to 74: up to about $763 a month\n\n"
       "Why it matters: together, that's well short of most people's bills. Your TFSA and RRSP fill the gap.\n\n"
-      "Do this: log in to My Service Canada Account and check your CPP estimate. It takes 5 minutes.\n\n"
+      "Do this (5 minutes):\n1. Log in to My Service Canada Account.\n2. Open \"Canada Pension Plan\" and find your estimated "
+      "monthly pension at 65.\n3. Write it next to your monthly bills. The gap between the two is what your TFSA and RRSP need "
+      "to cover.\n\n"
+      "The rule to remember: CPP is the floor, not the house.\n\n"
       "Send this to the friend counting on CPP.\n\n#CPP #OAS #retirementcanada #personalfinancecanada #moneyfoundations",
       "Did you guess higher? Sources (canada.ca): CPP retirement pension at 65, average for new beneficiaries $858.34/month and 2026 "
       "maximum $1,507.65/month; when to start: 0.6% less per month before 65 (up to 36% at 60), 0.7% more per month after 65 (up to 42% "

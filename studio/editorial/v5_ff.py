@@ -106,7 +106,7 @@ reel("ff-reel-1019am-term-vs-whole", FF, "2026-10-19T08:15", "deep", "ff-x-level
     dict(k="because", f="coral", kicker="why term fits",
          text="At 30: *big* mortgage, *tiny* kids. By 50: mortgage *paid down,* kids *grown.*", size=100),
     dict(k="do", f="lite", text="Tonight, open your *benefits portal.* Write down your *life insurance* amount.", size=94, chars=18),
-    dict(k="save", f="cob", text="Cover the years / people *need* you."),
+    dict(k="save", f="cob", text="Cover the years / people need you."),
 ], "New baby, new mortgage: which life insurance? Here's the difference in plain words.\n\n"
    "TERM LIFE covers you for a set time, like 20 years. If you die in that time, your family gets the full amount. If you don't, "
    "it ends. Average price for a non-smoking 30-year-old, $500,000 for 20 years: about $20 a month for a woman, $28 for a man.\n\n"
@@ -125,60 +125,88 @@ reel("ff-reel-1019am-term-vs-whole", FF, "2026-10-19T08:15", "deep", "ff-x-level
    "Send this to your partner.\n\n#lifeinsurance #termlife #newparents #personalfinancecanada #moneyfoundations",
    SRC_LIFE)
 
+# Oct 19 00:15 DEPTH pass: "watch it grow" ending. Half of StatCan's $2,739 clothing average = $1,369.50 a year ≈ $114 a month,
+# invested at 10% a year (monthly, end of month): 1 yr $1,432 · 5 yrs $8,828 · 10 yrs $23,352 · 20 yrs $86,568 · 30 yrs $257,696.
+def _fv(p, yrs, rate=0.10):
+    m = rate / 12
+    return p * ((1 + m) ** (12 * yrs) - 1) / m
+
+
+HALF_CLOTHES = 114  # 2,739 / 2 / 12 = 114.1
+GROW_114 = {y: round(_fv(HALF_CLOTHES, y)) for y in (1, 5, 10, 20, 30)}
+assert GROW_114 == {1: 1432, 5: 8828, 10: 23352, 20: 86568, 30: 257696}, GROW_114
+
 post("ff-1019-rich-habits-01", FF, "2026-10-19T12:00", "learning",
      dict(lay="line", f="lite", text="The *cheap* coat / costs *5 times more*", obj="ok", at="br",
           dots=[("$240 coat", "worn 120 times", f"${K['coat_a']} a wear"), ("$60 coat", "worn 6 times", f"${K['coat_b']} a wear")],
-          save="money foundations · part 2"),
+          save="slide 9: watch the difference grow"),
      [dict(k="say", f="cob", label="sound familiar?", text="A *$60 coat* / on sale. / By February / it's pilling. / *Done after 6 wears.*"),
       dict(k="say", f="lite", text="Your friend paid / *$240* for hers. / She wears it / all winter: / *120 times* in 3 years."),
-      dict(k="rows", f="coral", text="What each coat / *really* costs", cap="the price, split over every wear",
+      dict(k="rows", f="coral", text="It's called / *cost per wear*", cap="the price, divided by every wear",
            rows=[("Sale coat", f"${K['coat_b']} a wear"), ("Good coat", f"${K['coat_a']} a wear")],
-           sub="5 times less, every wear"),
-      dict(k="say", f="cob", label="it has a name", text="It's called / *cost per wear.* / The price tag is / today's cost. / "
-           "Cost per wear is / the *real* cost."),
+           sub="hers is 5 times cheaper"),
       dict(k="why", f="lite", label="why sales fool us", text="A sale shows / what you *save today.* / It hides how soon / "
            "you'll *buy it again.*"),
       dict(k="steps", f="coral", text="The *60-second* check", items=["Guess your uses this year", "Divide the price by that",
-                                                                     "Do the same for the cheap one"],
+                                                                     "Repeat for the cheap one"],
            sub="lower number wins"),
-      dict(k="say", f="cob", label="Canada edition", text="Canadian households / spent *$2,739* / on clothes in 2023. / "
-           "Wear things *twice as long,* / buy *half as often.*", src="Statistics Canada, Survey of Household Spending 2023"),
-      dict(k="say", f="coral", label="the honest part", text="Pricey isn't always / better. A $240 coat / that never leaves / "
+      dict(k="say", f="cob", label="the honest part", text="Pricey isn't always / better. A $240 coat / that never leaves / "
            "the closet is / *$240 a wear.*"),
-      dict(k="do", f="lite", text="Before any buy over *$50,* divide the price by *uses this year.* Lower wins. Unsure? *Wait 48 hours.*",
-           size=92, save="send this to your sale-loving friend")],
-     f"The cheap coat can cost you 5 times more.\n\n"
+      dict(k="say", f="coral", label="Canada edition", text="Canadian households / spent *$2,739* / on clothes in 2023. / "
+           "Buy *half as often,* / and *$114 a month* / stays yours.", src="Statistics Canada, Survey of Household Spending 2023"),
+      dict(k="say", f="lite", label="now watch it grow", text="Invest that / *$114 a month* / at 10% a year:",
+           sub="one habit, 30 years",
+           bars=[("1 yr", GROW_114[1], "$1.4K"), ("10 yrs", GROW_114[10], "$23K"),
+                 ("20 yrs", GROW_114[20], "$87K"), ("30 yrs", GROW_114[30], "$258K")]),
+      dict(k="do", f="cob", text="Before any buy over *$50,* divide the price by *uses this year.* Lower wins. Unsure? *Wait 48 hours.*",
+           size=92, save="divide before you buy.")],
+     f"The cheap coat can cost you 5 times more. And the difference can grow into something big.\n\n"
      f"You buy a $60 coat on sale. By February it's pilling, and you're done after 6 wears. That's ${K['coat_b']} every time you "
      f"put it on. Your friend paid $240 for hers and wears it all winter: 120 times in 3 years. That's ${K['coat_a']} a wear.\n\n"
-     f"It's called cost per wear. The price tag is today's cost. Cost per wear is the real cost.\n\n"
+     f"It's called cost per wear: the price, divided by every time you use it. The price tag is today's cost. Cost per wear is "
+     f"the real cost.\n\n"
      f"Why sales fool us: a sale shows what you save today. It hides how soon you'll buy it again.\n\n"
      f"The 60-second check, before any buy over $50:\n"
      f"1. Guess honestly how many times you'll use it this year (look at how often you used the last one).\n"
      f"2. Divide the price by that number.\n"
      f"3. Do the same for the cheaper option. The lower number wins.\n"
      f"Still unsure? Put it in your cart and wait 48 hours. If you've forgotten about it, you didn't need it.\n\n"
-     f"Canada edition: households spent an average of $2,739 on clothing and accessories in 2023 (Statistics Canada). Wear "
-     f"things twice as long and you buy them half as often.\n\n"
      f"The honest part: pricey isn't always better. Check the seams, the reviews and the return policy. A $240 coat that never "
      f"leaves the closet is $240 a wear.\n\n"
+     f"Now watch it grow. Canadian households spent an average of $2,739 on clothing and accessories in 2023 (Statistics "
+     f"Canada). Buy half as often, and about $1,370 a year stays yours: $114 a month. Invest that $114 a month at 10% a year:\n"
+     f"After 1 year: about ${GROW_114[1]:,}\nAfter 5 years: about ${GROW_114[5]:,}\nAfter 10 years: about ${GROW_114[10]:,}\n"
+     f"After 20 years: about ${GROW_114[20]:,}\nAfter 30 years: about ${GROW_114[30]:,}\n"
+     f"Same closet, fewer trips to the till.\n\n"
+     f"The mindset: books like The Millionaire Next Door describe the same quiet habit. Many people who build wealth buy good "
+     f"things, look after them and use them for years. Wealth is often the money you didn't have to spend twice.\n\n"
+     f"The rule to remember: divide before you buy.\n\n"
      f"Money Foundations, Part 2. Part 3 tomorrow: index funds, in plain words.\n\n"
-     f"Send this to your sale-loving friend. Save it for your next shopping trip.\n\n"
+     f"Send this to your sale-loving friend. Save it for your next shopping trip.\n\n{NG}\n\n"
      f"#moneytips #budgeting #personalfinancecanada #costperwear #moneyfoundations",
      f"Maths: price divided by times used. $240 ÷ 120 = ${K['coat_a']}. $60 ÷ 6 = ${K['coat_b']}. $10 is 5 times $2. Count your own "
      f"uses: they will differ. Canada figure: Statistics Canada, The Daily, May 21, 2025, Survey of Household Spending 2023: "
-     f"\"households spent an average of $2,739 on clothing and accessories\". Story quiz: Ellen MacArthur Foundation, A New "
-     f"Textiles Economy (2017): the average number of times a garment is worn has fallen 36% compared with 15 years earlier.")
+     f"\"In 2023, households spent an average of $2,739 on clothing and accessories\". Half of that is $1,369.50 a year, about $114 "
+     f"a month. Growth: $114 at the end of each month, compounded monthly at 10% a year, no fees or taxes: 1 year ≈ ${GROW_114[1]:,}, "
+     f"5 years ≈ ${GROW_114[5]:,}, 10 years ≈ ${GROW_114[10]:,}, 20 years ≈ ${GROW_114[20]:,}, 30 years ≈ ${GROW_114[30]:,}. "
+     f"10% = the S&P 500's long-run average since 1957, before inflation (Fidelity). Mindset: Thomas J. Stanley and William D. Danko, "
+     f"The Millionaire Next Door (1996). Story quiz: Ellen MacArthur Foundation, A New Textiles Economy (2017): the average number "
+     f"of times a garment is worn has fallen 36% compared with 15 years earlier. Education, not advice.")
+
+# Watch-it-grow for Fix 1: $508 a month from 33 (monthly, end of month, 10% a year): 40 ≈ $61,443 · 50 ≈ $270,389 · 60 ≈ $836,017.
+GROW_508 = {a: int(round(_fv(K["catch_pmt"], a - 33), -3)) for a in (40, 50, 60)}
+assert GROW_508 == {40: 61000, 50: 270000, 60: 836000}, GROW_508
 
 reel("ff-reel-1019-late-start", FF, "2026-10-19T19:00", "deep", "ff-x-big-reveal", "save this if you feel behind", [
-    dict(k="hook", f="cob", text="Started at 33? / *You can* / *catch up.*", emo="⏳"),
-    dict(k="say", f="lite", text=f"Friend: *$300 a month* / from 28. At 60: / *${K['s28_60']:,}.*", size=108),
-    dict(k="say", f="coral", text=f"You: same $300, / from 33. At 60: / *${K['s33_60']:,}.*", size=108),
-    dict(k="because", f="deep", kicker="why so big?", text="Her first dollars grew the *longest.*", size=116),
+    dict(k="hook", f="cob", text="Started at 33? / Here's how / you *catch up.*", emo="⏳"),
+    dict(k="list", f="lite", items=["$300 a month, to 60:", f"From 28: *${K['s28_60']:,}*", f"From 33: *${K['s33_60']:,}*"], size=100),
+    dict(k="because", f="deep", kicker="why the gap?", text="The *first* dollars / grow the *longest.*", size=116),
     dict(k="num", f="lite", label="Fix 1: invest", value=K["catch_pmt"], pre="$", suf="a month from 33, not $300",
          size=260, drop=True),
-    dict(k="say", f="cob", text=f"Fix 2: keep $300, / invest until *65.* / Same *${K['s28_60']:,}.*", size=108),
-    dict(k="do", f="lite", text="This payday, raise your *TFSA auto-transfer* by *$25.*", size=94, chars=18),
-    dict(k="save", f="coral", text="Late? Pay a bit more, / or go a bit longer."),
+    dict(k="list", f="coral", items=[f"At 40: *${GROW_508[40]:,}*", f"At 50: *${GROW_508[50]:,}*",
+                                     f"At 60: *${GROW_508[60]:,}*"], size=96),
+    dict(k="do", f="lite", text="This payday, raise your *TFSA auto-transfer.* Every raise, *raise it again.*", size=94, chars=18),
+    dict(k="save", f="coral", text="Fix 2: keep $300, / invest until 65. / Same total."),
 ], f"Started investing at 33, not 28? You can catch up. Here's exactly how.\n\n"
    f"Your friend invests $300 a month from 28. At 10% a year, by 60 that's about ${K['s28_60']:,}.\n"
    f"You invest the same $300 a month, but from 33. By 60: about ${K['s33_60']:,}.\n\n"
@@ -186,18 +214,22 @@ reel("ff-reel-1019-late-start", FF, "2026-10-19T19:00", "deep", "ff-x-big-reveal
    f"Two ways to catch up:\n"
    f"1. Invest about ${K['catch_pmt']} a month instead of $300, until 60. That's ${K['catch_pmt'] * 12:,} a year, which fits inside "
    f"one year's TFSA room ($7,000 in 2026).\n"
+   f"Watch Fix 1 grow: about ${GROW_508[40]:,} by 40, ${GROW_508[50]:,} by 50, and ${GROW_508[60]:,} by 60. Slow at first, "
+   f"then it snowballs.\n"
    f"2. Keep $300 a month and keep investing until 65. You land at about the same ${K['s28_60']:,}.\n"
    f"Or mix them: a bit more each month, a couple of years longer.\n\n"
    f"Do this, this payday (5 minutes):\n"
    f"1. Open your bank app and go to Transfers, then Scheduled or Recurring transfers.\n"
    f"2. Find the automatic transfer into your TFSA (no transfer yet? set one up for payday).\n"
-   f"3. Raise it by $25. Every time you get a raise, raise it again.\n\n"
-   f"The rule to remember: start 5 years late, and you either pay a bit more or go 5 years longer.\n\n"
+   f"3. Raise it toward ${K['catch_pmt']}, or whatever you can do today. Every time you get a raise, raise it again.\n\n"
+   f"The mindset: you can't buy back the 5 years, but time still does most of the work from here. Books like The Psychology "
+   f"of Money make the same point: the biggest lever is how long you stay invested.\n\n"
+   f"The rule to remember: late isn't lost. Pay a bit more, or go a bit longer.\n\n"
    f"Send this to the friend who thinks it's too late. Part 2 of 2.\n\n{NG}\n\n"
    f"#investing #TFSA #personalfinancecanada #retirement #moneyfoundations",
    f"Maths: $300 at the end of each month, compounded monthly at 10% a year, no fees or taxes: 28 to 60 ≈ ${K['s28_60']:,}; "
    f"33 to 60 ≈ ${K['s33_60']:,}; 33 to 65 ≈ ${K['s28_60']:,} (the same 32 years of deposits). ${K['catch_pmt']} a month from 33 to "
-   f"60 reaches the same total as $300 from 28. Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 "
+   f"60 reaches the same total as $300 from 28 (≈ ${GROW_508[40]:,} at 40, ${GROW_508[50]:,} at 50, ${GROW_508[60]:,} at 60, rounded).  Source for 10%: Fidelity, \"S&P 500 average return\": about 10% a year since 1957 "
    f"(before inflation). TFSA limit 2026: $7,000 (CRA). Education, not advice.", series="Start early · part 2/2")
 
 chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [  # day B: guess-and-reveal quiz
@@ -208,120 +240,221 @@ chain("ff-ch-1019", FF, "2026-10-19", "ff19", "money foundations · part 2", [  
          tap="source: Ellen MacArthur Foundation, 2017 · tap →"),
     dict(k="bubbles", f="cob", label="what that costs you", bubbles=[
         ("out", "Canadian households spent *$2,739* on clothes in 2023."),
-        ("out", "fewer wears means you pay it *again, sooner.*"),
-        ("in", "so how do I check before I buy?")], obj="phone", tap="source: Statistics Canada · tap →"),
-    dict(k="payoff", f="lite", label="the 60-second check", text="Price, divided / by *uses this year*",
-         sub="do it for the cheap one too. lower wins.", obj="piggy", tap="next story →"),
-    dict(k="handoff", f="cob", text="The *cheap* coat / costs *5 times more*", img="ff-1019-rich-habits-01/01.jpg", next="part 3 tomorrow"),
+        ("out", "buy half as often and *$114 a month* stays yours."),
+        ("in", "how do I know what to skip?")], obj="phone", tap="source: Statistics Canada · tap →"),
+    dict(k="payoff", f="lite", label="the rule: divide before you buy", text="Price, divided / by *uses this year*",
+         sub="do the cheap one too. lower wins.", obj="piggy", tap="next story →"),
+    dict(k="handoff", f="cob", text="The *cheap* coat / costs *5 times more*", img="ff-1019-rich-habits-01/01.jpg", next="+ what $114 a month grows into"),
 ])
 
 
 # ================================================================== Oct 20 · Part 3: index funds
 reel("ff-reel-1020am-tfsa-rrsp", FF, "2026-10-20T08:15", "deep", "ff-x-level-up", "save this for tax season", [
-    dict(k="hook", f="cob", text="TFSA or RRSP? / Here's the / *simple* difference.", emo="🇨🇦"),
-    dict(k="say", f="lite", text="An *RRSP* saves you / tax now. You pay it / later, when you / take money out.", size=106),
-    dict(k="say", f="coral", text="A *TFSA* is the / opposite. No tax / break now, but no tax / on the growth, ever.", size=106),
-    dict(k="because", f="deep", kicker="so which one?",
-         text="Higher tax rate now than in retirement? The RRSP often wins. If not, the TFSA.", size=96, drop=True),
-    dict(k="do", f="lite", text="Tonight, check your TFSA and RRSP room in your *CRA account.*", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / the friend who asks / every tax season."),
-], "TFSA or RRSP? Here's the simple difference.\n\nAn RRSP saves you tax now: what you put in can lower your taxes this year. You pay "
-   "the tax later, when you take the money out.\n\nA TFSA is the opposite. No tax break when you put money in, but you never pay tax on "
-   "the growth or when you take it out.\n\nSo which one? If your tax rate is higher now than it will be in retirement, the RRSP often wins. "
-   "If not, the TFSA often does. Plenty of people use both.\n\nDo this tonight: log in to your CRA My Account and check your TFSA "
-   "room and RRSP limit.\n\nSend this to the friend who asks every tax season.\n\n"
-   "#TFSA #RRSP #canadianfinance #personalfinance #moneyfoundations",
-   "Source: CIBC, \"Should you contribute to your TFSA or your RRSP?\": RRSP contributions may be tax-deductible and withdrawals are "
-   "taxable; TFSA contributions are not deductible and withdrawals are tax-free if you follow the rules. Your TFSA contribution room and "
-   "RRSP deduction limit are shown in CRA My Account (canada.ca). Education, not tax advice.")
+    dict(k="hook", f="cob", text="TFSA or RRSP? / *One question* / decides it.", emo="🇨🇦"),
+    dict(k="list", f="lite", items=["*RRSP:* save tax now,", "pay it later.", "*TFSA:* no break now,", "*never taxed* again."],
+         size=80),
+    dict(k="because", f="deep", kicker="the one question",
+         text="Is your tax rate *higher now* than *in retirement?*", size=100),
+    dict(k="list", f="lite", items=["Higher now? *RRSP first.*", "Lower now? *TFSA first.*", "Not sure? *TFSA.*"],
+         size=100, drop=True),
+    dict(k="list", f="coral", items=["2026 TFSA: *$7,000*", "RRSP: *18%* of pay,", "up to *$33,810*"], size=92),
+    dict(k="do", f="lite", text="Tonight, open *CRA My Account.* Write down *both rooms.*", size=96, chars=18),
+    dict(k="save", f="cob", text="Send this to / your tax-season friend."),
+], "TFSA or RRSP? One question decides it.\n\n"
+   "RRSP: what you put in can lower your taxes this year. You pay the tax later, when you take the money out.\n"
+   "TFSA: no tax break when you put money in, but the growth and every withdrawal are tax-free, forever.\n\n"
+   "The one question: is your tax rate higher now than it will be in retirement?\n"
+   "Higher now (a good salary today)? The RRSP often wins: you skip tax at a high rate and pay it later at a lower one.\n"
+   "Lower now (early career, part-time, a low-income year)? The TFSA often wins: you pay the low tax now and never again.\n"
+   "Not sure? Many people start with the TFSA. You can take money out any time and the room comes back the next year.\n\n"
+   "2026 room (canada.ca): TFSA $7,000 (plus any unused room from past years). RRSP: 18% of last year's earned income, up to "
+   "$33,810, minus any pension adjustment.\n\n"
+   "Do this tonight (5 minutes):\n"
+   "1. Log in to CRA My Account.\n"
+   "2. Find \"TFSA room\" and \"RRSP deduction limit\". Write both down.\n"
+   "3. Next to them, write your tax bracket from last year's return. Now you know which account to fill first.\n\n"
+   "The rule to remember: tax higher now, RRSP first. Tax lower now, TFSA first.\n\n"
+   "Send this to the friend who asks every tax season. Money Foundations, Part 3 is in today's post.\n\n"
+   "#TFSA #RRSP #canadianfinance #personalfinancecanada #moneyfoundations",
+   "Sources: canada.ca, Savings and pension plan administration, \"What's new\": 2026 TFSA dollar limit $7,000; 2026 RRSP limit "
+   "$33,810. CRA, RRSPs: the deduction limit is 18% of the previous year's earned income up to the yearly limit, minus a pension "
+   "adjustment, plus unused room; withdrawals are taxed as income. CRA, TFSA: contributions are not deductible; income and "
+   "withdrawals are tax-free; withdrawals are added back to your room the following January 1. Your own limits are in CRA My "
+   "Account. Education, not tax advice.")
+
+
+# Oct 19 DEPTH pass. SPIVA U.S. Year-End 2025 re-checked Oct 19 (79% of active large-cap funds trailed the S&P 500 in 2025).
+GROW_300 = {y: round(_fv(300, y)) for y in (1, 10, 20, 30)}
+assert GROW_300 == {1: 3770, 10: 61453, 20: 227811, 30: 678146}, GROW_300
+FEE_GAP = round(_fv(300, 30, 0.098) - _fv(300, 30, 0.08))  # 0.2% vs 2% fee on a 10% return, 30 years
+assert 200000 < FEE_GAP < 205000, FEE_GAP
 
 post("ff-1020-foundations-3-index-funds", FF, "2026-10-20T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 3", text="Own a tiny piece / of *500 companies*", obj="point", at="bl",
-          save="index funds, in plain words"),
+          save="the lazy way most pros can't beat"),
      [dict(k="say", f="lite", label="picking stocks is hard", text="In 2025, about / *8 in 10* pro funds / did worse than / the market.",
-           size=124, src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025 (large-cap funds)"),
-      dict(k="say", f="cob", label="the other way", text="An *index fund* / buys a bit of / *everything.*",
-           size=130, sub="no guessing needed"),
+           src="S&P Dow Jones Indices, SPIVA U.S. Year-End 2025 (large-cap funds)"),
+      dict(k="say", f="cob", label="the other way", text="An *index fund* / buys a bit of / *everything* / on a list.",
+           sub="the S&P 500 list: 500 big US companies"),
       dict(k="why", f="lite", label="think of a fruit basket", text="Don't bet on / one apple. / Buy the *whole* / *basket.*",
-           size=130, sub="one bad apple barely matters"),
-      dict(k="say", f="coral", text="Since 1957, the / S&P 500 grew, / on average:", num="10%", size=116, sub="a year, before inflation",
+           sub="one bad apple barely matters"),
+      dict(k="say", f="coral", text="Since 1957, the / S&P 500 grew, / on average:", num="10%", sub="a year, before inflation",
            src="Fidelity, S&P 500 average return, before inflation"),
-      dict(k="say", f="lite", label="the honest part", text="Some years / it drops hard. / In 2008, it / fell about *37%.*", size=120,
-           sub="so leave it alone for years"),
-      dict(k="do", f="cob", text="Open your investing app and search *“S&P 500 index fund.”* Just look today.",
-           size=100, save="send this to the friend who picks stocks")],
-     "Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500.\n\n"
-     "An index fund skips the guessing. It buys a little of every company on a list, like the 500 big US companies in the S&P 500. "
-     "Think of a fruit basket: instead of betting on one apple, you buy the whole basket, so one bad apple barely matters.\n\n"
-     "Since 1957, the S&P 500 has grown about 10% a year on average. The honest part: some years it drops hard. In 2008 it fell about 37%. "
-     "Index funds work best when you leave them alone for years.\n\nDo this: open your investing app and search \"S&P 500 index fund.\" "
-     f"Just look. No need to buy today.\n\nMoney Foundations, Part 3. Part 4 tomorrow: free money for your kid's education.\n\n"
-     f"Send this to the friend who picks stocks.\n\n{NG}\n\n#indexfunds #investing #personalfinance #moneyfoundations #canadianfinance",
-     "Sources: S&P Dow Jones Indices, SPIVA U.S. Year-End 2025: 79% of active large-cap U.S. equity funds underperformed the S&P 500 in "
-     "2025. Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). S&P 500 total return in 2008: about -37% "
-     "(S&P Dow Jones Indices). Education, not advice.")
+      dict(k="say", f="lite", label="now watch it grow", text="*$300 a month* / into the basket, / from age 30:",
+           sub="at 10% a year, by age",
+           bars=[("31", GROW_300[1], "$3.8K"), ("40", GROW_300[10], "$61K"), ("50", GROW_300[20], "$228K"),
+                 ("60", GROW_300[30], "$678K")]),
+      dict(k="say", f="cob", label="the honest part", text="Some years / it drops hard. / In 2008, it / fell about *37%.*",
+           sub="the rule: never sell in the drop"),
+      dict(k="say", f="coral", label="the silent leak", text="Pay a *2% fee* / instead of *0.2%,* / and you end with / "
+           "about *$200,000 less.*", sub="tomorrow 8:15: the fee table"),
+      dict(k="steps", f="lite", text="Start in *15 minutes*", items=["Open a TFSA at an online broker", "Pick a broad index fund",
+                                                                   "Set an automatic monthly buy"],
+           sub="lowest fee wins"),
+      dict(k="do", f="cob", text="Open your investing app. Search *S&P 500 index.* Write down *two funds' fees.*",
+           size=96, save="buy the basket. sit still.")],
+     f"Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500 "
+     f"(79%, S&P Dow Jones Indices).\n\n"
+     f"An index fund skips the guessing. It buys a little of every company on a list, like the 500 big US companies in the S&P 500. "
+     f"Think of a fruit basket: instead of betting on one apple, you buy the whole basket, so one bad apple barely matters.\n\n"
+     f"Since 1957, the S&P 500 has grown about 10% a year on average, before inflation.\n\n"
+     f"Now watch it grow. $300 a month into the basket from age 30, at 10% a year:\n"
+     f"At 31: about ${GROW_300[1]:,}\nAt 40: about ${GROW_300[10]:,}\nAt 50: about ${GROW_300[20]:,}\nAt 60: about ${GROW_300[30]:,}\n"
+     f"You put in $108,000. The basket did the rest.\n\n"
+     f"The honest part: some years it drops hard. In 2008 it fell about 37%. The people who got hurt most were the ones who sold "
+     f"at the bottom. The rule: never sell in the drop.\n\n"
+     f"The silent leak: fees. Pay a 2% yearly fee instead of 0.2% on that same $300 a month, and after 30 years you end with "
+     f"about $200,000 less. Tomorrow at 8:15: the full fee table.\n\n"
+     f"Start in 15 minutes:\n"
+     f"1. Open a TFSA at an online brokerage (or a robo-advisor, if you want it done for you).\n"
+     f"2. Pick a broad index fund or ETF. Check its yearly fee (the MER): under 0.25% is a good sign.\n"
+     f"3. Set an automatic monthly buy for payday. Then leave it alone.\n\n"
+     f"The mindset: books like The Simple Path to Wealth and The Psychology of Money land in the same place. Own the whole market, "
+     f"keep costs low, and let time do the heavy lifting. Boring is the point.\n\n"
+     f"Do this today: open your investing app, search \"S&P 500 index\" and write down two funds' fees. Just look. No need to buy "
+     f"today.\n\nThe rule to remember: buy the basket, keep the fee low, sit still.\n\n"
+     f"Money Foundations, Part 3. Part 4 tomorrow: free money for your kid's education.\n\n"
+     f"Send this to the friend who picks stocks.\n\n{NG}\n\n#indexfunds #investing #personalfinancecanada #moneyfoundations #TFSA",
+     f"Sources: S&P Dow Jones Indices, SPIVA U.S. Year-End 2025: \"79% of all active large-cap U.S. equity funds underperformed "
+     f"the S&P 500\" in 2025. Fidelity, \"S&P 500 average return\": about 10% a year since 1957 (before inflation). S&P 500 total "
+     f"return in 2008: about -37% (S&P Dow Jones Indices). Maths: $300 at the end of each month, compounded monthly at 10% a year, "
+     f"no taxes: 1 year ≈ ${GROW_300[1]:,}, 10 years ≈ ${GROW_300[10]:,}, 20 years ≈ ${GROW_300[20]:,}, 30 years ≈ ${GROW_300[30]:,}. "
+     f"Fees: the same deposits at 9.8% (0.2% fee) vs 8% (2% fee) for 30 years differ by about ${FEE_GAP:,}. MER = management "
+     f"expense ratio. Ideas: J.L. Collins, The Simple Path to Wealth; Morgan Housel, The Psychology of Money. Education, not advice.")
 
+# Facts re-checked Oct 19 on Steps to Justice (CLEO), "Learn what happens to your property if you die without a will":
+# married partner gets everything under $350,000, or the first $350,000 (deaths from March 1, 2021); "The intestacy rules leave
+# nothing to: ... a common-law partner" (they may make a dependant's support claim in court).
 reel("ff-reel-1020-wills", FF, "2026-10-20T19:00", "deep", "ff-x-money-moves", "save this and talk about it tonight", [
     dict(k="hook", f="cob", text="Not married? / No will? Your / partner may get / *nothing.*", emo="📝"),
-    dict(k="say", f="lite", text="In Ontario, if you / die without a will, / the law decides who / gets your things.", size=112),
-    dict(k="because", f="coral", kicker="here's the shock", text="Those rules give *nothing* to a common-law partner, even after years together.",
-         size=108, drop=True),
-    dict(k="do", f="lite", text="This week, find a *wills lawyer* near you and book a first call. Do it together.", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / your partner. / Tonight."),
-], "Not married? No will? Your partner may get nothing.\n\nIn Ontario, if you die without a will, the law decides who gets your things. "
-   "Those rules give nothing to a common-law partner, even after years together. Other provinces have their own rules, so check yours.\n\n"
-   "A will is how you decide, not the law.\n\nDo this: this week, find a wills lawyer near you and book a first call. Do it together.\n\n"
-   "Send this to your partner. Tonight.\n\n#wills #estateplanning #commonlaw #personalfinance #moneyfoundations",
-   "Source: Steps to Justice (CLEO, Community Legal Education Ontario): under Ontario's intestacy rules, \"The intestacy rules give "
-   "nothing to a common-law partner\" (a partner may be able to make other claims in court). stepstojustice.ca. Rules differ by province. "
-   "General information, not legal advice.")
+    dict(k="say", f="lite", text="In Ontario, with / no will, *the law* / decides who gets / everything.", size=108),
+    dict(k="list", f="coral", items=["Married partner:", "the first *$350,000*", "Common-law partner:", "*$0*, even after years"],
+         size=96, drop=True),
+    dict(k="because", f="deep", kicker="the fix", text="A will. You decide *who gets what,* and who you want to *raise your kids.*",
+         size=96),
+    dict(k="do", f="lite", text="This week, book a *wills lawyer* together. Bring your *accounts,* debts and your *guardian pick.*",
+         size=88, chars=18),
+    dict(k="save", f="cob", text="No will? / The law writes / one for you."),
+], "Not married? No will? Your partner may get nothing.\n\n"
+   "In Ontario, if you die without a will, the law decides who gets everything:\n"
+   "Married partner: everything if the estate is under $350,000, or the first $350,000, then the rest is shared with your kids.\n"
+   "Common-law partner: nothing under these rules, even after years together. They may have to go to court for support.\n"
+   "Other provinces have their own rules, so check yours.\n\n"
+   "The fix is a will. It says who gets what, and who you want to raise your kids if both of you are gone.\n\n"
+   "Do this week (one evening, together):\n"
+   "1. List your accounts, your home, your life insurance and your debts on one page.\n"
+   "2. Agree on a guardian for your kids, and ask them first.\n"
+   "3. Book a first call with a wills lawyer. Ask: \"What does a will and power of attorney cost for both of us?\"\n"
+   "4. Check the beneficiary names on your TFSA, RRSP and life insurance while you're at it.\n\n"
+   "The rule to remember: no will means the law writes one for you.\n\n"
+   "Send this to your partner. Tonight.\n\n#wills #estateplanning #commonlaw #personalfinancecanada #moneyfoundations",
+   "Source: Steps to Justice (CLEO, Community Legal Education Ontario), \"Learn what happens to your property if you die without a "
+   "will\": if the estate is worth less than $350,000, your married partner gets everything; if more, the first $350,000 (deaths "
+   "on or after March 1, 2021), and the rest is divided between your married partner and children. \"The intestacy rules leave "
+   "nothing to\" a common-law partner, who might be able to make a dependant's support claim in court. stepstojustice.ca. Rules "
+   "differ by province. General information, not legal advice.")
 
-chain("ff-ch-1020", FF, "2026-10-20", "ff20", "money foundations · part 3", [
+chain("ff-ch-1020", FF, "2026-10-20", "ff20", "money foundations · part 3", [  # day A: the Story carries the lesson
     dict(k="photo", text="“I don't know / which stocks / *to pick.*”", sub="good news: you *don't have to* →", ink="light", y=760),
     dict(k="bubbles", f="lite", label="sound familiar?", bubbles=[
         ("in", "everyone at work talks stocks. I have no clue 😅"), ("out", "you don't have to pick one."),
-        ("out", "you can buy a little of *all of them.*")]),
+        ("out", "in 2025, *8 in 10* pro funds didn't beat the market anyway.")], tap="source: SPIVA 2025 · tap →"),
     dict(k="bubbles", f="cob", label="here's how", bubbles=[
         ("out", "an *index fund* buys a little of every company on a list."),
-        ("out", "like the S&P 500: 500 big US companies.")], obj="phone"),
-    dict(k="payoff", f="coral", label="since 1957, on average", text="about / *10% a year*",
-         sub="not every year. some years it drops.", obj="piggy"),
-    dict(k="handoff", f="lite", text="Money Foundations, / *Part 3*", img="ff-1020-foundations-3-index-funds/01.jpg", next="part 4 tomorrow"),
+        ("out", "the S&P 500: 500 big US companies, one buy."),
+        ("out", "now add *$300 a month* from 30…")], obj="phone"),
+    dict(k="payoff", f="coral", label="at 10% a year, by 60:", text=f"about / *${round(GROW_300[30], -3):,}*",
+         sub="you put in $108,000. the basket did the rest.", obj="piggy", tap="not guaranteed · next story →"),
+    dict(k="handoff", f="lite", text="Money Foundations, / *Part 3*", img="ff-1020-foundations-3-index-funds/01.jpg",
+         next="+ how to start in 15 minutes"),
 ])
 
 
 # ================================================================== Oct 21 · Part 4: the Canada Learning Bond
+# Oct 19 DEPTH pass: watch-it-grow for the bond alone. $500 in the first year + $100 a year to 15 (eligible every year),
+# growing 10% a year (annual): birth $500 · 10 ≈ $2,891 · 15 ≈ $5,266 · 18 ≈ $7,009.
+def _clb_grow():
+    v, out = 0.0, {}
+    for age in range(19):
+        v += 500 if age == 0 else (100 if age <= 15 else 0)
+        out[age] = round(v)
+        v *= 1.10
+    return out
+
+
+CLB_GROW = _clb_grow()
+assert (CLB_GROW[0], CLB_GROW[10], CLB_GROW[15], CLB_GROW[18]) == (500, 2891, 5266, 7009), CLB_GROW
+
 post("ff-1021-clb-who-qualifies", FF, "2026-10-21T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 4", text="Free *$2,000* / for your kid's / *education*", obj="point", at="bl",
-          save="check if you qualify on slide 4"),
+          save="+ what it grows into by 18"),
      [dict(k="say", f="lite", label="sound too good?", text="The government / can put up to / *$2,000* toward / your kid's school.",
-           size=124, sub="and you add $0"),
-      dict(k="say", f="cob", label="the Canada Learning Bond", text="*$500* to start. / *$100* more / each year. / Up to $2,000.", size=124),
+           sub="and you add $0"),
+      dict(k="say", f="cob", label="the Canada Learning Bond", text="*$500* to start. / *$100* more / each year. / Up to $2,000."),
       dict(k="rows", f="lite", text="Who *qualifies*", cap="family net income, July 2026 to June 2027",
            rows=[("1 to 3 kids", "$58,523 or less"), ("4 kids", "under $66,036"), ("5 kids", "under $73,577")],
            sub="kids born in 2004 or later", src="canada.ca · ESDC notice 2026-1138 · limits change each July"),
-      dict(k="say", f="coral", label="the part nobody mentions", text="It only lands / in an *RESP:* / a savings account / for school.",
-           size=124),
-      dict(k="say", f="cob", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
-           size=124, src="C.D. Howe Institute, using ESDC 2022 data"),
-      dict(k="say", f="lite", label="good news", text="You can still / apply until your / child turns *21.*", size=128,
-           src="canada.ca · Canada Learning Bond"),
-      dict(k="do", f="cob", text="This week, ask your bank for an *RESP with the Learning Bond.* Bring your child's SIN.",
-           size=100, save="send this to a new parent")],
-     "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\n"
-     "It's called the Canada Learning Bond. It starts with $500, then adds $100 every year, up to $2,000.\n\n"
-     "Who qualifies (July 2026 to June 2027): kids born in 2004 or later, in families with net income of $58,523 or less for 1 to 3 kids, "
-     "under $66,036 for 4 kids, or under $73,577 for 5 kids. The limits change each July.\n\nThe part nobody mentions: the money only lands "
-     "in an RESP, a savings account for school. Many banks open one for free. In 2022, about 2.5 million eligible kids had never received it. "
-     "Didn't apply when they were a baby? You can still apply until your child turns 21.\n\n"
-     "Do this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
-     "Money Foundations, Part 4. Send this to a new parent.\n\n#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
-     "Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional year "
-     "up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under 21 when applying. "
-     "Income limits: ESDC notice 2026-1138, July 1, 2026 to June 30, 2027 (adjusted family net income). Take-up: Godbout & Samoisette, "
-     "C.D. Howe Institute, \"On Its Anniversary, Has the Goal of the Canada Learning Bond Been Achieved?\", citing ESDC's 2022 Canada "
-     "Education Savings Program statistical review: take-up rose from 29.1% (2013) to 42.5% (2022); 2.5 million of 4.4 million eligible "
-     "children had not received it.")
+      dict(k="say", f="coral", label="now watch it grow", text="Just the bond, / invested at 10%, / by age:",
+           sub="free money, 18 years of growth",
+           bars=[("birth", CLB_GROW[0], "$500"), ("10", CLB_GROW[10], "$2.9K"), ("15", CLB_GROW[15], "$5.3K"),
+                 ("18", CLB_GROW[18], "$7K")]),
+      dict(k="say", f="cob", label="the part nobody mentions", text="It only lands / in an *RESP:* / a savings account / for school."),
+      dict(k="say", f="lite", label="you're not alone", text="In 2022, / *2.5 million* / eligible kids / never got it.",
+           src="C.D. Howe Institute, using ESDC 2022 data"),
+      dict(k="steps", f="coral", text="Get it in *3 steps*", items=["Get your child a SIN", "Open an RESP with it",
+                                                                "Ask them to apply for it"],
+           sub="no deposit needed"),
+      dict(k="say", f="cob", label="missed it?", text="You can still / apply until your / child turns *21.*",
+           sub="past years can be paid too", src="canada.ca · Canada Learning Bond"),
+      dict(k="do", f="lite", text="This week, ask your bank for an *RESP with the Learning Bond.* Bring your child's SIN.",
+           size=100, save="free money waits. go get it.")],
+     f"The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.\n\n"
+     f"It's called the Canada Learning Bond. It starts with $500, then adds $100 for each year you qualify, up to $2,000 (to age 15).\n\n"
+     f"Who qualifies (July 2026 to June 2027): kids born in 2004 or later, in families with adjusted net income of $58,523 or less "
+     f"for 1 to 3 kids, under $66,036 for 4 kids, or under $73,577 for 5 kids. The limits change each July.\n\n"
+     f"Now watch it grow. Just the bond, invested at 10% a year:\nAt birth: $500\nAt 10: about ${CLB_GROW[10]:,}\n"
+     f"At 15: about ${CLB_GROW[15]:,}\nAt 18: about ${CLB_GROW[18]:,}\nFree money, plus 18 years of time.\n\n"
+     f"The part nobody mentions: the money only lands in an RESP, a savings account for school. In 2022, about 2.5 million "
+     f"eligible kids had never received it.\n\n"
+     f"Get it in 3 steps:\n1. Get your child a Social Insurance Number (free, from Service Canada).\n"
+     f"2. Open an RESP with a bank or provider that offers the Learning Bond. Many charge no fees, and no deposit is needed.\n"
+     f"3. Ask them to apply for the bond for you. Keep filing your taxes every year so you stay eligible.\n\n"
+     f"Missed it? You can still apply until your child turns 21, and the bond includes the years you qualified.\n\n"
+     f"The mindset: free money only works if you collect it. It's the same idea as paying yourself first, the famous rule in "
+     f"The Wealthy Barber: small, early and automatic beats big and late.\n\n"
+     f"Do this: this week, ask your bank to open an RESP with the Canada Learning Bond. Bring your child's SIN.\n\n"
+     f"The rule to remember: never leave free money on the table.\n\n"
+     f"Money Foundations, Part 4. Send this to a new parent.\n\n{NG}\n\n"
+     f"#RESP #canadalearningbond #parenting #canadianfinance #moneyfoundations",
+     f"Sources: canada.ca (CRA), Canada Learning Bond: up to $2,000; $500 for the first eligible year plus $100 for each additional "
+     f"year up to age 15; children born in 2004 or later; personal contributions are not required; the beneficiary must be under "
+     f"21 when applying, and the bond covers the years they were eligible. Income limits: ESDC notice 2026-1138, July 1, 2026 to "
+     f"June 30, 2027 (adjusted family net income). Take-up: Godbout & Samoisette, C.D. Howe Institute, \"On Its Anniversary, Has "
+     f"the Goal of the Canada Learning Bond Been Achieved?\", citing ESDC's 2022 Canada Education Savings Program statistical "
+     f"review: 2.5 million of 4.4 million eligible children had not received it. Maths: $500 in the first year and $100 a year to "
+     f"age 15 (eligible every year), growing 10% a year compounded yearly, no fees or taxes: ≈ ${CLB_GROW[10]:,} at 10, "
+     f"${CLB_GROW[15]:,} at 15, ${CLB_GROW[18]:,} at 18. 10% = the S&P 500's long-run average (Fidelity), before inflation. "
+     f"Mindset: David Chilton, The Wealthy Barber. Education, not advice.")
 
 chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [  # day B: guess-and-reveal quiz
     dict(k="bubbles", f="lite", label="quick quiz", title="A *free $2,000* / for kids' school…", bubbles=[
@@ -331,7 +464,11 @@ chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [  
          tap="source: C.D. Howe Institute, ESDC data · tap →"),
     dict(k="payoff", f="cob", label="why it matters", text="No RESP, / *no bond.*", sub="the money only lands in an RESP", obj="piggy",
          tap="next story →"),
-    dict(k="handoff", f="lite", text="Free *$2,000* / for your kid", img="ff-1021-clb-who-qualifies/01.jpg", next="save it for your bank visit"),
+    dict(k="bubbles", f="lite", label="get it in 3 steps", bubbles=[
+        ("out", "1. get your child a *SIN* (free)"), ("out", "2. open an *RESP* that offers the bond"),
+        ("out", "3. ask them to *apply.* no deposit needed.")], obj="phone", tap="next story →"),
+    dict(k="handoff", f="coral", text="Free *$2,000* / for your kid", img="ff-1021-clb-who-qualifies/01.jpg",
+         next="+ what it grows into by 18"),
 ])
 
 
@@ -341,6 +478,8 @@ chain("ff-ch-1021", FF, "2026-10-21", "ff21", "money foundations · part 4", [  
 REFUND = int(round(5000 * 0.2965 / 10) * 10)                      # 1,480
 REFUND_60 = int((REFUND * (1 + 0.10 / 12) ** 360) // 1000 * 1000)  # 29,000 (rounded down)
 assert (REFUND, REFUND_60) == (1480, 29000), (REFUND, REFUND_60)
+REFUND_GROW = {a: round(REFUND * (1 + 0.10 / 12) ** (12 * (a - 30))) for a in (40, 50, 60)}
+assert REFUND_GROW == {40: 4006, 50: 10846, 60: 29359}, REFUND_GROW
 SRC_REFUND = ("Sources: Richter, \"2026 Ontario Income Tax Tables\": combined federal + Ontario marginal rate of 29.65% on taxable "
               "income from $58,523 to $94,907 (2026). So a $5,000 RRSP deduction at $80,000 of income lowers tax by about $1,480. "
               "CRA (canada.ca), RRSPs: contributions are deductible, and withdrawals are taxed as income; contributions made in the "
@@ -351,38 +490,70 @@ reel("ff-reel-1022-refund-29k", FF, "2026-10-22T19:00", "deep", "ff-x-big-reveal
     dict(k="hook", f="cob", text="Spend the refund, / or turn it into / *$29,000?*", emo="💸"),
     dict(k="say", f="lite", text=f"An RRSP refund / of *${REFUND:,}* / feels like / a little bonus.", size=112),
     dict(k="because", f="coral", kicker="the part nobody tells you",
-         text="Invest it at 30, growing *10% a year,* and leave it alone until 60.", size=110),
+         text="Invest it at 30, growing *10% a year,* and leave it alone.", size=110),
+    dict(k="list", f="lite", items=["Watch it grow:", f"At 40: *${round(REFUND_GROW[40], -2):,}*",
+                                    f"At 50: *${round(REFUND_GROW[50], -2):,}*"], size=100),
     dict(k="num", f="deep", label="by age 60:", value=REFUND_60, pre="$", suf="from one refund", size=220, drop=True),
-    dict(k="do", f="lite", text="When the refund lands, move it into your *TFSA* that same day.", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / the friend planning / a refund trip."),
+    dict(k="do", f="lite", text="Refund day: move it into your *TFSA* and *invest it,* the same day.", size=96, chars=18),
+    dict(k="save", f="cob", text="The rule: / the refund goes / back to work."),
 ], f"Spend the refund, or turn it into $29,000?\n\nPut $5,000 in an RRSP while earning $80,000 in Ontario, and your tax drops by "
    f"about ${REFUND:,}. It feels like a little bonus.\n\nHere's the part nobody tells you: invest that ${REFUND:,} at 30, let it grow 10% "
-   f"a year, and leave it alone. By 60 it's about ${REFUND_60:,}. One refund. Like a snowball, it just needs time.\n\n"
-   f"Do this: when the refund lands, move it into your TFSA that same day, before it disappears into everyday spending.\n\n"
+   f"a year, and leave it alone. Watch it grow:\nAt 40: about ${round(REFUND_GROW[40], -2):,}\nAt 50: about "
+   f"${round(REFUND_GROW[50], -2):,}\nAt 60: about ${REFUND_60:,}\nOne refund. Like a snowball, it just needs time. Do it every "
+   f"year and each refund starts its own snowball.\n\n"
+   f"Do this on refund day (5 minutes):\n1. When the deposit notice arrives, open your bank app.\n"
+   f"2. Move the whole refund into your TFSA the same day, before it melts into everyday spending.\n"
+   f"3. Invest it in your usual long-term fund. Cash sitting in a TFSA doesn't snowball.\n\n"
+   f"The rule to remember: the refund goes back to work.\n\n"
    f"Send this to the friend planning a refund trip.\n\n{NG}\n\n#RRSP #taxrefund #TFSA #canadianfinance #moneyfoundations",
    SRC_REFUND + f" Maths: ${REFUND:,} invested at 30, compounded monthly at 10% a year for 30 years, no fees or taxes ≈ $29,400 "
-   "(shown rounded down). 10% = the S&P 500's long-run average (Fidelity), before inflation.",
+   f"(shown rounded down); ≈ ${REFUND_GROW[40]:,} at 40 and ${REFUND_GROW[50]:,} at 50. 10% = the S&P 500's long-run average (Fidelity), before inflation.",
    series="RRSP refund · part 2/2")
+
 
 
 post("ff-1022-rrsp-refund", FF, "2026-10-22T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 5", text="Your RRSP refund / isn't a *bonus*", obj="point", at="bl",
-          save="here's where it comes from"),
+          save="+ how one refund becomes $29,000"),
      [dict(k="say", f="lite", label="earn $80,000 in Ontario?", text="Put *$5,000* / in an RRSP. / Your tax drops / by about:",
            num=f"${REFUND:,}", src="2026 Ontario combined rate: 29.65% · Richter 2026 tax tables"),
-      dict(k="say", f="cob", label="the part nobody tells you", text="It's *your own tax,* / coming back. / You pay it when / you *take it out.*",
+      dict(k="say", f="cob", label="here's where it comes from", text="Your job already / took tax off / *every paycheque.*",
+           sub="the RRSP shrinks your tax bill, so the extra comes back"),
+      dict(k="say", f="lite", label="the part nobody tells you", text="It's *your own tax,* / coming back. / You pay it when / you *take it out.*",
            sub="a head start, not a gift"),
-      dict(k="do", f="lite", text="Before *March 1, 2027,* check your RRSP limit in *CRA My Account.*",
-           size=96, save="send this to the friend who spends the refund")],
-     f"Your RRSP refund isn't a bonus. Here's where it comes from.\n\n"
+      dict(k="why", f="coral", label="so why bother?", text="Skip tax at *29.65%* / now. Pay it later / at a *lower rate.* / "
+           "Keep the difference.", sub="if your income is lower in retirement"),
+      dict(k="say", f="cob", label="the trap", text="Spend the refund, / and your RRSP / only did *half* / its job."),
+      dict(k="say", f="lite", label="now watch it grow", text=f"Invest the *${REFUND:,}* / at 30, at 10% / a year:",
+           sub="one refund, left alone",
+           bars=[("30", REFUND, "$1.5K"), ("40", REFUND_GROW[40], "$4K"), ("50", REFUND_GROW[50], "$11K"),
+                 ("60", REFUND_GROW[60], "$29K")]),
+      dict(k="steps", f="coral", text="Refund day, *3 steps*", items=["Open your TFSA or RRSP", "Move the whole refund in",
+                                                                    "Invest it, don't just park it"],
+           sub="the same day it lands"),
+      dict(k="do", f="lite", text="Before *March 1, 2027,* check your *RRSP limit* in CRA My Account. Then plan your refund's job.",
+           size=94, save="the refund goes back to work.")],
+     f"Your RRSP refund isn't a bonus. Here's where it comes from, and how one refund can become about $29,000.\n\n"
      f"Earn $80,000 in Ontario and put $5,000 in an RRSP, and your tax for the year drops by about ${REFUND:,}. Your job already "
      f"took tax off every paycheque, so the CRA sends the extra back as a refund.\n\n"
-     f"The part nobody tells you: it's your own tax, coming back. You pay tax on that money later, when you take it out, ideally in "
-     f"retirement when your income (and tax rate) is lower. So the refund is a head start, not a gift.\n\n"
-     f"Do this: before March 1, 2027 (the deadline for your 2026 taxes), check your RRSP limit in CRA My Account.\n\n"
-     f"Money Foundations, Part 5. Tonight at 7: what one refund can grow into.\n\n"
-     f"Send this to the friend who spends the refund.\n\n#RRSP #taxrefund #canadianfinance #personaltax #moneyfoundations",
-     SRC_REFUND)
+     f"The part nobody tells you: it's your own tax, coming back. You pay tax on that money later, when you take it out.\n\n"
+     f"So why bother? You skip tax at 29.65% today and, if your income is lower in retirement, pay it later at a lower rate. You "
+     f"keep the difference.\n\n"
+     f"The trap: spend the refund on a trip, and your RRSP only did half its job.\n\n"
+     f"Now watch it grow. Invest the ${REFUND:,} at 30, at 10% a year, and leave it alone:\n"
+     f"At 40: about ${REFUND_GROW[40]:,}\nAt 50: about ${REFUND_GROW[50]:,}\nAt 60: about ${REFUND_GROW[60]:,}\nOne refund.\n\n"
+     f"Refund day, 3 steps:\n1. Open your TFSA (or next year's RRSP contribution).\n2. Move the whole refund in, the same day "
+     f"it lands.\n3. Invest it in your usual long-term fund, don't leave it sitting as cash.\n\n"
+     f"The mindset: The Richest Man in Babylon's oldest rule is to keep part of everything you earn. A refund is the easiest money "
+     f"to keep, because you were already living without it.\n\n"
+     f"Do this: before March 1, 2027 (the deadline for your 2026 taxes), check your RRSP limit in CRA My Account. Then decide your "
+     f"refund's job before it arrives.\n\n"
+     f"The rule to remember: the refund goes back to work.\n\n"
+     f"Money Foundations, Part 5. Tonight at 7: the $29,000 refund, step by step.\n\n"
+     f"Send this to the friend who spends the refund.\n\n{NG}\n\n#RRSP #taxrefund #canadianfinance #personaltax #moneyfoundations",
+     SRC_REFUND + f" Maths: ${REFUND:,} invested at 30, compounded monthly at 10% a year, no fees or taxes: ≈ ${REFUND_GROW[40]:,} at 40, "
+     f"${REFUND_GROW[50]:,} at 50, ${REFUND_GROW[60]:,} at 60. 10% = the S&P 500's long-run average (Fidelity), before inflation. "
+     f"Mindset: George S. Clason, The Richest Man in Babylon.")
 
 chain("ff-ch-1022", FF, "2026-10-22", "ff22", "money foundations · part 5", [
     dict(k="photo", text="“Refund's in. / *Trip time!*”", sub="wait, where did it *come from?* →", ink="dark", y=930),
@@ -394,7 +565,7 @@ chain("ff-ch-1022", FF, "2026-10-22", "ff22", "money foundations · part 5", [
         ("out", "the RRSP lowered your tax bill, so the CRA *sends the extra back.*")], obj="phone"),
     dict(k="payoff", f="coral", label="and later?", text="You pay it / *when you* / *take it out.*",
          sub="a head start, not a bonus", obj="piggy"),
-    dict(k="handoff", f="lite", text="Your RRSP refund / isn't a *bonus*", img="ff-1022-rrsp-refund/01.jpg", next="part 2 tonight at 7"),
+    dict(k="handoff", f="lite", text="Your RRSP refund / isn't a *bonus*", img="ff-1022-rrsp-refund/01.jpg", next="tonight at 7: one refund → $29K"),
 ])
 
 
@@ -409,38 +580,84 @@ SRC_CPP = ("Sources (canada.ca): Canada Pension Plan, Pensions and benefits mont
            "month before 65 (up to 36% at 60) and increase 0.7% each month after 65 (up to 42% at 70). The CPP is designed to replace "
            "part of your earnings, not all of them. Education, not advice.")
 
+# Oct 19 DEPTH pass. OAS max Oct-Dec 2026, ages 65-74: $762.50 (canada.ca quarterly table, checked Oct 19).
+# CPP enhancement (canada.ca): the retirement pension rises from one-quarter to one-third of eligible average earnings.
+OAS_MAX = 762.50
+FLOOR = round(858.34 + OAS_MAX, -1)  # 1,620
+GROW_50 = {a: round(_fv(50, a - 30)) for a in (40, 50, 60, 65)}
+assert (FLOOR, GROW_50) == (1620, {40: 10242, 50: 37968, 60: 113024, 65: 189832}), (FLOOR, GROW_50)
+
 post("ff-1023-cpp-enough", FF, "2026-10-23T12:00", "learning",
      dict(lay="pills", f="cob", kicker="money foundations · part 6", text="Will CPP / *pay your bills?*", obj="point", at="bl",
           save="the real number: slide 2"),
      [dict(k="say", f="lite", label="canada.ca, 2026", text="The average new / CPP pension / at 65 is about:", num="$858",
            sub="a month. the most is about $1,508", src="canada.ca, CPP monthly amounts"),
-      dict(k="say", f="coral", label="the part nobody tells you", text="CPP replaces / *part* of your pay, / not all of it. / *Your savings* / fill the gap."),
-      dict(k="do", f="cob", text="This payday, set up *$50 a month* into your TFSA. That's your gap-filler.",
-           size=96, save="send this to the friend counting on CPP")],
-     "Will CPP pay your bills? Here's the real number.\n\n"
-     "The average new CPP pension at 65 is about $858 a month (canada.ca, 2026). The most anyone can get at 65 is about $1,508.\n\n"
-     "The part nobody tells you: CPP was built to replace part of your pay, not all of it. Think of it as the floor of your house, not "
-     "the whole house. Your own savings, like a TFSA or RRSP, build the rest.\n\n"
-     "Do this: this payday, set up $50 a month into your TFSA. Raise it with every raise.\n\n"
-     "Money Foundations, Part 6. Tonight at 7: take CPP at 60, or wait until 70?\n\n"
+      dict(k="say", f="coral", label="add Old Age Security", text="OAS adds up to / about *$763* a month, / from 65 to 74.",
+           src="canada.ca, OAS maximum, October to December 2026"),
+      dict(k="say", f="cob", label="put them together", text="Average CPP / plus full OAS: / about *$1,620* / a month.",
+           sub="now picture your rent next to it"),
+      dict(k="why", f="lite", label="why so low?", text="CPP was built / to replace about / *a quarter* of your pay, / "
+           "rising to *a third.*", sub="never the whole thing", src="canada.ca, CPP enhancement"),
+      dict(k="say", f="coral", label="think of a house", text="CPP and OAS / are the *floor.* / Your savings / build *the rest.*"),
+      dict(k="say", f="lite", label="now watch it grow", text="Just *$50 a month* / from 30, at 10%, / by age:",
+           sub="your gap-filler, growing",
+           bars=[("40", GROW_50[40], "$10K"), ("50", GROW_50[50], "$38K"), ("60", GROW_50[60], "$113K"), ("65", GROW_50[65], "$190K")]),
+      dict(k="steps", f="cob", text="Find your gap in *10 min*", items=["Check your CPP estimate", "Add up your bills",
+                                                                     "Subtract. That's your gap"],
+           sub="savings fill that gap"),
+      dict(k="do", f="lite", text="This payday, set up *$50 a month* into your TFSA. Raise it with *every raise.*",
+           size=96, save="the floor, not the house.")],
+     f"Will CPP pay your bills? Here's the real number.\n\n"
+     f"The average new CPP pension at 65 is about $858 a month (canada.ca, 2026). The most anyone can get at 65 is about $1,508.\n"
+     f"Old Age Security adds up to about $763 a month from 65 to 74 (October to December 2026).\n"
+     f"Average CPP plus full OAS: about ${FLOOR:,} a month. Now picture your rent or mortgage next to it.\n\n"
+     f"Why so low? CPP was built to replace about a quarter of your work earnings, rising to a third as the CPP enhancement phases "
+     f"in. Never the whole thing.\n\n"
+     f"Think of a house: CPP and OAS are the floor. Your own savings (TFSA, RRSP, a work pension) build the rest.\n\n"
+     f"Now watch it grow. Just $50 a month from age 30, at 10% a year:\nAt 40: about ${GROW_50[40]:,}\n"
+     f"At 50: about ${GROW_50[50]:,}\nAt 60: about ${GROW_50[60]:,}\nAt 65: about ${GROW_50[65]:,}\n"
+     f"That's what one small automatic transfer can add on top of the floor.\n\n"
+     f"Find your gap in 10 minutes:\n1. Log in to My Service Canada Account and check your CPP estimate.\n"
+     f"2. Add up your monthly bills today (housing, food, transport, phone, insurance).\n"
+     f"3. Subtract CPP and OAS. The difference is your gap: what your savings need to cover.\n\n"
+     f"The mindset: The Wealthy Barber's simplest lesson is to pay yourself first, automatically, before the bills. Retirement is "
+     f"just the day the bills keep coming and the paycheques stop.\n\n"
+     f"Do this: this payday, set up $50 a month into your TFSA. Raise it with every raise.\n\n"
+     f"The rule to remember: CPP is the floor, not the house.\n\n"
+     f"Money Foundations, Part 6. Tonight at 7: take CPP at 60, or wait until 70?\n\n"
      f"Send this to the friend counting on CPP.\n\n{NG}\n\n#CPP #retirementcanada #TFSA #personalfinancecanada #moneyfoundations",
-     SRC_CPP)
+     SRC_CPP + f" OAS: canada.ca, Maximum benefit amounts, October to December 2026: $762.50 a month (ages 65 to 74). CPP "
+     f"enhancement (canada.ca): the retirement pension increases from one-quarter to one-third of eligible average work earnings, "
+     f"phased in from 2019. Maths: $858.34 + $762.50 ≈ ${FLOOR:,}. $50 at the end of each month from 30, compounded monthly at 10% "
+     f"a year, no fees or taxes: ≈ ${GROW_50[40]:,} at 40, ${GROW_50[50]:,} at 50, ${GROW_50[60]:,} at 60, ${GROW_50[65]:,} at 65. "
+     f"Mindset: David Chilton, The Wealthy Barber.")
 
+CPP_60 = round(CPP_MAX * 0.64)  # 965
+assert CPP_60 == 965
 reel("ff-reel-1023-cpp-60-or-70", FF, "2026-10-23T19:00", "deep", "ff-x-money-moves", "save this for your parents", [
     dict(k="hook", f="cob", text="Take CPP at 60, / or wait / *until 70?*", emo="⏳"),
-    dict(k="say", f="lite", text="Start at *60,* / and your cheque / is up to *36%* / smaller. For life.", size=112),
-    dict(k="because", f="coral", kicker="the part nobody tells you",
-         text="Wait until *70,* and it's up to 42% bigger. Every month, for life.", size=110),
-    dict(k="num", f="deep", label="the 2026 max at 70:", value=CPP_70, pre="$", suf="a month, vs $1,508 at 65", size=220, drop=True),
+    dict(k="say", f="lite", text="Each month *before* 65: / *0.6 percent less.* / Each month *after:* / *0.7 percent more.*", size=104),
+    dict(k="because", f="coral", kicker="and it's for life",
+         text="That's up to *36% less* at 60, or *42% more* at 70.", size=108),
+    dict(k="list", f="deep", items=["2026 max:", f"At 60: *${CPP_60:,}*", "At 65: *$1,508*", f"At 70: *${CPP_70:,}*"],
+         size=100, drop=True),
+    dict(k="say", f="lite", text="Each year you wait / adds about *8.4%,* / for life.", size=108),
     dict(k="do", f="lite", text="Tonight, check your *CPP estimate* in My Service Canada Account.", size=96, chars=18),
     dict(k="save", f="cob", text="Send this to / your parents. / Seriously."),
 ], f"Take CPP at 60, or wait until 70?\n\n"
-   f"Start at 60, and your cheque is up to 36% smaller, for life. Wait until 70, and it's up to 42% bigger, every month, for life. "
-   f"At the 2026 maximum, that's about ${CPP_MAX:,.0f} a month at 65, or about ${CPP_70:,} at 70.\n\n"
-   f"The honest part: waiting isn't right for everyone. Your health, your savings and when you stop working all matter.\n\n"
-   f"Do this: tonight, check your CPP estimate in My Service Canada Account.\n\n"
+   f"Every month you start before 65, your CPP drops 0.6%. Every month you wait after 65, it grows 0.7%. And it's for life.\n"
+   f"That's up to 36% less at 60, or up to 42% more at 70.\n\n"
+   f"Watch it grow, at the 2026 maximum, per month:\nStart at 60: about ${CPP_60:,}\nStart at 65: about ${CPP_MAX:,.0f}\n"
+   f"Start at 70: about ${CPP_70:,}\n(Most people get less than the maximum; your own estimate is in My Service Canada Account.)\n\n"
+   f"The rule to remember: each year you wait after 65 adds about 8.4% (0.7% × 12), for life, and it's indexed to inflation.\n\n"
+   f"The honest part: waiting isn't right for everyone. Your health, your savings and when you stop working all matter. Die With "
+   f"Zero makes the other side of the case well: money is for living, and some years are worth more than others. Many people "
+   f"use savings to bridge the gap so they can start CPP later.\n\n"
+   f"Do this tonight (5 minutes):\n1. Log in to My Service Canada Account.\n2. Open Canada Pension Plan and find your estimate "
+   f"at 60, 65 and 70.\n3. Write the three numbers down and talk them through with your partner (or your parents).\n\n"
    f"Send this to your parents. Seriously.\n\n#CPP #retirementcanada #retirementplanning #personalfinancecanada #moneyfoundations",
-   SRC_CPP + f" Maths: $1,507.65 × 1.42 ≈ ${CPP_70:,} (shown rounded down; the pension is also indexed to inflation).",
+   SRC_CPP + f" Maths: $1,507.65 × 0.64 ≈ ${CPP_60:,}; $1,507.65 × 1.42 ≈ ${CPP_70:,} (rounded down); 0.7% × 12 = 8.4% a year. "
+   f"Mindset: Bill Perkins, Die With Zero. Education, not advice.",
    series="CPP · part 2/2")
 
 chain("ff-ch-1023", FF, "2026-10-23", "ff22", "money foundations · part 6", [  # day B: guess-and-reveal quiz
@@ -448,8 +665,11 @@ chain("ff-ch-1023", FF, "2026-10-23", "ff22", "money foundations · part 6", [  
         ("in", "how much is it a month?"), ("out", "A) about $858"), ("out", "B) about $1,500")], tap="guess, then tap →"),
     dict(k="payoff", f="coral", label="the answer: A", text="*$858*", sub="a month, on average (2026)", obj="ok",
          tap="source: canada.ca · tap →"),
-    dict(k="payoff", f="cob", label="why it matters", text="CPP is a / *floor,* not a plan.", sub="your savings build the rest", obj="piggy",
-         tap="next story →"),
+    dict(k="payoff", f="cob", label="add full OAS", text="about / *$1,620* / a month", sub="now picture your rent next to it", obj="piggy",
+         tap="canada.ca · next story →"),
+    dict(k="bubbles", f="coral", label="find your gap", bubbles=[
+        ("out", "1. check your *CPP estimate* in My Service Canada Account"), ("out", "2. add up your *monthly bills*"),
+        ("out", "3. the difference is what *your savings* fill")], obj="phone", tap="next story →"),
     dict(k="handoff", f="lite", text="Will CPP / *pay your bills?*", img="ff-1023-cpp-enough/01.jpg", next="60 or 70? tonight at 7"),
 ])
 
@@ -464,24 +684,36 @@ assert EI_SHARE_80K < 0.5
 EAT_100K = (100000 - 50000) // 1000 * 15      # 750
 assert EAT_100K == 750
 
+WEEK_80K = round(80000 / 52)       # 1,538
+EI_GAP = WEEK_80K - EI_MAX          # 809
+assert (WEEK_80K, EI_GAP) == (1538, 809)
 reel("ff-reel-1024am-sick-pay-gap", FF, "2026-10-24T08:15", "deep", "ff-x-level-up", "check this before you need it", [
     dict(k="hook", f="cob", text="Too sick to work / for months? / *Here's what EI pays.*", emo="🩺"),
-    dict(k="say", f="lite", text="EI sickness pays / *55%* of your pay, / up to *$729 a week.*", size=112),
-    dict(k="say", f="coral", text="Earn *$80,000?* / That's *less than* / *half* your pay.", size=112),
+    dict(k="say", f="lite", text="EI sickness: *55%* / of your pay, up to / *$729 a week,* / for *26 weeks.*", size=104),
+    dict(k="list", f="coral", items=["Earn $80,000?", f"Your week: *${WEEK_80K:,}*", f"EI pays: *${EI_MAX}*",
+                                     f"Gap: *${EI_GAP} a week*"], size=96, drop=True),
     dict(k="because", f="deep", kicker="the part nobody tells you",
-         text="After 26 weeks, it stops. That's what *disability insurance* is for.", size=104, drop=True),
-    dict(k="do", f="lite", text="This week, ask HR: do I have *long-term disability,* and what does it pay?", size=92, chars=18),
-    dict(k="save", f="cob", text="Send this to / the friend who / says “I'm healthy.”"),
+         text="After 26 weeks, EI stops. *Disability insurance* can keep paying.", size=100),
+    dict(k="do", f="lite", text="This week, ask HR: do I have *long-term disability,* and *what does it pay?*",
+         size=86, chars=18),
+    dict(k="save", f="cob", text="Your paycheque is / your biggest asset. / Insure it."),
 ], f"Too sick to work for months? Here's what EI pays.\n\n"
-   f"EI sickness benefits pay 55% of your average weekly earnings, up to ${EI_MAX} a week in 2026, for up to 26 weeks. Earn $80,000 "
-   f"a year and that's less than half your usual pay. After 26 weeks, EI sickness stops.\n\n"
-   f"The part nobody tells you: some illnesses and injuries keep people off work much longer. Disability insurance replaces part of "
-   f"your pay while you can't work. Many people have some through work (group long-term disability), but don't know how much.\n\n"
-   f"Do this: this week, ask HR or check your benefits booklet: do I have long-term disability, how much does it pay, and for how long?\n\n"
+   f"EI sickness benefits pay 55% of your average weekly earnings, up to ${EI_MAX} a week in 2026, for up to 26 weeks.\n\n"
+   f"Earn $80,000 a year? Your usual week is about ${WEEK_80K:,}. EI pays ${EI_MAX}. That's a gap of about ${EI_GAP} every week, "
+   f"while rent, groceries and the car payment keep coming. And after 26 weeks, EI sickness stops.\n\n"
+   f"The part nobody tells you: some illnesses and injuries keep people off work much longer. Long-term disability (LTD) "
+   f"insurance replaces part of your pay while you can't work. Many people have some through work, but don't know how much.\n\n"
+   f"Do this this week (10 minutes):\n1. Open your benefits booklet or portal and search \"long-term disability\".\n"
+   f"2. Write down three things: what % of pay it covers, the waiting period before it starts, and how long it pays.\n"
+   f"3. If you're self-employed or have none, get a quote from a licensed advisor, and ask: \"Is this own-occupation or "
+   f"any-occupation coverage?\"\n\n"
+   f"The mindset: your ability to earn is worth more than anything you own. I Will Teach You to Be Rich and The Psychology of "
+   f"Money both come back to it: protect the downside first, then grow.\n\n"
+   f"The rule to remember: your paycheque is your biggest asset. Insure it.\n\n"
    f"Send this to the friend who says \"I'm healthy.\"\n\n#disabilityinsurance #EI #personalfinancecanada #insurance #moneyfoundations",
    "Source: canada.ca, 'EI sickness benefits: How much you could receive': 55% of your average insurable weekly earnings, up to a "
-   "maximum of $729 a week in 2026, for up to 26 weeks. Maths: $80,000 ÷ 52 ≈ $1,538 a week; $729 is about 47% of that. "
-   "Education, not advice: talk to a licensed advisor about your own coverage.")
+   f"maximum of $729 a week in 2026, for up to 26 weeks. Maths: $80,000 ÷ 52 ≈ ${WEEK_80K:,} a week; ${WEEK_80K:,} − $729 ≈ "
+   f"${EI_GAP}. Education, not advice: talk to a licensed advisor about your own coverage.")
 
 chain("ff-ch-1024", FF, "2026-10-24", "ff19", "money foundations", [
     dict(k="photo", text="“Payday! / Where does it / *all go?*”", sub="start with *stop 1* →", ink="dark", y=560),
@@ -501,18 +733,21 @@ reel("ff-reel-1024-beneficiary", FF, "2026-10-24T19:00", "deep", "ff-x-money-mov
     dict(k="say", f="lite", text="It asks who gets / the money *if you die.* / It's called a / *beneficiary.*", size=108),
     dict(k="because", f="coral", kicker="here's why it matters",
          text="With a name there, the money goes *straight to them,* outside your estate.", size=108),
-    dict(k="num", f="deep", label="Ontario estate tax on $100,000:", value=EAT_100K, pre="$", suf="a named beneficiary skips it",
-         size=220, drop=True),
+    dict(k="list", f="deep", items=["$100,000, Ontario:", f"Through the estate: *${EAT_100K}* tax", "Named beneficiary: *$0*"],
+         size=92, drop=True),
     dict(k="do", f="lite", text="Tonight, log in to your bank and check who's named on your *TFSA* and *RRSP.*", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / your partner."),
+    dict(k="save", f="cob", text="Life changed? / Change the name."),
 ], f"Your TFSA has a blank line. Fill it in.\n\n"
    f"When you open a TFSA or RRSP, it asks who gets the money if you die. That person is your beneficiary (for a spouse on a TFSA, "
    f"it can be a \"successor holder\").\n\n"
    f"Why it matters: with a name there, the money can go straight to that person, outside your estate. In Ontario, the estate "
    f"administration tax is $15 for every $1,000 over $50,000, so $100,000 going through the estate costs about ${EAT_100K}. "
    f"Money paid to a named beneficiary isn't counted. It's also usually faster.\n\n"
-   f"Do this: tonight, log in to your bank and check who's named on your TFSA and RRSP. Moved in with someone, had a baby, "
-   f"or split up since you opened it? Update it.\n\n"
+   f"Do this tonight (10 minutes):\n1. Log in to your bank or broker and open each TFSA, RRSP and FHSA.\n"
+   f"2. Find \"Beneficiary\" or \"Successor holder\" (often under account details or documents). Blank, or an ex? Fix it.\n"
+   f"3. Check your work life insurance and pension in your benefits portal too.\n"
+   f"Moved in with someone, had a baby, or split up since you opened them? Update every one.\n\n"
+   f"The rule to remember: life changed? Change the name.\n\n"
    f"Rules differ by province (in Quebec, most designations go in your will). Send this to your partner.\n\n"
    f"#beneficiary #TFSA #RRSP #estateplanning #moneyfoundations",
    "Source: ontario.ca, 'Estate Administration Tax': no tax on the first $50,000, $15 per $1,000 (or part) above it; RRSPs, RRIFs "
@@ -532,25 +767,55 @@ SRC_TFSA = ("Sources: CRA TFSA dollar limits 2009 to 2026 (total $109,000 if you
             "(January 1); over-contributions are taxed 1% per month on the highest excess amount, for every month it stays in. "
             "Your exact room is in CRA My Account (as of January 1, so subtract this year's deposits). Education, not tax advice.")
 
+def _cum(y):
+    return sum(v for k, v in TFSA_LIMITS.items() if k <= y)
+
+
+TFSA_7K = {n: round(7000 * ((1.10 ** n - 1) / 0.10)) for n in (10, 20, 30)}  # $7,000 at the end of each year, 10% a year
+assert (_cum(2015), _cum(2020), TFSA_7K) == (41000, 69500, {10: 111562, 20: 400925, 30: 1151458}), TFSA_7K
+
 post("ff-1025-tfsa-room", FF, "2026-10-25T12:00", "learning",
      dict(lay="pills", f="coral", kicker="money foundations · part 7", text="Your TFSA room / could be / *$109,000*", obj="point", at="bl",
           save="if you were 18 by 2009"),
      [dict(k="rows", f="lite", text="How it *adds up*", cap="TFSA room, CRA limits",
            rows=[("18 by 2009?", "$109,000 total"), ("New room in 2026", "$7,000"), ("Never used it?", "still all there")],
            src="CRA TFSA limits, 2009 to 2026"),
-      dict(k="say", f="coral", label="the part nobody tells you", text="Put in *too much,* / and the CRA / charges *1%* / every month.",
+      dict(k="say", f="cob", label="watch the room build", text="Year by year, / the room *stacks up:*", sub="total room since 2009",
+           bars=[("2009", 5000, "$5K"), ("2015", _cum(2015), "$41K"), ("2020", _cum(2020), "$69.5K"), ("2026", TFSA_TOTAL, "$109K")]),
+      dict(k="say", f="lite", label="good news", text="Unused room / *never expires.* / It just waits / for you."),
+      dict(k="why", f="coral", label="why it matters", text="Every dollar of / growth inside is / *tax-free.* / *Forever.*",
+           sub="even when you take it out"),
+      dict(k="say", f="lite", label="now watch it grow", text="Fill it: *$7,000* / a year from 30, / at 10%:",
+           sub="all of it tax-free",
+           bars=[("40", TFSA_7K[10], "$112K"), ("50", TFSA_7K[20], "$401K"), ("60", TFSA_7K[30], "$1.15M")]),
+      dict(k="say", f="cob", label="the part nobody tells you", text="Put in *too much,* / and the CRA / charges *1%* / every month.",
            sub="on the extra, until it comes out"),
-      dict(k="do", f="cob", text="Before your next deposit, check your *TFSA room* in CRA My Account.",
-           size=96, save="send this to the friend who just opened a TFSA")],
+      dict(k="steps", f="coral", text="Your room in *5 min*", items=["Log in to CRA My Account", "Find TFSA room (Jan 1)",
+                                                                  "Subtract this year's deposits"],
+           sub="what is left: yours"),
+      dict(k="do", f="lite", text="Before your next deposit, check your *TFSA room* in CRA My Account.",
+           size=96, save="room unused is growth unclaimed.")],
      f"Your TFSA room could be ${TFSA_TOTAL:,}.\n\n"
-     f"If you were 18 or older in 2009 and have lived in Canada since, every year's limit has added up: ${TFSA_TOTAL:,} by 2026. "
-     f"Unused room never expires. It just waits for you.\n\n"
-     f"The part nobody tells you: put in more than your room, and the CRA charges 1% a month on the extra, every month it stays in. "
-     f"The number in CRA My Account is as of January 1, so subtract anything you've already put in this year.\n\n"
+     f"If you were 18 or older in 2009 and have lived in Canada since, every year's limit has added up: ${TFSA_TOTAL:,} by 2026.\n"
+     f"Watch it build: $5,000 in 2009, ${_cum(2015):,} by 2015, ${_cum(2020):,} by 2020, ${TFSA_TOTAL:,} by 2026. Unused room never "
+     f"expires. It just waits for you.\n\n"
+     f"Why it matters: every dollar of growth inside a TFSA is tax-free, forever, even when you take it out.\n\n"
+     f"Now watch it grow. Fill it with $7,000 a year from age 30, growing 10% a year:\nAt 40: about ${TFSA_7K[10]:,}\n"
+     f"At 50: about ${TFSA_7K[20]:,}\nAt 60: about ${TFSA_7K[30]:,}\nAll of it tax-free. Can't do $7,000? Any amount grows "
+     f"the same way, just smaller.\n\n"
+     f"The part nobody tells you: put in more than your room, and the CRA charges 1% a month on the extra, every month it stays in.\n\n"
+     f"Your room in 5 minutes:\n1. Log in to CRA My Account.\n2. Find \"TFSA room\". It's your room as of January 1.\n"
+     f"3. Subtract anything you've already put in this year. That's what you can still add.\n\n"
+     f"The mindset: The Simple Path to Wealth's big idea is to use every tax shelter you're given, then let it sit. The TFSA is "
+     f"Canada's best one for most people.\n\n"
      f"Do this: before your next deposit, check your TFSA room in CRA My Account.\n\n"
+     f"The rule to remember: room unused is growth unclaimed.\n\n"
      f"Money Foundations, Part 7. Tonight at 7: the withdrawal trap.\n\n"
-     f"Send this to the friend who just opened a TFSA.\n\n#TFSA #personalfinancecanada #CRA #investingcanada #moneyfoundations",
-     SRC_TFSA)
+     f"Send this to the friend who just opened a TFSA.\n\n{NG}\n\n#TFSA #personalfinancecanada #CRA #investingcanada #moneyfoundations",
+     SRC_TFSA + f" Maths: cumulative room = the sum of each year's CRA limit. $7,000 at the end of each year, compounded yearly at "
+     f"10% a year, no fees: ≈ ${TFSA_7K[10]:,} after 10 years, ${TFSA_7K[20]:,} after 20, ${TFSA_7K[30]:,} after 30 (contribution "
+     f"room is indexed to inflation in $500 steps, so future limits may be higher). 10% = the S&P 500's long-run average "
+     f"(Fidelity), before inflation. Ideas: J.L. Collins, The Simple Path to Wealth.")
 
 chain("ff-ch-1025", FF, "2026-10-25", "ff22", "money foundations · part 7", [  # day B: guess-and-reveal quiz
     dict(k="bubbles", f="lite", label="quick quiz", title="Total TFSA room / *since 2009…*", bubbles=[
@@ -559,6 +824,9 @@ chain("ff-ch-1025", FF, "2026-10-25", "ff22", "money foundations · part 7", [  
          tap="source: CRA limits · tap →"),
     dict(k="payoff", f="cob", label="why it matters", text="Unused room / *never expires.*", sub="it waits for you", obj="piggy",
          tap="next story →"),
+    dict(k="bubbles", f="coral", label="find yours in 5 min", bubbles=[
+        ("out", "1. log in to *CRA My Account*"), ("out", "2. find *TFSA room* (it's as of Jan 1)"),
+        ("out", "3. subtract what you've *already added* this year")], obj="phone", tap="next story →"),
     dict(k="handoff", f="lite", text="Your TFSA room / could be *$109,000*", img="ff-1025-tfsa-room/01.jpg", next="tonight: the withdrawal trap"),
 ])
 
@@ -567,17 +835,22 @@ reel("ff-reel-1025-tfsa-withdrawal-trap", FF, "2026-10-25T19:00", "deep", "ff-x-
     dict(k="say", f="lite", text="You take out / *$5,000* in March. / You put it back / in *June.*", size=112),
     dict(k="because", f="coral", kicker="here's the trap",
          text="The room from a withdrawal comes back on *January 1.* Not the same year.", size=108),
-    dict(k="say", f="deep", text="No room left? / The CRA charges / *1% a month* / on the extra.", size=112, drop=True),
+    dict(k="list", f="deep", items=["No room left?", "Over by *$5,000*", "Tax: *$50 a month*", "June to December: *$350*"],
+         size=92, drop=True),
     dict(k="do", f="lite", text="Before you put money back, check your *room* in CRA My Account.", size=96, chars=18),
-    dict(k="save", f="cob", text="Send this to / your TFSA friend."),
+    dict(k="save", f="cob", text="Out this year? / Back in January."),
 ], "Took money out of your TFSA? Don't rush it back in.\n\n"
    "You take out $5,000 in March and put it back in June. Feels harmless. But the room from a withdrawal only comes back on "
    "January 1 of the next year. If you had no other room left, that $5,000 is an over-contribution, and the CRA charges 1% a month "
-   "on it until it's out.\n\n"
+   "on it until it's out: $50 a month, about $350 from June to December.\n\n"
    "Do this: before you put money back, check your room in CRA My Account (it shows your room as of January 1). Moving money "
    "between banks? Ask for a direct transfer, which doesn't count as a withdrawal.\n\n"
+   "Already did it? Take the extra out as soon as you can, and look up form RC243 (the TFSA return) on canada.ca.\n\n"
+   "The rule to remember: out this year? Back in January.\n\n"
    "Send this to your TFSA friend.\n\n#TFSA #personalfinancecanada #CRA #taxtips #moneyfoundations",
-   SRC_TFSA + " Direct transfers between your own TFSAs at different institutions are not withdrawals (CRA).",
+   SRC_TFSA + " Direct transfers between your own TFSAs at different institutions are not withdrawals (CRA). Maths: 1% of "
+   "$5,000 = $50 for each month the excess stays in; June through December = 7 months ≈ $350. Excess TFSA amounts are reported on "
+   "form RC243 (CRA). Education, not tax advice.",
    series="TFSA · part 2/2")
 
 

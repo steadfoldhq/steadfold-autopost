@@ -91,7 +91,11 @@ chain("hb-ch-1018", HB, "2026-10-18", "hb18", "ai evenings · day 1/4", [
 
 
 
-# ================================================================== Oct 19-22 · "GET AN HOUR BACK" REBUILD (Oct 18 am)
+# ================================================================== Oct 19-25 · "AI, FOR REAL" (Oct 19, 00:30 re-plan)
+# Owner, Oct 18 21:46: HOURBACK = REALLY TEACH AI. Same ids and slots as the Oct 18 rebuild; the noon posts, Story chains and
+# Reels below now teach one AI idea a day (agents, hallucination, privacy, careers, how it works, prediction, AI in your apps).
+# The 17:45 posts (Formats lead) are untouched. Older notes from the Oct 18 rebuild follow.
+# -================================================================= Oct 19-22 · "GET AN HOUR BACK" REBUILD (Oct 18 am)
 # Hourback = everyday time-savers you can set up in 2 minutes. AI is one tool among several (phone settings, email rules,
 # calendar tricks, Canada life admin, AI). Each post: a time-sink moment -> the exact swap -> what you get back -> one "Do this:".
 # Themes alternate post to post: plum/orng (pastel orange on cream) <-> indi/yel (purple + yellow).
@@ -117,36 +121,62 @@ def hchain(cid, brand, day, photo, series, frames, times=None):
 HBTAGS = "#timesaver #lifehacks #iphonetips #productivity #hourback"
 
 # ================================================================== Oct 19 (quiz day)
-hchain("hb-ch-1019b", HB, "2026-10-19", "hb19", "hourback · quick quiz", [
-    dict(k="bubbles", f="plum", label="quick quiz", title="On an iPhone, / type *omw.*", bubbles=[
-        ("in", "what happens?"), ("out", "A) nothing"), ("out", "B) it turns into a whole sentence")], tap="guess, then tap →"),
-    dict(k="payoff", f="orng", label="the answer: B", text="“On my / *way!*”", sub="it's built in, and you can add your own", obj="phone",
-         tap="tap →"),
-    dict(k="payoff", f="plum", label="make your own", text="Type *@@.* / Get your / whole email.", sub="same trick for your address",
+# ---- "AI, FOR REAL" (Oct 19 00:30 re-plan, owner: "HOURBACK = REALLY TEACH AI"). Day 1: agents (noon) + AI at work (Reels).
+# Every claim below traces to the source named in its first comment (checked Oct 19, 00:15-00:40 ET).
+hchain("hb-ch-1019b", HB, "2026-10-19", "hb19", "ai, for real · quick quiz", [
+    dict(k="bubbles", f="plum", label="quick quiz", title="AI agents can do / *longer jobs* each year.", bubbles=[
+        ("in", "how often does that double?"), ("out", "A) every 7 years"), ("out", "B) every 7 months")],
+         tap="guess, then tap →"),
+    dict(k="payoff", f="orng", label="the answer: B", text="Every / *7 months.*", sub="measured across 6 years of AI models", obj="phone",
+         tap="source: METR, 2025 · tap →"),
+    dict(k="payoff", f="plum", label="what that means", text="From chatting / to *doing.*", sub="agents now click, scroll and fill in forms",
          obj="point", tap="next story →"),
-    dict(k="handoff", f="orng", label="today's swap", text="Stop typing / your *address.*", img="hb-1019-text-shortcut/01.jpg", next="tonight: fewer buzzes"),
+    dict(k="handoff", f="orng", label="ai, for real · day 1", text="AI stopped talking. / *It started doing.*", img="hb-1019-text-shortcut/01.jpg",
+         next="tonight: the jagged edge"),
 ])
 
-hpost("hb-1019-text-shortcut", HB, "2026-10-19T13:00", "keep",
-      dict(lay="pills", f="plum", kicker="hourback · the swap", text="Stop typing / your *address.* / Type *@@.*", obj="phone", at="br",
-           save="your phone can finish it"),
-      [dict(k="say", f="orng", label="sound familiar?", size=126,
-            text="Forms. Emails. / Delivery apps. / Your *full address,* / again and again."),
-       dict(k="rows", f="plum", text="The *swap*", cap="text replacement", rows=[("you type", "@@"), ("it writes", "your email"),
-                                                                                 ("you type", "hhh"), ("it writes", "your address")]),
-       dict(k="steps", f="orng", text="iPhone, *once*", items=["Settings → General → Keyboard", "Text Replacement → +",
-                                                              "Phrase: your email. Shortcut: @@"]),
-       dict(k="do", f="plum", text="Tonight, make one shortcut: *@@* for your email. Then try it in any app.",
-            save="send this to the friend who types it all out")],
-      "Forms, emails, delivery apps: you type your full address and email over and over.\n\n"
-      "The swap: make a shortcut once. Type @@ and your phone writes your whole email. Type hhh and it writes your address.\n\n"
-      "Do this (iPhone): Settings → General → Keyboard → Text Replacement → +. Phrase: your email. Shortcut: @@. "
-      "Pick shortcuts you'd never type by accident.\n\n"
-      "Android: Gboard has a personal dictionary where each word can have a shortcut; look under Gboard's Dictionary settings "
-      "(menus vary by phone).\n\n"
-      f"Send this to the friend who types it all out.\n\n{HBTAGS} #iphone #typing",
-      "Source: AbilityNet, 'How to use text replacement in iOS 26' (Settings → General → Keyboard → Text Replacement). "
-      "iPhones come with one shortcut already: omw → On my way!")
+hpost("hb-1019-text-shortcut", HB, "2026-10-19T13:00", "learning",
+      dict(lay="pills", f="plum", kicker="ai, for real · day 1", text="AI stopped / talking. / *It started doing.*", obj="phone", at="br",
+           save="here's what that means for you"),
+      [dict(k="say", f="orng", label="2023", text="You typed / a question. / AI typed *an answer.* / Then it was / *your turn* again."),
+       dict(k="say", f="plum", label="july 2025", text="OpenAI gave ChatGPT / *its own browser.* / It clicks, scrolls / and *fills in forms* / while you watch."),
+       dict(k="say", f="orng", label="january 2026", text="Google's Chrome / *auto browse* can / book appointments / and *request quotes* / for you."),
+       dict(k="rows", f="plum", text="Who's *shipping it*", cap="big tech's ai agents", rows=[
+           ("OpenAI", "ChatGPT agent"), ("Google", "auto browse"), ("Anthropic", "Claude in Chrome"), ("Microsoft", "Copilot Actions")]),
+       dict(k="why", f="orng", label="why it's different", text="A chatbot only / *reads your words.* / An agent *sees* / *the screen* and / picks the next click.",
+            sub="like handing a helper your mouse"),
+       dict(k="say", f="plum", label="how fast it's growing", text="The length of tasks / agents can finish / has *doubled* / about every / *7 months.*",
+            src="METR · March 2025"),
+       dict(k="say", f="orng", label="where it's heading", text="If the trend holds, / METR says agents / could do projects / that take / *a person a month* / by about 2030."),
+       dict(k="catch", f="plum", text="A web page can / *hide orders* / that trick an agent. / So Google's agent / makes *you* press Buy.",
+            sub="AI clicks. You press pay."),
+       dict(k="do", f="orng", text="This week, give an agent *one dull errand:* compare 3 quotes. *You* press pay.",
+            save="send this to someone who thinks AI just chats")],
+      "AI stopped talking. It started doing.\n\n"
+      "For three years, AI was a chat box: you typed, it typed back. Now the biggest companies are shipping agents, AI that "
+      "opens a browser and does the clicking.\n\n"
+      "July 2025: OpenAI launched ChatGPT agent. It works on its own virtual computer: it browses, fills in forms, builds slides "
+      "and runs code.\n"
+      "January 2026: Google added auto browse to Chrome. It can schedule appointments, fill in forms and request quotes while you "
+      "keep browsing.\n"
+      "Anthropic's Claude in Chrome and Microsoft's Copilot Actions do the same kind of work.\n\n"
+      "Why it's different: a chatbot only reads your words. An agent sees the screen and decides the next click, like handing a "
+      "helper your mouse.\n\n"
+      "Why it matters: the research group METR measured how long a task AI agents can finish on their own. It has doubled about "
+      "every 7 months for 6 years. If that holds, METR says agents could handle projects that take a person a month by about 2030.\n\n"
+      "The catch: a web page can hide instructions that trick an agent (this is called prompt injection). That's why Google's auto "
+      "browse never presses Buy or Post for you. Rule to keep: AI clicks. You press pay.\n\n"
+      "Do this: this week, give an agent one dull errand, like comparing 3 quotes. Watch every step. Pay yourself.\n\n"
+      "Availability varies: ChatGPT agent is in paid ChatGPT plans; Chrome auto browse launched in the US for Google AI Pro and "
+      "Ultra subscribers.\n\n"
+      "Send this to someone who still thinks AI just chats.\n\n#ai #aiagents #chatgpt #gemini #futureofwork #hourback",
+      "Sources: OpenAI, 'Introducing ChatGPT agent' (July 17, 2025; TechCrunch coverage: browses, fills forms, makes slides, runs "
+      "code; memory off because of prompt-injection risk). 9to5Google, 'Chrome auto browse' (Jan 28, 2026: schedules appointments, "
+      "fills forms, requests quotes; US, AI Pro and Ultra; you press buy or post yourself). Anthropic, Claude in Chrome (general "
+      "availability for paid plans, Aug 26, 2026, per GIGAZINE). Microsoft Copilot Actions (announced April 2025: book tables, "
+      "tickets, rides). METR, 'Measuring AI Ability to Complete Long Tasks' (March 19, 2025): the length of tasks AI agents complete "
+      "has doubled about every 7 months for 6 years; if the trend continues to the end of the decade, agents could carry out "
+      "month-long projects.")
 
 hpost("hb-1019-buzz-batch", HB, "2026-10-19T17:45", "keep",
       dict(lay="pills", f="indi", text="Buzz. Buzz. / It was / *a coupon.*", obj="phone", at="br", save="there's a setting for that"),
@@ -167,57 +197,79 @@ hpost("hb-1019-buzz-batch", HB, "2026-10-19T17:45", "keep",
       "Source: Apple (Use notifications on your iPhone) and iOS guides: Settings → Notifications → Scheduled Summary, choose apps and "
       "times. Only the apps you add are held back.")
 
-reel("hb-reel-1019-wifi-qr", HB, "2026-10-19T19:00", "deep", "hb-x-ta-da-funk", "there's a faster way", [
-    dict(k="hook", f="plum", text="“What's the / *Wi-Fi?*”", emo="💬"),
-    dict(k="say", f="orng", text="And you're / behind the TV, / reading a / *tiny sticker.*"),
-    dict(k="because", f="plum", kicker="here's the swap", text="Your iPhone can turn the password into a *QR code.*"),
-    dict(k="list", f="orng", items=["They *scan it.*", "They're *on.*"], size=130, drop=True),
-    dict(k="say", f="plum", text="No more / *“capital Q,* / *zero, not O…”*"),
-    dict(k="do", f="orng", text="Passwords app → Wi-Fi → your network → *Show Network QR Code.*"),
-    dict(k="save", f="plum", text="send this to / whoever owns / the router"),
-], "\"What's the Wi-Fi?\" And you're behind the TV reading a tiny sticker.\n\n"
-   "The swap: your iPhone can show the Wi-Fi password as a QR code. Guests point their camera at it and they're on. "
-   "No more \"capital Q, zero, not O…\"\n\n"
-   "Do this (iPhone, iOS 18 or later): Passwords app → Wi-Fi → your network → Show Network QR Code.\n"
-   "Android: open Wi-Fi settings, tap your network, then Share (menus vary by phone).\n\n"
-   "Anyone who scans it gets the password, so share it with people you trust.\n\n"
-   f"Send this to whoever owns the router.\n\n{HBTAGS} #wifi #guests",
-   "Source: AppleInsider, 'How to share a Wi-Fi QR code in iOS 18' (Passwords → Wi-Fi → network → Show Network QR Code); "
-   "Apple Passwords User Guide ('Show Network QR Code').")
+reel("hb-reel-1019-wifi-qr", HB, "2026-10-19T19:00", "deep", "hb-x-ta-da-funk", "where's the edge?", [
+    dict(k="hook", f="plum", text="AI made workers / *25% faster.* / Then *wrong.*", emo="🧠"),
+    dict(k="say", f="orng", text="Harvard and BCG / tested GPT-4 on / *758 consultants.*"),
+    dict(k="list", f="plum", items=["*12%* more tasks", "*25%* faster", "*40%* better work"], size=118, drop=True),
+    dict(k="say", f="orng", text="On one tricky task, / AI users were / *more often wrong.*"),
+    dict(k="because", f="plum", kicker="here's why", text="AI is *jagged:* brilliant at one task, *wrong* at the next."),
+    dict(k="do", f="orng", text="Test AI on work *you know cold.* See where it slips."),
+    dict(k="save", f="plum", text="send this to / whoever trusts AI / with everything", next="ai, for real · day 1"),
+], "AI made people 25% faster. Then it made them wrong.\n\n"
+   "Harvard Business School and BCG gave 758 consultants GPT-4 for real consulting work. On tasks AI is good at, they finished "
+   "12% more tasks, 25% faster, and their work was rated more than 40% higher in quality.\n\n"
+   "Then the researchers slipped in a task that looked similar but sat just outside what AI does well. The consultants using AI "
+   "were 19 percentage points less likely to get it right than those working alone.\n\n"
+   "Why: AI's skills are jagged. It can be brilliant at one task and confidently wrong at the next, and the two can look the "
+   "same from the outside. The researchers call it the jagged technological frontier. Ethan Mollick, one of the authors, builds "
+   "his book Co-Intelligence around it.\n\n"
+   "The rule to keep: you can't see the edge until you test it.\n\n"
+   "Do this: test AI on work you know cold, where you can spot every mistake. That's how you learn where it slips in your job.\n\n"
+   "Send this to whoever trusts AI with everything.\n\n#ai #futureofwork #chatgpt #careers #productivity #hourback",
+   "Source: Dell'Acqua, McFowland, Mollick, Lifshitz-Assaf, Kellogg, Rajendran, Krayer, Candelon & Lakhani, 'Navigating the "
+   "Jagged Technological Frontier' (Harvard Business School Working Paper 24-013, Sept 2023): 758 BCG consultants; with GPT-4, "
+   "12.2% more tasks, 25.1% faster, more than 40% higher quality; on a task outside the frontier, 19 percentage points less likely "
+   "to be correct. Book: Ethan Mollick, Co-Intelligence (2024).")
 
 # ================================================================== Oct 20 (Story chain day)
-hchain("hb-ch-1020b", HB, "2026-10-20", "hb20", "hourback · the swap", [
-    dict(k="photo", text="Delete. / Delete. / *Delete.*", sub="every morning, same store emails →", ink="light", y=560),
-    dict(k="bubbles", f="plum", label="sound familiar?", bubbles=[
-        ("in", "why is your inbox at *2,481?*"), ("out", "it's just store emails"), ("in", "so… delete them?"),
-        ("out", "I do. *every morning* 😩")], obj="phone"),
-    dict(k="bubbles", f="orng", label="the swap", bubbles=[
-        ("out", "make *one filter* for that store"), ("out", "tick *Skip the Inbox*"), ("in", "and they just… go away?"),
-        ("out", "yes. still there if you *search*")]),
-    dict(k="payoff", f="plum", label="the catch", text="Do it on a / *computer.*", sub="the Gmail app can't make filters", obj="point",
-         tap="next story →"),
-    dict(k="handoff", f="orng", label="today's swap", text="Delete. Delete. / *Delete.*", img="hb-1020-inbox-filter/01.jpg", next="tonight: shorter meetings"),
+# ---- AI, FOR REAL · day 2: why AI makes things up, and how to catch it (Story chain carries the lesson today).
+hchain("hb-ch-1020b", HB, "2026-10-20", "hb20", "ai, for real · day 2", [
+    dict(k="photo", text="It sounded / *so sure.*", sub="and it was completely wrong →", ink="light", y=560),
+    dict(k="bubbles", f="plum", label="OpenAI's own researchers tried this", bubbles=[
+        ("out", "when is Adam Kalai's birthday?"), ("ai", "He was born on…"),
+        ("in", "they asked 3 times. *3 different dates.* all wrong.")], obj="phone"),
+    dict(k="bubbles", f="orng", label="here's why", bubbles=[
+        ("out", "AI is trained like it's taking a *multiple-choice test*"), ("out", "a guess *might* score. a blank never does."),
+        ("in", "so it learned to *guess* 😬")]),
+    dict(k="payoff", f="plum", label="the rule to keep", text="Fluent / isn't *true.*", sub="sounds sure? check it anyway",
+         obj="point", tap="next story →"),
+    dict(k="handoff", f="orng", label="ai, for real · day 2", text="How to catch AI / *making it up.*", img="hb-1020-inbox-filter/01.jpg",
+         next="tonight: the AI that says “I don't know”"),
 ])
 
-hpost("hb-1020-inbox-filter", HB, "2026-10-20T13:00", "keep",
-      dict(lay="pills", f="plum", kicker="hourback · the swap", text="Delete. Delete. / *Delete.* / Every morning.", obj="chat", at="bl",
-           save="there's a one-time fix"),
-      [dict(k="say", f="orng", label="the swap", size=126,
-            text="Make a *filter* once. / That store's emails / *skip your inbox* / from now on.", sub="still there if you search"),
-       dict(k="steps", f="plum", text="On a *computer*", items=["Open one of those emails", "⋮ → Filter messages like these",
-                                                               "Create filter → Skip the Inbox"]),
-       dict(k="say", f="orng", label="what you get back", size=126,
-            text="Open your inbox: / *just people.* / Not stores."),
-       dict(k="do", f="plum", text="Tonight, pick the *one store* that emails you most. Make its filter. Done.",
-            save="send this to the friend at 2,481 unread")],
-      "Delete. Delete. Delete. Every morning, the same store emails.\n\n"
-      "The swap: one Gmail filter. That sender's emails skip your inbox from now on, and they're still there if you search.\n\n"
-      "Do this, on a computer (the Gmail app can't make filters): open one of those emails → ⋮ → Filter messages like these → "
-      "Create filter → tick Skip the Inbox (Archive it) → Create filter.\n\n"
-      "What you get back: you open your inbox and it's just people.\n\n"
-      f"Send this to the friend at 2,481 unread.\n\n{HBTAGS} #gmail #inboxzero #email",
-      "Source: Gmail filter steps (open an email → ⋮ → Filter messages like these → Create filter → Skip the Inbox). "
-      "Filters are made on the computer version of Gmail and then work on your phone too.")
+hpost("hb-1020-inbox-filter", HB, "2026-10-20T13:00", "learning",
+      dict(lay="pills", f="plum", kicker="ai, for real · day 2", text="AI sounds sure. / *That's not* / *the same as right.*", obj="chat", at="bl",
+           save="4 ways to catch it"),
+      [dict(k="say", f="orng", label="sound familiar?", text="You ask AI something. / It answers instantly, / *in perfect sentences.* / So you believe it."),
+       dict(k="why", f="plum", label="why it makes things up", text="AI doesn't look / facts up. It predicts / *the next likely word,* / like autocomplete, / supersized.",
+            sub="likely isn't the same as true"),
+       dict(k="say", f="orng", label="OpenAI says it too", text="Training / *rewards guessing.* / A guess might score. / *“I don't know”* / never does.",
+            src="OpenAI · Why language models hallucinate · Sept 2025"),
+       dict(k="say", f="plum", label="check 1: the source", text="Ask where it's from. / Then *open the link.* / AI can invent / quotes, links / and *court cases.*"),
+       dict(k="say", f="orng", label="check 2: ask twice", text="Ask the same / question again. / If the answers / *don't match,* / *neither* is safe."),
+       dict(k="say", f="plum", label="check 3: hand it the facts", text="Paste the real / document. AI is / *far safer* summing up / *your text* than / recalling facts."),
+       dict(k="catch", f="orng", label="check 4: the big stuff", text="Health, money, law: / AI can *start* / the research. / A real source / *finishes it.*",
+            sub="fluent isn't true"),
+       dict(k="do", f="plum", text="Next time AI gives you a fact that matters, *ask twice* and *open the source.*",
+            save="send this to the friend who believes every AI answer")],
+      "AI sounds sure. That's not the same as right.\n\n"
+      "Why it makes things up: AI doesn't look facts up. It predicts the next likely word, like autocomplete on a huge scale. "
+      "Likely isn't the same as true.\n\n"
+      "OpenAI's own researchers explain the rest: training and testing reward guessing. On a multiple-choice test a guess might "
+      "score, but a blank never does, so models learn to guess instead of saying \"I don't know\".\n\n"
+      "4 ways to catch it:\n"
+      "1. The source. Ask where it's from, then open the link. AI can invent quotes, links and even court cases.\n"
+      "2. Ask twice. If the answers don't match, neither is safe.\n"
+      "3. Hand it the facts. Paste the real document and ask it to work from that, not from memory.\n"
+      "4. The big stuff. For health, money and law, AI can start the research. A real source finishes it.\n\n"
+      "The rule to keep: fluent isn't true.\n\n"
+      "Do this: next time AI gives you a fact that matters, ask twice and open the source.\n\n"
+      "Send this to the friend who believes every AI answer.\n\n#ai #chatgpt #aitips #factcheck #criticalthinking #hourback",
+      "Sources: OpenAI, 'Why language models hallucinate' (Sept 5, 2025): standard training and evaluation reward guessing over "
+      "admitting uncertainty; asked for author Adam Tauman Kalai's birthday, a widely used chatbot gave three different wrong dates. "
+      "Zhang v. Chen, 2024 BCSC 285 (CBC News, Feb 27, 2024): a B.C. lawyer filed two cases ChatGPT invented and was ordered to pay "
+      "the other side's costs for dealing with them. 'Far safer working from your text' is general guidance: answers grounded in a "
+      "document you provide can still contain errors, so check anything important.")
 
 hpost("hb-1020-speedy-meetings", HB, "2026-10-20T17:45", "keep",
       dict(lay="pills", f="indi", text="Back-to-backs. / *No bathroom* / *break.*", obj="clock", at="br",
@@ -239,53 +291,78 @@ hpost("hb-1020-speedy-meetings", HB, "2026-10-20T17:45", "keep",
       "Source: How-To Geek, 'How to automatically shorten meeting durations in Google Calendar': Settings → Event settings → "
       "Speedy meetings; 30 and 45 minute events end 5 minutes early, longer events 10 minutes early.")
 
-reel("hb-reel-1020-grocery-list", HB, "2026-10-20T19:00", "deep", "hb-x-smart-bounce", "no reply…", [
-    dict(k="hook", f="indi", text="“Do we need / *milk?*” / texted from / aisle 7.", emo="💬"),
-    dict(k="say", f="yel", text="No reply. / You buy milk. / Now there are / *three milks.*"),
-    dict(k="because", f="indi", kicker="here's the swap", text="One *shared list* the whole house adds to all week."),
-    dict(k="list", f="yel", items=["Produce · *bananas*", "Dairy · *milk*", "Frozen · *peas*"], size=110, drop=True),
-    dict(k="say", f="indi", text="On iPhone, / Reminders *sorts it* / *by section* / for you."),
-    dict(k="do", f="yel", text="Reminders → Add List → List Type: *Groceries.* Then share it with your house."),
-    dict(k="save", f="indi", text="send this to / whoever does / the shopping"),
-], "\"Do we need milk?\" texted from aisle 7. No reply. Now there are three milks.\n\n"
-   "The swap: one shared grocery list the whole house adds to all week. On iPhone, Reminders sorts it into sections like Produce "
-   "and Frozen as you type.\n\n"
-   "Do this (iPhone, iOS 17 or later, iCloud on for Reminders): Reminders → Add List → List Type → Groceries. Then share the list "
-   "with your house.\n"
-   "Android: a shared list in Google Keep works too.\n\n"
-   f"Send this to whoever does the shopping.\n\n{HBTAGS} #grocerylist #mealplanning #familylife",
-   "Source: Apple Support, 'Create grocery lists in Reminders on your iPhone' (List Type: Groceries, auto-sorted into categories, "
-   "iOS 17 and later).")
+reel("hb-reel-1020-grocery-list", HB, "2026-10-20T19:00", "deep", "hb-x-smart-bounce", "which one would you trust?", [
+    dict(k="hook", f="indi", text="Two AIs. / One admits / *“I don't know.”*", emo="💬"),
+    dict(k="say", f="yel", text="OpenAI tested both / on the *same* / hard questions."),
+    dict(k="list", f="indi", items=["Guesser: *75%* wrong", "Honest one: *26%* wrong"], size=104, drop=True),
+    dict(k="say", f="yel", text="The guesser: / a bit more right, / nearly *3×* / *more wrong.*"),
+    dict(k="because", f="indi", kicker="here's why", text="Tests score *“I don't know”* as zero. So AI learns to *guess.*"),
+    dict(k="do", f="yel", text="When AI says *“I'm not sure,”* believe it. *Check the rest.*"),
+    dict(k="save", f="indi", text="send this to / the friend who loves / a confident answer", next="ai, for real · day 2"),
+], "Two AIs. One admits \"I don't know\". Which would you trust?\n\n"
+   "OpenAI tested two of its own models on the same set of hard fact questions. The older one almost never said \"I don't know\" "
+   "(1% of the time): it got 24% right and 75% wrong. The newer one said \"I don't know\" about half the time: 22% right, "
+   "26% wrong.\n\n"
+   "So the guesser got a little more right, and nearly 3 times more wrong.\n\n"
+   "Why: most AI tests only count right answers, and \"I don't know\" scores zero. So models learn to guess, and a guess comes out "
+   "sounding exactly as sure as a fact.\n\n"
+   "The rule to keep: an AI that admits doubt is more useful than one that never does.\n\n"
+   "Do this: when AI says \"I'm not sure\", believe it. And check the confident answers that matter.\n\n"
+   "Send this to the friend who loves a confident answer.\n\n#ai #chatgpt #openai #aitips #factcheck #hourback",
+   "Source: OpenAI, 'Why language models hallucinate' (Sept 5, 2025), SimpleQA results: OpenAI o4-mini abstained 1%, accuracy "
+   "24%, error 75%; gpt-5-thinking-mini abstained 52%, accuracy 22%, error 26%. Paper: Kalai, Nachum, Vempala & Zhang (2025).")
 
 # ================================================================== Oct 21 (quiz day)
-hchain("hb-ch-1021b", HB, "2026-10-21", "hb21", "hourback · quick quiz", [
-    dict(k="bubbles", f="plum", label="quick quiz", title="Your phone can / *copy text* / from a photo.", bubbles=[
-        ("in", "on which phones?"), ("out", "A) only the newest ones"), ("out", "B) iPhones back to 2018")], tap="guess, then tap →"),
-    dict(k="payoff", f="orng", label="the answer: B", text="*iPhone XS* / and newer", sub="on Android, Google Lens does it", obj="phone",
-         tap="source: Apple Support · tap →"),
-    dict(k="payoff", f="plum", label="so stop squinting", text="Copy it. / Don't *type it.*", sub="tracking numbers, phone numbers, recipes",
+# ---- AI, FOR REAL · day 3: where your AI chats actually go (quiz day: the Reels carry it, 08:45 part 1 → 19:00 part 2).
+hchain("hb-ch-1021b", HB, "2026-10-21", "hb21", "ai, for real · quick quiz", [
+    dict(k="bubbles", f="plum", label="quick quiz", title="Can a *person* read / your AI chats?", bubbles=[
+        ("in", "Gemini: true or false?"), ("out", "A) no, it's just a machine"), ("out", "B) yes, some of them")],
+         tap="guess, then tap →"),
+    dict(k="payoff", f="orng", label="the answer: B", text="Human / *reviewers.*", sub="Google says: don't type anything confidential",
+         obj="phone", tap="source: Google Gemini privacy hub · tap →"),
+    dict(k="payoff", f="plum", label="and they keep it", text="Up to / *3 years.*", sub="reviewed chats, even after you delete yours",
          obj="point", tap="next story →"),
-    dict(k="handoff", f="orng", label="today's swap", text="Stop typing / what's *in a photo.*", img="hb-1021-copy-from-photo/01.jpg", next="tonight: the refund email"),
+    dict(k="handoff", f="orng", label="ai, for real · day 3", text="Where your AI chats / *actually go.*", img="hb-1021-copy-from-photo/01.jpg",
+         next="tonight: the postcard rule"),
 ])
 
-hpost("hb-1021-copy-from-photo", HB, "2026-10-21T13:00", "keep",
-      dict(lay="pills", f="plum", kicker="hourback · the swap", text="Stop typing / what's already / *in a photo.*", obj="phone", at="br",
-           save="your camera can copy it"),
-      [dict(k="say", f="orng", label="sound familiar?", size=126,
-            text="Squinting at a / tracking number. / Typing it in. / *One digit wrong.*"),
-       dict(k="say", f="plum", label="the swap", size=126,
-            text="Open the photo. / *Touch and hold* / the text. / Tap *Copy.*", sub="on iPhone it's called Live Text"),
-       dict(k="rows", f="orng", text="Works *on*", rows=[("iPhone", "XS and newer"), ("Android", "Google Lens")]),
-       dict(k="do", f="plum", text="Next code or number you see: *photo it,* touch and hold, *Copy.* Check it before you send.",
-            save="send this to the friend who retypes everything")],
-      "Squinting at a tracking number, typing it in, getting one digit wrong.\n\n"
-      "The swap: copy the text straight out of a photo. On iPhone it's called Live Text: open the photo, touch and hold the words, "
-      "tap Copy. Phone numbers and emails become tappable too. On Android, Google Lens does the same.\n\n"
-      "Do this: next time you need a code, a number or a recipe, photo it, touch and hold, Copy.\n\n"
-      "Where not to trust it: it can misread small or blurry text (0 and O look alike). Check it before you send or pay.\n\n"
-      f"Send this to the friend who retypes everything.\n\n{HBTAGS} #livetext #googlelens",
-      "Source: Apple Support, 'Copy and translate text from photos on your iPhone or iPad': Live Text works on iPhone XS, iPhone XR "
-      "and later with iOS 15 or later (turn on in Settings → General → Language & Region).")
+hpost("hb-1021-copy-from-photo", HB, "2026-10-21T13:00", "learning",
+      dict(lay="pills", f="plum", kicker="ai, for real · day 3", text="Where your / AI chats / *actually go.*", obj="phone", at="br",
+           save="follow one message, step by step"),
+      [dict(k="say", f="orng", label="step 1: you hit send", text="Your message / *leaves your phone.* / It's answered on / the company's / *computers,* not yours."),
+       dict(k="say", f="plum", label="step 2: it's saved", text="ChatGPT and Claude / keep chats until / *you delete them.* / Then about *30 days* / to clear out."),
+       dict(k="say", f="orng", label="step 3: it may teach the AI", text="Unless you switch / it off, your chats / can help *train* / *the next model.*",
+            sub="you can choose in settings"),
+       dict(k="say", f="plum", label="step 4: a person may read it", text="Google says *human* / *reviewers* read / some Gemini chats, / and keep them up to / *3 years.*"),
+       dict(k="say", f="orng", label="the different one", text="Apple's *Private Cloud* / *Compute* says your / request is used / to answer you, / *then deleted.*",
+            sub="and outside experts can check it"),
+       dict(k="why", f="plum", label="why it matters", text="Training data / *isn't a chat log.* / Once something / helps train a model, / you can't pull it back out."),
+       dict(k="catch", f="orng", label="the rule to keep", text="Type it like / *a postcard,* / not a diary.", sub="anyone handling it could read it"),
+       dict(k="do", f="plum", text="Today, open your AI app's *settings:* choose if chats *train it.* Personal stuff? Temporary Chat.",
+            save="send this to the friend who tells AI everything")],
+      "Where do your AI chats actually go? Follow one message.\n\n"
+      "Step 1: you hit send. Your message leaves your phone and is answered on the company's computers, not yours.\n"
+      "Step 2: it's saved. ChatGPT and Claude keep your chats until you delete them; deleted chats take about 30 days to clear out.\n"
+      "Step 3: it may teach the AI. Unless you switch it off, your chats can be used to train future models. OpenAI, Google and "
+      "Anthropic all let you choose.\n"
+      "Step 4: a person may read it. Google says human reviewers read some Gemini chats, and keeps those for up to 3 years, even if "
+      "you delete your activity.\n\n"
+      "The different one: Apple says requests sent to its Private Cloud Compute are used only to answer you and are not stored, "
+      "and it lets outside security researchers inspect the system.\n\n"
+      "Why it matters: training data isn't a chat log you can tidy up. Once something has helped train a model, you can't pull it "
+      "back out. That's why the choice in settings matters.\n\n"
+      "The rule to keep: type it like a postcard, not a diary.\n\n"
+      "Do this: today, open your AI app's settings and decide whether your chats train it. Use Temporary Chat for anything personal.\n"
+      "ChatGPT: Settings → Data Controls → Improve the model for everyone.\n"
+      "Gemini: Keep Activity (formerly Gemini Apps Activity).\n"
+      "Claude: Settings → Privacy → model training setting.\n\n"
+      "Send this to the friend who tells AI everything.\n\n#ai #privacy #chatgpt #gemini #dataprivacy #hourback",
+      "Sources: OpenAI Help Center, 'Data Controls FAQ' (Improve the model for everyone; Temporary Chats not used for training, "
+      "deleted after 30 days; deleted chats removed within 30 days). Anthropic, 'Updates to our consumer terms' (Aug 28, 2025: model "
+      "training is the user's choice; kept 5 years if on, 30 days if off; Free, Pro and Max). Google, Gemini Apps Privacy Hub "
+      "(human reviewers; 'Please don't enter confidential information'; reviewed chats kept up to 3 years) and Google blog, "
+      "'Temporary Chats and new privacy controls' (Aug 13, 2025: Keep Activity). Apple Security Research, 'Private Cloud Compute' "
+      "(June 2024: data used only to fulfil the request, not retained; images published for independent inspection).")
 
 hpost("hb-1021-refund-email", HB, "2026-10-21T17:45", "keep",
       dict(lay="pills", f="indi", text="Still writing / that *refund* / *email?*", obj="chat", at="tr",
@@ -308,55 +385,78 @@ hpost("hb-1021-refund-email", HB, "2026-10-21T17:45", "keep",
       "Chat AIs can state rules or policies that don't exist, so keep the email to facts you gave it and check any policy on the "
       "store's own site. Never paste card or account numbers into an AI chat.")
 
-reel("hb-reel-1021-camera-translate", HB, "2026-10-21T19:00", "deep", "hb-x-future-easy", "your camera can read it", [
-    dict(k="hook", f="plum", text="The school form / is *in French.* / Due tomorrow.", emo="📄"),
-    dict(k="say", f="orng", text="You took French / in grade 9. / *That's it.*"),
-    dict(k="because", f="plum", kicker="here's the swap", text="Point your *camera* at it. The English shows up on the page."),
-    dict(k="list", f="orng", items=["Sortie scolaire · *field trip*", "Date limite · *deadline*"], size=104, drop=True),
-    dict(k="say", f="plum", text="Small or fancy / text can come / out *wrong.* / Signing it? / *Ask the school.*"),
-    dict(k="do", f="orng", text="Google Translate app → *Camera* → point at the page."),
-    dict(k="save", f="plum", text="send this to / the parents' / group chat"),
-], "The school form is in French. It's due tomorrow. You took French in grade 9, and that's it.\n\n"
-   "The swap: point your camera at it. In the Google Translate app, tap Camera and the English shows up on top of the page. "
-   "On iPhone, you can also open a photo, tap the Live Text button, then Translate.\n\n"
-   "Where not to trust it: small, unclear or fancy text may not translate right. If you're signing something, ask the school "
-   "what it says.\n\n"
-   f"Send this to the parents' group chat.\n\n{HBTAGS} #googletranslate #schoolforms #canadianparents",
-   "Sources: Google Translate Help, 'Translate images' (Camera; small, unclear or stylized text may not be accurate); "
-   "Apple Support, 'Copy and translate text from photos' (Live Text → Translate).")
+reel("hb-reel-1021-camera-translate", HB, "2026-10-21T19:00", "deep", "hb-x-future-easy", "think before you paste", [
+    dict(k="hook", f="plum", text="Engineers pasted / *secret code* / into ChatGPT.", emo="💬"),
+    dict(k="say", f="orng", text="That was Samsung, / 2023. Then it *banned* / AI chat tools / on work devices."),
+    dict(k="list", f="plum", items=["*Passwords*", "*SIN* and card numbers", "*Client* files"], size=110, drop=True),
+    dict(k="because", f="orng", kicker="here's why", text="What you type is *stored* on their computers, and some chats are *read by people.*"),
+    dict(k="say", f="plum", text="Think *postcard,* / not diary."),
+    dict(k="do", f="orng", text="Before you paste, swap names for *“Sam”* and numbers for *“1234.”*"),
+    dict(k="save", f="plum", text="send this to / the friend who / tells AI everything", next="ai privacy · part 2/2"),
+], "Engineers pasted secret code into ChatGPT.\n\n"
+   "That was Samsung in 2023. After staff uploaded sensitive internal code to ChatGPT, the company banned generative AI tools on "
+   "its work devices.\n\n"
+   "Never paste these into an AI chat: passwords, your SIN or card numbers, and anyone else's private files (clients, patients, "
+   "students).\n\n"
+   "Why: what you type is stored on the company's computers, and some chats are read by people. Google tells Gemini users "
+   "directly: please don't enter confidential information.\n\n"
+   "The rule to keep: think postcard, not diary.\n\n"
+   "Do this: before you paste, swap real names for \"Sam\" and account numbers for \"1234\". The AI still understands it.\n\n"
+   "Part 2 of 2. Part 1 (this morning): the privacy switch in each AI app.\n\n"
+   "Send this to the friend who tells AI everything.\n\n#ai #privacy #chatgpt #cybersecurity #aitips #hourback",
+   "Sources: Bloomberg, 'Samsung Bans Staff's AI Use After Spotting ChatGPT Data Leak' (May 2, 2023). Google, Gemini Apps "
+   "Privacy Hub: human reviewers read some conversations; 'Please don't enter confidential information in your conversations.' "
+   "Check your employer's AI policy before using AI with work files.",
+   series="AI privacy · part 2/2")
 
 # ================================================================== Oct 22 (Story chain day)
-hchain("hb-ch-1022", HB, "2026-10-22", "hb19", "hourback · the swap", [
-    dict(k="photo", text="“Unknown / *number.*” / Again.", sub="third one today →", ink="light", y=560),
-    dict(k="bubbles", f="plum", label="sound familiar?", bubbles=[
-        ("in", "📞 Unknown caller"), ("out", "hello?"), ("in", "*Congratulations!* You've been selected…")], obj="phone"),
-    dict(k="bubbles", f="orng", label="the swap", bubbles=[
-        ("out", "Settings → Apps → Phone"), ("out", "Screen Unknown Callers → *Silence*"),
-        ("in", "so mum still gets through?"), ("out", "if she's *in your contacts,* yes")]),
-    dict(k="payoff", f="plum", label="the catch", text="Save the / *dentist.*", sub="silenced calls go to voicemail, so check it",
-         obj="point", tap="next story →"),
-    dict(k="handoff", f="orng", label="today's swap", text="Unknown number. / *Again.*", img="hb-1022-unknown-callers/01.jpg", next="tonight: the 11 pm list"),
+# ---- AI, FOR REAL · day 4: AI and your career (Story chain carries the lesson; noon = the 4 rules from Co-Intelligence).
+hchain("hb-ch-1022", HB, "2026-10-22", "hb19", "ai, for real · day 4", [
+    dict(k="photo", text="“Will AI / *take my job?*”", sub="here's what the biggest jobs report says →", ink="light", y=560),
+    dict(k="bubbles", f="plum", label="the World Economic Forum asked employers", bubbles=[
+        ("in", "so… how many jobs does AI kill?"), ("out", "by 2030: *92 million* jobs displaced"),
+        ("out", "and *170 million* new ones created")], obj="phone"),
+    dict(k="bubbles", f="orng", label="the part that matters", bubbles=[
+        ("out", "*39%* of the skills in a job will change by 2030"), ("in", "which skill is growing fastest?"),
+        ("out", "*AI and big data.* number one.")]),
+    dict(k="payoff", f="plum", label="an economist put it best", text="AI won't take / your job. / *Someone using AI* / might.",
+         sub="Richard Baldwin, 2023", obj="point", tap="next story →"),
+    dict(k="handoff", f="orng", label="ai, for real · day 4", text="4 rules for / *working with AI.*", img="hb-1022-unknown-callers/01.jpg",
+         next="tonight: the jobs cheat sheet"),
 ])
 
-hpost("hb-1022-unknown-callers", HB, "2026-10-22T13:00", "keep",
-      dict(lay="pills", f="plum", kicker="hourback · the swap", text="Unknown / number. / *Again.*", obj="point", at="bl",
-           save="you don't have to pick up"),
-      [dict(k="say", f="orng", label="sound familiar?", size=126,
-            text="You answer. / *“Congratulations,* / *you've been* / *selected…”*"),
-       dict(k="say", f="plum", label="the swap", size=126,
-            text="Unknown numbers / go straight / to *voicemail.*", sub="your people still ring through"),
-       dict(k="steps", f="orng", text="iPhone", items=["Settings → Apps → Phone", "Screen Unknown Callers", "Choose Silence"]),
-       dict(k="do", f="plum", text="Today, save your *doctor, school and dentist* as contacts. Then turn on *Silence.*",
-            save="send this to the friend who still answers")],
-      "Unknown number. Again. You answer and it's \"Congratulations, you've been selected…\"\n\n"
-      "The swap: let unknown numbers go to voicemail. Calls from people in your contacts still ring through.\n\n"
-      "Do this (iPhone): Settings → Apps → Phone → Screen Unknown Callers → Silence. First, save the numbers you can't miss: "
-      "doctor, school, dentist, daycare.\n\n"
-      "The catch: silenced calls still leave voicemails, so check them. On Android, look in your Phone app's settings for spam "
-      "and unknown-caller options (menus vary by phone).\n\n"
-      f"Send this to the friend who still answers.\n\n{HBTAGS} #spamcalls #iphone",
-      "Source: Apple Support, 'Manage unknown callers on iPhone' (Settings → Apps → Phone → Screen Unknown Callers → Silence: "
-      "unknown numbers are silenced and sent to voicemail).")
+hpost("hb-1022-unknown-callers", HB, "2026-10-22T13:00", "learning",
+      dict(lay="pills", f="plum", kicker="ai, for real · day 4", text="4 rules for / working / *with AI.*", obj="point", at="bl",
+           save="from the book Co-Intelligence"),
+      [dict(k="say", f="orng", label="sound familiar?", text="You try AI / *once.* It gives / a so-so answer. / You decide it's / *overhyped.*"),
+       dict(k="say", f="plum", label="where these rules come from", text="Wharton professor / *Ethan Mollick* / co-led the study / of 758 consultants. / His book: *Co-Intelligence.*"),
+       dict(k="say", f="orng", label="rule 1 · week 1", text="*Bring AI* / *to everything.* / It's the only way / to find where / it really helps.",
+            sub="remember the jagged edge?"),
+       dict(k="say", f="plum", label="rule 2 · always", text="Stay *the human* / *in the loop.* / You check it. / You decide. / *Your name* goes on it."),
+       dict(k="say", f="orng", label="rule 3 · month 1", text="Tell it *who to be:* / “You're a tough / editor. Find the / *three weakest* / *points.*”",
+            sub="a clear role gets sharper answers"),
+       dict(k="say", f="plum", label="rule 4 · year 1", text="Assume today's AI / is *the worst* / you'll ever use. / Learn it now, / while it's *new.*"),
+       dict(k="why", f="orng", label="why it works", text="You're not learning / one app. You're / learning to work with / *a coworker that* / *keeps improving.*"),
+       dict(k="catch", f="plum", label="the catch", text="It still *makes* / *things up.* / Rule 2 never / takes a day off."),
+       dict(k="do", f="orng", text="This week, bring AI into *one real task a day.* Note where it *helped* and where it *slipped.*",
+            save="send this to your work bestie")],
+      "4 rules for working with AI, from the book Co-Intelligence.\n\n"
+      "Most of us try AI once, get a so-so answer, and decide it's overhyped. Ethan Mollick, a Wharton professor who co-led the "
+      "Harvard and BCG study of 758 consultants, argues that's exactly backwards. His book's ideas, in our words:\n\n"
+      "Rule 1 (week 1): bring AI to everything. It's the only way to find where it really helps in your work, because its "
+      "skills are jagged.\n"
+      "Rule 2 (always): stay the human in the loop. You check it, you decide, your name goes on it.\n"
+      "Rule 3 (month 1): tell it who to be. \"You're a tough editor. Find the three weakest points.\" A clear role gets sharper "
+      "answers.\n"
+      "Rule 4 (year 1): assume today's AI is the worst you'll ever use. Learn it now, while it's new.\n\n"
+      "Why it works: you're not learning one app. You're learning to work with a coworker that keeps improving.\n\n"
+      "The catch: it still makes things up. Rule 2 never takes a day off.\n\n"
+      "Do this: this week, bring AI into one real task a day. Note where it helped and where it slipped.\n\n"
+      "Send this to your work bestie.\n\n#ai #futureofwork #careers #cointelligence #productivity #hourback",
+      "Book: Ethan Mollick, 'Co-Intelligence: Living and Working with AI' (Portfolio, 2024): four rules (always invite AI to the "
+      "table; be the human in the loop; treat AI like a person, but tell it what kind of person it is; assume this is the worst AI "
+      "you will ever use), paraphrased here. Study: Dell'Acqua, Mollick et al., 'Navigating the Jagged Technological Frontier' "
+      "(HBS Working Paper 24-013, 2023), 758 BCG consultants.")
 
 hpost("hb-1022-brain-dump", HB, "2026-10-22T17:45", "keep",
       dict(lay="pills", f="indi", text="11 pm. / Your brain / *won't stop listing.*", obj="cup", at="bl", save="dump it, sort it, sleep"),
@@ -384,179 +484,218 @@ hpost("hb-1022-brain-dump", HB, "2026-10-22T17:45", "keep",
 # Oct 23 = quiz day (Reels carry it: photo search part 1 -> duplicates part 2), Oct 24 = Story chain day, Oct 25 = quiz day.
 
 # ------------------------------------------------------------------ Oct 23 (quiz day)
-reel("hb-reel-1023am-photo-search", HB, "2026-10-23T08:45", "deep", "hb-x-future-easy", "stop scrolling for it", [
-    dict(k="hook", f="indi", text="Scrolling for / *one photo.* / Again.", emo="📸"),
-    dict(k="say", f="yel", text="The parking spot. / The receipt. / Somewhere in / *4,000 photos.*"),
-    dict(k="because", f="indi", kicker="here's the swap", text="Your phone already knows *what's in* your photos."),
-    dict(k="list", f="yel", items=["Type *receipt*", "Type *dog*", "Type *passport*"], size=120, drop=True),
-    dict(k="say", f="indi", text="It can even find / *words* inside / a photo."),
-    dict(k="do", f="yel", text="Open Photos, tap *Search,* and type one word: *receipt.*"),
-    dict(k="save", f="indi", text="send this to / the friend with / 9,000 photos", next="part 2 tonight: storage full?"),
-], "Scrolling for one photo. Again. The parking spot, the receipt, somewhere in 4,000 photos.\n\n"
-   "The swap: search your photos by what's in them. Your phone already recognises things like receipts, dogs and documents, and it "
-   "can find words written inside a photo too.\n\n"
-   "Do this (iPhone): open Photos, tap Search (the magnifying glass at the bottom in iOS 26), and type one word, like \"receipt\".\n"
-   "Android: open Google Photos, tap Search, and type the same.\n\n"
-   "Where not to trust it: it can miss a photo, so if it's not there, scroll the date you think it was taken.\n\n"
-   f"Send this to the friend with 9,000 photos. Part 2 tonight at 7: storage full?\n\n{HBTAGS} #iphonephotos #googlephotos",
-   "Sources: Apple iPhone User Guide, 'Search for photos and videos in Photos'; SwitchingToMac, 'How to search photos on iPhone (iOS 26)': "
-   "Search has its own tab in iOS 26 and matches against an on-device index of recognised faces, places, objects and text in images.",
-   series="Photo time-savers · part 1/2")
+# ---- AI, FOR REAL · day 5: AI that sees and hears (quiz day: Reels carry it, 08:45 part 1 → 19:00 part 2; noon = what's inside ChatGPT).
+reel("hb-reel-1023am-photo-search", HB, "2026-10-23T08:45", "deep", "hb-x-future-easy", "just show it", [
+    dict(k="hook", f="indi", text="Point your camera. / *Ask out loud.*", emo="📸"),
+    dict(k="say", f="yel", text="Google made / *Gemini Live's* camera / *free* on Android."),
+    dict(k="list", f="indi", items=["It *sees* what you show", "It *hears* how you ask", "It *talks* back, live"], size=100, drop=True),
+    dict(k="because", f="yel", kicker="here's why it's big", text="AI used to read only *text.* Now it *sees and hears.*"),
+    dict(k="do", f="yel", text="Confused by an error light or a form? *Show it* to Gemini Live. Ask *why.*"),
+    dict(k="save", f="indi", text="send this to / the friend who / still types everything", next="part 2 tonight: where it goes wrong"),
+], "Point your camera. Ask out loud. AI answers.\n\n"
+   "In April 2025, Google made Gemini Live's camera and screen sharing free for Android users. ChatGPT's voice mode has been "
+   "able to see through your camera since December 2024. You show it something, ask in your own words, and it talks back.\n\n"
+   "Why it's big: for most of its life, AI could only read text. Now it takes in the world the way you do: sight, sound, "
+   "speech. Researchers call this multimodal AI.\n\n"
+   "Where it helps: the blinking error light on the router, the form you don't understand, the chart in a report. Just show it.\n\n"
+   "Do this: next time something's confusing, show it to Gemini Live or ChatGPT's voice mode and ask why. Then check anything "
+   "important (part 2 tonight: where it goes wrong).\n\n"
+   "Send this to the friend who still types everything.\n\n#ai #gemini #chatgpt #multimodal #techtips #hourback",
+   "Sources: 9to5Google, 'Gemini Live camera and screen sharing now free for all Android users' (Apr 16, 2025); OpenAI, "
+   "'Advanced Voice with video and screen sharing' (12 Days of OpenAI, Dec 12, 2024). Don't show it anything private: what the "
+   "camera sees is sent to the company's servers.",
+   series="AI that sees · part 1/2")
 
-hchain("hb-ch-1023", HB, "2026-10-23", "hb19", "hourback · quick quiz", [
-    dict(k="bubbles", f="plum", label="quick quiz", title="Find the receipt / photo *fast.*", bubbles=[
-        ("in", "what's quicker?"), ("out", "A) scroll back by date"), ("out", "B) type *receipt* in Search")], tap="guess, then tap →"),
-    dict(k="payoff", f="orng", label="the answer: B", text="Type / *“receipt.”*", sub="Photos knows what's in your pictures", obj="phone",
-         tap="source: Apple · tap →"),
-    dict(k="payoff", f="plum", label="it even reads", text="Words *inside* / a photo.", sub="signs, labels, screenshots", obj="point",
-         tap="next story →"),
-    dict(k="handoff", f="orng", label="today's swap", text="Expired licence? / *Get a reminder.*", img="hb-1023-renewal-reminders/01.jpg",
-         next="tonight: storage full?"),
+hchain("hb-ch-1023", HB, "2026-10-23", "hb19", "ai, for real · quick quiz", [
+    dict(k="bubbles", f="plum", label="quick quiz", title="How many people / use ChatGPT *each week?*", bubbles=[
+        ("in", "take a guess"), ("out", "A) 90 million"), ("out", "B) 900 million")], tap="guess, then tap →"),
+    dict(k="payoff", f="orng", label="the answer: B", text="*900* / million.", sub="every week, says OpenAI (Feb 2026)", obj="phone",
+         tap="source: OpenAI via TechCrunch · tap →"),
+    dict(k="payoff", f="plum", label="put another way", text="About *1 in 9* / people on Earth.", sub="here's how it actually works",
+         obj="point", tap="next story →"),
+    dict(k="handoff", f="orng", label="ai, for real · day 5", text="What's actually / *inside ChatGPT?*", img="hb-1023-renewal-reminders/01.jpg",
+         next="tonight: where AI's eyes go wrong"),
 ])
 
-hpost("hb-1023-renewal-reminders", HB, "2026-10-23T13:00", "keep",
-      dict(lay="pills", f="plum", kicker="hourback · ontario", text="“Your licence / expired / *last month.*”", obj="point", at="bl",
-           save="Ontario has a free fix"),
-      [dict(k="say", f="orng", label="sound familiar?", size=126,
-            text="Licence. Health card. / Plate. Photo card. / Each one expires / *on its own date.*"),
-       dict(k="rows", f="plum", text="The *free* reminder", cap="ServiceOntario · Ontario only",
-            rows=[("You pick", "email, text or call"), ("First one", "60 days before"), ("Second one", "30 days before")]),
-       dict(k="do", f="orng", text="Today, search *ServiceOntario renewal reminders* and sign up. Have your licence and health card handy.",
-            save="send this to your Ontario friends")],
-      "\"Your licence expired last month.\" Not what you want to hear at the counter.\n\n"
-      "The swap: ServiceOntario's free renewal reminders. Sign up once and get an email, text or phone call 60 days and 30 days before "
-      "your driver's licence, health card, licence plate or Ontario Photo Card expires.\n\n"
-      "Do this: search \"ServiceOntario renewal reminders\" (ontario.ca) and sign up. Have your licence, health card and plate number "
-      "handy, and make sure your address is up to date first.\n\n"
-      "Outside Ontario? Check your province's website for the same kind of reminder.\n\n"
-      f"Send this to your Ontario friends.\n\n{HBTAGS} #ontario #serviceontario #lifeadmin",
-      "Source: ontario.ca, 'Get ServiceOntario renewal reminders': free reminders by email, text or phone call for licence plates, "
-      "driver's licences, health cards and Ontario Photo Cards, 60 and 30 days before expiry (plus one 30 days after, if not renewed).")
+hpost("hb-1023-renewal-reminders", HB, "2026-10-23T13:00", "learning",
+      dict(lay="pills", f="plum", kicker="ai, for real · day 5", text="What's actually / *inside* / ChatGPT?", obj="phone", at="br",
+           save="5 steps, zero jargon"),
+      [dict(k="say", f="orng", label="step 1: it read a library", text="It was trained on / *a huge amount* / of text: books, / websites, code."),
+       dict(k="why", f="plum", label="step 2: it learned patterns", text="Not facts in a / filing cabinet. / *Patterns:* which / word tends / to *come next.*",
+            sub="like a friend who's read everything"),
+       dict(k="say", f="orng", label="step 3: it took a mountain of chips", text="Training runs on / *thousands* of / specialised chips, / mostly *Nvidia's.*",
+            sub="that's why Nvidia became a giant"),
+       dict(k="say", f="plum", label="step 4: people taught it manners", text="Humans *ranked* / its answers. It / learned to give / the ones *people* / *preferred.*"),
+       dict(k="say", f="orng", label="step 5: you hit send", text="It builds the / reply *one word-piece* / *at a time,* / picking the / likeliest next one."),
+       dict(k="why", f="plum", label="why this helps you", text="Now you know why / it's *great at writing* / and can still be / *wrong about facts.*"),
+       dict(k="catch", f="orng", label="the rule to keep", text="A *pattern* / *machine,* / not a fact / machine.", sub="use it to draft, then verify"),
+       dict(k="do", f="plum", text="Next time AI answers, ask yourself: is this *writing* (trust more) or *a fact* (check it)?",
+            save="send this to the friend who calls it magic")],
+      "What's actually inside ChatGPT? 5 steps, zero jargon.\n\n"
+      "1. It read a library. Models like ChatGPT are trained on huge amounts of text: books, websites, code.\n"
+      "2. It learned patterns, not facts. It doesn't store a filing cabinet of answers. It learns which word tends to come next, "
+      "like a friend who's read everything but can't quote the page.\n"
+      "3. It took a mountain of chips. Training runs on thousands of specialised chips, mostly made by Nvidia. That demand is why "
+      "Nvidia became one of the world's most valuable companies.\n"
+      "4. People taught it manners. Humans ranked its answers, and it learned to give the kind people preferred.\n"
+      "5. You hit send. It builds the reply one word-piece at a time, picking a likely next piece each time.\n\n"
+      "Why this helps you: it explains why AI is brilliant at writing and still wrong about facts.\n\n"
+      "The rule to keep: it's a pattern machine, not a fact machine. Use it to draft, then verify.\n\n"
+      "Do this: next time AI answers, ask yourself: is this writing (trust it more) or a fact (check it)?\n\n"
+      "Send this to the friend who calls it magic.\n\n#ai #chatgpt #howitworks #nvidia #learnai #hourback",
+      "Sources: OpenAI, 'Training language models to follow instructions with human feedback' (InstructGPT, 2022: human labelers "
+      "ranked model outputs to train the model); OpenAI, 'Why language models hallucinate' (Sept 2025: models are trained to "
+      "predict the next word); Nvidia's data-centre GPUs are the main chips used to train large AI models (Nvidia annual reports, "
+      "2025). Simplified for a general audience.")
 
-reel("hb-reel-1023-duplicates", HB, "2026-10-23T19:00", "deep", "hb-x-smart-bounce", "free up space tonight", [
-    dict(k="hook", f="plum", text="*“Storage full.”* / Again.", emo="📱"),
-    dict(k="say", f="orng", text="And some of it / is the *same photo,* / saved twice."),
-    dict(k="because", f="plum", kicker="here's the swap", text="Photos gathers your *duplicates* into one album for you."),
-    dict(k="list", f="orng", items=["Collections", "Utilities", "*Duplicates*"], size=120, drop=True),
-    dict(k="say", f="plum", text="Tap *Merge.* / It keeps the / *best copy.*"),
-    dict(k="do", f="orng", text="Tonight: Photos → Collections → Utilities → *Duplicates* → Merge."),
-    dict(k="save", f="plum", text="send this to / whoever's phone / is always full", next="photo time-savers · part 2/2"),
-], "\"Storage full.\" Again. And some of it is the same photo, saved twice.\n\n"
-   "The swap: your iPhone's Photos app gathers duplicates into one album. Tap Merge and it keeps the best-quality copy, with the "
-   "details from both. The extra copies go to Recently Deleted, so you can still get them back for a while.\n\n"
-   "Do this (iPhone, iOS 16 or later): Photos → Collections → Utilities → Duplicates → Merge.\n\n"
-   "Where not to trust it: some pairs are only near-copies. Look before you merge those.\n\n"
-   f"Send this to whoever's phone is always full. Part 2 of 2.\n\n{HBTAGS} #iphonestorage #iphonephotos",
-   "Sources: Technobezz, 'How to remove duplicate photos on iPhone' (Photos → Collections → Utilities → Duplicates; needs iOS 16 or "
-   "later; Merge keeps the best-quality copy and relevant metadata, others go to Recently Deleted); Cult of Mac (merging only exact "
-   "copies vs all selected).",
-   series="Photo time-savers · part 2/2")
+reel("hb-reel-1023-duplicates", HB, "2026-10-23T19:00", "deep", "hb-x-smart-bounce", "read the original", [
+    dict(k="hook", f="plum", text="Apple's AI wrote / a *headline.* / It was *false.*", emo="📱"),
+    dict(k="say", f="orng", text="It squeezed a / BBC news alert / and said a suspect / had *shot himself.* / He hadn't."),
+    dict(k="list", f="plum", items=["Jan 2025:", "Apple *paused* it"], size=120, drop=True),
+    dict(k="because", f="orng", kicker="here's why", text="A summary *squeezes* the facts. When AI squeezes, it can *change* them."),
+    dict(k="do", f="plum", text="When AI sums up news or a letter, *open the original* before you act on it."),
+    dict(k="save", f="orng", text="send this to / the friend who / only reads summaries", next="AI that sees · part 2/2"),
+], "Apple's AI wrote a headline. It was false.\n\n"
+   "In December 2024, Apple Intelligence's notification summaries condensed a BBC News alert and claimed that Luigi Mangione, "
+   "the suspect in a high-profile shooting, had shot himself. He hadn't. After complaints from the BBC, Apple paused AI "
+   "summaries for news apps in January 2025 and started showing other summaries in italics so you know they're AI-written.\n\n"
+   "Why: a summary squeezes the facts. When AI squeezes, it can drop a word like \"not\" or merge two stories, and the result "
+   "still sounds completely confident.\n\n"
+   "The rule to keep: a summary is a pointer, not the story.\n\n"
+   "Do this: when AI sums up news, an email or a letter, open the original before you act on it.\n\n"
+   "Part 2 of 2. Part 1 (this morning): AI that sees through your camera.\n\n"
+   "Send this to the friend who only reads summaries.\n\n#ai #apple #appleintelligence #fakenews #factcheck #hourback",
+   "Sources: BBC News complaint and Apple's response (Jan 16, 2025), reported by CNN and Tom's Guide, 'Apple scraps Apple "
+   "Intelligence news feature after misinformation complaints' (Jan 17, 2025): summaries for news and entertainment apps "
+   "disabled in iOS 18.3; AI summaries shown in italics.",
+   series="AI that sees · part 2/2")
 
 # ------------------------------------------------------------------ Oct 24 (Story chain day)
-hchain("hb-ch-1024", HB, "2026-10-24", "hb21", "hourback · the swap", [
-    dict(k="photo", text="“Leaving now!” / typed at a / *red light.*", sub="there's a safer way →", ink="light", y=560),
-    dict(k="bubbles", f="indi", label="sound familiar?", bubbles=[
-        ("in", "where are you??"), ("out", "5 min!"), ("in", "you said that *20 min ago*")], obj="phone"),
-    dict(k="bubbles", f="yel", label="the swap", bubbles=[
-        ("out", "start directions in Maps"), ("out", "tap *Share ETA*"), ("in", "so I can see you coming?"),
-        ("out", "yes. it *updates* if I'm late")]),
-    dict(k="payoff", f="indi", label="the catch", text="Do it / *before* / you drive.", sub="in Ontario, a red light still counts",
+# ---- AI, FOR REAL · day 6: AI makes prediction cheap (Power and Prediction / Prediction Machines). Story chain carries the lesson.
+hchain("hb-ch-1024", HB, "2026-10-24", "hb21", "ai, for real · day 6", [
+    dict(k="photo", text="Cheap things / get used / *everywhere.*", sub="AI is making prediction cheap →", ink="light", y=760),
+    dict(k="bubbles", f="indi", label="three Toronto economists spotted this", bubbles=[
+        ("out", "AI's real skill? *predicting.* the next word, the fraud, the traffic"), ("in", "so what gets valuable?"),
+        ("out", "*judgment.* deciding what to do with the prediction")], obj="phone"),
+    dict(k="bubbles", f="yel", label="like electricity", bubbles=[
+        ("out", "factories first just swapped steam engines for *motors*"),
+        ("out", "the big gains came *decades later,* when they redesigned the factory"), ("in", "so we're still early?")]),
+    dict(k="payoff", f="indi", label="the rule to keep", text="AI predicts. / *You judge.*", sub="from the book Power and Prediction",
          obj="point", tap="next story →"),
-    dict(k="handoff", f="yel", label="today's swap", text="Stop texting / *“5 more minutes.”*", img="hb-1024-share-eta/01.jpg",
-         next="tonight: dinner from the fridge"),
+    dict(k="handoff", f="yel", label="ai, for real · day 6", text="AI made prediction / *cheap.*", img="hb-1024-share-eta/01.jpg",
+         next="tonight: Nvidia's boss on AI coworkers"),
 ])
 
-hpost("hb-1024-share-eta", HB, "2026-10-24T13:00", "keep",
-      dict(lay="pills", f="indi", kicker="hourback · the swap", text="Stop texting / *“5 more* / *minutes.”*", obj="phone", at="br",
-           save="your map can do it"),
-      [dict(k="say", f="yel", label="the swap", size=126,
-            text="Start directions. / Tap *Share ETA.* / They see when / you'll *really* arrive.", sub="it updates if you're running late"),
-       dict(k="rows", f="indi", text="Where to *find it*", cap="tap it before you pull out",
-            rows=[("iPhone", "Maps · Share ETA"), ("Android", "Google Maps · Share trip")]),
-       dict(k="do", f="yel", text="Next drive, tap *Share ETA* before you pull out. Pick the person waiting.",
-            save="send this to the friend who's always 5 minutes away")],
-      "\"Where are you?\" \"5 minutes!\" (It was not 5 minutes.)\n\n"
-      "The swap: share your arrival time from your map app. They see when you'll really get there, and it updates if traffic slows "
-      "you down. Sharing stops on its own when you arrive.\n\n"
-      "Do this: start directions, then tap Share ETA (Apple Maps) or tap the trip card → Share trip progress (Google Maps), and pick "
-      "the person waiting.\n\n"
-      "The catch: set it up before you drive. In Ontario, holding your phone is illegal even when you're stopped at a red light.\n\n"
-      f"Send this to the friend who's always 5 minutes away.\n\n{HBTAGS} #applemaps #googlemaps #commute",
-      "Sources: Popular Science, 'How to share your ETA in Google Maps or Apple Maps' (Share ETA ends automatically on arrival; "
-      "Google Maps: tap the bottom card → Share trip progress); Apple iPhone User Guide, 'Share your ETA in Maps'; ontario.ca, "
-      "'What counts as distracted driving' (applies when stopped in traffic or at a red light; $615 fine for a first conviction "
-      "settled out of court).")
+hpost("hb-1024-share-eta", HB, "2026-10-24T13:00", "learning",
+      dict(lay="pills", f="indi", kicker="ai, for real · day 6", text="AI made / prediction / *cheap.*", obj="phone", at="br",
+           save="here's what gets valuable"),
+      [dict(k="say", f="yel", label="sound familiar?", text="Your bank texts: / *“Was this you?”* / Your map says / *“12 min faster.”* / Both are predictions."),
+       dict(k="why", f="indi", label="the big idea", text="AI's core skill is / *prediction:* filling / in what you don't / know from what / you do.",
+            sub="from Prediction Machines"),
+       dict(k="say", f="yel", label="when it gets cheap", text="When light got / cheap, we lit / *everything.* Now / prediction is / *getting cheap.*"),
+       dict(k="say", f="indi", label="so what gets valuable?", text="*Judgment:* / knowing what / matters, and / *what to do* / about it."),
+       dict(k="say", f="yel", label="in your job", text="AI drafts / three options. / Your value is / *picking the right one* / and knowing *why.*"),
+       dict(k="say", f="indi", label="the electricity lesson", text="Factories took / *decades* to redesign / around electricity. / The big wins came / *after the redesign.*"),
+       dict(k="catch", f="yel", label="the rule to keep", text="AI predicts. / *You judge.*", sub="the judging part is your career"),
+       dict(k="do", f="indi", text="This week, spot one *prediction* AI makes for you. Ask: which *decision* is still mine?",
+            save="send this to the friend planning their next move")],
+      "AI made prediction cheap. Here's what gets valuable.\n\n"
+      "Your bank texts \"Was this you?\" Your map says \"12 minutes faster this way.\" Both are AI predictions.\n\n"
+      "The big idea, from three University of Toronto economists (Ajay Agrawal, Joshua Gans and Avi Goldfarb, in Prediction "
+      "Machines and Power and Prediction): AI's core skill is prediction, filling in what you don't know from what you do.\n\n"
+      "When light got cheap, we lit everything. Now prediction is getting cheap, and it's showing up everywhere.\n\n"
+      "So what gets valuable? Judgment: knowing what matters and what to do about the prediction. AI drafts three options; your "
+      "value is picking the right one and knowing why.\n\n"
+      "The electricity lesson: factories first just swapped steam engines for electric motors. The big gains came decades later, "
+      "when they redesigned the whole factory around electricity. The authors argue AI is in that in-between stage now.\n\n"
+      "The rule to keep: AI predicts. You judge.\n\n"
+      "Do this: this week, spot one prediction AI makes for you. Ask: which decision is still mine?\n\n"
+      "Send this to the friend planning their next career move.\n\n#ai #futureofwork #careers #predictionmachines #books #hourback",
+      "Books: Ajay Agrawal, Joshua Gans & Avi Goldfarb, 'Prediction Machines' (Harvard Business Review Press, 2018; AI as cheap "
+      "prediction, judgment as its complement) and 'Power and Prediction' (2022; electricity and factory redesign, the 'between "
+      "times'). Ideas paraphrased in our own words.")
 
-reel("hb-reel-1024-fridge-dinner", HB, "2026-10-24T19:00", "deep", "hb-x-smart-bounce", "dinner, sorted", [
-    dict(k="hook", f="indi", text="6 pm. / Full fridge. / *Nothing* for dinner.", emo="🥕"),
-    dict(k="say", f="yel", text="Half a pepper. / Three eggs. / Some *spinach.*"),
-    dict(k="because", f="indi", kicker="here's where AI helps", text="Snap the fridge. AI suggests *dinners* from what's really there."),
-    dict(k="list", f="yel", items=["Spinach omelette · *10 min*", "Pepper fried eggs · *15 min*"], size=96, drop=True),
-    dict(k="say", f="indi", text="But it *can't tell* / if food's gone off, / and it can / *misread* a label."),
-    dict(k="do", f="yel", text="Tonight, photo your fridge, ask AI for *3 dinners,* and tell it any allergies."),
-    dict(k="save", f="indi", text="send this to / whoever cooks / tonight"),
-], "6 pm. Full fridge. Nothing for dinner.\n\n"
-   "Where AI helps: take a photo of your fridge and ask a chat AI for 3 dinners using what's in it. Half a pepper, three eggs and "
-   "some spinach become an omelette in 10 minutes.\n\n"
-   "Where not to trust it: it can't tell if food has gone off, and it can misread what it sees. Check dates yourself, and always "
-   "tell it about allergies.\n\n"
-   "Do this: tonight, photo your fridge, ask AI for 3 dinners, and say any allergies.\n\n"
-   f"Send this to whoever cooks tonight.\n\n{MADE}\n\n{HBTAGS} #mealideas #aitips #dinnerideas",
-   "The fridge and dinner ideas in this Reel are made up for this post. Chat AIs that accept photos can misidentify foods and can't "
-   "judge freshness or food safety: when in doubt, throw it out.")
+reel("hb-reel-1024-fridge-dinner", HB, "2026-10-24T19:00", "deep", "hb-x-smart-bounce", "who manages the agents?", [
+    dict(k="hook", f="indi", text="Nvidia's CEO: / IT will become / *HR for AI agents.*", emo="💬"),
+    dict(k="say", f="yel", text="Jensen Huang, / CES 2025. Agents / will be *onboarded* / and *improved,* / like staff."),
+    dict(k="list", f="indi", items=["*Hired*", "*Trained*", "*Reviewed*"], size=130, drop=True),
+    dict(k="because", f="yel", kicker="here's why", text="Agents now *do tasks,* not just answer. Tasks need *a manager.*"),
+    dict(k="say", f="indi", text="That manager / could be *you.*"),
+    dict(k="do", f="yel", text="Pick one task you repeat. Write the *steps* you'd give a new hire. That's an *agent brief.*"),
+    dict(k="save", f="indi", text="send this to / the friend who / manages people", next="ai, for real · day 6"),
+], "Nvidia's CEO says your IT team will become HR for AI agents.\n\n"
+   "At CES in January 2025, Jensen Huang said: \"In a lot of ways, the IT department of every company is going to be the HR "
+   "department of AI agents in the future.\" Agents will be brought in, trained, checked and improved, a lot like staff.\n\n"
+   "Why: agents don't just answer questions anymore, they do tasks. And anything that does tasks needs someone to give it "
+   "clear instructions and review its work.\n\n"
+   "That someone could be you. Writing clear instructions and checking results is a management skill, and it's becoming an AI "
+   "skill too.\n\n"
+   "Do this: pick one task you repeat at work. Write the steps you'd give a new hire, including what \"done\" looks like. "
+   "That's an agent brief, and it's useful even before you hand it to an AI.\n\n"
+   "Send this to the friend who manages people.\n\n#ai #aiagents #nvidia #futureofwork #leadership #hourback",
+   "Source: Fortune, 'Nvidia CEO Jensen Huang says IT will become the HR department for AI agents' (Jan 9, 2025), CES 2025 "
+   "keynote quote.")
 
 # ------------------------------------------------------------------ Oct 25 (quiz day)
-reel("hb-reel-1025am-talk-dont-type", HB, "2026-10-25T08:45", "deep", "hb-x-future-easy", "save your thumbs", [
-    dict(k="hook", f="plum", text="Long text? / *Stop typing it.*", emo="🎙️"),
-    dict(k="say", f="orng", text="Stanford tested / *talking* vs *typing* / on a phone."),
-    dict(k="because", f="plum", kicker="the result", text="Talking was about *3 times faster,* with fewer mistakes.", drop=True),
-    dict(k="say", f="orng", text="Tap the *mic* / on your keyboard. / Just talk."),
-    dict(k="say", f="plum", text="Check *names* / and *numbers* / before you send."),
-    dict(k="do", f="orng", text="Next long message, tap the *mic* on your keyboard and say it."),
-    dict(k="save", f="plum", text="send this to / the slowest texter / you know", next="part 2 tonight: the magic words"),
-], "Long text? Stop typing it.\n\n"
-   "Stanford researchers tested talking against typing on a phone. Talking was about 3 times faster in English, with about 20% "
-   "fewer errors.\n\n"
-   "The swap: tap the microphone on your keyboard and just say it.\n\n"
-   "Where not to trust it: names, numbers and addresses come out wrong the most. Read it once before you send.\n\n"
-   "Do this: next long message, tap the mic and talk.\n\n"
-   f"Send this to the slowest texter you know. Part 2 tonight at 7: the words that add punctuation.\n\n{HBTAGS} #voicetyping #texting",
-   "Source: Stanford News (Aug 24, 2016), 'Smartphone speech recognition can write text messages three times faster than human "
-   "typing': 32 people aged 19 to 32; speech was about 3x faster than typing in English with a 20.4% lower error rate (Ruan, "
-   "Wobbrock, Liou, Ng & Landay, with Baidu).",
-   series="Talk, don't type · part 1/2")
+# ---- AI, FOR REAL · day 7: it's already in your apps (quiz day: 08:45 Reel part 1 → 19:00 cheat part 2) + the week's 7 rules at noon.
+reel("hb-reel-1025am-talk-dont-type", HB, "2026-10-25T08:45", "deep", "hb-x-future-easy", "look for the button", [
+    dict(k="hook", f="plum", text="You already / use AI. / *Every day.*", emo="📱"),
+    dict(k="say", f="orng", text="Meta says about / *a billion people* / use Meta AI / every month."),
+    dict(k="list", f="plum", items=["WhatsApp: *Meta AI*", "iPhone: *Writing Tools*", "Gmail: *Gemini*"], size=104, drop=True),
+    dict(k="because", f="orng", kicker="here's why", text="Big tech isn't waiting for you to visit AI. It's putting AI *where you already are.*"),
+    dict(k="do", f="plum", text="Today, find the *AI button* in one app you use daily. Try it on *one real task.*"),
+    dict(k="save", f="orng", text="send this to / the friend who says / “I don't use AI”", next="part 2 tonight: the full map"),
+], "You already use AI. Every day.\n\n"
+   "Meta says about a billion people use Meta AI every month, mostly inside WhatsApp, Instagram, Facebook and Messenger. "
+   "On newer iPhones, Apple Intelligence adds Writing Tools to almost every text box. In Gmail, Gemini can summarise long threads.\n\n"
+   "Why: big tech isn't waiting for you to visit an AI website. It's putting AI where you already are, so the button is often "
+   "right there and easy to scroll past.\n\n"
+   "Do this: today, find the AI button in one app you use daily and try it on one real task. Then use this week's rules: "
+   "check the facts, keep it a postcard, and you make the call.\n\n"
+   "Part 2 tonight at 7: the full map of where AI lives in your apps.\n\n"
+   "Send this to the friend who says \"I don't use AI\".\n\n#ai #metaai #appleintelligence #gemini #techtips #hourback",
+   "Sources: CNBC, 'Mark Zuckerberg says Meta AI has 1 billion monthly active users' (May 28, 2025, Meta annual shareholder "
+   "meeting); Apple, Apple Intelligence Writing Tools (iPhone 15 Pro and later); Google Workspace, Gemini in Gmail "
+   "(summarise threads). Features vary by device, plan and country.",
+   series="AI in your apps · part 1/2")
 
-hchain("hb-ch-1025", HB, "2026-10-25", "hb20", "hourback · quick quiz", [
-    dict(k="bubbles", f="indi", label="quick quiz", title="Family Sharing / on your iPhone?", bubbles=[
-        ("in", "you already have…"), ("out", "A) nothing extra"), ("out", "B) a shared *Family* calendar")], tap="guess, then tap →"),
-    dict(k="payoff", f="yel", label="the answer: B", text="A *Family* / calendar", sub="made for you, on everyone's iPhone", obj="phone",
-         tap="source: Apple · tap →"),
-    dict(k="payoff", f="indi", label="so use it", text="Who's driving / *to hockey?*", sub="add it once, everyone sees it", obj="point",
-         tap="next story →"),
-    dict(k="handoff", f="yel", label="today's swap", text="“Wait, *who's* / *driving?*”", img="hb-1025-family-calendar/01.jpg",
-         next="tonight: the magic words"),
+hchain("hb-ch-1025", HB, "2026-10-25", "hb20", "ai, for real · quick quiz", [
+    dict(k="bubbles", f="indi", label="this week's quiz", title="The AI that says / *“I don't know”* is…", bubbles=[
+        ("in", "remember day 2?"), ("out", "A) broken"), ("out", "B) more trustworthy")], tap="guess, then tap →"),
+    dict(k="payoff", f="yel", label="the answer: B", text="*26%* wrong / vs *75%.*", sub="the honest AI vs the guesser, in OpenAI's test", obj="phone",
+         tap="source: OpenAI, Sept 2025 · tap →"),
+    dict(k="payoff", f="indi", label="one week, one idea", text="Know how it / works. Then / *use it well.*", sub="7 rules, all in one post",
+         obj="point", tap="next story →"),
+    dict(k="handoff", f="yel", label="ai, for real · day 7", text="One week. / *7 rules for AI.*", img="hb-1025-family-calendar/01.jpg",
+         next="tonight: where AI lives in your apps"),
 ])
 
-hpost("hb-1025-family-calendar", HB, "2026-10-25T13:00", "keep",
-      dict(lay="pills", f="indi", kicker="hourback · the swap", text="“Wait, *who's* / *driving* / to hockey?”", obj="chat", at="bl",
-           save="one calendar fixes it"),
-      [dict(k="say", f="yel", label="sound familiar?", size=126,
-            text="Dentist. Hockey. / Grandma's birthday. / All in *one* / person's head."),
-       dict(k="say", f="indi", label="the swap", size=126,
-            text="One *shared* / calendar. / Add it once, / *everyone* sees it.", sub="your phone may have made one already"),
-       dict(k="rows", f="yel", text="Where to *find it*", cap="made when you set up a family group",
-            rows=[("iPhone", "Calendar · Family"), ("Android", "Google Calendar · Family")]),
-       dict(k="do", f="indi", text="Tonight, add *this week's* plans to the Family calendar. Then tell everyone to look there.",
-            save="send this to your family group chat")],
-      "Dentist, hockey, grandma's birthday: all in one person's head.\n\n"
-      "The swap: one shared calendar the whole house can see. Add a plan once and it shows up on everyone's phone.\n\n"
-      "You may already have one. On iPhone, Family Sharing creates a shared calendar called Family. On Google, creating a family "
-      "group creates a Family calendar too.\n\n"
-      "Do this: tonight, add this week's plans to the Family calendar, then tell everyone to check there before they ask.\n\n"
-      f"Send this to your family group chat.\n\n{HBTAGS} #familycalendar #momlife #familylife",
-      "Sources: Apple Family Sharing guide ('a shared calendar called Family is automatically created in the Calendar app'); Google "
-      "Calendar Help, 'Use a family calendar on Google' ('When you create a family on Google, a calendar called \"Family\" is "
-      "automatically created').")
+hpost("hb-1025-family-calendar", HB, "2026-10-25T13:00", "learning",
+      dict(lay="pills", f="indi", kicker="ai, for real · day 7", text="One week. / *7 rules* / for the AI age.", obj="chat", at="bl",
+           save="save this, live by it"),
+      [dict(k="say", f="yel", label="day 1 · agents", text="AI now *clicks,* / *scrolls and fills* / *in forms.* / Rule: AI clicks. / *You press pay.*"),
+       dict(k="say", f="indi", label="day 2 · hallucination", text="It's trained to / guess, not to / say “I don't know.” / Rule: *fluent* / *isn't true.*"),
+       dict(k="say", f="yel", label="day 3 · privacy", text="Chats are stored, / may train it, and / some are *read.* / Rule: *a postcard,* / not a diary."),
+       dict(k="say", f="indi", label="day 4 · your career", text="Skills are changing / fast. Rule: *bring AI* / *to everything,* / and stay the / human in the loop."),
+       dict(k="say", f="yel", label="day 5 · how it works", text="It predicts the / next word-piece. / Rule: a *pattern* / *machine,* not a / fact machine."),
+       dict(k="say", f="indi", label="day 6 · the big idea", text="Prediction got / cheap. Judgment / got valuable. / Rule: *AI predicts.* / *You judge.*"),
+       dict(k="say", f="yel", label="day 7 · it's already here", text="It's in WhatsApp, / Gmail, your phone. / Rule: *learn it* / *on purpose,* / not by accident."),
+       dict(k="do", f="indi", text="Pick the rule you needed most. *Screenshot it.* Use it the next time you open AI.",
+            save="send this to the friend starting with AI")],
+      "One week. 7 rules for the AI age.\n\n"
+      "Day 1, agents: AI now clicks, scrolls and fills in forms for you. Rule: AI clicks. You press pay.\n"
+      "Day 2, hallucination: AI is trained in a way that rewards guessing over \"I don't know\". Rule: fluent isn't true.\n"
+      "Day 3, privacy: chats are stored, may train future models, and some are read by people. Rule: type it like a postcard, "
+      "not a diary.\n"
+      "Day 4, your career: the skills inside jobs are changing fast. Rule: bring AI to everything, and stay the human in the loop.\n"
+      "Day 5, how it works: it predicts the next word-piece from patterns. Rule: a pattern machine, not a fact machine.\n"
+      "Day 6, the big idea: prediction got cheap, so judgment got valuable. Rule: AI predicts. You judge.\n"
+      "Day 7, it's already here: in WhatsApp, Gmail and your phone. Rule: learn it on purpose, not by accident.\n\n"
+      "Do this: pick the rule you needed most, screenshot it, and use it the next time you open AI.\n\n"
+      "Send this to the friend just starting with AI.\n\n#ai #learnai #chatgpt #futureofwork #aitips #hourback",
+      "Every rule comes from this week's posts and their sources: OpenAI, Google and Anthropic product announcements; METR (2025); "
+      "OpenAI, 'Why language models hallucinate' (2025); WEF Future of Jobs Report 2025; Statistics Canada (2024, 2026); "
+      "Mollick, Co-Intelligence (2024); Agrawal, Gans & Goldfarb, Prediction Machines (2018) and Power and Prediction (2022).")
 
 # ------------------------------------------------------------------ AIR PASS for Oct 23-25 (same rule as below)
 _NEW_DAYS = ("2026-10-23", "2026-10-24", "2026-10-25")

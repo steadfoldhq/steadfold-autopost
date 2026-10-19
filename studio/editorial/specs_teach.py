@@ -66,3 +66,6 @@ DROPPED = {
 
 # Page content lives in v5_<page>.py (ONE-READ rewrite, Oct 17 night).
 import v5_ff, v5_lh, v5_hb, v5_lf, v5_formats  # noqa: E402,F401
+for _old, _new in v5_formats.REPLACES.items():   # Formats lead: afternoon slots are interactive carousels now
+    POSTS.pop(_old, None); META.pop(_old, None)
+    DROPPED[_old] = f"replaced by {_new} (interactive carousel, Formats lead)"
