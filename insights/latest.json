@@ -1,29 +1,48 @@
 {
- "collected_at": "2026-10-19T04:37:01+00:00",
+ "collected_at": "2026-10-19T12:46:26+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 8,
    "follows_count": 3,
-   "media_count": 16,
+   "media_count": 17,
    "posts": [
+    {
+     "media_id": "18076929002442429",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DerQykME3y_/",
+     "at": "2026-10-19T12:31:01+0000",
+     "first_line": "New baby, new mortgage: which life insurance? Here's the difference in plain words.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 5,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18114174383519618",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/Dep0ZGHCe6H/",
      "at": "2026-10-18T23:03:37+0000",
      "first_line": "Two friends, same plan, different endings.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 30,
-      "reach": 20,
-      "saved": 3,
+      "views": 66,
+      "reach": 41,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 2551,
-      "ig_reels_video_view_total_time": 61244
+      "total_interactions": 16,
+      "ig_reels_avg_watch_time": 5121,
+      "ig_reels_video_view_total_time": 235583
      },
      "comments": []
     },
@@ -36,11 +55,11 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 29,
-      "reach": 8,
-      "saved": 2,
+      "views": 32,
+      "reach": 10,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -53,11 +72,11 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 26,
-      "reach": 8,
-      "saved": 1,
+      "views": 28,
+      "reach": 9,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -70,13 +89,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 78,
-      "reach": 65,
+      "views": 79,
+      "reach": 66,
       "saved": 3,
       "shares": 0,
       "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3362,
-      "ig_reels_video_view_total_time": 232023
+      "ig_reels_avg_watch_time": 3328,
+      "ig_reels_video_view_total_time": 232990
      },
      "comments": []
     },
@@ -309,16 +328,16 @@
      "permalink": "https://www.instagram.com/reel/Dep0wsLHye4/",
      "at": "2026-10-18T23:06:53+0000",
      "first_line": "Busy all day, but nothing actually got done?",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 11,
+      "views": 26,
+      "reach": 18,
       "saved": 2,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 4571,
-      "ig_reels_video_view_total_time": 54862
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 4789,
+      "ig_reels_video_view_total_time": 100581
      },
      "comments": []
     },
@@ -328,14 +347,14 @@
      "permalink": "https://www.instagram.com/p/DepobDHmKOo/",
      "at": "2026-10-18T21:18:48+0000",
      "first_line": "Can't focus? It's usually one of three things. Pick yours and follow the line 👉",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 21,
       "reach": 7,
-      "saved": 3,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 12
+      "total_interactions": 15
      },
      "comments": []
     },
@@ -345,14 +364,14 @@
      "permalink": "https://www.instagram.com/p/DepKRAhmgab/",
      "at": "2026-10-18T16:55:18+0000",
      "first_line": "\"I'll start Monday\" isn't just an excuse. It's a real effect, and tomorrow is Monday.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
       "views": 22,
       "reach": 7,
-      "saved": 1,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 6
+      "total_interactions": 9
      },
      "comments": []
     },
@@ -365,13 +384,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 48,
-      "reach": 39,
-      "saved": 2,
+      "views": 52,
+      "reach": 43,
+      "saved": 3,
       "shares": 1,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 2433,
-      "ig_reels_video_view_total_time": 94888
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 2395,
+      "ig_reels_video_view_total_time": 105394
      },
      "comments": []
     },
@@ -384,13 +403,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 41,
-      "reach": 34,
+      "views": 42,
+      "reach": 35,
       "saved": 2,
       "shares": 0,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 2218,
-      "ig_reels_video_view_total_time": 79867
+      "ig_reels_avg_watch_time": 2160,
+      "ig_reels_video_view_total_time": 82089
      },
      "comments": []
     },
@@ -564,8 +583,8 @@
      "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 49,
-      "reach": 15,
+      "views": 50,
+      "reach": 16,
       "saved": 3,
       "shares": 3,
       "total_interactions": 16
@@ -621,16 +640,16 @@
      "permalink": "https://www.instagram.com/reel/Dep0e_RiKrL/",
      "at": "2026-10-18T23:04:33+0000",
      "first_line": "Picture day was in paragraph six. Of course it was.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 11,
-      "saved": 2,
+      "views": 26,
+      "reach": 19,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 12,
-      "ig_reels_avg_watch_time": 4246,
-      "ig_reels_video_view_total_time": 46715
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 2942,
+      "ig_reels_video_view_total_time": 58851
      },
      "comments": []
     },
@@ -643,11 +662,11 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 5,
-      "saved": 2,
+      "views": 15,
+      "reach": 7,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -660,11 +679,11 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 5,
-      "saved": 1,
+      "views": 26,
+      "reach": 6,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 6
+      "total_interactions": 8
      },
      "comments": []
     },
@@ -674,16 +693,16 @@
      "permalink": "https://www.instagram.com/reel/Deot88CEkZk/",
      "at": "2026-10-18T12:48:17+0000",
      "first_line": "147 unread messages in the family chat, and one of them is your job.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 12,
-      "saved": 1,
+      "views": 32,
+      "reach": 14,
+      "saved": 2,
       "shares": 1,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 5610,
-      "ig_reels_video_view_total_time": 78552
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 5062,
+      "ig_reels_video_view_total_time": 86064
      },
      "comments": []
     },
@@ -696,13 +715,13 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 87,
-      "reach": 65,
+      "views": 88,
+      "reach": 66,
       "saved": 3,
       "shares": 1,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 4262,
-      "ig_reels_video_view_total_time": 306928
+      "ig_reels_avg_watch_time": 4205,
+      "ig_reels_video_view_total_time": 307008
      },
      "comments": []
     },
@@ -733,7 +752,7 @@
      "comments_count": 1,
      "insights": {
       "views": 20,
-      "reach": 5,
+      "reach": 6,
       "saved": 4,
       "shares": 0,
       "total_interactions": 13
@@ -908,24 +927,43 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 14,
+   "media_count": 15,
    "posts": [
+    {
+     "media_id": "18042377414828593",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DerQqDnjOHM/",
+     "at": "2026-10-19T12:30:13+0000",
+     "first_line": "Your newborn is talking to you long before they cry. Here's how to hear it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18118443565969411",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/Dep0ll6kY14/",
      "at": "2026-10-18T23:05:19+0000",
      "first_line": "When the crying won't stop, it's OK to step away for a few minutes.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 124,
-      "reach": 116,
-      "saved": 1,
+      "views": 125,
+      "reach": 117,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 1507,
-      "ig_reels_video_view_total_time": 177883
+      "total_interactions": 11,
+      "ig_reels_avg_watch_time": 1531,
+      "ig_reels_video_view_total_time": 182195
      },
      "comments": []
     },
@@ -935,14 +973,14 @@
      "permalink": "https://www.instagram.com/p/DepoWYvGDGt/",
      "at": "2026-10-18T21:18:10+0000",
      "first_line": "Still feeling low, weeks after the birth? You're not failing, and you're not alone.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 18,
-      "reach": 7,
-      "saved": 2,
+      "views": 23,
+      "reach": 10,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 11
      },
      "comments": []
     },
@@ -952,14 +990,14 @@
      "permalink": "https://www.instagram.com/p/DepDJr8GhCA/",
      "at": "2026-10-18T15:53:08+0000",
      "first_line": "Your baby can get up to $500 a year from the government, just for saving for their school.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 6,
-      "saved": 0,
+      "views": 16,
+      "reach": 7,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 7
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -969,16 +1007,16 @@
      "permalink": "https://www.instagram.com/reel/Deoozm0jc1f/",
      "at": "2026-10-18T12:03:08+0000",
      "first_line": "It's 3 am and the baby is wide awake again.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 156,
-      "reach": 143,
-      "saved": 1,
+      "views": 157,
+      "reach": 144,
+      "saved": 2,
       "shares": 1,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 1895,
-      "ig_reels_video_view_total_time": 272974
+      "total_interactions": 14,
+      "ig_reels_avg_watch_time": 1915,
+      "ig_reels_video_view_total_time": 277736
      },
      "comments": []
     },
@@ -1063,13 +1101,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 80,
-      "reach": 64,
+      "views": 81,
+      "reach": 65,
       "saved": 3,
       "shares": 1,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 3602,
-      "ig_reels_video_view_total_time": 241381
+      "ig_reels_avg_watch_time": 3561,
+      "ig_reels_video_view_total_time": 242159
      },
      "comments": []
     },
