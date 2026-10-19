@@ -1056,6 +1056,34 @@ def cmd_store_secret(name: str, src: str, env: dict, gh_factory=None) -> int:
     return 0
 
 
+def cmd_replace_hero(ids: list[str] | None, env: dict, session=None, gh_factory=None) -> int:
+    """Replace image 1 (the thumbnail) of live listings with the spec's current photos[0] (Etsy overwrite at rank 1)."""
+    live = load_live()
+    shops: dict[str, ShopSession] = {}
+    rows, failed = ["| ID | Result |", "|----|--------|"], False
+    for sid, rec in live.get("listings", {}).items():
+        if ids and sid not in ids:
+            continue
+        p = ROOT / "listings" / f"{sid}.json"
+        spec = json.loads(p.read_text())
+        img = ROOT / spec["photos"][0]
+        try:
+            if spec["shop"] not in shops:
+                shops[spec["shop"]] = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
+            ss = shops[spec["shop"]]
+            ss.client.call("POST", f"/shops/{ss.shop_id}/listings/{rec['listing_id']}/images",
+                           data={"rank": "1", "overwrite": "true"},
+                           files={"image": (img.name, img.read_bytes(), _mime(img))})
+            rows.append(f"| {sid} | image 1 replaced ({img.name}) |")
+            log(f"[{sid}] image 1 replaced")
+        except (EtsyError, SetupError) as exc:
+            failed = True
+            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
+            log(f"[{sid}] FAILED: {exc}")
+    summary("## Etsy thumbnails\n\n" + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
 def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     ap = argparse.ArgumentParser(description="Steadfold Etsy auto-lister")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1070,6 +1098,8 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     m.add_argument("--dry-run", action="store_true")
     m.add_argument("--check", action="store_true")
     sub.add_parser("validate")
+    s = sub.add_parser("replace-hero")
+    s.add_argument("--spec", default="")
     s = sub.add_parser("approve")
     s.add_argument("--batch", required=True)
     s.add_argument("--said", required=True)
@@ -1092,6 +1122,9 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
                                    gh_factory=kw.get("gh_factory"))
         if args.cmd == "list":
             return cmd_list(args, env, **kw)
+        if args.cmd == "replace-hero":
+            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            return cmd_replace_hero(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
         if args.cmd == "validate":
             return cmd_validate()
         if args.cmd == "approve":

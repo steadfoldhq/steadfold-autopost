@@ -19,7 +19,7 @@ on:
       mode:
         description: 'list = publish · check = read-only · dry-run = no Etsy calls'
         type: choice
-        options: [list, check, dry-run]
+        options: [list, check, dry-run, hero]
         default: list
   push:
     branches: [main]
@@ -80,6 +80,7 @@ jobs:
             case "$MODE" in
               check)   python tools/etsy.py list --spec "${SPEC:-all}" --check ;;
               dry-run) python tools/etsy.py list --spec "${SPEC:-all}" --dry-run ;;
+              hero)    python tools/etsy.py replace-hero --spec "${SPEC:-all}" ;;
               *)       python tools/etsy.py list --spec "${SPEC:-all}" 2>&1 | tee "$RUNNER_TEMP/list.out"; rc=${PIPESTATUS[0]}
                        if [ "$rc" -ne 0 ]; then tail -15 "$RUNNER_TEMP/list.out" | while IFS= read -r l; do echo "::error::$l"; done; fi
                        exit $rc ;;
