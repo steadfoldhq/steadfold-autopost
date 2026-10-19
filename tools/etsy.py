@@ -1056,6 +1056,25 @@ def cmd_store_secret(name: str, src: str, env: dict, gh_factory=None) -> int:
     return 0
 
 
+def _which_hero(first: dict, new_img: Path, spec: dict) -> str:
+    """Download Etsy's rank-1 image and say whether it matches the new square-safe hero or the old one."""
+    try:
+        import io, requests
+        from PIL import Image, ImageChops, ImageStat
+        url = first.get("url_570xN") or first.get("url_fullxfull")
+        got = Image.open(io.BytesIO(requests.get(url, timeout=60).content)).convert("RGB").resize((200, 150))
+        old = new_img.with_name(new_img.name.replace("-SQ.jpg", "")).with_suffix("")
+        cands = {"NEW": new_img}
+        for ext in (".jpg", ".png"):
+            if Path(str(old) + ext).exists():
+                cands["OLD"] = Path(str(old) + ext)
+        score = {k: sum(ImageStat.Stat(ImageChops.difference(got, Image.open(v).convert("RGB").resize((200, 150)))).mean)
+                 for k, v in cands.items()}
+        return f"{min(score, key=score.get)} " + ", ".join(f"{k}={v:.0f}" for k, v in score.items())
+    except Exception as exc:  # noqa: BLE001
+        return f"unknown ({exc.__class__.__name__})"
+
+
 def cmd_replace_hero(ids: list[str] | None, env: dict, session=None, gh_factory=None) -> int:
     """Replace image 1 (the thumbnail) of live listings with the spec's current photos[0] (Etsy overwrite at rank 1)."""
     live = load_live()
@@ -1079,8 +1098,7 @@ def cmd_replace_hero(ids: list[str] | None, env: dict, session=None, gh_factory=
             rows.append(f"| {sid} | image 1 replaced ({img.name}); {len(imgs)} images |")
             log(f"[{sid}] image 1 replaced; {len(imgs)} images; rank1 id {first.get('listing_image_id')} "
                 f"created {first.get('created_timestamp')}")
-            print(f"::notice::{sid}: image 1 replaced, {len(imgs)} images, rank1 created {first.get('created_timestamp')}",
-                  flush=True)
+            print(f"::notice::{sid}: {len(imgs)} images; thumbnail now {_which_hero(first, img, spec)}", flush=True)
         except (EtsyError, SetupError) as exc:
             failed = True
             rows.append(f"| {sid} | FAILED: {redact(exc)} |")

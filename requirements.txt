@@ -1,3 +1,4 @@
 # Installed by the GitHub Actions workflows.
 requests>=2.32,<3
 PyNaCl>=1.5,<2
+Pillow>=10
