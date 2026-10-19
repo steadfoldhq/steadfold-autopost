@@ -662,3 +662,26 @@ class Decrypt(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Thumbnails(unittest.TestCase):
+    def test_image_1_survives_etsys_square_crop(self):
+        """Etsy crops image 1 to a centred square in search, the shop grid and the app: everything outside that square
+        must be plain background, so no title or icon is ever cut off (owner, Oct 19 00:20)."""
+        from PIL import Image, ImageStat
+        for p in sorted((ROOT / "listings").glob("*.json")):
+            if p.name in ("live.json", "go.json"):
+                continue
+            spec = json.loads(p.read_text())
+            if not spec.get("photos"):
+                continue
+            im = Image.open(ROOT / spec["photos"][0]).convert("L")
+            W, H = im.size
+            if W <= H:
+                continue
+            m = (W - H) // 2
+            for box in ((0, 0, m - 4, H), (W - m + 4, 0, W, H)):
+                if box[2] - box[0] < 8:
+                    continue
+                sd = ImageStat.Stat(im.crop(box)).stddev[0]
+                self.assertLess(sd, 6, f"{spec['id']}: content outside the centre square of image 1 ({p.name})")
