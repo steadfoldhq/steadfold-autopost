@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-20T04:34:41+00:00",
+ "collected_at": "2026-10-20T12:43:16+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 38,
-      "reach": 34,
+      "views": 53,
+      "reach": 50,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 4178,
-      "ig_reels_video_view_total_time": 146264
+      "ig_reels_avg_watch_time": 3402,
+      "ig_reels_video_view_total_time": 173538
      },
      "comments": []
     },
@@ -36,8 +36,8 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 3,
+      "views": 9,
+      "reach": 4,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4
@@ -67,16 +67,16 @@
      "permalink": "https://www.instagram.com/reel/DerQykME3y_/",
      "at": "2026-10-19T12:31:01+0000",
      "first_line": "New baby, new mortgage: which life insurance? Here's the difference in plain words.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 14,
-      "saved": 3,
+      "views": 24,
+      "reach": 17,
+      "saved": 4,
       "shares": 3,
-      "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3374,
-      "ig_reels_video_view_total_time": 50615
+      "total_interactions": 16,
+      "ig_reels_avg_watch_time": 3340,
+      "ig_reels_video_view_total_time": 60123
      },
      "comments": []
     },
@@ -90,12 +90,12 @@
      "comments_count": 1,
      "insights": {
       "views": 91,
-      "reach": 70,
+      "reach": 71,
       "saved": 5,
       "shares": 0,
       "total_interactions": 18,
-      "ig_reels_avg_watch_time": 4089,
-      "ig_reels_video_view_total_time": 306710
+      "ig_reels_avg_watch_time": 4052,
+      "ig_reels_video_view_total_time": 308014
      },
      "comments": []
     },
@@ -384,13 +384,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 4,
+      "views": 14,
+      "reach": 11,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3304,
-      "ig_reels_video_view_total_time": 13217
+      "ig_reels_avg_watch_time": 3985,
+      "ig_reels_video_view_total_time": 43843
      },
      "comments": []
     },
@@ -400,14 +400,14 @@
      "permalink": "https://www.instagram.com/p/DesMvZ2n1ww/",
      "at": "2026-10-19T21:14:29+0000",
      "first_line": "From 2 minutes to a locked hour. Follow the trail 👉",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 2,
-      "saved": 1,
+      "views": 8,
+      "reach": 3,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 5
+      "total_interactions": 7
      },
      "comments": []
     },
@@ -420,8 +420,8 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 1,
+      "views": 12,
+      "reach": 3,
       "saved": 2,
       "shares": 0,
       "total_interactions": 6
@@ -437,13 +437,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 11,
+      "views": 22,
+      "reach": 14,
       "saved": 3,
       "shares": 4,
       "total_interactions": 13,
-      "ig_reels_avg_watch_time": 3160,
-      "ig_reels_video_view_total_time": 37930
+      "ig_reels_avg_watch_time": 3779,
+      "ig_reels_video_view_total_time": 56691
      },
      "comments": []
     },
@@ -755,7 +755,7 @@
   "hourback": {
    "account": "hourback",
    "username": "hourbackhq",
-   "followers_count": 6,
+   "followers_count": 7,
    "follows_count": 3,
    "media_count": 20,
    "posts": [
@@ -768,13 +768,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 4,
+      "views": 8,
+      "reach": 5,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 1265,
-      "ig_reels_video_view_total_time": 6328
+      "ig_reels_avg_watch_time": 1564,
+      "ig_reels_video_view_total_time": 9388
      },
      "comments": []
     },
@@ -784,14 +784,14 @@
      "permalink": "https://www.instagram.com/p/DesTZIxlE85/",
      "at": "2026-10-19T22:12:46+0000",
      "first_line": "What really happens when you ask AI a question? Follow it 👉",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 2,
-      "saved": 1,
+      "views": 7,
+      "reach": 3,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 3
+      "total_interactions": 5
      },
      "comments": []
     },
@@ -1109,8 +1109,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 44,
-      "reach": 9,
+      "views": 45,
+      "reach": 10,
       "saved": 3,
       "shares": 8,
       "total_interactions": 22
@@ -1124,8 +1124,27 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 18,
+   "media_count": 19,
    "posts": [
+    {
+     "media_id": "18178417720447732",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DetznRzCqI_/",
+     "at": "2026-10-20T12:13:53+0000",
+     "first_line": "Your baby is learning your voice before they're even born.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 12,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 8335,
+      "ig_reels_video_view_total_time": 8335
+     },
+     "comments": []
+    },
     {
      "media_id": "18346082668248684",
      "type": "REEL",
@@ -1135,13 +1154,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 64,
-      "reach": 57,
+      "views": 72,
+      "reach": 62,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 2311,
-      "ig_reels_video_view_total_time": 131739
+      "ig_reels_avg_watch_time": 2886,
+      "ig_reels_video_view_total_time": 178941
      },
      "comments": []
     },
@@ -1151,14 +1170,14 @@
      "permalink": "https://www.instagram.com/p/DesMnw_H4UB/",
      "at": "2026-10-19T21:13:40+0000",
      "first_line": "Baby has a fever? Find their age and follow the line 👉 The rule changes as they grow.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 2,
-      "saved": 2,
+      "views": 12,
+      "reach": 3,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 7
+      "total_interactions": 9
      },
      "comments": []
     },
