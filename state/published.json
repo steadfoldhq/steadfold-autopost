@@ -3826,6 +3826,37 @@
       "comment_id": "18117185935819113",
       "comment_error": null,
       "commented_at": "2026-10-20T21:28:30Z"
+    },
+    "hb-1020-roadmap-agent": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18126782845799084",
+        "18126782866799084",
+        "18126782899799084",
+        "18126782920799084",
+        "18126782947799084",
+        "18126782965799084",
+        "18126782986799084"
+      ],
+      "children_media": [
+        "hb-1020-roadmap-agent/01.jpg",
+        "hb-1020-roadmap-agent/02.jpg",
+        "hb-1020-roadmap-agent/03.jpg",
+        "hb-1020-roadmap-agent/04.jpg",
+        "hb-1020-roadmap-agent/05.jpg",
+        "hb-1020-roadmap-agent/06.jpg",
+        "hb-1020-roadmap-agent/07.jpg"
+      ],
+      "children_created_at": "2026-10-20T22:00:46Z",
+      "updated_at": "2026-10-20T22:01:28Z",
+      "container_id": "18126783022799084",
+      "container_created_at": "2026-10-20T22:00:46Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-20T22:00:46Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=ArMS78xIpyp1R0_-Y2u4r65)",
+      "attempts": 1,
+      "failed_at": "2026-10-20T22:00:46Z"
     }
   }
 }
