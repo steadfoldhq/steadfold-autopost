@@ -1,13 +1,49 @@
 {
- "collected_at": "2026-10-19T20:36:43+00:00",
+ "collected_at": "2026-10-20T04:34:41+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 8,
    "follows_count": 3,
-   "media_count": 18,
+   "media_count": 20,
    "posts": [
+    {
+     "media_id": "18237850282319952",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DesZ7sUiivP/",
+     "at": "2026-10-19T23:10:18+0000",
+     "first_line": "Started investing at 33, not 28? You can catch up. Here's exactly how.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 38,
+      "reach": 34,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 4178,
+      "ig_reels_video_view_total_time": 146264
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17901027876671716",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DesMhxTn62f/",
+     "at": "2026-10-19T21:12:48+0000",
+     "first_line": "Hold the dots and slide. Watch one $1,000 double, and double, and double 👀",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 5,
+      "reach": 3,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 4
+     },
+     "comments": []
+    },
     {
      "media_id": "18020173466948493",
      "type": "CAROUSEL_ALBUM",
@@ -17,11 +53,11 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 3,
-      "saved": 2,
+      "views": 19,
+      "reach": 6,
+      "saved": 3,
       "shares": 3,
-      "total_interactions": 10
+      "total_interactions": 12
      },
      "comments": []
     },
@@ -31,16 +67,16 @@
      "permalink": "https://www.instagram.com/reel/DerQykME3y_/",
      "at": "2026-10-19T12:31:01+0000",
      "first_line": "New baby, new mortgage: which life insurance? Here's the difference in plain words.",
-     "likes": 2,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 13,
-      "saved": 2,
+      "views": 21,
+      "reach": 14,
+      "saved": 3,
       "shares": 3,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 3312,
-      "ig_reels_video_view_total_time": 46373
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 3374,
+      "ig_reels_video_view_total_time": 50615
      },
      "comments": []
     },
@@ -53,11 +89,11 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 90,
+      "views": 91,
       "reach": 70,
-      "saved": 4,
+      "saved": 5,
       "shares": 0,
-      "total_interactions": 16,
+      "total_interactions": 18,
       "ig_reels_avg_watch_time": 4089,
       "ig_reels_video_view_total_time": 306710
      },
@@ -288,7 +324,7 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 33,
+      "views": 34,
       "reach": 11,
       "saved": 4,
       "shares": 1,
@@ -305,7 +341,7 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 47,
+      "views": 49,
       "reach": 13,
       "saved": 4,
       "shares": 2,
@@ -322,7 +358,7 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 44,
+      "views": 45,
       "reach": 12,
       "saved": 4,
       "shares": 2,
@@ -337,8 +373,44 @@
    "username": "lockedhourhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 19,
+   "media_count": 21,
    "posts": [
+    {
+     "media_id": "18033429599898997",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DesaVg7lEKN/",
+     "at": "2026-10-19T23:13:39+0000",
+     "first_line": "Which hour should you lock? Not the perfect one. The one that comes right after something you already do.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 4,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 3304,
+      "ig_reels_video_view_total_time": 13217
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18131485777699842",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DesMvZ2n1ww/",
+     "at": "2026-10-19T21:14:29+0000",
+     "first_line": "From 2 minutes to a locked hour. Follow the trail 👉",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 2,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 5
+     },
+     "comments": []
+    },
     {
      "media_id": "18125595536298859",
      "type": "CAROUSEL_ALBUM",
@@ -350,9 +422,9 @@
      "insights": {
       "views": 6,
       "reach": 1,
-      "saved": 1,
+      "saved": 2,
       "shares": 0,
-      "total_interactions": 4
+      "total_interactions": 6
      },
      "comments": []
     },
@@ -365,13 +437,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 14,
-      "reach": 9,
-      "saved": 2,
+      "views": 17,
+      "reach": 11,
+      "saved": 3,
       "shares": 4,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 3596,
-      "ig_reels_video_view_total_time": 35962
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 3160,
+      "ig_reels_video_view_total_time": 37930
      },
      "comments": []
     },
@@ -384,13 +456,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 30,
-      "reach": 21,
+      "views": 32,
+      "reach": 23,
       "saved": 2,
       "shares": 0,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4237,
-      "ig_reels_video_view_total_time": 105932
+      "ig_reels_avg_watch_time": 3971,
+      "ig_reels_video_view_total_time": 107223
      },
      "comments": []
     },
@@ -400,14 +472,14 @@
      "permalink": "https://www.instagram.com/p/DepobDHmKOo/",
      "at": "2026-10-18T21:18:48+0000",
      "first_line": "Can't focus? It's usually one of three things. Pick yours and follow the line 👉",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
       "views": 26,
       "reach": 9,
-      "saved": 4,
+      "saved": 5,
       "shares": 0,
-      "total_interactions": 15
+      "total_interactions": 18
      },
      "comments": []
     },
@@ -417,14 +489,14 @@
      "permalink": "https://www.instagram.com/p/DepKRAhmgab/",
      "at": "2026-10-18T16:55:18+0000",
      "first_line": "\"I'll start Monday\" isn't just an excuse. It's a real effect, and tomorrow is Monday.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
       "views": 23,
       "reach": 7,
-      "saved": 2,
+      "saved": 3,
       "shares": 0,
-      "total_interactions": 9
+      "total_interactions": 12
      },
      "comments": []
     },
@@ -564,8 +636,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 33,
-      "reach": 12,
+      "views": 37,
+      "reach": 13,
       "saved": 3,
       "shares": 4,
       "total_interactions": 16
@@ -653,8 +725,8 @@
      "likes": 7,
      "comments_count": 0,
      "insights": {
-      "views": 72,
-      "reach": 14,
+      "views": 73,
+      "reach": 15,
       "saved": 3,
       "shares": 8,
       "total_interactions": 22
@@ -685,8 +757,44 @@
    "username": "hourbackhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 18,
+   "media_count": 20,
    "posts": [
+    {
+     "media_id": "17954461410036623",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DesaC8kD_mv/",
+     "at": "2026-10-19T23:11:08+0000",
+     "first_line": "AI made people 25% faster. Then it made them wrong.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 4,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 1265,
+      "ig_reels_video_view_total_time": 6328
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18142794892678076",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DesTZIxlE85/",
+     "at": "2026-10-19T22:12:46+0000",
+     "first_line": "What really happens when you ask AI a question? Follow it 👉",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 5,
+      "reach": 2,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 3
+     },
+     "comments": []
+    },
     {
      "media_id": "17957676168247744",
      "type": "CAROUSEL_ALBUM",
@@ -713,13 +821,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 3,
+      "views": 7,
+      "reach": 5,
       "saved": 1,
       "shares": 4,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 5814,
-      "ig_reels_video_view_total_time": 17444
+      "ig_reels_avg_watch_time": 3813,
+      "ig_reels_video_view_total_time": 19069
      },
      "comments": []
     },
@@ -732,13 +840,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 31,
-      "reach": 21,
+      "views": 36,
+      "reach": 26,
       "saved": 3,
       "shares": 0,
       "total_interactions": 15,
-      "ig_reels_avg_watch_time": 2904,
-      "ig_reels_video_view_total_time": 66814
+      "ig_reels_avg_watch_time": 2552,
+      "ig_reels_video_view_total_time": 71463
      },
      "comments": []
     },
@@ -748,14 +856,14 @@
      "permalink": "https://www.instagram.com/p/DeprixxAQMt/",
      "at": "2026-10-18T21:46:05+0000",
      "first_line": "Everything you paste into an AI chat leaves your phone.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 8,
-      "saved": 3,
+      "views": 22,
+      "reach": 9,
+      "saved": 4,
       "shares": 7,
-      "total_interactions": 18
+      "total_interactions": 21
      },
      "comments": []
     },
@@ -765,14 +873,14 @@
      "permalink": "https://www.instagram.com/p/DepM7_XmgdP/",
      "at": "2026-10-18T17:18:38+0000",
      "first_line": "Same price as last year doesn't mean nothing changed.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 31,
       "reach": 7,
-      "saved": 3,
+      "saved": 4,
       "shares": 7,
-      "total_interactions": 19
+      "total_interactions": 22
      },
      "comments": []
     },
@@ -1016,8 +1124,44 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 16,
+   "media_count": 18,
    "posts": [
+    {
+     "media_id": "18346082668248684",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DesaKcCIDOE/",
+     "at": "2026-10-19T23:12:12+0000",
+     "first_line": "The 5-step game that builds your baby's brain. No toys, no apps, no cost.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 64,
+      "reach": 57,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 2311,
+      "ig_reels_video_view_total_time": 131739
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18117620648102306",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DesMnw_H4UB/",
+     "at": "2026-10-19T21:13:40+0000",
+     "first_line": "Baby has a fever? Find their age and follow the line 👉 The rule changes as they grow.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 8,
+      "reach": 2,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 7
+     },
+     "comments": []
+    },
     {
      "media_id": "17904510816598166",
      "type": "CAROUSEL_ALBUM",
@@ -1029,9 +1173,9 @@
      "insights": {
       "views": 10,
       "reach": 2,
-      "saved": 1,
+      "saved": 2,
       "shares": 4,
-      "total_interactions": 8
+      "total_interactions": 10
      },
      "comments": []
     },
@@ -1041,16 +1185,16 @@
      "permalink": "https://www.instagram.com/reel/DerQqDnjOHM/",
      "at": "2026-10-19T12:30:13+0000",
      "first_line": "Your newborn is talking to you long before they cry. Here's how to hear it.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 141,
-      "reach": 133,
-      "saved": 1,
+      "views": 145,
+      "reach": 134,
+      "saved": 2,
       "shares": 5,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 6476,
-      "ig_reels_video_view_total_time": 854962
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 6708,
+      "ig_reels_video_view_total_time": 898910
      },
      "comments": []
     },
@@ -1060,14 +1204,14 @@
      "permalink": "https://www.instagram.com/reel/Dep0ll6kY14/",
      "at": "2026-10-18T23:05:19+0000",
      "first_line": "When the crying won't stop, it's OK to step away for a few minutes.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 126,
       "reach": 117,
-      "saved": 2,
+      "saved": 3,
       "shares": 4,
-      "total_interactions": 15,
+      "total_interactions": 18,
       "ig_reels_avg_watch_time": 1548,
       "ig_reels_video_view_total_time": 185791
      },
@@ -1084,9 +1228,9 @@
      "insights": {
       "views": 26,
       "reach": 11,
-      "saved": 3,
+      "saved": 4,
       "shares": 4,
-      "total_interactions": 15
+      "total_interactions": 17
      },
      "comments": []
     },
@@ -1096,14 +1240,14 @@
      "permalink": "https://www.instagram.com/p/DepDJr8GhCA/",
      "at": "2026-10-18T15:53:08+0000",
      "first_line": "Your baby can get up to $500 a year from the government, just for saving for their school.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 18,
       "reach": 7,
-      "saved": 2,
+      "saved": 3,
       "shares": 4,
-      "total_interactions": 15
+      "total_interactions": 18
      },
      "comments": []
     },
