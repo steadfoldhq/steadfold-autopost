@@ -1107,6 +1107,38 @@ def cmd_replace_hero(ids: list[str] | None, env: dict, session=None, gh_factory=
     return 1 if failed else 0
 
 
+def cmd_sync_titles(ids: list[str] | None, env: dict, session=None, gh_factory=None) -> int:
+    """Set the Etsy title of live listings to the spec's title, then read it back to confirm."""
+    live = load_live()
+    shops: dict[str, ShopSession] = {}
+    rows, failed = ["| ID | Result |", "|----|--------|"], False
+    for sid, rec in live.get("listings", {}).items():
+        if ids and sid not in ids:
+            continue
+        spec = json.loads((ROOT / "listings" / f"{sid}.json").read_text())
+        try:
+            if spec["shop"] not in shops:
+                shops[spec["shop"]] = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
+            ss = shops[spec["shop"]]
+            L = ss.client.listing(rec["listing_id"])
+            if norm_title(L.get("title", "")) == norm_title(spec["title"]):
+                rows.append(f"| {sid} | already matches |")
+                print(f"::notice::{sid}: title already matches", flush=True)
+                continue
+            ss.client.update(ss.shop_id, rec["listing_id"], {"title": spec["title"]})
+            got = ss.client.listing(rec["listing_id"]).get("title", "")
+            ok = norm_title(got) == norm_title(spec["title"])
+            failed |= not ok
+            rows.append(f"| {sid} | {'title updated' if ok else 'MISMATCH: ' + got} |")
+            print(f"::notice::{sid}: {'title updated' if ok else 'MISMATCH ' + got}", flush=True)
+        except (EtsyError, SetupError) as exc:
+            failed = True
+            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
+            log(f"[{sid}] FAILED: {exc}")
+    summary("## Etsy titles\n\n" + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
 def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     ap = argparse.ArgumentParser(description="Steadfold Etsy auto-lister")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1122,6 +1154,8 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     m.add_argument("--check", action="store_true")
     sub.add_parser("validate")
     s = sub.add_parser("replace-hero")
+    s.add_argument("--spec", default="")
+    s = sub.add_parser("sync-titles")
     s.add_argument("--spec", default="")
     s = sub.add_parser("approve")
     s.add_argument("--batch", required=True)
@@ -1148,6 +1182,9 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
         if args.cmd == "replace-hero":
             ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
             return cmd_replace_hero(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+        if args.cmd == "sync-titles":
+            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            return cmd_sync_titles(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
         if args.cmd == "validate":
             return cmd_validate()
         if args.cmd == "approve":
