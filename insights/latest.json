@@ -1,13 +1,49 @@
 {
- "collected_at": "2026-10-20T12:43:16+00:00",
+ "collected_at": "2026-10-20T16:37:16+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 8,
    "follows_count": 3,
-   "media_count": 20,
+   "media_count": 22,
    "posts": [
+    {
+     "media_id": "17869226814663310",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DeuQFaCkfwI/",
+     "at": "2026-10-20T16:22:21+0000",
+     "first_line": "Picking the winning stock is hard. In 2025, about 8 in 10 professional US big-company funds did worse than the S&P 500 (79%, S&P Dow Jones I",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17936367846401568",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Det4hVNCQs0/",
+     "at": "2026-10-20T12:56:52+0000",
+     "first_line": "TFSA or RRSP? One question decides it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 10,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3678,
+      "ig_reels_video_view_total_time": 33103
+     },
+     "comments": []
+    },
     {
      "media_id": "18237850282319952",
      "type": "REEL",
@@ -17,13 +53,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 53,
-      "reach": 50,
+      "views": 54,
+      "reach": 51,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3402,
-      "ig_reels_video_view_total_time": 173538
+      "ig_reels_avg_watch_time": 3348,
+      "ig_reels_video_view_total_time": 174116
      },
      "comments": []
     },
@@ -70,13 +106,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 17,
+      "views": 25,
+      "reach": 18,
       "saved": 4,
       "shares": 3,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 3340,
-      "ig_reels_video_view_total_time": 60123
+      "ig_reels_avg_watch_time": 3279,
+      "ig_reels_video_view_total_time": 62302
      },
      "comments": []
     },
@@ -373,8 +409,27 @@
    "username": "lockedhourhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 21,
+   "media_count": 22,
    "posts": [
+    {
+     "media_id": "18125021476898830",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Det4rhYDmlI/",
+     "at": "2026-10-20T12:58:05+0000",
+     "first_line": "For every parent who gets interrupted halfway through everything. Here's the one-minute note that lets your brain put it down.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 8,
+      "reach": 8,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 4579,
+      "ig_reels_video_view_total_time": 36635
+     },
+     "comments": []
+    },
     {
      "media_id": "18033429599898997",
      "type": "REEL",
@@ -475,8 +530,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 26,
-      "reach": 9,
+      "views": 28,
+      "reach": 10,
       "saved": 5,
       "shares": 0,
       "total_interactions": 18
@@ -564,7 +619,7 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 24,
+      "views": 25,
       "reach": 6,
       "saved": 3,
       "shares": 4,
@@ -757,8 +812,27 @@
    "username": "hourbackhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 20,
+   "media_count": 21,
    "posts": [
+    {
+     "media_id": "17939136375389197",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Det4xPjDbjY/",
+     "at": "2026-10-20T12:58:51+0000",
+     "first_line": "Spam texts and calls: the shut-off sheet 🇨🇦",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 2991,
+      "ig_reels_video_view_total_time": 2991
+     },
+     "comments": []
+    },
     {
      "media_id": "17954461410036623",
      "type": "REEL",
@@ -769,12 +843,12 @@
      "comments_count": 1,
      "insights": {
       "views": 8,
-      "reach": 5,
+      "reach": 6,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 1564,
-      "ig_reels_video_view_total_time": 9388
+      "ig_reels_avg_watch_time": 1332,
+      "ig_reels_video_view_total_time": 10656
      },
      "comments": []
     },
@@ -821,13 +895,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 5,
+      "views": 8,
+      "reach": 6,
       "saved": 1,
       "shares": 4,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 3813,
-      "ig_reels_video_view_total_time": 19069
+      "ig_reels_avg_watch_time": 3274,
+      "ig_reels_video_view_total_time": 19648
      },
      "comments": []
     },
@@ -1124,8 +1198,25 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 19,
+   "media_count": 20,
    "posts": [
+    {
+     "media_id": "17911273953306058",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DeuL6vqoIeY/",
+     "at": "2026-10-20T15:45:56+0000",
+     "first_line": "Meltdown in the cereal aisle? Here's what to do, step by step, and exactly what to say.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18178417720447732",
      "type": "REEL",
@@ -1135,13 +1226,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 1,
+      "views": 76,
+      "reach": 70,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 8335,
-      "ig_reels_video_view_total_time": 8335
+      "ig_reels_avg_watch_time": 1760,
+      "ig_reels_video_view_total_time": 121491
      },
      "comments": []
     },
@@ -1154,13 +1245,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 72,
-      "reach": 62,
+      "views": 78,
+      "reach": 66,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 2886,
-      "ig_reels_video_view_total_time": 178941
+      "ig_reels_avg_watch_time": 2862,
+      "ig_reels_video_view_total_time": 191761
      },
      "comments": []
     },
@@ -1245,8 +1336,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 26,
-      "reach": 11,
+      "views": 28,
+      "reach": 12,
       "saved": 4,
       "shares": 4,
       "total_interactions": 17
