@@ -3594,7 +3594,7 @@
     },
     "lh-1020-phone-other-room": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18068886983521398",
         "18068887004521398",
@@ -3620,14 +3620,22 @@
         "lh-1020-phone-other-room/10.jpg"
       ],
       "children_created_at": "2026-10-20T17:03:45Z",
-      "updated_at": "2026-10-20T17:05:04Z",
+      "updated_at": "2026-10-20T17:41:19Z",
       "container_id": "18068887175521398",
       "container_created_at": "2026-10-20T17:03:45Z",
       "publish_called": true,
       "publish_called_at": "2026-10-20T17:03:45Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AKeBqbAg-EvGwdh36LiM1Xb)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-20T17:03:45Z"
+      "failed_at": "2026-10-20T17:03:45Z",
+      "media_id": "17934468873144538",
+      "permalink": "https://www.instagram.com/p/DeuU9_IlZBL/",
+      "published_at": "2026-10-20T17:05:02+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18113116082594781",
+      "comment_error": null,
+      "commented_at": "2026-10-20T17:41:17Z"
     },
     "lh-ch-1020-5": {
       "account": "lockedhour",
@@ -3686,6 +3694,22 @@
       "comment_id": "18213400468362862",
       "comment_error": null,
       "commented_at": "2026-10-20T17:03:45Z"
+    },
+    "hb-ch-1020b-5": {
+      "account": "hourback",
+      "status": "published",
+      "container_id": "18126739453799084",
+      "container_created_at": "2026-10-20T17:41:17Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-20T17:41:46Z",
+      "publish_called_at": "2026-10-20T17:41:17Z",
+      "media_id": "18119066326930623",
+      "published_at": "2026-10-20T17:41:17Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
