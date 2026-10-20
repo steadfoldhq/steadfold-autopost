@@ -3713,7 +3713,7 @@
     },
     "ff-1020-climb-first-100k": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18151104145497733",
         "18151104187497733",
@@ -3733,14 +3733,22 @@
         "ff-1020-climb-first-100k/07.jpg"
       ],
       "children_created_at": "2026-10-20T21:00:26Z",
-      "updated_at": "2026-10-20T21:01:13Z",
+      "updated_at": "2026-10-20T21:28:34Z",
       "container_id": "18151104340497733",
       "container_created_at": "2026-10-20T21:00:26Z",
       "publish_called": true,
       "publish_called_at": "2026-10-20T21:00:26Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=ALbymrJgJ2we3JbWrI-hwVz)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-20T21:00:26Z"
+      "failed_at": "2026-10-20T21:00:26Z",
+      "media_id": "18286297390289596",
+      "permalink": "https://www.instagram.com/p/Deuv_gCknf1/",
+      "published_at": "2026-10-20T21:01:10+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18132024293508397",
+      "comment_error": null,
+      "commented_at": "2026-10-20T21:28:30Z"
     },
     "lf-1020-split-car-seat": {
       "account": "littlefold",
@@ -3782,7 +3790,7 @@
     },
     "lh-1020-streak-30-ticks": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18068933873521398",
         "18068933894521398",
@@ -3802,14 +3810,22 @@
         "lh-1020-streak-30-ticks/07.jpg"
       ],
       "children_created_at": "2026-10-20T21:00:26Z",
-      "updated_at": "2026-10-20T21:02:45Z",
+      "updated_at": "2026-10-20T21:28:36Z",
       "container_id": "18068934194521398",
       "container_created_at": "2026-10-20T21:00:26Z",
       "publish_called": true,
       "publish_called_at": "2026-10-20T21:00:26Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=A2iNxdK9E6phbmQieCE7EjT)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-20T21:00:26Z"
+      "failed_at": "2026-10-20T21:00:26Z",
+      "media_id": "17913352476471925",
+      "permalink": "https://www.instagram.com/p/DeuwKvqEmur/",
+      "published_at": "2026-10-20T21:02:42+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18117185935819113",
+      "comment_error": null,
+      "commented_at": "2026-10-20T21:28:30Z"
     }
   }
 }
