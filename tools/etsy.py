@@ -1139,6 +1139,12 @@ def cmd_sync_titles(ids: list[str] | None, env: dict, session=None, gh_factory=N
     return 1 if failed else 0
 
 
+def _plain(t: str) -> str:
+    """Compare descriptions the way a buyer reads them (Etsy escapes HTML characters)."""
+    import html
+    return " ".join(html.unescape(html.unescape(t or "")).replace("\u2019", "'").split())
+
+
 def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], env: dict,
                      session=None, gh_factory=None, run: Callable = subprocess.run) -> int:
     """Bring LIVE listings in line with their spec after an approved fix.
@@ -1183,8 +1189,9 @@ def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], en
                 done.append("files=" + ",".join(final))
             if "description" in parts:
                 c.update(ss.shop_id, lid, {"description": description_for(spec, ss.currency)})
-                if norm_title(c.listing(lid).get("description", "")[:60]) != norm_title(description_for(spec, ss.currency)[:60]):
-                    raise EtsyError("description did not update")
+                got = c.listing(lid).get("description", "")
+                if _plain(got) != _plain(description_for(spec, ss.currency)):
+                    raise EtsyError(f"description did not update (Etsy starts: {_plain(got)[:80]!r})")
                 done.append("description")
             if "photos" in parts:
                 for r in photo_ranks:
