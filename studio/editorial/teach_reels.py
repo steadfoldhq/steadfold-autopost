@@ -121,7 +121,7 @@ def plan(spec):
     need = [max(sc.get("min", 1.5), math.ceil((read_need(h)[0] + 0.15 - 1e-3) / beat / q) * q) for sc, h in zip(spec["scenes"], htmls)]
     need[0] = max(need[0], math.ceil(2.4 / beat / q) * q)  # the hook holds long enough to read it AS the cover
     loop_beats = max(1.5, math.ceil((read_need(htmls[0])[0] - 1e-3) / beat / q) * q)
-    lo, hi = (25.0, 40.0) if spec.get("fmt") == "deep" else (18.0, 30.0)
+    lo, hi = {"deep": (25.0, 40.0), "tight": (9.0, 15.0)}.get(spec.get("fmt"), (18.0, 30.0))
     total = (sum(need) + loop_beats) * beat
     k = 1
     while total < lo + 0.3:  # breathe: add half beats to the text beats after the hook
@@ -197,7 +197,7 @@ def lint(spec):
     errs = []
     if sum(1 for s in spec["scenes"] if s["k"] == "do") != 1:
         errs.append("needs ONE do beat")
-    if not any(s["k"] == "because" for s in spec["scenes"]):
+    if spec.get("fmt") != "tight" and not any(s["k"] == "because" for s in spec["scenes"]):
         errs.append("needs a because beat")
     for i, s in enumerate(spec["scenes"]):
         t = " ".join(str(s.get(x, "")) for x in ("text", "label", "suf", "next")) + " " + " ".join(s.get("items", []) or [])
