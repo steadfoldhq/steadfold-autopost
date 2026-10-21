@@ -4300,16 +4300,21 @@
     },
     "hb-ch-1021b-1": {
       "account": "hourback",
-      "status": "failed",
-      "container_id": null,
-      "container_created_at": "2026-10-21T17:05:03Z",
-      "publish_called": false,
+      "status": "published",
+      "container_id": "18127011046799084",
+      "container_created_at": "2026-10-21T17:43:01Z",
+      "publish_called": true,
       "kind": "story",
-      "updated_at": "2026-10-21T17:05:09Z",
-      "publish_called_at": "2026-10-21T17:05:03Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 400: The media is not ready for publishing, please wait for a moment (code=9007, subcode=2207027, fbtrace_id=AOybhF4QNRjdrFSGIIUEmBM)",
+      "updated_at": "2026-10-21T17:43:18Z",
+      "publish_called_at": "2026-10-21T17:43:01Z",
+      "error": null,
       "attempts": 2,
-      "failed_at": "2026-10-21T17:05:03Z"
+      "failed_at": "2026-10-21T17:05:03Z",
+      "media_id": "18135385360678600",
+      "published_at": "2026-10-21T17:43:01Z",
+      "late": false,
+      "comment_status": "none",
+      "comment_attempts": 0
     },
     "hb-ch-1021b-2": {
       "account": "hourback",
@@ -4361,7 +4366,7 @@
     },
     "lh-1021-switching-cost": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18069173090521398",
         "18069173114521398",
@@ -4387,14 +4392,22 @@
         "lh-1021-switching-cost/10.jpg"
       ],
       "children_created_at": "2026-10-21T17:05:03Z",
-      "updated_at": "2026-10-21T17:06:00Z",
+      "updated_at": "2026-10-21T17:43:19Z",
       "container_id": "18069173390521398",
       "container_created_at": "2026-10-21T17:05:03Z",
       "publish_called": true,
       "publish_called_at": "2026-10-21T17:05:03Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=Aaa3M9xRjoZUyALkNL5t2FM)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-21T17:05:03Z"
+      "failed_at": "2026-10-21T17:05:03Z",
+      "media_id": "18136395787628908",
+      "permalink": "https://www.instagram.com/p/Dew53qqmgQr/",
+      "published_at": "2026-10-21T17:05:57+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18102898886299323",
+      "comment_error": null,
+      "commented_at": "2026-10-21T17:43:01Z"
     },
     "lh-ch-1021-5": {
       "account": "lockedhour",
@@ -4414,7 +4427,7 @@
     },
     "hb-1021-copy-from-photo": {
       "account": "hourback",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18127000984799084",
         "18127001002799084",
@@ -4438,14 +4451,38 @@
         "hb-1021-copy-from-photo/09.jpg"
       ],
       "children_created_at": "2026-10-21T17:05:03Z",
-      "updated_at": "2026-10-21T17:07:02Z",
+      "updated_at": "2026-10-21T17:43:21Z",
       "container_id": "18127001260799084",
       "container_created_at": "2026-10-21T17:05:03Z",
       "publish_called": true,
       "publish_called_at": "2026-10-21T17:05:03Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AgH9nLrBFSlGIUYbYHOJuUF)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-21T17:05:03Z"
+      "failed_at": "2026-10-21T17:05:03Z",
+      "media_id": "17947238580355185",
+      "permalink": "https://www.instagram.com/p/Dew5_RJGvud/",
+      "published_at": "2026-10-21T17:07:00+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18347361832266841",
+      "comment_error": null,
+      "commented_at": "2026-10-21T17:43:01Z"
+    },
+    "hb-ch-1021b-4": {
+      "account": "hourback",
+      "status": "published",
+      "container_id": "18127011112799084",
+      "container_created_at": "2026-10-21T17:43:01Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-21T17:43:36Z",
+      "publish_called_at": "2026-10-21T17:43:01Z",
+      "media_id": "18399211624206370",
+      "published_at": "2026-10-21T17:43:01Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
