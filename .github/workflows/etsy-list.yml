@@ -19,8 +19,16 @@ on:
       mode:
         description: 'list = publish · check = read-only · dry-run = no Etsy calls'
         type: choice
-        options: [list, check, dry-run, hero, titles]
+        options: [list, check, dry-run, hero, titles, sync]
         default: list
+      parts:
+        description: 'sync only: files,description,photos'
+        type: string
+        default: files,description
+      photos:
+        description: 'sync only: photo ranks to overwrite, e.g. 4,5,7'
+        type: string
+        default: ''
   push:
     branches: [main]
     paths: ['listings/go.json']
@@ -73,6 +81,8 @@ jobs:
           EVENT: ${{ github.event_name }}
           SPEC: ${{ inputs.spec }}
           MODE: ${{ inputs.mode }}
+          PARTS: ${{ inputs.parts }}
+          PHOTOS: ${{ inputs.photos }}
         run: |
           if [ "$EVENT" = "push" ]; then
             python tools/etsy.py list --go listings/go.json
@@ -82,6 +92,7 @@ jobs:
               dry-run) python tools/etsy.py list --spec "${SPEC:-all}" --dry-run ;;
               hero)    python tools/etsy.py replace-hero --spec "${SPEC:-all}" ;;
               titles)  python tools/etsy.py sync-titles --spec "${SPEC:-all}" ;;
+              sync)    python tools/etsy.py sync-listing --spec "$SPEC" --parts "${PARTS:-files,description}" --photos "${PHOTOS:-}" ;;
               *)       python tools/etsy.py list --spec "${SPEC:-all}" 2>&1 | tee "$RUNNER_TEMP/list.out"; rc=${PIPESTATUS[0]}
                        if [ "$rc" -ne 0 ]; then tail -15 "$RUNNER_TEMP/list.out" | while IFS= read -r l; do echo "::error::$l"; done; fi
                        exit $rc ;;

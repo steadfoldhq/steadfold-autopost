@@ -128,17 +128,28 @@ class FakeEtsy:
             if method == "POST":
                 part = {"images": "image", "videos": "video", "files": "file"}[kind]
                 assert part in files
+                if kind == "files" and getattr(self, "drop_uploads", False):
+                    return FakeResponse(201, {"ok": True})
+                self.next_id += 1
                 L[kind].append({"name": (data or {}).get("name") or files[part][0],
-                                "filename": (data or {}).get("name") or files[part][0]})
+                                "filename": (data or {}).get("name") or files[part][0],
+                                "listing_file_id": self.next_id})
                 return FakeResponse(201, {"ok": True})
             if method == "GET" and kind == "files":
                 return FakeResponse(200, {"results": L["files"]})
+        m = re.fullmatch(r"/shops/42/listings/(\d+)/files/(\d+)", p)
+        if m and method == "DELETE":
+            L = self.listings[int(m.group(1))]
+            L["files"] = [f for f in L["files"] if f.get("listing_file_id") != int(m.group(2))]
+            return FakeResponse(204)
         m = re.fullmatch(r"/listings/(\d+)(?:/(images|videos))?", p)
         if m and method == "GET":
             L = self.listings[int(m.group(1))]
             if m.group(2):
                 return FakeResponse(200, {"results": L[m.group(2)]})
-            return FakeResponse(200, {k: v for k, v in L.items() if k not in ("images", "videos", "files")})
+            out = {k: v for k, v in L.items() if k not in ("images", "videos", "files")}
+            out.setdefault("description", (L.get("fields") or {}).get("description", ""))
+            return FakeResponse(200, out)
         return FakeResponse(404, {"error": f"no route {method} {p}"})
 
 
@@ -631,6 +642,49 @@ class ListingFlow(unittest.TestCase):
         rc, out, _ = self.run_list(FakeEtsy(), ETSY_REFRESH_TOKEN_STEADFOLD="")
         self.assertEqual(rc, 1)
         self.assertIn("not connected yet", out)
+
+
+class SyncListing(ListingFlow):
+    """Swapping a fixed customer file onto a LIVE listing (RQ-52 QA fixes, Oct 21)."""
+
+    def _make_live(self, fake, sid="FF-FREEDOM", old="Freedom-Number-Workbook-v1.0.zip"):
+        fake.listings[7001] = {"listing_id": 7001, "state": "active", "title": "x", "fields": {},
+                               "images": [], "videos": [],
+                               "files": [{"filename": old, "name": old, "listing_file_id": 1}]}
+        etsy.LIVE_PATH.write_text(json.dumps({"listings": {sid: {"listing_id": 7001}}, "drafts": {}}))
+
+    def run_sync(self, fake, *args):
+        gh = FakeGH()
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            rc = etsy.main(["sync-listing", *args], env=base_env(RUNNER_TEMP=self.tmp.name),
+                           session=fake, gh_factory=gh.factory)
+        return rc, out.getvalue()
+
+    def test_swaps_file_and_description(self):
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake)
+        rc, out = self.run_sync(fake, "--spec", "FF-FREEDOM", "--parts", "files,description")
+        self.assertEqual(rc, 0, out)
+        spec = json.loads((etsy.LISTINGS / "FF-FREEDOM.json").read_text())
+        self.assertEqual([f["filename"] for f in fake.listings[7001]["files"]], [spec["files"][0]["name"]])
+        self.assertIn("after inflation", fake.listings[7001]["fields"]["description"])
+        dels = [i for i, c in enumerate(fake.calls) if c[0] == "DELETE"]
+        posts = [i for i, c in enumerate(fake.calls) if c[0] == "POST" and c[1].endswith("/files")]
+        self.assertTrue(dels and posts and max(posts) < min(dels), "old file removed before upload")
+
+    def test_failed_upload_keeps_old_file(self):
+        fake = FakeEtsy(currency="CAD")
+        fake.drop_uploads = True
+        self._make_live(fake)
+        rc, out = self.run_sync(fake, "--spec", "FF-FREEDOM", "--parts", "files")
+        self.assertEqual(rc, 1)
+        self.assertEqual([f["filename"] for f in fake.listings[7001]["files"]], ["Freedom-Number-Workbook-v1.0.zip"])
+        self.assertFalse([c for c in fake.calls if c[0] == "DELETE"])
+
+    def test_needs_explicit_ids(self):
+        rc, out = self.run_sync(FakeEtsy(), "--spec", "all")
+        self.assertEqual(rc, 2)
 
 
 class Decrypt(unittest.TestCase):

@@ -57,11 +57,17 @@
   ],
   "files": [
     {
-      "name": "Little-Firsts-First-Holidays-v1.1.zip",
-      "enc": "listings/files/little-firsts-holidays/Little-Firsts-First-Holidays-v1.1.zip.age",
-      "sha256": "ed8008d04d9b1c0b3b93e24e71132208652a852d3d21cb0b5bb5d103398ea4c2",
-      "size": 254043
+      "name": "Little-Firsts-First-Holidays-v1.2.zip",
+      "enc": "listings/files/little-firsts-holidays/Little-Firsts-First-Holidays-v1.2.zip.age",
+      "sha256": "6ca18872701b5b9d6332dda56e0ef1a58a1515935d7ff7ef8f778e633e68cec1",
+      "size": 254070
     }
   ],
-  "source_note": "Copy and tags verbatim from the v1.1 listing kit. CA$4.99, LittlefoldHQ (CAD shop)."
+  "source_note": "Copy and tags verbatim from the v1.1 listing kit. CA$4.99, LittlefoldHQ (CAD shop).",
+  "history": [
+    {
+      "date": "2026-10-21",
+      "change": "QA fix: Little-Firsts-First-Holidays-v1.1.zip -> Little-Firsts-First-Holidays-v1.2.zip (RQ-52 defect); description corrected where the claim changed. Old file kept at listings/files/little-firsts-holidays/Little-Firsts-First-Holidays-v1.1.zip.age."
+    }
+  ]
 }

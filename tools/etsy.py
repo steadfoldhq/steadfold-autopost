@@ -1139,6 +1139,70 @@ def cmd_sync_titles(ids: list[str] | None, env: dict, session=None, gh_factory=N
     return 1 if failed else 0
 
 
+def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], env: dict,
+                     session=None, gh_factory=None, run: Callable = subprocess.run) -> int:
+    """Bring LIVE listings in line with their spec after an approved fix.
+    parts: "files" (upload the spec's customer files, then remove listing files whose names are not
+    in the spec; nothing is removed unless every upload succeeded), "description" (PATCH the
+    description), "photos" (overwrite the given photo ranks with the spec's photos)."""
+    if not ids:
+        raise SetupError("sync-listing needs explicit --spec IDs (never 'all').")
+    live = load_live()
+    shops: dict[str, ShopSession] = {}
+    workdir = Path(env.get("RUNNER_TEMP") or tempfile.mkdtemp()) / "etsy-files"
+    rows, failed = ["| ID | Result |", "|----|--------|"], False
+    for sid in ids:
+        rec = live.get("listings", {}).get(sid)
+        try:
+            if not rec:
+                raise EtsyError("not in listings/live.json")
+            spec = load_spec(ROOT / "listings" / f"{sid}.json")
+            if spec["shop"] not in shops:
+                shops[spec["shop"]] = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
+            ss = shops[spec["shop"]]
+            c, lid, done = ss.client, int(rec["listing_id"]), []
+            if "files" in parts:
+                want = decrypt_files(spec, env.get("ETSY_FILES_AGE_KEY", ""), workdir / sid, run=run)
+                have = c.files(ss.shop_id, lid)
+                have_names = {f.get("filename") for f in have}
+                for i, (path, name) in enumerate(want):
+                    if name not in have_names:
+                        c.upload_file(ss.shop_id, lid, path, name, i + 1)
+                after = c.files(ss.shop_id, lid)
+                names = {f.get("filename") for f in after}
+                missing = [n for _, n in want if n not in names]
+                if missing:
+                    raise EtsyError(f"upload not visible on Etsy: {missing}; old files left in place")
+                keep = {n for _, n in want}
+                for f in after:
+                    if f.get("filename") not in keep:
+                        c.call("DELETE", f"/shops/{ss.shop_id}/listings/{lid}/files/{f['listing_file_id']}")
+                final = sorted(f.get("filename") for f in c.files(ss.shop_id, lid))
+                if final != sorted(keep):
+                    raise EtsyError(f"files now {final}, expected {sorted(keep)}")
+                done.append("files=" + ",".join(final))
+            if "description" in parts:
+                c.update(ss.shop_id, lid, {"description": description_for(spec, ss.currency)})
+                if norm_title(c.listing(lid).get("description", "")[:60]) != norm_title(description_for(spec, ss.currency)[:60]):
+                    raise EtsyError("description did not update")
+                done.append("description")
+            if "photos" in parts:
+                for r in photo_ranks:
+                    img = ROOT / spec["photos"][r - 1]
+                    c.call("POST", f"/shops/{ss.shop_id}/listings/{lid}/images",
+                           data={"rank": str(r), "overwrite": "true"},
+                           files={"image": (img.name, img.read_bytes(), _mime(img))})
+                done.append("photos " + ",".join(map(str, photo_ranks)))
+            rows.append(f"| {sid} | {'; '.join(done)} |")
+            print(f"::notice::{sid}: {'; '.join(done)}", flush=True)
+        except (EtsyError, SetupError) as exc:
+            failed = True
+            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
+            print(f"::error::{sid}: {redact(exc)}", flush=True)
+    summary("## Etsy listing sync\n\n" + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
 def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     ap = argparse.ArgumentParser(description="Steadfold Etsy auto-lister")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1157,6 +1221,10 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     s.add_argument("--spec", default="")
     s = sub.add_parser("sync-titles")
     s.add_argument("--spec", default="")
+    s = sub.add_parser("sync-listing")
+    s.add_argument("--spec", required=True)
+    s.add_argument("--parts", default="files,description")
+    s.add_argument("--photos", default="")
     s = sub.add_parser("approve")
     s.add_argument("--batch", required=True)
     s.add_argument("--said", required=True)
@@ -1185,6 +1253,12 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
         if args.cmd == "sync-titles":
             ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
             return cmd_sync_titles(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+        if args.cmd == "sync-listing":
+            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            parts = {x.strip() for x in args.parts.split(",") if x.strip()}
+            ranks = [int(x) for x in args.photos.replace(",", " ").split() if x.strip()]
+            return cmd_sync_listing(ids, parts, ranks, env, session=kw.get("session"),
+                                    gh_factory=kw.get("gh_factory"))
         if args.cmd == "validate":
             return cmd_validate()
         if args.cmd == "approve":
