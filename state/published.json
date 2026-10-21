@@ -4600,6 +4600,37 @@
       "comment_id": "18138771640713635",
       "comment_error": null,
       "commented_at": "2026-10-21T21:31:00Z"
+    },
+    "hb-1021-streak-10-hours": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18127054387799084",
+        "18127054405799084",
+        "18127054423799084",
+        "18127054441799084",
+        "18127054489799084",
+        "18127054507799084",
+        "18127054525799084"
+      ],
+      "children_media": [
+        "hb-1021-streak-10-hours/01.jpg",
+        "hb-1021-streak-10-hours/02.jpg",
+        "hb-1021-streak-10-hours/03.jpg",
+        "hb-1021-streak-10-hours/04.jpg",
+        "hb-1021-streak-10-hours/05.jpg",
+        "hb-1021-streak-10-hours/06.jpg",
+        "hb-1021-streak-10-hours/07.jpg"
+      ],
+      "children_created_at": "2026-10-21T22:03:43Z",
+      "updated_at": "2026-10-21T22:04:37Z",
+      "container_id": "18127054546799084",
+      "container_created_at": "2026-10-21T22:03:43Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-21T22:03:43Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AQsUXzoVvvd3hFRcqcITLap)",
+      "attempts": 1,
+      "failed_at": "2026-10-21T22:03:43Z"
     }
   }
 }
