@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-21T16:37:32+00:00",
+ "collected_at": "2026-10-21T20:35:03+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -15,13 +15,13 @@
      "at": "2026-10-21T16:21:41+0000",
      "first_line": "The government will put up to $2,000 toward your child's education, and you don't have to add a dollar.",
      "likes": 0,
-     "comments_count": 0,
+     "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 4,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 0
+      "total_interactions": 1
      },
      "comments": []
     },
@@ -34,13 +34,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 16,
+      "views": 19,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1892,
-      "ig_reels_video_view_total_time": 30284
+      "ig_reels_avg_watch_time": 1797,
+      "ig_reels_video_view_total_time": 32350
      },
      "comments": []
     },
@@ -53,13 +53,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 132,
-      "reach": 114,
+      "views": 133,
+      "reach": 115,
       "saved": 3,
       "shares": 7,
       "total_interactions": 18,
-      "ig_reels_avg_watch_time": 4133,
-      "ig_reels_video_view_total_time": 471209
+      "ig_reels_avg_watch_time": 4102,
+      "ig_reels_video_view_total_time": 471733
      },
      "comments": []
     },
@@ -481,8 +481,25 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 3,
-   "media_count": 25,
+   "media_count": 26,
    "posts": [
+    {
+     "media_id": "18136395787628908",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dew53qqmgQr/",
+     "at": "2026-10-21T17:05:57+0000",
+     "first_line": "Multitasking feels fast. It isn't. Here's what it really costs, and the one-block day that fixes it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18109323830575327",
      "type": "REEL",
@@ -546,7 +563,7 @@
      "comments_count": 1,
      "insights": {
       "views": 118,
-      "reach": 108,
+      "reach": 109,
       "saved": 3,
       "shares": 9,
       "total_interactions": 20,
@@ -937,8 +954,25 @@
    "username": "hourbackhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 25,
+   "media_count": 26,
    "posts": [
+    {
+     "media_id": "17947238580355185",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/Dew5_RJGvud/",
+     "at": "2026-10-21T17:07:00+0000",
+     "first_line": "Where do your AI chats actually go? Follow one message.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18109256494925814",
      "type": "REEL",
@@ -948,13 +982,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 3,
+      "views": 5,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2512,
-      "ig_reels_video_view_total_time": 7538
+      "ig_reels_avg_watch_time": 2145,
+      "ig_reels_video_view_total_time": 8582
      },
      "comments": []
     },
@@ -967,13 +1001,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 39,
-      "reach": 30,
+      "views": 41,
+      "reach": 31,
       "saved": 3,
       "shares": 11,
       "total_interactions": 23,
-      "ig_reels_avg_watch_time": 6420,
-      "ig_reels_video_view_total_time": 199020
+      "ig_reels_avg_watch_time": 6090,
+      "ig_reels_video_view_total_time": 200971
      },
      "comments": []
     },
@@ -986,8 +1020,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 18,
-      "reach": 7,
+      "views": 22,
+      "reach": 9,
       "saved": 4,
       "shares": 14,
       "total_interactions": 27
@@ -1003,8 +1037,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 22,
-      "reach": 6,
+      "views": 24,
+      "reach": 7,
       "saved": 4,
       "shares": 14,
       "total_interactions": 27
@@ -1020,13 +1054,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 27,
-      "reach": 20,
+      "views": 29,
+      "reach": 22,
       "saved": 4,
       "shares": 11,
       "total_interactions": 23,
-      "ig_reels_avg_watch_time": 3880,
-      "ig_reels_video_view_total_time": 77615
+      "ig_reels_avg_watch_time": 3631,
+      "ig_reels_video_view_total_time": 79888
      },
      "comments": []
     },
@@ -1039,13 +1073,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 18,
+      "views": 26,
+      "reach": 19,
       "saved": 3,
       "shares": 11,
       "total_interactions": 23,
-      "ig_reels_avg_watch_time": 3821,
-      "ig_reels_video_view_total_time": 84077
+      "ig_reels_avg_watch_time": 3698,
+      "ig_reels_video_view_total_time": 85056
      },
      "comments": []
     },
@@ -1058,8 +1092,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 6,
+      "views": 21,
+      "reach": 7,
       "saved": 4,
       "shares": 11,
       "total_interactions": 24
@@ -1075,8 +1109,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 5,
+      "views": 17,
+      "reach": 6,
       "saved": 4,
       "shares": 12,
       "total_interactions": 25
@@ -1092,13 +1126,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 9,
+      "views": 21,
+      "reach": 10,
       "saved": 3,
       "shares": 15,
       "total_interactions": 27,
-      "ig_reels_avg_watch_time": 5680,
-      "ig_reels_video_view_total_time": 73845
+      "ig_reels_avg_watch_time": 5472,
+      "ig_reels_video_view_total_time": 76613
      },
      "comments": []
     },
@@ -1236,13 +1270,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 79,
-      "reach": 61,
+      "views": 80,
+      "reach": 62,
       "saved": 4,
       "shares": 9,
       "total_interactions": 24,
-      "ig_reels_avg_watch_time": 3801,
-      "ig_reels_video_view_total_time": 266081
+      "ig_reels_avg_watch_time": 3977,
+      "ig_reels_video_view_total_time": 282422
      },
      "comments": []
     },
@@ -1403,14 +1437,14 @@
      "permalink": "https://www.instagram.com/p/DewxAgSmuNO/",
      "at": "2026-10-21T15:48:31+0000",
      "first_line": "The 10 minutes your toddler will start asking for.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 3,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1
+      "total_interactions": 2
      },
      "comments": []
     },
@@ -1423,13 +1457,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 9,
+      "views": 24,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 816,
-      "ig_reels_video_view_total_time": 7345
+      "ig_reels_avg_watch_time": 1285,
+      "ig_reels_video_view_total_time": 26992
      },
      "comments": []
     },
@@ -1677,8 +1711,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 10,
+      "views": 26,
+      "reach": 11,
       "saved": 4,
       "shares": 7,
       "total_interactions": 23
@@ -1694,8 +1728,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 27,
-      "reach": 8,
+      "views": 30,
+      "reach": 9,
       "saved": 5,
       "shares": 7,
       "total_interactions": 24
