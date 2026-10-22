@@ -1,13 +1,32 @@
 {
- "collected_at": "2026-10-22T12:44:52+00:00",
+ "collected_at": "2026-10-22T16:39:09+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
-   "followers_count": 5,
+   "followers_count": 6,
    "follows_count": 4,
-   "media_count": 29,
+   "media_count": 30,
    "posts": [
+    {
+     "media_id": "18091881164199765",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DezbdLTGplj/",
+     "at": "2026-10-22T16:37:56+0000",
+     "first_line": "RRSP refund just landed? It isn't a bonus. Here's where it comes from, and how one refund can become about $29,000.",
+     "likes": 0,
+     "comments_count": 0,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18098384444535516",
      "type": "REEL",
@@ -17,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 8,
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 963,
+      "ig_reels_video_view_total_time": 7705,
       "follow_error": "GET 18098384444535516/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -37,13 +56,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 67,
-      "reach": 59,
+      "views": 73,
+      "reach": 64,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 3456,
-      "ig_reels_video_view_total_time": 207371,
+      "ig_reels_avg_watch_time": 3482,
+      "ig_reels_video_view_total_time": 226351,
       "follow_error": "GET 18025288307870830/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -213,7 +232,7 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 21,
+      "views": 22,
       "reach": 7,
       "saved": 3,
       "shares": 5,
@@ -575,7 +594,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 5
+    "profile_views": 7
    }
   },
   "lockedhour": {
@@ -583,8 +602,28 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 3,
-   "media_count": 28,
+   "media_count": 29,
    "posts": [
+    {
+     "media_id": "17916609837544718",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DezDN4AjWri/",
+     "at": "2026-10-22T13:06:21+0000",
+     "first_line": "Can't make yourself go to the gym? Make the gym the only place you get your favourite thing.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 17916609837544718/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18636820243040895",
      "type": "REEL",
@@ -886,13 +925,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 45,
-      "reach": 35,
+      "views": 46,
+      "reach": 36,
       "saved": 2,
       "shares": 4,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 2108,
-      "ig_reels_video_view_total_time": 86464,
+      "ig_reels_avg_watch_time": 2071,
+      "ig_reels_video_view_total_time": 87004,
       "follow_error": "GET 18073945682580980/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -906,7 +945,7 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 21,
+      "views": 22,
       "reach": 9,
       "saved": 2,
       "shares": 4,
@@ -1139,8 +1178,28 @@
    "username": "hourbackhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 28,
+   "media_count": 29,
    "posts": [
+    {
+     "media_id": "18109240594929129",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DezDTUHHOKt/",
+     "at": "2026-10-22T13:07:07+0000",
+     "first_line": "Charges you forgot you pay. Everyone has a few 🙈",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 18109240594929129/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18138320746630960",
      "type": "REEL",
@@ -1696,8 +1755,47 @@
    "username": "littlefoldhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 26,
+   "media_count": 28,
    "posts": [
+    {
+     "media_id": "17872854456642112",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DezVsDSIB6H/",
+     "at": "2026-10-22T15:47:22+0000",
+     "first_line": "New baby in Ontario? One online form does 5 things 👶",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17907146793657135",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Dey94tqDDOm/",
+     "at": "2026-10-22T13:05:32+0000",
+     "first_line": "Sleep and screens by age, Canada edition 🇨🇦",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 114,
+      "reach": 100,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3077,
+      "ig_reels_video_view_total_time": 304657,
+      "follow_error": "GET 17907146793657135/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17993170929115414",
      "type": "REEL",
@@ -1707,13 +1805,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 59,
-      "reach": 56,
+      "views": 65,
+      "reach": 58,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2632,
-      "ig_reels_video_view_total_time": 150065,
+      "ig_reels_avg_watch_time": 7686,
+      "ig_reels_video_view_total_time": 453505,
       "follow_error": "GET 17993170929115414/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2039,8 +2137,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 12,
+      "views": 29,
+      "reach": 13,
       "saved": 4,
       "shares": 7,
       "total_interactions": 23,
@@ -2097,13 +2195,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 85,
-      "reach": 66,
+      "views": 86,
+      "reach": 67,
       "saved": 3,
       "shares": 5,
       "total_interactions": 19,
-      "ig_reels_avg_watch_time": 3458,
-      "ig_reels_video_view_total_time": 248979,
+      "ig_reels_avg_watch_time": 3415,
+      "ig_reels_video_view_total_time": 249305,
       "follow_error": "GET 17927897172424488/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
