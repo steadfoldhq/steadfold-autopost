@@ -11,6 +11,12 @@ This file covers the look and the format mix. For words and facts, `CONTENT-STAN
 
 A Fully Funded spreadsheet listing is Cobalt, white and coral. A Littlefold printable is Sherbet. They use the same fonts, the same signature objects and the same 2× render rule.
 
+> **Addendum, Oct 22 2026 (founder directive "Immediate social content recovery"; v0.6 recovery session). Applies to every agent that queues posts.**
+> 1. **Interim quality floor:** nothing new is queued below the level of the Oct 22 rebuilds in `studio/recovery-oct22/*/before-after/` (v0.5 directions: payoff on frame 0–3 s, one drawn idea per frame, no repeated clip-art — retire the pointing hand and piggy bank as default props, keep the glove only for real "put a finger down" posts). Page palettes, logos, series layouts and the style menu below stay as approved.
+> 2. **No "in one look" table/cheat-sheet Reels** (held Oct 22: empty-table frame 0, 1.5–3.6 s hold). Don't re-queue anything from `schedule/held-oct22.json` without a rebuild that passes the gate.
+> 3. **Before every push that touches the queue:** run `python3 tools/queue_lint.py` — fix every ERROR (reused published id, missing media, Reel Instagram would reject) and justify or fix every WARN in your log. The Queue lint workflow re-checks on GitHub.
+> 4. **Learning loop:** record each experiment and result in `docs/optimization-register.md` (baseline, hypotheses OPT-IG-01…05, log). Results only from `insights/`; small samples are "inconclusive".
+
 ---
 
 ## 1. The four pages
