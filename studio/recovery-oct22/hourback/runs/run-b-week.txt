@@ -1,0 +1,27 @@
+RUN B: Sunday week card (for the empty Sun Oct 25 7:00 pm slot)
+Model: Claude, by Anthropic (Claude Opus 5.5), run Oct 22, 2026, by the Hourback recovery agent itself.
+Context note: generated inside the recovery agent's session (not a separate consumer chat app). Messages are MADE UP for this post: no real people, schools, clinics or chats.
+
+INPUT (made up, verbatim):
+Here are this week's messages:
+1. Dental office: "Reminder: your cleaning is Tue Oct 27 at 4:15 pm. Reply C to confirm."
+2. School newsletter: "Pizza lunch is Thursday. Please send $6 by Wednesday. Picture day retakes are Friday morning."
+3. Coach: "Soccer moved from Wed to Thu this week, 6 pm, same field."
+4. City: "Garbage and green bin: Monday. Put them out by 7 am."
+5. Partner: "can you grab milk and dog food before Tue? also my mom's bday is Sat"
+Turn these into my week, Mon to Sat. One line a day: what to do, by when.
+
+OUTPUT (verbatim):
+Mon: Bins out by 7 am. Reply C to confirm the dentist.
+Tue: Milk + dog food. Dentist at 4:15 pm.
+Wed: Send $6 for pizza lunch. No soccer.
+Thu: Pizza lunch. Soccer 6 pm, same field.
+Fri: Picture day retakes, morning.
+Sat: Your partner's mom's birthday.
+
+OUR CHECK (by hand, line by line against the 5 messages):
+- Mon bins by 7 am (msg 4) ✓; confirm dentist before Tue (msg 1) ✓ (placing it Monday is the AI's choice).
+- Tue milk + dog food "before Tue" (msg 5): the AI put it ON Tuesday. Strictly "before Tue" means Monday at the latest. This is a real slip, kept honestly: the Reel's "Do this" check line ("Check each line against the message") and the caption call it out.
+- Wed $6 by Wednesday (msg 2) ✓; "No soccer" (msg 3, moved) ✓.
+- Thu pizza lunch + soccer 6 pm same field ✓. Fri retakes morning ✓. Sat birthday ✓.
+ON SCREEN: the 6 lines quoted exactly, labelled "real reply".

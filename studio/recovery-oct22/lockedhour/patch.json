@@ -1,0 +1,195 @@
+[
+ {
+  "id": "lh-1022-split-desk",
+  "action": "keep",
+  "reason": "Publishes today 5 pm (inside 24 h, no hard rule broken). Weak spot noted: 'in 5 swipes 👉' interactive hook, a format the studio retired as a hook; carousels reach 1-13."
+ },
+ {
+  "id": "lh-reel-1022-walk",
+  "action": "keep",
+  "reason": "Tonight 7 pm; already recut to 13.9 s today. Payoff (60%) lands at ~5 s and it uses the overused pointing hand, but no hard rule broken inside 24 h."
+ },
+ {
+  "id": "lh-ch-1023-1",
+  "action": "keep",
+  "reason": "Story chain frame; clear quiz hook, on-palette."
+ },
+ {
+  "id": "lh-ch-1023-2",
+  "action": "keep",
+  "reason": "Story chain frame; payoff + source line."
+ },
+ {
+  "id": "lh-ch-1023-3",
+  "action": "keep",
+  "reason": "Story chain frame."
+ },
+ {
+  "id": "lh-ch-1023-4",
+  "action": "keep",
+  "reason": "Story chain frame; the rule."
+ },
+ {
+  "id": "lh-1023-green-break",
+  "action": "keep",
+  "reason": "Sourced (Lee et al. 2015), real study, clear Do this. Cover is bold sans + emoji (off the serif look) but inside the no-edit window and no rule broken."
+ },
+ {
+  "id": "lh-ch-1023-5",
+  "action": "keep",
+  "reason": "Minor: the mini cover in the frame ('A 40-second break that works') doesn't match the real post cover ('Me, rereading the same line again:'). Not a rule break; inside 48 h."
+ },
+ {
+  "id": "lh-1023-roadmap-sunday-plan",
+  "action": "keep",
+  "reason": "Panorama-route carousel, sourced, on palette. Inside window."
+ },
+ {
+  "id": "lh-reel-1023-caffeine",
+  "action": "keep",
+  "reason": "Fri 7 pm, 13.5 s, sourced (Drake 2013), disclaimer present. Pointing-hand template and payoff at ~3.5 s; inside window, no rule broken."
+ },
+ {
+  "id": "lh-reel-1024am-floss-after",
+  "action": "keep",
+  "reason": "Sat 8:30 am (before the Sat-noon line). 14.1 s, sourced. Same pointing-hand template; payoff ~3.5 s. Leave."
+ },
+ {
+  "id": "lh-ch-1024-1",
+  "action": "keep",
+  "reason": "Story hook on a real photo, per 13.4."
+ },
+ {
+  "id": "lh-ch-1024-2",
+  "action": "keep",
+  "reason": "Story chain frame; relatable chat bubbles."
+ },
+ {
+  "id": "lh-ch-1024-3",
+  "action": "keep",
+  "reason": "Story chain frame; the research."
+ },
+ {
+  "id": "lh-ch-1024-4",
+  "action": "keep",
+  "reason": "Story chain frame (hourglass, no pointing hand)."
+ },
+ {
+  "id": "lh-1024-follow-cant-start",
+  "action": "keep",
+  "reason": "Follow-the-line carousel; strong reframe (mood, not time), verified sources (Sirois & Pychyl 2013; Wohl et al. 2010). The studio log names the Oct 24-25 interactive tiles as the last of their kind; keep."
+ },
+ {
+  "id": "lh-ch-1025-1",
+  "action": "keep",
+  "reason": "Story quiz frame."
+ },
+ {
+  "id": "lh-ch-1025-2",
+  "action": "keep",
+  "reason": "Story payoff with source."
+ },
+ {
+  "id": "lh-ch-1025-3",
+  "action": "keep",
+  "reason": "Story chain frame."
+ },
+ {
+  "id": "lh-ch-1025-4",
+  "action": "keep",
+  "reason": "Story rule frame."
+ },
+ {
+  "id": "lh-1025-done-list",
+  "action": "keep",
+  "reason": "10-slide teach carousel, sourced (Amabile & Kramer), clear WHY and Do this. Pointing hand on slides 6 and 10 is the only weak spot."
+ },
+ {
+  "id": "lh-ch-1025-5",
+  "action": "keep",
+  "reason": "Hand-off frame; mini cover matches the done-list post."
+ },
+ {
+  "id": "lh-1024-reveal-47-seconds",
+  "action": "improve",
+  "reason": "Slide 4 used the piggy bank (overused, off-topic), slides 2-3 were pixelation blurs that read as broken files on a phone, and 5 slides for one number. Rebuilt as 3 slides: guess cover with the 60:00 ring, two to-scale rings (2:30 vs 0:47), Do this. Caption gains the follow reason.",
+  "new": {
+   "images": [
+    "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/01.jpg",
+    "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/02.jpg",
+    "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/03.jpg"
+   ],
+   "caption": "How long do you stay on one screen before switching? In 2004 it was about 2.5 minutes. Guess first 👀\n\nResearcher Gloria Mark has timed how long people stay on one screen before switching. In 2004: about two and a half minutes. In her studies from 2016 to 2020: 47 seconds, on average.\n\nWhy it matters: every switch costs a little focus, and 47-second hops add up to a day that felt busy but didn't get far.\n\nDo this: for your next task, go full screen. One window, nothing else, until it's done.\n\nSend this to your 40-tabs friend.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#focus #attentionspan #deepwork #productivity #studytips",
+   "alt_text": "Locked Hour 3-slide carousel. Slide 1: 'How long do you stay on one screen?' in a large serif on butter yellow, with '2004: 2½ minutes' and an empty timer ring reading ?:?? labelled now. Slide 2: '47 seconds. On one screen, on average.' Two timer rings drawn to scale: 2:30 in 2004 and 0:47 in 2016 to 2020, source Gloria Mark. Slide 3: Do this: Next task: full screen. One window, until it's done."
+  }
+ },
+ {
+  "id": "lh-ch-1024-5",
+  "action": "improve",
+  "reason": "The frame showed a mini cover that no longer matches (and never matched) the post's slide 1, plus a pointing hand. New frame shows the real new cover, no hand.",
+  "new": {
+   "image": "recovery-oct22/lockedhour/stories/lh-ch-1024-5.jpg"
+  }
+ },
+ {
+  "id": "lh-reel-1024-lyrics",
+  "action": "improve",
+  "reason": "Same template as every LH Reel this week (pointing hand, static hook for 3.5 s, payoff at ~5.5 s). Rebuilt 13.2 s: payoff 'Songs with words lowered reading scores' at 1.8 s, 'even songs they liked' at 2.7 s, word-lane metaphor at the 60:00 keyhole ring, Do this at 9 s, loop. Original track reused.",
+  "new": {
+   "video": "recovery-oct22/lockedhour/reels/lh-reel-1024-lyrics-r1.mp4",
+   "cover": "recovery-oct22/lockedhour/reels/lh-reel-1024-lyrics-r1-cover.jpg",
+   "alt_text": "Edited video in the Locked Hour look: big serif lines with highlighter pills on butter, cream and pink paper, a 60:00 timer ring with a keyhole notch. Text: Studying with your playlist on? / Songs with words lowered reading scores. Even songs they liked. (Perham & Currie 2014, 30 students) / No words? About as good as quiet. / Lyrics and the page fight for the same word lane. Only one gets through. / Do this: Make one no-lyrics playlist. Play it every focus hour. / Save the songs you love for chores. It loops back to the opening line."
+  }
+ },
+ {
+  "id": "lh-reel-1025am-planning-fallacy",
+  "action": "improve",
+  "reason": "Rebuilt on the best-holding structure (rule + reassurance open, 41% at 13.9 s): 'Everything takes longer? It's not just you.' at frame 0, the 34 → 56 days ruler lands by 2.8 s with the worst-case 49 marker, then the why, 'last time?' and Do this. 13.8 s, hourglass (no pointing hand), original track reused. Caption line 1 matches.",
+  "new": {
+   "video": "recovery-oct22/lockedhour/reels/lh-reel-1025am-planning-fallacy-r1.mp4",
+   "cover": "recovery-oct22/lockedhour/reels/lh-reel-1025am-planning-fallacy-r1-cover.jpg",
+   "caption": "Everything takes longer than you think? It's not just you. You're not bad at planning. Everyone is.\n\nTHE STUDY: students guessed their thesis would take 34 days on average. It took 56. Even their worst-case guess, 49 days, was too short. Only about 3 in 10 finished in the time they predicted. It's called the planning fallacy.\n\nWHY IT HAPPENS: when we plan, we picture the day where everything goes right: no sick kid, no slow reply, no file that won't open. And we quietly ignore how long the last one actually took.\n\nTHE FIRST FIX:\n1. Before you guess, ask \"how long did this take LAST time?\", not \"how long should it take?\"\n2. Look it up if you can: your calendar, old emails, the last report's date.\n3. Then add half again. Think 2 hours? Plan 3. Think a week? Plan a week and a half.\n\nWHAT CHANGES: Day 1, your plan looks worse on paper. Week 1, you finish when you said you would, maybe for the first time in a while. Month 1, people start trusting your \"by Friday\".\n\nThe rule that stays: plan from your past, not your hopes.\n\nDo this: today, add half again to your next time guess.\n\nSend this to the friend who says \"it'll be quick.\" Part 2 tonight at 7: break it into steps, the fix that's backed by research.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#planning #productivity #timemanagement #focus #procrastination",
+   "alt_text": "Edited video in the Locked Hour look: big serif lines with highlighter pills on butter, cream and pink paper, a halftone hourglass and a ruler of days. Text: Everything takes longer? It's not just you. / Students guessed their thesis: 34 days. It took 56. A bar grows to 34, a pink bar to 56, and a marker shows the worst-case guess, 49. (Buehler, Griffin & Ross 1994) / We plan for the day everything goes right: no slow replies, no sick day, no file that won't open. / Ask: how long did it take last time? / Do this: Add half again. 2 hours? Plan 3. Part 2 tonight at 7. It loops back to the opening line."
+  }
+ },
+ {
+  "id": "lh-reel-1025-unpack",
+  "action": "improve",
+  "reason": "Same pointing-hand template, payoff at ~5.5 s. Rebuilt 13.8 s: a 'to do' card unpacks into 5 timed step chips by 3 s (labelled 'Made up for this post.'), then the study line, hidden steps, Do this, loop. Original track reused; caption now labels the made-up task.",
+  "new": {
+   "video": "recovery-oct22/lockedhour/reels/lh-reel-1025-unpack-r1.mp4",
+   "cover": "recovery-oct22/lockedhour/reels/lh-reel-1025-unpack-r1-cover.jpg",
+   "caption": "\"It'll take an hour.\" It won't. Here's the fix that's backed by research.\n\nTHE RESEARCH: in a study, people who listed every step of a task before guessing how long it would take made longer, more realistic guesses. Hidden steps are where the time goes. It works best for tasks with lots of parts.\n\nHOW TO DO IT (\"update the website\", unpacked):\n1. Find the old photos (15 min)\n2. Wait for the new ones from Sam (1 day of waiting, 5 min of asking)\n3. Write the new text (45 min)\n4. Send it for a check, then fix the comments (30 min + a day)\n5. Upload and test on your phone (20 min)\n\"An hour\" was really about 2 hours of work and 2 days of waiting. (The website task is made up for this post.)\n\nTHE HIDDEN STEPS TO ALWAYS ADD: waiting for someone, setup (logins, finding files), the back-and-forth, travel, and the check at the end.\n\nWITH THIS MORNING'S FIX: compare your total with how long it took last time, and if they disagree, trust last time.\n\nWHAT CHANGES: Day 1, Monday's plan fits inside Monday. Week 1, fewer 9 pm \"how is this not done?\" moments. Month 1, your estimates become the ones people plan around.\n\nThe rule that stays: guess the steps, not the task.\n\nDo this: tonight, take Monday's biggest task, write down its steps, then guess the time.\n\nSend this to your Monday planner friend. Part 2 of 2.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#planning #productivity #timemanagement #focus #mondaymotivation",
+   "alt_text": "Edited video in the Locked Hour look: big serif lines with highlighter pills on cream, butter and pink paper. Text: 'It'll take an hour.' It won't. A to-do card reads Update the website (1 h). / List the steps before you guess: find the old photos 15 min, wait for the new ones 1 day, write the new text 45 min, check then fix 30 min + 1 day, upload + test 20 min = 2 h of work + 2 days of waiting (made up for this post). / People who listed the steps made more realistic guesses (Kruger & Evans 2004). / Always add the hidden steps: waiting on someone, setup, the back-and-forth, the final check. / Do this: Tonight, list Monday's biggest task, step by step. Then guess. It loops back to the opening line."
+  }
+ },
+ {
+  "id": "lh-1025-climb-one-percent",
+  "action": "replace",
+  "reason": "'1% better a day = 38x' is the most-repeated productivity cliché, its numbers are an illustration not research, and the brief rules out clichés. Replaced in the same Sun 5 pm slot with 'Monday isn't magic. It's a handle.' (v0.5 floor tile 09, rebuilt in the v4 palette): verified fresh-start data with its correlational caveat, and it lands the night before Monday. Id kept so the slot holds; content is new.",
+  "new": {
+   "images": [
+    "recovery-oct22/lockedhour/lh-1025-monday-handle/01.jpg",
+    "recovery-oct22/lockedhour/lh-1025-monday-handle/02.jpg",
+    "recovery-oct22/lockedhour/lh-1025-monday-handle/03.jpg"
+   ],
+   "caption": "Monday isn't magic. It's a handle. Grab it tonight.\n\nTHE RESEARCH: researchers looked at the gym records of about 12,000 students at one US university. At the start of a new week, the chance of a gym visit was 33.4% higher than usual. The start of a month: 14.4%. The start of a semester: 47.1%. They call it the fresh start effect: a new week feels like a clean page, so people try again.\n\nTHE HONEST PART: it's correlational. It shows when people start, not that Mondays make anything work. And it cuts both ways: waiting for Monday can turn into waiting forever.\n\nHOW TO USE IT:\n1. Tonight, pick one thing you want to start.\n2. Write when and where: \"Monday, 8 am, after coffee.\"\n3. Missed it? Every day has a handle: tomorrow morning, after lunch, the next hour.\n\nDo this: tonight, pick one thing and write when you'll start it: \"Monday, 8 am, after coffee.\"\n\nSend this to the friend waiting for a fresh start.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#habits #freshstart #mondaymotivation #focus #selfimprovement",
+   "first_comment": "When will you start yours? Source: Dai, Milkman & Riis (2014), The Fresh Start Effect: Temporal Landmarks Motivate Aspirational Behavior, Management Science 60(10). Study 2: gym attendance records of 11,912 undergraduates at a large northeastern US university, Sept 2010 to Dec 2011. The probability of a gym visit rose at the start of a week (33.4%), month (14.4%) and semester (47.1%), relative to baseline. Archival, correlational data.",
+   "alt_text": "Locked Hour 3-slide carousel. Slide 1: 'Monday isn't magic. It's a handle.' in a large serif on butter yellow; below, a week strip where Monday is a yellow padlock with a handle. Slide 2: 'At the start of a week, gym visits jumped 33.4%.' A card lists start of a week +33.4%, start of a month +14.4%, start of a semester +47.1%. Source: Dai, Milkman & Riis 2014, gym records of about 12,000 students, correlational. Slide 3: Do this: Tonight, pick one thing. Write when you start: 'Monday, 8 am, after coffee.' Use the handle. Don't wait for it."
+  }
+ },
+ {
+  "id": "lh-oneword-01",
+  "action": "improve",
+  "reason": "Numbering was wrong: One Word No. 1 ('Later') shipped Oct 17 (brand-system-v4 §1), so this is No. 2 (13.5: keep numbering honest). Cover now follows the series spec (black label 'ONE WORD · No. 2', one huge word with a pink highlighter stripe, halftone clock, stamp); slides 2-3 were bare flat cards (§12 says never) and are rebuilt with the 3-check clock ring and the study + Do this. Caption renumbered. NOTE for the schedule owner: Wednesday's One Word must be labelled No. 3.",
+  "new": {
+   "images": [
+    "recovery-oct22/lockedhour/lh-oneword-02-batch/01.jpg",
+    "recovery-oct22/lockedhour/lh-oneword-02-batch/02.jpg",
+    "recovery-oct22/lockedhour/lh-oneword-02-batch/03.jpg"
+   ],
+   "caption": "Inbox open all day again? Today's word: Batch.\n\nOne Word No. 2 (No. 1 was \"Later\"). Each episode is one word that guards your focus.\n\nTHE RESEARCH: in a 2-week study, people who checked email only 3 times a day felt less stressed than when they could check as often as they liked.\n\nHOW TO BATCH:\n1. Pick 3 times: say 9:30, 1:00 and 4:30.\n2. Close the email tab (and turn off email notifications) between them.\n3. At each check: reply, file or schedule. Nothing stays \"unread to deal with later\".\n4. Worried about missing something urgent? Tell people to call or text for urgent things.\n\nTHE CATCH: if your job is answering email (support, dispatch), batch something else, like chat or news.\n\nDo this: tomorrow, write your 3 check times on a sticky note and close the tab.\n\nOne Word No. 3 is Wednesday at 5 pm.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#focus #productivity #email #deepwork #oneword",
+   "alt_text": "Locked Hour 3-slide carousel. Slide 1: black label 'One Word · No. 2', the line 'Inbox open all day again?' and the huge word 'Batch.' over a pink highlighter stripe, with a halftone alarm clock and the note '3 email checks a day, not all day'. Slide 2: '3 checks. That's it.' A clock ring with pink marks at 9:30, 1:00 and 4:30; 'Tab closed in between. Urgent? People can call or text.' Slide 3: 'Less stress.' In a 2-week study, the week people checked email 3 times a day felt calmer than the week they checked whenever. Do this: write your 3 check times on a sticky note. Close the tab. Source: Kushlev & Dunn 2015."
+  }
+ }
+]

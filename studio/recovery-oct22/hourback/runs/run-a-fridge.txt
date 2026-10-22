@@ -1,0 +1,24 @@
+RUN A: fridge dinner (for hb-reel-1024-fridge-dinner, replacement)
+Model: Claude, by Anthropic (Claude Opus 5.5), run Oct 22, 2026, by the Hourback recovery agent itself.
+Context note: generated inside the recovery agent's session (not a separate consumer chat app). Input is MADE UP for this post.
+
+INPUT (made up, verbatim):
+In my fridge: 4 eggs, spinach, cheddar, 2 tortillas, half an onion, leftover rice, black beans, salsa. One dinner for 2 in 20 minutes. Just the steps.
+
+OUTPUT (verbatim):
+Spinach, bean & egg quesadillas (about 20 min, serves 2)
+1. Dice the half onion and soften it in a pan with a little oil, 3–4 minutes.
+2. Drain and rinse the black beans. Add half of them to the onion with a spoonful of salsa and mash lightly, 2 minutes.
+3. Stir in the spinach until it wilts, about 1 minute. Tip the mix into a bowl.
+4. Scramble the 4 eggs in the same pan until just set.
+5. Lay out the 2 tortillas. Cover half of each with the beans, eggs and grated cheddar, then fold.
+6. Toast in the pan 2–3 minutes a side, until golden and the cheese melts.
+Serve with the rest of the salsa. Hungry? Warm the leftover rice with the other half of the beans on the side.
+
+OUR CHECK (by hand):
+- Every food it used is in the input list. It also assumed "a little oil", which was NOT in the list (pantry staple). Mentioned in the caption.
+- Times add up: 3–4 + 2 + 1 + ~2 (eggs) + 4–6 (toast) = 12–15 min of cooking, plus prep: "about 20 min" is plausible.
+ON SCREEN (labelled "real reply, shortened"): title + steps condensed to 3 lines:
+  1. Soften the onion, add beans + salsa   (= steps 1–2)
+  2. Wilt the spinach, scramble the eggs    (= steps 3–4)
+  3. Fill, fold, toast 2–3 min a side       (= steps 5–6)

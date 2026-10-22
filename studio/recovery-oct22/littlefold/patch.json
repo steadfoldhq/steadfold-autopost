@@ -1,0 +1,231 @@
+[
+ {
+  "id": "lf-ch-1022-1",
+  "action": "keep",
+  "reason": "Story chain frame 1 (today). Night-city photo is an odd match for 'she fell asleep on me', but no rule break; inside 24 h.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1022-2",
+  "action": "keep",
+  "reason": "Chat-bubble teaching frame; clear, matches HC safe-sleep guidance.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1022-3",
+  "action": "keep",
+  "reason": "Rule frame, legible, sourced to Health Canada.",
+  "new": {}
+ },
+ {
+  "id": "lf-1022-follow-safe-sleep",
+  "action": "keep",
+  "reason": "Publishes in hours. Follow-the-line hook is a weak format and 6 slides is long, but safe-sleep content is accurate and the page's only save-earner; not a rule break. (Minor: also cites Government of New Brunswick.)",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1022-4",
+  "action": "keep",
+  "reason": "Hand-off to today's post; fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-reel-1022-ccb-at-birth",
+  "action": "hold",
+  "reason": "Recommend HOLD (coordinator's call): same-day repeat of the published newborn-bundle post (which already says 'apply for the Canada child benefits'), B19 Canada-money breach flagged by the Performance desk, piggy-bank clip-art (overused). ~6 h to publish; no time to rebuild.",
+  "new": {}
+ },
+ {
+  "id": "lf-reel-1023am-screens-bed",
+  "action": "keep",
+  "reason": "≤15 s, CPS/AAP sourced, legible frame 0. Problem-moment hook ('Bedtime turned into a battle again?') is the weaker open type and the 3.5 s frame catches a half-revealed line, but no rule break; inside the no-edit window.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1023-1",
+  "action": "keep",
+  "reason": "Quiz frame; fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1023-2",
+  "action": "keep",
+  "reason": "$7,200 matches canada.ca CESG lifetime max.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1023-3",
+  "action": "keep",
+  "reason": "Fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-1023-resp-catch-up",
+  "action": "improve",
+  "reason": "Caption promised 'Tonight at 7: how much you can still get, by your child's age', but that Reel (lf-cheat-1023-resp-catch-up) was held today, so the line points at nothing. Caption-only fix (rule break: false hand-off); slides, facts and sources unchanged.",
+  "new": {
+   "caption": "No RESP yet? It's not too late. Here's the catch-up plan.\n\nSOUND FAMILIAR? \"We'll start next year.\" Then the baby is five.\n\nTHE PART NOBODY TELLS YOU: your child's grant room builds up every year from birth, even if you never opened an RESP. The government matches 20% of what you save through the Canada Education Savings Grant.\n\nYOU PUT IN, THEY ADD (per year):\n• $1,000 in → $200 added\n• $2,500 in → $500 added (the normal yearly max)\n• $5,000 in → $1,000 added (*only if you have unused room from past years)\n\nCatching up, the grant can be up to $1,000 a year, until the full $7,200 per child is used.\n\nCAN'T DO $5,000? $2,500 a year still gets the full $500, and any amount gets 20% added.\n\nTHE DEADLINE: grants stop at the end of the year your child turns 17. At 16 and 17 they only qualify if at least $2,000 went in before the end of the year they turned 15, or $100 a year in any 4 earlier years. So for an older child, start now.\n\nDo this: this week, ask your bank to open an RESP and use your catch-up room. Bring your child's SIN.\n\nThe rule that stays: the room waits for you, but not forever.\n\nSend this to a parent who never opened one.\n\nFollow for one calm thing a night, from bump to toddler.\n\n#RESP #canadianparents #savingforkids #CESG #babymoney"
+  }
+ },
+ {
+  "id": "lf-ch-1023-4",
+  "action": "improve",
+  "reason": "Story hand-off carried the pill 'by age: tonight at 7' for the held cheat-sheet Reel. Re-rendered the same hand-off without it.",
+  "new": {
+   "image": "recovery-oct22/littlefold/story-lf-ch-1023-4.jpg"
+  }
+ },
+ {
+  "id": "lf-1023-climb-first-words",
+  "action": "keep",
+  "reason": "Panorama stairs, warm and useful. Sources are CDC milestones (built with AAP) plus one peer-reviewed study (Romeo 2018), described accurately. 7 slides is long. Inside the no-edit window; keep.",
+  "new": {}
+ },
+ {
+  "id": "lf-pan-1024am-newborn-bundle",
+  "action": "hold",
+  "reason": "Duplicate: same topic and near-identical caption to lf-1022-newborn-bundle-trail, published today 11:30. Also the 3rd Canada-money post in 3 days (B19: max 1 a week) and it overlaps tonight's CCB Reel. Publishes Sat 8:00, inside the no-edit window, so hold, don't swap.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1024-1",
+  "action": "keep",
+  "reason": "Photo + quote hook; fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1024-2",
+  "action": "keep",
+  "reason": "Fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1024-3",
+  "action": "keep",
+  "reason": "Fine; matches Health Canada.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1024-4",
+  "action": "keep",
+  "reason": "Fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-1024-no-honey",
+  "action": "keep",
+  "reason": "Strong rule open, Health Canada sourced, grandparent script is sendable. 7 slides long but no rule break.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1024-5",
+  "action": "keep",
+  "reason": "Hand-off; fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-1024-roadmap-bedtime",
+  "action": "replace",
+  "reason": "Interactive 'take the route 👉' hook (killed: ≤8 reach, 0 visits), 7 slides (desk: ≤5), bedtime repeat of the Oct 23 8 am Brush-Book-Bed Reel, and its WHY rests on a single study (Mindell 2015), not an LF official source. Replaced with Small Wins No.2, a warm send-to-someone tile (v0.5 day mode, v4 series layout).",
+  "new": {
+   "images": [
+    "recovery-oct22/littlefold/small-wins-02-showered.jpg"
+   ],
+   "caption": "Small Wins No.2: you showered today.\n\nBefore noon, even. Nobody claps for this part of the newborn weeks, so we will. A shower, a hot drink, a meal sitting down: in the early weeks, they count.\n\nDo this: send this to someone who earned one today.\n\nSmall Wins is our award for the parts nobody sees. What should No.3 be? Tell us below.\n\nFollow for one calm thing a night, from bump to toddler.\n\n#newparents #newborn #fourthtrimester #parenthood #smallwins",
+   "first_comment": "Who are you giving this one to? Nominate a Small Win for No.3 👇 (No health facts in this post, so no sources.)",
+   "alt_text": "Cream tile with a coral label, SMALL WINS · No.2. Big serif headline: You showered today. A pink award rosette with a shower head reads SMALL WIN, Showered. Soft paw prints around it. Below: Before noon, even. Nobody claps for this part, so we will. Handwritten: it counts."
+  }
+ },
+ {
+  "id": "lf-reel-1024-grandma-resp",
+  "action": "improve",
+  "reason": "Video kept (≤15 s, legible, problem-moment hook is weaker but not a rule break). First comment cited a popular book (Medina, Brain Rules for Baby) as a source; LF is official sources only. Removed it; kept NHS Start for Life and Public Health Scotland.",
+  "new": {
+   "first_comment": "Sources: Parent Club (Scottish Government / Public Health Scotland), Bonding tips for dads and partners: skin to skin on your bare chest can release oxytocin and build feelings of love, calm and connection (cover baby with a blanket; only lie baby on your chest when you're fully awake and sober); chat and play peekaboo during nappy changes; play and chat at bath time; read a daily story, baby enjoys hearing your voice; bonding can take time. NHS Start for Life, Skin-to-skin contact with your newborn. Scripts are our own."
+  }
+ },
+ {
+  "id": "lf-reel-1025am-crying-peak",
+  "action": "improve",
+  "reason": "Rebuilt to the v0.5 Night Light floor. Old: piggy-bank clip-art on a crying post (overused, off-topic), problem-question open, crying-peak number sourced to a hospital-trust leaflet. New: rule + reassurance open on frame 0 ('You can't spoil a newborn. Pick them up.'), CPS + AAP only, 14.6 s, 5 beats with 5 different transitions, morning-light 'Do this', loops to frame 0.",
+  "new": {
+   "video": "recovery-oct22/littlefold/lf-reel-1025am-cant-spoil.mp4",
+   "cover": "recovery-oct22/littlefold/lf-reel-1025am-cant-spoil-cover.jpg",
+   "caption": "You can't spoil a newborn. Pick them up.\n\nWhy it works: the Canadian Paediatric Society says you can't “spoil” a baby by picking them up, and the American Academy of Pediatrics says that when you answer their calls for help, they cry less overall.\n\nWhat helps, in order:\n1. Check first: hungry, wet diaper, too hot or cold, fever.\n2. Hold them close.\n3. Dim the lights, shush, sway, or walk with them.\n\nThe catch: under 3 months with a fever? Get care right away.\n\nDo this: next cry, pick them up first.\n\nTonight at 7: the plan for when you've tried everything.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #newparents #babycrying #canadianparents #fourthtrimester",
+   "first_comment": "Who told you you'd spoil them? Sources: Canadian Paediatric Society, Caring for Kids, 'Colic and crying' (caringforkids.cps.ca): the peak crying period is 'usually sometime around 3 to 12 weeks of age' and 'usually, it is over by the time your baby is 3 to 4 months of age'; check whether baby needs a diaper change, is hungry, too cold or hot, in pain or has a fever; 'Hold your baby. You cannot \"spoil\" a baby by picking them up'; dim the lights, gentle shushing, rock or sway, walk with baby held close or in a stroller; 'If you are feeling frustrated, take a deep breath, put your baby in a safe place (like their crib) and take a moment to calm yourself'; 'It is OK to ask for help'; 'Never shake, smother, hit or throw your baby'; get care right away if baby has a fever and is less than 3 months old. American Academy of Pediatrics, healthychildren.org, 'Responding to your baby's cries': 'You cannot spoil a young baby with attention, and if you answer their calls for help, they'll cry less overall'; 'The best way to handle crying is to respond promptly during their first few months.'",
+   "alt_text": "Night Light Reel: a warm circle of lamp light on a deep berry night, with a small lamp. Text: You can't spoil a newborn. Pick them up. / Answer their cries, and they cry less. / Hungry? Diaper? Too hot or cold? / Hold close. Sway. Shush. Walk. / Morning light fills the frame: Do this: Next cry, pick them up first. Source chips: CPS, AAP."
+  }
+ },
+ {
+  "id": "lf-ch-1025-1",
+  "action": "keep",
+  "reason": "Quiz frame; fine.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1025-2",
+  "action": "keep",
+  "reason": "'6 to 8 weeks' (NHS) sits inside CPS's 3-12 weeks, so it stays consistent with the new carousel.",
+  "new": {}
+ },
+ {
+  "id": "lf-ch-1025-3",
+  "action": "keep",
+  "reason": "'You can't spoil a newborn' (AAP) now also the 8 am Reel's open: chain and Reel reinforce each other.",
+  "new": {}
+ },
+ {
+  "id": "lf-1025-follow-crying",
+  "action": "replace",
+  "reason": "Follow-the-line 'pick the line 👉' hook (killed format), slide 2 was a filler ('Keep following your line'), and it repeated the 8 am Reel. Replaced with the v0.5 Night Light tile 'The crying has a peak' as a 3-slide carousel (fact → what helps → Do this), CPS only, matching the Story chain's hand-off.",
+  "new": {
+   "images": [
+    "recovery-oct22/littlefold/crying-peak-01.jpg",
+    "recovery-oct22/littlefold/crying-peak-02.jpg",
+    "recovery-oct22/littlefold/crying-peak-03.jpg"
+   ],
+   "caption": "The crying has a peak. It often lands somewhere around 3 to 12 weeks, and it's usually over by 3 to 4 months.\n\nWhy that helps: a hard week isn't proof you're doing it wrong. It's a stage, and for most babies it eases.\n\nWhat helps, in order (Canadian Paediatric Society):\n1. Check first: hungry, wet diaper, too hot or cold, fever.\n2. Hold them. You can't spoil a baby by picking them up.\n3. Dim the lights, shush, sway, or walk them close to you.\n\nThe catch: under 3 months with a fever? Get care right away. And if it's too much, put baby in their crib, step out and take a moment. It's OK to ask for help.\n\nDo this: next cry, check first, then hold close and sway.\n\nSend this to someone in week 3.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #babycrying #newparents #canadianparents #fourthtrimester",
+   "first_comment": "What week are you in? Sources: Canadian Paediatric Society, Caring for Kids, 'Colic and crying' (caringforkids.cps.ca): the peak crying period is 'usually sometime around 3 to 12 weeks of age' and 'usually, it is over by the time your baby is 3 to 4 months of age'; check whether baby needs a diaper change, is hungry, too cold or hot, in pain or has a fever; 'Hold your baby. You cannot \"spoil\" a baby by picking them up'; dim the lights, gentle shushing, rock or sway, walk with baby held close or in a stroller; 'If you are feeling frustrated, take a deep breath, put your baby in a safe place (like their crib) and take a moment to calm yourself'; 'It is OK to ask for help'; 'Never shake, smother, hit or throw your baby'; get care right away if baby has a fever and is less than 3 months old.",
+   "alt_text": "Littlefold 3-slide carousel in the Night Light look. Slide 1: a warm lamp-light circle on a deep berry night: The crying has a peak. Often somewhere around 3 to 12 weeks. Usually over by 3 to 4 months. Source: CPS, Colic and crying. Slide 2: Check first. Then hold close. 1 Check first: hungry, wet diaper, too hot or cold, fever. 2 Hold them. You can't spoil a baby by picking them up. 3 Calm it down: dim the lights, shush, sway, or walk them close to you. Slide 3, morning light: Do this: Next cry: check first, then hold close. Too much? Put baby in their crib, step out and take a moment. It's OK to ask for help. Under 3 months with a fever? Get care right away."
+  }
+ },
+ {
+  "id": "lf-ch-1025-4",
+  "action": "improve",
+  "reason": "Hand-off frame showed the old follow-the-line cover; the 11:30 post is replaced, so the frame now shows the new cover ('It has a peak.').",
+  "new": {
+   "image": "recovery-oct22/littlefold/story-lf-ch-1025-4.jpg"
+  }
+ },
+ {
+  "id": "lf-1025-hold-million-words",
+  "action": "replace",
+  "reason": "'Hold the dots and slide' interactive hook (killed format), 7 slides, reading topic already covered (lf-reel-1017am-read), single-study source (Ohio State) instead of LF official sources. Replaced with the v0.5 'one number' tile: vitamin D 400 IU (CPS).",
+  "new": {
+   "images": [
+    "recovery-oct22/littlefold/vitamin-d-400.jpg"
+   ],
+   "caption": "Breastfed babies: 400 IU of vitamin D, every day.\n\nWhy: the Canadian Paediatric Society recommends a daily vitamin D supplement for breastfed babies, from birth until they get enough from their diet.\n\nFormula-fed? Vitamin D is already added to infant formula, so most full-term babies on formula don't need drops.\n\nThe catch: babies in northern communities or with other risk factors may need more. Ask your baby's doctor or nurse.\n\nDo this: ask your pharmacist which infant vitamin D drops to buy, and set a daily phone reminder.\n\nSave this for your next pharmacy run.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #breastfeeding #vitamind #newparents #canadianparents",
+   "first_comment": "Drops in the morning or at bedtime at your house? Source: Canadian Paediatric Society, Caring for Kids, 'Vitamin D' (caringforkids.cps.ca): 'Babies who are breastfed should get 400 IU (international units) per day', from birth until they get enough from their diet; vitamin D is already added to infant formula, so most full-term formula-fed babies don't need a supplement; babies in northern communities or with other risk factors need more (800 IU a day, year-round).",
+   "alt_text": "Cream tile with a soft butter glow. A peach drop labelled 400 IU. Big serif: Breastfed babies: 400 IU a day. Below: Vitamin D drops, every day from birth, until they get enough from food. Formula already has it added. Northern community or other risk factors? Ask about a higher dose. Handwritten: set a daily reminder. Source chip: CPS, Vitamin D."
+  }
+ },
+ {
+  "id": "lf-reel-1025-step-away",
+  "action": "improve",
+  "reason": "Rebuilt to the Night Light floor. Old: pointing-hand clip-art (overused), 3.5 s frame showed one word ('Baby') mid-reveal, sources were a hospital-trust leaflet. New: rule + reassurance open on frame 0 ('It's OK to step away.'), CPS only, 14.8 s, morning-light 'Do this', loops to frame 0.",
+  "new": {
+   "video": "recovery-oct22/littlefold/lf-reel-1025-step-away-nl.mp4",
+   "cover": "recovery-oct22/littlefold/lf-reel-1025-step-away-nl-cover.jpg",
+   "caption": "It's OK to step away. Still crying, and you're at your limit? That happens to loving parents too.\n\nWhy it's OK: the Canadian Paediatric Society says that if you're feeling frustrated, take a deep breath, put your baby in a safe place like their crib, and take a moment to calm yourself. Taking a break can help, and it's OK to ask for help.\n\nThe plan:\n1. Crib first: baby on their back.\n2. Step out. Breathe. Take a moment.\n3. Text your person: “Can you come?”\n4. Go back when you're calmer.\n\nNever shake a baby. Shaking can cause lifelong injury or even death.\n\nIf baby seems unwell, or is under 3 months with a fever, get care right away.\n\nDo this: tonight, pick who you'll text, and tell them they're it.\n\nSend this to every new parent. Part 2 of 2.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newparents #newborn #babycrying #parentingsupport #canadianparents",
+   "first_comment": "Who's your person? Sources: Canadian Paediatric Society, Caring for Kids, 'Colic and crying' (caringforkids.cps.ca): the peak crying period is 'usually sometime around 3 to 12 weeks of age' and 'usually, it is over by the time your baby is 3 to 4 months of age'; check whether baby needs a diaper change, is hungry, too cold or hot, in pain or has a fever; 'Hold your baby. You cannot \"spoil\" a baby by picking them up'; dim the lights, gentle shushing, rock or sway, walk with baby held close or in a stroller; 'If you are feeling frustrated, take a deep breath, put your baby in a safe place (like their crib) and take a moment to calm yourself'; 'It is OK to ask for help'; 'Never shake, smother, hit or throw your baby'; get care right away if baby has a fever and is less than 3 months old. Government of Canada, 'Safe sleep for your baby': baby sleeps on their back in a crib, cradle or bassinet.",
+   "alt_text": "Night Light Reel: a warm circle of lamp light on a deep berry night, with a small lamp. Text: Still crying? At your limit? It's OK to step away. / Crib first. On their back. / Step out. Breathe. Take a moment. / Never shake a baby. Never. / Morning light fills the frame: Do this: Tonight, pick who you'll text. Can you come? It's OK to ask for help. Source chip: CPS, Colic and crying."
+  }
+ },
+ {
+  "id": "lf-3amclub-01",
+  "action": "keep",
+  "reason": "New series cover (v4 gate passed today): bold editorial, alarm clock (not hand/piggy), sourced, disclaimer and follow reason present.",
+  "new": {}
+ }
+]

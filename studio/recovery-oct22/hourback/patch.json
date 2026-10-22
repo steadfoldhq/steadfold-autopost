@@ -1,0 +1,168 @@
+[
+ {
+  "id": "hb-1022-split-prompt",
+  "action": "keep",
+  "reason": "Publishes in hours; no rule broken. 7 slides vs the ≤5 order and an interactive 'swipe to fix it' tail; note for next build."
+ },
+ {
+  "id": "hb-reel-1023am-photo-search",
+  "action": "keep",
+  "reason": "<24 h; 13.2 s, facts verified (Gemini Live camera free Apr 2025; ChatGPT video Dec 2024). Weak: hook frame unchanged 0–3 s, overused pointing hand, AI-news topic."
+ },
+ {
+  "id": "hb-1023-renewal-reminders",
+  "action": "keep",
+  "reason": "<48 h, no rule broken (id doesn't match content: it's 'How does ChatGPT know stuff'). 9 slides."
+ },
+ {
+  "id": "hb-1023-follow-frontier",
+  "action": "keep",
+  "reason": "Numbers match HBS WP 24-013 (758 BCG consultants, 12.2%/25.1%/40%+). 6 slides."
+ },
+ {
+  "id": "hb-reel-1023-duplicates",
+  "action": "keep",
+  "reason": "12.8 s; BBC/Apple facts correct (iOS 18.3 pause, Jan 2025). Static hook 0–3 s; future recut."
+ },
+ {
+  "id": "hb-1024-share-eta",
+  "action": "keep",
+  "reason": "Book ideas paraphrased and credited; 9 slides (≤5 order not met, not a rule break)."
+ },
+ {
+  "id": "hb-1024-climb-5-levels",
+  "action": "keep",
+  "reason": "Clearly labelled as reported, not official; dated sources in first comment."
+ },
+ {
+  "id": "hb-reel-1024-fridge-dinner",
+  "action": "replace",
+  "reason": "Off-identity (AI-news quote, no demo), hook frame unchanged 0–3 s, vague 'Do this'. Replaced with a Take Two before→after built on a real Claude run on a made-up fridge list; the id's original topic.",
+  "new": {
+   "video": "recovery-oct22/hourback/hb-reel-1024-fridge-dinner-r.mp4",
+   "cover": "recovery-oct22/hourback/hb-reel-1024-fridge-dinner-r-cover.jpg",
+   "caption": "Open fridge, no plan? You already have dinner. One sentence turned 8 things in the fridge into a 20-minute dinner for 2.\n\nWhy it works: the AI can only cook with what you give it. List what's really there, the time you have and how many people, and it plans around your fridge, not a recipe site's.\n\nDo this: list your fridge. Ask for one 20-min dinner.\n\nThe check: it added \"a little oil\", which wasn't on the list. Read the reply against what you actually have before you start.\n\nMade up for this post: the fridge list. The reply is real (Claude, by Anthropic, run Oct 22, 2026), shortened on screen.\n\nFollow for real AI tests that give you your evenings back.\n\n#hourback #aitips #dinnerideas #mealplanning #weeknightdinner",
+   "first_comment": "Made-up fridge list, real output: Claude (Anthropic), run Oct 22, 2026 by our studio, with the prompt exactly as shown on screen. The reply had 6 steps; on screen they're shortened to 3 lines. Results vary between apps and runs. Check allergies and food safety yourself.",
+   "alt_text": "Edited video in the Hourback look. Frame 1: big serif 'Open fridge, no plan? You already have dinner.' over an answer card: 'Spinach, bean & egg quesadillas', 20 min, serves 2. A yellow rewind coin spins back to TAKE 1, in grey: the clock rolls from 6:02 to 6:19 pm, 'Staring. Scrolling. Ordering takeout.' A clapper slams TAKE 2: one sentence is typed, 'In my fridge: 4 eggs, spinach, cheddar, 2 tortillas, half an onion, leftover rice, black beans, salsa. One dinner for 2 in 20 minutes. Just the steps.' Claude's reply lands, labelled real and shortened: 1. Soften the onion, add beans + salsa. 2. Wilt the spinach, scramble the eggs. 3. Fill, fold, toast 2–3 min a side. '6:22 pm. dinner's on.' Do this: list your fridge, ask for one 20-min dinner. Check: it added oil, did you have it?"
+  }
+ },
+ {
+  "id": "hb-reel-1025am-talk-dont-type",
+  "action": "improve",
+  "reason": "Caption promised 'Part 2 tonight at 7', which was the held hb-cheat-1025-voice-words (broken promise). Also hook frame unchanged 0–3 s and pointing hand. Same facts, recut: moving sparkle on frame 0, '1 billion' payoff at 1.6 s, specific Do this, loop; keeps trial: auto.",
+  "new": {
+   "video": "recovery-oct22/hourback/hb-reel-1025am-talk-dont-type-r.mp4",
+   "cover": "recovery-oct22/hourback/hb-reel-1025am-talk-dont-type-r-cover.jpg",
+   "caption": "That sparkle button? It's AI. You already use it every day.\n\nMeta says about a billion people use Meta AI every month, mostly inside WhatsApp, Instagram, Facebook and Messenger. On newer iPhones, Apple Intelligence adds Writing Tools to almost every text box. In Gmail, Gemini can summarise long threads.\n\nWhy: big tech isn't waiting for you to visit an AI website. It's putting AI where you already are, so the button is often right there and easy to scroll past.\n\nDo this: tap the ✦ once today, on one real task. Then check what it says.\n\nTonight at 7: your whole week, on one card.\n\nSend this to the friend who says \"I don't use AI\".\n\nFollow for real AI tests that give you your evenings back.\n\n#ai #metaai #appleintelligence #gemini #techtips #hourback",
+   "alt_text": "Edited video in the Hourback look. Frame 1: big serif 'That ✦ button? It's AI.' with a yellow sparkle and a black-and-white phone, handwritten 'you already use it'. Then 'About 1 billion people use Meta AI every month' (Meta, May 2025). Three lines land: WhatsApp: Meta AI. iPhone: Writing Tools. Gmail: Gemini (on newer phones and plans; varies by country). 'because… AI moved into apps you already use.' Do this: tap the ✦ once today, on one real task. Then check what it says. Loops to the opening."
+  }
+ },
+ {
+  "id": "hb-1025-family-calendar",
+  "action": "keep",
+  "reason": "Week recap; rules trace to sourced posts. 9 slides."
+ },
+ {
+  "id": "hb-1025-hold-task-length",
+  "action": "keep",
+  "reason": "METR figures match arXiv 2503.14499 with caveats. 'Hold the dots' interactive hook kept by the Oct 22 studio decision (last of its kind)."
+ },
+ {
+  "id": "hb-day8-ask-me-first",
+  "action": "keep",
+  "reason": "Real run, quoted and labelled; 3 slides; series continuity."
+ },
+ {
+  "id": "hb-reel-1025-week-card",
+  "action": "replace",
+  "replaces_held": "hb-cheat-1025-voice-words",
+  "reason": "NEW entry for the empty Sun Oct 25 7:00 pm slot (freed by the held cheat sheet). Take Two Reel on a real Claude run with made-up messages; shows a real slip as 'the check'.",
+  "new": {
+   "account": "hourback",
+   "publish_at": "2026-10-25T19:00:00-04:00",
+   "video": "recovery-oct22/hourback/hb-reel-1025-week-card.mp4",
+   "cover": "recovery-oct22/hourback/hb-reel-1025-week-card-cover.jpg",
+   "caption": "Sunday night? Your whole week fits on one card. Five messages in, one line a day out.\n\nWhy it works: the week's deadlines hide in five different apps. Paste them in one place and the AI sorts them by day, so nothing waits in a chat you forgot to reopen.\n\nDo this: paste the week's messages. Ask for one line a day.\n\nThe catch, from this exact run: the message said milk and dog food \"before Tue\". The AI put it on Tuesday. Check each line against the original message.\n\nMade up for this post: all 5 messages. The reply is real (Claude, by Anthropic, run Oct 22, 2026), quoted exactly.\n\nPrivacy tip: delete names, addresses and account numbers before you paste.\n\nFollow for real AI tests that give you your evenings back.\n\n#hourback #aitips #sundayreset #weeklyplanning #familyorganization",
+   "first_comment": "Made-up messages, real output: Claude (Anthropic), run Oct 22, 2026 by our studio. Prompt: the 5 messages, then \"Turn these into my week, Mon to Sat. One line a day: what to do, by when.\" The 6 lines on screen are the reply word for word. One slip (\"before Tue\" placed on Tue) is left in on purpose. Results vary between apps and runs.",
+   "alt_text": "Edited video in the Hourback look. Frame 1: big serif 'Sunday night? Your week fits on one card.' over a card titled 'Your week' with one line per day, Monday to Saturday. A rewind coin spins back to TAKE 1, in grey: five message bubbles pile up (a dental reminder, a school pizza lunch, soccer moved to Thursday, bin day, 'grab milk + dog food before Tue? also my mom's bday Sat'), then '5 messages. 0 plan.' A clapper slams TAKE 2: 'Turn these into my week, Mon to Sat. One line a day: what to do, by when.' Claude's real reply lands line by line: Mon: Bins out by 7 am. Reply C to confirm the dentist. Tue: Milk + dog food. Dentist at 4:15 pm. Wed: Send $6 for pizza lunch. No soccer. Thu: Pizza lunch. Soccer 6 pm, same field. Fri: Picture day retakes, morning. Sat: Your partner's mom's birthday. 'sunday, sorted.' Do this: paste the week's messages, ask for one line a day. The check caught one: 'before Tue' is not Tue."
+  }
+ },
+ {
+  "id": "hb-ch-1022-5",
+  "action": "hold",
+  "reason": "Hand-off pill says 'tonight: the jobs cheat sheet', which is held. Due 1:15 pm today; hold only if it hasn't already gone out (local state is from 1:14 pm and may be stale)."
+ },
+ {
+  "id": "hb-ch-1023-1",
+  "action": "keep",
+  "reason": "Quiz frame."
+ },
+ {
+  "id": "hb-ch-1023-2",
+  "action": "keep",
+  "reason": "900M weekly users verified: TechCrunch, Feb 27, 2026."
+ },
+ {
+  "id": "hb-ch-1023-3",
+  "action": "keep",
+  "reason": "About 1 in 9 people on Earth (900M / ~8.2B) holds."
+ },
+ {
+  "id": "hb-ch-1023-4",
+  "action": "keep",
+  "reason": "<24 h. Pill 'tonight: where AI's eyes go wrong' only loosely fits tonight's Apple-summary Reel; minor, not a rule break."
+ },
+ {
+  "id": "hb-ch-1024-1",
+  "action": "keep",
+  "reason": "Chain frame."
+ },
+ {
+  "id": "hb-ch-1024-2",
+  "action": "keep",
+  "reason": "Chain frame."
+ },
+ {
+  "id": "hb-ch-1024-3",
+  "action": "keep",
+  "reason": "Chain frame."
+ },
+ {
+  "id": "hb-ch-1024-4",
+  "action": "keep",
+  "reason": "Chain frame."
+ },
+ {
+  "id": "hb-ch-1024-5",
+  "action": "improve",
+  "reason": "Pill pointed to the replaced Nvidia Reel; now 'tonight: dinner from your fridge'. Only the pill is repainted.",
+  "new": {
+   "image": "recovery-oct22/hourback/stories/hb-ch-1024-5.jpg",
+   "caption": "Story chain hb-ch-1024 frame 5: AI made prediction cheap. Hand-off to tonight's fridge-dinner Reel."
+  }
+ },
+ {
+  "id": "hb-ch-1025-1",
+  "action": "keep",
+  "reason": "Quiz frame."
+ },
+ {
+  "id": "hb-ch-1025-2",
+  "action": "keep",
+  "reason": "26% vs 75% error rates match OpenAI, 'Why language models hallucinate' (Sept 2025)."
+ },
+ {
+  "id": "hb-ch-1025-3",
+  "action": "keep",
+  "reason": "Chain frame."
+ },
+ {
+  "id": "hb-ch-1025-4",
+  "action": "improve",
+  "reason": "Pill pointed to the held 'where AI lives in your apps' cheat sheet; now 'tonight: your week on one card'.",
+  "new": {
+   "image": "recovery-oct22/hourback/stories/hb-ch-1025-4.jpg",
+   "caption": "Story chain hb-ch-1025 frame 4: One week. 7 rules for AI. Hand-off to tonight's week-card Reel."
+  }
+ }
+]
