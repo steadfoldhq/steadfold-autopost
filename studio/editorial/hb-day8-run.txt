@@ -1,0 +1,12 @@
+Hourback · AI, for real · Day 8 — real run, Oct 22, 2026 (Claude Sonnet via a fresh agent with no other context).
+Prompt: Plan a birthday dinner for 6 people, $150 budget. Before you answer, ask me 3 questions.
+Reply (verbatim):
+Before I plan the birthday dinner, I have 3 questions:
+
+1. Dining out or cooking at home? This changes how $150 stretches. At a restaurant that's about $25 per person before tax and tip. At home it's closer to $25 per person for a full multi-course menu, with room for drinks and decor.
+
+2. Any dietary restrictions, allergies, or cuisine preferences in the group? Examples are vegetarian, halal, gluten-free, and nut allergies, or a favourite cuisine the birthday person loves.
+
+3. Does the $150 need to cover everything, or only food? Say whether drinks (alcohol), cake, decorations, and tip are included, and whether the birthday person's share is covered by the group.
+
+Once you answer, I'll build the full plan: menu or restaurant shortlist, itemized budget, timeline, and shopping or booking list.
