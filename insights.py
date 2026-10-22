@@ -33,12 +33,46 @@ from autopost import ACCOUNTS, IGClient, IGError, log
 MEDIA_FIELDS = "id,media_type,media_product_type,permalink,timestamp,like_count,comments_count,caption"
 POST_METRICS = ["views", "reach", "saved", "shares", "total_interactions"]
 REEL_EXTRA = ["ig_reels_avg_watch_time", "ig_reels_video_view_total_time"]
+FOLLOW_METRICS = ["follows", "profile_visits"]          # did this post bring followers? (one try; never breaks the rest)
+ACCOUNT_METRICS = ["follows_and_unfollows", "profile_views"]  # page level, last 24 h, one try
 MAX_MEDIA = 40
 MAX_COMMENTS = 50
 
 
 def _get(client: IGClient, path: str, params: dict | None = None) -> dict:
     return client._request("GET", path, params=params or {})
+
+
+def _rows(body: dict) -> dict:
+    out = {}
+    for row in body.get("data", []):
+        vals = row.get("values") or [{}]
+        out[row.get("name")] = row.get("total_value", {}).get("value", vals[0].get("value"))
+    return out
+
+
+def follow_insights(client: IGClient, media_id: str) -> dict:
+    """Follows and profile visits for one post, in a single extra call. If Instagram won't give them for this post
+    type, record the reason once (no per-metric retries, to stay well inside rate limits)."""
+    try:
+        return _rows(_get(client, f"{media_id}/insights", {"metric": ",".join(FOLLOW_METRICS)}))
+    except IGError as exc:
+        return {"follow_error": str(exc)[:160]}
+
+
+def account_insights(client: IGClient, user_id: str) -> dict:
+    try:
+        body = _get(client, f"{user_id}/insights", {"metric": ",".join(ACCOUNT_METRICS), "period": "day",
+                                                     "metric_type": "total_value"})
+        out = {}
+        for row in body.get("data", []):
+            tv = row.get("total_value") or {}
+            out[row.get("name")] = tv.get("value")
+            if tv.get("breakdowns"):
+                out[row.get("name") + "_breakdown"] = tv["breakdowns"]
+        return out
+    except IGError as exc:
+        return {"error": str(exc)[:160]}
 
 
 def post_insights(client: IGClient, media_id: str, is_reel: bool) -> dict:
@@ -103,10 +137,11 @@ def collect_account(key: str, client: IGClient) -> dict:
             "first_line": (m.get("caption") or "").split("\n", 1)[0][:140],
             "likes": m.get("like_count"),
             "comments_count": m.get("comments_count"),
-            "insights": post_insights(client, m["id"], is_reel),
+            "insights": {**post_insights(client, m["id"], is_reel), **follow_insights(client, m["id"])},
             "comments": comments(client, m["id"], me["username"]) if m.get("comments_count") else [],
         })
     acct["posts"] = posts
+    acct["account_day"] = account_insights(client, me["user_id"])
     return acct
 
 
@@ -119,8 +154,12 @@ def summary_line(acct: dict, now: str) -> dict:
                 tot[k] += ins[k]
         tot["likes"] += p.get("likes") or 0
         tot["comments"] += p.get("comments_count") or 0
+    tot["follows_from_posts"] = sum(p.get("insights", {}).get("follows") or 0 for p in acct.get("posts", [])
+                                    if isinstance(p.get("insights", {}).get("follows"), (int, float)))
+    day = acct.get("account_day") or {}
     return {"at": now, "account": acct["account"], "followers": acct.get("followers_count"),
-            "posts": len(acct.get("posts", [])), **tot}
+            "posts": len(acct.get("posts", [])), **tot,
+            "day_follows_unfollows": day.get("follows_and_unfollows"), "day_profile_views": day.get("profile_views")}
 
 
 def main(argv: list[str] | None = None, env: dict | None = None, session: Any = None) -> int:
