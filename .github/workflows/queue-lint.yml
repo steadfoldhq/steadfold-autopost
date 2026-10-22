@@ -1,0 +1,32 @@
+# Checks the posting queue whenever it changes (tools/queue_lint.py). Read-only: it never edits or posts.
+# A red run (= an ERROR, e.g. a reused published id or a Reel Instagram would reject) emails the owner via
+# GitHub's failed-workflow notifications. Warnings show in the run log and job summary.
+name: Queue lint
+
+on:
+  push:
+    branches: [main]
+    paths: ['schedule/posts.json', 'media/**', 'tools/queue_lint.py']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: ffprobe
+        run: command -v ffprobe || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Lint the upcoming queue
+        run: |
+          set -o pipefail
+          python3 tools/queue_lint.py | tee "$RUNNER_TEMP/lint.txt"
+          rc=${PIPESTATUS[0]}
+          { echo '## Queue lint'; echo; echo '```'; cat "$RUNNER_TEMP/lint.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
