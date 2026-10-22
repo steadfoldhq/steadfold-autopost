@@ -825,8 +825,8 @@ ifmt("hb-1022-split-prompt", HB, "2026-10-22T17:45",
                      after="Add *who, what, why:* “Polite email, landlord, / leaky tap, 2nd ask, fixed by Friday.”",
                      why="It can't read your mind. Context is the biggest upgrade."),
                 dict(before="“Make it sound good.”",
-                     after="*Paste an example* of the tone / you want: “Like this one.”",
-                     why="Examples steer style better than adjectives."),
+                     after="*Paste a message* in the tone / you want: “Like this one.”",
+                     why="Showing the tone beats describing it."),
                 dict(before="“Which plan should I pick?” / in one line",
                      after="“*Think it through step by step,* / then give me your answer.”",
                      why="Room to reason improves answers to hard questions."),
@@ -843,16 +843,16 @@ ifmt("hb-1022-split-prompt", HB, "2026-10-22T17:45",
      "Your AI prompt, fixed in 5 swipes 👉\n\n"
      "1. Add who, what and why. \"Write an email to my landlord\" becomes \"Polite email to my landlord about the leaky tap. Second time "
      "asking. I want it fixed by Friday.\" Both OpenAI's and Anthropic's own guides start here: clear, specific instructions with context.\n"
-     "2. Show an example of the tone you want. Examples steer the style better than adjectives like \"professional\".\n"
+     "2. Paste a message written in the tone you want. Showing it steers the style better than adjectives like \"professional\".\n"
      "3. Ask it to think it through step by step before answering, for anything with trade-offs. Newer reasoning models do this on their own.\n"
      "4. Ask it to say when it's unsure and where each fact comes from. Models can guess and still sound confident.\n"
      "5. Push back. \"Shorter. Warmer. Drop the last line.\" The second draft is almost always better.\n\n"
      "Why it works: the model predicts its answer from what you give it. Better input, better prediction.\n\n"
      "Do this: take your last prompt, rewrite it with all 5 fixes, and compare the two answers side by side.\n\n"
      f"Send this to the friend who says AI gives bad answers.\n\n#promptengineering #chatgpt #claude #aitips #hourback",
-     "Which fix made the biggest difference? Sources: OpenAI, prompt engineering guide (write clear instructions, provide examples and "
-     "reference text, give the model time to think). Anthropic, prompt engineering overview (be clear and direct, use examples, let Claude "
-     "think step by step). OpenAI, 'Why language models hallucinate' (Sept 2025).")
+     "Which fix made the biggest difference? Sources: OpenAI, prompt engineering guide (write clear instructions, provide reference text "
+     "that shows what you want, give the model time to think). Anthropic, prompt engineering overview (be clear and direct, show the model what good "
+     "looks like, let Claude think step by step). OpenAI, 'Why language models hallucinate' (Sept 2025).")
 
 
 # ================================================================== Oct 23 (no page-file posts in these slots: all new)
