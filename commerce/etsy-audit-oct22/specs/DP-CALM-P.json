@@ -1,0 +1,100 @@
+{
+  "id": "DP-CALM-P",
+  "order": 1,
+  "shop": "STEADFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-21b-approved-uploads.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+    "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+  },
+  "title": "2027 Calm Planner Printable, Weekly Goal Tracker, Habit Reset Kit (PDF)",
+  "description": "You buy a planner in January, miss two weeks in February, and the blank pages make it feel too late to start again.\nThis one is built for that week. Each week has The Calm Line: three priorities at most, and a \"Not this week\" list for everything else. When you miss weeks, the Comeback page tells you to skip the gaps and start at today's week.\n\nWHAT'S INSIDE (99 pages, dated Jan 1 – Dec 31, 2027)\n• 2027 Reset Kit: a look back at 2026, a theme word and vision board, three goals at most, a not-this-year list, and a habit builder with a 3-habit cap\n• 4 × 90-day plans\n• 12 month calendars + 12 monthly Calm Reset pages (a habit grid with a comebacks counter instead of streaks)\n• 53 weekly pages with The Calm Line and a 1-minute Calm Check (Light / Steady / Full, plus one suggested move)\n• No catch-up Comeback page, a \"Next 3 things\" home page, Ask AI prompt cards\n• Extras: the 2027 Calm Tracker spreadsheet (Excel + Google Sheets, 4 colour themes, Lock-In Score 0–100, a \"protect today\" habit, a comebacks counter, Ask AI prompts built from your own numbers), a reminders .ics file (52 Sunday reviews, 12 monthly resets, 4 quarterly plans), 2 phone wallpapers, and a printable gift card\n\nFILES (5 downloads)\nLetter-Monday, Letter-Sunday, A4-Monday and A4-Sunday zips. Each one holds a Colour PDF and an Ink-saver PDF. The Extras zip holds the tracker, the .ics, the wallpapers, the gift card and the Quick-Start guide.\n\nHOW TO USE\n1. Download on a computer and unzip. 2. Print all of it, or only the months you need, at 100% / actual size. 3. Import the .ics into Apple, Google or Outlook Calendar if you want the Sunday reminders. 4. Open the tracker in Excel, or upload it to Google Drive and open it with Google Sheets (steps in the Quick-Start guide).\n\nGOOD TO KNOW\n• This is a digital download. Nothing is shipped. Printing is not included.\n• Designed by Steadfold with AI assistance: the pages were built in code with Claude, then checked page by page. The Ask AI cards are optional text prompts you can paste into any assistant you choose.\n• The listing images show the real pages, rendered from the files you download (a few have sample handwriting added to show the pages in use).\n• Google Sheets needs a free Google account. Printed colours vary by printer.\n• For personal use only. Questions? Message the shop any time.",
+  "price": {
+    "USD": 16.0,
+    "CAD": 22.0
+  },
+  "quantity": 999,
+  "tags": [
+    "2027 planner",
+    "printable planner",
+    "2027 weekly planner",
+    "goal planner 2027",
+    "new year reset",
+    "habit tracker",
+    "minimalist planner",
+    "90 day planner",
+    "a4 planner pdf",
+    "letter size planner",
+    "calm planner",
+    "simple planner",
+    "priority planner"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/calm-planner-2027/print/01-ONEGLANCE-SQ.jpg",
+    "listings/media/calm-planner-2027/print/02-calm-line.jpg",
+    "listings/media/calm-planner-2027/print/03-whats-inside.jpg",
+    "listings/media/calm-planner-2027/print/04-reset-kit.jpg",
+    "listings/media/calm-planner-2027/print/05-calm-check.jpg",
+    "listings/media/calm-planner-2027/print/06-month-calm-reset.jpg",
+    "listings/media/calm-planner-2027/print/07-works-with-ai.jpg",
+    "listings/media/calm-planner-2027/print/08-calm-tracker.jpg",
+    "listings/media/calm-planner-2027/print/09-choose-version.jpg",
+    "listings/media/calm-planner-2027/print/10-what-you-get.jpg"
+  ],
+  "video": "listings/media/calm-planner-2027/print/Calm-Planner-2027-Printable.mp4",
+  "files": [
+    {
+      "name": "Calm-Planner-2027-Print-Letter-Monday.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Print-Letter-Monday.zip.age",
+      "sha256": "432881e8a904f48f5c4322a144314395ef5f8926f94178e803969a0e79842324",
+      "size": 9826213
+    },
+    {
+      "name": "Calm-Planner-2027-Print-Letter-Sunday.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Print-Letter-Sunday.zip.age",
+      "sha256": "c0a96d8be9005621e2429707a48de77943de5a01e3cb02ea97133602323e9a71",
+      "size": 10512116
+    },
+    {
+      "name": "Calm-Planner-2027-Print-A4-Monday.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Print-A4-Monday.zip.age",
+      "sha256": "0899fe92a51865e68097726c56ab1902d9b50924c31ea58faf7de2a03648b114",
+      "size": 10233104
+    },
+    {
+      "name": "Calm-Planner-2027-Print-A4-Sunday.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Print-A4-Sunday.zip.age",
+      "sha256": "89ea67ba1f282832914c1f7df10ba4a9cc3c7d26ac1f1904c5dd7e8cb27169a9",
+      "size": 10972505
+    },
+    {
+      "name": "Calm-Planner-2027-Extras.zip",
+      "enc": "listings/files/calm-planner-2027/Calm-Planner-2027-Extras.zip.age",
+      "sha256": "ba819b97a85a74c4a9c3f24c4c0d2cf134147e7e5c2e45c2ab617a22d8892b6a",
+      "size": 1415425
+    }
+  ],
+  "by_hand": [
+    "Only if the founder decides to run CALMLAUNCH (25% off, to 30 Nov 2026): start it in Shop Manager > Marketing > Sales and discounts FIRST, confirm the strike-through price shows, and only then add a sale line back to the description. Never state a sale that is not running (Etsy Seller Policy: sales must reflect real pricing)."
+  ],
+  "alt_text": [
+    "2027 Calm Planner Printable, image 1: cover image: the product at a glance",
+    "2027 Calm Planner Printable, image 2: calm line",
+    "2027 Calm Planner Printable, image 3: what's inside the download",
+    "2027 Calm Planner Printable, image 4: reset kit",
+    "2027 Calm Planner Printable, image 5: calm check",
+    "2027 Calm Planner Printable, image 6: month calm reset",
+    "2027 Calm Planner Printable, image 7: optional Ask AI prompt cards",
+    "2027 Calm Planner Printable, image 8: calm tracker",
+    "2027 Calm Planner Printable, image 9: choose version",
+    "2027 Calm Planner Printable, image 10: what you get in the download"
+  ]
+}

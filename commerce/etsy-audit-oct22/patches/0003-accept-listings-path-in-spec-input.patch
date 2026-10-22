@@ -1,0 +1,37 @@
+--- a/tools/etsy.py
++++ b/tools/etsy.py
+@@ -1328,13 +1328,13 @@
+         if args.cmd == "list":
+             return cmd_list(args, env, **kw)
+         if args.cmd == "replace-hero":
+-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
++            ids = spec_ids(args.spec)
+             return cmd_replace_hero(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+         if args.cmd == "sync-titles":
+-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
++            ids = spec_ids(args.spec)
+             return cmd_sync_titles(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+         if args.cmd == "sync-listing":
+-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
++            ids = spec_ids(args.spec)
+             parts = {x.strip() for x in args.parts.split(",") if x.strip()}
+             ranks = [int(x) for x in args.photos.replace(",", " ").split() if x.strip()]
+             return cmd_sync_listing(ids, parts, ranks, env, session=kw.get("session"),
+--- a/tests/test_etsy.py
++++ b/tests/test_etsy.py
+@@ -693,6 +693,15 @@
+         self.assertEqual([f["filename"] for f in fake.listings[7001]["files"]], ["Freedom-Number-Workbook-v1.0.zip"])
+         self.assertFalse([c for c in fake.calls if c[0] == "DELETE"])
+ 
++    def test_accepts_the_workflow_path_form(self):
++        """The workflow's spec box suggests listings/<ID>.json; sync, titles and hero must read it as <ID>."""
++        fake = FakeEtsy(currency="CAD")
++        self._make_live(fake)
++        rc, out = self.run_sync(fake, "--spec", "listings/FF-FREEDOM.json", "--parts", "description")
++        self.assertEqual(rc, 0, out)
++        self.assertIn("after inflation", fake.listings[7001]["fields"]["description"])
++        self.assertEqual(etsy.spec_ids("listings/A.json, B all"), ["A", "B"])
++
+     def test_needs_explicit_ids(self):
+         rc, out = self.run_sync(FakeEtsy(), "--spec", "all")
+         self.assertEqual(rc, 2)

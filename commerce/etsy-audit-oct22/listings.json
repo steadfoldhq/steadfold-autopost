@@ -1,0 +1,1448 @@
+{
+  "generated": "2026-10-22",
+  "source": "listings/*.json, listings/live.json, public Etsy pages (WebFetch, logged out), QA log Oct 21, Money Ledger rev 40",
+  "note": "Nothing on Etsy was changed by this audit.",
+  "listings": [
+    {
+      "id": "DP-CALM-P",
+      "shop": "SteadfoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+        "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+      },
+      "live_record": {
+        "listing_id": 4598245397,
+        "url": "https://www.etsy.com/listing/4598245397/2027-planner-printable-weekly-planner",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:12:49+00:00",
+        "price": "CAD 22.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 16.0,
+        "CAD": 22.0
+      },
+      "price_page_cad": "22.00",
+      "price_page_usd_display": "16.40",
+      "sale_running": false,
+      "sale_claimed_in_copy": true,
+      "title": "2027 Calm Planner Printable, Weekly Goal Tracker, Habit Reset Kit (PDF)",
+      "title_matches_page": true,
+      "tags": [
+        "2027 planner",
+        "printable planner",
+        "2027 weekly planner",
+        "goal planner 2027",
+        "new year reset",
+        "habit tracker",
+        "minimalist planner",
+        "90 day planner",
+        "a4 planner pdf",
+        "letter size planner",
+        "calm planner",
+        "simple planner",
+        "priority planner"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/calm-planner-2027/print/Calm-Planner-2027-Printable.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Calm-Planner-2027-Print-Letter-Monday.zip",
+          "size_bytes": 9826213,
+          "encrypted_size_bytes": 9828797
+        },
+        {
+          "name": "Calm-Planner-2027-Print-Letter-Sunday.zip",
+          "size_bytes": 10512116,
+          "encrypted_size_bytes": 10514876
+        },
+        {
+          "name": "Calm-Planner-2027-Print-A4-Monday.zip",
+          "size_bytes": 10233104,
+          "encrypted_size_bytes": 10235800
+        },
+        {
+          "name": "Calm-Planner-2027-Print-A4-Sunday.zip",
+          "size_bytes": 10972505,
+          "encrypted_size_bytes": 10975377
+        },
+        {
+          "name": "Calm-Planner-2027-Extras.zip",
+          "size_bytes": 1415425,
+          "encrypted_size_bytes": 1415961
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "2027: PASS",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "sync description (remove false sale line)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/DP-CALM-P.json",
+      "spec_changes": [
+        "description: removed 'Launch sale: 25% off until 30 Nov 2026. Regular price ...' (no sale running Oct 22)",
+        "currency_overrides: removed (its only target was the removed line)",
+        "by_hand: sale is now optional and must be started before it is mentioned",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "DP-CALM-T",
+      "shop": "SteadfoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+        "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+      },
+      "live_record": {
+        "listing_id": 4598250927,
+        "url": "https://www.etsy.com/listing/4598250927/2027-digital-planner-hyperlinked-tablet",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:22:56+00:00",
+        "price": "CAD 22.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 16.0,
+        "CAD": 22.0
+      },
+      "price_page_cad": "22.00",
+      "price_page_usd_display": "16.40",
+      "sale_running": false,
+      "sale_claimed_in_copy": true,
+      "title": "2027 Calm Digital Planner, Hyperlinked PDF for GoodNotes, Notability (100 Pages)",
+      "title_matches_page": true,
+      "tags": [
+        "digital planner 2027",
+        "2027 planner",
+        "goodnotes planner",
+        "hyperlinked planner",
+        "ipad planner",
+        "notability planner",
+        "tablet planner",
+        "android planner",
+        "goal planner 2027",
+        "new year reset",
+        "habit tracker",
+        "calm planner",
+        "minimalist planner"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/calm-planner-2027/tablet/Calm-Planner-2027-Tablet.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Calm-Planner-2027-Tablet-Monday.pdf",
+          "size_bytes": 7819506,
+          "encrypted_size_bytes": 7821610
+        },
+        {
+          "name": "Calm-Planner-2027-Tablet-Sunday.pdf",
+          "size_bytes": 8254649,
+          "encrypted_size_bytes": 8256849
+        },
+        {
+          "name": "Calm-Planner-2027-Extras.zip",
+          "size_bytes": 1415425,
+          "encrypted_size_bytes": 1415961
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "2027: PASS",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "sync description (remove false sale line)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/DP-CALM-T.json",
+      "spec_changes": [
+        "description: removed 'Launch sale: 25% off until 30 Nov 2026. Regular price ...' (no sale running Oct 22)",
+        "currency_overrides: removed (its only target was the removed line)",
+        "by_hand: sale is now optional and must be started before it is mentioned",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "DP-RIV",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 08:56 ET (Learning Lab chat, RQ-1)",
+        "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
+      },
+      "live_record": {
+        "listing_id": 4598282022,
+        "url": "https://www.etsy.com/listing/4598282022/visual-schedule-for-kids-printable",
+        "shop": "LittlefoldHQ",
+        "listed_at": "2026-10-18T21:41:34+00:00",
+        "price": "CAD 14.99"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "CAD": 14.99,
+        "USD": 10.99
+      },
+      "price_page_cad": "14.99",
+      "price_page_usd_display": "11.18",
+      "sale_running": false,
+      "sale_claimed_in_copy": true,
+      "title": "Visual Schedule for Kids, Printable Routine Chart Bundle, Morning Bedtime Chore Chart, 96 Picture Cards, English French Bilingual",
+      "title_matches_page": true,
+      "tags": [
+        "visual schedule",
+        "routine chart kids",
+        "toddler routine",
+        "morning routine",
+        "bedtime routine",
+        "chore chart kids",
+        "picture cards",
+        "french immersion",
+        "bilingual printable",
+        "token board",
+        "reward chart",
+        "kids daily schedule",
+        "preschool printable"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/riverbank-routines/Riverbank-Routines-video.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Riverbank-Routines-v1.0-EN.zip",
+          "size_bytes": 9357280,
+          "encrypted_size_bytes": 9359752
+        },
+        {
+          "name": "Riverbank-Routines-v1.0-FR.zip",
+          "size_bytes": 9386102,
+          "encrypted_size_bytes": 9388590
+        },
+        {
+          "name": "Riverbank-Routines-v1.0-BI.zip",
+          "size_bytes": 9638096,
+          "encrypted_size_bytes": 9640648
+        },
+        {
+          "name": "Riverbank-Routines-Quick-start.pdf",
+          "size_bytes": 47712,
+          "encrypted_size_bytes": 47912
+        },
+        {
+          "name": "Riverbank-Routines-Guide-de-demarrage.pdf",
+          "size_bytes": 48902,
+          "encrypted_size_bytes": 49102
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0: PASS (minor)",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (remove false sale line)",
+      "shop_owner_shown": "Littlefold",
+      "shop_location_shown": "Ontario, Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/DP-RIV.json",
+      "spec_changes": [
+        "description: removed 'Launch sale: 30% off until 30 Nov 2026. Regular price CA$14.99.'",
+        "currency_overrides: removed",
+        "by_hand: sale optional, start before mentioning",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-CF-CA",
+      "shop": "SteadfoldHQ",
+      "batch": "cf-etsy",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-46 (say 'list batch cf-etsy')"
+      },
+      "live_record": {
+        "listing_id": 4598277772,
+        "url": "https://www.etsy.com/listing/4598277772/canadian-freelancer-spreadsheet-self",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:32:55+00:00",
+        "price": "CAD 14.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "CAD": 14.0,
+        "USD": 10.0
+      },
+      "price_page_cad": "14.00",
+      "price_page_usd_display": "10.44",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Canadian Freelancer Tax & Budget Tracker, GST/HST, T2125, Excel/Google Sheets (Digital Download)",
+      "title_matches_page": true,
+      "tags": [
+        "canadian freelancer",
+        "self employed canada",
+        "gst hst tracker",
+        "t2125",
+        "cra tax tracker",
+        "freelancer budget",
+        "bookkeeping sheet",
+        "tax set aside",
+        "sole proprietor",
+        "google sheets budget",
+        "excel budget",
+        "income tracker",
+        "small business tax"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/canadian-freelancer/listing-video.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Canadian-Freelancer-Money-System-v7.3.zip",
+          "size_bytes": 2417694,
+          "encrypted_size_bytes": 2418470
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "7.3: PASS (minor polish)",
+      "severities": [
+        "MINOR"
+      ],
+      "action": "no listing change; founder decides Dec 1 launch-price step",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-CF-CA.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-FREEDOM",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new-2",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)"
+      },
+      "live_record": {
+        "listing_id": 4598259371,
+        "url": "https://www.etsy.com/listing/4598259371/freedom-number-workbook-fire-number",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:38:54+00:00",
+        "price": "CAD 17.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 12.0,
+        "CAD": 17.0
+      },
+      "price_page_cad": "17.00",
+      "price_page_usd_display": "12.68",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "FIRE Number Workbook: Retirement Planner, Financial Independence Calculator (PDF)",
+      "title_matches_page": true,
+      "tags": [
+        "fire calculator",
+        "fire number",
+        "retirement planner",
+        "financial planner",
+        "money workbook",
+        "early retirement",
+        "savings goal",
+        "finance printable",
+        "financial goals",
+        "money planner",
+        "coast fire",
+        "budget planner",
+        "digital download"
+      ],
+      "photos_spec": 7,
+      "photos_page": 7,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Freedom-Number-Workbook-v1.1.zip",
+          "size_bytes": 388306,
+          "encrypted_size_bytes": 388586
+        }
+      ],
+      "other_versions_in_repo": [
+        "Freedom-Number-Workbook-v1.0.zip.age"
+      ],
+      "qa": "1.0 tested: HOLD MAJOR ('before inflation' in file, Morningstar dating); 1.1 not testable",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (Morningstar dating); swap file to v1.1 only after QA pass",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-FREEDOM.json",
+      "spec_changes": [
+        "description: Morningstar line dated to the Dec 2025 research for 2026 retirees (QA Oct 21)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-HMP",
+      "shop": "SteadfoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": {
+        "listing_id": 4598252317,
+        "url": "https://www.etsy.com/listing/4598252317/holiday-money-plan-christmas-gift-budget",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:25:28+00:00",
+        "price": "CAD 12.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 9.0,
+        "CAD": 12.0
+      },
+      "price_page_cad": "12.00",
+      "price_page_usd_display": "8.95",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Holiday Money Plan: Christmas Gift Budget Tracker (Excel + Google Sheets)",
+      "title_matches_page": true,
+      "tags": [
+        "christmas budget",
+        "gift budget planner",
+        "holiday budget",
+        "christmas gift list",
+        "gift tracker",
+        "paycheck budget",
+        "google sheets budget",
+        "excel budget",
+        "christmas planner",
+        "sinking fund",
+        "black friday plan",
+        "holiday spreadsheet",
+        "budget spreadsheet"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/holiday-money-plan/listing-video.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Holiday-Money-Plan-v1.0.zip",
+          "size_bytes": 724771,
+          "encrypted_size_bytes": 725147
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0: PASS (minor)",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (add AI-creation disclosure)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-HMP.json",
+      "spec_changes": [
+        "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-MPB",
+      "shop": "SteadfoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": {
+        "listing_id": 4598247027,
+        "url": "https://www.etsy.com/listing/4598247027/money-planner-bundle-sinking-funds",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:27:52+00:00",
+        "note": "found already live (not created by the lister)"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 19.0,
+        "CAD": 26.0
+      },
+      "price_page_cad": "26.00",
+      "price_page_usd_display": "19.39",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Money Planner Bundle: Sinking Funds, Emergency Fund, 50/30/20 Budget (Excel, Google Sheets)",
+      "title_matches_page": true,
+      "tags": [
+        "sinking funds",
+        "budget spreadsheet",
+        "50 30 20 budget",
+        "emergency fund",
+        "paycheck budget",
+        "savings tracker",
+        "google sheets budget",
+        "excel budget",
+        "no spend challenge",
+        "money planner",
+        "budget bundle",
+        "finance planner",
+        "monthly budget"
+      ],
+      "photos_spec": 10,
+      "photos_page": 10,
+      "video": "listings/media/money-planner/bundle-listing-video.mp4",
+      "video_page": "present, did not load in fetch",
+      "files": [
+        {
+          "name": "Money-Planner-Bundle-v1.0.zip",
+          "size_bytes": 2473174,
+          "encrypted_size_bytes": 2473966
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "Money Steps 1.0 PASS (minor); Paycheque Plan Intl 1.0 PASS (minor)",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (add AI-creation disclosure)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-MPB.json",
+      "spec_changes": [
+        "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-MSP",
+      "shop": "SteadfoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": {
+        "listing_id": 4598254995,
+        "url": "https://www.etsy.com/listing/4598254995/sinking-funds-and-emergency-fund-tracker",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:30:24+00:00",
+        "price": "CAD 19.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 14.0,
+        "CAD": 19.0
+      },
+      "price_page_cad": "19.00",
+      "price_page_usd_display": "14.17",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Money Steps Planner: Sinking Funds, Emergency Fund Tracker (Excel, Google Sheets)",
+      "title_matches_page": true,
+      "tags": [
+        "sinking funds",
+        "sinking fund tracker",
+        "emergency fund",
+        "50 30 20 budget",
+        "budget spreadsheet",
+        "savings tracker",
+        "google sheets budget",
+        "excel budget",
+        "no spend challenge",
+        "wishlist tracker",
+        "money planner",
+        "finance planner",
+        "monthly budget"
+      ],
+      "photos_spec": 8,
+      "photos_page": 8,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Money-Steps-Planner-v1.0.zip",
+          "size_bytes": 765520,
+          "encrypted_size_bytes": 765896
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0: PASS (minor)",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (add AI-creation disclosure)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-MSP.json",
+      "spec_changes": [
+        "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "FF-SCOPE",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')"
+      },
+      "live_record": {
+        "listing_id": 4598279058,
+        "url": "https://www.etsy.com/listing/4598279058/freelancer-scope-reply-pack-24-client",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:35:20+00:00",
+        "price": "CAD 17.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 12.0,
+        "CAD": 17.0
+      },
+      "price_page_cad": "17.00 (derived from USD display; metadata not captured)",
+      "price_page_usd_display": "12.68",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Freelancer Scope-Reply Pack: 24 Client Responses, Change Order Template (Digital Download)",
+      "title_matches_page": true,
+      "tags": [
+        "freelancer template",
+        "scope creep",
+        "change order",
+        "client emails",
+        "freelance contract",
+        "small business",
+        "client communication",
+        "freelance invoice",
+        "google sheets",
+        "excel template",
+        "freelancer gift",
+        "service business",
+        "project management"
+      ],
+      "photos_spec": 6,
+      "photos_page": 6,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Freelancer-Scope-Reply-Pack-v1.1.zip",
+          "size_bytes": 162267,
+          "encrypted_size_bytes": 162499
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0 PASS (minor); 1.1 (the file in the spec) not saved, not tested",
+      "severities": [
+        "MINOR"
+      ],
+      "action": "none on Etsy; QA to test v1.1 once saved",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/FF-SCOPE.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "HB-CREATOR-LITE",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')"
+      },
+      "live_record": {
+        "listing_id": 4598279124,
+        "url": "https://www.etsy.com/listing/4598279124/creator-rate-card-and-media-kit-template",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:35:28+00:00",
+        "price": "CAD 19.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 14.0,
+        "CAD": 19.0
+      },
+      "price_page_cad": "19.00",
+      "price_page_usd_display": "14.17",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Creator Rate Card & Media Kit Template, Influencer Rate Calculator (Digital Download)",
+      "title_matches_page": true,
+      "tags": [
+        "media kit template",
+        "rate card",
+        "influencer media kit",
+        "creator media kit",
+        "content creator",
+        "ugc rate card",
+        "brand collaboration",
+        "influencer rate",
+        "tiktok media kit",
+        "instagram media kit",
+        "social media kit",
+        "ugc creator",
+        "small creator"
+      ],
+      "photos_spec": 6,
+      "photos_page": 6,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Creator-Rate-Card-Media-Kit-Lite-v1.1.zip",
+          "size_bytes": 265841,
+          "encrypted_size_bytes": 266105
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0: Lite PASS (Pro HOLD MAJOR)",
+      "severities": [
+        "MINOR"
+      ],
+      "action": "sync description (remove Pro edition pointer)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/HB-CREATOR-LITE.json",
+      "spec_changes": [
+        "description: removed 'Look for the Pro edition' (Pro is on QA hold MAJOR and is sold off Etsy)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "HB-LIFEADMIN",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new-2",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)"
+      },
+      "live_record": {
+        "listing_id": 4598280684,
+        "url": "https://www.etsy.com/listing/4598280684/ai-life-admin-os-household-binder",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:38:45+00:00",
+        "price": "CAD 19.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 14.0,
+        "CAD": 19.0
+      },
+      "price_page_cad": "19.00",
+      "price_page_usd_display": "14.17",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "AI Life Admin OS: Household Binder Spreadsheet (Excel, Google Sheets)",
+      "title_matches_page": true,
+      "tags": [
+        "life binder",
+        "household binder",
+        "home management",
+        "renewal tracker",
+        "warranty tracker",
+        "important documents",
+        "life admin",
+        "family organizer",
+        "google sheets",
+        "excel template",
+        "bill tracker",
+        "adulting planner",
+        "digital download"
+      ],
+      "photos_spec": 7,
+      "photos_page": 7,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "AI-Life-Admin-OS-v1.1.zip",
+          "size_bytes": 619562,
+          "encrypted_size_bytes": 619906
+        }
+      ],
+      "other_versions_in_repo": [
+        "AI-Life-Admin-OS-v1.0.zip.age"
+      ],
+      "qa": "1.0 tested: HOLD MAJOR (privacy check misses 'PIN 4821' etc.); 1.1 not testable",
+      "severities": [
+        "MAJOR",
+        "MINOR"
+      ],
+      "action": "sync description (narrow privacy claim); swap file to v1.1 only after QA pass",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/HB-LIFEADMIN.json",
+      "spec_changes": [
+        "description: privacy-check claim narrowed to what the shipped v1.0 detector does and listing image 04 shows (QA Oct 21: v1.0 misses 'PIN 4821'); still true for v1.1. Restore the wider claim only after QA passes v1.1 and the v1.1 file is confirmed on the listing",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "HB-SUB",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')"
+      },
+      "live_record": {
+        "listing_id": 4598257567,
+        "url": "https://www.etsy.com/listing/4598257567/subscription-audit-cancel-kit",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:35:12+00:00",
+        "price": "CAD 9.99"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 7.0,
+        "CAD": 9.99
+      },
+      "price_page_cad": "9.99",
+      "price_page_usd_display": "7.45",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Subscription Audit & Cancel Kit: Yearly Bill Tracker, Renewal Alerts (Excel/Google Sheets)",
+      "title_matches_page": true,
+      "tags": [
+        "subscription tracker",
+        "cancel subscription",
+        "subscription audit",
+        "budget spreadsheet",
+        "google sheets budget",
+        "excel budget",
+        "money saving",
+        "bill tracker",
+        "renewal tracker",
+        "monthly bills",
+        "spending tracker",
+        "budget planner",
+        "digital download"
+      ],
+      "photos_spec": 7,
+      "photos_page": 7,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Subscription-Audit-Cancel-Kit-v1.1.zip",
+          "size_bytes": 518245,
+          "encrypted_size_bytes": 518557
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "1.0: PASS (minor; file says VERSION 1.0 inside the 1.1 zip)",
+      "severities": [
+        "MINOR"
+      ],
+      "action": "none on Etsy (file-internal minor)",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/HB-SUB.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBM1",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": {
+        "listing_id": 4598261879,
+        "url": "https://www.etsy.com/listing/4598261879/printable-baby-milestone-cards-16-pastel",
+        "shop": "LittlefoldHQ",
+        "listed_at": "2026-10-18T21:43:54+00:00",
+        "price": "CAD 9.99"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "CAD": 9.99,
+        "USD": 6.99
+      },
+      "price_page_cad": "9.99",
+      "price_page_usd_display": "7.45",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Printable Baby Milestone Cards, 16 Pastel Monthly Cards, Newborn to One Year, First Christmas Card, 5x7 Digital Download",
+      "title_matches_page": true,
+      "tags": [
+        "milestone cards",
+        "baby milestone",
+        "monthly baby cards",
+        "printable cards",
+        "pastel nursery",
+        "first christmas",
+        "newborn photo prop",
+        "baby shower gift",
+        "baby keepsake",
+        "month by month",
+        "neutral baby",
+        "digital download",
+        "5x7 printable"
+      ],
+      "photos_spec": 6,
+      "photos_page": 6,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Littlefold-Milestone-Cards-5x7.pdf",
+          "size_bytes": 3689588,
+          "encrypted_size_bytes": 3690684
+        },
+        {
+          "name": "Littlefold-Milestone-Cards-Letter-2up.pdf",
+          "size_bytes": 3809702,
+          "encrypted_size_bytes": 3810830
+        },
+        {
+          "name": "Littlefold-Milestone-Cards-A4-2up.pdf",
+          "size_bytes": 3866967,
+          "encrypted_size_bytes": 3868111
+        },
+        {
+          "name": "Littlefold-Milestone-Cards-JPGs.zip",
+          "size_bytes": 2100211,
+          "encrypted_size_bytes": 2100923
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "Drop 01 cards: no hold named (QA: the 16 card files are true 300 dpi)",
+      "severities": [],
+      "action": "none",
+      "shop_owner_shown": "Littlefold",
+      "shop_location_shown": "Ontario, Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBM1.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBP-SET",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": null,
+      "status": "NOT LIVE (not in live.json, not on the shop page 2026-10-22)",
+      "price_spec": {
+        "CAD": 12.99
+      },
+      "price_page_cad": null,
+      "price_page_usd_display": null,
+      "sale_running": null,
+      "sale_claimed_in_copy": false,
+      "title": "Pastel Nursery Wall Art Set of 3, Moon Bunny, Rainbow Sun, Little Cloud, Gender Neutral Printable Nursery Prints, Digital Download",
+      "title_matches_page": null,
+      "tags": [
+        "nursery wall art",
+        "nursery prints",
+        "set of 3 prints",
+        "pastel nursery",
+        "neutral nursery",
+        "kids room decor",
+        "moon bunny print",
+        "rainbow nursery",
+        "cloud nursery",
+        "printable wall art",
+        "baby room decor",
+        "sherbet nursery",
+        "digital download"
+      ],
+      "photos_spec": 5,
+      "photos_page": null,
+      "video": null,
+      "video_page": null,
+      "files": [
+        {
+          "name": "LBP1-moon-nap.zip",
+          "size_bytes": 4899086,
+          "encrypted_size_bytes": 4900470
+        },
+        {
+          "name": "LBP2-sun-arch.zip",
+          "size_bytes": 5572758,
+          "encrypted_size_bytes": 5574318
+        },
+        {
+          "name": "LBP3-little-cloud.zip",
+          "size_bytes": 3687480,
+          "encrypted_size_bytes": 3688576
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "Drop 01 prints: HOLD MAJOR (A2 files ~254 dpi vs '300 dpi' copy)",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "do not list until QA lifts the LBP hold",
+      "shop_owner_shown": null,
+      "shop_location_shown": null,
+      "reviews": null,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBP-SET.json",
+      "spec_changes": [
+        "description: A2 dpi corrected (QA: ISO file is 4200x5940 px = ~254 dpi at A2)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBP1",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": null,
+      "status": "NOT LIVE (not in live.json, not on the shop page 2026-10-22)",
+      "price_spec": {
+        "CAD": 5.99
+      },
+      "price_page_cad": null,
+      "price_page_usd_display": null,
+      "sale_running": null,
+      "sale_claimed_in_copy": false,
+      "title": "Moon Bunny Nursery Print, Pastel Sleeping Bunny on Crescent Moon, Printable Nursery Wall Art, Neutral Baby Room Decor",
+      "title_matches_page": null,
+      "tags": [
+        "moon bunny print",
+        "bunny nursery",
+        "nursery wall art",
+        "pastel nursery",
+        "crescent moon art",
+        "neutral nursery",
+        "baby room decor",
+        "printable art",
+        "kids room art",
+        "bunny wall art",
+        "moon nursery",
+        "baby shower gift",
+        "digital download"
+      ],
+      "photos_spec": 3,
+      "photos_page": null,
+      "video": null,
+      "video_page": null,
+      "files": [
+        {
+          "name": "LBP1-moon-nap.zip",
+          "size_bytes": 4899086,
+          "encrypted_size_bytes": 4900470
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "same as LBP-SET",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "do not list until QA lifts the LBP hold",
+      "shop_owner_shown": null,
+      "shop_location_shown": null,
+      "reviews": null,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBP1.json",
+      "spec_changes": [
+        "description: A2 dpi caveat added (QA LBP hold)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBP2",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": null,
+      "status": "NOT LIVE (not in live.json, not on the shop page 2026-10-22)",
+      "price_spec": {
+        "CAD": 5.99
+      },
+      "price_page_cad": null,
+      "price_page_usd_display": null,
+      "sale_running": null,
+      "sale_claimed_in_copy": false,
+      "title": "Rainbow Sun Nursery Print, Pastel Sleepy Sun and Rainbow Arch, Printable Nursery Wall Art, Gender Neutral Kids Room Decor",
+      "title_matches_page": null,
+      "tags": [
+        "rainbow print",
+        "sun nursery print",
+        "nursery wall art",
+        "pastel rainbow",
+        "rainbow nursery",
+        "neutral nursery",
+        "kids room decor",
+        "printable art",
+        "boho rainbow",
+        "baby room decor",
+        "sunshine nursery",
+        "rainbow baby gift",
+        "digital download"
+      ],
+      "photos_spec": 3,
+      "photos_page": null,
+      "video": null,
+      "video_page": null,
+      "files": [
+        {
+          "name": "LBP2-sun-arch.zip",
+          "size_bytes": 5572758,
+          "encrypted_size_bytes": 5574318
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "same as LBP-SET",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "do not list until QA lifts the LBP hold",
+      "shop_owner_shown": null,
+      "shop_location_shown": null,
+      "reviews": null,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBP2.json",
+      "spec_changes": [
+        "description: A2 dpi caveat added (QA LBP hold)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBP3",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": null,
+      "status": "NOT LIVE (not in live.json, not on the shop page 2026-10-22)",
+      "price_spec": {
+        "CAD": 5.99
+      },
+      "price_page_cad": null,
+      "price_page_usd_display": null,
+      "sale_running": null,
+      "sale_claimed_in_copy": false,
+      "title": "Little Cloud Nursery Print, Pastel Blue Cloud with Heart Star and Moon Charms, Printable Nursery Wall Art, Baby Room Decor",
+      "title_matches_page": null,
+      "tags": [
+        "cloud nursery",
+        "cloud print",
+        "nursery wall art",
+        "pastel nursery",
+        "baby blue nursery",
+        "neutral nursery",
+        "kids room decor",
+        "printable art",
+        "cute cloud art",
+        "baby room decor",
+        "heart and stars",
+        "baby shower gift",
+        "digital download"
+      ],
+      "photos_spec": 3,
+      "photos_page": null,
+      "video": null,
+      "video_page": null,
+      "files": [
+        {
+          "name": "LBP3-little-cloud.zip",
+          "size_bytes": 3687480,
+          "encrypted_size_bytes": 3688576
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "same as LBP-SET",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "do not list until QA lifts the LBP hold",
+      "shop_owner_shown": null,
+      "shop_location_shown": null,
+      "reviews": null,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBP3.json",
+      "spec_changes": [
+        "description: A2 dpi caveat added (QA LBP hold)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LBP4",
+      "shop": "LittlefoldHQ",
+      "batch": "all",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+        "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+      },
+      "live_record": null,
+      "status": "NOT LIVE (not in live.json, not on the shop page 2026-10-22)",
+      "price_spec": {
+        "CAD": 5.99
+      },
+      "price_page_cad": null,
+      "price_page_usd_display": null,
+      "sale_running": null,
+      "sale_claimed_in_copy": false,
+      "title": "First Christmas Nursery Print, Pastel Pink Christmas Tree, Printable Holiday Wall Art, Baby's First Christmas Keepsake",
+      "title_matches_page": null,
+      "tags": [
+        "first christmas",
+        "baby first xmas",
+        "christmas print",
+        "pink christmas tree",
+        "pastel christmas",
+        "holiday nursery",
+        "printable art",
+        "christmas wall art",
+        "baby keepsake",
+        "nursery wall art",
+        "christmas decor",
+        "new baby gift",
+        "digital download"
+      ],
+      "photos_spec": 3,
+      "photos_page": null,
+      "video": null,
+      "video_page": null,
+      "files": [
+        {
+          "name": "LBP4-little-tree.zip",
+          "size_bytes": 4482193,
+          "encrypted_size_bytes": 4483481
+        }
+      ],
+      "other_versions_in_repo": [],
+      "qa": "same as LBP-SET; plus title says First Christmas, art doesn't",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "do not list until QA lifts the LBP hold",
+      "shop_owner_shown": null,
+      "shop_location_shown": null,
+      "reviews": null,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LBP4.json",
+      "spec_changes": [
+        "description: A2 dpi caveat added (QA LBP hold)",
+        "title: leads with what the art shows (QA: art itself has no 'First Christmas' text)",
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "LF-FIRSTS-HOL",
+      "shop": "LittlefoldHQ",
+      "batch": "oct17-new",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-38 (built + SHIP, Oct 16) and RQ-45 (say 'list batch oct17-new')"
+      },
+      "live_record": {
+        "listing_id": 4598279192,
+        "url": "https://www.etsy.com/listing/4598279192/babys-first-christmas-and-holidays",
+        "shop": "LittlefoldHQ",
+        "listed_at": "2026-10-18T21:35:45+00:00",
+        "price": "CAD 4.99"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "CAD": 4.99,
+        "USD": 3.99
+      },
+      "price_page_cad": "4.99",
+      "price_page_usd_display": "3.72",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "Baby's First Christmas and Holidays Memory Pages, Printable Baby Book Pages, First Holiday Keepsake, Letter and A4 PDF",
+      "title_matches_page": true,
+      "tags": [
+        "baby first christmas",
+        "first christmas",
+        "baby memory book",
+        "baby book pages",
+        "printable baby book",
+        "first holiday",
+        "baby keepsake",
+        "new parent gift",
+        "baby milestone",
+        "holiday keepsake",
+        "baby shower gift",
+        "memory journal",
+        "newborn keepsake"
+      ],
+      "photos_spec": 7,
+      "photos_page": 7,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "Little-Firsts-First-Holidays-v1.2.zip",
+          "size_bytes": 254070,
+          "encrypted_size_bytes": 254318
+        }
+      ],
+      "other_versions_in_repo": [
+        "Little-Firsts-First-Holidays-v1.1.zip.age"
+      ],
+      "qa": "1.0 code: HOLD MAJOR (cover star overlaps Year line); 1.2 not testable",
+      "severities": [
+        "MAJOR"
+      ],
+      "action": "swap file to v1.2 only after QA pass; no copy change",
+      "shop_owner_shown": "Littlefold",
+      "shop_location_shown": "Ontario, Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/LF-FIRSTS-HOL.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "SF-AIGOV",
+      "shop": "SteadfoldHQ",
+      "batch": "oct17-new-2",
+      "approval_state": "APPROVED",
+      "approval": {
+        "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+        "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+        "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)"
+      },
+      "live_record": {
+        "listing_id": 4598264717,
+        "url": "https://www.etsy.com/listing/4598264717/ai-product-governance-kit-risk-register",
+        "shop": "SteadfoldHQ",
+        "listed_at": "2026-10-18T21:49:30+00:00",
+        "price": "CAD 68.00"
+      },
+      "status": "LIVE (active on public page 2026-10-22)",
+      "price_spec": {
+        "USD": 49.0,
+        "CAD": 68.0
+      },
+      "price_page_cad": "68.00",
+      "price_page_usd_display": "50.70",
+      "sale_running": false,
+      "sale_claimed_in_copy": false,
+      "title": "AI Product Governance Kit: Risk Register, PRD, Launch Gate (Excel, Word)",
+      "title_matches_page": true,
+      "tags": [
+        "ai governance",
+        "ai risk assessment",
+        "risk register",
+        "product manager",
+        "prd template",
+        "ai policy",
+        "ai compliance",
+        "project template",
+        "business template",
+        "excel template",
+        "word template",
+        "startup template",
+        "product launch"
+      ],
+      "photos_spec": 7,
+      "photos_page": 7,
+      "video": null,
+      "video_page": "none",
+      "files": [
+        {
+          "name": "AI-Product-Governance-Kit-v1.1.zip",
+          "size_bytes": 515514,
+          "encrypted_size_bytes": 515826
+        }
+      ],
+      "other_versions_in_repo": [
+        "AI-Product-Governance-Kit-v1.0.zip.age"
+      ],
+      "qa": "1.0 tested: HOLD BLOCKER (Launch Gate GO 100% with 8 of 9 evals not run); 1.1 not testable",
+      "severities": [
+        "BLOCKER"
+      ],
+      "action": "DEACTIVATE now (reversible). Reactivate only after QA passes v1.1 and v1.1 is confirmed on the listing.",
+      "shop_owner_shown": "ToqueLabs",
+      "shop_location_shown": "[founder's town], Canada",
+      "reviews": 0,
+      "corrected_spec": "commerce/etsy-audit-oct22/specs/SF-AIGOV.json",
+      "spec_changes": [
+        "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+      ]
+    },
+    {
+      "id": "(no spec) Hospital Bag Checklist",
+      "shop": "LittlefoldHQ",
+      "approval_state": "not in repo",
+      "live_record": null,
+      "status": "LIVE (active on public page 2026-10-22); listed Oct 14; not in listings/live.json",
+      "url": "https://www.etsy.com/listing/4595692022/hospital-bag-checklist-printable-birth",
+      "price_page_cad": "6.99",
+      "price_page_usd_display": "5.21",
+      "sale_running": false,
+      "title": "Hospital Bag Checklist Printable, Birth Prep Checklist, First 72 Hours Home Plan, Newborn Feeding Log, US Letter and A4 PDF",
+      "photos_page": 7,
+      "video_page": "none",
+      "ai_disclosure": "yes ('with help from AI tools')",
+      "qa": "no QA record in repo or the Oct 21 QA log",
+      "severities": [
+        "MINOR"
+      ],
+      "action": "bring under a spec + live.json so tooling can sync or deactivate it (founder supplies files)"
+    }
+  ]
+}

@@ -123,6 +123,8 @@ class FakeEtsy:
                     assert L["images"] and L["files"], "activated without images/files"
                     L["state"] = "active"
                     L["url"] = f"https://www.etsy.com/listing/{L['listing_id']}/x?utm=1"
+                elif data.get("state") == "inactive":
+                    L["state"] = "inactive"
                 L["fields"].update({k: v for k, v in data.items() if k != "state"})
                 return FakeResponse(200, {"listing_id": L["listing_id"]})
             if method == "POST":
@@ -226,9 +228,9 @@ class SpecValidation(unittest.TestCase):
         self.assertEqual(len(s["photos"]), 10)
         self.assertEqual(len(s["files"]), 5)
         self.assertEqual(s["price"], {"USD": 16.0, "CAD": 22.0})
-        self.assertTrue(s["description"].endswith("• Launch sale: 25% off until 30 Nov 2026. Regular price US$16."))
+        self.assertNotIn("Launch sale", s["description"])      # no sale ran (Oct 22 audit); never state one that isn't
         self.assertEqual(real_spec("DP-RIV")["price"], {"CAD": 14.99, "USD": 10.99})   # USD added Oct 18 (shops list in USD)
-        self.assertIn("Regular price US$10.99.", etsy.description_for(real_spec("DP-RIV"), "USD"))
+        self.assertNotIn("Launch sale", etsy.description_for(real_spec("DP-RIV"), "USD"))
         self.assertNotIn("video", real_spec("FF-MSP"))          # the kit video shows the bundle
         self.assertEqual(len(real_spec("FF-MSP")["photos"]), 8)
         for sid in ("LBM1", "LBP-SET", "LBP1", "LBP2", "LBP3", "LBP4"):
@@ -237,6 +239,15 @@ class SpecValidation(unittest.TestCase):
             self.assertIn("CAD", s["price"])
         for sid in SPEC_IDS:
             self.assertEqual(len(real_spec(sid)["tags"]), 13, sid)
+
+    def test_no_listing_claims_a_sale_or_hides_ai_use(self):
+        """Etsy Seller Policy (Oct 2026): sales must reflect real pricing, and AI use is disclosed in the
+        description. Etsy's API can't start a sale, so a spec never claims one (Oct 22 audit)."""
+        for p in sorted(etsy.all_spec_paths()):
+            d = etsy.load_spec(p)["description"]
+            with self.subTest(spec=p.name):
+                self.assertNotRegex(d, r"(?i)launch sale|\d+% off")
+                self.assertRegex(d, r"(?i)with (the help of )?AI|AI (help|assistance)|help from AI")
 
     def test_cad_description_override(self):
         s = real_spec("FF-HMP")
@@ -682,9 +693,117 @@ class SyncListing(ListingFlow):
         self.assertEqual([f["filename"] for f in fake.listings[7001]["files"]], ["Freedom-Number-Workbook-v1.0.zip"])
         self.assertFalse([c for c in fake.calls if c[0] == "DELETE"])
 
+    def test_accepts_the_workflow_path_form(self):
+        """The workflow's spec box suggests listings/<ID>.json; sync, titles and hero must read it as <ID>."""
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake)
+        rc, out = self.run_sync(fake, "--spec", "listings/FF-FREEDOM.json", "--parts", "description")
+        self.assertEqual(rc, 0, out)
+        self.assertIn("after inflation", fake.listings[7001]["fields"]["description"])
+        self.assertEqual(etsy.spec_ids("listings/A.json, B all"), ["A", "B"])
+
     def test_needs_explicit_ids(self):
         rc, out = self.run_sync(FakeEtsy(), "--spec", "all")
         self.assertEqual(rc, 2)
+
+
+class Deactivate(ListingFlow):
+    """Taking a LIVE listing off sale and back on (QA BLOCKER on SF-AIGOV, Oct 22 audit). Reversible, never 'all'."""
+
+    def _make_live(self, fake, sid="SF-AIGOV", state="active"):
+        fake.listings[7101] = {"listing_id": 7101, "state": state, "title": "x", "fields": {},
+                               "images": [{"rank": 1}], "videos": [],
+                               "files": [{"filename": "A.zip", "name": "A.zip", "listing_file_id": 1}]}
+        etsy.LIVE_PATH.write_text(json.dumps({"listings": {sid: {"listing_id": 7101, "url": "u"}}, "drafts": {}}))
+
+    def run_cmd(self, fake, *args):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            rc = etsy.main(list(args), env=base_env(RUNNER_TEMP=self.tmp.name), session=fake,
+                           gh_factory=FakeGH().factory)
+        return rc, out.getvalue()
+
+    def test_deactivate_then_reactivate_round_trip(self):
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake)
+        rc, out = self.run_cmd(fake, "deactivate", "--spec", "listings/SF-AIGOV.json")
+        self.assertEqual(rc, 0, out)
+        self.assertEqual(fake.listings[7101]["state"], "inactive")
+        self.assertEqual(fake.listings[7101]["files"][0]["filename"], "A.zip")        # nothing removed
+        self.assertFalse([c for c in fake.calls if c[0] in ("DELETE", "POST") and "oauth" not in c[1]])
+        rec = json.loads(etsy.LIVE_PATH.read_text())["listings"]["SF-AIGOV"]
+        self.assertEqual((rec["state"], rec["listing_id"], rec["url"]), ("inactive", 7101, "u"))
+        rc, out = self.run_cmd(fake, "deactivate", "--spec", "SF-AIGOV")            # idempotent
+        self.assertEqual(rc, 0, out)
+        self.assertIn("already inactive", out)
+        rc, out = self.run_cmd(fake, "reactivate", "--spec", "SF-AIGOV")
+        self.assertEqual(rc, 0, out)
+        self.assertEqual(fake.listings[7101]["state"], "active")
+        rec = json.loads(etsy.LIVE_PATH.read_text())["listings"]["SF-AIGOV"]
+        self.assertNotIn("state", rec)
+        self.assertNotIn("deactivated_at", rec)
+
+    def test_reactivate_refuses_a_draft(self):
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake, state="draft")
+        rc, out = self.run_cmd(fake, "reactivate", "--spec", "SF-AIGOV")
+        self.assertEqual(rc, 1)
+        self.assertEqual(fake.listings[7101]["state"], "draft")
+        self.assertFalse([c for c in fake.calls if c[0] == "PATCH"])
+
+    def test_needs_explicit_live_ids(self):
+        rc, out = self.run_cmd(FakeEtsy(), "deactivate", "--spec", "all")
+        self.assertEqual(rc, 2)
+        rc, out = self.run_cmd(FakeEtsy(), "deactivate", "--spec", "LBP1")          # approved, never listed
+        self.assertEqual(rc, 1)
+        self.assertIn("not in listings/live.json", out)
+
+
+class Ops(Deactivate):
+    """listings/ops.json: routine reversible fixes, each op once; anything risky is refused (Oct 22)."""
+
+    def _ops(self, ops):
+        etsy.OPS_PATH.write_text(json.dumps({"ops": ops}))
+
+    def setUp(self):
+        super().setUp()
+        self._orig = (etsy.OPS_PATH, etsy.OPS_DONE_PATH)
+        etsy.OPS_PATH = etsy.LIVE_PATH.parent / "ops.json"
+        etsy.OPS_DONE_PATH = etsy.LIVE_PATH.parent / "ops-done.json"
+
+    def tearDown(self):
+        etsy.OPS_PATH, etsy.OPS_DONE_PATH = self._orig
+        super().tearDown()
+
+    def test_deactivate_runs_once_and_is_recorded(self):
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake)
+        self._ops([{"id": "op-1", "action": "deactivate", "spec": "SF-AIGOV"}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 0, out)
+        self.assertEqual(fake.listings[7101]["state"], "inactive")
+        done = json.loads(etsy.OPS_DONE_PATH.read_text())["done"]
+        self.assertEqual([d["id"] for d in done], ["op-1"])
+        n = len(fake.calls)
+        rc, out = self.run_cmd(fake, "ops")                       # same file pushed again: nothing happens
+        self.assertEqual(rc, 0, out)
+        self.assertEqual(len(fake.calls), n)
+
+    def test_refuses_list_files_photos_and_all(self):
+        fake = FakeEtsy(currency="CAD")
+        self._make_live(fake)
+        self._ops([{"id": "a", "action": "list", "spec": "LBP1"},
+                   {"id": "b", "action": "sync", "spec": "SF-AIGOV", "parts": "files,description"},
+                   {"id": "c", "action": "sync", "spec": "SF-AIGOV", "parts": "photos"},
+                   {"id": "d", "action": "deactivate", "spec": "all"}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertFalse([c for c in fake.calls if c[0] in ("PATCH", "POST", "PUT", "DELETE") and "oauth" not in c[1]])
+        self.assertEqual(json.loads(etsy.OPS_DONE_PATH.read_text())["done"], [])
+
+    def test_no_ops_file_is_a_no_op(self):
+        rc, out = self.run_cmd(FakeEtsy(), "ops")
+        self.assertEqual(rc, 0)
 
 
 class Decrypt(unittest.TestCase):

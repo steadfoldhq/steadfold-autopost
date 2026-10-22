@@ -76,5 +76,17 @@
       "size": 2417694
     }
   ],
-  "source_note": "Copy = the Oct 15 Gumroad launch pack (claude/launch/2026-10-15-canadian-freelancer-gumroad.md) plus an AI-help line (standard E12), a no-resale line and the after-launch price. Launch pack: claude/launch/2026-10-17-canadian-freelancer-etsy.md. CA$14 matches Gumroad; US$10 only if SteadfoldHQ runs in USD (Oct 15 pack's US fallback). Dec 1: raise to CA$22 / US$16 and delete the launch line."
+  "source_note": "Copy = the Oct 15 Gumroad launch pack (claude/launch/2026-10-15-canadian-freelancer-gumroad.md) plus an AI-help line (standard E12), a no-resale line and the after-launch price. Launch pack: claude/launch/2026-10-17-canadian-freelancer-etsy.md. CA$14 matches Gumroad; US$10 only if SteadfoldHQ runs in USD (Oct 15 pack's US fallback). Dec 1: raise to CA$22 / US$16 and delete the launch line.",
+  "alt_text": [
+    "Canadian Freelancer Money System spreadsheet, image 1: cover image: the product at a glance",
+    "Canadian Freelancer Money System spreadsheet, image 2: safe to spend",
+    "Canadian Freelancer Money System spreadsheet, image 3: money pulse clean",
+    "Canadian Freelancer Money System spreadsheet, image 4: optional Ask AI prompts built from your own totals",
+    "Canadian Freelancer Money System spreadsheet, image 5: bank import",
+    "Canadian Freelancer Money System spreadsheet, image 6: canadian taxes",
+    "Canadian Freelancer Money System spreadsheet, image 7: health score",
+    "Canadian Freelancer Money System spreadsheet, image 8: compare years",
+    "Canadian Freelancer Money System spreadsheet, image 9: themes",
+    "Canadian Freelancer Money System spreadsheet, image 10: pay once"
+  ]
 }

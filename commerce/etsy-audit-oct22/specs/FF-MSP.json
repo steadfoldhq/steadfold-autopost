@@ -1,0 +1,83 @@
+{
+  "id": "FF-MSP",
+  "order": 5,
+  "shop": "STEADFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-24-launch-oct16.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+    "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+  },
+  "title": "Money Steps Planner: Sinking Funds, Emergency Fund Tracker (Excel, Google Sheets)",
+  "description": "It splits this month's savings across your sinking funds and emergency fund, and tells you when one comes up short. For Excel and Google Sheets.\n\nMoney Steps Planner: every dollar gets a next step\n• This month's money moves: your goal money split for you, emergency fund first, then every sinking fund in your order\n• 5 money steps that tick themselves: every dollar has a job, starter cushion, funds on track, one month covered, full cushion\n• Sinking funds: up to 20, each says what to move this month to be ready by its due date (no date = a yearly cost)\n• Emergency ladder: starter cushion to 6 months, with the month you reach each rung at your pace\n• Split: 50/30/20 or your own targets, with the biggest want to trim when you're over\n• No-spend month: tap ✓ or Spent; a ✓ after a spending day counts as a comeback, no streaks to break\n• 30-day wishlist: wishes wait first, then fit your wishlist money or get a small monthly amount\n• Do this next: 4 plain-English steps written from your own numbers\n• Ask AI: prompts built from your totals (never names) for the AI chat app you already use\n• Reminders: your key dates, ready to import into Google Calendar\n• Any currency: $, €, £, ₹ or your own symbol\n\nWhat's in the download:\n• 8 spreadsheets (4 themes, Sample + Blank) and a 2-page quick-start PDF\n• Free updates: the Move My Data tab brings your entries into new versions in about 2 minutes\n\nGood to know:\n• Works in Microsoft 365, Excel 2019 or newer and Google Sheets\n• No bank login: you type your numbers and the plan does the math\n• The file doesn't use AI itself; the prompts work with the AI tools you already have\n• Made by Steadfold with AI help: the formulas and pages were built with Claude, then tested with automated checks before release\n• Version 1.0, tested with 1,088 automated checks before release\n• Digital download, nothing ships\n• Best set up on a computer; ticking days and adding wishes works in the phone apps\n• Want the paycheck plan too? The Money Planner Bundle adds the Paycheque Plan.\n• Launch price until Mon Nov 30, then $17\n\nA planning tool for general education. It doesn't move money.\n\nFrom Fully Funded, a Steadfold studio.\nGeneral education only, not financial advice.",
+  "price": {
+    "USD": 14.0,
+    "CAD": 19.0
+  },
+  "currency_overrides": {
+    "CAD": {
+      "replace": [
+        [
+          "• Launch price until Mon Nov 30, then $17",
+          "• Launch price until Mon Nov 30, then CA$24"
+        ]
+      ]
+    }
+  },
+  "quantity": 999,
+  "tags": [
+    "sinking funds",
+    "sinking fund tracker",
+    "emergency fund",
+    "50 30 20 budget",
+    "budget spreadsheet",
+    "savings tracker",
+    "google sheets budget",
+    "excel budget",
+    "no spend challenge",
+    "wishlist tracker",
+    "money planner",
+    "finance planner",
+    "monthly budget"
+  ],
+  "materials": [
+    "Excel",
+    "Google Sheets",
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/money-planner/steps-01-ONEGLANCE-SQ.jpg",
+    "listings/media/money-planner/02-this-months-money-moves.png",
+    "listings/media/money-planner/04-sinking-funds.png",
+    "listings/media/money-planner/05-emergency-ladder.png",
+    "listings/media/money-planner/06-split-50-30-20.png",
+    "listings/media/money-planner/07-no-spend-and-wishlist.png",
+    "listings/media/money-planner/08-works-with-your-ai.png",
+    "listings/media/money-planner/09-four-themes.png"
+  ],
+  "files": [
+    {
+      "name": "Money-Steps-Planner-v1.0.zip",
+      "enc": "listings/files/money-planner/Money-Steps-Planner-v1.0.zip.age",
+      "sha256": "16650e2ec1f03e0091f450d9f36248b7e097937c2d6c73b27d482d41850e937f",
+      "size": 765520
+    }
+  ],
+  "alt_text": [
+    "Money Steps Planner spreadsheet, image 1: cover image: the product at a glance",
+    "Money Steps Planner spreadsheet, image 2: this months money moves",
+    "Money Steps Planner spreadsheet, image 3: sinking funds",
+    "Money Steps Planner spreadsheet, image 4: emergency ladder",
+    "Money Steps Planner spreadsheet, image 5: split 50 30 20",
+    "Money Steps Planner spreadsheet, image 6: no spend and wishlist",
+    "Money Steps Planner spreadsheet, image 7: optional Ask AI prompts built from your own totals",
+    "Money Steps Planner spreadsheet, image 8: four themes"
+  ]
+}

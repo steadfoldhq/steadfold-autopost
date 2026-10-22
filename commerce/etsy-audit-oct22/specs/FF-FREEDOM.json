@@ -1,0 +1,78 @@
+{
+  "id": "FF-FREEDOM",
+  "order": 31,
+  "shop": "STEADFOLD",
+  "batch": "oct17-new-2",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/review-queue.md",
+    "approved_by": "Dharma",
+    "approved_at": "Sun Oct 18 2026, 1:46 pm Toronto (Learning Lab chat)",
+    "quote": "Our products, everything is live, right? So please give me the prompt right now ... Every single thing, nothing should be missed.",
+    "review_queue": "RQ-45 (say 'list batch oct17-new-2'); concepts approved to build Oct 16 (RQ-27, RQ-28, RQ-30)"
+  },
+  "title": "FIRE Number Workbook: Retirement Planner, Financial Independence Calculator (PDF)",
+  "description": "Find the number where work becomes optional, on paper, in about an hour. $40,000 a year ÷ 3.9% = $1,025,641.\n\nWhat it does for you:\n• Step by step: your spending, your rate, your number, where you are, how long, what to trim\n• Rate table: freedom numbers at 3%, 3.5%, 3.9% and 4% for $30,000 to $100,000 a year\n• How long: $1,443 a month at 6% a year after inflation reaches $1,000,000 in today's money in 25 years, with tables for 4% and 6% after inflation\n• Growth tables that work with any amount: what today's savings and every $100 a month grow to\n• Coast number: the amount that grows into your freedom number on its own\n• Trims: $100 a month less = $1,200 a year ÷ 3.9% = $30,769 less to save\n• Milestone ladder, a yearly check-in and your number on one page\n• The catch on every page: what each number assumes, in plain words\n\nWhat's in the download:\n• The 12-page workbook in US Letter and A4 (2 PDFs)\n• A 1-page Start Here guide with print settings and a 60-minute path\n\nGood to know:\n• Print at home on plain paper, or write on a tablet PDF app\n• Any currency: the maths is the same in dollars, pounds, euros or rupees\n• 3.9% is the safe starting withdrawal rate for people retiring in 2026 from Morningstar's December 2025 research, for a 30-year retirement (30% to 50% in stocks)\n• Rates and growth are planning assumptions, not promises. Returns vary\n• Made with AI assistance, then written, calculated and checked by hand\n• Digital download, nothing ships\n\nFrom Fully Funded, a Steadfold studio.\nGeneral education only, not financial advice.",
+  "price": {
+    "USD": 12.0,
+    "CAD": 17.0
+  },
+  "quantity": 999,
+  "tags": [
+    "fire calculator",
+    "fire number",
+    "retirement planner",
+    "financial planner",
+    "money workbook",
+    "early retirement",
+    "savings goal",
+    "finance printable",
+    "financial goals",
+    "money planner",
+    "coast fire",
+    "budget planner",
+    "digital download"
+  ],
+  "materials": [
+    "PDF"
+  ],
+  "taxonomy": {
+    "names": [
+      "Paper & Party Supplies > Paper > Calendars & Planners",
+      "Calendars & Planners"
+    ]
+  },
+  "photos": [
+    "listings/media/freedom-number/FF-FREEDOM-01-freedom-number-workbook-SQ.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-02-your-number.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-03-pick-your-rate.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-04-how-long.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-05-coast-number.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-06-trims.jpg",
+    "listings/media/freedom-number/FF-FREEDOM-07-whats-inside.jpg"
+  ],
+  "files": [
+    {
+      "name": "Freedom-Number-Workbook-v1.1.zip",
+      "enc": "listings/files/freedom-number/Freedom-Number-Workbook-v1.1.zip.age",
+      "sha256": "e6239a538a7ff0f42d9dfed66e316620a4ec773ece8d0355884380751287fc26",
+      "size": 388306
+    }
+  ],
+  "source_note": "Copy, tags and CAD price verbatim from the v1.0 listing kit. Calendar slot was Jan 7 2027; listing earlier is the owner's call when he approves the batch.",
+  "history": [
+    {
+      "date": "2026-10-21",
+      "change": "QA fix: Freedom-Number-Workbook-v1.0.zip -> Freedom-Number-Workbook-v1.1.zip (RQ-52 defect); description corrected where the claim changed. Old file kept at listings/files/freedom-number/Freedom-Number-Workbook-v1.0.zip.age."
+    }
+  ],
+  "alt_text": [
+    "Freedom Number Workbook, image 1: freedom number workbook",
+    "Freedom Number Workbook, image 2: your number",
+    "Freedom Number Workbook, image 3: pick your rate",
+    "Freedom Number Workbook, image 4: how long",
+    "Freedom Number Workbook, image 5: coast number",
+    "Freedom Number Workbook, image 6: trims",
+    "Freedom Number Workbook, image 7: what's inside the download"
+  ]
+}

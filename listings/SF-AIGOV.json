@@ -69,5 +69,14 @@
       "date": "2026-10-21",
       "change": "QA fix: AI-Product-Governance-Kit-v1.0.zip -> AI-Product-Governance-Kit-v1.1.zip (RQ-52 defect); description corrected where the claim changed. Old file kept at listings/files/ai-governance/AI-Product-Governance-Kit-v1.0.zip.age."
     }
+  ],
+  "alt_text": [
+    "AI Product Governance Kit, image 1: ai governance kit",
+    "AI Product Governance Kit, image 2: launch gate",
+    "AI Product Governance Kit, image 3: risk register",
+    "AI Product Governance Kit, image 4: eval plan",
+    "AI Product Governance Kit, image 5: ai prd",
+    "AI Product Governance Kit, image 6: vendor questions",
+    "AI Product Governance Kit, image 7: what's inside the download"
   ]
 }

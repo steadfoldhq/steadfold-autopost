@@ -1,0 +1,59 @@
+# Routine, reversible Etsy fixes queued in listings/ops.json (by an agent or a person), run on push.
+# Only deactivate / reactivate named live listings and sync with parts "description" are accepted
+# (tools/etsy.py cmd_ops refuses anything else: no new listings, file swaps, photos, prices or deletion).
+# Each op id runs once; results go to listings/ops-done.json (+ listings/live.json state).
+name: Etsy ops
+
+on:
+  push:
+    branches: [main]
+    paths: ['listings/ops.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etsy
+  cancel-in-progress: false
+
+jobs:
+  ops:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Tests (no Etsy calls)
+        run: python -m unittest discover -s tests -q
+      - name: Run queued ops
+        env:
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+          ETSY_KEYSTRING_STEADFOLD: ${{ secrets.ETSY_KEYSTRING_STEADFOLD }}
+          ETSY_SHARED_SECRET_STEADFOLD: ${{ secrets.ETSY_SHARED_SECRET_STEADFOLD }}
+          ETSY_KEYSTRING_LITTLEFOLD: ${{ secrets.ETSY_KEYSTRING_LITTLEFOLD }}
+          ETSY_SHARED_SECRET_LITTLEFOLD: ${{ secrets.ETSY_SHARED_SECRET_LITTLEFOLD }}
+          ETSY_REFRESH_TOKEN_STEADFOLD: ${{ secrets.ETSY_REFRESH_TOKEN_STEADFOLD }}
+          ETSY_REFRESH_TOKEN_LITTLEFOLD: ${{ secrets.ETSY_REFRESH_TOKEN_LITTLEFOLD }}
+          ETSY_SHOP_NAME_STEADFOLD: ${{ vars.ETSY_SHOP_NAME_STEADFOLD }}
+          ETSY_SHOP_NAME_LITTLEFOLD: ${{ vars.ETSY_SHOP_NAME_LITTLEFOLD }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python tools/etsy.py ops
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add listings/ops-done.json listings/live.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "etsy: ops results"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          exit 1

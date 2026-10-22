@@ -69,5 +69,14 @@
       "date": "2026-10-21",
       "change": "QA fix: Little-Firsts-First-Holidays-v1.1.zip -> Little-Firsts-First-Holidays-v1.2.zip (RQ-52 defect); description corrected where the claim changed. Old file kept at listings/files/little-firsts-holidays/Little-Firsts-First-Holidays-v1.1.zip.age."
     }
+  ],
+  "alt_text": [
+    "Little Firsts: First Holidays memory pages, image 1: little firsts first holidays",
+    "Little Firsts: First Holidays memory pages, image 2: ten pages",
+    "Little Firsts: First Holidays memory pages, image 3: the little details",
+    "Little Firsts: First Holidays memory pages, image 4: every tradition",
+    "Little Firsts: First Holidays memory pages, image 5: guests sign",
+    "Little Firsts: First Holidays memory pages, image 6: letter and prints",
+    "Little Firsts: First Holidays memory pages, image 7: what's inside the download"
   ]
 }

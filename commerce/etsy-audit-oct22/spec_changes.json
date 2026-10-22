@@ -1,0 +1,83 @@
+{
+  "DP-CALM-P": [
+    "description: removed 'Launch sale: 25% off until 30 Nov 2026. Regular price ...' (no sale running Oct 22)",
+    "currency_overrides: removed (its only target was the removed line)",
+    "by_hand: sale is now optional and must be started before it is mentioned",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "DP-CALM-T": [
+    "description: removed 'Launch sale: 25% off until 30 Nov 2026. Regular price ...' (no sale running Oct 22)",
+    "currency_overrides: removed (its only target was the removed line)",
+    "by_hand: sale is now optional and must be started before it is mentioned",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-HMP": [
+    "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-MPB": [
+    "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-MSP": [
+    "description: added AI-creation disclosure line (Etsy Creativity Standards / Seller Policy)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-CF-CA": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "HB-SUB": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-SCOPE": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "HB-CREATOR-LITE": [
+    "description: removed 'Look for the Pro edition' (Pro is on QA hold MAJOR and is sold off Etsy)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LF-FIRSTS-HOL": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "HB-LIFEADMIN": [
+    "description: privacy-check claim narrowed to what the shipped v1.0 detector does and listing image 04 shows (QA Oct 21: v1.0 misses 'PIN 4821'); still true for v1.1. Restore the wider claim only after QA passes v1.1 and the v1.1 file is confirmed on the listing",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "FF-FREEDOM": [
+    "description: Morningstar line dated to the Dec 2025 research for 2026 retirees (QA Oct 21)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "DP-RIV": [
+    "description: removed 'Launch sale: 30% off until 30 Nov 2026. Regular price CA$14.99.'",
+    "currency_overrides: removed",
+    "by_hand: sale optional, start before mentioning",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBM1": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "SF-AIGOV": [
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBP-SET": [
+    "description: A2 dpi corrected (QA: ISO file is 4200x5940 px = ~254 dpi at A2)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBP1": [
+    "description: A2 dpi caveat added (QA LBP hold)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBP2": [
+    "description: A2 dpi caveat added (QA LBP hold)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBP3": [
+    "description: A2 dpi caveat added (QA LBP hold)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ],
+  "LBP4": [
+    "description: A2 dpi caveat added (QA LBP hold)",
+    "title: leads with what the art shows (QA: art itself has no 'First Christmas' text)",
+    "alt_text: drafted from file names + listing copy (new field; current tooling does not upload it)"
+  ]
+}

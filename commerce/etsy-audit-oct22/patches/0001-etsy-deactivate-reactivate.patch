@@ -1,0 +1,199 @@
+--- a/tools/etsy.py
++++ b/tools/etsy.py
+@@ -25,6 +25,8 @@
+       flips every WAITING spec in that batch to APPROVED with the owner's words
+       (source claude/review-queue.md) and writes listings/go.json for the batch.
+       Only ever run with words the owner actually said.
++  deactivate --spec ID[,ID]   take LIVE listings off sale (Etsy state "inactive"); reversible
++  reactivate --spec ID[,ID]   put a listing this tool deactivated back on sale (state "active")
+   store-secret --name NAME --from-file PATH    write one repo secret (GH_PAT)
+   encrypt --src FILE --dest listings/files/... age-encrypt one customer file
+                                                with keys/etsy-files.pub
+@@ -1210,6 +1212,74 @@
+     return 1 if failed else 0
+ 
+ 
++def spec_ids(text: str) -> list[str]:
++    """'SF-AIGOV', 'SF-AIGOV,FF-FREEDOM' or 'listings/SF-AIGOV.json' -> ['SF-AIGOV', ...]; 'all' is dropped."""
++    out = []
++    for x in text.replace(",", " ").split():
++        x = x.strip()
++        if x.startswith("listings/"):
++            x = x[len("listings/"):]
++        if x.endswith(".json"):
++            x = x[:-len(".json")]
++        if x and x != "all":
++            out.append(x)
++    return out
++
++
++def cmd_set_state(ids: list[str], state: str, env: dict, session=None, gh_factory=None) -> int:
++    """deactivate (state "inactive") or reactivate (state "active") LIVE listings, named one by one.
++    Reversible: an inactive listing keeps its photos, files and URL, and Etsy charges nothing to
++    reactivate it before its 4-month period ends (Etsy Help 360000336187). Nothing is deleted.
++    reactivate only undoes a deactivate: it refuses drafts, expired or sold-out listings."""
++    if state not in ("inactive", "active"):
++        raise SetupError(f"unknown state {state!r}")
++    if not ids:
++        raise SetupError("deactivate/reactivate need explicit --spec IDs (never 'all').")
++    live = load_live()
++    shops: dict[str, ShopSession] = {}
++    rows, failed, changed = ["| ID | Result |", "|----|--------|"], False, False
++    for sid in ids:
++        rec = live.get("listings", {}).get(sid)
++        try:
++            if not rec:
++                raise EtsyError("not in listings/live.json")
++            spec = load_spec(ROOT / "listings" / f"{sid}.json")
++            if spec["shop"] not in shops:
++                shops[spec["shop"]] = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
++            ss = shops[spec["shop"]]
++            c, lid = ss.client, int(rec["listing_id"])
++            before = c.listing(lid).get("state")
++            if before == state:
++                rows.append(f"| {sid} | already {state} |")
++            else:
++                if state == "active" and before != "inactive":
++                    raise EtsyError(f"listing is '{before}', not 'inactive': reactivate only undoes a deactivate")
++                if state == "inactive" and before != "active":
++                    raise EtsyError(f"listing is '{before}', not 'active': nothing to deactivate")
++                c.update(ss.shop_id, lid, {"state": state})
++                got = c.listing(lid).get("state")
++                if got != state:
++                    raise EtsyError(f"Etsy still shows state '{got}' after the change")
++                rows.append(f"| {sid} | {before} -> {state} |")
++            if state == "inactive":
++                rec["state"] = "inactive"
++                rec.setdefault("deactivated_at", now_iso())
++            else:
++                rec.pop("state", None)
++                rec.pop("deactivated_at", None)
++            changed = True
++            print(f"::notice::{sid}: {rows[-1].split('|')[2].strip()}", flush=True)
++        except (EtsyError, SetupError) as exc:
++            failed = True
++            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
++            print(f"::error::{sid}: {redact(exc)}", flush=True)
++    if changed:
++        save_live(live)
++    summary(("## Etsy deactivate\n\n" if state == "inactive" else "## Etsy reactivate\n\n")
++            + "\n".join(rows) + "\n")
++    return 1 if failed else 0
++
++
+ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
+     ap = argparse.ArgumentParser(description="Steadfold Etsy auto-lister")
+     sub = ap.add_subparsers(dest="cmd", required=True)
+@@ -1232,6 +1302,9 @@
+     s.add_argument("--spec", required=True)
+     s.add_argument("--parts", default="files,description")
+     s.add_argument("--photos", default="")
++    for c in ("deactivate", "reactivate"):
++        s = sub.add_parser(c)
++        s.add_argument("--spec", required=True)
+     s = sub.add_parser("approve")
+     s.add_argument("--batch", required=True)
+     s.add_argument("--said", required=True)
+@@ -1266,6 +1339,9 @@
+             ranks = [int(x) for x in args.photos.replace(",", " ").split() if x.strip()]
+             return cmd_sync_listing(ids, parts, ranks, env, session=kw.get("session"),
+                                     gh_factory=kw.get("gh_factory"))
++        if args.cmd in ("deactivate", "reactivate"):
++            return cmd_set_state(spec_ids(args.spec), "inactive" if args.cmd == "deactivate" else "active",
++                                 env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+         if args.cmd == "validate":
+             return cmd_validate()
+         if args.cmd == "approve":
+--- a/.github/workflows/etsy-list.yml
++++ b/.github/workflows/etsy-list.yml
+@@ -17,9 +17,9 @@
+         type: string
+         default: all
+       mode:
+-        description: 'list = publish · check = read-only · dry-run = no Etsy calls'
++        description: 'list = publish · check = read-only · dry-run = no Etsy calls · deactivate/reactivate = take named live listings off sale / back on (spec = ID[,ID])'
+         type: choice
+-        options: [list, check, dry-run, hero, titles, sync]
++        options: [list, check, dry-run, hero, titles, sync, deactivate, reactivate]
+         default: list
+       parts:
+         description: 'sync only: files,description,photos'
+@@ -92,6 +92,8 @@
+               dry-run) python tools/etsy.py list --spec "${SPEC:-all}" --dry-run ;;
+               hero)    python tools/etsy.py replace-hero --spec "${SPEC:-all}" ;;
+               titles)  python tools/etsy.py sync-titles --spec "${SPEC:-all}" ;;
++              deactivate) python tools/etsy.py deactivate --spec "$SPEC" ;;
++              reactivate) python tools/etsy.py reactivate --spec "$SPEC" ;;
+               sync)    python tools/etsy.py sync-listing --spec "$SPEC" --parts "${PARTS:-files,description}" --photos "${PHOTOS:-}" ;;
+               *)       python tools/etsy.py list --spec "${SPEC:-all}" 2>&1 | tee "$RUNNER_TEMP/list.out"; rc=${PIPESTATUS[0]}
+                        if [ "$rc" -ne 0 ]; then tail -15 "$RUNNER_TEMP/list.out" | while IFS= read -r l; do echo "::error::$l"; done; fi
+--- a/tests/test_etsy.py
++++ b/tests/test_etsy.py
+@@ -123,6 +123,8 @@
+                     assert L["images"] and L["files"], "activated without images/files"
+                     L["state"] = "active"
+                     L["url"] = f"https://www.etsy.com/listing/{L['listing_id']}/x?utm=1"
++                elif data.get("state") == "inactive":
++                    L["state"] = "inactive"
+                 L["fields"].update({k: v for k, v in data.items() if k != "state"})
+                 return FakeResponse(200, {"listing_id": L["listing_id"]})
+             if method == "POST":
+@@ -687,6 +689,58 @@
+         self.assertEqual(rc, 2)
+ 
+ 
++class Deactivate(ListingFlow):
++    """Taking a LIVE listing off sale and back on (QA BLOCKER on SF-AIGOV, Oct 22 audit). Reversible, never 'all'."""
++
++    def _make_live(self, fake, sid="SF-AIGOV", state="active"):
++        fake.listings[7101] = {"listing_id": 7101, "state": state, "title": "x", "fields": {},
++                               "images": [{"rank": 1}], "videos": [],
++                               "files": [{"filename": "A.zip", "name": "A.zip", "listing_file_id": 1}]}
++        etsy.LIVE_PATH.write_text(json.dumps({"listings": {sid: {"listing_id": 7101, "url": "u"}}, "drafts": {}}))
++
++    def run_cmd(self, fake, *args):
++        out = io.StringIO()
++        with contextlib.redirect_stdout(out):
++            rc = etsy.main(list(args), env=base_env(RUNNER_TEMP=self.tmp.name), session=fake,
++                           gh_factory=FakeGH().factory)
++        return rc, out.getvalue()
++
++    def test_deactivate_then_reactivate_round_trip(self):
++        fake = FakeEtsy(currency="CAD")
++        self._make_live(fake)
++        rc, out = self.run_cmd(fake, "deactivate", "--spec", "listings/SF-AIGOV.json")
++        self.assertEqual(rc, 0, out)
++        self.assertEqual(fake.listings[7101]["state"], "inactive")
++        self.assertEqual(fake.listings[7101]["files"][0]["filename"], "A.zip")        # nothing removed
++        self.assertFalse([c for c in fake.calls if c[0] in ("DELETE", "POST") and "oauth" not in c[1]])
++        rec = json.loads(etsy.LIVE_PATH.read_text())["listings"]["SF-AIGOV"]
++        self.assertEqual((rec["state"], rec["listing_id"], rec["url"]), ("inactive", 7101, "u"))
++        rc, out = self.run_cmd(fake, "deactivate", "--spec", "SF-AIGOV")            # idempotent
++        self.assertEqual(rc, 0, out)
++        self.assertIn("already inactive", out)
++        rc, out = self.run_cmd(fake, "reactivate", "--spec", "SF-AIGOV")
++        self.assertEqual(rc, 0, out)
++        self.assertEqual(fake.listings[7101]["state"], "active")
++        rec = json.loads(etsy.LIVE_PATH.read_text())["listings"]["SF-AIGOV"]
++        self.assertNotIn("state", rec)
++        self.assertNotIn("deactivated_at", rec)
++
++    def test_reactivate_refuses_a_draft(self):
++        fake = FakeEtsy(currency="CAD")
++        self._make_live(fake, state="draft")
++        rc, out = self.run_cmd(fake, "reactivate", "--spec", "SF-AIGOV")
++        self.assertEqual(rc, 1)
++        self.assertEqual(fake.listings[7101]["state"], "draft")
++        self.assertFalse([c for c in fake.calls if c[0] == "PATCH"])
++
++    def test_needs_explicit_live_ids(self):
++        rc, out = self.run_cmd(FakeEtsy(), "deactivate", "--spec", "all")
++        self.assertEqual(rc, 2)
++        rc, out = self.run_cmd(FakeEtsy(), "deactivate", "--spec", "LBP1")          # approved, never listed
++        self.assertEqual(rc, 1)
++        self.assertIn("not in listings/live.json", out)
++
++
+ class Decrypt(unittest.TestCase):
+     def test_decrypt_checks_sha_and_removes_key(self):
+         data = b"paid file bytes"

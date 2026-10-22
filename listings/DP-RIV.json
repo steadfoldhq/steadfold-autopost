@@ -10,7 +10,7 @@
     "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
   },
   "title": "Visual Schedule for Kids, Printable Routine Chart Bundle, Morning Bedtime Chore Chart, 96 Picture Cards, English French Bilingual",
-  "description": "Tired of repeating \"shoes, coat, backpack\" ten times before school? Riverbank Routines turns the day into pictures your child can follow and move to All done.\n\nOne complete system, not a single chart: 30 printable pages in 4 themes, in English, French or bilingual (English + French on every card), Letter and A4.\n\nWhat's inside:\n• My day board (10 steps + All done), First / Then, Now / Next / Later, Today's plan (morning, afternoon, evening)\n• Morning, after-school and bedtime routine charts, plus a blank one for your own steps\n• Helping-at-home chart with space for your own chores\n• Toilet steps picture strip\n• Raindrop jar token boards (5 and 10 drops), 30 cut-out raindrops and \"I did it!\" badges\n• 96 picture cards in two sizes (52 mm and 38 mm): morning, school and outings, play, meals, helping at home, bedtime, feelings and special days, including \"Change of plan\"\n• Blank cards and labels\n• Calm theme: a low-stimulation set with muted colours and no background decoration\n• Fillable: type your child's name, your own routine steps and blank card labels on screen before printing. What you type stays in your own file on your own device.\n• Quick-start guide in English and French\n\nHow it works: download, print at 100% (cardstock lasts longest), cut, laminate if you like, add hook-and-loop dots, and build the day together.\n\nGood to know:\n• Digital download. Nothing is shipped.\n• For your own family or your own single classroom.\n• French uses Canadian words (déjeuner, dîner, souper, mitaines).\n• This is an organising tool for families. It is not medical, sleep, toileting or developmental advice. For health questions, talk to your child's doctor.\n• The illustrations are original Steadfold artwork, created with AI assistance and finished, checked and assembled by Steadfold.\n• Launch sale: 30% off until 30 Nov 2026. Regular price CA$14.99.\n\nQuestions? Message the shop any time.",
+  "description": "Tired of repeating \"shoes, coat, backpack\" ten times before school? Riverbank Routines turns the day into pictures your child can follow and move to All done.\n\nOne complete system, not a single chart: 30 printable pages in 4 themes, in English, French or bilingual (English + French on every card), Letter and A4.\n\nWhat's inside:\n• My day board (10 steps + All done), First / Then, Now / Next / Later, Today's plan (morning, afternoon, evening)\n• Morning, after-school and bedtime routine charts, plus a blank one for your own steps\n• Helping-at-home chart with space for your own chores\n• Toilet steps picture strip\n• Raindrop jar token boards (5 and 10 drops), 30 cut-out raindrops and \"I did it!\" badges\n• 96 picture cards in two sizes (52 mm and 38 mm): morning, school and outings, play, meals, helping at home, bedtime, feelings and special days, including \"Change of plan\"\n• Blank cards and labels\n• Calm theme: a low-stimulation set with muted colours and no background decoration\n• Fillable: type your child's name, your own routine steps and blank card labels on screen before printing. What you type stays in your own file on your own device.\n• Quick-start guide in English and French\n\nHow it works: download, print at 100% (cardstock lasts longest), cut, laminate if you like, add hook-and-loop dots, and build the day together.\n\nGood to know:\n• Digital download. Nothing is shipped.\n• For your own family or your own single classroom.\n• French uses Canadian words (déjeuner, dîner, souper, mitaines).\n• This is an organising tool for families. It is not medical, sleep, toileting or developmental advice. For health questions, talk to your child's doctor.\n• The illustrations are original Steadfold artwork, created with AI assistance and finished, checked and assembled by Steadfold.\n\nQuestions? Message the shop any time.",
   "price": {
     "CAD": 14.99,
     "USD": 10.99
@@ -84,16 +84,18 @@
     }
   ],
   "by_hand": [
-    "Etsy Shop Manager > Marketing > Sales and discounts > Run a sale: 30% off, this listing only, start today, end 30 Nov 2026, name RIVERBANKLAUNCH. Check the listing shows CA$10.49."
+    "Only if the founder decides to run RIVERBANKLAUNCH (30% off, to 30 Nov 2026): start it first, confirm the strike-through price, then add a sale line back. Never state a sale that is not running."
   ],
-  "currency_overrides": {
-    "USD": {
-      "replace": [
-        [
-          "Regular price CA$14.99.",
-          "Regular price US$10.99."
-        ]
-      ]
-    }
-  }
+  "alt_text": [
+    "Riverbank Routines visual schedule printables, image 1: cover image",
+    "Six sample pages: My day board, First/Then, bedtime routine chart, helping at home chart, raindrop token jar and picture cards; 30 pages, 96 cards, 4 themes, English, French or both",
+    "My day board with To do and All done columns, beside picture cards for wake up, get dressed, breakfast, school, snack and bath",
+    "Sheets of 96 picture cards in two sizes for morning, meals, helping at home, outings and more",
+    "The same Brush teeth card in English, in French (Brosser les dents) and bilingual",
+    "Morning routine chart in four themes: Riverbank, Meadow, Berry and the low-stimulation Calm set",
+    "Riverbank Routines visual schedule printables, image 7 (alt text pending review of the image)",
+    "Riverbank Routines visual schedule printables, image 8 (alt text pending review of the image)",
+    "Riverbank Routines visual schedule printables, image 9 (alt text pending review of the image)",
+    "Riverbank Routines visual schedule printables, image 10 (alt text pending review of the image)"
+  ]
 }

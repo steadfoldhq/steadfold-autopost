@@ -1,0 +1,30 @@
+--- a/tests/test_etsy.py
++++ b/tests/test_etsy.py
+@@ -228,9 +228,9 @@
+         self.assertEqual(len(s["photos"]), 10)
+         self.assertEqual(len(s["files"]), 5)
+         self.assertEqual(s["price"], {"USD": 16.0, "CAD": 22.0})
+-        self.assertTrue(s["description"].endswith("• Launch sale: 25% off until 30 Nov 2026. Regular price US$16."))
++        self.assertNotIn("Launch sale", s["description"])      # no sale ran (Oct 22 audit); never state one that isn't
+         self.assertEqual(real_spec("DP-RIV")["price"], {"CAD": 14.99, "USD": 10.99})   # USD added Oct 18 (shops list in USD)
+-        self.assertIn("Regular price US$10.99.", etsy.description_for(real_spec("DP-RIV"), "USD"))
++        self.assertNotIn("Launch sale", etsy.description_for(real_spec("DP-RIV"), "USD"))
+         self.assertNotIn("video", real_spec("FF-MSP"))          # the kit video shows the bundle
+         self.assertEqual(len(real_spec("FF-MSP")["photos"]), 8)
+         for sid in ("LBM1", "LBP-SET", "LBP1", "LBP2", "LBP3", "LBP4"):
+@@ -240,6 +240,15 @@
+         for sid in SPEC_IDS:
+             self.assertEqual(len(real_spec(sid)["tags"]), 13, sid)
+ 
++    def test_no_listing_claims_a_sale_or_hides_ai_use(self):
++        """Etsy Seller Policy (Oct 2026): sales must reflect real pricing, and AI use is disclosed in the
++        description. Etsy's API can't start a sale, so a spec never claims one (Oct 22 audit)."""
++        for p in sorted(etsy.all_spec_paths()):
++            d = etsy.load_spec(p)["description"]
++            with self.subTest(spec=p.name):
++                self.assertNotRegex(d, r"(?i)launch sale|\d+% off")
++                self.assertRegex(d, r"(?i)with (the help of )?AI|AI (help|assistance)|help from AI")
++
+     def test_cad_description_override(self):
+         s = real_spec("FF-HMP")
+         self.assertIn("then CA$19", etsy.description_for(s, "CAD"))

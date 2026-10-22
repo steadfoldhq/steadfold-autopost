@@ -25,6 +25,10 @@ Commands (all run inside GitHub Actions; see .github/workflows/etsy-*.yml):
       flips every WAITING spec in that batch to APPROVED with the owner's words
       (source claude/review-queue.md) and writes listings/go.json for the batch.
       Only ever run with words the owner actually said.
+  deactivate --spec ID[,ID]   take LIVE listings off sale (Etsy state "inactive"); reversible
+  reactivate --spec ID[,ID]   put a listing this tool deactivated back on sale (state "active")
+  ops                         run new entries of listings/ops.json once each (deactivate/reactivate/
+                              sync parts=description only); results in listings/ops-done.json
   store-secret --name NAME --from-file PATH    write one repo secret (GH_PAT)
   encrypt --src FILE --dest listings/files/... age-encrypt one customer file
                                                with keys/etsy-files.pub
@@ -1210,6 +1214,129 @@ def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], en
     return 1 if failed else 0
 
 
+def spec_ids(text: str) -> list[str]:
+    """'SF-AIGOV', 'SF-AIGOV,FF-FREEDOM' or 'listings/SF-AIGOV.json' -> ['SF-AIGOV', ...]; 'all' is dropped."""
+    out = []
+    for x in text.replace(",", " ").split():
+        x = x.strip()
+        if x.startswith("listings/"):
+            x = x[len("listings/"):]
+        if x.endswith(".json"):
+            x = x[:-len(".json")]
+        if x and x != "all":
+            out.append(x)
+    return out
+
+
+def cmd_set_state(ids: list[str], state: str, env: dict, session=None, gh_factory=None) -> int:
+    """deactivate (state "inactive") or reactivate (state "active") LIVE listings, named one by one.
+    Reversible: an inactive listing keeps its photos, files and URL, and Etsy charges nothing to
+    reactivate it before its 4-month period ends (Etsy Help 360000336187). Nothing is deleted.
+    reactivate only undoes a deactivate: it refuses drafts, expired or sold-out listings."""
+    if state not in ("inactive", "active"):
+        raise SetupError(f"unknown state {state!r}")
+    if not ids:
+        raise SetupError("deactivate/reactivate need explicit --spec IDs (never 'all').")
+    live = load_live()
+    shops: dict[str, ShopSession] = {}
+    rows, failed, changed = ["| ID | Result |", "|----|--------|"], False, False
+    for sid in ids:
+        rec = live.get("listings", {}).get(sid)
+        try:
+            if not rec:
+                raise EtsyError("not in listings/live.json")
+            spec = load_spec(ROOT / "listings" / f"{sid}.json")
+            if spec["shop"] not in shops:
+                shops[spec["shop"]] = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
+            ss = shops[spec["shop"]]
+            c, lid = ss.client, int(rec["listing_id"])
+            before = c.listing(lid).get("state")
+            if before == state:
+                rows.append(f"| {sid} | already {state} |")
+            else:
+                if state == "active" and before != "inactive":
+                    raise EtsyError(f"listing is '{before}', not 'inactive': reactivate only undoes a deactivate")
+                if state == "inactive" and before != "active":
+                    raise EtsyError(f"listing is '{before}', not 'active': nothing to deactivate")
+                c.update(ss.shop_id, lid, {"state": state})
+                got = c.listing(lid).get("state")
+                if got != state:
+                    raise EtsyError(f"Etsy still shows state '{got}' after the change")
+                rows.append(f"| {sid} | {before} -> {state} |")
+            if state == "inactive":
+                rec["state"] = "inactive"
+                rec.setdefault("deactivated_at", now_iso())
+            else:
+                rec.pop("state", None)
+                rec.pop("deactivated_at", None)
+            changed = True
+            print(f"::notice::{sid}: {rows[-1].split('|')[2].strip()}", flush=True)
+        except (EtsyError, SetupError) as exc:
+            failed = True
+            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
+            print(f"::error::{sid}: {redact(exc)}", flush=True)
+    if changed:
+        save_live(live)
+    summary(("## Etsy deactivate\n\n" if state == "inactive" else "## Etsy reactivate\n\n")
+            + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
+OPS_PATH = LISTINGS / "ops.json"
+OPS_DONE_PATH = LISTINGS / "ops-done.json"
+OPS_ALLOWED = {"deactivate", "reactivate", "sync"}
+OPS_SYNC_PARTS = {"description"}
+
+
+def cmd_ops(env: dict, session=None, gh_factory=None) -> int:
+    """Run the routine, reversible operations queued in listings/ops.json (pushed by an agent or a person),
+    each exactly once (ids recorded in listings/ops-done.json). Allowed: deactivate / reactivate named live
+    listings, and sync with parts "description" only. Anything else (listing, files, photos, prices,
+    deletion) is refused, so a push can never publish a new listing or swap customer files.
+    ops.json: {"ops": [{"id": "...", "action": "deactivate", "spec": "SF-AIGOV", "reason": "..."}, ...]}"""
+    if not OPS_PATH.exists():
+        print("No listings/ops.json; nothing to do.")
+        return 0
+    ops = json.loads(OPS_PATH.read_text()).get("ops", [])
+    done = json.loads(OPS_DONE_PATH.read_text()) if OPS_DONE_PATH.exists() else {"done": []}
+    done_ids = {d["id"] for d in done["done"]}
+    failed = False
+    rows = ["| Op | Action | Result |", "|----|--------|--------|"]
+    for op in ops:
+        oid, action, spec = op.get("id"), op.get("action"), op.get("spec", "")
+        if not oid or oid in done_ids:
+            continue
+        if action not in OPS_ALLOWED:
+            failed = True
+            rows.append(f"| {oid} | {action} | REFUSED: only {sorted(OPS_ALLOWED)} are allowed here |")
+            continue
+        ids = spec_ids(spec)
+        if not ids:
+            failed = True
+            rows.append(f"| {oid} | {action} | REFUSED: needs explicit spec IDs |")
+            continue
+        if action == "sync":
+            parts = {x.strip() for x in str(op.get("parts", "")).split(",") if x.strip()}
+            if not parts or not parts <= OPS_SYNC_PARTS:
+                failed = True
+                rows.append(f"| {oid} | sync | REFUSED: parts must be {sorted(OPS_SYNC_PARTS)} |")
+                continue
+            rc = cmd_sync_listing(ids, parts, [], env, session=session, gh_factory=gh_factory)
+        else:
+            rc = cmd_set_state(ids, "inactive" if action == "deactivate" else "active", env,
+                               session=session, gh_factory=gh_factory)
+        if rc == 0:
+            done["done"].append({"id": oid, "action": action, "spec": ",".join(ids), "at": now_iso()})
+            done_ids.add(oid)
+            rows.append(f"| {oid} | {action} | done |")
+        else:
+            failed = True
+            rows.append(f"| {oid} | {action} | FAILED (will retry on the next push) |")
+    OPS_DONE_PATH.write_text(json.dumps(done, indent=2, ensure_ascii=False) + "\n")
+    summary("## Etsy ops\n\n" + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
 def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     ap = argparse.ArgumentParser(description="Steadfold Etsy auto-lister")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1232,6 +1359,10 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
     s.add_argument("--spec", required=True)
     s.add_argument("--parts", default="files,description")
     s.add_argument("--photos", default="")
+    for c in ("deactivate", "reactivate"):
+        s = sub.add_parser(c)
+        s.add_argument("--spec", required=True)
+    sub.add_parser("ops")
     s = sub.add_parser("approve")
     s.add_argument("--batch", required=True)
     s.add_argument("--said", required=True)
@@ -1255,17 +1386,22 @@ def main(argv: list[str] | None = None, env: dict | None = None, **kw) -> int:
         if args.cmd == "list":
             return cmd_list(args, env, **kw)
         if args.cmd == "replace-hero":
-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            ids = spec_ids(args.spec)
             return cmd_replace_hero(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
         if args.cmd == "sync-titles":
-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            ids = spec_ids(args.spec)
             return cmd_sync_titles(ids or None, env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
         if args.cmd == "sync-listing":
-            ids = [x.strip() for x in args.spec.replace(",", " ").split() if x.strip() and x.strip() != "all"]
+            ids = spec_ids(args.spec)
             parts = {x.strip() for x in args.parts.split(",") if x.strip()}
             ranks = [int(x) for x in args.photos.replace(",", " ").split() if x.strip()]
             return cmd_sync_listing(ids, parts, ranks, env, session=kw.get("session"),
                                     gh_factory=kw.get("gh_factory"))
+        if args.cmd == "ops":
+            return cmd_ops(env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
+        if args.cmd in ("deactivate", "reactivate"):
+            return cmd_set_state(spec_ids(args.spec), "inactive" if args.cmd == "deactivate" else "active",
+                                 env, session=kw.get("session"), gh_factory=kw.get("gh_factory"))
         if args.cmd == "validate":
             return cmd_validate()
         if args.cmd == "approve":

@@ -17,9 +17,9 @@ on:
         type: string
         default: all
       mode:
-        description: 'list = publish · check = read-only · dry-run = no Etsy calls'
+        description: 'list = publish · check = read-only · dry-run = no Etsy calls · deactivate/reactivate = take named live listings off sale / back on (spec = ID[,ID])'
         type: choice
-        options: [list, check, dry-run, hero, titles, sync]
+        options: [list, check, dry-run, hero, titles, sync, deactivate, reactivate]
         default: list
       parts:
         description: 'sync only: files,description,photos'
@@ -92,6 +92,8 @@ jobs:
               dry-run) python tools/etsy.py list --spec "${SPEC:-all}" --dry-run ;;
               hero)    python tools/etsy.py replace-hero --spec "${SPEC:-all}" ;;
               titles)  python tools/etsy.py sync-titles --spec "${SPEC:-all}" ;;
+              deactivate) python tools/etsy.py deactivate --spec "$SPEC" ;;
+              reactivate) python tools/etsy.py reactivate --spec "$SPEC" ;;
               sync)    python tools/etsy.py sync-listing --spec "$SPEC" --parts "${PARTS:-files,description}" --photos "${PHOTOS:-}" ;;
               *)       python tools/etsy.py list --spec "${SPEC:-all}" 2>&1 | tee "$RUNNER_TEMP/list.out"; rc=${PIPESTATUS[0]}
                        if [ "$rc" -ne 0 ]; then tail -15 "$RUNNER_TEMP/list.out" | while IFS= read -r l; do echo "::error::$l"; done; fi

@@ -13,7 +13,7 @@
     "littlefold-no-health-words"
   ],
   "title": "Pastel Nursery Wall Art Set of 3, Moon Bunny, Rainbow Sun, Little Cloud, Gender Neutral Printable Nursery Prints, Digital Download",
-  "description": "Three gentle prints for a calm nursery: a bunny napping on the moon, a sleepy sun over a rainbow, and a little cloud with tiny charms.\n\nWhat you get: each print in 5 ratios at 300 dpi, so you can print up to:\n- 4x5 (8x10, 16x20 in)\n- 3x4 (12x16, 15x20 in)\n- 2x3 (4x6 up to 16x24 in)\n- 11x14 in\n- ISO A sizes (A5 to A2)\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
+  "description": "Three gentle prints for a calm nursery: a bunny napping on the moon, a sleepy sun over a rainbow, and a little cloud with tiny charms.\n\nWhat you get: each print in 5 ratios at 300 dpi, so you can print up to:\n- 4x5 (8x10, 16x20 in)\n- 3x4 (12x16, 15x20 in)\n- 2x3 (4x6 up to 16x24 in)\n- 11x14 in\n- ISO A sizes (A5 to A3 at 300 dpi; A2 at about 254 dpi)\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
   "price": {
     "CAD": 12.99
   },
@@ -66,5 +66,12 @@
       "size": 3687480
     }
   ],
-  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files."
+  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files.",
+  "alt_text": [
+    "Littlefold nursery print set of 3, image 1: cover image: the product at a glance",
+    "Littlefold nursery print set of 3, image 2: the three prints framed on a wall",
+    "Littlefold nursery print set of 3, image 3: lbp1 moon nap",
+    "Littlefold nursery print set of 3, image 4: lbp2 sun arch",
+    "Littlefold nursery print set of 3, image 5: lbp3 little cloud"
+  ]
 }

@@ -10,20 +10,10 @@
     "quote": "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"
   },
   "title": "2027 Calm Digital Planner, Hyperlinked PDF for GoodNotes, Notability (100 Pages)",
-  "description": "Your digital planner has 700 pages and 3,000 stickers, and you still don't know what to do this week.\nThis one keeps it small: three priorities a week on The Calm Line, a \"Not this week\" list for the rest, and a Comeback page for the weeks you miss. Every date links to its week, and a 16-tab strip gets you to any month in one tap.\n\nWHAT'S INSIDE (100 hyperlinked pages: the 99 planner pages plus a linked Home hub, Jan 1 – Dec 31, 2027)\n• 2027 Reset Kit: a look back at 2026, a theme word and vision board, three goals at most, a not-this-year list, and a habit builder with a 3-habit cap\n• 4 × 90-day plans\n• 12 month calendars + 12 monthly Calm Reset pages (a habit grid with a comebacks counter instead of streaks)\n• 53 weekly pages with The Calm Line and a 1-minute Calm Check (Light / Steady / Full, plus one suggested move)\n• No catch-up Comeback page, a \"Next 3 things\" home page, Ask AI prompt cards\n• Extras: the 2027 Calm Tracker spreadsheet (Excel + Google Sheets, 4 colour themes, Lock-In Score 0–100, a \"protect today\" habit, a comebacks counter, Ask AI prompts built from your own numbers), a reminders .ics file, 2 phone wallpapers, and a printable gift card\n\nFILES (3 downloads)\nCalm-Planner-2027-Tablet-Monday.pdf · Calm-Planner-2027-Tablet-Sunday.pdf · Calm-Planner-2027-Extras.zip (tracker, .ics, wallpapers, gift card, Quick-Start)\n\nHOW TO USE\nOpen the PDF in a PDF note app that keeps links and supports handwriting, such as GoodNotes, Notability, Xodo or Samsung Notes. Use \"Import\" or \"Open in\", not a photo import. Tap the tabs or any date to jump around. Write with a stylus or a finger.\n\nGOOD TO KNOW\n• This is a digital download. Nothing is shipped. No app is included.\n• Links are standard PDF links, and we checked every link's target in the file. We have not tested it inside every app or version, so if anything behaves oddly, email us and we'll help or refund.\n• Designed by Steadfold with AI assistance: the pages were built in code with Claude, then checked page by page. The Ask AI cards are optional prompts.\n• The listing images show the real pages, rendered from the files (a few have sample handwriting added to show the pages in use).\n• For personal use only. Questions? Message the shop any time.\n• Launch sale: 25% off until 30 Nov 2026. Regular price US$16.",
+  "description": "Your digital planner has 700 pages and 3,000 stickers, and you still don't know what to do this week.\nThis one keeps it small: three priorities a week on The Calm Line, a \"Not this week\" list for the rest, and a Comeback page for the weeks you miss. Every date links to its week, and a 16-tab strip gets you to any month in one tap.\n\nWHAT'S INSIDE (100 hyperlinked pages: the 99 planner pages plus a linked Home hub, Jan 1 – Dec 31, 2027)\n• 2027 Reset Kit: a look back at 2026, a theme word and vision board, three goals at most, a not-this-year list, and a habit builder with a 3-habit cap\n• 4 × 90-day plans\n• 12 month calendars + 12 monthly Calm Reset pages (a habit grid with a comebacks counter instead of streaks)\n• 53 weekly pages with The Calm Line and a 1-minute Calm Check (Light / Steady / Full, plus one suggested move)\n• No catch-up Comeback page, a \"Next 3 things\" home page, Ask AI prompt cards\n• Extras: the 2027 Calm Tracker spreadsheet (Excel + Google Sheets, 4 colour themes, Lock-In Score 0–100, a \"protect today\" habit, a comebacks counter, Ask AI prompts built from your own numbers), a reminders .ics file, 2 phone wallpapers, and a printable gift card\n\nFILES (3 downloads)\nCalm-Planner-2027-Tablet-Monday.pdf · Calm-Planner-2027-Tablet-Sunday.pdf · Calm-Planner-2027-Extras.zip (tracker, .ics, wallpapers, gift card, Quick-Start)\n\nHOW TO USE\nOpen the PDF in a PDF note app that keeps links and supports handwriting, such as GoodNotes, Notability, Xodo or Samsung Notes. Use \"Import\" or \"Open in\", not a photo import. Tap the tabs or any date to jump around. Write with a stylus or a finger.\n\nGOOD TO KNOW\n• This is a digital download. Nothing is shipped. No app is included.\n• Links are standard PDF links, and we checked every link's target in the file. We have not tested it inside every app or version, so if anything behaves oddly, email us and we'll help or refund.\n• Designed by Steadfold with AI assistance: the pages were built in code with Claude, then checked page by page. The Ask AI cards are optional prompts.\n• The listing images show the real pages, rendered from the files (a few have sample handwriting added to show the pages in use).\n• For personal use only. Questions? Message the shop any time.",
   "price": {
     "USD": 16.0,
     "CAD": 22.0
-  },
-  "currency_overrides": {
-    "CAD": {
-      "replace": [
-        [
-          "Regular price US$16.",
-          "Regular price CA$22."
-        ]
-      ]
-    }
   },
   "quantity": 999,
   "tags": [
@@ -81,6 +71,18 @@
     }
   ],
   "by_hand": [
-    "Add this listing to the CALMLAUNCH sale (25% off, ends 30 Nov 2026); if the sale doesn't exist yet, create it as for DP-CALM-P."
+    "Only if the founder decides to run CALMLAUNCH (25% off, to 30 Nov 2026): start it in Shop Manager > Marketing > Sales and discounts FIRST, confirm the strike-through price shows, and only then add a sale line back to the description. Never state a sale that is not running (Etsy Seller Policy: sales must reflect real pricing)."
+  ],
+  "alt_text": [
+    "2027 Calm Digital Planner (tablet), image 1: cover image: the product at a glance",
+    "2027 Calm Digital Planner (tablet), image 2: tap any tab",
+    "2027 Calm Digital Planner (tablet), image 3: what's inside the download",
+    "2027 Calm Digital Planner (tablet), image 4: reset kit",
+    "2027 Calm Digital Planner (tablet), image 5: calm check",
+    "2027 Calm Digital Planner (tablet), image 6: today page",
+    "2027 Calm Digital Planner (tablet), image 7: optional Ask AI prompt cards",
+    "2027 Calm Digital Planner (tablet), image 8: calm tracker",
+    "2027 Calm Digital Planner (tablet), image 9: monday sunday apps",
+    "2027 Calm Digital Planner (tablet), image 10: what you get in the download"
   ]
 }

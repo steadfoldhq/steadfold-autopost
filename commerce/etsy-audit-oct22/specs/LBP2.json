@@ -1,0 +1,61 @@
+{
+  "id": "LBP2",
+  "order": 11,
+  "shop": "LITTLEFOLD",
+  "status": "APPROVED",
+  "approval": {
+    "source": "claude/automation/prompt-24-launch-oct16.txt",
+    "approved_by": "Dharma",
+    "approved_at": "2026-10-16 09:48 ET (Learning Lab chat, RQ-2 / RQ-35 / RQ-3)",
+    "quote": "Holiday Money Plan, Money Planner Bundle, Money Steps Planner (alone), Littlefold Baby Line Drop 01 (all 6 Etsy IDs). Apparel stays on HOLD."
+  },
+  "content_rules": [
+    "littlefold-no-health-words"
+  ],
+  "title": "Rainbow Sun Nursery Print, Pastel Sleepy Sun and Rainbow Arch, Printable Nursery Wall Art, Gender Neutral Kids Room Decor",
+  "description": "A sleepy sun rising over a coral, pink, butter and blue arch, with a tiny bird resting on top.\n\nWhat you get: 5 ratios at 300 dpi (4x5, 3x4, 2x3, 11x14, ISO A sizes; A2 prints at about 254 dpi).\n\nThis is a digital download. No physical item is shipped. Print at home, at a local print shop or online. Colours vary a little by screen and printer. For personal use only; please don't resell or share the files.\n\nAbout the art: designed by Littlefold, a Steadfold studio. The illustrations were drawn with the help of AI (AI-written vector code), then chosen, coloured and finished by us.",
+  "price": {
+    "CAD": 5.99
+  },
+  "quantity": 999,
+  "tags": [
+    "rainbow print",
+    "sun nursery print",
+    "nursery wall art",
+    "pastel rainbow",
+    "rainbow nursery",
+    "neutral nursery",
+    "kids room decor",
+    "printable art",
+    "boho rainbow",
+    "baby room decor",
+    "sunshine nursery",
+    "rainbow baby gift",
+    "digital download"
+  ],
+  "taxonomy": {
+    "names": [
+      "Art & Collectibles > Prints > Digital Prints",
+      "Digital Prints"
+    ]
+  },
+  "photos": [
+    "listings/media/littlefold-drop01/LBP2-01-ONEGLANCE-SQ.jpg",
+    "listings/media/littlefold-drop01/prints/LBP2-sun-arch_4x5_16x20in.jpg",
+    "listings/media/littlefold-drop01/mockups/prints_set-of-3_wall.png"
+  ],
+  "files": [
+    {
+      "name": "LBP2-sun-arch.zip",
+      "enc": "listings/files/littlefold-drop01/LBP2-sun-arch.zip.age",
+      "sha256": "0c02061ad4ef1613a9f63fd04bc11ec96d295cb7f7c9b21ebd78a84ca175ec8c",
+      "size": 5572758
+    }
+  ],
+  "source_note": "Files rebuilt Oct 17 from the project's littlefold-baby build code (same art code, sizes and names) because the original Drop 01 zips were only sent as chat files.",
+  "alt_text": [
+    "Rainbow Sun nursery print, image 1: cover image: the product at a glance",
+    "Rainbow Sun nursery print, image 2: sun arch",
+    "Rainbow Sun nursery print, image 3: the three prints framed on a wall"
+  ]
+}
