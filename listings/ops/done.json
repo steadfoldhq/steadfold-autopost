@@ -1,0 +1,16 @@
+{
+  "done": [
+    {
+      "id": "2026-10-22-deactivate-sf-aigov",
+      "action": "deactivate",
+      "spec": "SF-AIGOV",
+      "at": "2026-10-22T19:50:38+00:00"
+    },
+    {
+      "id": "2026-10-22-sync-description-copy-fixes",
+      "action": "sync",
+      "spec": "DP-CALM-P,DP-CALM-T,DP-RIV,FF-HMP,FF-MPB,FF-MSP,HB-LIFEADMIN,FF-FREEDOM,HB-CREATOR-LITE",
+      "at": "2026-10-22T19:50:47+00:00"
+    }
+  ]
+}
