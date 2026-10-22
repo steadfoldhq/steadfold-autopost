@@ -182,6 +182,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--now")
     ap.add_argument("--posts", default=str(ROOT / "schedule" / "posts.json"))
     ap.add_argument("--state", default=str(ROOT / "state" / "published.json"))
+    ap.add_argument("--list-media", action="store_true",
+                    help="print the media paths the checked posts use (for a sparse CI checkout) and exit")
     a = ap.parse_args(argv)
     try:
         posts = json.loads(Path(a.posts).read_text())["posts"]
@@ -193,6 +195,20 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError, KeyError) as exc:
         print(f"queue_lint: {exc}", file=sys.stderr)
         return 2
+    if a.list_media:
+        seen = set()
+        for p in posts:
+            try:
+                t = datetime.fromisoformat(p["publish_at"])
+            except (KeyError, ValueError):
+                continue
+            if not a.all and (t.tzinfo is None or t <= now or p.get("id") in published):
+                continue
+            for rel in [p.get("video"), p.get("cover"), p.get("image"), *(p.get("images") or [])]:
+                if rel and rel not in seen:
+                    seen.add(rel)
+                    print(f"/media/{rel}")
+        return 0
     errors, warns = lint(posts, published, now, check_all=a.all)
     for e in errors:
         print(f"ERROR {e}")

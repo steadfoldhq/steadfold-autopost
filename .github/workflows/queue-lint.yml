@@ -17,10 +17,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      # The repo is several GB of media; the first run timed out checking it all out (15 min). Check out only the
+      # queue, state and tool (blobless), then add just the media files the upcoming queue uses.
       - uses: actions/checkout@v5
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /schedule/
+            /state/
+            /tools/
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
+      - name: Fetch only the media the upcoming queue uses
+        run: |
+          python3 tools/queue_lint.py --list-media > "$RUNNER_TEMP/media.txt"
+          wc -l < "$RUNNER_TEMP/media.txt"
+          git sparse-checkout add --stdin < "$RUNNER_TEMP/media.txt"
       - name: ffprobe
         run: command -v ffprobe || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Lint the upcoming queue
