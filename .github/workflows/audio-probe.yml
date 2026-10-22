@@ -1,0 +1,37 @@
+# Read-only: checks whether our tokens can browse Instagram's licensed audio library
+# (Audio API). Never posts. Tokens are never printed. Writes insights/audio-probe.json.
+name: Audio probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Probe audio library
+        env:
+          IG_TOKEN_FULLYFUNDED: ${{ secrets.IG_TOKEN_FULLYFUNDED }}
+          IG_TOKEN_LOCKEDHOUR: ${{ secrets.IG_TOKEN_LOCKEDHOUR }}
+          IG_TOKEN_HOURBACK: ${{ secrets.IG_TOKEN_HOURBACK }}
+          IG_TOKEN_LITTLEFOLD: ${{ secrets.IG_TOKEN_LITTLEFOLD }}
+          IG_USERNAME_LITTLEFOLD: ${{ vars.IG_USERNAME_LITTLEFOLD }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+        run: python tools/audio_probe.py
+      - name: Save result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898732+github-actions[bot]@users.noreply.github.com"
+          git add insights/audio-probe.json
+          git commit -m "Audio probe result" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
