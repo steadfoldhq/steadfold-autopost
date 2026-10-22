@@ -69,12 +69,21 @@ class QueueLint(unittest.TestCase):
         posts = [self.post("ff-a", caption="Payday 🇨🇦 Canada edition, for example", images=["a.jpg"]),
                  self.post("ff-b", "2026-10-25T12:00:00-04:00", caption="Pension 🇨🇦", images=["a.jpg"]),
                  self.post("lf-a", acct="littlefold", caption="Sleep tip", images=["b.jpg"]),
-                 self.post("ff-c", "2026-10-24T19:00:00-04:00", caption="Do this tonight.", images=["s.jpg"])]
+                 self.post("ff-c", "2026-10-24T19:00:00-04:00", caption="Part 2 drops tonight.", images=["s.jpg"])]
         _, w = self.run_lint(posts)
         text = "\n".join(w)
         for needle in ("banned word 'example'", "'Canada edition' label", "2 Canada-flag posts",
                        "same media media/a.jpg", "not medical advice", "promises something 'tonight'"):
             self.assertIn(needle, text)
+
+    def test_no_false_positives(self):
+        posts = [self.post("ff-d", "2026-10-24T19:00:00-04:00", caption="Do this tonight (10 minutes): log in.", images=["d.jpg"]),
+                 self.post("lf-b", acct="littlefold", caption="No RESP yet? It's not too late.", images=["e.jpg"]),
+                 self.post("lf-c", acct="littlefold", caption="Small Wins No.2: you showered today.", images=["f.jpg"])]
+        for n in "def":
+            (self.media / f"{n}.jpg").write_bytes(b"x")
+        _, w = self.run_lint(posts)
+        self.assertFalse(any("tonight" in x or "medical" in x for x in w), w)
 
     def test_daily_ceiling(self):
         posts = [self.post(f"ff-{i}", f"2026-10-24T{10 + i}:00:00-04:00", images=[f"{i}.jpg"]) for i in range(3)]

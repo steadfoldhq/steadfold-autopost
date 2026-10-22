@@ -8,8 +8,8 @@ Catches the defects this queue has actually shown, before Autopost picks a post 
          19.5 MB or more), publish_at without a UTC offset
   WARN   Reels longer than 15.0 s (studio standard), the same feed/Reel media used by two posts,
          more than one Canada-flag post per page per week (standard B19), "Canada edition" labels,
-         the banned word "example", Littlefold feed/Reel captions without the medical disclaimer,
-         daily ceilings per page (2 feed, 2 Reels, 5 Stories), captions that promise something
+         the banned word "example", Littlefold health captions without the medical disclaimer,
+         daily ceilings per page (2 feed, 2 Reels, 5 Stories), captions that point to a later post
          "tonight" when no later post exists that day on that page.
 
 Usage:  python3 tools/queue_lint.py [--all] [--strict] [--now ISO]
@@ -35,6 +35,15 @@ TORONTO = ZoneInfo("America/Toronto")
 MAX_REEL_BYTES = 19_500_000
 MAX_REEL_SECONDS = 15.05
 CEILINGS = {"feed": 2, "reel": 2, "story": 5}
+# Littlefold's disclaimer rule applies to health content, not to money/forms or "small wins" posts (Oct 22 refinement:
+# the first version flagged an RESP post and a showering post).
+HEALTH = re.compile(r"\b(sleep|nap|feed(s|ing)?|formula|breast|bottle|fever|temperature|sids|vaccin\w*|rash|colic|"
+                    r"cry(ing)?|crie[sd]|reflux|jaundice|teeth|teething|poop|diaper rash|solids|allerg\w*|choking|"
+                    r"weight|growth|milestone|postpartum|pregnan\w*|doctor|nurse|medic\w*|health)\b", re.I)
+# A "tonight" pointer promises a later post on this page ("Part 2 tonight", "drops tonight at 7"); a viewer call to
+# action ("Do this tonight") is not one.
+POINTER = re.compile(r"\b(part \d+|no\.? ?\d+|episode|reel|post|video|drops?|posting|coming|out|live|see you)\b"
+                     r"[^.\n]{0,30}\btonight\b|\btonight\b[^.\n]{0,12}\b(at \d|\d ?(pm|p\.m\.))", re.I)
 
 
 def kind(p: dict) -> str:
@@ -144,9 +153,10 @@ def lint(posts: list[dict], published: dict, now: datetime, check_all: bool = Fa
         if k != "story" and ("🇨🇦" in cap[:400] or re.search(r"canada edition", cap, re.I)):
             year, week, _ = local.isocalendar()
             canada_week[(p["account"], year, week)].append(pid)
-        if p["account"] == "littlefold" and k != "story" and "not medical advice" not in cap.lower():
+        if (p["account"] == "littlefold" and k != "story" and HEALTH.search(re.sub(r"(?i)no health (facts|claims)", "", text))
+                and "not medical advice" not in cap.lower()):
             warns.append(f"[{pid}] Littlefold caption without \"General information only, not medical advice.\"")
-        if re.search(r"\btonight\b", cap[:600], re.I) and k != "story":
+        if POINTER.search(cap[:600]) and k != "story":
             later = [x for x in later_today[(p["account"], local.date())] if x > local]
             if not later:
                 warns.append(f"[{pid}] caption promises something 'tonight' but nothing else is queued later "
