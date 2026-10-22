@@ -30,4 +30,8 @@ Series covers: "It's 3 am. You're feeding. Eyes closing." · "Inbox open all day
 
 **Gate:** peer reviewer/CD returned FIX on all four series posts; all fixes applied before shipping: LF added premature/low-birth-weight to the catch and changed step 1 to "never the sofa or armchair; safest is baby in their own crib"; LH removed an unsourced "not 30" and a claim not in the paper; FF changed "when saving was automatic" to "when savings rose with every raise", dropped "habit wealthy people swear by", added "Education only"; HB re-ran the prompt for real, quoted it exactly (shortened, labelled), and showed the reply on slide 3.
 
+**Reel gate (fresh CD):** HOLD on `lf-pan-1024am-newborn-bundle` (LF disclaimer missing) → added → SHIP; all 21 Reel cuts otherwise passed (hooks, legibility, follow line, FF education-only, LF disclaimers).
+
+**Grid check (next 9 per page, grid_preview.py vs grids-FINAL):** styles mixed, bold kept; ≥6 styles per 9 on every page. Watch-outs: the tight-cut Reel covers all share the pointing-hand serif look (3–4 per 9 on LH/FF/HB), so future Reels rotate calm text / one-word slow-pan / silhouette; FF's 9 shows the paycheque trail twice (Oct 24 noon feed + Oct 25 8:15 pan Reel, both queued earlier; left as is, <3 days out and not a rule break).
+
 **Next run:** series No. 2 for Wed Oct 28 (+ No. 3 Fri Oct 30); fill Oct 26 midday feed + morning/7 pm Reels per page; first follow numbers for the series after Oct 26.
