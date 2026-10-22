@@ -1,13 +1,49 @@
 {
- "collected_at": "2026-10-21T20:35:03+00:00",
+ "collected_at": "2026-10-22T04:35:48+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 5,
    "follows_count": 4,
-   "media_count": 26,
+   "media_count": 28,
    "posts": [
+    {
+     "media_id": "18025288307870830",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DexjjjVjQtj/",
+     "at": "2026-10-21T23:10:27+0000",
+     "first_line": "What waiting just one year costs you by 65 🇨🇦",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 35,
+      "reach": 27,
+      "saved": 1,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 3915,
+      "ig_reels_video_view_total_time": 109633
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18347489269248698",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DexU4Q3EoyT/",
+     "at": "2026-10-21T21:01:58+0000",
+     "first_line": "Your paycheque, on autopilot in 5 swipes 👉",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 7,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18131235761485511",
      "type": "CAROUSEL_ALBUM",
@@ -17,8 +53,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 2,
+      "views": 5,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1
@@ -34,13 +70,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 19,
-      "reach": 18,
+      "views": 22,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1797,
-      "ig_reels_video_view_total_time": 32350
+      "ig_reels_avg_watch_time": 1637,
+      "ig_reels_video_view_total_time": 34385
      },
      "comments": []
     },
@@ -481,8 +517,44 @@
    "username": "lockedhourhq",
    "followers_count": 3,
    "follows_count": 3,
-   "media_count": 26,
+   "media_count": 28,
    "posts": [
+    {
+     "media_id": "18636820243040895",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/Dexj2kTG9Hy/",
+     "at": "2026-10-21T23:13:01+0000",
+     "first_line": "Missed a day? Don't start over. The research is on your side.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 21,
+      "reach": 15,
+      "saved": 0,
+      "shares": 5,
+      "total_interactions": 8,
+      "ig_reels_avg_watch_time": 5680,
+      "ig_reels_video_view_total_time": 90890
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18102076757069830",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DexVBt7kk-j/",
+     "at": "2026-10-21T21:03:15+0000",
+     "first_line": "Every habit has 4 steps. Climb them with one example: reading at night instead of scrolling 👉",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1
+     },
+     "comments": []
+    },
     {
      "media_id": "18136395787628908",
      "type": "CAROUSEL_ALBUM",
@@ -492,8 +564,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 6,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1
@@ -509,13 +581,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 11,
+      "views": 18,
+      "reach": 12,
       "saved": 3,
       "shares": 8,
       "total_interactions": 20,
-      "ig_reels_avg_watch_time": 7674,
-      "ig_reels_video_view_total_time": 99774
+      "ig_reels_avg_watch_time": 7219,
+      "ig_reels_video_view_total_time": 101069
      },
      "comments": []
     },
@@ -744,8 +816,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 7,
+      "views": 17,
+      "reach": 9,
       "saved": 2,
       "shares": 4,
       "total_interactions": 16
@@ -954,8 +1026,44 @@
    "username": "hourbackhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 26,
+   "media_count": 28,
    "posts": [
+    {
+     "media_id": "18138320746630960",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DexjopKju4O/",
+     "at": "2026-10-21T23:11:06+0000",
+     "first_line": "Engineers pasted secret code into ChatGPT.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 7,
+      "reach": 6,
+      "saved": 1,
+      "shares": 5,
+      "total_interactions": 8,
+      "ig_reels_avg_watch_time": 3171,
+      "ig_reels_video_view_total_time": 22198
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18110548781605800",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DexcCMYgUBM/",
+     "at": "2026-10-21T22:04:30+0000",
+     "first_line": "10 hours to actually get AI. Hold the dots and slide 👀",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 4,
+      "reach": 1,
+      "saved": 0,
+      "shares": 3,
+      "total_interactions": 6
+     },
+     "comments": []
+    },
     {
      "media_id": "17947238580355185",
      "type": "CAROUSEL_ALBUM",
@@ -965,11 +1073,11 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 6,
+      "reach": 3,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 1
+      "shares": 5,
+      "total_interactions": 7
      },
      "comments": []
     },
@@ -982,13 +1090,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 4,
+      "views": 11,
+      "reach": 10,
       "saved": 0,
-      "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2145,
-      "ig_reels_video_view_total_time": 8582
+      "shares": 4,
+      "total_interactions": 6,
+      "ig_reels_avg_watch_time": 2490,
+      "ig_reels_video_view_total_time": 22411
      },
      "comments": []
     },
@@ -1001,13 +1109,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 41,
-      "reach": 31,
+      "views": 44,
+      "reach": 33,
       "saved": 3,
-      "shares": 11,
-      "total_interactions": 23,
-      "ig_reels_avg_watch_time": 6090,
-      "ig_reels_video_view_total_time": 200971
+      "shares": 16,
+      "total_interactions": 28,
+      "ig_reels_avg_watch_time": 5707,
+      "ig_reels_video_view_total_time": 205480
      },
      "comments": []
     },
@@ -1020,7 +1128,7 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 22,
+      "views": 24,
       "reach": 9,
       "saved": 4,
       "shares": 14,
@@ -1037,7 +1145,7 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 24,
+      "views": 25,
       "reach": 7,
       "saved": 4,
       "shares": 14,
@@ -1429,8 +1537,44 @@
    "username": "littlefoldhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 24,
+   "media_count": 26,
    "posts": [
+    {
+     "media_id": "17993170929115414",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DexjxlsCocF/",
+     "at": "2026-10-21T23:12:19+0000",
+     "first_line": "Toddler pulling you to come play? Give them 10 minutes where they lead and you follow.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 26,
+      "reach": 22,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 1944,
+      "ig_reels_video_view_total_time": 42772
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18079639964726551",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DexU9vDEkE1/",
+     "at": "2026-10-21T21:02:32+0000",
+     "first_line": "5 minutes a day that build a brain. Hold the dots and slide 👀",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3
+     },
+     "comments": []
+    },
     {
      "media_id": "17961724818231994",
      "type": "CAROUSEL_ALBUM",
@@ -1440,11 +1584,11 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 1,
+      "views": 5,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 2
+      "total_interactions": 3
      },
      "comments": []
     },
@@ -1457,13 +1601,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 21,
+      "views": 39,
+      "reach": 38,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1285,
-      "ig_reels_video_view_total_time": 26992
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 1246,
+      "ig_reels_video_view_total_time": 47371
      },
      "comments": []
     },
@@ -1476,13 +1620,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 159,
-      "reach": 133,
+      "views": 160,
+      "reach": 134,
       "saved": 4,
       "shares": 9,
-      "total_interactions": 22,
-      "ig_reels_avg_watch_time": 5823,
-      "ig_reels_video_view_total_time": 786182
+      "total_interactions": 23,
+      "ig_reels_avg_watch_time": 5764,
+      "ig_reels_video_view_total_time": 789780
      },
      "comments": []
     },
@@ -1492,14 +1636,14 @@
      "permalink": "https://www.instagram.com/p/DeuwFzuEl0_/",
      "at": "2026-10-20T21:01:51+0000",
      "first_line": "Winter car seat, fixed in 5 swipes 👉 Each swipe fixes one thing.",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
       "views": 21,
       "reach": 6,
       "saved": 4,
       "shares": 9,
-      "total_interactions": 22
+      "total_interactions": 24
      },
      "comments": []
     },
@@ -1534,8 +1678,8 @@
       "saved": 4,
       "shares": 12,
       "total_interactions": 27,
-      "ig_reels_avg_watch_time": 2996,
-      "ig_reels_video_view_total_time": 323579
+      "ig_reels_avg_watch_time": 3006,
+      "ig_reels_video_view_total_time": 327721
      },
      "comments": []
     },
@@ -1711,8 +1855,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 26,
-      "reach": 11,
+      "views": 28,
+      "reach": 12,
       "saved": 4,
       "shares": 7,
       "total_interactions": 23
@@ -1764,13 +1908,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 84,
-      "reach": 65,
+      "views": 85,
+      "reach": 66,
       "saved": 3,
       "shares": 5,
       "total_interactions": 19,
-      "ig_reels_avg_watch_time": 3475,
-      "ig_reels_video_view_total_time": 246743
+      "ig_reels_avg_watch_time": 3458,
+      "ig_reels_video_view_total_time": 248979
      },
      "comments": []
     },
