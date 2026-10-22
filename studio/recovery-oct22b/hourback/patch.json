@@ -1,0 +1,17 @@
+[
+ {
+  "id": "hb-reel-1024-fridge-dinner",
+  "action": "keep",
+  "reason": "Checked Oct 22 evening (v0.6.1 Hourback agent): Sat Oct 24 19:00 ET, not in state/published.json. Media is already the Oct 22 floor rebuild (recovery-oct22/hourback/hb-reel-1024-fridge-dinner-r.mp4): payoff on frame 0, no pointing hand, real labelled run. Frames 0.2/1.5/3.5/7/12 s viewed. Not below the floor; no replacement staged. Minor: the 3.5 s TAKE 1 frame is sparse ('6:11 pm Staring.')."
+ },
+ {
+  "id": "hb-reel-1025am-talk-dont-type",
+  "action": "keep",
+  "reason": "Sun Oct 25 08:45 ET, not published. Already the Oct 22 floor recut (-r.mp4): moving sparkle on frame 0, sourced '1 billion' (Meta, May 2025), no pointing hand. Frames viewed. Not below the floor; no replacement staged."
+ },
+ {
+  "id": "hb-reel-1025-week-card",
+  "action": "keep",
+  "reason": "Sun Oct 25 19:00 ET, not published. Oct 22 floor build (Take Two on a real run). Frames viewed. Not below the floor; no replacement staged. Minor: the 3.5 s TAKE 1 frame is mostly empty grey."
+ }
+]

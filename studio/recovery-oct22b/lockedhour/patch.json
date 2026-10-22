@@ -1,0 +1,17 @@
+[
+ {
+  "id": "lh-reel-1024-lyrics",
+  "action": "keep",
+  "reason": "Sat 24 · 19:00. Already the Oct 22 r1 rebuild (studio/recovery-oct22/lockedhour, action 'improve'), which is the interim quality floor itself: payoff by ~1.8–2.8 s, no pointing hand, transition on every cut, sourced. Media verified on disk today (H.264/AAC, 12.9–13.6 s). Not below the floor, so no replacement staged; re-rebuilding inside 48 h would add risk without a rule reason."
+ },
+ {
+  "id": "lh-reel-1025am-planning-fallacy",
+  "action": "keep",
+  "reason": "Sun 25 · 08:30 (trial). Already the Oct 22 r1 rebuild (studio/recovery-oct22/lockedhour, action 'improve'), which is the interim quality floor itself: payoff by ~1.8–2.8 s, no pointing hand, transition on every cut, sourced. Media verified on disk today (H.264/AAC, 12.9–13.6 s). Not below the floor, so no replacement staged; re-rebuilding inside 48 h would add risk without a rule reason."
+ },
+ {
+  "id": "lh-reel-1025-unpack",
+  "action": "keep",
+  "reason": "Sun 25 · 19:00. Already the Oct 22 r1 rebuild (studio/recovery-oct22/lockedhour, action 'improve'), which is the interim quality floor itself: payoff by ~1.8–2.8 s, no pointing hand, transition on every cut, sourced. Media verified on disk today (H.264/AAC, 12.9–13.6 s). Not below the floor, so no replacement staged; re-rebuilding inside 48 h would add risk without a rule reason."
+ }
+]

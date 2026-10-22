@@ -1,0 +1,36 @@
+[
+ {
+  "id": "ff-reel-1024-beneficiary",
+  "action": "improve",
+  "reason": "Still on the retired pointing-hand template (Oct 22 floor: retire the hand) with the $750 shown only as text. Re-cut with the SAME facts, hook and caption in the approved FF palette and the v0.5/v0.6 drawn-to-scale floor: frame 0 is the drawn account form with its blank BENEFICIARY line; '$750 tax' vs '$0' lands by 3.5 s over a $100,000 bar drawn to scale; Do this; 'Life changed? Change the name.'; loop. 14.8 s, H.264/AAC, -14 LUFS, same track family as the Oct 22 FF rebuilds (ff-c-confident-build, 95 bpm) with 4 quiet SFX. Caption and first comment kept verbatim (facts unchanged, ontario.ca source and maths already present); only the video, cover and alt text change.",
+  "scores_before": {
+   "S": 3,
+   "O": 3,
+   "V": 4,
+   "M": 3,
+   "K": 2
+  },
+  "scores_after": {
+   "S": 4,
+   "O": 4,
+   "V": 4,
+   "M": 4,
+   "K": 4
+  },
+  "new": {
+   "video": "recovery-oct22b/fullyfunded/ff-reel-1024-beneficiary-s15b.mp4",
+   "cover": "recovery-oct22b/fullyfunded/ff-reel-1024-beneficiary-s15b-cover.jpg",
+   "alt_text": "Edited video on a cream blueprint-grid sheet in the Fully Funded look. Frame 1: 'Your TFSA has a blank line.' in a large serif over a drawn account form, TFSA account details, with a coral BENEFICIARY line labelled 'who gets this account if you die', a blinking cursor and the note 'fill it in.' Then '$100,000, Ontario:' with 'left through the estate: $750 tax' and 'left to a named beneficiary: $0', over a $100,000 bar drawn to scale: the first $50,000 dashed as tax-free, the rest solid, and a thin coral sliver for the $750; the maths line reads ($100,000 minus $50,000) divided by $1,000 times $15 equals $750. Then 'Do this: Check the name on your TFSA and RRSP.' as the form fills in 'a name you trust'. Then 'Life changed? Change the name.' with the round stamp. It loops back to the opening line."
+  }
+ },
+ {
+  "id": "ff-pan-1025am-paycheque-trail",
+  "action": "keep",
+  "reason": "Already rebuilt Oct 22 ('Not married? No will?' drawn-to-scale Trial Reel, recovery-oct22). At the floor; no change."
+ },
+ {
+  "id": "ff-reel-1025-tfsa-withdrawal-trap",
+  "action": "keep",
+  "reason": "Already rebuilt Oct 22 (calendar drawn to scale, recovery-oct22). At the floor; no change."
+ }
+]
