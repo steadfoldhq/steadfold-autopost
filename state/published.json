@@ -4967,7 +4967,7 @@
     },
     "ff-1022-rrsp-refund": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18151626577497733",
         "18151626634497733",
@@ -4991,14 +4991,22 @@
         "ff-1022-rrsp-refund/09.jpg"
       ],
       "children_created_at": "2026-10-22T16:36:34Z",
-      "updated_at": "2026-10-22T16:37:58Z",
+      "updated_at": "2026-10-22T17:08:46Z",
       "container_id": "18151626961497733",
       "container_created_at": "2026-10-22T16:36:34Z",
       "publish_called": true,
       "publish_called_at": "2026-10-22T16:36:34Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=A8P6B6AnUf4fFeK6dbYMCab)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-22T16:36:34Z"
+      "failed_at": "2026-10-22T16:36:34Z",
+      "media_id": "18091881164199765",
+      "permalink": "https://www.instagram.com/p/DezbdLTGplj/",
+      "published_at": "2026-10-22T16:37:56+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18037408355897798",
+      "comment_error": null,
+      "commented_at": "2026-10-22T17:08:43Z"
     },
     "hb-ch-1022-1": {
       "account": "hourback",
@@ -5082,7 +5090,7 @@
     },
     "lh-1022-six-hours": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18069452645521398",
         "18069452666521398",
@@ -5108,14 +5116,75 @@
         "lh-1022-six-hours/10.jpg"
       ],
       "children_created_at": "2026-10-22T16:36:34Z",
-      "updated_at": "2026-10-22T16:40:11Z",
+      "updated_at": "2026-10-22T17:08:48Z",
       "container_id": "18069452978521398",
       "container_created_at": "2026-10-22T16:36:34Z",
       "publish_called": true,
       "publish_called_at": "2026-10-22T16:36:34Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AMmH8YX0j00fvcaLMps2VMU)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-22T16:36:34Z"
+      "failed_at": "2026-10-22T16:36:34Z",
+      "media_id": "17864315571695836",
+      "permalink": "https://www.instagram.com/p/DezbtZ2mtzs/",
+      "published_at": "2026-10-22T16:40:08+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18118828483996254",
+      "comment_error": null,
+      "commented_at": "2026-10-22T17:08:43Z"
+    },
+    "lh-ch-1022-5": {
+      "account": "lockedhour",
+      "status": "published",
+      "container_id": "18069462233521398",
+      "container_created_at": "2026-10-22T17:08:43Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-22T17:09:04Z",
+      "publish_called_at": "2026-10-22T17:08:43Z",
+      "media_id": "18104453828015765",
+      "published_at": "2026-10-22T17:08:43Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "hb-1022-unknown-callers": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18127250380799084",
+        "18127250404799084",
+        "18127250425799084",
+        "18127250458799084",
+        "18127250482799084",
+        "18127250503799084",
+        "18127250548799084",
+        "18127250587799084",
+        "18127250608799084",
+        "18127250629799084"
+      ],
+      "children_media": [
+        "hb-1022-unknown-callers/01.jpg",
+        "hb-1022-unknown-callers/02.jpg",
+        "hb-1022-unknown-callers/03.jpg",
+        "hb-1022-unknown-callers/04.jpg",
+        "hb-1022-unknown-callers/05.jpg",
+        "hb-1022-unknown-callers/06.jpg",
+        "hb-1022-unknown-callers/07.jpg",
+        "hb-1022-unknown-callers/08.jpg",
+        "hb-1022-unknown-callers/09.jpg",
+        "hb-1022-unknown-callers/10.jpg"
+      ],
+      "children_created_at": "2026-10-22T17:08:43Z",
+      "updated_at": "2026-10-22T17:09:51Z",
+      "container_id": "18127250650799084",
+      "container_created_at": "2026-10-22T17:08:43Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-22T17:08:43Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AkK_2TeNgpaHihqv3q-M5mB)",
+      "attempts": 1,
+      "failed_at": "2026-10-22T17:08:43Z"
     }
   }
 }
