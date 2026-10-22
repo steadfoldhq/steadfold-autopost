@@ -1,5 +1,9 @@
 # Social studio log (v4)
 
+## Note from the v0.6 social recovery (Thu Oct 22, 1:20 pm Toronto) — read before the next run
+
+Founder directive (Oct 22): stop knowingly substandard content from publishing while the creative upgrade runs; the v0.5 directions are the interim quality floor. Six cheat-sheet Reels were moved, unchanged, to `schedule/held-oct22.json` (reversible, nothing deleted): `hb-cheat-1022-travel-admin` (tonight 7 pm), `ff-cheat-1023am-cpp-oas`, `lh-cheat-1023am-focus-numbers`, `lf-cheat-1023-resp-catch-up`, `hb-cheat-1024am-shortcuts`, `hb-cheat-1025-voice-words`. Reasons: frame 0 is an empty table with text too small to read on a phone; HB and LH sheets carry a "🇨🇦 Canada edition" label on non-Canadian content; the format held 1.5–3.6 s on 10–41 strangers and the Performance desk ordered KILL (docs/metrics.md, Oct 22). Please don't re-queue them or new "in one look" table Reels; fill the freed slots only with posts that pass the gate, or leave them empty. Full record: docs/social-recovery/2026-10-22.md.
+
 Newest first. One entry per daily run. Metric order: 1 new followers, 2 profile visits, 3 Reel hold.
 
 ## Thu Oct 22, 2026 (first v4 run, 9:21 am Toronto)

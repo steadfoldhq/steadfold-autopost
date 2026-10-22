@@ -1,0 +1,69 @@
+{
+  "note": "HELD Oct 22 2026 by the v0.6 social recovery (founder directive: don't let known substandard content publish). Cheat-sheet Reels: frame 0 is an empty table with phone-unreadable text; 'Canada edition' label on non-Canadian content (HB/LH); the format held 1.5-3.6 s on 10-41 strangers (docs/metrics.md, Oct 22) and the Performance desk ordered KILL. Reversible: move an entry back to posts.json with a future publish_at to restore it. Nothing deleted.",
+  "held_at": "2026-10-22T17:14:14.716826+00:00",
+  "posts": [
+    {
+      "id": "hb-cheat-1022-travel-admin",
+      "account": "hourback",
+      "publish_at": "2026-10-22T19:00:00-04:00",
+      "caption": "Will AI take your job? Here are the big numbers, by 2030, worldwide.\n\nTHE NUMBERS (World Economic Forum, Future of Jobs Report 2025, a survey of more than 1,000 employers):\n• 170 million new jobs created\n• 92 million jobs displaced\n• Net: about +78 million jobs\n• 39% of the key skills in a job are expected to change\n• Fastest-growing skill: AI and big data\n\nWHAT IT MEANS: the bigger risk isn't a robot taking your job. It's the job changing around you while your skills stay the same.\n\nTHE CATCH: these are employer forecasts, not guarantees, and they vary a lot by industry and country.\n\nDo this: pick one AI skill your job needs and practise it 15 minutes a day this week.\n\nSend this to the friend who's job hunting.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #futureofwork #careers #artificialintelligence #hourback",
+      "first_comment": "Source: World Economic Forum, The Future of Jobs Report 2025 (January 2025): 170 million jobs created and 92 million displaced by 2030 (net +78 million); employers expect 39% of workers' key skills to change by 2030; AI and big data top the list of fastest-growing skills. Forecasts, not guarantees.",
+      "alt_text": "Cheat-sheet Reel in the Hourback look. Title: Will AI take your job? Table, by 2030 worldwide (WEF): new jobs created 170M · jobs displaced 92M · net change +78M · skills in a job that change 39% · fastest-growing skill AI & data. Do this: pick one AI skill your job needs, practise it 15 min a day.",
+      "video": "reels/hb-cheat-1022-travel-admin-s15.mp4",
+      "cover": "reels/hb-cheat-1022-travel-admin-s15-cover.jpg"
+    },
+    {
+      "id": "ff-cheat-1023am-cpp-oas",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-23T08:15:00-04:00",
+      "caption": "What your government pension pays, 2026 🇨🇦\n\nAverage new CPP at 65: about $858 a month\nMost you can get at 65: about $1,508 a month\nStart CPP at 60: up to 36% less, for life\nWait until 70: up to 42% more, for life\nOAS at 65 to 74: up to about $763 a month\n\nWhy it matters: together, that's well short of most people's bills. Your TFSA and RRSP fill the gap.\n\nDo this: log in to My Service Canada Account and check your CPP estimate. It takes 5 minutes.\n\nSend this to the friend counting on CPP.\n\n#CPP #OAS #retirementcanada #personalfinancecanada #moneyfoundations",
+      "first_comment": "Did you guess higher? Sources (canada.ca): CPP retirement pension at 65, average for new beneficiaries $858.34/month and 2026 maximum $1,507.65/month; when to start: 0.6% less per month before 65 (up to 36% at 60), 0.7% more per month after 65 (up to 42% at 70); OAS maximum, October to December 2026: $762.50/month (ages 65 to 74), $838.75 (75+).",
+      "alt_text": "Canada-edition cheat sheet in the fullyfunded editorial look. Title: What CPP and OAS pay you in 2026. Average new CPP at 65: $858 · Max CPP at 65: $1,508 · Start CPP at 60: up to 36% less · Wait to 70: up to 42% more · OAS, ages 65 to 74: up to $763. Do this: Check your CPP estimate in My Service Canada Account.",
+      "video": "reels/ff-cheat-1023am-cpp-oas.mp4",
+      "cover": "reels/ff-cheat-1023am-cpp-oas-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "lh-cheat-1023am-focus-numbers",
+      "account": "lockedhour",
+      "publish_at": "2026-10-23T08:30:00-04:00",
+      "caption": "Focus science, in 5 numbers\n\nA new habit takes about 66 days to feel automatic.\nSwitching tasks can eat up to 40% of your productive time.\nA walk lifted creative ideas by about 60%.\nPeople who wrote down when and where they'd exercise: 91% did it.\nStrong coffee 6 hours before bed cut sleep by more than an hour.\n\nDo this: this week, try one row. Start with a 10-minute walk before your hardest task.\n\nSave this for a slow Monday.\n\n#focus #habits #productivity #deepwork #studytips",
+      "first_comment": "Which one will you try? Sources: Lally et al. (2010), European Journal of Social Psychology: median 66 days to automaticity. American Psychological Association (2006), Multitasking: switching costs, up to 40% of productive time. Oppezzo & Schwartz (2014): creative output up about 60% when walking. Milne, Orbell & Sheeran (2002), British Journal of Health Psychology: 91% of the implementation-intention group exercised. Drake et al. (2013), Journal of Clinical Sleep Medicine: 400 mg caffeine 6 hours before bed reduced total sleep by more than 1 hour.",
+      "alt_text": "Canada-edition cheat sheet in the lockedhour editorial look. Title: Focus science in 5 numbers. New habit feels automatic: 66 days · Switching tasks can eat: 40% of time · A walk lifts new ideas: +60% · Wrote down when and where: 91% did it · Coffee 6 h before bed: −1 h sleep. Do this: Try one row this week. Start with the walk.",
+      "video": "reels/lh-cheat-1023am-focus-numbers.mp4",
+      "cover": "reels/lh-cheat-1023am-focus-numbers-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "lf-cheat-1023-resp-catch-up",
+      "account": "littlefold",
+      "publish_at": "2026-10-23T19:00:00-04:00",
+      "caption": "Late on the RESP? Here's the grant you can still get 🇨🇦\n\nStart at birth: up to $7,200\nStart at age 5: up to $7,200\nStart at age 10: up to $7,200\nStart at age 12: up to $6,000\nStart at age 14: up to $4,000\n\nWhy: grant room builds up every year from birth, even with no RESP. Later, the government can pay up to $1,000 a year (20% of $5,000) until the full $7,200 is used, as long as you start in time.\n\nDo this: opening late? Ask your bank about catch-up grants, and bring your child's SIN.\n\nSend this to a parent who never opened one.\n\nFollow for one calm thing a night, from bump to toddler.\n\n#RESP #canadianparents #savingforkids #CESG #babymoney",
+      "first_comment": "How old was your kid when you opened it? Source: canada.ca, Canada Education Savings Grant: 20% on the first $2,500 a year (up to $500), up to $1,000 a year with unused grant room, $7,200 lifetime, paid until the end of the calendar year the child turns 17. Children aged 16 or 17 qualify only if at least $2,000 was contributed before the end of the year they turned 15 (or $100 a year in any 4 earlier years). Maths: $500 of room a year from birth, max $1,000 of grant a year, starting at each age.",
+      "alt_text": "Canada-edition cheat sheet in the littlefold editorial look. Title: Late on the RESP? Grant you can still get. a newborn: $7,200 · 5 years old: $7,200 · 10 years old: $7,200 · 12 years old: $6,000 · 14 years old: $4,000. Do this: Opening late? Ask your bank about catch-up grants.",
+      "video": "reels/lf-cheat-1023-resp-catch-up.mp4",
+      "cover": "reels/lf-cheat-1023-resp-catch-up-cover.jpg"
+    },
+    {
+      "id": "hb-cheat-1024am-shortcuts",
+      "account": "hourback",
+      "publish_at": "2026-10-24T08:45:00-04:00",
+      "caption": "Nodding along in AI meetings? 6 AI words, decoded 📖\n\nModel: the trained AI itself (GPT, Gemini, Claude and Llama are model families).\nPrompt: what you type or say to it.\nToken: a word-piece. AI reads and writes in tokens; a short English word is often one token, a long one can be several.\nTraining: how it learned, by studying huge amounts of text and learning which words tend to come next.\nHallucination: a confident mistake, an answer that sounds right and isn't.\nAgent: AI that takes actions, like clicking through a website for you, not just answering.\n\nWhy it matters: when you can explain these in one sentence, AI stops being magic and starts being a tool you can judge.\n\nDo this: this week, use one of these words at work and explain it in one sentence.\n\nSend this to the friend nodding along in meetings.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #learnai #chatgpt #aiglossary #futureofwork #hourback",
+      "first_comment": "Which word was new to you? Sources: OpenAI Help Center, 'What are tokens and how to count them?' (tokens are pieces of words); OpenAI, 'Why language models hallucinate' (Sept 2025); Google, Machine Learning Glossary (model, training). Definitions simplified for a general audience.",
+      "alt_text": "Canada-edition cheat sheet in the Hourback editorial look. Title: AI words, decoded. Model: the trained AI · Prompt: what you ask it · Token: a word-piece · Training: how it learned · Hallucination: a confident mistake · Agent: AI that takes actions. Do this: This week, use one of these words at work, and explain it in one sentence.",
+      "video": "reels/hb-cheat-1024am-shortcuts-s15.mp4",
+      "cover": "reels/hb-cheat-1024am-shortcuts-s15-cover.jpg",
+      "trial": "auto"
+    },
+    {
+      "id": "hb-cheat-1025-voice-words",
+      "account": "hourback",
+      "publish_at": "2026-10-25T19:00:00-04:00",
+      "caption": "That AI button in your apps? Here's where AI already lives 📱 Part 2 of 2.\n\nWhatsApp, Instagram, Facebook, Messenger: Meta AI (Meta says about a billion people use it every month).\niPhone 15 Pro and newer: Apple Intelligence (Writing Tools, summaries, Clean Up in Photos).\nAndroid and Gmail: Gemini.\nWindows and the Edge browser: Copilot.\nGoogle Search: AI Overviews at the top of results.\nChrome: Gemini in Chrome.\n\nWhy it matters: you don't have to go looking for AI. It's already in the apps you open every day, so learning it on purpose beats using it by accident.\n\nDo this: pick one of these, use it on a real task, then check its work (fluent isn't true).\n\nFeatures vary by device, plan and country.\n\nSend this to the friend who says \"I don't use AI\".\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #metaai #appleintelligence #gemini #copilot #hourback",
+      "first_comment": "Which one do you use without noticing? Sources: CNBC (May 28, 2025), Meta AI 1 billion monthly active users; Apple, Apple Intelligence (iPhone 15 Pro and later); Google, Gemini app, Gemini in Gmail, AI Overviews in Search, Gemini in Chrome (Sept 2025); Microsoft, Copilot in Windows and Edge.",
+      "alt_text": "Canada-edition cheat sheet in the Hourback editorial look. Title: Where AI already lives in your apps. WhatsApp, Instagram: Meta AI · iPhone 15 Pro and up: Apple Intelligence · Android, Gmail: Gemini · Windows, Edge: Copilot · Google Search: AI Overviews · Chrome: Gemini in Chrome. Do this: Pick one of these. Use it on a real task, then check its work.",
+      "video": "reels/hb-cheat-1025-voice-words-s15.mp4",
+      "cover": "reels/hb-cheat-1025-voice-words-s15-cover.jpg"
+    }
+  ]
+}
