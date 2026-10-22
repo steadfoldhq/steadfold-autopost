@@ -768,7 +768,7 @@ class Ops(Deactivate):
     def setUp(self):
         super().setUp()
         self._orig = (etsy.OPS_PATH, etsy.OPS_DONE_PATH)
-        etsy.OPS_PATH = etsy.LIVE_PATH.parent / "ops.json"
+        etsy.OPS_PATH = etsy.LIVE_PATH.parent / "ops-queue.json"
         etsy.OPS_DONE_PATH = etsy.LIVE_PATH.parent / "ops-done.json"
 
     def tearDown(self):

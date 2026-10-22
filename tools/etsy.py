@@ -27,8 +27,8 @@ Commands (all run inside GitHub Actions; see .github/workflows/etsy-*.yml):
       Only ever run with words the owner actually said.
   deactivate --spec ID[,ID]   take LIVE listings off sale (Etsy state "inactive"); reversible
   reactivate --spec ID[,ID]   put a listing this tool deactivated back on sale (state "active")
-  ops                         run new entries of listings/ops.json once each (deactivate/reactivate/
-                              sync parts=description only); results in listings/ops-done.json
+  ops                         run new entries of listings/ops/queue.json once each (deactivate/reactivate/
+                              sync parts=description only); results in listings/ops/done.json
   store-secret --name NAME --from-file PATH    write one repo secret (GH_PAT)
   encrypt --src FILE --dest listings/files/... age-encrypt one customer file
                                                with keys/etsy-files.pub
@@ -1282,20 +1282,20 @@ def cmd_set_state(ids: list[str], state: str, env: dict, session=None, gh_factor
     return 1 if failed else 0
 
 
-OPS_PATH = LISTINGS / "ops.json"
-OPS_DONE_PATH = LISTINGS / "ops-done.json"
+OPS_PATH = LISTINGS / "ops" / "queue.json"
+OPS_DONE_PATH = LISTINGS / "ops" / "done.json"
 OPS_ALLOWED = {"deactivate", "reactivate", "sync"}
 OPS_SYNC_PARTS = {"description"}
 
 
 def cmd_ops(env: dict, session=None, gh_factory=None) -> int:
-    """Run the routine, reversible operations queued in listings/ops.json (pushed by an agent or a person),
-    each exactly once (ids recorded in listings/ops-done.json). Allowed: deactivate / reactivate named live
+    """Run the routine, reversible operations queued in listings/ops/queue.json (pushed by an agent or a person),
+    each exactly once (ids recorded in listings/ops/done.json). Allowed: deactivate / reactivate named live
     listings, and sync with parts "description" only. Anything else (listing, files, photos, prices,
     deletion) is refused, so a push can never publish a new listing or swap customer files.
     ops.json: {"ops": [{"id": "...", "action": "deactivate", "spec": "SF-AIGOV", "reason": "..."}, ...]}"""
     if not OPS_PATH.exists():
-        print("No listings/ops.json; nothing to do.")
+        print("No listings/ops/queue.json; nothing to do.")
         return 0
     ops = json.loads(OPS_PATH.read_text()).get("ops", [])
     done = json.loads(OPS_DONE_PATH.read_text()) if OPS_DONE_PATH.exists() else {"done": []}

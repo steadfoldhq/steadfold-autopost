@@ -1,5 +1,5 @@
 {
-  "_about": "Routine, reversible Etsy fixes run once each by .github/workflows/etsy-ops.yml on push (tools/etsy.py ops). Allowed: deactivate / reactivate named live listings; sync with parts \"description\" only. Results: listings/ops-done.json. Audit: commerce/etsy-audit-oct22/.",
+  "_about": "Routine, reversible Etsy fixes run once each by .github/workflows/etsy-ops.yml on push (tools/etsy.py ops). Allowed: deactivate / reactivate named live listings; sync with parts \"description\" only. Results: listings/ops/done.json. Audit: commerce/etsy-audit-oct22/.",
   "ops": [
     {
       "id": "2026-10-22-deactivate-sf-aigov",

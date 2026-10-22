@@ -1,13 +1,13 @@
-# Routine, reversible Etsy fixes queued in listings/ops.json (by an agent or a person), run on push.
+# Routine, reversible Etsy fixes queued in listings/ops/queue.json (by an agent or a person), run on push.
 # Only deactivate / reactivate named live listings and sync with parts "description" are accepted
 # (tools/etsy.py cmd_ops refuses anything else: no new listings, file swaps, photos, prices or deletion).
-# Each op id runs once; results go to listings/ops-done.json (+ listings/live.json state).
+# Each op id runs once; results go to listings/ops/done.json (+ listings/live.json state).
 name: Etsy ops
 
 on:
   push:
     branches: [main]
-    paths: ['listings/ops.json']
+    paths: ['listings/ops/queue.json']
   workflow_dispatch:
 
 permissions:
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add listings/ops-done.json listings/live.json 2>/dev/null || true
+          git add listings/ops/done.json listings/live.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "etsy: ops results"
           for attempt in 1 2 3 4 5; do
