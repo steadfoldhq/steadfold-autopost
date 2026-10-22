@@ -87,3 +87,14 @@ The patches are not applied in the repo.
 ## Privacy
 - The founder's town appears only as "[founder's town]" in these files. `grep -ri` for the town name over this folder returns nothing.
 - No emails, addresses or payment details are written here.
+
+## Applied through the live integration (Oct 22 2026, after the audit)
+| Step | Evidence | Result |
+|---|---|---|
+| Patches 0001–0003 + 20 corrected specs committed (99d44b3) | first ops run 39842342323 **failed at the test step** (ops file matched the spec glob) | no Etsy call was made |
+| Fix: ops queue moved to `listings/ops/` + `etsy-ops.yml` (7349cce) | run 39842404424 succeeded; bot commit 6afea30 "etsy: ops results" | Etsy API reported `SF-AIGOV: active -> inactive` and 9 description syncs (DP-CALM-P, DP-CALM-T, DP-RIV, FF-HMP, FF-MPB, FF-MSP, HB-LIFEADMIN, FF-FREEDOM, HB-CREATOR-LITE) |
+| API read-back | `listings/live.json`: SF-AIGOV state `inactive`, deactivated_at 2026-10-22T19:50:38Z | confirmed |
+| Public page, ~20:00 UTC | still showed Add to cart / old "Launch sale" text | Etsy cache, re-checked below |
+| Public page re-check, ~20:45 UTC | SF-AIGOV: "Sorry, this item is unavailable." · DP-CALM-P: no sale language, AI disclosure present · HB-LIFEADMIN: no sale language, AI disclosure present, available · FF-HMP: no "sale"/"% off", AI disclosure present | **confirmed publicly** |
+
+Still open (founder decisions, not changed by Claude): FF-HMP / FF-MPB / FF-MSP / FF-CF-CA keep "Launch price until Mon Nov 30, then CA$…" — a dated future price promise (material pricing → founder); the shop profile name/location/About (RQ-57); the Canadian Freelancer v7.3 file repair (needs a files sync, which the ops route deliberately does not allow); the Hospital Bag listing without a spec; LBP prints held. SF-AIGOV can be restored with an ops `reactivate` entry once its BLOCKER defects are fixed.
