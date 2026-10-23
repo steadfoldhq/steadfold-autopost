@@ -23,6 +23,37 @@ Not available: follows per Reel (the API returns "not supported" — `follow_err
 5. **Follower counts are noise right now (strong).** All four pages rose Oct 16–18 and lost exactly 3 the same night Oct 21→22 — the same few accounts, not audience behaviour. Don't read follower deltas until organic follows exist.
 6. **Distribution itself is not the binding constraint yet (moderate).** Reels do get stranger reach; the problem is what strangers do next. Paid reach would only buy more 3-second exits.
 
+## Growth check — Oct 22 2026, evening (founder reported "about +2 followers")
+
+The insights snapshots (`insights/history.jsonl`, taken 4× a day) confirm **+2 net today**:
+
+- **Fully Funded 5 → 6** (between 12:44 and 16:39 UTC). Profile views that day rose 5 → 7 → 8.
+- **Littlefold 4 → 5** (between 16:39 and 20:35 UTC).
+- Locked Hour 3 and Hourback 4 were unchanged.
+
+**Context:** every page is still below its Oct 20 count (FF 8, LH 6, HB 7, LF 7). All four lost followers in the same window on Oct 21 (12:44 → 16:37 UTC). In that same Oct 21 window, saves and shares also jumped on all four pages at once. That pattern looks like the same few accounts acting together, not audience behaviour.
+
+**Attribution: none possible.** The API returns `follows` only for feed posts, and those show 0 on every post. Reels return "not supported". No post gained profile visits in either window.
+
+What was active in each window:
+
+- **FF window:** the "What waiting one year costs you by 65" Reel was still gaining reach (+5, then +13). The RRSP refund carousel was posted at 16:37.
+- **LF window:** the "Give them 10 minutes" toddler-play Reel (+13 reach) and the "Sleep and screens by age" Reel (+100 reach in its first 3 hours).
+
+Those posts are candidates only. Treat today's +2 as noise until at least 5 more net follows arrive under the 5-Reel rule above.
+
+**Strongest emerging approaches (average watch time; small samples, directional only):**
+
+| Page | Reel | Avg watch | Reach |
+|---|---|---|---|
+| LF | "Give them 10 minutes" | 6.9 s | 71 |
+| LH | "Missed a day? Don't start over" | 5.0 s | 19 |
+| HB | "Engineers pasted secret code" | 3.7 s | 7 |
+| FF | "Waiting one year costs you" | 3.5 s | 77 |
+
+- **Weakest:** table / "in one look" Reels. FF TFSA vs RRSP vs FHSA held 0.96 s; LF "Sleep and screens by age" held 3.1 s on 101 reach.
+- **Direction this supports:** a rule or a concrete number with reassurance, shown as a picture, beats table formats. The v0.6.1 concepts (creative/v061 in the Steadfold repo) are built on that.
+
 ## Experiments (pre-registered; evaluate after ≥ 5 Reels with reach ≥ 40 per page, else "inconclusive")
 
 | ID | Page(s) | Hypothesis | Change | Success | Failure | Status |
@@ -37,5 +68,6 @@ Not available: follows per Reel (the API returns "not supported" — `follow_err
 
 | Date | Content id(s) | Page | Format | Hook / direction | Production effort | Reach / watch / saves / shares / follows / profile visits | Hypothesis | Change | Result vs baseline | Lesson | Next action |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-22 | lf-reel-1025am-crying-peak, lf-1025-follow-crying, lf-ch-1025-4, lf-reel-1025-step-away; ff-reel-1024-beneficiary | LF FF | Reel/feed/story | LF: dark burgundy → sunlit "washing-line morning" (founder colour direction); FF: pointing hand → drawn form + bar to scale | ~3 agent-hours | no data yet | OPT-IG-03 (+ LF emotion) | Rebuilt (change 3, docs/social-recovery/2026-10-22.md) | pending | — | Performance desk: compare LF Sun Reels with the burgundy-era LF Reels at 24 h/72 h |
 | 2026-10-22 | 6 cheat-sheet Reels | FF LH HB LF | Reel | "X, in one look" tables | — | 1.5–3.6 s hold on 10–41 reach (prior sheets) | Table openers fail | Held (schedule/held-oct22.json) | n/a | Don't open on an empty table | Studio: no new table Reels |
 | 2026-10-22 | 25 queued items | all | mixed | Interim floor rebuilds | ~4 agent-hours | no data yet | OPT-IG-01/03 | Rebuilt / re-captioned (docs/social-recovery/2026-10-22.md) | pending | — | Performance desk reads them at 24 h and 72 h |
