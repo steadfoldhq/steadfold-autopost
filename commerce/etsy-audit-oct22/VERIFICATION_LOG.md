@@ -98,3 +98,10 @@ The patches are not applied in the repo.
 | Public page re-check, ~20:45 UTC | SF-AIGOV: "Sorry, this item is unavailable." · DP-CALM-P: no sale language, AI disclosure present · HB-LIFEADMIN: no sale language, AI disclosure present, available · FF-HMP: no "sale"/"% off", AI disclosure present | **confirmed publicly** |
 
 Still open (founder decisions, not changed by Claude): FF-HMP / FF-MPB / FF-MSP / FF-CF-CA keep "Launch price until Mon Nov 30, then CA$…" — a dated future price promise (material pricing → founder); the shop profile name/location/About (RQ-57); the Canadian Freelancer v7.3 file repair (needs a files sync, which the ops route deliberately does not allow); the Hospital Bag listing without a spec; LBP prints held. SF-AIGOV can be restored with an ops `reactivate` entry once its BLOCKER defects are fixed.
+
+## Photo fixes through the gated ops route (Oct 23 2026, ~00:08 Toronto)
+| Step | Evidence | Result |
+|---|---|---|
+| Code + images + spec edits (5668229), then queue (d22646b) | ops run; bot commit 7c3e74b "etsy: ops results" | done.json: HB-SUB r2, HB-LIFEADMIN r4, DP-CALM-P r5, DP-CALM-T r5, FF-MPB hero. Each row is recorded only after the read-back passed: new listing_image_id at the rank, image count unchanged |
+| Public page check, HB-SUB (~01:40) | image 2 is now id 8774743547, newer than its neighbours (8751426903, 8749168269) | consistent with the swap. The visual content can't be read through the page fetch, so open the listing to confirm by eye |
+| Undo | original images kept in `listings/media/…`; point `photos[]` back and queue the same op with the original's sha256 | — |

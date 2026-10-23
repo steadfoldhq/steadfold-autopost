@@ -1,0 +1,12 @@
+[
+  {
+    "code": "state_predates_schedule",
+    "key": "lh-pan-1021am-follow-the-line",
+    "reason": "Oct 21 2026 incident: the Reel never went out; its identical caption matched the Oct 18 carousel. Reviewed in steadfold docs/v062/PUBLISH_LEDGER_REPORT.md; Autopost recovery fixed Oct 22. History is left as-is."
+  },
+  {
+    "code": "duplicate_media_id",
+    "key": "17907130110595501",
+    "reason": "Same Oct 21 incident: state links lh-pan-1021am-follow-the-line to the carousel already recorded for lh-1018-follow-the-line."
+  }
+]

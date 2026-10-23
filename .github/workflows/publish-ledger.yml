@@ -1,0 +1,62 @@
+#
+# Daily Publish Ledger: reconciles the queue (schedule/posts.json) against the publisher's state
+# (state/published.json) and the platform media list the Insights job collected (insights/latest.json), and runs
+# the pre-flight checks on upcoming posts. READ-ONLY: contents: read, no secrets, no API calls, never commits.
+# Writes a job summary. The run goes red only on HIGH findings nobody has acknowledged (a red run emails the
+# owner through GitHub's failed-workflow notification). Medium/low findings show in the summary only.
+name: Publish ledger
+
+on:
+  schedule:
+    - cron: '37 13 * * *'   # daily, 13:37 UTC (~9:37 am Toronto), after the 12:07 UTC Insights run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-ledger
+  cancel-in-progress: true
+
+jobs:
+  ledger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # The repo holds several GB of media. Check out only the JSON files and the tool (blobless). The media
+      # check needs file NAMES only, which come from the git tree (no media blobs are downloaded).
+      - uses: actions/checkout@v5
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /schedule/posts.json
+            /state/published.json
+            /insights/latest.json
+            /tools/publish_ledger.py
+            /tools/publish_ledger_acks.json
+            /tests/test_publish_ledger.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Self-test the ledger (synthetic fixtures + read-only run on copies of this checkout)
+        run: python3 -m unittest tests.test_publish_ledger -v
+      - name: Media index from the git tree
+        run: git ls-tree -r --name-only HEAD media/ > "$RUNNER_TEMP/media-index.txt" && wc -l < "$RUNNER_TEMP/media-index.txt"
+      - name: Publish ledger
+        # --grace 180: a post counts as "due but not published" 3 h after its slot. Autopost runs every 15 min but
+        # GitHub cron runs late (measured on the real files: median 15 min, p90 35 min, max 456 min after the slot).
+        run: |
+          python3 tools/publish_ledger.py --repo . \
+            --media-index "$RUNNER_TEMP/media-index.txt" \
+            --ack tools/publish_ledger_acks.json \
+            --grace 180 \
+            --out "$RUNNER_TEMP/publish-ledger"
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-ledger-report
+          path: ${{ runner.temp }}/publish-ledger/
+          retention-days: 30
+          if-no-files-found: ignore
