@@ -6086,6 +6086,35 @@
       "comment_id": "18347921560248546",
       "comment_error": null,
       "commented_at": "2026-10-23T21:28:12Z"
+    },
+    "hb-1023-follow-frontier": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18127532170799084",
+        "18127532191799084",
+        "18127532212799084",
+        "18127532236799084",
+        "18127532257799084",
+        "18127532281799084"
+      ],
+      "children_media": [
+        "hb-1023-follow-frontier/01.jpg",
+        "hb-1023-follow-frontier/02.jpg",
+        "hb-1023-follow-frontier/03.jpg",
+        "hb-1023-follow-frontier/04.jpg",
+        "hb-1023-follow-frontier/05.jpg",
+        "hb-1023-follow-frontier/06.jpg"
+      ],
+      "children_created_at": "2026-10-23T21:59:53Z",
+      "updated_at": "2026-10-23T22:00:35Z",
+      "container_id": "18127532299799084",
+      "container_created_at": "2026-10-23T21:59:53Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-23T21:59:53Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AZpJUN8HlvhUltYVDFm3ClI)",
+      "attempts": 1,
+      "failed_at": "2026-10-23T21:59:53Z"
     }
   }
 }
