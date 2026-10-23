@@ -1,5 +1,5 @@
 {
-  "_about": "Routine, reversible Etsy fixes run once each by .github/workflows/etsy-ops.yml on push (tools/etsy.py ops). Allowed: deactivate / reactivate named live listings; sync with parts \"description\" only. Results: listings/ops/done.json. Audit: commerce/etsy-audit-oct22/.",
+  "_about": "Routine, reversible Etsy fixes run once each by .github/workflows/etsy-ops.yml on push (tools/etsy.py ops). Allowed: deactivate / reactivate named live listings; sync with parts \"description\" and/or \"photos\" (gated by rank + sha256, read back before/after); \"hero\" (same gate). Results: listings/ops/done.json. Audit: commerce/etsy-audit-oct22/.",
   "ops": [
     {
       "id": "2026-10-22-deactivate-sf-aigov",
@@ -13,6 +13,67 @@
       "spec": "DP-CALM-P,DP-CALM-T,DP-RIV,FF-HMP,FF-MPB,FF-MSP,HB-LIFEADMIN,FF-FREEDOM,HB-CREATOR-LITE",
       "parts": "description",
       "reason": "Remove 'Launch sale' claims for sales that are not running (Etsy Seller Policy), add the AI-use disclosure Etsy's Creativity Standards require, and align Life Admin / Freedom copy with what the files do. Descriptions only: no prices, files or photos change. Previous text is in git history."
+    },
+    {
+      "id": "2026-10-23-photo-hb-sub-02",
+      "action": "sync",
+      "spec": "HB-SUB",
+      "parts": "photos",
+      "photos": [
+        2
+      ],
+      "sha256": {
+        "2": "2764787aa574945219ab68650cd095a78fd5de815e6f9f2563bb0343872164d3"
+      },
+      "reason": "Audit MINOR: image 2 callout covered the chart title and two values. Undo: point photos[1] back at HB-SUB-02-one-yearly-bill.jpg (kept) and queue the same op with its sha256."
+    },
+    {
+      "id": "2026-10-23-photo-hb-lifeadmin-04",
+      "action": "sync",
+      "spec": "HB-LIFEADMIN",
+      "parts": "photos",
+      "photos": [
+        4
+      ],
+      "sha256": {
+        "4": "2a3f3208d62d1ba4c9f92fa176e9f9add797c24a9820d3f85d459c1ba4957750"
+      },
+      "reason": "Audit MAJOR/MINOR: image 4 subtitle claimed it catches any ID number or password (it flags 5+ digits or the word 'password', as the synced copy says) and its zoom showed date rows, not the flagged row. Original kept for undo."
+    },
+    {
+      "id": "2026-10-23-photo-dp-calm-p-05",
+      "action": "sync",
+      "spec": "DP-CALM-P",
+      "parts": "photos",
+      "photos": [
+        5
+      ],
+      "sha256": {
+        "5": "e8d03a407fadfa20d55dd000c8460013144ef44c616e9a591f7cf9f594af73d1"
+      },
+      "reason": "Brand rule 12b: image 5 tag said 'This example'; now 'Sample week'. Original kept for undo."
+    },
+    {
+      "id": "2026-10-23-photo-dp-calm-t-05",
+      "action": "sync",
+      "spec": "DP-CALM-T",
+      "parts": "photos",
+      "photos": [
+        5
+      ],
+      "sha256": {
+        "5": "98c94657cd53c2534a62cd713f837e046ad9e0e0ae838df78bf9919f90debc47"
+      },
+      "reason": "Brand rule 12b: image 5 tag said 'This example'; now 'Sample week'. Original kept for undo."
+    },
+    {
+      "id": "2026-10-23-hero-ff-mpb",
+      "action": "hero",
+      "spec": "FF-MPB",
+      "sha256": {
+        "1": "4e82cad29e5ae394bb2dfdd5a8e7445718fdb0441acb7fa17355f844dea2e349"
+      },
+      "reason": "Thumbnail said 'paycheck'; the product line uses 'paycheque'. Original kept for undo."
     }
   ]
 }
