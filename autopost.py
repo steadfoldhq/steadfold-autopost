@@ -314,7 +314,7 @@ class IGClient:
 
     def recent_media(self, ig_user_id: str, limit: int = 25) -> list[dict]:
         body = self._request("GET", f"{ig_user_id}/media",
-                             params={"fields": "id,caption,permalink,timestamp",
+                             params={"fields": "id,caption,permalink,timestamp,media_type,media_product_type",
                                      "limit": str(limit)})
         return list(body.get("data", []))
 
@@ -521,6 +521,24 @@ def video_base_url(env: dict) -> str | None:
     return media_base_url(env)
 
 
+def media_kind_matches(post: dict, media: dict) -> bool:
+    """True when Instagram's reported kind fits the queued post. Unknown kind -> True (old behaviour)."""
+    product = str(media.get("media_product_type") or "").upper()
+    mtype = str(media.get("media_type") or "").upper()
+    if not product and not mtype:
+        return True
+    if post.get("video"):
+        return product == "REELS" or (not product and mtype == "VIDEO")
+    if product == "REELS":
+        return False
+    n = len(post.get("images") or [])
+    if mtype == "CAROUSEL_ALBUM":
+        return n > 1
+    if mtype in ("IMAGE", "VIDEO"):
+        return n == 1
+    return True
+
+
 def normalize_caption(text: str | None) -> str:
     return re.sub(r"\s+", " ", (text or "")).strip()
 
@@ -594,14 +612,31 @@ class Runner:
 
     def find_existing(self, client: IGClient, ig_user_id: str, post: dict) -> dict | None:
         """Look for the post among the account's latest media (matched on caption).
-        This protects against double-posting if our state was lost."""
+        This protects against double-posting if our state was lost.
+
+        Oct 22 2026 fix (Publish Ledger finding): two different queue entries can share a caption
+        (a carousel and the Reel made from it). On Oct 21 the Reel matched the older carousel and was
+        recorded as published without ever going out. A candidate now also has to (a) be the same kind
+        of media as the post (Reel vs carousel vs single image) when Instagram reports the kind, and
+        (b) not already be recorded in our state for a different post id."""
         if ig_user_id not in self._recent:
             self._recent[ig_user_id] = client.recent_media(ig_user_id)
         want = normalize_caption(post["caption"])
+        claimed = {str(e.get("media_id")): k for k, e in self.state.data["posts"].items()
+                   if e.get("media_id") and k != post["id"]}
         for m in self._recent[ig_user_id]:
             have = normalize_caption(m.get("caption"))
-            if have and (have == want or (len(want) > 80 and have[:300] == want[:300])):
-                return m
+            if not (have and (have == want or (len(want) > 80 and have[:300] == want[:300]))):
+                continue
+            if str(m.get("id")) in claimed:
+                log(f"  note: {m.get('permalink')} has the same caption but is already recorded "
+                    f"as [{claimed[str(m.get('id'))]}]; not treating it as this post")
+                continue
+            if not media_kind_matches(post, m):
+                log(f"  note: {m.get('permalink')} has the same caption but is a "
+                    f"{m.get('media_product_type') or m.get('media_type')}; not treating it as this post")
+                continue
+            return m
         return None
 
     # -- main loop -----------------------------------------------------------------------

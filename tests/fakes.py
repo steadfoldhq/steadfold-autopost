@@ -179,9 +179,12 @@ class FakeGraph:
             if cont["kind"] == "story":   # Stories never show in /media
                 self.stories.setdefault(user_id, []).append(mid)
                 return FakeResponse(200, {"id": mid})
+            kind = {"reel": ("VIDEO", "REELS"), "carousel": ("CAROUSEL_ALBUM", "FEED"),
+                    "image": ("IMAGE", "FEED")}.get(cont["kind"], (None, None))
             self.media.setdefault(user_id, []).insert(0, {
                 "id": mid, "caption": cont.get("caption"), "timestamp": "2026-10-15T16:00:00+0000",
-                "permalink": f"https://www.instagram.com/p/{mid}/"})
+                "permalink": f"https://www.instagram.com/p/{mid}/",
+                "media_type": kind[0], "media_product_type": kind[1]})
             return FakeResponse(200, {"id": mid})
 
         if c.method == "GET" and parts == [user_id, "media"]:

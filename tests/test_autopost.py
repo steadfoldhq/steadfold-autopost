@@ -273,6 +273,34 @@ class Idempotency(Base):
         self.assertEqual(st["status"], "published")
         self.assertTrue(st["recovered"])
 
+    def test_same_caption_reel_after_carousel_is_published_not_recovered(self):
+        """Oct 21 incident: a Reel shared its caption with an earlier carousel; the double-post check
+        matched the carousel and the Reel never went out. The Reel must now be published."""
+        caro = post("lh-1018-line", at="2026-10-15T12:00:00-04:00")
+        reel = {"id": "lh-reel-1021-line", "account": "fullyfunded", "publish_at": "2026-10-15T12:01:00-04:00",
+                "caption": caro["caption"], "video": "reels/lh-line.mp4", "cover": "reels/lh-line-cover.jpg"}
+        self.write_posts([caro, reel])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)      # one post per account per run: the carousel
+        self.assertEqual(self.run_main(g, now=NOW + timedelta(minutes=15)), 0, self.output)
+        st = self.state()
+        self.assertEqual(st["lh-reel-1021-line"]["status"], "published")
+        self.assertFalse(st["lh-reel-1021-line"].get("recovered"))
+        self.assertNotEqual(st["lh-reel-1021-line"]["media_id"], st["lh-1018-line"]["media_id"])
+        self.assertEqual(len(g.publishes()), 2)
+
+    def test_lost_state_still_recovers_when_kind_matches(self):
+        reel = {"id": "r-lost", "account": "fullyfunded", "publish_at": "2026-10-15T12:00:00-04:00",
+                "caption": "Reel caption long enough\n\n#tag", "video": "reels/r-lost.mp4"}
+        self.write_posts([reel])
+        g = graph()
+        self.assertEqual(self.run_main(g), 0, self.output)
+        self.state_file.unlink()
+        g.calls.clear()
+        self.assertEqual(self.run_main(g, now=NOW + timedelta(minutes=15)), 0, self.output)
+        self.assertEqual(g.publishes(), [])
+        self.assertTrue(self.state()["r-lost"]["recovered"])
+
     def test_crash_after_publish_call_is_recovered(self):
         """State says publish was called but no media id was saved (crash)."""
         self.write_posts([post()])
