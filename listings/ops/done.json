@@ -11,6 +11,51 @@
       "action": "sync",
       "spec": "DP-CALM-P,DP-CALM-T,DP-RIV,FF-HMP,FF-MPB,FF-MSP,HB-LIFEADMIN,FF-FREEDOM,HB-CREATOR-LITE",
       "at": "2026-10-22T19:50:47+00:00"
+    },
+    {
+      "id": "2026-10-23-photo-hb-sub-02",
+      "action": "sync",
+      "spec": "HB-SUB",
+      "photos": [
+        2
+      ],
+      "at": "2026-10-23T04:08:10+00:00"
+    },
+    {
+      "id": "2026-10-23-photo-hb-lifeadmin-04",
+      "action": "sync",
+      "spec": "HB-LIFEADMIN",
+      "photos": [
+        4
+      ],
+      "at": "2026-10-23T04:08:12+00:00"
+    },
+    {
+      "id": "2026-10-23-photo-dp-calm-p-05",
+      "action": "sync",
+      "spec": "DP-CALM-P",
+      "photos": [
+        5
+      ],
+      "at": "2026-10-23T04:08:14+00:00"
+    },
+    {
+      "id": "2026-10-23-photo-dp-calm-t-05",
+      "action": "sync",
+      "spec": "DP-CALM-T",
+      "photos": [
+        5
+      ],
+      "at": "2026-10-23T04:08:17+00:00"
+    },
+    {
+      "id": "2026-10-23-hero-ff-mpb",
+      "action": "hero",
+      "spec": "FF-MPB",
+      "photos": [
+        1
+      ],
+      "at": "2026-10-23T04:08:19+00:00"
     }
   ]
 }
