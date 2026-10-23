@@ -59,6 +59,11 @@ TIGHT = {
 }
 
 
+# Hook object per Reel (the pointing hand is retired, north-star "Rejected"): emoji -> halftone object via ED.EMOJI_OBJ
+HOOK_EMO = {"hb-reel-1023am-photo-search": "📞", "hb-reel-1023-duplicates": "💬", "lh-reel-1023-caffeine": "🥱",
+            "ff-reel-1024am-sick-pay-gap": "⏳", "lh-reel-1024am-floss-after": "⏰"}
+
+
 def tight_spec(rid):
     s = T.spec_for(rid)
     sc = s["scenes"]
@@ -79,6 +84,8 @@ def tight_spec(rid):
     do = dict(sc[do_i], **do_o); do.pop("drop", None)
     for x in (hook,):
         x.pop("drop", None)
+    if rid in HOOK_EMO:
+        hook["emo"] = HOOK_EMO[rid]
     return dict(s, id=rid + "-s15", fmt="tight", scenes=[hook, pay, do])
 
 
