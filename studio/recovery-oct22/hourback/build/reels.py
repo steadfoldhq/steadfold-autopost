@@ -132,8 +132,8 @@ def week():
           T(card(ans, w=900, pad=34), 7.93, 11.3, "drop", 0.4, "left:90px;top:760px", base="rotate(-1deg)") +
           T(hand("sunday, sorted.", 74), 10.75, 11.3, "pop", 0.25, "left:90px;top:1560px"))
     s.append(scene(F["plum"]["bg"], 6.0, 11.3, "wipeD", t2, d=0.25))
-    chk = card(f'<div style="font:700 30px Inter;color:#8E89A3;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px">the check caught one</div>'
-               + serif("“before Tue” ≠ *Tue.*", 92, F["plum"], width=800), w=900, pad=34)
+    chk = card(f'<div style="font:700 30px Inter;color:#8E89A3;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px">then check it. ours slipped:</div>'
+               + serif("It read “before Tue” / as *“on Tue.”*", 80, F["plum"], width=820), w=900, pad=34)
     do = (T('<div class="hand" style="font-size:110px;color:%s">Do this:</div>' % ACC, 11.3, 13.9, "slam", 0.2, "left:90px;top:320px") +
           T(card(serif("Paste the week's / messages. Ask for / *one line a day.*", 96, F["plum"], width=820), w=900, pad=36),
             11.42, 13.9, "pop", 0.3, "left:90px;top:490px") +

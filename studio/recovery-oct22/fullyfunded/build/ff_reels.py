@@ -119,30 +119,19 @@ def wills():
         bg(),
         words("*In Ontario:*", "c", 520, t=0.0, gap=0.1, cls="H", style="font-size:150px"),
         svg("".join([
-            txt(160, 900, "MARRIED", 40, COB, "start", 700),
+            txt(160, 900, "MARRIED SPOUSE", 40, COB, "start", 700),
             path("M160,940 L920,940 L920,1040 L160,1040 Z", COB, 6, 0.2, 0.4, fill="rgba(43,63,224,.14)"),
             dim(160, 920, 1090, COB, 0.45),
-            txt(540, 1150, "FIRST $350,000", 44, COB, weight=700, t=0.6),
-            txt(160, 1250, "COMMON-LAW", 40, "#E04E28", "start", 700, t=0.9),
+            txt(540, 1150, "GETS THE FIRST $350,000", 44, COB, weight=700, t=0.6),
+            txt(160, 1250, "COMMON-LAW PARTNER", 40, "#E04E28", "start", 700, t=0.9),
             path("M160,1280 L172,1280 L172,1380 L160,1380 Z", CORAL, 6, 1.0, 0.2),
-            txt(205, 1365, "$0", 96, "#E04E28", "start", 700, t=1.1),
+            txt(205, 1365, "gets $0", 96, "#E04E28", "start", 700, t=1.1),
         ])),
     ]), tin="whipL", cam="right")
-    r.scene(2, "".join([
-        bg("sheetc"),
-        words("The fix: / *one will.*", "c", 430, t=0.0, gap=0.1, cls="H", style="font-size:150px"),
-        svg("".join([
-            path("M330,800 L690,800 L750,860 L750,1290 L330,1290 Z", COB, 7, 0.1, 0.4, fill="#FFFFFF"),
-            path("M690,800 L690,860 L750,860", COB, 6, 0.3, 0.2),
-            path("M380,900 L640,900 M380,960 L700,960 M380,1020 L680,1020 M380,1080 L600,1080", "rgba(43,63,224,.45)", 10, 0.35, 0.4),
-            path("M380,1210 Q430,1150 470,1205 T560,1200 T650,1195", CORAL, 8, 0.6, 0.5),
-            path("M380,1235 L700,1235", COB, 3, 0.5, 0.2),
-        ])),
-    ]), tin="slam", cam="push")
     r.scene(3, "".join([
         bg(),
         el('<span class="save" style="font-size:84px">do this:</span>', "c", 400, a="pop", t=0.0, r=-3),
-        words("Book a wills call / *this week.*", "c", 520, t=0.1, gap=0.09, cls="H", style="font-size:108px"),
+        words("Call a wills lawyer / *this week.*", "c", 520, t=0.1, gap=0.09, cls="H", style="font-size:108px"),
         stamp(455, 1080, 170, t=0.6),
     ]), tin="iris", focus=(540, 700), color=COB, color2=SOFT, cam="rise")
     r.loop(1.5, tin="zoom")
@@ -189,24 +178,13 @@ def trap():
     cells = "".join(path(f"M{MX(m):.1f},{y - 120} L{MX(m):.1f},{y - 10}", CORAL, 3, 0.3 + 0.08 * (m - 6), 0.1) for m in range(7, 13))
     r.scene(4, "".join([
         bg("sheetc"),
-        words("Over by $5,000? / *$50 a month* tax.", "c", 380, t=0.0, gap=0.09, cls="H", style="font-size:104px"),
+        words("Took money out? / It only goes back / in tax-free / *next January 1.*", "c", 360, t=0.0, gap=0.09, cls="H", style="font-size:96px"),
         svg(ruler(y, None, ()) + hatch + cells + dim(MX(6), MX(13), y - 170, CORAL, 0.6)),
-        el('<span class="num" style="font-size:130px;color:#E04E28" data-a="count" data-t="0.6" data-d="1.0" data-from="50" data-to="350" '
-           'data-pre="$">$350</span>', "c", 820, a="pop", t=0.55),
     ]), tin="whipL", cam="left")
-    r.scene(3, "".join([
-        bg("sheetc"),
-        words("Room returns / *January 1.*", "c", 420, t=0.0, gap=0.09, cls="H", style="font-size:120px"),
-        svg(ruler(y, None, ("JAN",)) + "".join([
-            path(f"M{MX(6) + 32},{y - 60} Q{(MX(6) + MX(13)) / 2},{y - 330} {MX(13)},{y - 60}", COB, 7, 0.3, 0.6, dash="16 12"),
-            path(f"M{MX(13) - 26},{y - 82} L{MX(13)},{y - 56} L{MX(13) + 8},{y - 92}", COB, 7, 0.85, 0.12),
-            f'<circle cx="{MX(13)}" cy="{y}" r="22" fill="{CORAL}" data-a="pop" data-t="0.9" data-d="0.3"/>',
-        ])),
-    ]), tin="push", cam="right")
     r.scene(2, "".join([
         bg("sheetc"),
         el('<span class="save" style="font-size:84px">do this:</span>', "c", 400, a="pop", t=0.0, r=-3),
-        words("Check / *CRA My Account* / first.", "c", 500, t=0.1, gap=0.09, cls="H", style="font-size:100px"),
+        words("Wait for / *January 1.*", "c", 500, t=0.1, gap=0.09, cls="H", style="font-size:104px"),
         stamp(455, 1080, 170, t=0.5),
     ]), tin="iris", focus=(540, 700), color=COB, color2=SOFT, cam="rise")
     r.loop(1.5, tin="zoom")

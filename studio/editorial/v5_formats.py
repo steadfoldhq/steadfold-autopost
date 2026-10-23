@@ -121,7 +121,7 @@ fmt("lf-1022-newborn-bundle-trail", LF, "2026-10-22T11:30",
 
 # ------------------------------------------------------------------ Fully Funded · scenic travelling carousel (Oct 24 12:00)
 fmt("ff-1024-paycheque-trail", FF, "2026-10-24T12:00",
-    dict(kind="trail", field="lite", do_field="cob", obj="piggy", cta="follow your paycheque →",
+    dict(kind="trail", field="lite", do_field="cob", obj="phone", cta="follow your paycheque →",
          palette=dict(sky1="#F7F1E6", sky2="#CFD8F8", sun="#FFC6B2", h1="#E4E9FB", h2="#C9D3F7", h3="#A9B8F3", path="#E04E28"),
          beats=[dict(text="Payday. / Where should / *the money go first?*", size=100),
                 dict(label="stop 1", sign="🛟", text="*One month* of bills / in savings. / Your safety net."),

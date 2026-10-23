@@ -1,5 +1,36 @@
 # Social studio log (v4)
 
+## Fri Oct 23, 2026 (daily run, 9:17 am Toronto)
+
+**Followers (7 days, Oct 16 → Oct 23 08:41 ET read):** Fully Funded 2 → **7**, Locked Hour 2 → **4**, Hourback 2 → **5**, Littlefold 1 → **6** (22 total; peak 28 on Oct 21). Of the +6 since yesterday, 4 landed inside the Performance desk's burst #4 window, so treat them as unattributed.
+
+**Profile views (day_profile_views, 08:41 ET):** FF 10 · LH 2 · HB 3 · LF 7 (yesterday's last read: FF 13, LH 5, HB 7, LF 12).
+
+**Follows / profile visits per carousel (7 days):** follows **1 in total**, the first ever from a feed post: LF "Baby finally fell asleep. Now where? Find your spot" (follow-the-line carousel, reach 5, 1 follow). Profile visits: FF 11 across 6 carousels (best "The rich often borrow…" 4, "Hold the dots… grow" 2, "compounding" 2), LH 1, HB 1, LF 1. Every other carousel: 0 / 0.
+
+**Reach / hold (7 days):** Reel median reach FF 44 · LH 26.5 · HB 18 · LF 105; feed median 8.5 · 4.5 · 6.5 · 7. Reel median hold FF 3.9 s · LH 3.9 s · HB 5.5 s · LF 3.4 s. Clean sends and saves since Oct 19: 0 on every post (desk, burst-cleaned). Best structure so far: LF "Toddler pulling you to come play?" 5.6 s / 40% on 102 (felt question + one rule with a number, ≤ 15 s).
+
+**3 lessons, applied today**
+1. The words are the bottleneck, not the template. A fresh stranger read 48 pieces' on-screen text (2 batches): 19 came back CONFUSING (unlabelled numbers, "room", "$750 tax" without saying when, metaphors never said plainly). → Fixed 15, cut 4 (held), and every new Reel was gated before render.
+2. The only follow came from an interactive "find your spot" carousel; visits come from bold-claim covers. → Kept the Mon series covers bold, gave every new Reel a named send target (desk test 3) and a page-specific follow line.
+3. Felt question + one rule with a number holds. → All new Reels use it, payoff at 2.5–3.2 s, ≤ 15 s. But the CD gate's verdict on the tight template is blunt: "it reads as one template recoloured, not four brands"; payoff and Do frames are bare cards. The two illustrated LF Reels and the FF wills blueprint were the only ones rated SHIP/STRONG. → Only 5 of 7 builds ship; next builds go to the illustrated / diagram systems, not more tight cards.
+
+**Shipped:** see `docs/social-recovery/2026-10-23.md` (rollback record). 5 new Reels (LF tonight 7 pm coat-off, LF Sat 8 am teething, HB Sat 8:45 am WhatsApp voice transcripts *without* the trial flag = desk test 4, FF Mon 8:15 rule of 72, LH Mon 8:30 when-and-where); 5 queued Reels rewritten; 6 carousels re-lettered; retired pointing hand / piggy removed from 18 feed posts and 9 Stories; 4 carousels + 4 Stories held.
+
+**Hooks chosen (fresh picker, 3 options each):** "How long until $10K is $20K?" · "Monday plans gone by noon?" · "3-minute voice note, mid-meeting?" (picker's merge of two options). Kept from the existing drafts: "first cold morning? Coat off. Then buckle." · "sore gums tonight? Cold cloth. Gentle rub." Rewritten after the gate: "Your TFSA, after you die?" (was "Never named a TFSA beneficiary?").
+
+**Styles used (new):** sunshine washing-line illustrated story ×2 (LF), tight kinetic editorial ×3 (FF hourglass, LH alarm clock, HB phone); FF wills = blueprint diagram (rebuilt). No pointing hand, no piggy.
+
+**Peer + CD gate (fresh agents, on rendered frames):** coat-off SHIP/STRONG; wills STRONG → FIX "gets $0" (done); beneficiary FIX "$750 probate" (done); teething FIX merge the two "skip" beats (done, 11.7 s); rule of 72 FIX Do names the app (done); when-where FIX more specific (done: "At 9, at my desk, I'll open it."); voice FIX phone object + long-press step (done); room temperature FIX (object unrelated, no source chip) → **cut**; Google Lens WEAK (known tip, no demo) → **cut**. Not fixed (engine-wide, flagged for the founder's strategy review): payoff/Do frames in the tight template are bare cards; FF and HB soft fields look alike; the LF teething "gentle rub" drawing has two fingers.
+
+**Clarity gate:** batch 1 (29 pieces) 11 CONFUSING; batch 2 (19 pieces, rewrites + unchecked queue) 8 CONFUSING. Fixed: R1 pinch test, R4/S2 rule of 72, R8/S3 new-dad payoff, R9/S4 beneficiary (twice), R12 wills labels, R15/S6 TFSA trap (twice), R18 week card, C2 share-eta, C4 TFSA room, C11/S10 AI levels (twice), S15 3 am Club, S17 Rich Habits, S18 Day 8. Cut (held): C6 HB 7 rules, C7 FF cost of waiting, S13 LH Monday handle, S14 HB task length. Not gated this run: Story chains and anything < 24 h out except the new Reels.
+
+**Desk orders:** 1 LF 7 pm tonight filled (new Reel rather than moving Sunday's); LF Sat 8 am and HB Sat 8:45 am filled (teething, voice transcripts); LH follow-the-line NOT re-queued (below the interim floor; holding it would break `test_publish_ledger`, so it stays and the ledger keeps flagging it — needs the automation desk to update that test or the ledger). 2 toddler structure: all 5 new Reels. 3 send trigger: on all 5 new Reels + the rebuilt LF/FF Reels. 4 no-trial test: HB Sat 8:45 (voice transcripts). 5 fewer long carousels: held 3 of the 8–9 slide ones.
+
+**Known gaps:** HB has no feed post on Sun Oct 25 (both were cut); Mon Oct 26 LF and HB have no morning Reel (their builds were cut or moved to Sat); Story hand-off frames and recovery-built Story frames still show the retired hand; series No. 2 (Wed Oct 28) and No. 3 (Fri Oct 30) are not built yet.
+
+**Next run:** build series No. 2 for Wed Oct 28, 5 pm on all four pages (One Word is No. 3); fill Tue Oct 27 Reels; read the first 24 h numbers of tonight's coat-off Reel and the HB no-trial test.
+
 ## Note from the v0.6 social recovery (Thu Oct 22, 1:20 pm Toronto) — read before the next run
 
 Founder directive (Oct 22): stop knowingly substandard content from publishing while the creative upgrade runs; the v0.5 directions are the interim quality floor. Six cheat-sheet Reels were moved, unchanged, to `schedule/held-oct22.json` (reversible, nothing deleted): `hb-cheat-1022-travel-admin` (tonight 7 pm), `ff-cheat-1023am-cpp-oas`, `lh-cheat-1023am-focus-numbers`, `lf-cheat-1023-resp-catch-up`, `hb-cheat-1024am-shortcuts`, `hb-cheat-1025-voice-words`. Reasons: frame 0 is an empty table with text too small to read on a phone; HB and LH sheets carry a "🇨🇦 Canada edition" label on non-Canadian content; the format held 1.5–3.6 s on 10–41 strangers and the Performance desk ordered KILL (docs/metrics.md, Oct 22). Please don't re-queue them or new "in one look" table Reels; fill the freed slots only with posts that pass the gate, or leave them empty. Full record: docs/social-recovery/2026-10-22.md.

@@ -56,8 +56,8 @@ C.place = place
 
 COVER = dict(lay="pills", f="coral", kicker="rich habits, decoded · no. 1", text="Paid Friday. / *Broke by* / *Wednesday?*", obj="week", at="br",
              save="mon · wed · fri")
-SLIDES = [dict(f="lite", text="Pay *yourself* / first.", sub="move it the day it lands"),
-          dict(f="cob", text="Saving rate / *3.5% → 13.6%*", sub="in one study, as it rose with every raise",
+SLIDES = [dict(f="lite", text="Pay *yourself* / first.", sub="do this: move savings out the day pay lands"),
+          dict(f="cob", text="Saving rate / *3.5% → 13.6%*", sub="in one study, when savings went up with each raise",
                src="Thaler &amp; Benartzi, 2004")]
 
 

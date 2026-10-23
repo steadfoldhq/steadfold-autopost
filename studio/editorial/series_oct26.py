@@ -36,7 +36,7 @@ def ep(pid, brand, at, cover, slides, caption, comment):
 ep("lf-3amclub-01", LF, "2026-10-26T17:00:00-04:00",
    dict(lay="pills", f="berry", kicker="3 am club · no. 1", text="It's 3 am. / You're feeding. / *Eyes closing.*", obj="clock", at="br",
         save="night tips: mon · wed · fri"),
-   [dict(f="cream", text="Never the / *sofa.* Never / the *armchair.*", sub="if you might nod off, move first")],
+   [dict(f="cream", text="Never the / *sofa.* Never / the *armchair.*", sub="sleepy? put baby in their crib, on their back")],
    ("It's 3 am. You're feeding. Your eyes keep closing.\n\n"
     "3 am Club No. 1: where you feed matters most on the nights you're running on empty.\n\n"
     "THE RULE: falling asleep with your baby on a sofa or armchair is one of the riskiest places to doze off together. "
@@ -115,7 +115,7 @@ ep("hb-day8-ask-me-first", HB, "2026-10-26T17:45:00-04:00",
    dict(lay="pills", f="orng", kicker="ai, for real · day 8", text="AI's answer / felt *generic* / *again?*", obj="chat", at="bl",
         save="mon · wed · fri"),
    [dict(f="indi", text="Before you answer, / *ask me* / *3 questions.*", sub="add this line to any request"),
-    dict(f="yel", text="What it / *asked me:*", items=["Out, or at home?", "Any allergies or diets?", "Does $150 cover it all?"], sub="real reply, shortened")],
+    dict(f="yel", text="Birthday dinner, / 6 people, $150. / *It asked me:*", items=["Out, or at home?", "Any allergies or diets?", "Does $150 cover it all?"], sub="real reply, shortened")],
    ("AI's answer felt generic again? Add one line: \"Before you answer, ask me 3 questions.\"\n\n"
     "AI, for real · Day 8. One real test of what AI can do, with the output shown.\n\n"
     "WHY IT WORKS: a chatbot fills every gap in your request with the most average guess. Asking it to question you first "

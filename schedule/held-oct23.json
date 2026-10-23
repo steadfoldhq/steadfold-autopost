@@ -1,0 +1,114 @@
+{
+  "_about": "Held by the Social studio on Oct 23 2026 (clarity gate). Reversible: move an entry back to posts.json.",
+  "posts": [
+    {
+      "id": "ff-1025-hold-cost-of-waiting",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-25T17:00:00-04:00",
+      "caption": "“I'll start next year.” Waiting from 25 to 27 costs about $212,200 at 60. Hold the dots and slide 👀\n\n$300 a month until 60, growing 10% a year:\n• Start at 25: about $1,139,000\n• Start at 27: about $926,800\n• Start at 29: about $752,900\n• Start at 31: about $610,500\n• Start at 33: about $493,700\n• Start at 35: about $398,100\n\nWaiting from 25 to 27 skips $7,200 of deposits, and costs about $212,200 at 60. Those first dollars have the most years to grow, so they're the most valuable dollars you'll ever invest.\n\nStarted later? You haven't lost; you just need a bigger monthly amount. The second-best time to start is today.\n\nDo this: start this payday, even at $50 a month. You can raise it later.\n\nSend this to your \"I'll start next year\" friend.\n\nNot guaranteed. Returns vary. Education, not advice.\n\n#compoundinterest #investing #startearly #tfsa #personalfinancecanada",
+      "first_comment": "What age did you start? Maths: $300 at the end of each month until 60, 10% a year compounded monthly (about the S&P 500's long-run average), no fees or taxes. Ideas from The Psychology of Money (Housel) and The Wealthy Barber (Chilton).",
+      "alt_text": "Cover (Instead of… Say… reframe): “I'll start next year.”. Fully Funded 8-slide carousel. Slide 1: '$300 a month to 60. Watch what each 2-year wait costs.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'hold the dots and slide'. Slide 2: Start at 25: $1,139,000. the full jar, at 60. $300 a month from 25 to 60, growing 10% a year.. Slide 3: Start at 27: $926,800. waiting cost $212,200. Those 2 years were $7,200 of deposits. They were worth $212,200 at 60.. Slide 4: Start at 29: $752,900. waiting cost $386,100. The earliest dollars grow the longest. They're the most valuable ones.. Slide 5: Start at 31: $610,500. waiting cost $528,500. 6 years late: 46% of the jar, gone. Same $300 a month.. Slide 6: Start at 33: $493,700. waiting cost $645,300. Only 43% of the jar left. You'd need $692 a month to catch up.. Slide 7: Start at 35: $398,100. waiting cost $740,900. About a third of the jar. Only the start date changed.. Slide 8: Do this: Start this payday, even at $50. You can raise it later. You can't get the years back..",
+      "images": [
+        "ff-1025-hold-cost-of-waiting/01.jpg",
+        "ff-1025-hold-cost-of-waiting/02.jpg",
+        "ff-1025-hold-cost-of-waiting/03.jpg",
+        "ff-1025-hold-cost-of-waiting/04.jpg",
+        "ff-1025-hold-cost-of-waiting/05.jpg",
+        "ff-1025-hold-cost-of-waiting/06.jpg",
+        "ff-1025-hold-cost-of-waiting/07.jpg",
+        "ff-1025-hold-cost-of-waiting/08.jpg"
+      ],
+      "held_reason": "clarity gate CONFUSING (cover: 'hold the dots and slide', $212,200 shown before the $300/month at 10% setup); cover built outside this repo's renderers"
+    },
+    {
+      "id": "hb-1025-family-calendar",
+      "account": "hourback",
+      "publish_at": "2026-10-25T13:00:00-04:00",
+      "caption": "Too much AI news? Keep these 7 rules. One week, 7 rules for the AI age.\n\nDay 1, agents: AI now clicks, scrolls and fills in forms for you. Rule: AI clicks. You press pay.\nDay 2, hallucination: AI is trained in a way that rewards guessing over \"I don't know\". Rule: fluent isn't true.\nDay 3, privacy: chats are stored, may train future models, and some are read by people. Rule: type it like a postcard, not a diary.\nDay 4, your career: the skills inside jobs are changing fast. Rule: bring AI to everything, and stay the human in the loop.\nDay 5, how it works: it predicts the next word-piece from patterns. Rule: a pattern machine, not a fact machine.\nDay 6, the big idea: prediction got cheap, so judgment got valuable. Rule: AI predicts. You judge.\nDay 7, it's already here: in WhatsApp, Gmail and your phone. Rule: learn it on purpose, not by accident.\n\nDo this: pick the rule you needed most, screenshot it, and use it the next time you open AI.\n\nSend this to the friend just starting with AI.\n\n#ai #learnai #chatgpt #futureofwork #aitips #hourback",
+      "first_comment": "Every rule comes from this week's posts and their sources: OpenAI, Google and Anthropic product announcements; METR (2025); OpenAI, 'Why language models hallucinate' (2025); WEF Future of Jobs Report 2025; Statistics Canada (2024, 2026); Mollick, Co-Intelligence (2024); Agrawal, Gans & Goldfarb, Prediction Machines (2018) and Power and Prediction (2022).",
+      "alt_text": "Hourback 9-slide carousel. Slide 1: 'Too much AI news? Keep 7 rules.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'save this, live by it'. Slide 2: day 1 · agents AI now clicks, scrolls and fills in forms. Rule: AI clicks. You press pay.. Slide 3: day 2 · hallucination It's trained to guess, not to say “I don't know.” Rule: fluent isn't true.. Slide 4: day 3 · privacy Chats are stored, may train it, and some are read. Rule: a postcard, not a diary.. Slide 5: day 4 · your career Skills are changing fast. Rule: bring AI to everything, and stay the human in the loop.. Slide 6: day 5 · how it works It predicts the next word-piece. Rule: a pattern machine, not a fact machine.. Slide 7: day 6 · the big idea Prediction got cheap. Judgment got valuable. Rule: AI predicts. You judge.. Slide 8: day 7 · it's already here It's in WhatsApp, Gmail, your phone. Rule: learn it on purpose, not by accident.. Slide 9: Do this: Pick the rule you needed most. Screenshot it. Use it the next time you open AI..",
+      "images": [
+        "hb-1025-family-calendar/01.jpg",
+        "hb-1025-family-calendar/02.jpg",
+        "hb-1025-family-calendar/03.jpg",
+        "hb-1025-family-calendar/04.jpg",
+        "hb-1025-family-calendar/05.jpg",
+        "hb-1025-family-calendar/06.jpg",
+        "hb-1025-family-calendar/07.jpg",
+        "hb-1025-family-calendar/08.jpg",
+        "hb-1025-family-calendar/09.jpg"
+      ],
+      "held_reason": "clarity gate CONFUSING (cover line 'fluent isn't true. AI clicks, you press pay.' needs the series to make sense; jargon: hallucination, word-piece, human in the loop); 9-slide recap"
+    },
+    {
+      "id": "lh-1025-climb-one-percent",
+      "account": "lockedhour",
+      "publish_at": "2026-10-25T17:00:00-04:00",
+      "caption": "Monday isn't magic. It's a handle. Grab it tonight.\n\nTHE RESEARCH: researchers looked at the gym records of about 12,000 students at one US university. At the start of a new week, the chance of a gym visit was 33.4% higher than usual. The start of a month: 14.4%. The start of a semester: 47.1%. They call it the fresh start effect: a new week feels like a clean page, so people try again.\n\nTHE HONEST PART: it's correlational. It shows when people start, not that Mondays make anything work. And it cuts both ways: waiting for Monday can turn into waiting forever.\n\nHOW TO USE IT:\n1. Tonight, pick one thing you want to start.\n2. Write when and where: \"Monday, 8 am, after coffee.\"\n3. Missed it? Every day has a handle: tomorrow morning, after lunch, the next hour.\n\nDo this: tonight, pick one thing and write when you'll start it: \"Monday, 8 am, after coffee.\"\n\nSend this to the friend waiting for a fresh start.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#habits #freshstart #mondaymotivation #focus #selfimprovement",
+      "first_comment": "When will you start yours? Source: Dai, Milkman & Riis (2014), The Fresh Start Effect: Temporal Landmarks Motivate Aspirational Behavior, Management Science 60(10). Study 2: gym attendance records of 11,912 undergraduates at a large northeastern US university, Sept 2010 to Dec 2011. The probability of a gym visit rose at the start of a week (33.4%), month (14.4%) and semester (47.1%), relative to baseline. Archival, correlational data.",
+      "alt_text": "Locked Hour 3-slide carousel. Slide 1: 'Monday isn't magic. It's a handle.' in a large serif on butter yellow; below, a week strip where Monday is a yellow padlock with a handle. Slide 2: 'At the start of a week, gym visits jumped 33.4%.' A card lists start of a week +33.4%, start of a month +14.4%, start of a semester +47.1%. Source: Dai, Milkman & Riis 2014, gym records of about 12,000 students, correlational. Slide 3: Do this: Tonight, pick one thing. Write when you start: 'Monday, 8 am, after coffee.' Use the handle. Don't wait for it.",
+      "images": [
+        "recovery-oct22/lockedhour/lh-1025-monday-handle/01.jpg",
+        "recovery-oct22/lockedhour/lh-1025-monday-handle/02.jpg",
+        "recovery-oct22/lockedhour/lh-1025-monday-handle/03.jpg"
+      ],
+      "held_reason": "clarity gate CONFUSING ('It's a handle' metaphor never said plainly; 'vs. baseline', 'Correlational' on the slide); rebuilt elsewhere"
+    },
+    {
+      "id": "hb-1025-hold-task-length",
+      "account": "hourback",
+      "publish_at": "2026-10-25T17:45:00-04:00",
+      "caption": "AI working alone: from 2-second tasks in 2019 to about an hour in early 2025. Hold the dots and slide 👀\n\nMETR, an AI research nonprofit, timed skilled people on software and research tasks, then measured which tasks AI agents could complete. Their key number is the \"time horizon\": the length of task (in human time) an AI finishes with 50% success.\n\nIn 2019, GPT-2: about 2 seconds. In early 2025, Claude 3.7 Sonnet: about an hour. Over those six years, it doubled roughly every 7 months. The jar shows that trend line, two doublings per swipe.\n\nWhy it matters: doubling looks like nothing for years, then fills the jar fast. METR's own caveats: these are mostly software tasks, 50% success isn't reliable, and trends can change. Newer models have been measured since; check metr.org for the latest.\n\nDo this: next AI launch, skip the hype and ask one question: how long a task can it do on its own?\n\nSend this to the friend who thinks AI peaked.\n\n#ai #aiagents #futureofwork #metr #hourback",
+      "first_comment": "Surprised? Sources: METR, 'Measuring AI Ability to Complete Long Tasks' (Kwa, West et al., March 2025, arXiv 2503.14499): GPT-2 50% time horizon about 2 seconds; Claude 3.7 Sonnet about one hour; doubling about every 7 months over 6 years. Middle frames are the doubling trend (2 s × 4 per 14 months), not individual model measurements.",
+      "alt_text": "Hourback 9-slide carousel. Slide 1: 'AI, working alone: 2 seconds → 1 hour.' in a large serif with highlighted words, a halftone cut-out and the handwritten note 'hold the dots and slide'. Slide 2: 2019: 2 sec. on METR's trend line. GPT-2 could finish tasks that take a person about 2 seconds.. Slide 3: +14 months: 8 sec. doubled twice. The length of task AI agents can finish has doubled about every 7 months.. Slide 4: +28 months: 32 sec. doubled twice more. Measured on real software and research tasks, timed against skilled humans.. Slide 5: +42 months: 2 min. about 2 minutes. Still tiny. This is the part people laugh at.. Slide 6: +56 months: 9 min. about 9 minutes. A small coding fix. Doubling keeps going.. Slide 7: +70 months: 34 min. about 34 minutes. A real chunk of work. The jar is suddenly filling.. Slide 8: early 2025: ~1 hour. measured: about 1 hour. Claude 3.7 Sonnet, METR's study (2025): about an hour, at 50% success.. Slide 9: Do this: Track the trend, not the hype: next AI launch, ask “how long a task can it do on its own?”.",
+      "images": [
+        "hb-1025-hold-task-length/01.jpg",
+        "hb-1025-hold-task-length/02.jpg",
+        "hb-1025-hold-task-length/03.jpg",
+        "hb-1025-hold-task-length/04.jpg",
+        "hb-1025-hold-task-length/05.jpg",
+        "hb-1025-hold-task-length/06.jpg",
+        "hb-1025-hold-task-length/07.jpg",
+        "hb-1025-hold-task-length/08.jpg",
+        "hb-1025-hold-task-length/09.jpg"
+      ],
+      "held_reason": "clarity gate CONFUSING ('2 seconds -> 1 hour' doesn't say human-task length; METR / GPT-2 / '50% success' unexplained; 'hold the dots and slide')"
+    },
+    {
+      "id": "hb-ch-1025-1",
+      "account": "hourback",
+      "publish_at": "2026-10-25T12:00:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1025-1.jpg",
+      "caption": "Story chain hb-ch-1025 frame 1: this week's quiz",
+      "held_reason": "Story chain whose hand-off points to the held hb-1025-family-calendar"
+    },
+    {
+      "id": "hb-ch-1025-2",
+      "account": "hourback",
+      "publish_at": "2026-10-25T12:01:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1025-2.jpg",
+      "caption": "Story chain hb-ch-1025 frame 2: 26% wrong vs 75%.",
+      "held_reason": "Story chain whose hand-off points to the held hb-1025-family-calendar"
+    },
+    {
+      "id": "hb-ch-1025-3",
+      "account": "hourback",
+      "publish_at": "2026-10-25T12:02:00-04:00",
+      "story": true,
+      "image": "stories/hb-ch-1025-3.jpg",
+      "caption": "Story chain hb-ch-1025 frame 3: Know how it works. Then use it well.",
+      "held_reason": "Story chain whose hand-off points to the held hb-1025-family-calendar"
+    },
+    {
+      "id": "hb-ch-1025-4",
+      "account": "hourback",
+      "publish_at": "2026-10-25T13:15:00-04:00",
+      "story": true,
+      "image": "recovery-oct22/hourback/stories/hb-ch-1025-4.jpg",
+      "caption": "Story chain hb-ch-1025 frame 4: One week. 7 rules for AI. Hand-off to tonight's week-card Reel.",
+      "held_reason": "Story chain whose hand-off points to the held hb-1025-family-calendar"
+    }
+  ]
+}
