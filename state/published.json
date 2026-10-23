@@ -5913,7 +5913,7 @@
     },
     "hb-1023-renewal-reminders": {
       "account": "hourback",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18127487398799084",
         "18127487416799084",
@@ -5937,14 +5937,38 @@
         "hb-1023-renewal-reminders/09.jpg"
       ],
       "children_created_at": "2026-10-23T17:07:37Z",
-      "updated_at": "2026-10-23T17:09:08Z",
+      "updated_at": "2026-10-23T17:51:11Z",
       "container_id": "18127487584799084",
       "container_created_at": "2026-10-23T17:07:37Z",
       "publish_called": true,
       "publish_called_at": "2026-10-23T17:07:37Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AFdc5COVq_jiS6HGCBmcR9s)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-23T17:07:37Z"
+      "failed_at": "2026-10-23T17:07:37Z",
+      "media_id": "18094236230256515",
+      "permalink": "https://www.instagram.com/p/De2D0c2m1Yk/",
+      "published_at": "2026-10-23T17:09:06+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18332627677302864",
+      "comment_error": null,
+      "commented_at": "2026-10-23T17:51:09Z"
+    },
+    "hb-ch-1023-4": {
+      "account": "hourback",
+      "status": "published",
+      "container_id": "18127494367799084",
+      "container_created_at": "2026-10-23T17:51:09Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-23T17:51:26Z",
+      "publish_called_at": "2026-10-23T17:51:09Z",
+      "media_id": "18168674638469427",
+      "published_at": "2026-10-23T17:51:09Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
