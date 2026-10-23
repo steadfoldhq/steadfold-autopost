@@ -133,9 +133,20 @@ class FakeEtsy:
                 if kind == "files" and getattr(self, "drop_uploads", False):
                     return FakeResponse(201, {"ok": True})
                 self.next_id += 1
-                L[kind].append({"name": (data or {}).get("name") or files[part][0],
-                                "filename": (data or {}).get("name") or files[part][0],
-                                "listing_file_id": self.next_id})
+                item = {"name": (data or {}).get("name") or files[part][0],
+                        "filename": (data or {}).get("name") or files[part][0],
+                        "listing_file_id": self.next_id}
+                if kind == "images":
+                    rank = int((data or {}).get("rank") or len(L["images"]) + 1)
+                    item.update(listing_image_id=self.next_id, rank=rank)
+                    if str((data or {}).get("overwrite")) == "true":
+                        if getattr(self, "ignore_overwrite", False):     # Etsy says OK, photo unchanged
+                            return FakeResponse(201, {"ok": True})
+                        same = [i for i, x in enumerate(L["images"]) if x.get("rank") == rank]
+                        if same:
+                            L["images"][same[0]] = item
+                            return FakeResponse(201, {"ok": True})
+                L[kind].append(item)
                 return FakeResponse(201, {"ok": True})
             if method == "GET" and kind == "files":
                 return FakeResponse(200, {"results": L["files"]})
@@ -804,6 +815,97 @@ class Ops(Deactivate):
     def test_no_ops_file_is_a_no_op(self):
         rc, out = self.run_cmd(FakeEtsy(), "ops")
         self.assertEqual(rc, 0)
+
+    # ---- photo ops (v0.6.2): explicit ranks, sha256 of the reviewed file, read-back before and after
+    def _photo_live(self, fake, sid="HB-SUB"):
+        n = len(real_spec_at(etsy.LISTINGS, sid)["photos"])
+        fake.listings[7101] = {"listing_id": 7101, "state": "active", "title": "x", "fields": {},
+                               "images": [{"rank": r, "listing_image_id": 900 + r} for r in range(1, n + 1)],
+                               "videos": [], "files": [{"filename": "A.zip", "name": "A.zip", "listing_file_id": 1}]}
+        etsy.LIVE_PATH.write_text(json.dumps({"listings": {sid: {"listing_id": 7101}}, "drafts": {}}))
+
+    def _sha(self, sid, rank):
+        return etsy.sha256_file(etsy.ROOT / real_spec_at(etsy.LISTINGS, sid)["photos"][rank - 1])
+
+    def _writes(self, fake):
+        return [c for c in fake.calls if c[0] in ("PATCH", "POST", "PUT", "DELETE") and "oauth" not in c[1]]
+
+    def test_photo_op_with_matching_sha_replaces_rank_and_records(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake)
+        self._ops([{"id": "p1", "action": "sync", "spec": "HB-SUB", "parts": "photos", "photos": [2],
+                    "sha256": {"2": self._sha("HB-SUB", 2)}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 0, out)
+        imgs = {i["rank"]: i["listing_image_id"] for i in fake.listings[7101]["images"]}
+        self.assertNotEqual(imgs[2], 902)
+        self.assertEqual(imgs[1], 901)
+        self.assertEqual(len(imgs), 7)
+        self.assertIn("photo 2: 902 ->", out)
+        done = json.loads(etsy.OPS_DONE_PATH.read_text())["done"]
+        self.assertEqual((done[0]["id"], done[0]["photos"]), ("p1", [2]))
+
+    def test_photo_op_sha_mismatch_is_refused(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake)
+        self._ops([{"id": "p2", "action": "sync", "spec": "HB-SUB", "parts": "photos", "photos": [2],
+                    "sha256": {"2": "0" * 64}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertFalse(self._writes(fake))
+        self.assertEqual(json.loads(etsy.OPS_DONE_PATH.read_text())["done"], [])
+
+    def test_photo_op_rank_1_is_refused(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake)
+        self._ops([{"id": "p3", "action": "sync", "spec": "HB-SUB", "parts": "photos", "photos": [1],
+                    "sha256": {"1": self._sha("HB-SUB", 1)}},
+                   {"id": "p3b", "action": "sync", "spec": "HB-SUB", "parts": "photos", "photos": [99],
+                    "sha256": {"99": "0" * 64}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertFalse(self._writes(fake))
+
+    def test_files_with_photos_is_still_refused(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake)
+        self._ops([{"id": "p4", "action": "sync", "spec": "HB-SUB", "parts": "files,photos", "photos": [2],
+                    "sha256": {"2": self._sha("HB-SUB", 2)}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertFalse(self._writes(fake))
+
+    def test_photo_op_fails_when_etsy_keeps_the_old_image(self):
+        fake = FakeEtsy(currency="CAD")
+        fake.ignore_overwrite = True
+        self._photo_live(fake)
+        self._ops([{"id": "p5", "action": "sync", "spec": "HB-SUB", "parts": "photos", "photos": [2],
+                    "sha256": {"2": self._sha("HB-SUB", 2)}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertIn("photo 2 unchanged", out)
+        self.assertEqual(json.loads(etsy.OPS_DONE_PATH.read_text())["done"], [])
+
+    def test_hero_op_with_matching_sha_replaces_rank_1(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake, "FF-MPB")
+        self._ops([{"id": "h1", "action": "hero", "spec": "FF-MPB", "sha256": {"1": self._sha("FF-MPB", 1)}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 0, out)
+        imgs = {i["rank"]: i["listing_image_id"] for i in fake.listings[7101]["images"]}
+        self.assertNotEqual(imgs[1], 901)
+        self.assertEqual(imgs[2], 902)
+        self.assertEqual(len(imgs), 10)
+
+    def test_hero_op_sha_mismatch_is_refused(self):
+        fake = FakeEtsy(currency="CAD")
+        self._photo_live(fake, "FF-MPB")
+        self._ops([{"id": "h2", "action": "hero", "spec": "FF-MPB", "sha256": {"1": "0" * 64}},
+                   {"id": "h3", "action": "hero", "spec": "FF-MPB,HB-SUB", "sha256": {"1": self._sha("FF-MPB", 1)}}])
+        rc, out = self.run_cmd(fake, "ops")
+        self.assertEqual(rc, 1)
+        self.assertFalse(self._writes(fake))
+        self.assertEqual(json.loads(etsy.OPS_DONE_PATH.read_text())["done"], [])
 
 
 class Decrypt(unittest.TestCase):

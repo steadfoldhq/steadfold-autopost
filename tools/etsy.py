@@ -1198,12 +1198,7 @@ def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], en
                     raise EtsyError(f"description did not update (Etsy starts: {_plain(got)[:80]!r})")
                 done.append("description")
             if "photos" in parts:
-                for r in photo_ranks:
-                    img = ROOT / spec["photos"][r - 1]
-                    c.call("POST", f"/shops/{ss.shop_id}/listings/{lid}/images",
-                           data={"rank": str(r), "overwrite": "true"},
-                           files={"image": (img.name, img.read_bytes(), _mime(img))})
-                done.append("photos " + ",".join(map(str, photo_ranks)))
+                done.extend(overwrite_photos(c, ss.shop_id, lid, spec, photo_ranks))
             rows.append(f"| {sid} | {'; '.join(done)} |")
             print(f"::notice::{sid}: {'; '.join(done)}", flush=True)
         except (EtsyError, SetupError) as exc:
@@ -1211,6 +1206,88 @@ def cmd_sync_listing(ids: list[str], parts: set[str], photo_ranks: list[int], en
             rows.append(f"| {sid} | FAILED: {redact(exc)} |")
             print(f"::error::{sid}: {redact(exc)}", flush=True)
     summary("## Etsy listing sync\n\n" + "\n".join(rows) + "\n")
+    return 1 if failed else 0
+
+
+def overwrite_photos(c: "EtsyClient", shop_id: int, lid: int, spec: dict, ranks: list[int]) -> list[str]:
+    """Overwrite the images at `ranks` with the spec's photos, reading the images back before and after.
+    Fails if a rank has no image to replace, if the image count changes, or if a rank still shows the
+    old listing_image_id (Etsy accepted the upload but did not replace the photo)."""
+    if not ranks:
+        raise EtsyError("photos: no ranks given")
+    imgs = c.images(lid)
+    before = {int(i.get("rank", 0)): i.get("listing_image_id") for i in imgs}
+    for r in ranks:
+        if r not in before:
+            raise EtsyError(f"photo {r}: no image at that rank to replace (listing has {len(imgs)})")
+        if not 1 <= r <= len(spec["photos"]):
+            raise EtsyError(f"photo {r}: the spec has {len(spec['photos'])} photos")
+    for r in ranks:
+        img = ROOT / spec["photos"][r - 1]
+        c.call("POST", f"/shops/{shop_id}/listings/{lid}/images",
+               data={"rank": str(r), "overwrite": "true"},
+               files={"image": (img.name, img.read_bytes(), _mime(img))})
+    after_list = c.images(lid)
+    after = {int(i.get("rank", 0)): i.get("listing_image_id") for i in after_list}
+    if len(after_list) != len(imgs):
+        raise EtsyError(f"image count changed {len(imgs)} -> {len(after_list)}")
+    out = []
+    for r in ranks:
+        if after.get(r) == before[r]:
+            raise EtsyError(f"photo {r} unchanged on Etsy (still image id {before[r]})")
+        out.append(f"photo {r}: {before[r]} -> {after.get(r)}")
+    return out
+
+
+def _ops_photo_gate(op: dict, ids: list[str], hero: bool) -> list[int]:
+    """Gate for photo ops: one spec, explicit ranks (>= 2 for sync; exactly [1] for hero), and the sha256 of
+    each photo file in the commit, so the op swaps exactly the reviewed image. Raises SetupError to refuse."""
+    if len(ids) != 1:
+        raise SetupError("photo ops take exactly one spec ID")
+    spec = load_spec(LISTINGS / f"{ids[0]}.json")
+    if hero:
+        ranks = [1]
+    else:
+        ranks = op.get("photos")
+        if not isinstance(ranks, list) or not ranks or not all(isinstance(r, int) and not isinstance(r, bool) for r in ranks):
+            raise SetupError("needs explicit 'photos' ranks, e.g. [2]")
+        if len(set(ranks)) != len(ranks):
+            raise SetupError("repeated photo rank")
+        for r in ranks:
+            if r < 2:
+                raise SetupError("rank 1 is the thumbnail: use action 'hero'")
+            if r > len(spec["photos"]):
+                raise SetupError(f"rank {r} is beyond the spec's {len(spec['photos'])} photos")
+    sha = op.get("sha256")
+    if not isinstance(sha, dict):
+        raise SetupError("needs 'sha256': {rank: sha256 of the photo file}")
+    for r in ranks:
+        want = str(sha.get(str(r), "")).lower()
+        got = sha256_file(ROOT / spec["photos"][r - 1])
+        if want != got:
+            raise SetupError(f"sha256 for photo {r} does not match {spec['photos'][r - 1]}")
+    return ranks
+
+
+def cmd_replace_photos(ids: list[str], ranks: list[int], env: dict, session=None, gh_factory=None) -> int:
+    """Overwrite photo ranks of one LIVE (or inactive) listing with verified read-back (ops photos / hero)."""
+    live = load_live()
+    rows, failed = ["| ID | Result |", "|----|--------|"], False
+    for sid in ids:
+        rec = live.get("listings", {}).get(sid)
+        try:
+            if not rec:
+                raise EtsyError("not in listings/live.json")
+            spec = load_spec(LISTINGS / f"{sid}.json")
+            ss = ShopSession(spec["shop"], env, session=session, gh_factory=gh_factory)
+            res = overwrite_photos(ss.client, ss.shop_id, int(rec["listing_id"]), spec, ranks)
+            rows.append(f"| {sid} | {'; '.join(res)} |")
+            print(f"::notice::{sid}: {'; '.join(res)}", flush=True)
+        except (EtsyError, SetupError) as exc:
+            failed = True
+            rows.append(f"| {sid} | FAILED: {redact(exc)} |")
+            print(f"::error::{sid}: {redact(exc)}", flush=True)
+    summary("## Etsy photos\n\n" + "\n".join(rows) + "\n")
     return 1 if failed else 0
 
 
@@ -1284,15 +1361,17 @@ def cmd_set_state(ids: list[str], state: str, env: dict, session=None, gh_factor
 
 OPS_PATH = LISTINGS / "ops" / "queue.json"
 OPS_DONE_PATH = LISTINGS / "ops" / "done.json"
-OPS_ALLOWED = {"deactivate", "reactivate", "sync"}
-OPS_SYNC_PARTS = {"description"}
+OPS_ALLOWED = {"deactivate", "reactivate", "sync", "hero"}
+OPS_SYNC_PARTS = {"description", "photos"}
 
 
 def cmd_ops(env: dict, session=None, gh_factory=None) -> int:
     """Run the routine, reversible operations queued in listings/ops/queue.json (pushed by an agent or a person),
     each exactly once (ids recorded in listings/ops/done.json). Allowed: deactivate / reactivate named live
-    listings, and sync with parts "description" only. Anything else (listing, files, photos, prices,
-    deletion) is refused, so a push can never publish a new listing or swap customer files.
+    listings; sync with parts "description" and/or "photos"; and "hero". Photo ops are gated: one spec, explicit
+    ranks (>= 2 for sync photos, rank 1 only via "hero") and the sha256 of each photo file, then read back
+    before and after (count unchanged, image id changed). Anything else (listing, files, prices, deletion)
+    is refused, so a push can never publish a new listing or swap customer files.
     ops.json: {"ops": [{"id": "...", "action": "deactivate", "spec": "SF-AIGOV", "reason": "..."}, ...]}"""
     if not OPS_PATH.exists():
         print("No listings/ops/queue.json; nothing to do.")
@@ -1315,18 +1394,41 @@ def cmd_ops(env: dict, session=None, gh_factory=None) -> int:
             failed = True
             rows.append(f"| {oid} | {action} | REFUSED: needs explicit spec IDs |")
             continue
+        extra = {}
         if action == "sync":
             parts = {x.strip() for x in str(op.get("parts", "")).split(",") if x.strip()}
             if not parts or not parts <= OPS_SYNC_PARTS:
                 failed = True
                 rows.append(f"| {oid} | sync | REFUSED: parts must be {sorted(OPS_SYNC_PARTS)} |")
                 continue
-            rc = cmd_sync_listing(ids, parts, [], env, session=session, gh_factory=gh_factory)
+            ranks = []
+            if "photos" in parts:
+                try:
+                    ranks = _ops_photo_gate(op, ids, hero=False)
+                except (SetupError, EtsyError) as exc:
+                    failed = True
+                    rows.append(f"| {oid} | sync | REFUSED: {redact(exc)} |")
+                    continue
+                extra = {"photos": ranks}
+            rc = 0
+            if "description" in parts:
+                rc = cmd_sync_listing(ids, {"description"}, [], env, session=session, gh_factory=gh_factory)
+            if rc == 0 and ranks:
+                rc = cmd_replace_photos(ids, ranks, env, session=session, gh_factory=gh_factory)
+        elif action == "hero":
+            try:
+                ranks = _ops_photo_gate(op, ids, hero=True)
+            except (SetupError, EtsyError) as exc:
+                failed = True
+                rows.append(f"| {oid} | hero | REFUSED: {redact(exc)} |")
+                continue
+            extra = {"photos": ranks}
+            rc = cmd_replace_photos(ids, ranks, env, session=session, gh_factory=gh_factory)
         else:
             rc = cmd_set_state(ids, "inactive" if action == "deactivate" else "active", env,
                                session=session, gh_factory=gh_factory)
         if rc == 0:
-            done["done"].append({"id": oid, "action": action, "spec": ",".join(ids), "at": now_iso()})
+            done["done"].append({"id": oid, "action": action, "spec": ",".join(ids), **extra, "at": now_iso()})
             done_ids.add(oid)
             rows.append(f"| {oid} | {action} | done |")
         else:

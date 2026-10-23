@@ -1,0 +1,22 @@
+[
+ {
+  "id": "lf-reel-1025am-crying-peak",
+  "action": "improve",
+  "reason": "North Star motion rule (brand-system-v4 §11): oct22b version was a static scene with text unfolding and a sleepy sun. Re-rendered with the animated story engine: a swaddled bundle (no face) is lifted from the bassinet into adult hands; a cry-volume meter shrinks while held; bottle, diaper and thermometer pop in with ticks; the held bundle sways with drifting 'shh' and footsteps; hearts float on Do this. Joyful open-eyed sun that beams on Do this; washing line moves in the wind; light sweeps each cut; on-screen follow prompt; no fade-out. Same words, beats, CPS/AAP chips and track (lf-c-sunny-morning-el). 14.0 s, -13.7 LUFS, music_check PASS. Captions unchanged.",
+  "new": {
+   "alt_text": "Illustrated Reel in soft dawn light that warms to morning: pastel sky, sage hills, a smiling sun and a washing line of tiny baby clothes swaying in the wind, one more pegged each beat. A swaddled bundle in a little hat is lifted from a blue bassinet into two hands, hearts float up. Text: You can't spoil a newborn. Pick them up. / Answer their cries, and they cry less (a sound meter shrinks). / Hungry? Diaper? Too hot or cold? (a bottle, a diaper and a thermometer get ticks). / Hold close. Sway. Shush. Walk. / The sun beams: Do this: Next cry: pick them up first. Follow for one calm thing a night. Source chips: CPS, AAP.",
+   "video": "recovery-oct22c/littlefold/lf-reel-1025am-cant-spoil-anim.mp4",
+   "cover": "recovery-oct22c/littlefold/lf-reel-1025am-cant-spoil-anim-cover.jpg"
+  }
+ },
+ {
+  "id": "lf-reel-1025-step-away",
+  "action": "improve",
+  "reason": "North Star motion rule: oct22b version was near-static with a sleepy sun. Re-rendered with the animated engine: a door opens onto warm light with footsteps out; hands lower the bundle onto its back in a crib; a calm breathing circle grows and shrinks with drifting leaves; 'Never shake a baby. Never.' stays full size over a still crib with a slow steady heart and no peg pop; Do this shows a phone typing 'Can you come?' and a heart reply. Joyful open-eyed sun, moving line, light sweeps, on-screen follow prompt, no fade-out. Same words, beats, CPS chip and track (lf-b-tender-el). 14.2 s, -13.8 LUFS, music_check PASS. Captions unchanged.",
+  "new": {
+   "alt_text": "Illustrated Reel in soft afternoon light that brightens: pastel sky, sage hills, a smiling sun and a washing line of tiny baby clothes swaying in the wind. A peach door opens onto warm light and footsteps lead out. Text: Still crying? At your limit? It's OK to step away. / Crib first. On their back (hands lay a swaddled bundle on its back in a crib). / Step out. Breathe. Take a moment (a soft circle grows and shrinks: breathe in, and out). / Never shake a baby. Never (a still crib with a slow heart). / The sun beams: Do this: Tonight, pick who you'll text. A phone types: Can you come? A heart comes back. It's OK to ask for help. Follow for one calm thing a night. Source chip: CPS, Colic and crying.",
+   "video": "recovery-oct22c/littlefold/lf-reel-1025-step-away-anim.mp4",
+   "cover": "recovery-oct22c/littlefold/lf-reel-1025-step-away-anim-cover.jpg"
+  }
+ }
+]
