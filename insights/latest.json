@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-24T16:33:31+00:00",
+ "collected_at": "2026-10-24T20:29:10+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -15,13 +15,13 @@
      "at": "2026-10-24T16:11:56+0000",
      "first_line": "Payday. Where should the money go first? Follow this order.",
      "likes": 0,
-     "comments_count": 0,
+     "comments_count": 1,
      "insights": {
       "views": 0,
       "reach": 0,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 0,
+      "total_interactions": 1,
       "follows": 0,
       "profile_visits": 0
      },
@@ -36,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 3,
+      "views": 5,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 572,
-      "ig_reels_video_view_total_time": 1717,
+      "ig_reels_avg_watch_time": 609,
+      "ig_reels_video_view_total_time": 2436,
       "follow_error": "GET 18169903312480083/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -250,13 +250,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 33,
-      "reach": 28,
+      "views": 34,
+      "reach": 29,
       "saved": 2,
       "shares": 8,
       "total_interactions": 15,
-      "ig_reels_avg_watch_time": 2445,
-      "ig_reels_video_view_total_time": 66034,
+      "ig_reels_avg_watch_time": 2437,
+      "ig_reels_video_view_total_time": 68256,
       "follow_error": "GET 18077312537451007/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -730,7 +730,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 4
+    "profile_views": 5
    }
   },
   "lockedhour": {
@@ -738,8 +738,27 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 36,
+   "media_count": 37,
    "posts": [
+    {
+     "media_id": "18117360617467765",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De4lyWvFS0N/",
+     "at": "2026-10-24T16:44:24+0000",
+     "first_line": "How long do you stay on one screen before switching? In 2004 it was about 2.5 minutes. Guess first 👀",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18052820144807309",
      "type": "REEL",
@@ -749,13 +768,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 27,
+      "views": 42,
+      "reach": 39,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2423,
-      "ig_reels_video_view_total_time": 63000,
+      "ig_reels_avg_watch_time": 2591,
+      "ig_reels_video_view_total_time": 98458,
       "follow_error": "GET 18052820144807309/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -769,13 +788,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 38,
-      "reach": 31,
+      "views": 42,
+      "reach": 33,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2536,
-      "ig_reels_video_view_total_time": 83716,
+      "ig_reels_avg_watch_time": 2943,
+      "ig_reels_video_view_total_time": 103016,
       "follow_error": "GET 18136073005642206/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1450,8 +1469,27 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 36,
+   "media_count": 37,
    "posts": [
+    {
+     "media_id": "18029850413914538",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De4o7R1EbZi/",
+     "at": "2026-10-24T17:11:50+0000",
+     "first_line": "Your bank texts “Was this you?” That's AI predicting. AI made prediction cheap. Here's what gets valuable.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18104528654286500",
      "type": "REEL",
@@ -1929,7 +1967,7 @@
      "likes": 8,
      "comments_count": 1,
      "insights": {
-      "views": 94,
+      "views": 95,
       "reach": 67,
       "saved": 4,
       "shares": 5,
@@ -1949,8 +1987,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 6,
+      "views": 28,
+      "reach": 8,
       "saved": 3,
       "shares": 4,
       "total_interactions": 19,
@@ -2174,8 +2212,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 2,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -2193,13 +2231,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 65,
-      "reach": 57,
+      "views": 135,
+      "reach": 122,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2106,
-      "ig_reels_video_view_total_time": 120060,
+      "ig_reels_avg_watch_time": 2560,
+      "ig_reels_video_view_total_time": 312417,
       "follow_error": "GET 18120178661472079/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2218,8 +2256,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5149,
-      "ig_reels_video_view_total_time": 514984,
+      "ig_reels_avg_watch_time": 5206,
+      "ig_reels_video_view_total_time": 525865,
       "follow_error": "GET 18383033815225570/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2307,14 +2345,14 @@
      "permalink": "https://www.instagram.com/p/DezVsDSIB6H/",
      "at": "2026-10-22T15:47:22+0000",
      "first_line": "New baby in Ontario? One online form does 5 things 👶",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 15,
+      "views": 17,
       "reach": 5,
       "saved": 3,
       "shares": 8,
-      "total_interactions": 18,
+      "total_interactions": 20,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2407,13 +2445,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 62,
-      "reach": 53,
+      "views": 63,
+      "reach": 54,
       "saved": 2,
       "shares": 8,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 2946,
-      "ig_reels_video_view_total_time": 156149,
+      "ig_reels_avg_watch_time": 2907,
+      "ig_reels_video_view_total_time": 156998,
       "follow_error": "GET 17914788243551208/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2849,7 +2887,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 2
    }
   }
  }
