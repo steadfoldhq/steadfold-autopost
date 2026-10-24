@@ -6533,7 +6533,7 @@
     },
     "ff-1024-paycheque-trail": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18152358964497733",
         "18152359012497733",
@@ -6549,14 +6549,22 @@
         "ff-1024-paycheque-trail/05.jpg"
       ],
       "children_created_at": "2026-10-24T16:09:57Z",
-      "updated_at": "2026-10-24T16:12:00Z",
+      "updated_at": "2026-10-24T16:43:44Z",
       "container_id": "18152359222497733",
       "container_created_at": "2026-10-24T16:09:57Z",
       "publish_called": true,
       "publish_called_at": "2026-10-24T16:09:57Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AHOGqeGIz62QP7wFNHmSJkt)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-24T16:09:57Z"
+      "failed_at": "2026-10-24T16:09:57Z",
+      "media_id": "18117020396079852",
+      "permalink": "https://www.instagram.com/p/De4iErCnMqg/",
+      "published_at": "2026-10-24T16:11:56+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18122085407297714",
+      "comment_error": null,
+      "commented_at": "2026-10-24T16:43:42Z"
     },
     "hb-ch-1024-1": {
       "account": "hourback",
@@ -6621,6 +6629,45 @@
       "error": null,
       "comment_status": "none",
       "comment_attempts": 0
+    },
+    "ff-ch-1024-5": {
+      "account": "fullyfunded",
+      "status": "published",
+      "container_id": "18152371135497733",
+      "container_created_at": "2026-10-24T16:43:42Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-24T16:44:00Z",
+      "publish_called_at": "2026-10-24T16:43:42Z",
+      "media_id": "18107086558965657",
+      "published_at": "2026-10-24T16:43:42Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "lh-1024-reveal-47-seconds": {
+      "account": "lockedhour",
+      "status": "failed",
+      "children": [
+        "18070156784521398",
+        "18070156805521398",
+        "18070156826521398"
+      ],
+      "children_media": [
+        "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/01.jpg",
+        "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/02.jpg",
+        "recovery-oct22/lockedhour/lh-1024-reveal-47-seconds/03.jpg"
+      ],
+      "children_created_at": "2026-10-24T16:43:42Z",
+      "updated_at": "2026-10-24T16:44:27Z",
+      "container_id": "18070156850521398",
+      "container_created_at": "2026-10-24T16:43:42Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-24T16:43:42Z",
+      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AXLM1tByfpFfoa2E37iR4xF)",
+      "attempts": 1,
+      "failed_at": "2026-10-24T16:43:42Z"
     }
   }
 }
