@@ -1,13 +1,52 @@
 {
- "collected_at": "2026-10-23T20:35:34+00:00",
+ "collected_at": "2026-10-24T04:33:08+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 33,
+   "media_count": 35,
    "posts": [
+    {
+     "media_id": "17934801342407031",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De2uajggV1l/",
+     "at": "2026-10-23T23:21:33+0000",
+     "first_line": "Your parents taking CPP early? Here's what 60, 65 and 70 pay.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 17934801342407031/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18010849088994670",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De2eaw-GsaP/",
+     "at": "2026-10-23T21:01:21+0000",
+     "first_line": "First home someday? Open an FHSA now, even with $0. Take the route 👉 (First Home Savings Account, Canada)",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18179671903432289",
      "type": "CAROUSEL_ALBUM",
@@ -36,13 +75,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 20,
+      "views": 25,
+      "reach": 22,
       "saved": 1,
       "shares": 3,
       "total_interactions": 7,
-      "ig_reels_avg_watch_time": 2365,
-      "ig_reels_video_view_total_time": 49679,
+      "ig_reels_avg_watch_time": 2224,
+      "ig_reels_video_view_total_time": 51171,
       "follow_error": "GET 18029158613696854/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -153,8 +192,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 10,
+      "views": 23,
+      "reach": 11,
       "saved": 2,
       "shares": 8,
       "total_interactions": 15,
@@ -192,13 +231,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 141,
-      "reach": 120,
+      "views": 142,
+      "reach": 121,
       "saved": 4,
       "shares": 10,
       "total_interactions": 24,
-      "ig_reels_avg_watch_time": 4089,
-      "ig_reels_video_view_total_time": 494796,
+      "ig_reels_avg_watch_time": 4349,
+      "ig_reels_video_view_total_time": 530688,
       "follow_error": "GET 18038445917652662/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -660,8 +699,47 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 33,
+   "media_count": 35,
    "posts": [
+    {
+     "media_id": "18136073005642206",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De2urkgEWvQ/",
+     "at": "2026-10-23T23:23:52+0000",
+     "first_line": "Coffee at 4 pm? Your sleep noticed, even if you didn't.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 19,
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 3867,
+      "ig_reels_video_view_total_time": 58012,
+      "follow_error": "GET 18136073005642206/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18129804133883315",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De2ejeymtlb/",
+     "at": "2026-10-23T21:02:42+0000",
+     "first_line": "Sunday scaries? Plan your week in 20 minutes. Follow the Sunday route 👉",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18132035383744114",
      "type": "CAROUSEL_ALBUM",
@@ -671,8 +749,8 @@
      "likes": 1,
      "comments_count": 2,
      "insights": {
-      "views": 7,
-      "reach": 2,
+      "views": 15,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
@@ -690,13 +768,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 22,
+      "views": 26,
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2659,
-      "ig_reels_video_view_total_time": 58500,
+      "ig_reels_avg_watch_time": 2657,
+      "ig_reels_video_view_total_time": 61111,
       "follow_error": "GET 18108541130249340/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -904,13 +982,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 18,
+      "views": 20,
       "reach": 13,
       "saved": 4,
       "shares": 6,
       "total_interactions": 18,
-      "ig_reels_avg_watch_time": 3781,
-      "ig_reels_video_view_total_time": 60499,
+      "ig_reels_avg_watch_time": 3791,
+      "ig_reels_video_view_total_time": 64448,
       "follow_error": "GET 18033429599898997/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -982,13 +1060,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 37,
-      "reach": 24,
+      "views": 38,
+      "reach": 25,
       "saved": 3,
       "shares": 2,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 4554,
-      "ig_reels_video_view_total_time": 145742,
+      "ig_reels_avg_watch_time": 4437,
+      "ig_reels_video_view_total_time": 146426,
       "follow_error": "GET 18144868549586313/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1002,8 +1080,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 36,
-      "reach": 11,
+      "views": 38,
+      "reach": 12,
       "saved": 5,
       "shares": 0,
       "total_interactions": 18,
@@ -1021,8 +1099,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 29,
-      "reach": 9,
+      "views": 31,
+      "reach": 10,
       "saved": 4,
       "shares": 0,
       "total_interactions": 15,
@@ -1099,8 +1177,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 29,
-      "reach": 8,
+      "views": 30,
+      "reach": 9,
       "saved": 3,
       "shares": 4,
       "total_interactions": 18,
@@ -1313,8 +1391,47 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 33,
+   "media_count": 35,
    "posts": [
+    {
+     "media_id": "18093191027201967",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De2ugcUj6fF/",
+     "at": "2026-10-23T23:22:20+0000",
+     "first_line": "Skimming just the AI summary? Apple's AI wrote a headline. It was false.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 15,
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 2032,
+      "ig_reels_video_view_total_time": 26427,
+      "follow_error": "GET 18093191027201967/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18149420434563798",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De2lK4gku8r/",
+     "at": "2026-10-23T22:00:32+0000",
+     "first_line": "Consultants using AI were 25% faster. On some tasks, they did worse. Is AI good at your task? Pick it and follow the line 👉",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18094236230256515",
      "type": "CAROUSEL_ALBUM",
@@ -1772,8 +1889,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 6,
+      "views": 26,
+      "reach": 7,
       "saved": 4,
       "shares": 4,
       "total_interactions": 18,
@@ -1967,8 +2084,47 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 31,
+   "media_count": 33,
    "posts": [
+    {
+     "media_id": "18383033815225570",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De2ul3RCqKh/",
+     "at": "2026-10-23T23:23:06+0000",
+     "first_line": "First cold morning? Coat off, then buckle. The warm layer goes on top of the straps.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 99,
+      "reach": 81,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5528,
+      "ig_reels_video_view_total_time": 442300,
+      "follow_error": "GET 18383033815225570/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18014944931966445",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De2eefEGm2N/",
+     "at": "2026-10-23T21:02:02+0000",
+     "first_line": "When will baby say “mama”? Baby's first year of talking, one step at a time 👉",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 7,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18154696588561252",
      "type": "CAROUSEL_ALBUM",
@@ -1997,13 +2153,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 43,
-      "reach": 42,
+      "views": 50,
+      "reach": 50,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1502,
-      "ig_reels_video_view_total_time": 63116,
+      "ig_reels_avg_watch_time": 1695,
+      "ig_reels_video_view_total_time": 84754,
       "follow_error": "GET 17959759512027460/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2133,13 +2289,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 61,
-      "reach": 52,
+      "views": 62,
+      "reach": 53,
       "saved": 2,
       "shares": 8,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 2782,
-      "ig_reels_video_view_total_time": 144685,
+      "ig_reels_avg_watch_time": 2946,
+      "ig_reels_video_view_total_time": 156149,
       "follow_error": "GET 17914788243551208/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
