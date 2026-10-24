@@ -1,13 +1,32 @@
 {
- "collected_at": "2026-10-24T12:38:20+00:00",
+ "collected_at": "2026-10-24T16:33:31+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 36,
+   "media_count": 37,
    "posts": [
+    {
+     "media_id": "18117020396079852",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De4iErCnMqg/",
+     "at": "2026-10-24T16:11:56+0000",
+     "first_line": "Payday. Where should the money go first? Follow this order.",
+     "likes": 0,
+     "comments_count": 0,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18169903312480083",
      "type": "REEL",
@@ -17,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 3,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 572,
+      "ig_reels_video_view_total_time": 1717,
       "follow_error": "GET 18169903312480083/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -37,13 +56,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 3,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 540,
-      "ig_reels_video_view_total_time": 540,
+      "ig_reels_avg_watch_time": 4662,
+      "ig_reels_video_view_total_time": 13986,
       "follow_error": "GET 17934801342407031/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -57,8 +76,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 2,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -115,8 +134,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 5,
+      "views": 15,
+      "reach": 7,
       "saved": 2,
       "shares": 8,
       "total_interactions": 15,
@@ -134,8 +153,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 8,
+      "views": 26,
+      "reach": 9,
       "saved": 2,
       "shares": 8,
       "total_interactions": 16,
@@ -153,13 +172,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 16,
+      "views": 22,
+      "reach": 17,
       "saved": 2,
       "shares": 8,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 4292,
-      "ig_reels_video_view_total_time": 68683,
+      "ig_reels_avg_watch_time": 4072,
+      "ig_reels_video_view_total_time": 69238,
       "follow_error": "GET 18098384444535516/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -173,13 +192,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 121,
-      "reach": 103,
+      "views": 122,
+      "reach": 104,
       "saved": 3,
       "shares": 8,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 3496,
-      "ig_reels_video_view_total_time": 363591,
+      "ig_reels_avg_watch_time": 3572,
+      "ig_reels_video_view_total_time": 375066,
       "follow_error": "GET 18025288307870830/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -231,13 +250,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 32,
-      "reach": 27,
+      "views": 33,
+      "reach": 28,
       "saved": 2,
       "shares": 8,
       "total_interactions": 15,
-      "ig_reels_avg_watch_time": 2501,
-      "ig_reels_video_view_total_time": 65040,
+      "ig_reels_avg_watch_time": 2445,
+      "ig_reels_video_view_total_time": 66034,
       "follow_error": "GET 18077312537451007/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -251,13 +270,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 142,
-      "reach": 121,
+      "views": 143,
+      "reach": 122,
       "saved": 4,
       "shares": 10,
       "total_interactions": 24,
-      "ig_reels_avg_watch_time": 4349,
-      "ig_reels_video_view_total_time": 530688,
+      "ig_reels_avg_watch_time": 4321,
+      "ig_reels_video_view_total_time": 531530,
       "follow_error": "GET 18038445917652662/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -711,7 +730,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 3
+    "profile_views": 4
    }
   },
   "lockedhour": {
@@ -719,8 +738,28 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 35,
+   "media_count": 36,
    "posts": [
+    {
+     "media_id": "18052820144807309",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De4NG7LjpWA/",
+     "at": "2026-10-24T13:08:59+0000",
+     "first_line": "New habit keeps not sticking? Floss before or after brushing shows why, and the fix works for any habit.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 28,
+      "reach": 27,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 2423,
+      "ig_reels_video_view_total_time": 63000,
+      "follow_error": "GET 18052820144807309/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18136073005642206",
      "type": "REEL",
@@ -730,13 +769,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 37,
-      "reach": 29,
+      "views": 38,
+      "reach": 31,
       "saved": 0,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 2576,
-      "ig_reels_video_view_total_time": 79873,
+      "ig_reels_avg_watch_time": 2536,
+      "ig_reels_video_view_total_time": 83716,
       "follow_error": "GET 18136073005642206/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1411,8 +1450,28 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 35,
+   "media_count": 36,
    "posts": [
+    {
+     "media_id": "18104528654286500",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De4NTMyDf9F/",
+     "at": "2026-10-24T13:10:43+0000",
+     "first_line": "3-minute voice note, mid-meeting? WhatsApp can turn it into text so you can read it instead.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 5,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 1157,
+      "ig_reels_video_view_total_time": 5786,
+      "follow_error": "GET 18104528654286500/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18093191027201967",
      "type": "REEL",
@@ -2104,8 +2163,27 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 34,
+   "media_count": 35,
    "posts": [
+    {
+     "media_id": "18194018944392496",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De4evX9kVS1/",
+     "at": "2026-10-24T15:42:49+0000",
+     "first_line": "“Just a little honey on the soother?” Not before their first birthday. Not even a tiny bit.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18120178661472079",
      "type": "REEL",
@@ -2115,13 +2193,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 65,
+      "reach": 57,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 2106,
+      "ig_reels_video_view_total_time": 120060,
       "follow_error": "GET 18120178661472079/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2193,13 +2271,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 119,
-      "reach": 107,
+      "views": 120,
+      "reach": 108,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2396,
-      "ig_reels_video_view_total_time": 258856,
+      "ig_reels_avg_watch_time": 2402,
+      "ig_reels_video_view_total_time": 261844,
       "follow_error": "GET 17959759512027460/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2310,8 +2388,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 22,
-      "reach": 8,
+      "views": 23,
+      "reach": 9,
       "saved": 2,
       "shares": 8,
       "total_interactions": 16,
