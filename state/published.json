@@ -6411,6 +6411,37 @@
       "error": null,
       "comment_status": "none",
       "comment_attempts": 0
+    },
+    "lf-1024-no-honey": {
+      "account": "littlefold",
+      "status": "failed",
+      "children": [
+        "17882477865544608",
+        "17882477898544608",
+        "17882477928544608",
+        "17882477964544608",
+        "17882477997544608",
+        "17882478030544608",
+        "17882478075544608"
+      ],
+      "children_media": [
+        "lf-1024-no-honey/01.jpg",
+        "lf-1024-no-honey/02.jpg",
+        "lf-1024-no-honey/03.jpg",
+        "lf-1024-no-honey/04.jpg",
+        "lf-1024-no-honey/05.jpg",
+        "lf-1024-no-honey/06.jpg",
+        "lf-1024-no-honey/07.jpg"
+      ],
+      "children_created_at": "2026-10-24T15:42:08Z",
+      "updated_at": "2026-10-24T15:42:52Z",
+      "container_id": "17882478120544608",
+      "container_created_at": "2026-10-24T15:42:08Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-24T15:42:08Z",
+      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AWPXenXMzIzfDvCX3n4LLdW)",
+      "attempts": 1,
+      "failed_at": "2026-10-24T15:42:08Z"
     }
   }
 }
