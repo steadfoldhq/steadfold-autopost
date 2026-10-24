@@ -6754,7 +6754,7 @@
     },
     "ff-1024-follow-fees": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18152449156497733",
         "18152449204497733",
@@ -6772,31 +6772,47 @@
         "ff-1024-follow-fees/06.jpg"
       ],
       "children_created_at": "2026-10-24T21:19:01Z",
-      "updated_at": "2026-10-24T21:19:23Z",
+      "updated_at": "2026-10-24T21:56:23Z",
       "container_id": "18152449315497733",
       "container_created_at": "2026-10-24T21:19:01Z",
       "publish_called": true,
       "publish_called_at": "2026-10-24T21:19:01Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AI4al8ETr3aZeaVpjh_yWS7)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-24T21:19:01Z"
+      "failed_at": "2026-10-24T21:19:01Z",
+      "media_id": "18171640660476015",
+      "permalink": "https://www.instagram.com/p/De5FRerlN3A/",
+      "published_at": "2026-10-24T21:19:21+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18108908693182295",
+      "comment_error": null,
+      "commented_at": "2026-10-24T21:56:21Z"
     },
     "lf-1024-roadmap-bedtime": {
       "account": "littlefold",
-      "status": "failed",
+      "status": "published",
       "children": [],
       "container_id": "17882548860544608",
       "container_created_at": "2026-10-24T21:19:01Z",
       "publish_called": true,
-      "updated_at": "2026-10-24T21:19:39Z",
+      "updated_at": "2026-10-24T21:56:25Z",
       "publish_called_at": "2026-10-24T21:19:01Z",
-      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=ACoj5SIsxRflYdpiT8SkLer)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-24T21:19:01Z"
+      "failed_at": "2026-10-24T21:19:01Z",
+      "media_id": "18130184167698507",
+      "permalink": "https://www.instagram.com/p/De5FSSNlOJo/",
+      "published_at": "2026-10-24T21:19:37+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18648447007031509",
+      "comment_error": null,
+      "commented_at": "2026-10-24T21:56:21Z"
     },
     "lh-1024-follow-cant-start": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18070224686521398",
         "18070224707521398",
@@ -6814,14 +6830,53 @@
         "lh-1024-follow-cant-start/06.jpg"
       ],
       "children_created_at": "2026-10-24T21:19:01Z",
-      "updated_at": "2026-10-24T21:20:13Z",
+      "updated_at": "2026-10-24T21:56:27Z",
       "container_id": "18070224884521398",
       "container_created_at": "2026-10-24T21:19:01Z",
       "publish_called": true,
       "publish_called_at": "2026-10-24T21:19:01Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=ABcQbRiihwZRFwrz1e3IwUE)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-24T21:19:01Z"
+      "failed_at": "2026-10-24T21:19:01Z",
+      "media_id": "17884436430524299",
+      "permalink": "https://www.instagram.com/p/De5FWaglP5e/",
+      "published_at": "2026-10-24T21:20:11+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18016642364751119",
+      "comment_error": null,
+      "commented_at": "2026-10-24T21:56:21Z"
+    },
+    "hb-1024-climb-5-levels": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18127814152799084",
+        "18127814185799084",
+        "18127814239799084",
+        "18127814326799084",
+        "18127814398799084",
+        "18127814425799084",
+        "18127814449799084"
+      ],
+      "children_media": [
+        "hb-1024-climb-5-levels/01.jpg",
+        "hb-1024-climb-5-levels/02.jpg",
+        "hb-1024-climb-5-levels/03.jpg",
+        "hb-1024-climb-5-levels/04.jpg",
+        "hb-1024-climb-5-levels/05.jpg",
+        "hb-1024-climb-5-levels/06.jpg",
+        "hb-1024-climb-5-levels/07.jpg"
+      ],
+      "children_created_at": "2026-10-24T21:56:21Z",
+      "updated_at": "2026-10-24T21:57:16Z",
+      "container_id": "18127814467799084",
+      "container_created_at": "2026-10-24T21:56:21Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-24T21:56:21Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AoW6Q7oexpsLkGBC-68YFzV)",
+      "attempts": 1,
+      "failed_at": "2026-10-24T21:56:21Z"
     }
   }
 }
