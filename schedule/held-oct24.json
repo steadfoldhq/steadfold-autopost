@@ -1,0 +1,15 @@
+{
+  "_about": "Held by the Social studio on Oct 24 2026 (clarity gate: CONFUSING twice). Reversible: move an entry back to posts.json.",
+  "posts": [
+    {
+      "id": "hb-reel-1025-week-card",
+      "account": "hourback",
+      "publish_at": "2026-10-25T19:00:00-04:00",
+      "video": "recovery-oct22/hourback/hb-reel-1025-week-card.mp4",
+      "cover": "recovery-oct22/hourback/hb-reel-1025-week-card-cover.jpg",
+      "caption": "Sunday night? Your whole week fits on one card. Five messages in, one line a day out.\n\nWhy it works: the week's deadlines hide in five different apps. Paste them in one place and the AI sorts them by day, so nothing waits in a chat you forgot to reopen.\n\nDo this: paste the week's messages. Ask for one line a day.\n\nThe catch, from this exact run: the message said milk and dog food \"before Tue\". The AI put it on Tuesday. Check each line against the original message.\n\nMade up for this post: all 5 messages. The reply is real (Claude, by Anthropic, run Oct 22, 2026), quoted exactly.\n\nPrivacy tip: delete names, addresses and account numbers before you paste.\n\nFollow for real AI tests that give you your evenings back.\n\n#hourback #aitips #sundayreset #weeklyplanning #familyorganization",
+      "first_comment": "Made-up messages, real output: Claude (Anthropic), run Oct 22, 2026 by our studio. Prompt: the 5 messages, then \"Turn these into my week, Mon to Sat. One line a day: what to do, by when.\" The 6 lines on screen are the reply word for word. One slip (\"before Tue\" placed on Tue) is left in on purpose. Results vary between apps and runs.",
+      "alt_text": "Edited video in the Hourback look. Frame 1: big serif 'Sunday night? Your week fits on one card.' over a card titled 'Your week' with one line per day, Monday to Saturday. A rewind coin spins back to TAKE 1, in grey: five made-up message bubbles pile up. TAKE 2: the prompt is typed and the real reply card drops in. Then 'Do this: Paste the week's messages. Ask for one line a day.' with a card: 'Then check it. Ours slipped: it read \"before Tue\" as \"on Tue.\"' It loops back to the opening."
+    }
+  ]
+}

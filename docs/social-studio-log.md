@@ -1,5 +1,39 @@
 # Social studio log (v4)
 
+## Sat Oct 24, 2026 (daily run, 9:17 am Toronto)
+
+**Followers (insights 12:38 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total, flat vs yesterday; peak 28 on Oct 21). Still no attributable organic follow.
+
+**Profile views (day_profile_views):** yesterday's last read FF 11 · LH 3 · HB 4 · LF 8; today (8:38 am read) FF 3 · LH 1 · HB 1 · LF 1.
+
+**Follows / profile visits per carousel (7 days):** follows **1 in total** (LF "Baby finally fell asleep. Now where?", unchanged). Profile visits: FF 10 (The rich often borrow 4, Hold the dots 2, compounding 2, cheap coat 1, RRSP refund 1), HB 1 (Chatbots answer…), LF 1 (safe sleep), LH 0. Every Oct 23 carousel: reach 0–9, 0 / 0.
+
+**Reach / hold (7 days):** Reel median reach FF 31.5 · LH 27 · HB 17 · LF 107; feed median 8 · 4 · 6 · 5.5. Reel median hold FF 3.8 s · LH 4.0 s · HB 4.6 s · LF 3.2 s. LF "First cold morning? Coat off, then buckle" (illustrated washing-line story): **102 reach, 5.1 s** — 2nd Reel ever over both hold bars. LF "Bedtime battle… best 20 minutes" (abstract promise): 107 reach, **2.4 s**. FF CPP Reel (Fri 7 pm): **1 reach at 13 h** (file identical in codec/length to its siblings; not a file fault).
+
+**3 lessons, applied today**
+1. The winning shape is "felt question → one physical rule you can see being done", drawn as a story. Abstract promises die at ~2 s. → All 4 new LF Reels use the illustrated washing-line system with a physical action (burp mid-feed, file nails, elbow in the bath, loose hips in a swaddle); FF/LH/HB Reels show the action on screen by ~2 s (statement → autopay toggle, book shut → write from memory, circle the stranger, hints one at a time).
+2. Long carousels reach nobody (Oct 23 median 1.5). → FF tfsa-room 9→5 and LH done-list 10→5 slides; every new feed post is 1–3 slides.
+3. Gates catch what makers miss, at every stage: the text gate made 7 of 21 drafts CONFUSING, the CD gate cut 2 tiles, and the last gate caught a baby drawn sleeping face-down on a cushion in the nails Reel (fixed: on their back in a crib). → Three gates ran on rendered frames, not scripts.
+
+**Shipped (rollback: `docs/social-recovery/2026-10-24.md`):** 9 Reels + 4 feed for Mon–Wed — Mon: LF 8 am burp (trial), LF 7 pm nails, HB 7 pm photo eraser; Tue: LF 8 am bath (trial), FF 8:15 am card full balance (trial), LF 11:30 milk signs, FF noon "hours, not dollars", HB/LF/LH 7 pm homework hints / swaddle / write from memory; Wed: 3 am Club No. 2, Rich Habits No. 2 (pack lunch 3 days), One Word No. 3 (Nap), AI for real Day 9 (say no, 5:45 pm). Fixed: FF TFSA trap Reel rebuilt (r2), 3 am Club No. 1 slide 2 + object, Rich Habits No. 1 slide 3, series covers' "mon · wed · fri" → "new one every Mon · Wed · Fri", HB Sun 8:45 caption promise. Held: HB week card (CONFUSING twice).
+
+**Hooks chosen (fresh stranger picker, 3 options each):** "gulping, then fussing, every feed?" · "scratches on their face again?" (maker's pick, gated CLEAR) · "Bath water too hot?" · "Swaddling? Leave room for the hips." · "Put TFSA money back too soon?" · "Paid on time. Still charged interest?" · "Exam next week? Stop rereading." · "Stranger in your best photo?" · "Kid's fractions. You forgot how?" · "3 am, and baby wants to play?" · "Third coffee not working?" · "He wants $500. Again." · "Breastfeeding? 5 signs it's going well" · Instead of "It's only $150." say "That's 8 hours of work." · "$15 lunch, every workday?" (maker's pick).
+
+**Styles used (new):** illustrated washing-line story ×4 (LF), FF blueprint ×2, LH zine kinetic ×1, HB demo/phone ×2, series pills ×3 + LH zine one-word ×1, sticky-note list ×1, reframe ×1. No pointing hand, no piggy.
+
+**Clarity gate:** queue > 24 h (14 pieces): 3 CONFUSING (TFSA trap, week card, 3 am Club No. 1 slide 2) → 2 fixed, 1 held. Drafts (21, text only): 7 CONFUSING → all rewritten before render. Rendered (19): 2 CONFUSING (TFSA r2, week card r2) → TFSA rebuilt and passed; week card held. Final pass: 18 CLEAR.
+**CD / peer gate:** round 1: CUT LH "write the worry" emoji tile and HB "4 checks" sticky note; FIX on 15 (static 4–7 s hooks, empty lower halves, borrowed alarm clock on LF, pills covering lines, tiny type, a red "hot patch" that read like blood). Final round: 16 SHIP, 2 FIX → fixed (nails sleep position; Rich Habits No. 1 slide 3). Also cut before render: LF tummy time (repeat of Oct 16), FF card-minimum series topic (duplicated the Tue Reel).
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0 errors, 0 warnings (after fixing the HB Sun caption promise) · dry-run OK at Sun 7:01 pm, Mon 8:01 am / 7:01 pm, Tue 8:16 am / 12:01 pm / 7:01 pm, Wed 5:46 pm · banned-word scan clean on queued posts · grid_preview run and viewed for all four pages.
+
+**Known gaps / for the founder's strategy review:**
+- **LF grid rotation break:** 5 of the next 9 LF tiles are the illustrated washing-line style (2 pairs in a row), below the "≥ 6 styles in 9" rule. I kept it because it is the only format that has passed both hold bars. Needs a decision: either vary the Reel cover style, or accept the series look for LF Reels.
+- **Engine-wide (CD):** FF/LH/HB kits still let a hook sit static 2–7 s and leave the lower half empty. The covers.py / kits look for `chrome-linux/`, but this machine has `chrome-linux64/` (each agent worked around it).
+- **HB Day 9 and the homework reply** were generated by Claude inside the studio session, not in a fresh consumer chat (labelled in the first comment).
+- **Not done:** re-queueing the zero-delivery FF CPP Reel (needs a clarity re-cut: "2026 max" is unlabelled); Stories for Mon–Wed (none queued; Stories reach only followers); series No. 3 (Fri Oct 30) not built.
+
+**Next run:** read the first 24 h of the Sat/Sun Reels and the send-trigger test; build series No. 3 for Fri Oct 30 (3 am Club: only sleeps on you; One Word No. 4; Rich Habits No. 3; Day 10); fill Wed–Thu Reels; re-cut the CPP Reel with labelled numbers.
+
 ## Fri Oct 23, 2026 (daily run, 9:17 am Toronto)
 
 **Followers (7 days, Oct 16 → Oct 23 08:41 ET read):** Fully Funded 2 → **7**, Locked Hour 2 → **4**, Hourback 2 → **5**, Littlefold 1 → **6** (22 total; peak 28 on Oct 21). Of the +6 since yesterday, 4 landed inside the Performance desk's burst #4 window, so treat them as unattributed.

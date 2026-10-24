@@ -1,0 +1,18 @@
+RUN C: homework hints (for hb-reel-1027-homework-hints, Tue Oct 27 7:00 pm)
+Model: Claude, by Anthropic (Claude Opus 5.5), run Oct 24, 2026, by the Hourback Reel maker agent itself.
+Context note: generated inside the agent's session (not a separate consumer chat app). The question, the child and the names are MADE UP for this post.
+
+INPUT (made up, verbatim):
+My kid is in Grade 5 and stuck on this homework question:
+"A pizza is cut into 8 equal slices. Sam eats 3 slices and Priya eats 2. What fraction of the pizza is left?"
+Give me 3 short hints I can say out loud, one at a time. Don't give the answer.
+
+OUTPUT (verbatim):
+Hint 1: How many slices was the whole pizza cut into? That number goes on the bottom of the fraction.
+Hint 2: How many slices got eaten altogether? Add Sam's and Priya's.
+Hint 3: Take the eaten slices away from the whole pizza. How many are left? That number goes on top.
+
+OUR CHECK (by hand):
+- The answer is 3/8 (8 - 3 - 2 = 3 slices left, out of 8). The reply never states 3, 3/8 or "three eighths": no answer leaked. ✓
+- Hint 1 (denominator = 8) ✓; Hint 2 (3 + 2 = 5 eaten) ✓; Hint 3 (8 - 5 = 3, numerator) ✓.
+ON SCREEN: the 3 hints quoted exactly, labelled "real reply".
