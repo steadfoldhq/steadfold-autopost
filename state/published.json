@@ -7271,7 +7271,7 @@
     },
     "ff-1025-tfsa-room": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18152737387497733",
         "18152737414497733",
@@ -7287,14 +7287,57 @@
         "ff-1025-tfsa-room-5/05.jpg"
       ],
       "children_created_at": "2026-10-25T16:10:24Z",
-      "updated_at": "2026-10-25T16:12:10Z",
+      "updated_at": "2026-10-25T16:43:00Z",
       "container_id": "18152737573497733",
       "container_created_at": "2026-10-25T16:10:24Z",
       "publish_called": true,
       "publish_called_at": "2026-10-25T16:10:24Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AnnA6tLYlTGz54m7xeBbWfe)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-25T16:10:24Z"
+      "failed_at": "2026-10-25T16:10:24Z",
+      "media_id": "17977538621932494",
+      "permalink": "https://www.instagram.com/p/De7G55CkYQY/",
+      "published_at": "2026-10-25T16:12:06+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18078636371425347",
+      "comment_error": null,
+      "commented_at": "2026-10-25T16:42:59Z"
+    },
+    "ff-ch-1025-5": {
+      "account": "fullyfunded",
+      "status": "published",
+      "container_id": "18152750950497733",
+      "container_created_at": "2026-10-25T16:42:59Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-25T16:43:15Z",
+      "publish_called_at": "2026-10-25T16:42:59Z",
+      "media_id": "18086991026311771",
+      "published_at": "2026-10-25T16:42:59Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
+    },
+    "lh-1025-done-list": {
+      "account": "lockedhour",
+      "status": "failed",
+      "children": [
+        "18070530833521398"
+      ],
+      "children_media": [
+        "lh-1025-done-list-5/01.jpg",
+        "lh-1025-done-list-5/02.jpg",
+        "lh-1025-done-list-5/03.jpg",
+        "lh-1025-done-list-5/04.jpg",
+        "lh-1025-done-list-5/05.jpg"
+      ],
+      "children_created_at": "2026-10-25T16:42:59Z",
+      "updated_at": "2026-10-25T16:43:27Z",
+      "error": "POST 17841445641921372/media: HTTP 400: The media could not be fetched from this URI: https://raw.githubusercontent.com/steadfoldhq/steadfold-autopost/main/media/lh-1025-done-list-5/02.jpg.Please check the limitations section in our development document for more information: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating (code=9004, subcode=2207052, fbtrace_id=A03dMpa4oX2DwfJbNROw0FW)",
+      "attempts": 1,
+      "failed_at": "2026-10-25T16:42:59Z"
     }
   }
 }
