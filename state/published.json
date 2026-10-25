@@ -7322,7 +7322,7 @@
     },
     "lh-1025-done-list": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18070539305521398",
         "18070539353521398",
@@ -7338,14 +7338,22 @@
         "lh-1025-done-list-5/05.jpg"
       ],
       "children_created_at": "2026-10-25T17:11:34Z",
-      "updated_at": "2026-10-25T17:12:06Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AbfM3VN0LsBQfc4LZKu_edo)",
+      "updated_at": "2026-10-25T17:40:22Z",
+      "error": null,
       "attempts": 2,
       "failed_at": "2026-10-25T17:11:34Z",
       "container_id": "18070539572521398",
       "container_created_at": "2026-10-25T17:11:34Z",
       "publish_called": true,
-      "publish_called_at": "2026-10-25T17:11:34Z"
+      "publish_called_at": "2026-10-25T17:11:34Z",
+      "media_id": "18163806304498414",
+      "permalink": "https://www.instagram.com/p/De7Nv6EGk0C/",
+      "published_at": "2026-10-25T17:12:03+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18095134895690699",
+      "comment_error": null,
+      "commented_at": "2026-10-25T17:40:20Z"
     },
     "lh-ch-1025-5": {
       "account": "lockedhour",
