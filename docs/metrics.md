@@ -127,7 +127,7 @@ Every "best by ratio" is a 1-week-old carousel on reach of 6–12. **Since Oct 2
   - **Concrete check or rule, shown:** coat 5.2 s, toddler play 5.5 s, "check the words" 4.6 s.
   - **Reassurance or abstract promise:** fridge 0.8 s, new dad 2.4 s, bedtime 2.4 s, teething 2.6 s.
   - **🇨🇦 cheat sheets:** 3.4 s.
-- **Topic and page (medium):** LF holds 9 of the 15 batches of ≥100 this week. HB (101) and LH (105) reached 100 at 5 h for the first time last night. FF fell from a 7 pm median of 27 at 5 h (Oct 17–22) to 0–4 (Oct 23–24).
+- **Topic and page (medium):** LF holds 10 of the 15 batches of ≥100 this week. HB (101) and LH (105) reached 100 at 5 h for the first time last night. FF fell from a 7 pm median of 27 at 5 h (Oct 17–22) to 0–4 (Oct 23–24).
 - **Trial flag (medium-low):** since Oct 19, the median reach of trial vs normal Reels is FF 18.5 vs 63, LH 16 vs 23, HB 11 vs 15 and LF 104 vs 104. The flag hasn't won a bigger batch on any page.
 - **Posting time (low):** the 7 pm slot won all 3 of last night's ~100 batches within 5 h. Morning batches build over 8–24 h (teething 57 → 122, floss 27 → 58).
 - **Sends:** 2 clean sends from Oct 19 to 25 across 2,438 post reach.
