@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-25T16:32:44+00:00",
+ "collected_at": "2026-10-25T20:29:48+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -15,13 +15,13 @@
      "at": "2026-10-25T16:12:06+0000",
      "first_line": "Your TFSA room could be $109,000.",
      "likes": 0,
-     "comments_count": 0,
+     "comments_count": 1,
      "insights": {
       "views": 0,
       "reach": 0,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 0,
+      "total_interactions": 1,
       "follows": 0,
       "profile_visits": 0
      },
@@ -36,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 5,
+      "views": 11,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3872,
-      "ig_reels_video_view_total_time": 19361,
+      "ig_reels_avg_watch_time": 3146,
+      "ig_reels_video_view_total_time": 25174,
       "follow_error": "GET 18110023582921782/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -789,7 +789,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 4
+    "profile_views": 5
    }
   },
   "lockedhour": {
@@ -797,8 +797,27 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 40,
+   "media_count": 41,
    "posts": [
+    {
+     "media_id": "18163806304498414",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De7Nv6EGk0C/",
+     "at": "2026-10-25T17:12:03+0000",
+     "first_line": "Felt like you did nothing this week? You probably did more than you think. You just can't see it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18072487772769538",
      "type": "REEL",
@@ -1557,25 +1576,6 @@
       "profile_visits": 1
      },
      "comments": []
-    },
-    {
-     "media_id": "17991574842061695",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DebbszunIrw/",
-     "at": "2026-10-13T08:58:04+0000",
-     "first_line": "Lock in for one hour, not one year 🔒",
-     "likes": 7,
-     "comments_count": 2,
-     "insights": {
-      "views": 63,
-      "reach": 17,
-      "saved": 3,
-      "shares": 7,
-      "total_interactions": 23,
-      "follows": 0,
-      "profile_visits": 3
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1598,13 +1598,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 2,
-      "reach": 1,
+      "views": 6,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 803,
-      "ig_reels_video_view_total_time": 803,
+      "ig_reels_avg_watch_time": 3164,
+      "ig_reels_video_view_total_time": 12659,
       "follow_error": "GET 18421199923152408/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2506,13 +2506,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 116,
-      "reach": 102,
+      "views": 117,
+      "reach": 103,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5206,
-      "ig_reels_video_view_total_time": 525865,
+      "ig_reels_avg_watch_time": 5161,
+      "ig_reels_video_view_total_time": 526477,
       "follow_error": "GET 18383033815225570/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
