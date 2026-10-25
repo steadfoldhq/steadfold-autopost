@@ -1,13 +1,32 @@
 {
- "collected_at": "2026-10-25T12:37:12+00:00",
+ "collected_at": "2026-10-25T16:32:44+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 40,
+   "media_count": 41,
    "posts": [
+    {
+     "media_id": "17977538621932494",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De7G55CkYQY/",
+     "at": "2026-10-25T16:12:06+0000",
+     "first_line": "Your TFSA room could be $109,000.",
+     "likes": 0,
+     "comments_count": 0,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18110023582921782",
      "type": "REEL",
@@ -17,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 6,
+      "reach": 5,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 3872,
+      "ig_reels_video_view_total_time": 19361,
       "follow_error": "GET 18110023582921782/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -37,13 +56,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 13,
+      "views": 16,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1382,
-      "ig_reels_video_view_total_time": 19358,
+      "ig_reels_avg_watch_time": 1299,
+      "ig_reels_video_view_total_time": 20791,
       "follow_error": "GET 18128832788486241/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -485,13 +504,13 @@
      "likes": 7,
      "comments_count": 1,
      "insights": {
-      "views": 95,
-      "reach": 73,
+      "views": 100,
+      "reach": 74,
       "saved": 5,
       "shares": 0,
       "total_interactions": 19,
-      "ig_reels_avg_watch_time": 3960,
-      "ig_reels_video_view_total_time": 316872,
+      "ig_reels_avg_watch_time": 3993,
+      "ig_reels_video_view_total_time": 323437,
       "follow_error": "GET 18114174383519618/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -767,25 +786,6 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18106069897979879",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/Debcj61lSrK/",
-     "at": "2026-10-13T09:05:35+0000",
-     "first_line": "Your paycheque has 3 jobs. Most of us only give it one 👀",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 45,
-      "reach": 12,
-      "saved": 4,
-      "shares": 2,
-      "total_interactions": 16,
-      "follows": 0,
-      "profile_visits": 1
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -797,8 +797,28 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 39,
+   "media_count": 40,
    "posts": [
+    {
+     "media_id": "18072487772769538",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De6x5qylLqV/",
+     "at": "2026-10-25T13:08:57+0000",
+     "first_line": "Everything takes longer than you think? It's not just you. You're not bad at planning. Everyone is.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 122,
+      "reach": 101,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3618,
+      "ig_reels_video_view_total_time": 372729,
+      "follow_error": "GET 18072487772769538/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18186281239418903",
      "type": "REEL",
@@ -1567,8 +1587,28 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 39,
+   "media_count": 40,
    "posts": [
+    {
+     "media_id": "18421199923152408",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De6x_GYiDia/",
+     "at": "2026-10-25T13:09:39+0000",
+     "first_line": "That sparkle button? It's AI. You already use it every day.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 2,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 803,
+      "ig_reels_video_view_total_time": 803,
+      "follow_error": "GET 18421199923152408/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18132770962706159",
      "type": "REEL",
@@ -2338,14 +2378,14 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 38,
+   "media_count": 39,
    "posts": [
     {
-     "media_id": "18152957065536999",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/De6soAiitVg/",
-     "at": "2026-10-25T12:22:50+0000",
-     "first_line": "You can't spoil a newborn. Pick them up.",
+     "media_id": "18131494534773635",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De7DiL_CUBs/",
+     "at": "2026-10-25T15:42:48+0000",
+     "first_line": "The crying has a peak. It often lands somewhere around 3 to 12 weeks, and it's usually over by 3 to 4 months.",
      "likes": 0,
      "comments_count": 1,
      "insights": {
@@ -2354,8 +2394,27 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18152957065536999",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De6soAiitVg/",
+     "at": "2026-10-25T12:22:50+0000",
+     "first_line": "You can't spoil a newborn. Pick them up.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 127,
+      "reach": 107,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 4860,
+      "ig_reels_video_view_total_time": 520112,
       "follow_error": "GET 18152957065536999/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2505,13 +2564,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 120,
-      "reach": 108,
+      "views": 121,
+      "reach": 109,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2402,
-      "ig_reels_video_view_total_time": 261844,
+      "ig_reels_avg_watch_time": 2408,
+      "ig_reels_video_view_total_time": 264933,
       "follow_error": "GET 17959759512027460/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2837,8 +2896,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 36,
-      "reach": 15,
+      "views": 37,
+      "reach": 16,
       "saved": 4,
       "shares": 4,
       "total_interactions": 19,
@@ -2856,8 +2915,8 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 7,
+      "views": 21,
+      "reach": 8,
       "saved": 3,
       "shares": 4,
       "total_interactions": 20,
