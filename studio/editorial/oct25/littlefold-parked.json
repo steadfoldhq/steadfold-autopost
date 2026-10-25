@@ -1,0 +1,62 @@
+[
+  {
+    "id": "lf-reel-1027-sling-kiss",
+    "account": "littlefold",
+    "publish_at": "2026-10-27T19:00:00-04:00",
+    "video": "studio-oct25/littlefold/lf-reel-1027-sling-kiss.mp4",
+    "cover": "studio-oct25/littlefold/lf-reel-1027-sling-kiss-cover.jpg",
+    "caption": "Baby in a sling? Tip your head forward. You should be able to kiss the top of their head.\n\nWHY: a baby who sits too low, in loose fabric, can slump down, and that can make it harder for them to breathe. High and snug stops them slumping and keeps their face where you can see it. It's the C in the T.I.C.K.S. sling checklist the NHS and The Lullaby Trust share.\n\nTHE KISS CHECK (every time you put the sling on):\n1. Tip your head forward. Can you kiss their head or forehead?\n2. Can't reach? Tighten the sling and lift them higher, so they're hugged close against you.\n3. Glance down: you should see their face without moving any fabric.\n\nTHE CATCH: never let the material cover their head, and don't feed a baby while they're in the sling (The Lullaby Trust says this is especially true under 4 months). Follow your sling's own instructions.\n\nDo this: tip your head, kiss their head.\n\nSend this to a friend who just got a sling.\n\nPart 2 tomorrow, 7 pm: the chin check.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#babywearing #newborn #babysafety #newparents #slingsafety",
+    "first_comment": "Sources (checked Oct 25, 2026): 1) NHS, 'Sudden infant death syndrome (SIDS)' (nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/), T.I.C.K.S.: \"Tight: slings and carriers should be kept tight enough to hug your baby close to your body\"; \"In view: you should be able to see your baby's face at all times\"; \"Close: the sling should keep your baby close enough to kiss their head\"; \"Keep: keep your baby's chin off their chest\"; \"Support: support your baby's back so it is comfortably upright\"; \"do not let the material cover your baby's head\"; it is not safe to feed a baby while they're in a sling. 2) NHS Fife, 'The TICKS rule for safe babywearing' (nhsfife.org): \"By tipping your head forward you should be able to kiss your baby on the head or forehead.\" \"Ensure there is always a space of at least a finger width under your baby's chin.\" \"A baby should never be curled so their chin is forced onto their chest as this can restrict their breathing.\" Slack fabric \"will allow your baby to slump down in the carrier which can hinder their breathing.\" 3) The Lullaby Trust, 'How to use baby slings and carriers safely' (lullabytrust.org.uk/safer-sleep-advice/swaddling-slings/): T.I.C.K.S. (Tight, In view at all times, Close enough to kiss, Keep chin off the chest, Supported back), from the Consortium of UK Sling Manufacturers and Retailers; hands-free feeding in a sling is unsafe, \"especially true for babies under four months old\". Always follow your sling's own instructions. General information only, not medical advice.",
+    "alt_text": "Illustrated Reel in warm dawn light: pastel sky, sage hills, a smiling sun and a washing line of baby clothes. A parent seen from the side wears a baby (no baby face shown) in a sage-green sling on their chest. The parent tips their head forward and kisses the baby's head; a heart pops. Then the baby sits low in a saggy sling with a dashed gap to the parent's lips ('too low'); the strap pulls snug and the baby rides up ('snug and high', check). Fabric over the baby's head slides away ('see them at a glance', check). Ends with the parent kissing the baby's head while hearts float. Text: baby in a sling? Can you kiss their head? / if you can't: Snug it up. Lift them higher. / and: Always see their face. / Do this: Tip your head. Kiss their head. Part 2 tomorrow, 7 pm: the chin check. Follow for one calm thing a night. Source chip: NHS, T.I.C.K.S. sling safety.",
+    "beats": [
+      "baby in a sling? | Can you kiss their head? | (handwritten) tip your head… → kiss ✓ | chip: NHS · T.I.C.K.S. sling safety",
+      "if you can't | Snug it up. Lift them higher. | (handwritten) too low → snug and high",
+      "and | Always see their face. | (handwritten) fabric off their face → see them at a glance",
+      "Do this: | Tip your head. Kiss their head. | Part 2 tomorrow, 7 pm: the chin check. | Follow for one calm thing a night ☀"
+    ],
+    "hook_options": [
+      "Baby in a sling? Can you kiss their head?",
+      "Wearing your baby? Try the kiss check.",
+      "Sling on? Tip your head down."
+    ],
+    "duration_s": 14.5,
+    "style": "Illustrated washing-line story Reel (Littlefold silhouette/story slot, style 14 code-drawn; recovery-oct22c reel_story.py engine, no series pill)",
+    "send_test": false,
+    "sources": [
+      "NHS, 'Sudden infant death syndrome (SIDS)', https://www.nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/",
+      "NHS Fife, 'The TICKS rule for safe babywearing', https://www.nhsfife.org/services/all-services/patient-advice/the-ticks-rule-for-safe-babywearing/",
+      "The Lullaby Trust, 'How to use baby slings and carriers safely', https://www.lullabytrust.org.uk/safer-sleep-advice/swaddling-slings/"
+    ],
+    "notes": "Part 1 of a 2-Reel sling lesson (T.I.C.K.S. split by the two airway checks you can picture: kiss check today, chin check Wed). Last beat and caption say 'Part 2 tomorrow, 7 pm'. Music: existing lf-x-tiny-parade (v4 library), -14 LUFS. Builder: studio/editorial/oct25_littlefold.py kiss."
+  },
+  {
+    "id": "lf-reel-1028-sling-chin",
+    "account": "littlefold",
+    "publish_at": "2026-10-28T19:00:00-04:00",
+    "video": "studio-oct25/littlefold/lf-reel-1028-sling-chin.mp4",
+    "cover": "studio-oct25/littlefold/lf-reel-1028-sling-chin-cover.jpg",
+    "caption": "Baby in a sling? You should always be able to slide one finger under their chin.\n\nWHY: a baby curled so their chin is forced onto their chest can find it harder to breathe. NHS guidance says keep their chin off their chest, with at least a finger's width of space under it. It's the K in the T.I.C.K.S. sling checklist.\n\nTHE CHIN CHECK:\n1. Slide one finger under their chin. It should fit.\n2. Chin pressed down? Gently reposition them so their chin lifts off their chest.\n3. Check the back: snug and upright, tummy and chest against you, not slumped low.\n\nPart 1 was the kiss check: tip your head forward and you should be able to kiss their head.\n\nTHE CATCH: never let fabric cover their head, and don't feed a baby in the sling (especially under 4 months). Follow your sling's own instructions.\n\nDo this: slide one finger under their chin.\n\nSend this to whoever does the sling walks.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#babywearing #newborn #babysafety #newparents #slingsafety",
+    "first_comment": "Sources (checked Oct 25, 2026): 1) NHS, 'Sudden infant death syndrome (SIDS)' (nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/), T.I.C.K.S.: \"Tight: slings and carriers should be kept tight enough to hug your baby close to your body\"; \"In view: you should be able to see your baby's face at all times\"; \"Close: the sling should keep your baby close enough to kiss their head\"; \"Keep: keep your baby's chin off their chest\"; \"Support: support your baby's back so it is comfortably upright\"; \"do not let the material cover your baby's head\"; it is not safe to feed a baby while they're in a sling. 2) NHS Fife, 'The TICKS rule for safe babywearing' (nhsfife.org): \"By tipping your head forward you should be able to kiss your baby on the head or forehead.\" \"Ensure there is always a space of at least a finger width under your baby's chin.\" \"A baby should never be curled so their chin is forced onto their chest as this can restrict their breathing.\" Slack fabric \"will allow your baby to slump down in the carrier which can hinder their breathing.\" 3) The Lullaby Trust, 'How to use baby slings and carriers safely' (lullabytrust.org.uk/safer-sleep-advice/swaddling-slings/): T.I.C.K.S. (Tight, In view at all times, Close enough to kiss, Keep chin off the chest, Supported back), from the Consortium of UK Sling Manufacturers and Retailers; hands-free feeding in a sling is unsafe, \"especially true for babies under four months old\". Always follow your sling's own instructions. General information only, not medical advice.",
+    "alt_text": "Illustrated Reel in warm dawn light: pastel sky, sage hills, a smiling sun and a washing line of baby clothes. A close-up of a sleeping baby drawn in profile, wrapped in a sage-green sling; an adult finger slides into the gap under the baby's chin and a check draws on. The baby's chin curls down onto the chest, little breath swirls stop and a coral 'no' ring appears; the head lifts and the swirls flow again. A parent seen from the side has a baby slumped low in a loose sling; the sling pulls snug and the baby sits upright (check). Ends with the finger under the chin and hearts floating. Text: baby in a sling? part 2. One finger under the chin. / because: Chin on chest can restrict breathing. / and: Snug and upright, back supported. / Do this: Slide one finger under their chin. Part 1 was the kiss check. Follow for one calm thing a night. Source chip: NHS, T.I.C.K.S. sling safety.",
+    "beats": [
+      "baby in a sling? part 2 | One finger under the chin. | (handwritten) room under the chin? → one finger fits ✓ | chip: NHS · T.I.C.K.S. sling safety",
+      "because | Chin on chest can restrict breathing. | (handwritten) chin on chest → chin up, breathing easy",
+      "and | Snug and upright, back supported. | (handwritten) slumped low → snug, upright",
+      "Do this: | Slide one finger under their chin. | Part 1 was the kiss check. | Follow for one calm thing a night ☀"
+    ],
+    "hook_options": [
+      "Baby in a sling? One finger under the chin.",
+      "Sling check: does a finger fit?",
+      "Chin on their chest? Lift it."
+    ],
+    "duration_s": 14.47,
+    "style": "Illustrated washing-line story Reel (Littlefold silhouette/story slot, style 14 code-drawn; recovery-oct22c reel_story.py engine, no series pill)",
+    "send_test": false,
+    "sources": [
+      "NHS, 'Sudden infant death syndrome (SIDS)', https://www.nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/",
+      "NHS Fife, 'The TICKS rule for safe babywearing', https://www.nhsfife.org/services/all-services/patient-advice/the-ticks-rule-for-safe-babywearing/",
+      "The Lullaby Trust, 'How to use baby slings and carriers safely', https://www.lullabytrust.org.uk/safer-sleep-advice/swaddling-slings/"
+    ],
+    "notes": "Optional slot (part 2 of Tuesday's sling lesson). Stands alone for strangers: the hook is the full check. Weakest of the three visually (the close-up sling is a simple wrapped shape); cut it if the reviewer judges it below the bar, and then remove 'Part 2 tomorrow, 7 pm' from Tuesday's last beat and caption (re-render kiss with the sub removed). Music: existing lf-x-giggle-pop (v4 library), -14 LUFS. Builder: studio/editorial/oct25_littlefold.py chin."
+  }
+]

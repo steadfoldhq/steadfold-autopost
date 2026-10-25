@@ -1,0 +1,31 @@
+[
+  {
+    "id": "lf-reel-1026-neck-check",
+    "account": "littlefold",
+    "publish_at": "2026-10-28T19:00:00-04:00",
+    "video": "studio-oct25/littlefold/lf-reel-1026-neck-check-r2.mp4",
+    "cover": "studio-oct25/littlefold/lf-reel-1026-neck-check-r2-cover.jpg",
+    "caption": "For whoever keeps adding blankets: feel the back of baby's neck, not their hands.\n\nWHY: overheating can increase the risk of SIDS, says the NHS. Babies' hands and feet usually feel cool, and that's normal. So cold little hands are not a sign to add another layer.\n\nTHE CHECK (5 seconds):\n1. Put two fingers on the back of their neck, or on their chest.\n2. Hot or sweaty? Take off a layer of clothing or bedding.\n3. Warm and dry? They're fine as they are.\n\nTHE ROOM: the NHS and The Lullaby Trust suggest about 16 to 20°C where baby sleeps. A room thermometer takes the guessing out.\n\nTHE CATCH: no hats indoors. Take hats and extra layers off as soon as you come inside or get in the car, even if it means waking them. For sleep, use lightweight blankets or a baby sleeping bag, never a duvet. A baby who seems unwell or has a fever needs a call to your doctor or nurse, not a layer change.\n\nDo this: check baby's neck, not the hands.\n\nSend this to whoever keeps adding blankets.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #safesleep #babycare #newparents #winterbaby",
+    "first_comment": "Sources (checked Oct 25, 2026): 1) NHS, 'Sudden infant death syndrome (SIDS)' (nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/): \"Overheating can increase the risk of SIDS\"; check \"by feeling their chest or the back of their neck\"; \"Do not worry if their hands or feet feel cool, this is normal\"; \"remove 1 or more layers of clothing or bedding if your baby skin is hot or sweating\"; room \"between about 16 to 20C\", use a room thermometer; \"remove hats and extra clothing as soon as you come indoors or enter a car, bus or train even if it means waking your baby\"; \"use lightweight blankets, sheets or a baby sleeping bag\". 2) The Lullaby Trust, 'Baby room temperature' (lullabytrust.org.uk/safer-sleep-advice/baby-room-temperature/): \"feel your baby's chest or the back of their neck\"; \"your baby's hands and feet will usually be cooler, which is normal\"; \"If your baby's skin is hot or sweaty, remove one or more layers of bedclothes or bedding\"; \"The recommended room temperature for babies is 16-20°C\"; \"Babies do not need to wear hats indoors\". General information only, not medical advice.",
+    "alt_text": "Illustrated Reel in warm dawn light: pastel sky, sage hills, a smiling sun and a washing line of baby clothes. A baby seen from behind (no face) has blankets dropping onto their shoulders one after another; two adult fingers slide in and touch the back of the neck and a soft ring pulses. Sweat drops appear, the sun sinks behind the hill, the top blanket lifts off and flies up to be pegged on the washing line, and a check mark draws on. The sun rises again as a little hand and foot get blue frost sparkles and the note 'normal'. The baby ends with fewer layers, fingers resting on the neck, hearts floating. Text: for whoever keeps adding blankets. Feel the back of baby's neck. / hot or sweaty? Take a layer off. / and don't worry: Cool hands and feet are normal. / Do this: Check baby's neck, not the hands. Send this to whoever keeps adding blankets. Follow for one calm thing a night, from bump to toddler. Source chip: NHS, The Lullaby Trust.",
+    "beats": [
+      "for whoever keeps adding blankets | Feel the back of baby's neck. | (handwritten, from 0.5 s) another blanket? → feel here | chip: NHS · The Lullaby Trust",
+      "hot or sweaty? | Take a layer off. | (handwritten) sweaty? too hot → one layer off",
+      "and don't worry | Cool hands and feet are normal. | (handwritten) cool hands · cool feet · normal",
+      "Do this: | Check baby's neck, not the hands. | send this to whoever keeps adding blankets | Follow for one calm thing a night, from bump to toddler."
+    ],
+    "hook_options": [
+      "For whoever keeps adding blankets: feel the back of baby's neck.",
+      "Cold hands? Check baby's neck instead.",
+      "Too warm or too cold? Feel baby's neck."
+    ],
+    "duration_s": 14.43,
+    "style": "Illustrated washing-line story Reel (Littlefold silhouette/story slot, style 14 code-drawn; recovery-oct22c reel_story.py engine, no series pill)",
+    "send_test": true,
+    "sources": [
+      "NHS, 'Sudden infant death syndrome (SIDS)', https://www.nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/",
+      "The Lullaby Trust, 'Baby room temperature', https://lullabytrust.org.uk/safer-sleep-advice/baby-room-temperature/"
+    ],
+    "notes": "r2 after the gate (Oct 25): 'baby's neck' in the headline, last beat and caption; frame 0 is a clean state (hand fully off-frame, slides in from 0.7 s); hard text cuts between beats; the sun sinks behind the hill on 'hot or sweaty?' and rises on the next beat; follow chip is the full page FOLLOW line with no glyph. Moved to Wed Oct 28 19:00 per coordinator; id kept as lf-reel-1026-neck-check (date in id no longer matches the slot). SEND TEST (desk order 4): frame 0 names the person inside the hook and the last beat says 'send this to whoever keeps adding blankets' on screen. Music: existing lf-x-sunny-bounce (v4), -14 LUFS. Builder: python3 studio/editorial/oct25_littlefold.py neck2. The r1 file lf-reel-1026-neck-check.mp4 is superseded."
+  }
+]

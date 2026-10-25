@@ -1,0 +1,35 @@
+Hourback real run, Oct 25 2026 (studio maker, Hourback)
+Used in: hb-reel-1027-bill-went-up (Tue Oct 27, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-25T13:39:44Z
+Input: MADE UP FOR THIS POST (no real bill / recipe owner).
+
+===== PROMPT (verbatim) =====
+Here are my last two phone bills. Why is October's higher? Answer in one short sentence, then list what changed.
+
+SEPTEMBER
+Unlimited 50 GB plan: $65.00
+Loyalty discount: -$15.00
+Phone payment (month 12 of 24): $38.50
+911 service fee: $0.75
+Tax: $11.60
+Total: $100.85
+
+OCTOBER
+Unlimited 50 GB plan: $65.00
+Phone payment (month 13 of 24): $38.50
+911 service fee: $0.75
+Tax: $13.55
+Total: $117.80
+
+===== REPLY (verbatim) =====
+October is **$16.95 higher** because your $15 loyalty discount went away, and that also raised your tax.
+
+**What changed:**
+- **Loyalty discount removed:** it was −$15.00 in September and isn't on October's bill (+$15.00)
+- **Tax went up:** from $11.60 to $13.55 (+$1.95). The rate is still 13%, but without the discount it's charged on a larger amount ($104.25 instead of $89.25).
+
+**What stayed the same:** the plan ($65.00), the phone payment ($38.50, now month 13 of 24) and the 911 fee ($0.75).
+
+If you didn't expect the discount to end, call your carrier and ask whether it can be put back on your account. Loyalty discounts often run for a set time, so it may simply have expired.

@@ -1,0 +1,62 @@
+[
+ {
+  "id": "lh-reel-1028-grey-phone",
+  "account": "lockedhour",
+  "publish_at": "2026-10-28T19:00:00-04:00",
+  "video": "studio-oct25/lockedhour/lh-reel-1028-grey-phone-r2.mp4",
+  "cover": "studio-oct25/lockedhour/lh-reel-1028-grey-phone-r2-cover.jpg",
+  "caption": "Turn your phone grey tonight. A boring phone is easier to put down.\n\nWHY: bright app icons and red badges are built to catch your eye. With colour off, the same apps just look less tempting.\n\nTHE STUDY: 84 young adults (average age 22) let an app log their phone use for 2 weeks. Week 1 normal, week 2 in grayscale. In the grey week they spent about 20 minutes less a day on their phones, and said they felt more in control of their phone use and less stressed.\n\nHOW:\n1. iPhone: Settings > Accessibility > Display & Text Size > Color Filters. Turn it on and pick Grayscale.\n2. Android: open Settings and search \"grayscale\" (on many phones it's under Accessibility > Color correction).\n3. Optional: add it to your Accessibility Shortcut so you can switch colour back for photos and maps.\n4. Keep it on for one full week before you judge it.\n\nTHE CATCH: they picked up their phones just as often (about 80 times a day both weeks). The visits got shorter, not fewer. It was one week and 84 people, and it didn't change their sleep or how productive they felt.\n\nDo this: turn on Grayscale tonight.\n\nSend this to the friend who says \"one quick scroll\" and loses an hour.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#focus #screentime #digitalwellbeing #productivity #phonehabits",
+  "first_comment": "Source: Dekker, C. A., & Baumgartner, S. E. (2024). Is life brighter when your phone is not? The efficacy of a grayscale smartphone intervention addressing digital well-being. Mobile Media & Communication, 12(3). https://doi.org/10.1177/20501579231212062 (open access, first online Nov 9 2023). 84 young adults (Android users, mean age 21.95, recruited through a university lab pool and the first author's network), 1 baseline week then 1 grayscale week, phone use logged by an app: daily screen time 287 -> 268 min (about 20 min less a day); daily unlocks did not change (80.03 vs 80.33, p = .86); perceived overuse, online vigilance and stress went down; no effect on productivity or sleep. Settings paths checked Oct 25 2026 on Apple Support (support.apple.com/en-us/111773: Accessibility > Display & Text Size > Color Filters, Grayscale) and Google Android Accessibility Help (support.google.com/accessibility/android/answer/11183305: Accessibility > Color and motion > Color correction; menus vary by phone).",
+  "alt_text": "Edited video in the Locked Hour zine look on pink, cream and butter dot-grid paper. A drawn phone full of bright app icons with red badges drains to grey under the line 'Turn your phone grey tonight.' Then 'A grey phone is a boring phone.' with a 60:00 ring filling a third, '-20 minutes a day' and the note 'people spent about 20 minutes less a day on it' (Dekker & Baumgartner 2024, 84 young adults). Then 'You'll still pick it up. You'll put it down sooner.' with chips 'picked up: as often as before' and 'time on it: less'. Then 'Do this: Turn on Grayscale tonight.' with a switch flipping on and the iPhone settings path; Android: search grayscale in Settings. It loops to the grey phone with 'follow for one small focus fix a day, each one backed by research'.",
+  "beats": [
+   "Turn your phone grey tonight. [drawn phone, colour drains]",
+   "A grey phone is a boring phone. | −20 minutes a day | people spent about 20 minutes less a day on it | Dekker & Baumgartner 2024 · 84 young adults · phone use logged by an app, 1 week each way",
+   "You'll still pick it up. You'll put it down sooner. | picked up: as often as before | time on it: less",
+   "Do this: | Turn on Grayscale tonight. | Grayscale [switch] | iPhone: Settings › Accessibility › Display & Text Size › Color Filters › Grayscale | Android: search “grayscale” in Settings",
+   "Turn your phone grey tonight. | follow for one small focus fix a day, each one backed by research | [stamp]"
+  ],
+  "hook_options": [
+   "Turn your phone grey tonight.",
+   "Your phone is too colourful.",
+   "Can't put your phone down?"
+  ],
+  "duration_s": 13.6,
+  "style": "Kinetic big text cut with the LH recovery kit (illustrated diagram: drawn phone + 60:00 ring)",
+  "send_test": false,
+  "sources": [
+   "Dekker & Baumgartner 2024, Mobile Media & Communication 12(3), doi:10.1177/20501579231212062",
+   "https://support.apple.com/en-us/111773",
+   "https://support.google.com/accessibility/android/answer/11183305"
+  ],
+  "notes": "r2: only change is the on-screen/caption sample label '84 students' -> '84 young adults' (paper does not say all were students). 'Picked up as often as before' confirmed: unlocks 80.03/day baseline vs 80.33/day grayscale, p = .86. Music: lh-x-phone-down (tools/music-library.json, existing v4 master), drop placed on the Do-this beat (8.1 s), -14 LUFS, music_check PASS. Picked Dekker & Baumgartner (logged screen time) over Holte & Ferraro (self-reported) as the stronger study."
+ },
+ {
+  "id": "lh-reel-1026-print-it",
+  "account": "lockedhour",
+  "publish_at": "2026-10-26T19:00:00-04:00",
+  "video": "studio-oct25/lockedhour/lh-reel-1026-print-it-r2.mp4",
+  "cover": "studio-oct25/lockedhour/lh-reel-1026-print-it-r2-cover.jpg",
+  "caption": "For whoever studies on their phone: you understand more on paper.\n\nWHY: researchers think screens nudge us to skim, and we feel more sure we got it than we really did. On paper, people tend to read more slowly and carefully.\n\nTHE RESEARCH: a review of 54 studies with 171,055 readers found people understood texts better on paper than on screens. The gap was biggest when people were reading against the clock and reading to learn (textbooks, articles, work documents). For stories and novels there was no real difference. And the paper advantage got bigger in newer studies, not smaller.\n\nHOW:\n1. Pick the pages you'll be tested on, or the document you must really understand.\n2. Print them (a library or campus printer works).\n3. Read with a pen in hand. Mark the 2 or 3 lines that matter.\n4. Keep the screen for quick lookups and reading for fun.\n\nTHE CATCH: the paper advantage is small on average, and it's about understanding, not speed. If printing isn't possible, slow down on screen and avoid scrolling while you read.\n\nDo this: print the pages you must understand.\n\nSend this to whoever studies on their phone.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#studytips #studying #focus #reading #studentlife",
+  "first_comment": "Source: Delgado, P., Vargas, C., Ackerman, R., & Salmerón, L. (2018). Don't throw away your printed books: A meta-analysis on the effects of reading media on reading comprehension. Educational Research Review, 25, 23–38. https://doi.org/10.1016/j.edurev.2018.09.003 54 studies, 171,055 participants: comprehension was better on paper than on screen (g = −0.21). The advantage was larger under time limits than self-paced, held for informational texts but not narrative-only texts, and grew from 2000 to 2017. Checked against the authors' PDF (uv.es) and the University of Haifa record, Oct 25 2026.",
+  "alt_text": "Edited video in the Locked Hour zine look on cream, pink and butter dot-grid paper. 'For whoever studies on their phone.' over a drawn phone with scrolling lines of text and the handwritten note 'paper wins. here's when.' Then 'You understand more on paper.' as a printed page drops in and a pink highlighter marks two lines (Delgado, Vargas, Ackerman & Salmerón 2018, 54 studies, 171,055 readers). Then 'Paper wins most when you're in a rush.' with a 60:00 ring running down labelled 'time running out' and chips 'textbooks ✓' and 'work docs ✓', and the note 'stories? no real difference.' Then 'Do this: Print the pages you must understand. Then read them with a pen in hand.' Last: 'Send this to whoever studies on their phone.' and 'follow for one small focus fix a day, each one backed by research'.",
+  "beats": [
+   "For whoever studies on their phone. | paper wins. here's when. [drawn phone, text scrolls]",
+   "You understand more on paper. [printed page, highlighter] | Delgado, Vargas, Ackerman & Salmerón 2018 · 54 studies · 171,055 readers",
+   "Paper wins most when you're in a rush. | [60:00 ring running down] time running out | textbooks ✓ | work docs ✓ | stories? no real difference.",
+   "Do this: | Print the pages you must understand. | then read them with a pen in hand.",
+   "Send this to whoever studies on their phone. | follow for one small focus fix a day, each one backed by research | [stamp]"
+  ],
+  "hook_options": [
+   "For whoever studies on their phone.",
+   "Studying off your phone screen?",
+   "You understand more on paper."
+  ],
+  "duration_s": 13.6,
+  "style": "Kinetic big text cut with the LH recovery kit (illustrated: drawn phone vs printed page + 60:00 ring)",
+  "send_test": true,
+  "sources": [
+   "Delgado, Vargas, Ackerman & Salmerón 2018, Educational Research Review 25:23-38, doi:10.1016/j.edurev.2018.09.003"
+  ],
+  "notes": "r2 after CD FIX: transitions are now full-cover swipes (pink highlighter bar 5.4 s, butter dot 8.3 s, cream bar 11.0 s) plus a hard plate cut at 2.3 s, so no two scenes' text is ever on screen together; Do-this card is in from the first frame (no ghosting); frame 0 adds 'paper wins. here's when.'; ring labelled 'time running out'. SEND TEST. Music lh-x-tick-boom, drop on the Do-this beat, music_check PASS. Moved to Mon Oct 26 7 pm per coordinator; Tue lh-reel-1027-write-from-memory untouched."
+ }
+]

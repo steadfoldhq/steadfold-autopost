@@ -1,0 +1,78 @@
+[
+  {
+    "id": "hb-reel-1026-hum-a-song",
+    "account": "hourback",
+    "publish_at": "2026-10-28T19:00:00-04:00",
+    "video": "studio-oct25/hourback/hb-reel-1026-hum-a-song-r2.mp4",
+    "cover": "studio-oct25/hourback/hb-reel-1026-hum-a-song-r2-cover.jpg",
+    "caption": "Song stuck in your head and no idea what it's called? Hum it. Google names it.\n\nWHY IT WORKS: Google says a song's melody is like its fingerprint. Its machine-learning models turn your hum into a number pattern of the tune and compare it with thousands of songs, so you don't need the words or perfect pitch.\n\nHOW (about 20 seconds):\n1. Open the free Google app (Android or iPhone).\n2. Tap the mic in the search bar.\n3. Tap \"Search a song\".\n4. Hum, whistle or sing the tune for 10 to 15 seconds.\n5. Tap the match that looks right, then play it to check.\n\nTHE CATCH: you get possible matches, not a sure answer. Hum the catchiest part, usually the chorus. On iPhone it works in English; on Android it works in more than 20 languages.\n\nPRIVACY TIP: what the mic hears is sent to Google to find the match. Hum somewhere quiet, away from conversations you'd rather keep private.\n\nThe phone screen in this Reel is drawn for this post, not a screen recording.\n\nDo this: Open the Google app. Tap the mic. Tap \"Search a song\". Hum.\n\nSend this to the friend who's been humming the same song all day.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #google #techtips #music #learnai",
+    "first_comment": "Checked Oct 25, 2026. Google Search Help, 'Use the Google app to name a song' (support.google.com/websearch/answer/7554088), Android and iPhone & iPad versions: open the Google app, tap Mic, tap 'Search a song', then play a song or hum, whistle or sing the melody; Google shows potential matches. Google blog, 'Song stuck in your head? Just hum to search' (Krishna Kumar, Oct 15, 2020, blog.google/products/search/hum-to-search/): hum for 10-15 seconds; no perfect pitch needed; machine-learning models turn the audio into a number-based sequence of the melody (a melody is 'like its fingerprint') and match it against thousands of songs; available in English on iOS and 20+ languages on Android. The Reel's phone screen is a drawing; no song title or match score is shown or claimed.",
+    "alt_text": "Hourback Reel. A large serif line on periwinkle, 'For the friend humming that song', above a drawn phone with a yellow mic button and music notes. The phone listens, sound bars move, then a list of possible matches appears and the top one gets a yellow check: 'Hum it. Google names it.' Then the steps: Open the Google app, Tap the mic, Tap 'Search a song', Hum for 10–15 seconds, 'no perfect pitch needed'. It ends: send this to the friend humming that song; Follow to learn what AI can really do, one real test a day.",
+    "beats": [
+      "0.0 s (frame 0): For the friend humming that song | phone screen: Hum the tune | (stamp: HOURBACK · YOUR EVENINGS BACK)",
+      "1.4 s: Hum it. Google names it. | phone: Listening… then Possible matches (drawn rows, top one ticked ✓) | no words needed, just the tune | Drawn for this post. Real Google feature.",
+      "4.5 s: Do this: | Open the Google app ↓ Tap the mic ↓ Tap “Search a song” ↓ Hum for 10–15 seconds | Free on Android and iPhone | (7.93 s) no perfect pitch needed ✓",
+      "8.6 s: send this to | the friend humming that song | Follow to learn what AI can really do. | one real test a day | (stamp: HOURBACK · YOUR EVENINGS BACK)",
+      "11.8 s: loop to the frame-0 hook (For the friend humming that song | Hum the tune)"
+    ],
+    "hook_options": [
+      "For the friend humming that song",
+      "Song stuck in your head? Hum it.",
+      "Can't name that song? Hum it."
+    ],
+    "duration_s": 12.4,
+    "style": "Kinetic big text, editorial §12 look (serif + pills + one drawn object + stamp), Take-Two kit recut: 1-line hook + 1 object frame 0",
+    "send_test": true,
+    "sources": [
+      "https://support.google.com/websearch/answer/7554088",
+      "https://support.google.com/websearch/answer/7554088?co=GENIE.Platform%3DiOS&hl=en",
+      "https://blog.google/products/search/hum-to-search/"
+    ],
+    "notes": "SEND TEST (desk order 4): frame 0 names the person; beat 4 says 'send this to the friend humming that song' on screen. Real shipped feature (verified on Google's help page today, both platforms); the phone UI is drawn and shows no song title or score (nothing claimed). Music: hb-x-ta-da-funk (v4 library, existing), -14.8 LUFS / -1.5 dBTP; drop 7.93 s lands the 'no perfect pitch' tip. 5.8 MB. r2 (gate fixes): hard cut into the payoff (no blurred whip), no blank phone between Listening and matches, footer label enlarged. Moved to Wed Oct 28 19:00 by the coordinator; id kept."
+  },
+  {
+    "id": "hb-reel-1027-bill-went-up",
+    "account": "hourback",
+    "publish_at": "2026-10-29T19:00:00-04:00",
+    "video": "studio-oct25/hourback/hb-reel-1027-bill-went-up-r2.mp4",
+    "cover": "studio-oct25/hourback/hb-reel-1027-bill-went-up-r2-cover.jpg",
+    "caption": "Phone bill went up and you don't know why? Paste last month's and this month's bill into an AI chat and ask what changed.\n\nWHY IT WORKS: comparing two lists line by line is tedious for you and quick for AI. It answers from what you paste, so it can point to the exact line that changed.\n\nTHE REAL TEST: we made up two phone bills (September $100.85, October $117.80). The only real difference: October had no $15 loyalty discount. We asked Claude (Anthropic) on Oct 25, 2026: \"Here are my last two phone bills. Why is October's higher? Answer in one short sentence, then list what changed.\"\nIts first line, quoted exactly: \"October is $16.95 higher because your $15 loyalty discount went away, and that also raised your tax.\" It also listed tax going from $11.60 to $13.55 (+$1.95). We checked the maths: both right.\n\nHOW:\n1. Open both bills in your provider's app or the PDFs.\n2. Copy the line items, or take screenshots.\n3. Cover your account number, name, address and phone number.\n4. Paste both into ChatGPT, Claude or Gemini and ask: \"Why is this month higher? List what changed.\"\n5. Find the line it names on your real bill before you call.\n\nTHE CATCH: AI can misread a blurry screenshot or add wrong, so check the line it points to. It can't see your contract: if a discount ended, ask your provider whether it can come back.\n\nPRIVACY TIP: cover your account number, address and phone number before you paste. \"My phone bill\" is all the AI needs.\n\nBills made up for this post.\n\nDo this: Paste 2 bills. Ask: what changed?\n\nSend this to whoever pays the phone bill in your house.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #moneytips #learnai",
+    "first_comment": "Real run: Claude (Anthropic), model claude-opus-5-5, fresh session with no other context, Oct 25, 2026 13:39 UTC. Made-up bills, prompt and full reply saved in the Steadfold repo at studio/editorial/hb-oct25-run-bill.txt. The on-screen reply is the first sentence, quoted exactly; the +$15.00 and +$1.95 chips summarise its list. Maths check: September 65.00 - 15.00 + 38.50 + 0.75 + 11.60 = 100.85; October 65.00 + 38.50 + 0.75 + 13.55 = 117.80; difference 16.95 = 15.00 + 1.95. Results vary between apps and runs.",
+    "alt_text": "Hourback Reel. Big serif line on cream-yellow, 'Phone bill went up. Why?', above a white bill card reading 'Phone bill · October, Total $117.80' with the total circled in orange. Next, two made-up bills side by side: September has 'Loyalty discount −$15.00' circled; October shows '(no discount)' in a dashed box; handwriting says 'the discount vanished'. Then Claude's real reply, quoted exactly: 'October is $16.95 higher because your $15 loyalty discount went away, and that also raised your tax.', with chips '+$15.00 discount ended' and '+$1.95 more tax'. Do this: Paste 2 bills. Ask: what changed? First, cover your account number and address. It ends: Follow to learn what AI can really do, one real test a day.",
+    "beats": [
+      "0.0 s (frame 0): Phone bill went up. Why? | bill object: PHONE BILL · OCTOBER | Total $117.80 (orange ring draws on) | (stamp: HOURBACK · YOUR EVENINGS BACK)",
+      "1.3 s: Paste both bills. Ask AI why. | SEPTEMBER: Plan $65.00 · Loyalty discount −$15.00 (circled) · Phone payment $38.50 · 911 fee $0.75 · Tax $11.60 · Total $100.85 | OCTOBER: Plan $65.00 · (no discount) · Phone payment $38.50 · 911 fee $0.75 · Tax $13.55 · Total $117.80 | the discount vanished | Bills made up for this post.",
+      "3.2 s: Claude's real reply, word for word | October is $16.95 higher because your $15 loyalty discount went away, and that also raised your tax. | (3.6 s) +$15.00 discount ended | (3.85 s) +$1.95 more tax | Claude, by Anthropic · run Oct 25, 2026",
+      "6.6 s: Do this: | Paste 2 bills. Ask: what changed? | Works in ChatGPT, Claude or Gemini. | (7.81 s) First, cover your account number and address.",
+      "9.8 s: Follow to learn what AI can really do. | one real test a day | (stamp: HOURBACK · YOUR EVENINGS BACK)",
+      "12.2 s: loop to the frame-0 hook (Phone bill went up. Why? | bill card)"
+    ],
+    "hook_options": [
+      "Phone bill went up. Why?",
+      "Bill up $16.95? Ask AI why.",
+      "Paste 2 bills. Find the change."
+    ],
+    "duration_s": 12.8,
+    "style": "Kinetic big text / chat-card demo, editorial §12 look (serif + pills + one drawn object + stamp), Take-Two kit recut without the grey Take 1 beat",
+    "send_test": false,
+    "sources": [
+      "studio/editorial/hb-oct25-run-bill.txt (real run, Claude, Oct 25 2026)"
+    ],
+    "notes": "Real run by a fresh Claude session (claude -p, no context, no tools); transcript studio/editorial/hb-oct25-run-bill.txt. On-screen reply = first sentence quoted exactly. Music: hb-x-smart-bounce (existing v4), -14.9 LUFS / -2.0 dBTP; drop 7.81 s lands the privacy card. 6.8 MB. r2 (gate fixes): hard cuts (no blurred whip/zoom), chips land 0.4-0.65 s after the reply, kicker/credit/footer enlarged to 36-42 px. Quote checked word for word against the transcript (the transcript's only difference is markdown bold on '$16.95 higher'). Moved to Thu Oct 29 19:00 by the coordinator; id kept. Caption send line only (not the send test)."
+  },
+  {
+    "id": "hb-day9-kind-firm-no",
+    "fix_of_queued": true,
+    "account": "hourback",
+    "publish_at": "2026-10-28T17:45:00-04:00",
+    "images": [
+      "studio-oct25/hourback/hb-day9-kind-firm-no-r2/01.jpg",
+      "studio-oct25/hourback/hb-day9-kind-firm-no-r2/02.jpg",
+      "studio-oct25/hourback/hb-day9-kind-firm-no-r2/03.jpg"
+    ],
+    "caption": "He wants $500. Again. Ask Claude (or ChatGPT or Gemini) to help you say no, and add three words: kind, firm, no excuses.\n\nAI, for real · Day 9. One real test of what AI can do, with the output shown.\n\nWHY IT WORKS: without a tone, AI guesses, and the guess is often long, apologetic or full of reasons. Naming the tone tells it what to aim for. \"No excuses\" matters most: it stops the AI inventing a reason you'd then have to defend.\n\nTHE REAL TEST (the situation is made up for this post):\nRequest: \"My friend wants to borrow $500. He still owes me $200 from last time. Write a short text saying no. Kind, firm, no excuses.\"\nClaude's reply (Claude, by Anthropic, Oct 25, 2026, fresh chat). It wrote two versions, quoted exactly:\n1. \"Hey, I'm going to pass on this one. I hope it works out, and I'm here if you want to talk it through.\"\n   Its note: \"Then bring up the $200 another time. Mixing the two can make the no sound like you're punishing him.\"\n2. \"Hey, I'm not able to lend you the $500. I care about you and hope things work out. Also, could you let me know when you'll be able to pay back the $200 from last time?\"\nNotice: no excuse in either one. Pick the first to keep today's no simple, the second if you want the $200 settled now.\n\nBefore you send it, change any word that doesn't sound like you.\n\nPRIVACY TIP: you don't need his name or your bank details. \"My friend\" and the amount are enough.\n\nDo this: next time a text is hard to write, ask Claude, ChatGPT or Gemini for it and end with \"Kind, firm, no excuses.\"\n\nSend this to the friend who always says yes.\n\nAI, for real · Day 10 is Friday at 5:45 pm.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #aitips #learnai",
+    "first_comment": "Made-up situation, real output: run in Claude (Anthropic), model claude-opus-5-5, in a fresh session with no other context, Oct 25, 2026 15:05 UTC. Prompt and full reply saved in the Steadfold repo at studio/editorial/hb-oct25-run-kind-firm-no.txt. Slide 3 shows its second version word for word (the one without the $200); the caption quotes both versions and its note. Results vary between apps and runs.",
+    "alt_text": "Hourback 3-slide carousel. Slide 1: 'AI, for real · Day 9' badge, 'He wants $500. Again.' in a large serif with highlighted words, black-and-white chat bubbles, and the handwritten note 'new one every Mon · Wed · Fri'. Slide 2: Ask Claude: 'Help me say no to lending $500.' Add: kind, firm, no excuses (those 3 words set the tone). Slide 3: 'It wrote:', the label 'Claude's reply, word for word' and a chat bubble: 'Hey, I'm going to pass on this one. I hope it works out, and I'm here if you want to talk it through.' Handwritten note: 1 of 2 replies it wrote · situation made up for this post.",
+    "notes": "Fix of the queued post: new fresh-session run (the Oct 24 reply had no transcript and was written in a working session). Slide 1 copied unchanged; slides 2-3 re-rendered via oct24_feed.py helpers (studio/editorial/oct25_hb_day9_fix.py). Caption structure, privacy tip, send line, Day 10 line and follow line kept from the queued caption; the queued order (Day 10 line before follow + hashtags) is kept as it was."
+  }
+]

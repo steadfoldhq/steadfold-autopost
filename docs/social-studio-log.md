@@ -1,5 +1,38 @@
 # Social studio log (v4)
 
+## Sun Oct 25, 2026 (daily run, 9:17 am Toronto)
+
+**Followers (insights 12:37 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total; flat for 8 reads; 7 days: FF −1, LH −2, HB −1, LF 0). No attributable organic follow.
+
+**Profile views (day_profile_views):** Oct 24 (last read) FF 5 · LH 2 · HB 1 · LF 2, down from Oct 23 (FF 11 · LH 3 · HB 4 · LF 8). Today so far FF 4 · LH 2 · HB 0 · LF 1.
+
+**Follows / profile visits per carousel (7 days):** follows **1 in total** (LF "Baby finally fell asleep. Now where?", Oct 22, unchanged). Profile visits: FF 1 (RRSP refund), all others 0. Every Oct 23–24 carousel and the LF Small Wins No. 2 single: reach 0–2, 0 / 0. Feed posts are now effectively invisible to strangers; profile visits only come from Reels we can't attribute.
+
+**Reach / hold (Oct 23–24 Reels):** three 7 pm Reels won ~100-stranger batches on Oct 24: LH "Studying with your playlist on?" 106 / **4.5 s** (the only clean send in 2 days), LF "New dad, feeling left out?" 103 / 2.4 s, HB "Open fridge, no plan?" 101 / **0.8 s**. LF "First cold morning? Coat off" 102 / 5.2 s; LF teething 124 / 2.6 s; LH floss 104 / 3.5 s. FF got no stranger batch on its last 3 Reels (reach 3, 8, 13).
+
+**3 lessons, applied today**
+1. Frame 0 decides batches: concrete checks you can picture hold (lyrics 4.5 s, coat-off 5.2 s); reassurance / "you already have it" opens die (fridge 0.8 s, new dad 2.4 s). → Every new Reel opens on one hook line + one object and shows the check by ~2 s (neck check, print it, grey phone, hum, paste 2 bills); the fridge-style crowded opener is gone from the HB kit recut.
+2. FF delivery has collapsed (desk order 1). → No trial flag on any new FF Reel, and removed it from Tue 8:15 card-full-balance (> 24 h out); FF's new Reels use its proven batch shapes (a cost-of-waiting number: "$10,000 earning 0% interest?"; a sharp real-life question: "For the friend buying a car"). Mon 8:15 rule of 72 keeps the flag (< 24 h, no rule broken). Dharma still needs to check FF Account status (desk ACTION).
+3. A single clarity pass is not enough: round 1 found 9 of 27 CONFUSING, the rewrites still had 4 CONFUSING in round 2, round 3 0. The recurring failure is an unnamed thing ("0% what?", "Under 2% of what?", "move it where?", "which AI?"). → Every number names its noun ("0% interest", "total interest: $6,498"), every "Do this" names the place ("Ask the lender", "Open the Google app").
+
+**Shipped (rollback: `docs/social-recovery/2026-10-25.md`):** 7 Reels, all 7 pm, no trial — Mon: FF cash-at-zero, LH print it (send test); Tue: FF car loan (send test); Wed: LF neck check (send test), LH grey phone, HB hum to search (send test); Thu: HB phone bill (real Claude run). Fixed 3 queued carousels (FF Rich Habits No. 1 + No. 2 re-lettered, retired OK-hand removed; HB Day 9 re-run in a fresh Claude session because the queued reply was not a fresh run) and one alt text; one trial flag removed. Desk order 4 (send line on frame 0, 1 Reel per page Oct 26–27): FF and LH on time; LF and HB on Wed (their Mon/Tue 7 pm slots were already full).
+
+**Hooks chosen (fresh stranger picker, 3 options each):** "Your $10,000 earning 0% interest?" (picker: "Your $10,000 at 0% is shrinking", then re-lettered after the clarity gate) · "For whoever studies on their phone." · "For the friend buying a car" (kept for the send test; picker preferred "Lower car payment? Read this first") · "Feel the back of baby's neck." with "for whoever keeps adding blankets" (picker preferred "Too warm or too cold? Feel their neck."; the stranger flagged that "baby" never appeared → added) · "Turn your phone grey tonight." · "For the friend humming that song" (send test; picker preferred "Can't name that song? Hum it.") · "Phone bill went up. Why?".
+
+**Styles used (new):** LF illustrated washing-line story ×1; FF Drawn-to-Scale blueprint ×2; LH zine kinetic with 60:00 ring ×2; HB editorial demo (phone / bill cards) ×2. Feed fixes kept their series layouts. No pointing hand, no piggy, no OK-hand.
+
+**Clarity gate (fresh stranger, text only):** round 1, 27 pieces (10 new Reels + 17 queued > 24 h): 9 CONFUSING (car loan, neck check, save-vs-card, sling kiss, sling chin, Rich Habits No. 1, Day 8 [alt text only; the slide itself shows the request], Rich Habits No. 2, Day 9). Round 2 (10 rewrites): 4 CONFUSING (cash 0%, car-loan bars, Rich Habits No. 1, Day 9 "word for word" vs "shortened"). Round 3: 4 of 4 CLEAR.
+**Peer + CD gate (fresh agent, rendered frame strips + covers):** 4 SHIP, 6 FIX, 0 CUT. Fixed: print-it (split wipe mashing headlines, ghosted Do-this, no tension on frame 0, unlabelled ring); neck check (hand cut off on frame 0, overlapping crossfade, beaming sun beside "too hot"); cash (blank frame 2, dead-end Do this); hum and bill (blurred wipes, empty lower half, tiny credit). Fact checks caught "84 students" → "84 young adults" (Dekker & Baumgartner 2024).
+**Cut / parked:** FF save-vs-card (CUT: card topic twice in 2 days, static 3 s open). Parked, not queued (files kept in media/studio-oct25/): LF sling kiss + chin (2-part; CD FIX: unsafe states unmarked, baby drawn reclined; and LF already has 6 washing-line Reels in a row), LH say-it-aloud (too much studying this week), LH One Word "Space" (candidate No. 4), FF Rich Habits "yearly bills ÷ 12" (candidate No. 3), HB Day 9 pancakes (candidate Day 10), LF 3 am Club No. 2 duplicate. HB Day 9 kind-firm-no was a working-session reply → re-run fresh, transcript saved.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0 errors, 0 warnings · dry-run OK through Thu Oct 29 7:05 pm (every new id resolves; no errors) · banned-word scan clean (makers + OCR) · music: existing v4 tracks only, −13.9 to −14.9 LUFS, all files < 8 MB · grid_preview run and viewed for all four pages.
+
+**Grid (honest read):** LF fails "≥ 6 styles in 9": 6 of the next 9 tiles are the washing-line story (3 styles in 9). LH (zine serif cards ×6, One Word ×2, sticky note) and HB (editorial demo covers ×6, series ×2, kinetic ×1) also sit at 3–4 styles. FF is the most varied (blueprint, reframe, series, kinetic). This is a carry-over from the Oct 22–24 recovery kits; today's run added one more washing-line tile on LF (the system with the best hold). **Next run must break it:** LF's next Reels use silhouette story / calm text / one-word slow-pan covers, or the founder accepts a series look for LF Reels.
+
+**Known gaps:** HB Sun 7 pm slot stays empty (the week card was held Oct 24; nothing gated was ready inside 5 h). Series No. 3 for Fri Oct 30 is not built (parked candidates above). Insights per-post `follows` still HTTP 400 for Reels.
+
+**Next run:** grade the Oct 26–27 Reels against desk order 3 (≥ 5 s and ≥ 30% on ≥ 40 reach) and the send test (≥ 1 clean send per 50 reach); build series No. 3 for Fri Oct 30 from the parked candidates (relabel: One Word No. 4 "Space", Rich Habits No. 3 "yearly bills", Day 10 pancakes; LF needs a new 3 am Club No. 3) and gate them; fix the sling pair (✗ on unsafe states, upright baby) only if LF's grid rotation allows; read FF's Mon 7 pm reach (desk grade ≥ 20 at 5 h).
+
 ## Sat Oct 24, 2026 (daily run, 9:17 am Toronto)
 
 **Followers (insights 12:38 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total, flat vs yesterday; peak 28 on Oct 21). Still no attributable organic follow.

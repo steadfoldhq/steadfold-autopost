@@ -1,0 +1,85 @@
+[
+  {
+    "id": "ff-reel-1026-cash-at-zero",
+    "account": "fullyfunded",
+    "publish_at": "2026-10-26T19:00:00-04:00",
+    "video": "studio-oct25/fullyfunded/ff-reel-1026-cash-at-zero-r3.mp4",
+    "cover": "studio-oct25/fullyfunded/ff-reel-1026-cash-at-zero-r3-cover.jpg",
+    "caption": "Your $10,000 earning 0% interest? If prices rise, money that earns no interest buys less every year.\n\nWHY: prices rise over time. The Bank of Canada and the US Federal Reserve both aim for about 2% inflation a year. Money earning 0% doesn't keep up, so the same dollars buy a little less each year.\n\nTHE MATHS (2% a year, the central-bank target, not a forecast): $10,000 earning 0% for 10 years buys what $8,203 buys today. $10,000 ÷ 1.02^10 = $8,203. Real inflation is higher in some years and lower in others.\n\nHOW TO CHECK (2 minutes):\n1. Open your bank app and tap your savings account.\n2. Find the interest rate (often under 'Account details').\n3. Look up your country's latest inflation rate from its official statistics agency.\n4. If your interest rate is under 2%, ask your bank what its high-interest savings rate is, and compare a few other deposit-insured accounts.\n\nTHE CATCH: a high rate can be a short promo that drops after a few months, so check the rate after it ends. Keep your emergency money easy to reach; this is about money that's just sitting. Interest is usually taxed unless it's in a tax-free account.\n\nDo this: check your savings interest rate. Earning under 2% interest? Move it to a high-interest savings account.\n\nSend this to whoever keeps all their savings in chequing.\n\nFollow for one money move a day, in plain words.\n\nEducation only, not financial advice.\n\n#inflation #savings #personalfinance #moneytips #savingmoney",
+    "first_comment": "Sources and maths:\nBank of Canada, 'Understanding inflation targeting' (bankofcanada.ca): \"At the Bank of Canada, we aim to keep inflation close to 2 percent\" (target range 1 to 3%).\nUS Federal Reserve FAQ, 'Why does the Federal Reserve aim for inflation of 2 percent over the longer run?' (federalreserve.gov/faqs/economy_14400.htm): the FOMC judges 2% inflation over the longer run is most consistent with its goals.\nMaths, not a forecast: buying power after 10 years at 0% interest with prices rising 2% a year = $10,000 ÷ 1.02^10 = $8,203.48. Rates checked Oct 25 2026. Education only, not financial advice.",
+    "alt_text": "Short Reel on a blue blueprint grid in the Fully Funded look. Frame 1: 'Your $10,000 earning 0% interest?' in a large serif with a coral highlight over a cobalt bar labelled $10,000 and the round Fully Funded stamp. Frame 2: 'If prices rise 2% a year, in 10 years it buys what $8,203 buys today.' The same bar loses one coral-hatched slice per year and is relabelled $8,203. Frame 3: 'do this: Under 2% interest? Move it to high-interest savings.' over a drawn phone with the 'Savings interest rate' line circled in coral.",
+    "beats": [
+      "Your $10,000 earning 0% interest? | $10,000 (bar)",
+      "If prices rise 2% a year, in 10 years it buys what $8,203 buys today. | $10,000 -> $8,203 (bar)",
+      "do this: Under 2% interest? Move it to high-interest savings. | phone: Savings interest rate"
+    ],
+    "hook_options": [
+      "Your $10,000 earning 0% interest?",
+      "Your savings earning 0% interest?",
+      "What 0% interest costs in 10 years"
+    ],
+    "duration_s": 14.91,
+    "style": "Drawn to Scale blueprint (FF recovery kit; kinetic big text cut with the motion kit)",
+    "send_test": false,
+    "sources": [
+      "https://www.bankofcanada.ca/?p=214531",
+      "https://www.federalreserve.gov/faqs/economy_14400.htm"
+    ],
+    "notes": "Cost-of-waiting shape (what doing nothing costs in 10 years). Universal mechanic (inflation vs 0% interest); 2% is the stated BoC and Fed target, labelled maths. No trial flag. No returns shown, so no 'Not guaranteed. Returns vary.' line. Music: ff-x-big-reveal (v4, existing, in tools/music-library.json), mastered to -13.9 LUFS / -1.6 dBTP. Gate r3 (Oct 25): hook and do-this name INTEREST so the 2% rate isn't confused with the 2% price rise; phone label 'Savings interest rate'. Hook on 2 lines at 90 px on the Reel, 3 lines at 128 px on the cover for the 120 px rule; $10,000 label kept on the bar until it is relabelled $8,203; payoff states 2% as an assumption; do-this gives the next move. No loop scene (time went to the longer do-this). Cover save-line: 'check your savings interest rate tonight'. Reading-rule shortfalls: hook 2.2 s (rule 3.0), payoff 7.2 s (7.4), do-this 5.5 s (5.8)."
+  },
+  {
+    "id": "ff-reel-1027-car-loan-send",
+    "account": "fullyfunded",
+    "publish_at": "2026-10-27T19:00:00-04:00",
+    "video": "studio-oct25/fullyfunded/ff-reel-1027-car-loan-send-r3.mp4",
+    "cover": "studio-oct25/fullyfunded/ff-reel-1027-car-loan-send-r3-cover.jpg",
+    "caption": "For the friend buying a car: the lower monthly payment can cost thousands more.\n\nWHY: a longer loan spreads the same debt over more months. Each payment is smaller, but interest keeps running for longer.\n\nTHE MATHS (loan made up for this post: $30,000 at 8% a year, fixed payments):\n• 5 years (60 payments): about $608 a month, $6,498 in total interest.\n• 7 years (84 payments): about $468 a month, $9,277 in total interest.\n• The 7-year loan costs about $2,780 more, for a payment about $141 a month lower.\n\nHOW TO COMPARE OFFERS:\n1. Ask each lender for the total interest in dollars over the whole loan, not only the monthly payment.\n2. Compare offers at the same loan length.\n3. Pick the shortest length whose payment you can comfortably afford.\n\nTHE CATCH: your rate depends on your credit, the lender and where you live, so use your own numbers. If money is tight, a lower payment can matter more; just know what it costs.\n\nDo this: before you sign, ask the lender: 'What's the total interest, in dollars?'\n\nSend this to them before they sign.\n\nFollow for one money move a day, in plain words.\n\nEducation only, not financial advice.\n\n#carloan #carbuying #personalfinance #moneytips #debtfree",
+    "first_comment": "Sources and maths:\nCFPB (US), 'How do I compare auto loan offers?' (consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-en-753/): a longer loan term may mean smaller monthly payments, but you'll pay more in interest; compare the APR, the length of the loan and the total cost over the full term.\nMaths (loan made up for this post, standard amortised loan, monthly payments): $30,000 at 8% a year. 60 months: payment $608.29, total interest $6,497.51. 84 months: payment $467.59, total interest $9,277.26. Difference $2,779.75. Education only, not financial advice.",
+    "alt_text": "Short Reel on a blue blueprint grid in the Fully Funded look. Frame 1: 'For the friend buying a car' in a large serif with a coral highlight above a drawn blueprint car and the round stamp. Frame 2: '7 years instead of 5: smaller monthly payment, $2,780 more interest.' Under 'Total interest · $30,000 loan at 8%', two total-interest bars drawn to scale: 5 years $6,498 (cobalt) and 7 years $9,277 (coral, longer), the extra part outlined. Frame 3: 'do this: Ask the lender: total interest, in dollars?' with the car. Frame 4: 'Send this before they sign.' with the car on a road line and the stamp.",
+    "beats": [
+      "For the friend buying a car | (drawn car)",
+      "7 years instead of 5: smaller monthly payment, $2,780 more interest. | TOTAL INTEREST · $30,000 LOAN AT 8% | 5 YEARS $6,498 | 7 YEARS $9,277",
+      "do this: Ask the lender: total interest, in dollars?",
+      "Send this before they sign."
+    ],
+    "hook_options": [
+      "For the friend buying a car",
+      "Lower car payment? Read this first",
+      "7-year car loan: $2,780 more"
+    ],
+    "duration_s": 14.91,
+    "style": "Drawn to Scale blueprint (FF recovery kit; kinetic big text cut with the motion kit)",
+    "send_test": true,
+    "sources": [
+      "https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-en-753/"
+    ],
+    "notes": "SEND TEST (desk order 4): frame 0 names the person inside the hook; last beat says 'Send this before they sign.' on screen. Real-life gap / trap shape. Universal maths (fixed-rate amortised loan), loan made up and labelled. No trial flag. Music ff-x-big-reveal. Gate r2/r3 (Oct 25): payoff states the comparison ('smaller monthly payment'); chart header 'TOTAL INTEREST · $30,000 LOAN AT 8%'; total interest on both bars; full do-this; send frame tightened (text, car and stamp on screen from its first frame). Reading-rule shortfalls to stay <= 15 s: hook 1.9 s (3.0), payoff 7.6 s (9.8; 9 of its words are chart labels and amounts), do-this 3.4 s (4.2), send 2.0 s (2.6)."
+  },
+  {
+    "id": "ff-richhabits-02",
+    "account": "fullyfunded",
+    "publish_at": "2026-10-28T17:00:00-04:00",
+    "fix_of_queued": true,
+    "images": [
+      "studio-oct25/fullyfunded/ff-richhabits-02-r2/01.jpg",
+      "studio-oct25/fullyfunded/ff-richhabits-02-r2/02.jpg",
+      "studio-oct25/fullyfunded/ff-richhabits-02-r2/03.jpg"
+    ],
+    "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Rich Habits, Decoded · No. 2' badge, '$15 lunch, every workday?' in a large serif with highlighted words, the handwritten note 'new one every Mon · Wed · Fri' and a small drawn bar chart, 'lunch money, 1 year': buy 5 days $3,600; pack 3, buy 2 $2,016. Slide 2: Pack lunch 3 days a week (buy it the other 2, guilt-free), with a drawn packed lunchbox. Slide 3: One year of workday lunches, $15 bought, $4 packed, 48 work weeks: buy all 5 days $3,600; pack 3, buy 2 $2,016; you keep $1,584. A drawn lunchbox sits in the corner.",
+    "notes": "Fix of the QUEUED post (media/ff-richhabits-02/ untouched): cover bar 2 relabelled 'PACK 3, BUY 2'; slide 3's retired halftone OK-hand removed, drawn lunchbox instead. Caption and first comment unchanged. Built by studio/editorial/oct25_fullyfunded_fixes.py (imports oct24_feed.py). The unused insurance No. 2 stays in media/studio-oct25/fullyfunded/ff-richhabits-02/ for a later episode."
+  },
+  {
+    "id": "ff-richhabits-01",
+    "account": "fullyfunded",
+    "publish_at": "2026-10-26T17:00:00-04:00",
+    "fix_of_queued": true,
+    "images": [
+      "studio-oct25/fullyfunded/ff-richhabits-01-r3/01.jpg",
+      "studio-oct25/fullyfunded/ff-richhabits-01-r3/02.jpg",
+      "studio-oct25/fullyfunded/ff-richhabits-01-r3/03.jpg"
+    ],
+    "caption": "Paid Friday. Broke by Wednesday? The habit: pay yourself first.\n\nRich Habits, Decoded No. 1. Each episode takes one money habit and shows you how to do it on a normal paycheque.\n\nWHAT IT MEANS: savings come out the day your pay lands, automatically, before you can spend it. You live on what's left, instead of saving what's left.\n\nWHY IT WORKS: you don't rely on willpower. Save more with every raise: in the 'Save More Tomorrow' study, workers who saved more at each pay raise went from saving 3.5% of their pay to 13.6% over 40 months (about 3 years).\n\nHOW TO DO IT (10 minutes in your banking app):\n1. Open a separate savings account (ideally one that pays interest and that you don't see every day).\n2. Set an automatic transfer for payday. Start at 10%; if that's too much, start at 1% or 2%.\n3. Every raise: add 1 percentage point.\n4. Leave it. The point is not having to decide again.\n\nTHE CATCH: if you carry card debt at 20%+, point the automatic payment at that first. Keep a small buffer so the transfer never bounces.\n\nDo this: set one automatic transfer for your next payday, even if it's $10.\n\nRich Habits, Decoded No. 2 is Wednesday at 5 pm.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#personalfinance #savingmoney #payyourselffirst #moneytips #richhabits",
+    "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Rich Habits, Decoded · No. 1' badge, then 'Paid Friday. Broke by Wednesday?' in a large serif with highlighted words, the handwritten note 'new one every Mon · Wed · Fri' and a small drawn chart, 'paycheque left', with bars shrinking from Friday to an empty Wednesday. Slide 2: Pay yourself first. Handwritten: do this: on payday, auto-move savings into a separate account. Slide 3: Save more with every raise. Handwritten: In one study, workers who saved more at each raise went from saving 3.5% of their pay to 13.6% in about 3 years. Source: Thaler & Benartzi, 2004.",
+    "notes": "Fix of the QUEUED post (media/recovery-oct22/fullyfunded/ff-richhabits-01/ untouched): slide 1 copied unchanged; slide 2 save-line and slide 3 headline + note reworded per gate rounds 2-3 (r2 files kept). Gate r3: caption included here (queued caption with one line changed: 'Then raise it with every raise' -> 'Save more with every raise', and '40 months (about 3 years)'; Thaler & Benartzi 2004 verified: 3.5% to 13.6% over 40 months). Use this caption when applying the fix. Built by studio/editorial/oct25_fullyfunded_fixes.py."
+  }
+]

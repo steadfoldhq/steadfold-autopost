@@ -1,0 +1,20 @@
+Hourback real run, Oct 25 2026 (studio maker, Hourback)
+Used in: hb-day9-kind-firm-no (fix of the queued Wed Oct 28, 5:45 pm series post; replaces the Oct 24 reply, which had no transcript)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-25T15:05:58Z
+Input: MADE UP FOR THIS POST (the queued post's request, verbatim).
+
+===== PROMPT (verbatim) =====
+My friend wants to borrow $500. He still owes me $200 from last time. Write a short text saying no. Kind, firm, no excuses.
+
+===== REPLY (verbatim) =====
+Here's a text you could send:
+
+> Hey, I'm not able to lend you the $500. I care about you and hope things work out. Also, could you let me know when you'll be able to pay back the $200 from last time?
+
+If you'd rather keep the no and the $200 separate:
+
+> Hey, I'm going to pass on this one. I hope it works out, and I'm here if you want to talk it through.
+
+Then bring up the $200 another time. Mixing the two can make the no sound like you're punishing him.
