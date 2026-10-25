@@ -7324,7 +7324,11 @@
       "account": "lockedhour",
       "status": "failed",
       "children": [
-        "18070530833521398"
+        "18070539305521398",
+        "18070539353521398",
+        "18070539413521398",
+        "18070539482521398",
+        "18070539518521398"
       ],
       "children_media": [
         "lh-1025-done-list-5/01.jpg",
@@ -7333,11 +7337,31 @@
         "lh-1025-done-list-5/04.jpg",
         "lh-1025-done-list-5/05.jpg"
       ],
-      "children_created_at": "2026-10-25T16:42:59Z",
-      "updated_at": "2026-10-25T16:43:27Z",
-      "error": "POST 17841445641921372/media: HTTP 400: The media could not be fetched from this URI: https://raw.githubusercontent.com/steadfoldhq/steadfold-autopost/main/media/lh-1025-done-list-5/02.jpg.Please check the limitations section in our development document for more information: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating (code=9004, subcode=2207052, fbtrace_id=A03dMpa4oX2DwfJbNROw0FW)",
-      "attempts": 1,
-      "failed_at": "2026-10-25T16:42:59Z"
+      "children_created_at": "2026-10-25T17:11:34Z",
+      "updated_at": "2026-10-25T17:12:06Z",
+      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AbfM3VN0LsBQfc4LZKu_edo)",
+      "attempts": 2,
+      "failed_at": "2026-10-25T17:11:34Z",
+      "container_id": "18070539572521398",
+      "container_created_at": "2026-10-25T17:11:34Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-25T17:11:34Z"
+    },
+    "lh-ch-1025-5": {
+      "account": "lockedhour",
+      "status": "published",
+      "container_id": "18070539740521398",
+      "container_created_at": "2026-10-25T17:11:34Z",
+      "publish_called": true,
+      "kind": "story",
+      "updated_at": "2026-10-25T17:12:20Z",
+      "publish_called_at": "2026-10-25T17:11:34Z",
+      "media_id": "18098069072662848",
+      "published_at": "2026-10-25T17:11:34Z",
+      "late": false,
+      "error": null,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
