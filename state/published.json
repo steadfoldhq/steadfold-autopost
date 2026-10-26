@@ -7605,7 +7605,7 @@
     },
     "hb-day8-ask-me-first": {
       "account": "hourback",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18128398915799084",
         "18128398939799084",
@@ -7617,14 +7617,22 @@
         "hb-day8-ask-me-first/03.jpg"
       ],
       "children_created_at": "2026-10-26T21:51:25Z",
-      "updated_at": "2026-10-26T21:51:54Z",
+      "updated_at": "2026-10-26T22:27:25Z",
       "container_id": "18128398981799084",
       "container_created_at": "2026-10-26T21:51:25Z",
       "publish_called": true,
       "publish_called_at": "2026-10-26T21:51:25Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AE5bDdrVJjk2eCpjfSPzsto)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-26T21:51:25Z"
+      "failed_at": "2026-10-26T21:51:25Z",
+      "media_id": "18001135251003073",
+      "permalink": "https://www.instagram.com/p/De-SkSQlve-/",
+      "published_at": "2026-10-26T21:51:53+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18027070961866846",
+      "comment_error": null,
+      "commented_at": "2026-10-26T22:27:23Z"
     }
   }
 }
