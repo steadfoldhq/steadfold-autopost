@@ -1,0 +1,17 @@
+Hourback real run, Oct 26 2026 (studio maker, Hourback)
+Used in: hb-reel-1027am-return-by (Tue Oct 27, 8:45 am)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-26T13:56:28Z
+Input: MADE UP FOR THIS POST (no real store, car or person).
+
+===== PROMPT (verbatim) =====
+Here's a store's return policy. I bought a jacket on sale on Oct 12 and it arrived Oct 20. What's my last day to return it, and what will I get back? Answer in 2 short sentences.
+
+RETURNS
+Unworn items with tags can be returned within 30 days of delivery.
+Sale items: store credit only.
+A $7.99 return shipping fee is taken off your refund.
+
+===== REPLY (verbatim) =====
+Your last day to return the jacket is **November 19** (30 days from the Oct 20 delivery), as long as it's unworn with tags attached. Because it was a sale item, you'll get **store credit only**, likely the sale price you paid minus the $7.99 return shipping fee.

@@ -1,0 +1,180 @@
+[
+ {
+  "id": "lf-reel-1029-tummy-to-play",
+  "account": "littlefold",
+  "publish_at": "2026-10-29T19:00:00-04:00",
+  "video": "studio-oct26/littlefold/lf-reel-1029-tummy-to-play.mp4",
+  "cover": "studio-oct26/littlefold/lf-reel-1029-tummy-to-play-cover.jpg",
+  "caption": "Back to sleep. Tummy to play. Asleep, babies go on their back. Awake and watched, they spend some time on their tummy.\n\nWHY: tummy time helps babies build the strong muscles they need for milestones like pushing up, rolling and crawling (AAP). It also helps prevent a flat spot on the back of the head, because babies sleep on their backs (Canadian Paediatric Society).\n\nHOW (AAP):\n1. Start the day your baby comes home.\n2. 3 to 5 minutes, 2 to 3 times a day, while they're awake. After a diaper change or a nap is a good time.\n3. Add time as they enjoy it. Work up to 15 to 30 minutes a day in total by about 7 weeks.\n4. Easiest start: recline, wide awake, and put baby tummy-down on your chest. They'll lift their head to look at your face.\n\nTHE CATCH: tummy time is only for when baby is awake and you're right there watching. For sleep, always on their back, in their own crib.\n\nDo this: recline. Baby on your chest.\n\nSend this to someone bringing a baby home soon.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#tummytime #newborn #newparents #babydevelopment #canadianparents",
+  "first_comment": "Sources (checked Oct 26 2026): AAP, HealthyChildren.org, 'Back to Sleep, Tummy to Play' (healthychildren.org/English/ages-stages/baby/sleep/Pages/Back-to-Sleep-Tummy-to-Play.aspx, updated 9/8/2026): \"You can start doing tummy time the day your baby gets home from the hospital\"; \"2 to 3 times each day for a short time (3 to 5 minutes)\"; \"Work up to 15 to 30 minutes each day by 7 weeks\"; tummy time \"helps them build strong muscles\"; \"Tummy time is for babies who are awake and being closely supervised\"; tip: \"Lie on your back and place the baby on your chest.\" (On screen we say \"Recline\", awake and watching.) Canadian Paediatric Society, Caring for Kids, 'Preventing flat heads in babies who sleep on their backs' (caringforkids.cps.ca/handouts/pregnancy-and-babies/preventing_flat_heads): supervised tummy time when awake; \"tummy time help[s] prevent a flat spot on the head\". (CPS's handout suggests 10 to 15 minutes at least 3 times a day; we show the AAP newborn starting amount.)",
+  "alt_text": "Littlefold Reel on a sunny cream background with soft pastel circles. Text: 'asleep or awake? Back to sleep. Tummy to play.' In an arch-shaped card, a drawn baby sleeps on their back on a flat mattress ('asleep: on their back'), then a light sweep turns the card butter-yellow and the baby is on their tummy on a playmat, lifting their head ('awake: tummy time'). A giant number 3 in a pink circle: '3 minutes, 2 to 3 times a day. Start the day you get home.' A small timer fills; 'awake + watched'. 'Why it matters: Strong muscles. Fewer flat spots.' The baby pushes up; rosettes pop: head up, strong arms, round head. 'Do this: Recline. Baby on your chest. Only while you're awake and watching.' A drawn parent sits propped up on a big floor cushion, eyes open and smiling, with the baby tummy-down on their chest lifting their head to look at them; hearts float up. 'Follow for one calm thing a night, from bump to toddler.' Sources AAP and CPS.",
+  "beats": [
+   "asleep or awake?",
+   "Back to sleep. Tummy to play.",
+   "asleep: on their back",
+   "awake: tummy time",
+   "AAP · HealthyChildren.org",
+   "start the day you get home",
+   "3",
+   "minutes, 2 to 3 times a day.",
+   "awake + watched",
+   "why it matters",
+   "Strong muscles. Fewer flat spots.",
+   "head up",
+   "strong arms",
+   "round head",
+   "CPS · Caring for Kids",
+   "Do this:",
+   "Recline. Baby on your chest.",
+   "Only while you're awake and watching.",
+   "Follow for one calm thing a night, from bump to toddler.",
+   "AAP · HealthyChildren.org",
+   "LITTLEFOLD · SMALL DAYS, GENTLY · (stamp)"
+  ],
+  "hook_options": [
+   "Back to sleep. Tummy to play.",
+   "Tummy time starts the day you're home.",
+   "Awake? A few minutes on their tummy."
+  ],
+  "duration_s": 14.4,
+  "style": "Kinetic big text (style 5) on a Warm Sherbet paper field + the LF arch card, with a soft-countdown giant numeral beat (style 2, lf-count). Not washing-line.",
+  "send_test": false,
+  "sources": [
+   "https://healthychildren.org/English/ages-stages/baby/sleep/Pages/Back-to-Sleep-Tummy-to-Play.aspx",
+   "https://caringforkids.cps.ca/handouts/pregnancy-and-babies/preventing_flat_heads"
+  ],
+  "notes": "No trial flag (evening). Frame 0 = rule as a fact (6 words), fully readable at 0.00 s; the baby moves by 0.3 s; the plain-language payoff ('3 minutes, 2 to 3 times a day, start the day you get home') lands at 2.90 s; 'Do this' lands on the track drop (9.195 s). Music: existing lf-x-tiny-parade (tools/music-library.json), -13.5 LUFS, music_check PASS. 5.1 MB, H.264/AAC 1080x1920 30 fps. Cuts: zoom punch-in, whip, card slam + shake, light-leak flash on each. Grid: breaks the run of washing-line Reels (neck check Wed 7 pm is washing-line; 3 am Club No. 2 before it and No. 3 after are pills covers), so it sits between them as a different, still-sunny style. Builder: studio/editorial/oct26_littlefold.py. Topic not used in the last 10 days. GATE FIXES (Oct 26): parent redrawn propped up ~35° on a floor cushion, eye clearly open, no blanket or pillow; 'Lie back.' -> 'Recline.' (AAP's own wording is 'Lie on your back and place the baby on your chest'; caption and first comment keep the source wording); follow pill now 34 px type on two lines (~105 px tall); rosette labels 40 px on two lines; still 14.4 s, music_check PASS, 5.3 MB."
+ },
+ {
+  "id": "lf-3amclub-03",
+  "account": "littlefold",
+  "publish_at": "2026-10-30T17:00:00-04:00",
+  "images": [
+   "studio-oct26/littlefold/lf-3amclub-03/01.jpg",
+   "studio-oct26/littlefold/lf-3amclub-03/02.jpg"
+  ],
+  "caption": "It's 3 am. They'll only sleep on you. Those cuddles are lovely while you're wide awake.\n\n3 am Club No. 3: the moment to watch for is the one where YOU start to drift off.\n\nWHY: The Lullaby Trust says: any time you feel you might fall asleep with your baby, put them on their back in a clear, flat, separate sleep space. Dozing off with a baby on a sofa or armchair is especially dangerous.\n\nAT 3 AM:\n1. Keep their crib or bassinet next to your bed, so putting them down takes seconds.\n2. Feeling sleepy yourself? Move baby to their own crib now, on their back. Don't wait for the perfect moment.\n3. Never settle in on the sofa or an armchair with a sleeping baby.\n\nTHE CATCH: if you've had alcohol, smoke, or take medicine that makes you drowsy, or your baby was premature or small, it's even more important that baby sleeps in their own space. Worried about how your baby sleeps? Talk to your doctor, nurse or health visitor.\n\nDo this: tonight, the moment you feel sleepy yourself, move baby to their own crib, on their back.\n\nSend this to whoever's on the night shift with you.\n\n3 am Club No. 4 is Monday at 5 pm: the next night tip.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #nightfeeds #safesleep #newparents #3amclub",
+  "first_comment": "Sources (checked Oct 26 2026): The Lullaby Trust, 'Safer sleep for babies: a guide for parents and carers' (lullabytrust.org.uk/wp-content/uploads/2025/01/Safer-sleep-guide-for-parents.pdf): \"Place your baby in their own sleep space, such as a cot or Moses basket if you might fall asleep\"; \"Any time you feel you might fall asleep with your baby, make sure they are on their back in a clear, flat, separate sleep space\"; \"Sofas and armchairs are dangerous places to fall asleep with your baby\"; babies should be in the same room as you for the first six months; higher risk after alcohol, smoking, drugs or sleep-causing medicine, or for premature/low-birth-weight babies. NHS, 'Sudden infant death syndrome (SIDS)' (nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/, reviewed 25 Nov 2025): \"do not sleep on a sofa or in an armchair with your baby\".",
+  "alt_text": "Littlefold 2-slide carousel. Slide 1: '3 am Club · No. 3' badge on a peach background, 'It's 3 am. They'll only sleep on me.' in a large serif with 'sleep on me' highlighted pink, a drawn sleepy crescent moon in a nightcap with two stars, and the handwritten note 'new night tip every Mon · Wed · Fri'. Slide 2, cream: 'Feeling sleepy yourself? Move baby to their own crib.' Handwritten: on their back, in a flat, clear space. A large drawn crib with a baby asleep on their back in a sleep sack on a flat, empty mattress. Source: The Lullaby Trust, NHS.",
+  "beats": [
+   "3 AM CLUB · NO. 3",
+   "It's 3 am. They'll only sleep on me.",
+   "new night tip every Mon · Wed · Fri",
+   "z z (on the drawn moon)",
+   "(stamp)",
+   "2/2",
+   "Feeling sleepy yourself? Move baby to their own crib.",
+   "on their back, in a flat, clear space",
+   "z z",
+   "Source: The Lullaby Trust · NHS"
+  ],
+  "hook_options": [
+   "It's 3 am. They'll only sleep on me.",
+   "3 am, and baby only sleeps on you?",
+   "Asleep on your chest at 3 am?"
+  ],
+  "style": "Series layout (Look B pills cover on the berry/peach field + halftone shoe + save-line + stamp), identical to lf-3amclub-01/02.",
+  "send_test": false,
+  "sources": [
+   "https://www.lullabytrust.org.uk/wp-content/uploads/2025/01/Safer-sleep-guide-for-parents.pdf",
+   "https://www.nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/"
+  ],
+  "notes": "Topic is the one promised in No. 2's queued caption ('when your baby will only sleep on you'). 2 slides. Builder: studio/editorial/oct26_littlefold_feed.py. No. 4 promised for Mon Nov 2, 5 pm, topic not named (no maker has built it). GATE FIXES (Oct 26): slide 2 now says who is sleepy ('Feeling sleepy yourself? Move baby to their own crib.'); the grey sneaker is replaced by a drawn sleepy moon (series layout kept); crib redrawn large (fills the lower half, text moved up) with a baby in a sleep sack on a flat, empty mattress. No transfer tip added: I couldn't fetch citable official wording today (Lullaby Trust co-sleeping and NHS sleep pages were blocked)."
+ },
+ {
+  "id": "lf-st-1027-1",
+  "account": "littlefold",
+  "publish_at": "2026-10-27T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1027-1.jpg",
+  "caption": "Story lf-st-1027-1: swaddling tonight? Swaddling: legs straight or bent?",
+  "beats": [
+   "QUICK QUESTION · 1/2",
+   "swaddling tonight?",
+   "Swaddling: legs straight or bent?",
+   "Next Story →",
+   "(stamp)"
+  ]
+ },
+ {
+  "id": "lf-st-1027-2",
+  "account": "littlefold",
+  "publish_at": "2026-10-27T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1027-2.jpg",
+  "caption": "Story lf-st-1027-2: hip-healthy swaddling Bent up and out.",
+  "beats": [
+   "THE ANSWER · 2/2",
+   "hip-healthy swaddling",
+   "Bent up and out.",
+   "Leave the blanket loose at the hips, so the legs can move.",
+   "Tonight at 7 pm: the 15-second version",
+   "Source: AAP · HealthyChildren.org",
+   "(stamp)"
+  ]
+ },
+ {
+  "id": "lf-st-1028-1",
+  "account": "littlefold",
+  "publish_at": "2026-10-28T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1028-1.jpg",
+  "caption": "Story lf-st-1028-1: before you grab a blanket Cold little hands. Add a layer?",
+  "beats": [
+   "QUICK QUESTION · 1/2",
+   "before you grab a blanket",
+   "Cold little hands. Add a layer?",
+   "Next Story →",
+   "(stamp)"
+  ]
+ },
+ {
+  "id": "lf-st-1028-2",
+  "account": "littlefold",
+  "publish_at": "2026-10-28T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1028-2.jpg",
+  "caption": "Story lf-st-1028-2: the 5-second check No. Feel the back of the neck.",
+  "beats": [
+   "THE ANSWER · 2/2",
+   "the 5-second check",
+   "No. Feel the back of the neck.",
+   "Cool hands and feet are normal. Hot or sweaty? Take a layer off.",
+   "Tonight at 7 pm: the 15-second version",
+   "Source: NHS",
+   "(stamp)"
+  ]
+ },
+ {
+  "id": "lf-st-1029-1",
+  "account": "littlefold",
+  "publish_at": "2026-10-29T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1029-1.jpg",
+  "caption": "Story lf-st-1029-1: new baby home? When can tummy time start?",
+  "beats": [
+   "QUICK QUESTION · 1/2",
+   "new baby home?",
+   "When can tummy time start?",
+   "Next Story →",
+   "(stamp)"
+  ]
+ },
+ {
+  "id": "lf-st-1029-2",
+  "account": "littlefold",
+  "publish_at": "2026-10-29T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/littlefold/stories/lf-st-1029-2.jpg",
+  "caption": "Story lf-st-1029-2: back to sleep, tummy to play The day you get home.",
+  "beats": [
+   "THE ANSWER · 2/2",
+   "back to sleep, tummy to play",
+   "The day you get home.",
+   "A few minutes at a time, only while baby's awake and you're watching.",
+   "Tonight at 7 pm: the 15-second version",
+   "Source: AAP · HealthyChildren.org",
+   "(stamp)"
+  ]
+ }
+]

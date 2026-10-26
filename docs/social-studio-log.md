@@ -1,5 +1,83 @@
 # Social studio log (v4)
 
+## Mon Oct 26, 2026 (daily run, fired 9:41 am Toronto)
+
+**Followers (insights Oct 26 04:38 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total; flat for 12 reads; 7 days: FF −1, LH −2, HB −1, LF −1). No attributable organic follow.
+
+**Profile views (day_profile_views, last read per ET day, Oct 22 → Oct 25):** FF 8 · 11 · 5 · 5 → **8** · LH 3 · 3 · 1 · 2 → **6** · HB 4 · 4 · 1 · 0 → **3** · LF 5 · 8 · 2 · 1 → **5**. Oct 25 was the best day since Oct 23 on LH and LF.
+
+**Follows / profile visits per carousel (7 days):** follows **1 in total** (LF "Baby finally fell asleep. Now where?", unchanged). Profile visits FF 2 (RRSP refund, cheap coat), LH 1 (rereading), HB 1 (chatbots vs agents), LF 1 (honey on the soother). Every other feed post 0 / 0, reach 0–14.
+
+**Reach / hold:** EXPANDED 0 of 160 (desk). Passed both hold bars (≥ 5 s and ≥ 30% on ≥ 40): LF toddler play, LF coat, FF TFSA trap (non-trial, 106 in 5 h). LF "spoil a newborn" missed by 0.01 s. Reassurance opens lost the big batches: LF step away 2.5 s on 148, HB fridge 1.2 s on 102.
+
+**3 lessons, applied today**
+1. A rule stated as a fact in frame 0 holds (4 of 4 at 5.0–5.6 s), and reassurance opens die. → All 6 new Reels open on a rule or a trap: "Back to sleep. Tummy to play.", "A head start makes you finish.", "No FHSA open? No room yet.", "Your FSA money can expire.", "Returning it? Paste the policy first.", "Daydreaming the goal? You may do less."
+2. The trial flag halves FF and HB reach (medians 21 vs 39 and 10.5 vs 17.5). → No trial on any new FF or HB Reel. HB 8:45 Tue runs without trial and shows the action (the pasted policy in a chat) on frame 0 (desk order 4). LH 8:30 keeps trial, since LH trial mornings win ~100 batches.
+3. Feed posts reach 0–14 and don't create follows; the series covers are what a profile visitor sees. → Feed effort goes only to the series (No. 3/4 and Day 10 for Fri, so the Mon/Wed/Fri promise holds) plus the two Tue slots the desk flagged. Stories were back-filled lightly (2 a day per page, not 3–5) because they only reach 4–7 followers (north-star: don't blindly raise frequency).
+
+**Shipped (rollback: `docs/social-recovery/2026-10-26.md`):** 36 additions and no edits.
+- 6 Reels:
+  - LH Tue 8:30 head start (trial)
+  - HB Tue 8:45 return-by date (no trial, real Claude run)
+  - FF Wed 7 pm FHSA room (Canada)
+  - FF Thu 7 pm FSA expires (US)
+  - LH Thu 7 pm picture the win
+  - LF Thu 7 pm tummy time
+- 6 feed posts:
+  - LH Tue noon "What breaks a strong habit?" (swipe to reveal)
+  - HB Tue noon mechanic questions (prompt card, real run)
+  - Fri 5 pm: Rich Habits No. 3 (yearly bills ÷ 12), One Word No. 4 "Space", 3 am Club No. 3 "They'll only sleep on me"
+  - Fri 5:45 pm: HB Day 10 pancakes for 6
+- 24 Story frames: one 2-frame question → answer chain per page, Tue–Thu at 12:30.
+- Checks: 172 tests OK (2 skipped), queue_lint 0/0, dry-run OK through Fri Oct 30 5:50 pm, banned-word scan clean, per-day ceilings respected, all Reels 12.6–15.0 s with existing music at about −14 LUFS.
+
+**Hooks (fresh stranger picker, 3 options each):** kept "No FHSA open? No room yet.", "Insurance due. Surprised again?", "Back to sleep. Tummy to play.", "It's 3 am. They'll only sleep on me.", "Recipe for 4. Six are coming?" and "Cramming the night before again?".
+- Changed to the picker's choice:
+  - "Before you say yes to the mechanic" (was "Car quote? Ask AI first.")
+  - "Your FSA money can expire." (every option was over 6 words)
+- Hedged after the CD's evidence check: "Daydreaming the goal? You may do less."
+- Overruled the picker 3 times:
+  - "Two free stamps. Twice the finishers." rounds 19% → 34% into "twice", so I kept the rule-as-fact "A head start makes you finish."
+  - "The return window closed yesterday." changes the story; the CD rated the original return-by cover the strongest in the set.
+  - "Moving soon? Your habits won't follow." would spoil the swipe-to-reveal answer.
+
+**Styles used (new):**
+- LF: kinetic big text in an arch card with a giant numeral and rosettes (first non-washing-line LF Reel in 7).
+- LH: compare cards, calm text with a battery, swipe to reveal, One Word series.
+- FF: follow-the-line timeline, kinetic big text, Rich Habits series.
+- HB: kinetic big text with a chat phone, prompt card with [bracket] chips, Day series.
+- No pointing hand, piggy bank or OK-hand.
+
+**Clarity gate (fresh stranger, text only):**
+- Round 1, 47 pieces (33 new and 14 queued > 24 h): 7 CONFUSING, all new. FHSA Reel and 2 FHSA Stories ("room" and FHSA undefined), LH head start (cards A/B not told apart), HB Day 10 ("type this" where?, "all 7" vs 3 shown), HB bill Story ("paste 2 bills" where?), 3 am Club No. 3 ("Getting sleepy?" who?). All 14 queued pieces CLEAR.
+- Round 2, 12 rewrites: 1 CONFUSING (HB bill Story: which 2 bills). Re-lettered to "last month's and this month's bill", then checked by eye.
+
+**Peer + CD gate (fresh agent, rendered frames):**
+- Round 1: 4 SHIP, 11 FIX, 0 CUT.
+- Fixes:
+  - LF tummy-time parent drawn asleep with the baby on their chest: redrawn propped up, eyes open; "Recline".
+  - LF 3 am Club: grey sneaker → sleepy moon; crib blanket → sleep sack.
+  - FF: follow lines added on both Reels, orphan "$" removed, smear transition cut, $100 pill overflow fixed.
+  - LH picture-win: emoji trophy redrawn, lone "Do this" frame cut, closing frame given its card.
+  - HB: pancake object, prompt card, stamp collisions.
+- Round 2: all SHIP after the picture-win closing frame was fixed.
+- Cut: none this run. Makers dropped a few things themselves:
+  - Ariely & Wertenbroch 2002, flagged for fabricated data (Data Colada #138). Don't use it on any page.
+  - Circle to Search, too close to Monday's photo eraser in the grid.
+  - An unverified IRS carryover cap.
+  - Three LF caption lines that couldn't be sourced today.
+
+**Grid (grid_preview, next 9 per page, honest read):** still below "≥ 6 styles in 9" on every page; this is carried over from Oct 22–25.
+- LF: 4 styles (washing-line ×4, with bath and nails back to back on Tue). Today's arch-card Reel breaks the washing-line run.
+- LH: about 5 styles (One Word ×3).
+- FF: about 5 styles (series ×3).
+- HB: about 4 styles (series ×3, editorial demo ×4).
+Next builds must come from the unused menu styles: glove countdown, B/W photo editorial, one-word photo slow-pan, awards, emoji meme.
+
+**Known gaps:** no morning Reels Wed/Thu (one Reel a day per page holds through Thu). Mon Nov 2 series No. 4/5 and Day 11 are promised in captions but not built. Two official pages (Lullaby Trust co-sleeping, NHS sleep) were blocked to the makers, so alternate official PDFs/pages were used. FF Thu is the page's first US-only rule (labelled "US · HEALTH FSA").
+
+**Next run:** grade the Mon–Tue 7 pm Reels and the HB 8:45 no-trial test (≥ 20 at 15 h); grade the on-screen send tests on Wed's read; build Mon Nov 2 series episodes and Fri/Sat Reels in unused styles.
+
 ## Sun Oct 25, 2026 (daily run, 9:17 am Toronto)
 
 **Followers (insights 12:37 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total; flat for 8 reads; 7 days: FF −1, LH −2, HB −1, LF 0). No attributable organic follow.

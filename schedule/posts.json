@@ -3921,6 +3921,336 @@
       "caption": "Phone bill went up and you don't know why? Paste last month's and this month's bill into an AI chat and ask what changed.\n\nWHY IT WORKS: comparing two lists line by line is tedious for you and quick for AI. It answers from what you paste, so it can point to the exact line that changed.\n\nTHE REAL TEST: we made up two phone bills (September $100.85, October $117.80). The only real difference: October had no $15 loyalty discount. We asked Claude (Anthropic) on Oct 25, 2026: \"Here are my last two phone bills. Why is October's higher? Answer in one short sentence, then list what changed.\"\nIts first line, quoted exactly: \"October is $16.95 higher because your $15 loyalty discount went away, and that also raised your tax.\" It also listed tax going from $11.60 to $13.55 (+$1.95). We checked the maths: both right.\n\nHOW:\n1. Open both bills in your provider's app or the PDFs.\n2. Copy the line items, or take screenshots.\n3. Cover your account number, name, address and phone number.\n4. Paste both into ChatGPT, Claude or Gemini and ask: \"Why is this month higher? List what changed.\"\n5. Find the line it names on your real bill before you call.\n\nTHE CATCH: AI can misread a blurry screenshot or add wrong, so check the line it points to. It can't see your contract: if a discount ended, ask your provider whether it can come back.\n\nPRIVACY TIP: cover your account number, address and phone number before you paste. \"My phone bill\" is all the AI needs.\n\nBills made up for this post.\n\nDo this: Paste 2 bills. Ask: what changed?\n\nSend this to whoever pays the phone bill in your house.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #moneytips #learnai",
       "first_comment": "Real run: Claude (Anthropic), model claude-opus-5-5, fresh session with no other context, Oct 25, 2026 13:39 UTC. Made-up bills, prompt and full reply saved in the Steadfold repo at studio/editorial/hb-oct25-run-bill.txt. The on-screen reply is the first sentence, quoted exactly; the +$15.00 and +$1.95 chips summarise its list. Maths check: September 65.00 - 15.00 + 38.50 + 0.75 + 11.60 = 100.85; October 65.00 + 38.50 + 0.75 + 13.55 = 117.80; difference 16.95 = 15.00 + 1.95. Results vary between apps and runs.",
       "alt_text": "Hourback Reel. Big serif line on cream-yellow, 'Phone bill went up. Why?', above a white bill card reading 'Phone bill · October, Total $117.80' with the total circled in orange. Next, two made-up bills side by side: September has 'Loyalty discount −$15.00' circled; October shows '(no discount)' in a dashed box; handwriting says 'the discount vanished'. Then Claude's real reply, quoted exactly: 'October is $16.95 higher because your $15 loyalty discount went away, and that also raised your tax.', with chips '+$15.00 discount ended' and '+$1.95 more tax'. Do this: Paste 2 bills. Ask: what changed? First, cover your account number and address. It ends: Follow to learn what AI can really do, one real test a day."
+    },
+    {
+      "id": "lf-reel-1029-tummy-to-play",
+      "account": "littlefold",
+      "publish_at": "2026-10-29T19:00:00-04:00",
+      "video": "studio-oct26/littlefold/lf-reel-1029-tummy-to-play.mp4",
+      "cover": "studio-oct26/littlefold/lf-reel-1029-tummy-to-play-cover.jpg",
+      "caption": "Back to sleep. Tummy to play. Asleep, babies go on their back. Awake and watched, they spend some time on their tummy.\n\nWHY: tummy time helps babies build the strong muscles they need for milestones like pushing up, rolling and crawling (AAP). It also helps prevent a flat spot on the back of the head, because babies sleep on their backs (Canadian Paediatric Society).\n\nHOW (AAP):\n1. Start the day your baby comes home.\n2. 3 to 5 minutes, 2 to 3 times a day, while they're awake. After a diaper change or a nap is a good time.\n3. Add time as they enjoy it. Work up to 15 to 30 minutes a day in total by about 7 weeks.\n4. Easiest start: recline, wide awake, and put baby tummy-down on your chest. They'll lift their head to look at your face.\n\nTHE CATCH: tummy time is only for when baby is awake and you're right there watching. For sleep, always on their back, in their own crib.\n\nDo this: recline. Baby on your chest.\n\nSend this to someone bringing a baby home soon.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#tummytime #newborn #newparents #babydevelopment #canadianparents",
+      "first_comment": "Sources (checked Oct 26 2026): AAP, HealthyChildren.org, 'Back to Sleep, Tummy to Play' (healthychildren.org/English/ages-stages/baby/sleep/Pages/Back-to-Sleep-Tummy-to-Play.aspx, updated 9/8/2026): \"You can start doing tummy time the day your baby gets home from the hospital\"; \"2 to 3 times each day for a short time (3 to 5 minutes)\"; \"Work up to 15 to 30 minutes each day by 7 weeks\"; tummy time \"helps them build strong muscles\"; \"Tummy time is for babies who are awake and being closely supervised\"; tip: \"Lie on your back and place the baby on your chest.\" (On screen we say \"Recline\", awake and watching.) Canadian Paediatric Society, Caring for Kids, 'Preventing flat heads in babies who sleep on their backs' (caringforkids.cps.ca/handouts/pregnancy-and-babies/preventing_flat_heads): supervised tummy time when awake; \"tummy time help[s] prevent a flat spot on the head\". (CPS's handout suggests 10 to 15 minutes at least 3 times a day; we show the AAP newborn starting amount.)",
+      "alt_text": "Littlefold Reel on a sunny cream background with soft pastel circles. Text: 'asleep or awake? Back to sleep. Tummy to play.' In an arch-shaped card, a drawn baby sleeps on their back on a flat mattress ('asleep: on their back'), then a light sweep turns the card butter-yellow and the baby is on their tummy on a playmat, lifting their head ('awake: tummy time'). A giant number 3 in a pink circle: '3 minutes, 2 to 3 times a day. Start the day you get home.' A small timer fills; 'awake + watched'. 'Why it matters: Strong muscles. Fewer flat spots.' The baby pushes up; rosettes pop: head up, strong arms, round head. 'Do this: Recline. Baby on your chest. Only while you're awake and watching.' A drawn parent sits propped up on a big floor cushion, eyes open and smiling, with the baby tummy-down on their chest lifting their head to look at them; hearts float up. 'Follow for one calm thing a night, from bump to toddler.' Sources AAP and CPS."
+    },
+    {
+      "id": "lf-3amclub-03",
+      "account": "littlefold",
+      "publish_at": "2026-10-30T17:00:00-04:00",
+      "images": [
+        "studio-oct26/littlefold/lf-3amclub-03/01.jpg",
+        "studio-oct26/littlefold/lf-3amclub-03/02.jpg"
+      ],
+      "caption": "It's 3 am. They'll only sleep on you. Those cuddles are lovely while you're wide awake.\n\n3 am Club No. 3: the moment to watch for is the one where YOU start to drift off.\n\nWHY: The Lullaby Trust says: any time you feel you might fall asleep with your baby, put them on their back in a clear, flat, separate sleep space. Dozing off with a baby on a sofa or armchair is especially dangerous.\n\nAT 3 AM:\n1. Keep their crib or bassinet next to your bed, so putting them down takes seconds.\n2. Feeling sleepy yourself? Move baby to their own crib now, on their back. Don't wait for the perfect moment.\n3. Never settle in on the sofa or an armchair with a sleeping baby.\n\nTHE CATCH: if you've had alcohol, smoke, or take medicine that makes you drowsy, or your baby was premature or small, it's even more important that baby sleeps in their own space. Worried about how your baby sleeps? Talk to your doctor, nurse or health visitor.\n\nDo this: tonight, the moment you feel sleepy yourself, move baby to their own crib, on their back.\n\nSend this to whoever's on the night shift with you.\n\n3 am Club No. 4 is Monday at 5 pm: the next night tip.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #nightfeeds #safesleep #newparents #3amclub",
+      "first_comment": "Sources (checked Oct 26 2026): The Lullaby Trust, 'Safer sleep for babies: a guide for parents and carers' (lullabytrust.org.uk/wp-content/uploads/2025/01/Safer-sleep-guide-for-parents.pdf): \"Place your baby in their own sleep space, such as a cot or Moses basket if you might fall asleep\"; \"Any time you feel you might fall asleep with your baby, make sure they are on their back in a clear, flat, separate sleep space\"; \"Sofas and armchairs are dangerous places to fall asleep with your baby\"; babies should be in the same room as you for the first six months; higher risk after alcohol, smoking, drugs or sleep-causing medicine, or for premature/low-birth-weight babies. NHS, 'Sudden infant death syndrome (SIDS)' (nhs.uk/baby/caring-for-a-newborn/sudden-infant-death-syndrome-sids/, reviewed 25 Nov 2025): \"do not sleep on a sofa or in an armchair with your baby\".",
+      "alt_text": "Littlefold 2-slide carousel. Slide 1: '3 am Club · No. 3' badge on a peach background, 'It's 3 am. They'll only sleep on me.' in a large serif with 'sleep on me' highlighted pink, a drawn sleepy crescent moon in a nightcap with two stars, and the handwritten note 'new night tip every Mon · Wed · Fri'. Slide 2, cream: 'Feeling sleepy yourself? Move baby to their own crib.' Handwritten: on their back, in a flat, clear space. A large drawn crib with a baby asleep on their back in a sleep sack on a flat, empty mattress. Source: The Lullaby Trust, NHS."
+    },
+    {
+      "id": "lf-st-1027-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-27T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1027-1.jpg",
+      "caption": "Story lf-st-1027-1: swaddling tonight? Swaddling: legs straight or bent?"
+    },
+    {
+      "id": "lf-st-1027-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-27T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1027-2.jpg",
+      "caption": "Story lf-st-1027-2: hip-healthy swaddling Bent up and out."
+    },
+    {
+      "id": "lf-st-1028-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-28T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1028-1.jpg",
+      "caption": "Story lf-st-1028-1: before you grab a blanket Cold little hands. Add a layer?"
+    },
+    {
+      "id": "lf-st-1028-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-28T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1028-2.jpg",
+      "caption": "Story lf-st-1028-2: the 5-second check No. Feel the back of the neck."
+    },
+    {
+      "id": "lf-st-1029-1",
+      "account": "littlefold",
+      "publish_at": "2026-10-29T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1029-1.jpg",
+      "caption": "Story lf-st-1029-1: new baby home? When can tummy time start?"
+    },
+    {
+      "id": "lf-st-1029-2",
+      "account": "littlefold",
+      "publish_at": "2026-10-29T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/littlefold/stories/lf-st-1029-2.jpg",
+      "caption": "Story lf-st-1029-2: back to sleep, tummy to play The day you get home."
+    },
+    {
+      "id": "lh-reel-1027am-head-start",
+      "account": "lockedhour",
+      "publish_at": "2026-10-27T08:30:00-04:00",
+      "video": "studio-oct26/lockedhour/lh-reel-1027am-head-start.mp4",
+      "cover": "studio-oct26/lockedhour/lh-reel-1027am-head-start-cover.jpg",
+      "caption": "A head start makes you finish. Even a fake one.\n\nWHY: a goal that already looks started feels closer, and closer goals pull harder. Starting from zero feels like a long way to go.\n\nTHE RESEARCH: a car wash handed out 300 loyalty cards. Card A needed 8 stamps. Card B needed 10, but came with 2 already stamped. Same 8 washes to go. 34% of Card B people finished it, against 19% of Card A people, and they came back sooner.\n\nHOW:\n1. Open today's to-do list (paper or your notes app).\n2. At the top, write 2 things you've already done today: made coffee, replied to a message.\n3. Tick them both.\n4. Start the first real task straight after.\n\nTHE CATCH: the study was about car washes, not to-do lists. The idea that carries over is that seeing progress already made helps you keep going. Write real things you did, not invented ones.\n\nDo this: Start your list with 2 done things.\n\nSend this to the friend whose list never gets started.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#productivity #focus #todolist #habits #lockedhour",
+      "first_comment": "Source: Nunes, J. C. & Drèze, X. (2006). The endowed progress effect: how artificial advancement increases effort. Journal of Consumer Research, 32(4), 504–512. https://doi.org/10.1086/500480 . Car wash field study: 300 loyalty cards handed out in spring 2004. Half needed 8 stamps with none filled; half needed 10 stamps with 2 already filled (so 8 to go on both). 34% of the head-start cards were redeemed vs 19% of the others (χ²(1)=8.1, p<.01), and head-start customers came back sooner (2.9 fewer days between washes). Checked Oct 26 2026 on the IDEAS/RePEc record and the authors' paper PDF.",
+      "alt_text": "Edited video in the Locked Hour zine look on cream, pink and butter dot-grid paper. 'A head start makes you finish.' above a drawn free wash card with 10 circles; 2 pink stamps thump onto the first two, note '2 stamps, free'. Then 'Both cards: 8 washes to go.' Card A (8 empty circles), labelled 'Card A: 8 stamps, none free', and Card B (10 circles, 2 stamped), labelled 'Card B: 10 stamps, 2 already free'; result bars grow: 'Card A finished: 19%', 'Card B finished: 34%', note 'almost twice as many finished', source Nunes & Drèze 2006, 300 loyalty cards. Then 'Do this: Start your list with 2 done things.' over a taped note card where 'made coffee' and 'replied to Sam' get ticked and 'write the report' stays open; note 'the rest of the list feels shorter'. It loops to the hook and the card with 'follow for one small focus fix a day, each one backed by research' and the Locked Hour stamp.",
+      "trial": "auto"
+    },
+    {
+      "id": "lh-1027-new-place",
+      "account": "lockedhour",
+      "publish_at": "2026-10-27T12:00:00-04:00",
+      "images": [
+        "studio-oct26/lockedhour/lh-1027-new-place/01.jpg",
+        "studio-oct26/lockedhour/lh-1027-new-place/02.jpg",
+        "studio-oct26/lockedhour/lh-1027-new-place/03.jpg"
+      ],
+      "caption": "Trying to break a habit? A new place does more than wanting it more.\n\nWHY: strong habits run on cues around you: the same room, the same people, the same time. Change the setting and the cues are gone, so you're choosing again instead of running on autopilot.\n\nTHE RESEARCH: 115 students who switched universities were followed through the move. Their strong habits (exercising, watching TV, reading the news) carried on only where the setting stayed similar. In another study of 521 people, a push to change everyday habits worked better for people who had just moved house.\n\nHOW:\n1. Spot your next change: a new job, a new home, a new term, even a new desk.\n2. Pick one habit you want and one you want gone.\n3. In the first weeks, set the new setting up for the habit you want (shoes by the new door, no TV in the new bedroom).\n\nTHE CATCH: in that second study the boost showed up only in the first 3 months after a move, and the effect was small. A move doesn't change anything by itself; it gives you an opening.\n\nDo this: New job, home or term? Set up the habit you want in the first weeks.\n\nSend this to the friend who's moving next month.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#habits #focus #productivity #behaviorchange #lockedhour",
+      "first_comment": "Sources: Wood, W., Tam, L. & Guerrero Witt, M. (2005). Changing circumstances, disrupting habits. Journal of Personality and Social Psychology, 88(6), 918–933. https://doi.org/10.1037/0022-3514.88.6.918 . 115 students transferring to a new university; strong exercise, newspaper and TV habits survived the transfer only when the setting (place, people) stayed similar. Checked Oct 26 2026 on the author-hosted PDF (USC). Verplanken, B. & Roy, D. (2016). Empowering interventions to promote sustainable lifestyles: testing the habit discontinuity hypothesis in a field experiment. Journal of Environmental Psychology, 45, 127–134. https://doi.org/10.1016/j.jenvp.2015.11.008 . 800 recruited, 521 followed up in Peterborough, UK; a behaviour-change intervention worked better for people who had recently moved, and in the authors' exploratory breakdown only for those who had moved within the last 3 months (small effect; cut-offs chosen after the fact). Checked Oct 26 2026 on the Ulster University repository PDF.",
+      "alt_text": "Locked Hour 3-slide carousel. Slide 1: black label 'Swipe to reveal', 'What breaks a strong habit?' with two cards: A 'Wanting it more' and B hidden under a pink '?' sticker; note 'guess first, then swipe'. Slide 2: 'A new place.' Card B 'A change of place' circled in pink; '115 students switched universities. Their strong habits (exercise, TV, reading the news) kept going only where the setting stayed the same.' Source Wood, Tam & Guerrero Witt 2005. Slide 3: 'Your next fresh start is a new place.' Do this: 'New job, home or term? Set up the habit you want in the first weeks.' Note 'in one study, the boost showed up only in the first 3 months after a move'; source Verplanken & Roy 2016."
+    },
+    {
+      "id": "lh-reel-1029-picture-win",
+      "account": "lockedhour",
+      "publish_at": "2026-10-29T19:00:00-04:00",
+      "video": "studio-oct26/lockedhour/lh-reel-1029-picture-win.mp4",
+      "cover": "studio-oct26/lockedhour/lh-reel-1029-picture-win-cover.jpg",
+      "caption": "Daydreaming the goal? You may do less. Picture what's in the way too.\n\nWHY: a vivid daydream of success feels a bit like you're already there, so your body relaxes instead of gearing up. Naming the obstacle reminds you there's still work to do, and a plan tells you what to do when it shows up.\n\nTHE RESEARCH: in 4 small experiments, people who pictured an ideal outcome had less energy afterwards. In one, people who daydreamed an ideal week said a week later they'd got less done than people who didn't. A review of 21 studies (15,907 people) found the 3-step version (wish, obstacle, if-then plan) helped people reach their goals; the effect was small to medium.\n\nHOW:\n1. Wish: write the one thing you want done (\"finish the report\").\n2. Obstacle: write what usually gets in the way (\"I keep checking email\").\n3. Plan: \"If [obstacle], then I'll [action]\" (\"If I open email, I close it and keep going\").\n4. Keep it where you work.\n\nTHE CATCH: the energy studies were small and mostly measured how people felt. Dreaming isn't banned; just don't stop at the dream.\n\nDo this: Write the wish, the obstacle, then your plan.\n\nSend this to the friend with the vision board.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#goals #focus #productivity #mindset #lockedhour",
+      "first_comment": "Sources: Kappes, H. B. & Oettingen, G. (2011). Positive fantasies about idealized futures sap energy. Journal of Experimental Social Psychology, 47, 719–729. 4 experiments (50–164 people each). In Study 3, people who pictured an ideal coming week reported lower energy right away and, a week later, reported getting less done than people with neutral thoughts. Other studies measured blood pressure and self-reported energy. Checked Oct 26 2026 on the paper PDF (Univ. Hamburg site). Wang, G., Wang, Y. & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. Frontiers in Psychology, 12, 565202. https://doi.org/10.3389/fpsyg.2021.565202 . 21 studies, 24 effect sizes, 15,907 participants; overall Hedges' g = 0.34 (small to medium). Checked Oct 26 2026 on frontiersin.org.",
+      "alt_text": "Calm Locked Hour video on a slowly drifting cream, butter and pink sky-paper background. 'Daydreaming the goal? You may do less.' with a thought bubble holding a drawn pink trophy and a battery labelled 'energy' draining from green to red. Then 'People who pictured an ideal week said they did less.' with chips 'less energy right away' and 'less done a week later' (Kappes & Oettingen 2011, 4 small experiments). Then 'Then picture what's in the way.' with a card: WISH finish the report; IN THE WAY I keep checking email; PLAN if I open email, I close it and keep going; note 'wish, obstacle, plan: it helped people in 21 studies'. Ends 'Do this: Write the wish, the obstacle, then your plan.' above the same WISH / IN THE WAY / PLAN card, with the stamp on its corner and 'follow for one small focus fix a day, each one backed by research' and the stamp."
+    },
+    {
+      "id": "lh-oneword-04",
+      "account": "lockedhour",
+      "publish_at": "2026-10-30T17:00:00-04:00",
+      "images": [
+        "studio-oct26/lockedhour/lh-oneword-04/01.jpg",
+        "studio-oct26/lockedhour/lh-oneword-04/02.jpg",
+        "studio-oct26/lockedhour/lh-oneword-04/03.jpg"
+      ],
+      "caption": "Cramming the night before again? Today's word: Space.\n\nOne Word No. 4. Each episode is one word that guards your focus.\n\nWHY: when you come back to something after a gap, you have to dig it back out of memory, and that digging makes it stick. Cramming feels productive because it all feels familiar in the moment, then it fades.\n\nTHE RESEARCH: a review of 317 experiments found that spreading the same study time over separate sessions beat cramming it into one, for remembering it later. The longer you need to remember it, the bigger the gaps can be.\n\nHOW:\n1. Take the hour you'd spend cramming.\n2. Split it into 3 sessions of 20 minutes.\n3. Put them on 3 different days (say Mon, Wed, Fri) in your calendar.\n4. Start each session by writing what you remember before you look.\n\nTHE CATCH: it needs a few days' notice. The night before, it's too late to space it out, so plan as soon as you know the date.\n\nDo this: Split your next study hour into 3 sessions on 3 different days. Put them in your calendar.\n\nSend this to whoever has an exam in two weeks.\n\nOne Word No. 5 is Monday at 5 pm.\n\nFollow for one small focus fix a day, each one backed by research.\n\n#studytips #focus #learning #deepwork #oneword",
+      "first_comment": "Source: Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: a review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380. https://doi.org/10.1037/0033-2909.132.3.354 . 184 articles, 317 experiments: spacing study sessions apart beat massed (crammed) study for later recall; the best gap grows with how long you need to remember. Checked Oct 26 2026 on PubMed (16719566).",
+      "alt_text": "Locked Hour 3-slide carousel. Slide 1: black label 'One Word · No. 4', 'Cramming the night before again?' and the huge word 'Space.' over a pink highlighter stripe, with a halftone hourglass and the note 'same study time, spread over days'. Slide 2: '3 days, 20 minutes each. Not 1 hour in 1 night.' A week strip with Mon, Wed and Fri lit pink at 20 min each; 'Same hour. Spread out.' and '20 + 20 + 20 minutes = the same hour.' Slide 3: 'Remember more.' 'Across 317 experiments, spreading the same study time over days beat cramming it into one go.' Do this: 'Split your next study hour into 3 sessions on 3 different days. Put them in your calendar.' Source Cepeda et al. 2006."
+    },
+    {
+      "id": "lh-st-1027-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-27T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1027-1.jpg",
+      "caption": "Story lh-st-1027-1: Which breaks a habit: wanting it more, or a new place? answer next →"
+    },
+    {
+      "id": "lh-st-1027-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-27T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1027-2.jpg",
+      "caption": "Story lh-st-1027-2: A new place. Students who moved to a new university kept their old habits only where the setting stayed the same. the full version is in today's post ↓"
+    },
+    {
+      "id": "lh-st-1028-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-28T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1028-1.jpg",
+      "caption": "Story lh-st-1028-1: Turn your phone grey. Do you pick it up less often? answer next →"
+    },
+    {
+      "id": "lh-st-1028-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-28T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1028-2.jpg",
+      "caption": "Story lh-st-1028-2: No. Just as often. But you put it down sooner. About 80 pick-ups a day either way, but about 20 minutes less a day on the phone. tonight at 7 pm: the 15-second version ↓"
+    },
+    {
+      "id": "lh-st-1029-1",
+      "account": "lockedhour",
+      "publish_at": "2026-10-29T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1029-1.jpg",
+      "caption": "Story lh-st-1029-1: Does picturing the win help you get it? answer next →"
+    },
+    {
+      "id": "lh-st-1029-2",
+      "account": "lockedhour",
+      "publish_at": "2026-10-29T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/lockedhour/stories/lh-st-1029-2.jpg",
+      "caption": "Story lh-st-1029-2: Not on its own. People who daydreamed an ideal week felt less energy and got less done. Add the obstacle and a plan. tonight at 7 pm: the 15-second version ↓"
+    },
+    {
+      "id": "ff-reel-1028-fhsa-room",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-28T19:00:00-04:00",
+      "video": "studio-oct26/fullyfunded/ff-reel-1028-fhsa-room.mp4",
+      "cover": "studio-oct26/fullyfunded/ff-reel-1028-fhsa-room-cover.jpg",
+      "caption": "No FHSA open? No room yet. In Canada, your FHSA (First Home Savings Account) room, meaning how much you're allowed to put in, only starts the year you open your first one.\n\nWHY IT MATTERS: open an FHSA by December 31, 2026 and you get 2026's $8,000 of room, even if you put nothing in yet. Unused room carries forward (up to $8,000), so in 2027 you could put in up to $16,000. Open it in January instead and 2027 starts at $8,000. 2026's room never existed for you.\n\nHOW (about 15 minutes):\n1. Check you qualify (below).\n2. Open an FHSA at your bank, credit union or brokerage, online or in a branch.\n3. You don't have to deposit anything to start the room. Put money in when you're ready.\n4. Keep track of your room: CRA My Account shows it.\n\nTHE CATCH: the room is per person and the lifetime limit is $40,000. Put in more than your room and CRA charges 1% a month on the extra. Opening an account doesn't mean you have to buy a home.\n\nWHO QUALIFIES: adults living in Canada who are first-time home buyers. CRA's test: you haven't lived in a home you owned (or your spouse or common-law partner owned) in the past four years.\n\nDo this: open an FHSA at your bank or investing app before December 31.\n\nSend this to a friend saving for a first home.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#FHSA #firsthome #personalfinancecanada #moneytips #canadianmoney",
+      "first_comment": "Sources (checked Oct 26, 2026):\n• CRA, 'Participating in your FHSAs' (canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html): room in the year you open your first FHSA is $8,000; carry-forward is $0 in the opening year and at most $8,000 after; excess amounts are taxed 1% per month.\n• CRA tax tip, 'Make the most of your first home savings account' (canada.ca, 2025): 'your FHSA participation room only starts when you officially open your first account'; lifetime limit $40,000; adult resident of Canada and first-time home buyer (no home you or your spouse/common-law partner owned and lived in, in the past four years).\n• Maths: opened in 2026 with nothing put in -> 2027 room = $8,000 + $8,000 carried forward = $16,000; first opened in 2027 -> $8,000.",
+      "alt_text": "Fully Funded Reel on cream dot paper. A blue pill says CANADA · FHSA. Headline: 'No FHSA open? No room yet.' Small text: FHSA = First Home Savings Account, for first-time buyers in Canada. A drawn calendar page reads DEC 31 above a coral line with stops TODAY, DEC 31 and JAN 1. A blue dot travels to DEC 31, an OPENED marker drops and a blue $8,000 block pops in: 'Open one by Dec 31: 2026's $8,000 room is yours.' Handwritten: room = how much you're allowed to put in. Two bars drawn to scale: opened by Dec 31, 2027 room $16,000; opened in January, 2027 room $8,000. Handwritten: unused room carries over (up to 1 year). 'Do this: Open an FHSA at your bank or investing app before Dec 31. For first-time home buyers in Canada.' Handwritten: Follow for one money move a day, in plain words."
+    },
+    {
+      "id": "ff-reel-1029-fsa-expires",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-29T19:00:00-04:00",
+      "video": "studio-oct26/fullyfunded/ff-reel-1029-fsa-expires.mp4",
+      "cover": "studio-oct26/fullyfunded/ff-reel-1029-fsa-expires-cover.jpg",
+      "caption": "Your FSA money can expire. In the US, health FSA money you don't use by your plan's end date can be lost.\n\nWHY: a health flexible spending account (through your employer) is 'use it or lose it'. You put pre-tax pay in, and you normally have to use it on eligible costs by the end of the plan year. For plans that run January to December, that's December 31.\n\nHOW (10 minutes tonight):\n1. Log in to your FSA app or benefits site.\n2. Check two things: your balance and your plan's end date.\n3. Check whether your plan has extra time (a grace period of up to 2½ months) or lets some money carry over. An employer can offer one or the other, not both.\n4. If money is left, book what you already need before the deadline, like a dental cleaning, new glasses or a prescription refill. Your plan lists what counts.\n\nTHE CATCH: don't buy things you don't need just to spend it. Plans that don't run January to December have a different end date. A dependent care FSA has its own rules.\n\nWHO THIS IS FOR: people in the US with a health FSA through work.\n\nDo this: log in to your FSA or benefits account today and check your balance and deadline.\n\nSend this to a friend in the US with an FSA.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#FSA #healthcare #benefits #moneytips #personalfinance",
+      "first_comment": "Sources (checked Oct 26, 2026):\n• IRS Publication 15-B (2026), 'Use-or-lose rule for health FSAs': employers may offer a carryover of unused amounts instead of a grace period; 2026 salary reduction limit $3,400 (irs.gov/publications/p15b).\n• IRS news release IR-2019-184 (marked historical): employees 'normally must incur eligible expenses by the end of the plan year or forfeit any unspent amounts'; a grace period gives 'until two and a half months after the end of the plan year'; employers can offer a carryover or a grace period, not both (irs.gov/newsroom/irs-eligible-employees-can-use-tax-free-dollars-for-medical-expenses).",
+      "alt_text": "Fully Funded Reel on a soft coral field. A blue pill says US · HEALTH FSA. Headline: 'Your FSA money can expire.' over a giant blue DEC 31, with a small note 'plans that run Jan – Dec' and a drawn DEC 31 calendar page. Next: 'Not spent by your plan's end date? You lose it.' A coral $0 stamps above the calendar, which gets crossed out. Then a month line OCT to MAR with a blue band after DEC 31: 'Some plans give 2½ extra months, or let a little carry over.' Last: 'Do this: Log in to your FSA or benefits account today. Check your balance and deadline.' DEC 31. Handwritten: Follow for one money move a day, in plain words."
+    },
+    {
+      "id": "ff-richhabits-03",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-30T17:00:00-04:00",
+      "images": [
+        "studio-oct26/fullyfunded/ff-richhabits-03/01.jpg",
+        "studio-oct26/fullyfunded/ff-richhabits-03/02.jpg",
+        "studio-oct26/fullyfunded/ff-richhabits-03/03.jpg"
+      ],
+      "caption": "Insurance due. Surprised again? The habit: divide each yearly bill by 12 and save that much every month.\n\nRich Habits, Decoded No. 3. Each episode takes one money habit and shows you how to do it on a normal paycheque.\n\nTHE MATHS (bills made up for this post: $1,200 a year for insurance, $600 a year for gifts):\n• $1,200 ÷ 12 = $100 a month.\n• $600 ÷ 12 = $50 a month.\n• Save $150 a month and both bills are covered when they land.\n\nWHY IT WORKS: yearly bills aren't surprises, they're just far apart. Saving a twelfth each month turns one big hit into a small, boring line in your budget, so the bill never has to go on a card.\n\nHOW (20 minutes):\n1. List every bill that comes once or twice a year: insurance, car registration, memberships, gifts, the holidays.\n2. Divide each yearly total by 12 and add them up.\n3. Open a separate savings account and name it 'Bills'.\n4. Set an automatic transfer of that amount for payday. Paid every two weeks? Divide the yearly total by 26 instead.\n5. When a bill comes, pay it from that account.\n\nTHE CATCH: if a bill is due soon, the first year needs a catch-up (divide what's left by the months left). Your bills will be different, so use your own.\n\nDo this: list your yearly bills tonight and divide the total by 12.\n\nRich Habits, Decoded No. 4 is Monday at 5 pm.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#personalfinance #budgeting #sinkingfund #moneytips #richhabits",
+      "first_comment": "How the numbers work: all amounts are made up for this post and the maths is simple division ($1,200 ÷ 12 = $100; $600 ÷ 12 = $50; $100 + $50 = $150; $1,200 ÷ 26 paydays = $46.15). No returns or interest are assumed.",
+      "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Rich Habits, Decoded · No. 3' badge, 'Insurance due. Surprised again?' in a large serif with highlighted words, the handwritten note 'new one every Mon · Wed · Fri' and a small drawn chart, 'saved for the bill', with bars rising from January to December up to a dashed line 'bill due: $1,200'. Slide 2: 'Divide each yearly bill by 12.' Handwritten: save that much every month. A drawn calendar with 12 ticked months. Slide 3: 'Your yearly bills, monthly', made up for this post, a year to a month: Insurance $1,200 a year is $100 a month. Gifts $600 a year is $50 a month. Save each month: $150. A drawn jar labelled BILLS and the handwritten line 'no more surprise bills'."
+    },
+    {
+      "id": "ff-st-1027-1",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-27T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1027-1.jpg",
+      "caption": "Story ff-st-1027-1: A 7-year car loan costs less than a 5-year one?"
+    },
+    {
+      "id": "ff-st-1027-2",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-27T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1027-2.jpg",
+      "caption": "Story ff-st-1027-2: False. It costs more. Borrow $30,000 at 8%. Over 7 years instead of 5, the monthly payment is smaller, but you pay $2,780 more interest."
+    },
+    {
+      "id": "ff-st-1028-1",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-28T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1028-1.jpg",
+      "caption": "Story ff-st-1028-1: Your FHSA room builds up before you open one? FHSA = First Home Savings Account, for first-time home buyers in Canada. Room = how much you're allowed to put in."
+    },
+    {
+      "id": "ff-st-1028-2",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-28T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1028-2.jpg",
+      "caption": "Story ff-st-1028-2: False. It starts when you open one. Room (how much you're allowed to put in) starts the year you open your First Home Savings Account: $8,000. Open one at your bank or investing app by Dec 31."
+    },
+    {
+      "id": "ff-st-1029-1",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-29T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1029-1.jpg",
+      "caption": "Story ff-st-1029-1: Unspent FSA money is always yours next year?"
+    },
+    {
+      "id": "ff-st-1029-2",
+      "account": "fullyfunded",
+      "publish_at": "2026-10-29T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/fullyfunded/stories/ff-st-1029-2.jpg",
+      "caption": "Story ff-st-1029-2: False. It can be lost. Money not used by your plan's end date can be forfeited. Some plans give 2½ extra months or let a little carry over."
+    },
+    {
+      "id": "hb-reel-1027am-return-by",
+      "account": "hourback",
+      "publish_at": "2026-10-27T08:45:00-04:00",
+      "video": "studio-oct26/hourback/hb-reel-1027am-return-by.mp4",
+      "cover": "studio-oct26/hourback/hb-reel-1027am-return-by-cover.jpg",
+      "caption": "Returning something? Paste the store's return policy into AI and ask for your last day.\n\nWHY IT WORKS: the AI answers from the policy you paste, not from a guess. Add the day you bought it and the day it arrived, and it does the date maths and points out the catches, like sale items.\n\nTHE REAL TEST (policy and dates made up for this post):\nWe pasted a 3-line return policy (30 days from delivery, sale items store credit only, $7.99 return fee) and asked: \"I bought a jacket on sale on Oct 12 and it arrived Oct 20. What's my last day to return it, and what will I get back?\"\nClaude's reply, word for word: \"Your last day to return the jacket is November 19 (30 days from the Oct 20 delivery), as long as it's unworn with tags attached. Because it was a sale item, you'll get store credit only, likely the sale price you paid minus the $7.99 return shipping fee.\"\nWe checked the maths: Oct 20 plus 30 days is Nov 19.\n\nTHE CATCH: the answer is only as good as what you paste. Copy the whole returns section from the store's site or receipt, and check the date against the policy before you count on it.\n\nPRIVACY TIP: you don't need your order number, name or address. The policy and two dates are enough.\n\nDo this: paste the return policy into ChatGPT, Claude or Gemini and ask, \"What's my last day to return it?\"\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #aitips #shoppingtips",
+      "first_comment": "Made-up policy and dates, real output: run in Claude (Anthropic), model claude-opus-5-5, in a fresh session with no other context and no tools, Oct 26, 2026 13:56 UTC. Full prompt and reply saved in the Steadfold repo at studio/editorial/hb-oct26-run-return-policy.txt. The reply is quoted exactly (its bold formatting removed); the Reel shows the first sentence and the words \"store credit only\". The chat screen in the Reel is drawn. Results vary between apps and runs.",
+      "alt_text": "Hourback Reel. Frame 0: 'Returning it? Paste the policy.' in a large serif over a drawn chat app with a pasted return policy (30 days from delivery, sale items store credit only, $7.99 return fee) and the question 'Bought it on sale Oct 12. It arrived Oct 20. Last day to return it?'. Then 'Last day: Nov 19.' with Claude's reply quoted, a 'Sale item: store credit only' pill, a 'Do this' card and the follow line."
+    },
+    {
+      "id": "hb-1027-mechanic-questions",
+      "account": "hourback",
+      "publish_at": "2026-10-27T12:00:00-04:00",
+      "images": [
+        "studio-oct26/hourback/hb-1027-mechanic-questions/01.jpg",
+        "studio-oct26/hourback/hb-1027-mechanic-questions/02.jpg",
+        "studio-oct26/hourback/hb-1027-mechanic-questions/03.jpg"
+      ],
+      "caption": "Before you say yes to the mechanic, ask AI for the questions to ask.\n\nWHY IT WORKS: you can't push back on a quote you don't understand. AI turns \"it makes a noise\" into the questions a mechanic should be able to answer: what's wrong, how urgent it is, and where the money goes.\n\nTHE PROMPT (swap the parts in brackets for yours):\n\"My [car] makes [a squeal when I brake]. Give me 5 short questions to ask the [mechanic] so I understand the quote before I say yes.\"\n\nTHE REAL TEST (the car and the squeal are made up for this post). Claude's 5 questions, word for word (it also explained each one; that part is left out for length):\n1. \"What exactly is causing the squeal?\"\n2. \"How much pad life is left, and is this urgent or can it wait?\"\n3. \"Do the rotors really need replacing, or can they be resurfaced or reused?\"\n4. \"Can you break the quote into parts and labour, and what grade of parts is that?\"\n5. \"What warranty comes with the parts and the work, and what if it still squeals afterward?\"\n\nTHE CATCH: AI doesn't know your car or your shop. Use the questions to understand the quote, not to diagnose the problem yourself.\n\nPRIVACY TIP: no plate number, VIN or address needed. \"My car\" is enough.\n\nDo this: before you call the shop, paste the prompt into ChatGPT, Claude or Gemini with your car and the noise.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #aitips #carrepair",
+      "first_comment": "Made-up situation, real output: run in Claude (Anthropic), model claude-opus-5-5, in a fresh session with no other context and no tools, Oct 26, 2026 13:56 UTC. Full prompt and reply saved in the Steadfold repo at studio/editorial/hb-oct26-run-mechanic-questions.txt. Slide 2 shows questions 1 and 4 word for word; the caption lists all 5 (bold formatting removed; the explanation under each is left out). Results vary between apps and runs.",
+      "alt_text": "Hourback 3-slide carousel. Slide 1: 'Before you say yes to the mechanic' in a large serif, and a white prompt card labelled 'Copy this prompt': 'My [car] makes [a squeal when I brake]. Give me 5 short questions to ask the [mechanic] so I understand the quote before I say yes.' with the bracket words on yellow chips, and the note 'change the yellow words to yours'. Slide 2: 'It wrote 5. Here are 2:' with Claude's questions 1 ('What exactly is causing the squeal?') and 4 ('Can you break the quote into parts and labour, and what grade of parts is that?'). Slide 3: 'Do this: Paste it into ChatGPT, Claude or Gemini before you call the shop.' and 'No plate number or VIN needed. My car is enough.'"
+    },
+    {
+      "id": "hb-day10-pancakes-for-6",
+      "account": "hourback",
+      "publish_at": "2026-10-30T17:45:00-04:00",
+      "images": [
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/01.jpg",
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/02.jpg",
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/03.jpg"
+      ],
+      "caption": "Recipe for 4 and six are coming? Paste the ingredient list and ask AI to rewrite it for 6.\n\nAI, for real · Day 10. One real test of what AI can do, with the output shown.\n\nWHY IT WORKS: scaling is multiplying every line by the same number (here 1.5), and the fiddly part is turning the answers back into cups and spoons you can measure. AI does both and keeps the list in the same order, so you can cook straight from it.\n\nTHE REAL TEST (the recipe is made up for this post):\nPrompt: \"This pancake recipe serves 4. Rewrite the ingredient list for 6 people. Just the list.\" Then the list: 1 1/2 cups flour, 2 tbsp sugar, 2 tsp baking powder, 1/2 tsp salt, 1 1/4 cups milk, 1 egg, 3 tbsp melted butter.\nClaude's reply, word for word: 2 1/4 cups flour · 3 tbsp sugar · 1 tbsp baking powder · 3/4 tsp salt · 1 3/4 cups + 2 tbsp milk · 1 1/2 eggs (or 1 egg plus 1 yolk) · 4 1/2 tbsp melted butter.\nWe checked every line: all 7 are exactly 1.5 times the original (2 tsp × 1.5 = 3 tsp = 1 tbsp; 1 1/4 cups × 1.5 = 1 7/8 cups = 1 3/4 cups + 2 tbsp).\n\nTHE CATCH: the ingredients are the easy part. Pan size and cooking time don't simply multiply, so check those yourself.\n\nPRIVACY TIP: a recipe is safe to paste. Skip anything personal, like a family name on a recipe card.\n\nTIP: if you don't own a 1/8 cup or odd spoons, add \"Round to cups and spoons I own\" to the prompt.\n\nDo this: next time you cook for more people, in ChatGPT, Claude or Gemini type \"This pancake recipe serves 4. Rewrite the ingredient list for 6 people. Just the list.\" (change the recipe and the numbers to yours), then paste the recipe under it.\n\nAI, for real · Day 11 is Monday at 5:45 pm.\n\nFollow to learn what AI can really do, one real test a day.\n\n#ai #chatgpt #claude #aitips #learnai",
+      "first_comment": "Made-up recipe, real output: run in Claude (Anthropic), model claude-opus-5-5, in a fresh session (Claude Code CLI print mode, no prior conversation, no tools), Oct 25, 2026 13:39 UTC. Prompt and full reply saved in the Steadfold repo at studio/editorial/hb-oct25-run-day9.txt. Slide 3 shows 3 of the 7 lines word for word; the caption lists all 7. Slide 2 now shows the run's prompt word for word in the copy card. The 'round to cups and spoons I own' tip was not part of the run. Results vary between apps and runs.",
+      "alt_text": "Hourback 3-slide carousel. Slide 1: 'AI, for real · Day 10' badge, 'Recipe for 4. Six are coming?' in a large serif with highlighted words, a drawn stack of pancakes with butter and syrup, and the handwritten note 'new one every Mon · Wed · Fri'. Slide 2: 'In ChatGPT, Claude or Gemini, type this above any recipe:' and a white 'Copy this prompt' card: '[This pancake recipe] serves [4]. Rewrite the ingredient list for [6] people. Just the list.' with the bracket words on yellow chips, and the note 'tip: add round to cups and spoons I own'. Slide 3: 'Pancakes for 6. It wrote:' 1. 2¼ cups flour, 2. 1¾ cups + 2 tbsp milk, 3. 1½ eggs (or 1 egg plus 1 yolk); notes 'real reply, shortened' and '3 of 7 shown, all 7 in the caption, we checked every one'."
+    },
+    {
+      "id": "hb-st-1027-1",
+      "account": "hourback",
+      "publish_at": "2026-10-27T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1027-1.jpg",
+      "caption": "Story hb-st-1027-1: quick question | Car repair quote? Ask before you say yes. | AI can write the questions for you. | tap for the answer →"
+    },
+    {
+      "id": "hb-st-1027-2",
+      "account": "hourback",
+      "publish_at": "2026-10-27T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1027-2.jpg",
+      "caption": "Story hb-st-1027-2: the answer | “What exactly is causing the squeal?” | 1 of the 5 questions Claude wrote for us. | All 5 + the prompt to copy: today's post on our page"
+    },
+    {
+      "id": "hb-st-1028-1",
+      "account": "hourback",
+      "publish_at": "2026-10-28T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1028-1.jpg",
+      "caption": "Story hb-st-1028-1: quick question | Google can name a song you only hum? | Yes. No lyrics needed. | tap for the answer →"
+    },
+    {
+      "id": "hb-st-1028-2",
+      "account": "hourback",
+      "publish_at": "2026-10-28T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1028-2.jpg",
+      "caption": "Story hb-st-1028-2: the answer | Google app → mic → Search a song. | Then hum, whistle or sing the tune. | Tonight at 7 pm: the 15-second version"
+    },
+    {
+      "id": "hb-st-1029-1",
+      "account": "hourback",
+      "publish_at": "2026-10-29T12:30:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1029-1.jpg",
+      "caption": "Story hb-st-1029-1: quick question | Bill went up? AI can tell you why. | If you paste both months. | tap for the answer →"
+    },
+    {
+      "id": "hb-st-1029-2",
+      "account": "hourback",
+      "publish_at": "2026-10-29T12:31:00-04:00",
+      "story": true,
+      "image": "studio-oct26/hourback/stories/hb-st-1029-2.jpg",
+      "caption": "Story hb-st-1029-2: the answer | Paste last month's and this month's bill into ChatGPT, Claude or Gemini. Ask: what changed? | Cover your account number and address first. | Tonight at 7 pm: a 15-second Reel on our page"
     }
   ]
 }

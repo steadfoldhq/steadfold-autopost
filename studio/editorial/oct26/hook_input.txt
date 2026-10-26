@@ -1,0 +1,12 @@
+ff-reel-1028-fhsa-room: No FHSA open? No room yet. | Open an FHSA by Dec 31. Here's why. | Your FHSA room hasn't started.
+ff-reel-1029-fsa-expires: Your FSA money can expire Dec 31. | Unspent FSA money? Use it by your deadline. | FSA balance left? The clock is running.
+ff-richhabits-03: Insurance due. Surprised again? | Yearly bills, paid monthly. | The bill that wrecks December, fixed.
+lh-reel-1027am-head-start: A head start makes you finish. | Two free stamps. Twice the finishers. | Your list needs 2 ticks already.
+lh-1027-new-place: What breaks a strong habit? | Moving soon? Your habits won't follow. | A new place beats wanting it more.
+lh-reel-1029-picture-win: Picturing the win drains your drive. | Daydreaming the goal? You'll do less. | Don't just picture it. Picture the obstacle.
+lh-oneword-04: Cramming the night before again? | Same hour. Spread over 3 days. | Exam in two weeks? Start Monday.
+hb-reel-1027am-return-by: Returning it? Paste the policy. | Return by when? Ask AI. | Sale item? AI reads the fine print.
+hb-1027-mechanic-questions: Car quote? Ask AI first. | Before you say yes to the mechanic | 5 questions your mechanic should answer
+hb-day10-pancakes-for-6: Recipe for 4. Six are coming? | Cooking for 6? AI scales it. | Pancakes for 6, no maths
+lf-reel-1029-tummy-to-play: Back to sleep. Tummy to play. | Tummy time starts the day you're home. | Awake? A few minutes on their tummy.
+lf-3amclub-03: It's 3 am. They'll only sleep on me. | 3 am, and baby only sleeps on you? | Asleep on your chest at 3 am?

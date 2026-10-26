@@ -1,0 +1,178 @@
+[
+ {
+  "id": "ff-reel-1028-fhsa-room",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-28T19:00:00-04:00",
+  "video": "studio-oct26/fullyfunded/ff-reel-1028-fhsa-room.mp4",
+  "cover": "studio-oct26/fullyfunded/ff-reel-1028-fhsa-room-cover.jpg",
+  "caption": "No FHSA open? No room yet. In Canada, your FHSA (First Home Savings Account) room, meaning how much you're allowed to put in, only starts the year you open your first one.\n\nWHY IT MATTERS: open an FHSA by December 31, 2026 and you get 2026's $8,000 of room, even if you put nothing in yet. Unused room carries forward (up to $8,000), so in 2027 you could put in up to $16,000. Open it in January instead and 2027 starts at $8,000. 2026's room never existed for you.\n\nHOW (about 15 minutes):\n1. Check you qualify (below).\n2. Open an FHSA at your bank, credit union or brokerage, online or in a branch.\n3. You don't have to deposit anything to start the room. Put money in when you're ready.\n4. Keep track of your room: CRA My Account shows it.\n\nTHE CATCH: the room is per person and the lifetime limit is $40,000. Put in more than your room and CRA charges 1% a month on the extra. Opening an account doesn't mean you have to buy a home.\n\nWHO QUALIFIES: adults living in Canada who are first-time home buyers. CRA's test: you haven't lived in a home you owned (or your spouse or common-law partner owned) in the past four years.\n\nDo this: open an FHSA at your bank or investing app before December 31.\n\nSend this to a friend saving for a first home.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#FHSA #firsthome #personalfinancecanada #moneytips #canadianmoney",
+  "first_comment": "Sources (checked Oct 26, 2026):\n• CRA, 'Participating in your FHSAs' (canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html): room in the year you open your first FHSA is $8,000; carry-forward is $0 in the opening year and at most $8,000 after; excess amounts are taxed 1% per month.\n• CRA tax tip, 'Make the most of your first home savings account' (canada.ca, 2025): 'your FHSA participation room only starts when you officially open your first account'; lifetime limit $40,000; adult resident of Canada and first-time home buyer (no home you or your spouse/common-law partner owned and lived in, in the past four years).\n• Maths: opened in 2026 with nothing put in -> 2027 room = $8,000 + $8,000 carried forward = $16,000; first opened in 2027 -> $8,000.",
+  "alt_text": "Fully Funded Reel on cream dot paper. A blue pill says CANADA · FHSA. Headline: 'No FHSA open? No room yet.' Small text: FHSA = First Home Savings Account, for first-time buyers in Canada. A drawn calendar page reads DEC 31 above a coral line with stops TODAY, DEC 31 and JAN 1. A blue dot travels to DEC 31, an OPENED marker drops and a blue $8,000 block pops in: 'Open one by Dec 31: 2026's $8,000 room is yours.' Handwritten: room = how much you're allowed to put in. Two bars drawn to scale: opened by Dec 31, 2027 room $16,000; opened in January, 2027 room $8,000. Handwritten: unused room carries over (up to 1 year). 'Do this: Open an FHSA at your bank or investing app before Dec 31. For first-time home buyers in Canada.' Handwritten: Follow for one money move a day, in plain words.",
+  "beats": [
+   "CANADA · FHSA | No FHSA open? No room yet. | FHSA = FIRST HOME SAVINGS ACCOUNT FOR FIRST-TIME BUYERS IN CANADA | DEC 31 | TODAY · DEC 31 · JAN 1",
+   "Open one by Dec 31: 2026's $8,000 room is yours. | room = how much you're allowed to put in | OPENED | $8,000 | TODAY · DEC 31 · JAN 1",
+   "Open in January? Your 2027 room: $8,000, not $16,000. | unused room carries over (up to 1 year) | OPENED BY DEC 31 · 2027 ROOM | $16,000 | OPENED IN JANUARY · 2027 ROOM | $8,000",
+   "do this: Open an FHSA at your bank or investing app before Dec 31. | DEC 31 | FOR FIRST-TIME HOME BUYERS IN CANADA | Follow for one money move a day, in plain words.",
+   "(loop, hard cut) CANADA · FHSA | No FHSA open? No room yet. | FHSA = FIRST HOME SAVINGS ACCOUNT FOR FIRST-TIME BUYERS IN CANADA | DEC 31",
+   "cover only: save this before Dec 31"
+  ],
+  "hook_options": [
+   "No FHSA open? No room yet.",
+   "Open an FHSA by Dec 31. Here's why.",
+   "Your FHSA room hasn't started."
+  ],
+  "duration_s": 14.91,
+  "style": "Follow the line (style 9, quiet): one coral line Today -> Dec 31 -> Jan 1 that a blue dot travels, on cream dot paper (not the blueprint grid)",
+  "send_test": false,
+  "sources": [
+   "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html",
+   "https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2025/make-most-your-first-home-savings-account.html"
+  ],
+  "notes": "Desk order 2: non-trial 'trap rule with a date' (NO trial flag). Frame 0 states the rule as a fact (6 words) with the date (DEC 31 calendar) and the country; payoff fully on screen by ~2.6 s; 14.91 s. Rotation: the neighbours are Tue 7 pm car loan (Drawn to Scale blueprint, loud) and Wed 5 pm Rich Habits No. 2 (pills series cover, loud); this is a quiet follow-the-line tile on plain dot paper, so neither style nor loudness repeats. No returns shown, so no 'Not guaranteed' line. Music: ff-x-big-reveal (v4, tools/music-library.json), -13.9 LUFS / -1.6 dBTP. 1080x1920 30 fps H.264/AAC, 5.8 MB. Cover note: the cover save-line sits at y~1630, below the 300-1400 band (same as the Oct 25 FF covers); the hook and object are inside it. Built by studio/editorial/oct26_fullyfunded.py. Gate r2 (Oct 26): FHSA spelled out on frame 0; 'room' defined on beat 2; carry-over explained on beat 3; do-this names 'your bank or investing app'; follow line on the end frame; timeline/calendar moved ~130 px lower and enlarged; the near-blank 'Open in January?' in-between frame removed (headline on screen from that beat's first frame, hard cut with a shake); loop is a hard cut. Reading-rule shortfalls accepted to stay <= 15.0 s (beat 3 has 4.6 s for its words; the bars carry the same numbers)."
+ },
+ {
+  "id": "ff-reel-1029-fsa-expires",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-29T19:00:00-04:00",
+  "video": "studio-oct26/fullyfunded/ff-reel-1029-fsa-expires.mp4",
+  "cover": "studio-oct26/fullyfunded/ff-reel-1029-fsa-expires-cover.jpg",
+  "caption": "Your FSA money can expire. In the US, health FSA money you don't use by your plan's end date can be lost.\n\nWHY: a health flexible spending account (through your employer) is 'use it or lose it'. You put pre-tax pay in, and you normally have to use it on eligible costs by the end of the plan year. For plans that run January to December, that's December 31.\n\nHOW (10 minutes tonight):\n1. Log in to your FSA app or benefits site.\n2. Check two things: your balance and your plan's end date.\n3. Check whether your plan has extra time (a grace period of up to 2½ months) or lets some money carry over. An employer can offer one or the other, not both.\n4. If money is left, book what you already need before the deadline, like a dental cleaning, new glasses or a prescription refill. Your plan lists what counts.\n\nTHE CATCH: don't buy things you don't need just to spend it. Plans that don't run January to December have a different end date. A dependent care FSA has its own rules.\n\nWHO THIS IS FOR: people in the US with a health FSA through work.\n\nDo this: log in to your FSA or benefits account today and check your balance and deadline.\n\nSend this to a friend in the US with an FSA.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#FSA #healthcare #benefits #moneytips #personalfinance",
+  "first_comment": "Sources (checked Oct 26, 2026):\n• IRS Publication 15-B (2026), 'Use-or-lose rule for health FSAs': employers may offer a carryover of unused amounts instead of a grace period; 2026 salary reduction limit $3,400 (irs.gov/publications/p15b).\n• IRS news release IR-2019-184 (marked historical): employees 'normally must incur eligible expenses by the end of the plan year or forfeit any unspent amounts'; a grace period gives 'until two and a half months after the end of the plan year'; employers can offer a carryover or a grace period, not both (irs.gov/newsroom/irs-eligible-employees-can-use-tax-free-dollars-for-medical-expenses).",
+  "alt_text": "Fully Funded Reel on a soft coral field. A blue pill says US · HEALTH FSA. Headline: 'Your FSA money can expire.' over a giant blue DEC 31, with a small note 'plans that run Jan – Dec' and a drawn DEC 31 calendar page. Next: 'Not spent by your plan's end date? You lose it.' A coral $0 stamps above the calendar, which gets crossed out. Then a month line OCT to MAR with a blue band after DEC 31: 'Some plans give 2½ extra months, or let a little carry over.' Last: 'Do this: Log in to your FSA or benefits account today. Check your balance and deadline.' DEC 31. Handwritten: Follow for one money move a day, in plain words.",
+  "beats": [
+   "US · HEALTH FSA | Your FSA money can expire. | DEC 31 | PLANS THAT RUN JAN – DEC | DEC 31 (calendar)",
+   "Not spent by your plan's end date? You lose it. | $0 | DEC 31 (calendar, crossed out)",
+   "Some plans give 2½ extra months, or let a little carry over. | DEC 31 | OCT NOV DEC JAN FEB MAR | UP TO 2½ MORE MONTHS",
+   "do this: Log in to your FSA or benefits account today. Check your balance and deadline. | DEC 31 | Follow for one money move a day, in plain words.",
+   "(loop, hard cut) US · HEALTH FSA | Your FSA money can expire. | DEC 31",
+   "cover only: check yours before Dec 31"
+  ],
+  "hook_options": [
+   "Your FSA money can expire.",
+   "Unspent FSA money? Check your deadline.",
+   "FSA balance left? Clock's running."
+  ],
+  "duration_s": 15.0,
+  "style": "Kinetic big text (style 5, loud): giant Inter Display DEC 31, words landing one at a time, $0 stamp, on a soft-coral field",
+  "send_test": false,
+  "sources": [
+   "https://www.irs.gov/publications/p15b",
+   "https://www.irs.gov/newsroom/irs-eligible-employees-can-use-tax-free-dollars-for-medical-expenses"
+  ],
+  "notes": "Desk order 2, second 'trap rule with a date' Reel (NO trial flag), a different topic (US employer benefit, not a Canadian account) and a different style (loud kinetic type on soft coral vs Wed's quiet follow-the-line on cream). Global audience: the country is on frame 0 (US · HEALTH FSA). The IRS carryover dollar cap for 2026 is not on screen or in the caption: I could not confirm it on an irs.gov page today (only on benefits-industry pages), so it's cut. healthcare.gov FSA page was blocked by the proxy (not used). Payoff on screen by ~2.3 s. Exactly 15.0 s (ffprobe 15.000). Music: ff-x-level-up (v4), -13.8 LUFS / -2.1 dBTP. 6.0 MB. Doubt: FF's audience so far skews Canadian; this is the page's first US-only rule. If the reviewer prefers Canada-only, hold it rather than swap the topic. Cover save-line sits at y~1560 (below the 1400 band), as on the Oct 25 covers. Gate r2 (Oct 26): hook text 'Your FSA money can expire.' (5 words; giant DEC 31 kept as the visual); orphan '$' removed from hook and cover; do-this now 'Log in to your FSA or benefits account today.'; follow line on the end card; transitions shortened to 0.2 s (whip, stripes) and the loop is a hard cut, so no smeared frames."
+ },
+ {
+  "id": "ff-richhabits-03",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-30T17:00:00-04:00",
+  "images": [
+   "studio-oct26/fullyfunded/ff-richhabits-03/01.jpg",
+   "studio-oct26/fullyfunded/ff-richhabits-03/02.jpg",
+   "studio-oct26/fullyfunded/ff-richhabits-03/03.jpg"
+  ],
+  "caption": "Insurance due. Surprised again? The habit: divide each yearly bill by 12 and save that much every month.\n\nRich Habits, Decoded No. 3. Each episode takes one money habit and shows you how to do it on a normal paycheque.\n\nTHE MATHS (bills made up for this post: $1,200 a year for insurance, $600 a year for gifts):\n• $1,200 ÷ 12 = $100 a month.\n• $600 ÷ 12 = $50 a month.\n• Save $150 a month and both bills are covered when they land.\n\nWHY IT WORKS: yearly bills aren't surprises, they're just far apart. Saving a twelfth each month turns one big hit into a small, boring line in your budget, so the bill never has to go on a card.\n\nHOW (20 minutes):\n1. List every bill that comes once or twice a year: insurance, car registration, memberships, gifts, the holidays.\n2. Divide each yearly total by 12 and add them up.\n3. Open a separate savings account and name it 'Bills'.\n4. Set an automatic transfer of that amount for payday. Paid every two weeks? Divide the yearly total by 26 instead.\n5. When a bill comes, pay it from that account.\n\nTHE CATCH: if a bill is due soon, the first year needs a catch-up (divide what's left by the months left). Your bills will be different, so use your own.\n\nDo this: list your yearly bills tonight and divide the total by 12.\n\nRich Habits, Decoded No. 4 is Monday at 5 pm.\n\nEducation only, not financial advice.\n\nFollow for one money move a day, in plain words.\n\n#personalfinance #budgeting #sinkingfund #moneytips #richhabits",
+  "first_comment": "How the numbers work: all amounts are made up for this post and the maths is simple division ($1,200 ÷ 12 = $100; $600 ÷ 12 = $50; $100 + $50 = $150; $1,200 ÷ 26 paydays = $46.15). No returns or interest are assumed.",
+  "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Rich Habits, Decoded · No. 3' badge, 'Insurance due. Surprised again?' in a large serif with highlighted words, the handwritten note 'new one every Mon · Wed · Fri' and a small drawn chart, 'saved for the bill', with bars rising from January to December up to a dashed line 'bill due: $1,200'. Slide 2: 'Divide each yearly bill by 12.' Handwritten: save that much every month. A drawn calendar with 12 ticked months. Slide 3: 'Your yearly bills, monthly', made up for this post, a year to a month: Insurance $1,200 a year is $100 a month. Gifts $600 a year is $50 a month. Save each month: $150. A drawn jar labelled BILLS and the handwritten line 'no more surprise bills'.",
+  "beats": [
+   "RICH HABITS, DECODED · NO. 3 | Insurance due. Surprised again? | new one every Mon · Wed · Fri | SAVED FOR THE BILL | BILL DUE: $1,200 | JAN | +$100 A MONTH | DEC",
+   "2/3 | Divide each yearly bill by 12. | save that much every month",
+   "3/3 | Your yearly bills, monthly | MADE UP FOR THIS POST · A YEAR → A MONTH | Insurance $1,200 $100 | Gifts $600 $50 | Save each month $150 | BILLS | no more surprise bills"
+  ],
+  "hook_options": [
+   "Insurance due. Surprised again?",
+   "Yearly bills, paid monthly.",
+   "The bill that wrecks December, fixed."
+  ],
+  "style": "Series cover (Rich Habits, Decoded: pills + drawn chart + series badge + stamp), same layout as No. 1/No. 2",
+  "send_test": false,
+  "sources": [
+   "maths only (made up for this post)"
+  ],
+  "notes": "The parked Oct 25 'yearly bills ÷ 12' episode (media/studio-oct25/fullyfunded/ff-richhabits-02/), rebuilt as No. 3 by studio/editorial/oct26_fullyfunded_feed.py (imports oct25_fullyfunded_feed.py). Changes: badge 'no. 3'; slide 3's retired halftone OK-hand removed and replaced with a drawn BILLS jar (FF signature object); rows say 'a year'. Rotation: the series cover sits after Thu's loud kinetic Reel; loud then loud is allowed once (never three). It's the same cover layout as No. 1/No. 2 on purpose (series rule). Caption's last line promises No. 4 on Monday Nov 2 at 5 pm: that episode is not built yet. Topic check: No. 2's caption already mentions moving savings on payday; No. 3 is a different habit (sinking fund). Gate r2: slide 3 rows shortened and the header reads 'a year → a month', so the $100 pill sits inside the card like $50 and $150. Cover hook is 'Insurance due. Surprised again?' (picker's choice)."
+ },
+ {
+  "id": "ff-st-1027-1",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-27T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1027-1.jpg",
+  "caption": "Story ff-st-1027-1: A 7-year car loan costs less than a 5-year one?",
+  "beats": [
+   "QUICK QUIZ · CAR LOANS",
+   "A 7-year car loan costs less than a 5-year one?",
+   "true or false? tap →"
+  ]
+ },
+ {
+  "id": "ff-st-1027-2",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-27T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1027-2.jpg",
+  "caption": "Story ff-st-1027-2: False. It costs more. Borrow $30,000 at 8%. Over 7 years instead of 5, the monthly payment is smaller, but you pay $2,780 more interest.",
+  "beats": [
+   "THE ANSWER",
+   "False. It costs more.",
+   "Borrow $30,000 at 8%. Over 7 years instead of 5, the monthly payment is smaller, but you pay $2,780 more interest.",
+   "LOAN MADE UP FOR THIS POST · THE MATHS IS REAL",
+   "Tonight at 7 pm: the 15-second version"
+  ]
+ },
+ {
+  "id": "ff-st-1028-1",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-28T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1028-1.jpg",
+  "caption": "Story ff-st-1028-1: Your FHSA room builds up before you open one? FHSA = First Home Savings Account, for first-time home buyers in Canada. Room = how much you're allowed to put in.",
+  "beats": [
+   "CANADA · FHSA",
+   "Your FHSA room builds up before you open one?",
+   "FHSA = First Home Savings Account, for first-time home buyers in Canada. Room = how much you're allowed to put in.",
+   "true or false? tap →"
+  ]
+ },
+ {
+  "id": "ff-st-1028-2",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-28T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1028-2.jpg",
+  "caption": "Story ff-st-1028-2: False. It starts when you open one. Room (how much you're allowed to put in) starts the year you open your First Home Savings Account: $8,000. Open one at your bank or investing app by Dec 31.",
+  "beats": [
+   "THE ANSWER",
+   "False. It starts when you open one.",
+   "Room (how much you're allowed to put in) starts the year you open your First Home Savings Account: $8,000. Open one at your bank or investing app by Dec 31.",
+   "FOR FIRST-TIME HOME BUYERS IN CANADA · SOURCE: CRA",
+   "Tonight at 7 pm: the 15-second version"
+  ]
+ },
+ {
+  "id": "ff-st-1029-1",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-29T12:30:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1029-1.jpg",
+  "caption": "Story ff-st-1029-1: Unspent FSA money is always yours next year?",
+  "beats": [
+   "US · HEALTH FSA",
+   "Unspent FSA money is always yours next year?",
+   "true or false? tap →"
+  ]
+ },
+ {
+  "id": "ff-st-1029-2",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-29T12:31:00-04:00",
+  "story": true,
+  "image": "studio-oct26/fullyfunded/stories/ff-st-1029-2.jpg",
+  "caption": "Story ff-st-1029-2: False. It can be lost. Money not used by your plan's end date can be forfeited. Some plans give 2½ extra months or let a little carry over.",
+  "beats": [
+   "THE ANSWER",
+   "False. It can be lost.",
+   "Money not used by your plan's end date can be forfeited. Some plans give 2½ extra months or let a little carry over.",
+   "CHECK YOUR OWN PLAN'S RULES · SOURCE: IRS",
+   "Tonight at 7 pm: the 15-second version"
+  ]
+ }
+]
