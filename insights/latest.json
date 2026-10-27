@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-27T04:37:23+00:00",
+ "collected_at": "2026-10-27T12:46:46+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 17,
-      "reach": 16,
+      "views": 18,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1999,
-      "ig_reels_video_view_total_time": 31998,
+      "ig_reels_avg_watch_time": 2176,
+      "ig_reels_video_view_total_time": 37004,
       "follow_error": "GET 18061873298543672/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -37,8 +37,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 1,
+      "views": 5,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -790,7 +790,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 6
+    "profile_views": 1
    }
   },
   "lockedhour": {
@@ -809,13 +809,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 121,
-      "reach": 106,
+      "views": 123,
+      "reach": 108,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3961,
-      "ig_reels_video_view_total_time": 431753,
+      "ig_reels_avg_watch_time": 3903,
+      "ig_reels_video_view_total_time": 433270,
       "follow_error": "GET 18132570427826661/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -829,8 +829,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 1,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -848,13 +848,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 3,
+      "views": 6,
+      "reach": 5,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1895,
-      "ig_reels_video_view_total_time": 7580,
+      "ig_reels_avg_watch_time": 2373,
+      "ig_reels_video_view_total_time": 14243,
       "follow_error": "GET 18127299977498140/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -869,7 +869,7 @@
      "comments_count": 1,
      "insights": {
       "views": 48,
-      "reach": 44,
+      "reach": 45,
       "saved": 1,
       "shares": 3,
       "total_interactions": 9,
@@ -907,13 +907,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 132,
-      "reach": 106,
+      "views": 134,
+      "reach": 107,
       "saved": 2,
       "shares": 3,
       "total_interactions": 9,
-      "ig_reels_avg_watch_time": 3773,
-      "ig_reels_video_view_total_time": 415076,
+      "ig_reels_avg_watch_time": 3770,
+      "ig_reels_video_view_total_time": 418500,
       "follow_error": "GET 18072487772769538/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -947,8 +947,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 3,
+      "views": 9,
+      "reach": 4,
       "saved": 1,
       "shares": 3,
       "total_interactions": 9,
@@ -985,13 +985,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 121,
+      "views": 122,
       "reach": 107,
       "saved": 2,
       "shares": 3,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 3981,
-      "ig_reels_video_view_total_time": 430005,
+      "ig_reels_avg_watch_time": 3945,
+      "ig_reels_video_view_total_time": 430089,
       "follow_error": "GET 18052820144807309/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1005,13 +1005,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 48,
-      "reach": 39,
+      "views": 51,
+      "reach": 42,
       "saved": 1,
       "shares": 3,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 2786,
-      "ig_reels_video_view_total_time": 119818,
+      "ig_reels_avg_watch_time": 2663,
+      "ig_reels_video_view_total_time": 122533,
       "follow_error": "GET 18136073005642206/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1044,8 +1044,8 @@
      "likes": 3,
      "comments_count": 2,
      "insights": {
-      "views": 32,
-      "reach": 15,
+      "views": 35,
+      "reach": 16,
       "saved": 1,
       "shares": 3,
       "total_interactions": 11,
@@ -1102,8 +1102,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 3,
+      "views": 9,
+      "reach": 4,
       "saved": 1,
       "shares": 3,
       "total_interactions": 8,
@@ -1582,7 +1582,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 5
+    "profile_views": 1
    }
   },
   "hourback": {
@@ -1598,16 +1598,16 @@
      "permalink": "https://www.instagram.com/reel/De-bGAEklcw/",
      "at": "2026-10-26T23:06:30+0000",
      "first_line": "Stranger in your best photo? Your phone's AI can erase them in seconds.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 63,
-      "reach": 58,
+      "views": 105,
+      "reach": 99,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2917,
-      "ig_reels_video_view_total_time": 169187,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 3026,
+      "ig_reels_video_view_total_time": 302682,
       "follow_error": "GET 18438223513194840/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1621,8 +1621,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 3,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1738,13 +1738,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 17,
+      "views": 22,
+      "reach": 18,
       "saved": 2,
       "shares": 8,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 3700,
-      "ig_reels_video_view_total_time": 66605,
+      "ig_reels_avg_watch_time": 3597,
+      "ig_reels_video_view_total_time": 68359,
       "follow_error": "GET 18093191027201967/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2374,7 +2374,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 5
+    "profile_views": 2
    }
   },
   "littlefold": {
@@ -2382,8 +2382,28 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 44,
+   "media_count": 45,
    "posts": [
+    {
+     "media_id": "18141468496622667",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De_0pkhgjd3/",
+     "at": "2026-10-27T12:09:04+0000",
+     "first_line": "Bath water too hot? Dip your elbow in before your baby goes in.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 14,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 18141468496622667/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17941562307372319",
      "type": "REEL",
@@ -2429,16 +2449,16 @@
      "permalink": "https://www.instagram.com/reel/De9bwxrCj_d/",
      "at": "2026-10-26T13:53:12+0000",
      "first_line": "Gulping, then fussing, every feed? Pause and burp partway through the feed, not just at the end.",
-     "likes": 5,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 461,
-      "reach": 365,
-      "saved": 4,
+      "views": 547,
+      "reach": 426,
+      "saved": 5,
       "shares": 38,
-      "total_interactions": 53,
-      "ig_reels_avg_watch_time": 8651,
-      "ig_reels_video_view_total_time": 3183568,
+      "total_interactions": 55,
+      "ig_reels_avg_watch_time": 8291,
+      "ig_reels_video_view_total_time": 3598540,
       "follow_error": "GET 18122211049985064/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2593,8 +2613,8 @@
       "saved": 3,
       "shares": 13,
       "total_interactions": 26,
-      "ig_reels_avg_watch_time": 3123,
-      "ig_reels_video_view_total_time": 409131,
+      "ig_reels_avg_watch_time": 3108,
+      "ig_reels_video_view_total_time": 410296,
       "follow_error": "GET 18120178661472079/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3144,29 +3164,10 @@
       "follow_error": "GET 17927897172424488/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18081205430367588",
-     "type": "IMAGE",
-     "permalink": "https://www.instagram.com/p/DekeBYcDyl5/",
-     "at": "2026-10-16T21:11:45+0000",
-     "first_line": "Feeding all day in the first weeks? 8 to 12 breastfeeds in 24 hours is typical.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 26,
-      "reach": 8,
-      "saved": 4,
-      "shares": 4,
-      "total_interactions": 19,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 10
+    "profile_views": 6
    }
   }
  }
