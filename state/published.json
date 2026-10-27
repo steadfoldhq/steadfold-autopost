@@ -7796,16 +7796,83 @@
     },
     "lf-1027-enough-milk": {
       "account": "littlefold",
-      "status": "failed",
+      "status": "published",
       "children": [],
       "container_id": "17883302529544608",
       "container_created_at": "2026-10-27T15:30:55Z",
       "publish_called": true,
-      "updated_at": "2026-10-27T15:31:10Z",
+      "updated_at": "2026-10-27T16:17:14Z",
       "publish_called_at": "2026-10-27T15:30:55Z",
-      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AMa81XNRIZ2o4FSj5RD0tmF)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-27T15:30:55Z"
+      "failed_at": "2026-10-27T15:30:55Z",
+      "media_id": "18134895016663994",
+      "permalink": "https://www.instagram.com/p/DfALynNlDRV/",
+      "published_at": "2026-10-27T15:31:09+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18108188861630924",
+      "comment_error": null,
+      "commented_at": "2026-10-27T16:17:13Z"
+    },
+    "ff-1027-hours-not-dollars": {
+      "account": "fullyfunded",
+      "status": "failed",
+      "children": [],
+      "container_id": "18153493936497733",
+      "container_created_at": "2026-10-27T16:17:13Z",
+      "publish_called": true,
+      "updated_at": "2026-10-27T16:17:32Z",
+      "publish_called_at": "2026-10-27T16:17:13Z",
+      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AFc_mTp1rgbfCcRLxrSpctz)",
+      "attempts": 1,
+      "failed_at": "2026-10-27T16:17:13Z"
+    },
+    "hb-1027-mechanic-questions": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18128601493799084",
+        "18128601544799084",
+        "18128601574799084"
+      ],
+      "children_media": [
+        "studio-oct26/hourback/hb-1027-mechanic-questions/01.jpg",
+        "studio-oct26/hourback/hb-1027-mechanic-questions/02.jpg",
+        "studio-oct26/hourback/hb-1027-mechanic-questions/03.jpg"
+      ],
+      "children_created_at": "2026-10-27T16:17:13Z",
+      "updated_at": "2026-10-27T16:17:57Z",
+      "container_id": "18128601688799084",
+      "container_created_at": "2026-10-27T16:17:13Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-27T16:17:13Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AzvXYlRZAWoUydR1oiPUkhl)",
+      "attempts": 1,
+      "failed_at": "2026-10-27T16:17:13Z"
+    },
+    "lh-1027-new-place": {
+      "account": "lockedhour",
+      "status": "failed",
+      "children": [
+        "18071241836521398",
+        "18071241854521398",
+        "18071241881521398"
+      ],
+      "children_media": [
+        "studio-oct26/lockedhour/lh-1027-new-place/01.jpg",
+        "studio-oct26/lockedhour/lh-1027-new-place/02.jpg",
+        "studio-oct26/lockedhour/lh-1027-new-place/03.jpg"
+      ],
+      "children_created_at": "2026-10-27T16:17:13Z",
+      "updated_at": "2026-10-27T16:18:22Z",
+      "container_id": "18071241965521398",
+      "container_created_at": "2026-10-27T16:17:13Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-27T16:17:13Z",
+      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AQTLARDS-6p-iyv_jnSi7B5)",
+      "attempts": 1,
+      "failed_at": "2026-10-27T16:17:13Z"
     }
   }
 }
