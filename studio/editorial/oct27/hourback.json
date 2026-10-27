@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hb-reel-1028am-menu-translate",
+  "account": "hourback",
+  "publish_at": "2026-10-28T08:45:00-04:00",
+  "video": "studio-oct27/hourback/hb-reel-1028am-menu-translate.mp4",
+  "cover": "studio-oct27/hourback/hb-reel-1028am-menu-translate-cover.jpg",
+  "caption": "Menu in another language? Point your phone's camera at it and Google Translate shows it in English, right on your screen.\n\nWhy it works: the Translate app reads the words through your camera and swaps in your language on the spot. Since 2019, camera translations run on Google's neural machine translation, a kind of AI.\n\nHow:\n1. Open the Google Translate app (free on Android and iPhone).\n2. Set \"From\" to Detect language and \"To\" to English.\n3. Tap Camera, under the text box.\n4. Point it at the menu, sign or label. Tap the shutter to freeze it.\n\nThe catch: small, blurry or fancy lettering may come out wrong, so check anything that matters (allergies: ask the staff). Going somewhere without data? Download the language in the app before you leave so it works offline.\n\nPrivacy tip: point it at menus and signs, not at your passport, bank cards or letters with your address.\n\nDo this: Open Google Translate. Tap Camera. Point.\nSend this to the friend you're travelling with.\nThe menu is drawn and made up for this post. The feature is real.\nFollow to learn one real AI trick a day.\n\n#AItips #GoogleTranslate #TravelTips #TechTips #Hourback",
+  "first_comment": "Sources, checked Oct 27 2026:\n1. Google Translate Help, \"Translate images\" (iPhone & iPad and Android): open the Translate app, set languages, tap Camera, \"Point your camera at the text that you want to translate\", tap Shutter to freeze; small, unclear or stylized text may not translate correctly; download languages to use camera translation offline. support.google.com/translate/answer/6142483\n2. Google blog, \"Google Translate's instant camera translation gets an upgrade\" (Jul 10 2019): \"Neural Machine Translation (NMT) technology is built into instant camera translations.\" blog.google/products-and-platforms/products/translate/google-translates-instant-camera-translation-gets-upgrade/\nThe menu and its English lines are drawn for this post (made up for this post); the English shown is a correct translation of that drawn menu, not a screenshot of the app.",
+  "alt_text": "Illustrated Reel. A Japanese menu lies on a table under the words \"Menu in another language?\". A drawn hand slides a phone over it, a yellow line scans down, and inside the phone the dishes appear in English: Chicken skewers, Dumplings, Chicken and egg rice bowl, Green tea ice cream. Then: Do this: Open Google Translate, Tap Camera, Point at the words. Ends with: Follow to learn one real AI trick a day.",
+  "beats": [
+   "Menu in another language? (frame 0: drawn Japanese menu: メニュー, 焼き鳥 ¥680, 餃子 ¥520, 親子丼 ¥950, 抹茶アイス ¥450; Hourback stamp)",
+   "0.2-1.6 s: one drawn hand slides a phone over the menu; scan line; inside the phone: MENU, Chicken skewers ¥680, Dumplings ¥520, Chicken and egg rice bowl ¥950",
+   "1.9 s: Point your camera. See it in English. / Google Translate app · Camera / Drawn for this post. Real Google feature. / Japanese → English, live (handwritten)",
+   "3.3-4.9 s: phone glides down: Green tea ice cream ¥450, ringed in orange",
+   "6.2 s: Do this: / Open Google Translate ↓ Tap Camera ↓ Point at the words / Going abroad? Download the language in the app first, so it works offline. / Free on Android and iPhone. (translated menu + phone kept in frame, lower right)",
+   "9.8 s: Follow to learn one real AI trick a day. / one you can try tonight (handwritten) / the menu + phone on the table, periwinkle surface, stamp",
+   "12.4 s: loop back to the hook layout: Menu in another language? + the Japanese menu"
+  ],
+  "hook_options": [
+   "Menu in another language?",
+   "Can't read the menu?",
+   "Ordering blind on holiday?"
+  ],
+  "duration_s": 13.0,
+  "style": "Body: the LF 'burp' format ported to Hourback (desk order 4): felt question + one drawn object on frame 0, the action drawn being done by ~1.6 s in ONE illustrated scene (hand + phone over a menu on a table, not a screen recording). Dedicated cover: Swipe to reveal (style 11, QUIET): one menu with a slider, Japanese above, English below, 150 px hook, Caveat line, stamp, cream field. Sits between Tue 7 pm homework-hints (editorial demo, loud, periwinkle) and Wed 5:45 pm Day 9 (series Look B, loud, peach), so loud/quiet alternates and no style repeats.",
+  "send_test": false,
+  "sources": [
+   "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DiOS",
+   "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DAndroid",
+   "https://blog.google/products-and-platforms/products/translate/google-translates-instant-camera-translation-gets-upgrade/"
+  ],
+  "notes": "NO trial flag. Builder: studio/editorial/oct27_hourback.py menu. Music: existing HB track media/music/library/v4/hb-x-future-easy.mp3 (tools/music-library.json), mix -14.5 LUFS / -1.7 dBTP. H.264 1080x1920 30 fps + AAC, 13.0 s, 6.8 MB. Grade (desk order 4): >=5 s and >=30% on >=40. Not a repeat of recent HB topics (Translate camera has not run; Circle to Search avoided). Same day as the Wed 7 pm hum-to-search Reel (also a Google app), but a different app and use. Gate FIX applied (Oct 27): frame-0 hook = picker's choice; hand redrawn as one outline; disclaimer one line under the app kicker; Do this + end card carry the menu/phone object, end on periwinkle. Cover unchanged (its hook still reads \"Can't read the menu?\", per the gate). Re-render 7.2 MB."
+ },
+ {
+  "id": "hb-reel-1030-group-chat",
+  "account": "hourback",
+  "publish_at": "2026-10-30T19:00:00-04:00",
+  "video": "studio-oct27/hourback/hb-reel-1030-group-chat.mp4",
+  "cover": "studio-oct27/hourback/hb-reel-1030-group-chat-cover.jpg",
+  "caption": "Group chat chaos? Get the list. Paste the family dinner chat into AI and ask who's bringing what.\n\nWhy it works: the AI only reads what you paste, so the list comes straight from those messages. Claude sorted 7 messages into what's covered, what's still missing and the one question waiting for me. Its real reply is on screen, word for word (its last suggestion line is cut).\n\nHow:\n1. In your chat app, copy the messages (just the text).\n2. Open ChatGPT, Claude or Gemini.\n3. Paste them and type: \"Tell me who's bringing what, what's still missing, and what I need to reply to. Keep it short.\" Add your first name so it knows which questions are yours.\n\nThe catch: it only sees the messages you paste. Miss one and the list misses it too, so check it against the chat before you reply.\n\nPrivacy tip: copy just the messages, not a screenshot full of phone numbers, and leave out addresses or anything private.\n\nDo this: Paste the chat. Ask: who's bringing what?\nSend this to whoever always ends up organizing.\nThe chat is made up for this post. Real run in Claude, Oct 27 2026.\nFollow to learn one real AI trick a day.\n\n#AItips #ChatGPT #ClaudeAI #FamilyLife #Hourback",
+  "first_comment": "How we made this: one real run in Claude (Anthropic), model claude-opus-5-5, in a fresh session with no earlier chat, Oct 27 2026 13:48 UTC. The prompt was the line in the caption plus 7 made-up messages (Mom, Sam, Jo; \"I'm Priya\"). Made up for this post: no real family or event. The reply on screen is quoted word for word (formatting shown as headings and ticks); we cut its last line: \"You could also claim one of the open items (dessert, chairs, or Grandpa) in the same message.\" Full transcript in our public repo steadfold-autopost: studio/editorial/hb-oct27-run-group-chat.txt",
+  "alt_text": "Illustrated Reel. Under the words \"Group chat chaos? Get the list.\" a pile of made-up family chat bubbles (roast chicken, salad, drinks, dessert?, chairs?, Grandpa?, can you come at 4?) gets pulled into a taped lined note. Claude's real reply is written on it: Covered: Mom: roast chicken, Sam: salad, Jo: drinks. Still missing: Dessert, Extra chairs (they only have 6), Someone to pick up Grandpa. You need to reply to: Mom: whether you can still come at 4 to help set up, with a handwritten note: that's you, Priya. Then: Do this: Paste the chat. Ask: who's bringing what? Copy just the messages. Leave out phone numbers and addresses. Ends with: Follow to learn one real AI trick a day, over the names joined to dishes by coloured lines.",
+  "beats": [
+   "Group chat chaos? Get the list. (frame 0: chat bubbles: Mom I'll do the roast chicken / Sam I can bring a salad! / Jo Drinks are on me / Mom Has anyone got dessert? / Sam Can someone bring chairs? We only have 6 / Jo Also who's picking up Grandpa? / Chat made up for this post.; stamp)",
+   "0.25 s: bubble pops: Mom Priya, can you still come at 4 to help set up?",
+   "1.65-2.2 s: bubbles pulled away; 2.25 s: Paste the chat. Get the list. / CLAUDE'S REAL REPLY, WORD FOR WORD / last line cut · chat made up for this post",
+   "2.5-4.9 s, written line by line on a taped note: Covered ✓ Mom: roast chicken ✓ Sam: salad ✓ Jo: drinks / Still missing ○ Dessert ○ Extra chairs (they only have 6) ○ Someone to pick up Grandpa / You need to reply to → Mom: whether you can still come at 4 to help set up / ← that's you, Priya (handwritten)",
+   "8.0 s: Do this: / Paste the chat. Ask: who's bringing what? / Copy just the messages. Leave out phone numbers and addresses. / Works in ChatGPT, Claude or Gemini. (finished note shown small, lower right)",
+   "11.3 s: Follow to learn one real AI trick a day. / real AI replies, made-up chats (handwritten) / Mom, Sam, Jo, ? joined by lines to salad, drinks, roast chicken, dessert / stamp",
+   "13.6 s: loop back to the hook layout"
+  ],
+  "hook_options": [
+   "Group chat chaos? Get the list.",
+   "Who's bringing what, again?",
+   "Seven messages. Still no dessert?"
+  ],
+  "duration_s": 14.2,
+  "style": "Body: sticky-note list look (style 13: lined note, red margin, tape, Caveat Brush headings, Caveat items with ticks) holding a real run, different from the queued HB neighbours (editorial demo phone/bill cards, kinetic chat phone, Day series prompt cards). Dedicated cover: Follow the line (style 9, QUIET): Mom/Sam/Jo joined to salad/drinks/roast chicken by coloured lines, '?' -> dessert left loose; 140 px hook, Caveat line, stamp, periwinkle field. Follows Fri 5:45 pm Day 10 (series Look B, loud, cream/peach) and Thu 7 pm bill (editorial demo, loud).",
+  "send_test": false,
+  "sources": [
+   "studio/editorial/hb-oct27-run-group-chat.txt (Claude, claude-opus-5-5, fresh session, 2026-10-27T13:48:12Z)"
+  ],
+  "notes": "No trial flag. Builder: studio/editorial/oct27_hourback.py chat. Real run via claude -p (no tools, no session persistence) = a fresh session; transcript saved verbatim. Music: existing HB track media/music/library/v4/hb-x-ta-da-funk.mp3, mix -14.8 LUFS / -1.4 dBTP. H.264 1080x1920 30 fps + AAC, 14.2 s, 7.1 MB. Gate FIX applied (Oct 27): frame-0 hook = picker's choice; bubbles re-spaced (no overlaps) and cleared by 2.2 s, before 'Paste the chat.'; reply label 35 px; 'that's you, Priya' added (quote unchanged); Do this carries the finished note, end card carries the follow-the-line object; handwritten line now 'real AI replies, made-up chats'. Cover unchanged. Re-render 7.7 MB."
+ }
+]

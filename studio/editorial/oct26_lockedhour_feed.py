@@ -110,10 +110,10 @@ STORIES = {
                      "the full version is in today's post"),
     "lh-st-1028-1": ("pink", "Quick question", "Turn your phone / grey. Do you / pick it up / *less often?*", "answer next →", None),
     "lh-st-1028-2": ("dots", "The answer", "*No.* Just as often. / But you put it / down sooner.", "About 80 pick-ups a day either way, but about 20 minutes less a day on the phone.",
-                     "tonight at 7 pm: the 15-second version"),
+                     "tonight at 7 pm: a 15-second Reel<br>on our page"),
     "lh-st-1029-1": ("cream", "Quick question", "Does picturing / the win help / you *get it?*", "answer next →", None),
-    "lh-st-1029-2": ("pink", "The answer", "*Not on its own.*", "People who daydreamed an ideal week felt less energy and got less done. Add the obstacle and a plan.",
-                     "tonight at 7 pm: the 15-second version"),
+    "lh-st-1029-2": ("pink", "The answer", "*Not on its own.*", "People who only daydreamed an ideal week felt less energy and got less done. So also picture what's in your way, and plan what you'll do when it shows up.",
+                     "tonight at 7 pm: a 15-second Reel<br>on our page"),
 }
 
 

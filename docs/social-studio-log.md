@@ -1,5 +1,108 @@
 # Social studio log (v4)
 
+## Tue Oct 27, 2026 (daily run, fired 9:34 am Toronto)
+
+**Followers (insights Oct 27 12:46 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total, unchanged since Oct 23). Change over 7 days against Oct 20: FF −1, LH −2, HB −2, LF −1. No organic follow can be attributed.
+
+**Profile views (day_profile_views, last read per day; Oct 22 → Oct 26, then today so far):**
+- FF: 8 · 11 · 5 · 5 · 6 → 1
+- LH: 3 · 3 · 1 · 2 · 5 → 1
+- HB: 4 · 4 · 1 · 0 · 4 → 2
+- LF: 5 · 8 · 2 · 1 · **10** → 6
+
+LF's 10 views on Oct 26 is its best day, on the day of the burp Reel. Followers stayed at 6, so visitors came and didn't follow. Part of that day was the desk's "back-catalogue burst".
+
+**Follows / profile visits per carousel (7 days):** **0 follows on all four pages.** The only profile visit came from LF honey (Oct 24). Monday's series launches got 0 / 0 at reach 1–4: Rich Habits "Paid Friday", One Word "Batch", HB "Before you answer" and LF 3 am Club No. 1. The only feed follow on record is still LF "Baby finally fell asleep" (Oct 22).
+
+**Reach / hold:**
+- **LF burp mid-feed: reach 426 and climbing, 8.3–8.65 s / 60%, about 38 shares.** That's our biggest batch and best hold ever.
+- LF nails: 105 at 7.6 s.
+- FF TFSA trap: 114 at 4.9 s.
+- LH phone vs paper: 108 at 3.9 s.
+- HB photo eraser: 99 at 3.0 s.
+- Died: FF "0% interest" (17 at 2.2 s), and both Mon trial mornings, FF rule of 72 (7) and LH when-where (5).
+
+**3 lessons, applied today**
+1. **The illustrated "physical rule, shown being done" format is LF's winner.** Burp and nails both cleared the hold bars by a wide margin.
+   - LF Wed 8 am uses it: cord stump, with the diaper folded below it by 1.35 s.
+   - The desk's order-4 test ports it to LH (eyes drawn shut by 1.7 s) and HB (a drawn phone turning a Japanese menu into English by 1.6 s).
+   - QG-4: LF's Fri Reel is deliberately a different style (calm text, toothpaste). That's 6 washing-line Reels this week, so pause there until Wednesday's read grades bath and swaddle.
+2. **Abstract-number openers and morning trials die.** FF opens on a trap with a date or a consequence ("Miss the “no interest” end date?", "Card bill 30 days late?"). No new FF, LH or HB Reel carries the trial flag; LF mornings keep it.
+3. **Profile visits without follows.** Every new Reel's last beat now gives a page-specific follow reason, on screen for 2–5 s:
+   - LF: "one calm thing a night, from bump to toddler"
+   - LH: "one small focus trick a day"
+   - FF: "one money rule a day, in plain words"
+   - HB: "one real AI trick a day"
+
+**Shipped (rollback: `docs/social-recovery/2026-10-27.md`):** 8 Reels added, 0 queued posts moved, 9 Story frames re-lettered in place (5 captions edited).
+
+Wed Oct 28 mornings (desk order 1: no morning Reel was queued on any page):
+- LF 8:00 cord stump (trial)
+- FF 8:15 "no interest" end date (US & Canada, CFPB numbers)
+- LH 8:30 close your eyes (Perfect et al. 2008)
+- HB 8:45 Google Translate camera
+
+Fri Oct 30, 7 pm:
+- LF toothpaste rice grain (NHS/AAP)
+- LH fewer temptations (Milyavskaya & Inzlicht 2017)
+- FF late payment (TransUnion Canada / Equifax US, 30+ days)
+- HB group-chat list (real Claude run, transcript in `studio/editorial/hb-oct27-run-group-chat.txt`)
+
+All Reels are 13.0–14.9 s, use existing library music at −13.9 to −14.9 LUFS, and are 2.4–7.7 MB.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0 / 0 · dry-run finished OK through Fri 7:05 pm, with every new id resolving · banned-word scan clean.
+
+**Hooks (fresh stranger picker, 3 options each):**
+- Adopted:
+  - "Close your eyes to remember more." (was "Can't recall what you saw?")
+  - "Menu in another language?" (was "Can't read the menu?", which can read as eyesight)
+  - "Group chat chaos? Get the list." (was "Who's bringing what, again?")
+- Kept: "Fewer temptations beat more willpower."
+- Overruled:
+  - "Scared to touch the cord stump?" → kept "diaper rubbing the cord stump?" because it matches the drawing on frame 0.
+  - "“No interest” TV? Could cost more." → kept "Miss the “no interest” end date?" for desk order 5 (trap with a date).
+- Changed for accuracy after the CD gate: "Paid a card bill late?" → "Card bill 30 days late?" A few days late generally isn't reported.
+
+**Styles used (Reel covers):**
+- LF: sticky-note list, awards rosettes
+- LH: loud zine headline with a drawn face, "Instead of / Say" reframe
+- FF: cobalt big-number, editorial card with a LATE stamp
+- HB: swipe-to-reveal menu, follow-the-line
+
+The CD's batch note is fixed: the taped-notebook cover had gone on 3 brands, and now stays only on LF. grid_preview was run and checked for each page. Each 8-tile window now shows 5–7 distinct styles. Two loud-after-loud spots remain: the LH close-your-eyes cover between write-from-memory and One Word No. 3, and the FF late-payment cover after FSA and Rich Habits No. 3. I accepted them rather than reuse the notebook template.
+
+**Clarity gate (fresh stranger, text only), 40 pieces (8 new and 32 queued >24 h out):**
+- 1 CONFUSING: `lh-st-1029-2`, "Add the obstacle and a plan." It was re-lettered.
+- Borderline items fixed:
+  - Two HB question Stories showed their own answer.
+  - "Tonight at 7 pm: the 15-second version" didn't say of what. It now reads "a 15-second Reel on our page".
+- All 8 new Reels were CLEAR.
+
+**Peer + CD gate (fresh agent, rendered frames), round 1: 1 SHIP, 7 FIX, 0 CUT.**
+- Fixes:
+  - FF late payment: the 30-day accuracy fix, a double space, and a bar in the button rail.
+  - FF promo: label overflow, a cobalt surface for "you owe $165", "MATHS" → "MATH".
+  - LH eyes: added the source pill, removed ghost layers, moved the CTA off the face, added zine ink borders.
+  - LH temptations: source pill, button rail, scene scaled up.
+  - HB menu: hand redrawn, bare cards given objects.
+  - HB chat: bubble collisions, "that's you, Priya", end-card object.
+  - LF stump: follow pill moved off the stamp, label clear of the sun.
+- Round 2: I checked the rendered strips myself, along with the covers and grids.
+- Cut: nothing at the gate. Makers dropped some ideas themselves:
+  - spaced deadlines (Ariely & Wertenbroch, data anomalies)
+  - phone in another room (repeat)
+  - the RRSP deadline (too close to the RRSP refund post)
+  - the bottle wrist test (too close to bath-elbow)
+
+**Known gaps / next run:**
+- Mon Nov 2 series episodes are promised in Friday's captions and not built yet. Rich Habits No. 4, One Word No. 5, 3 am Club No. 4 and HB Day 11 are due by Thu's run.
+- There's no Sat/Sun queue on any page yet.
+- Grade on Wednesday's read:
+  - LF bath and swaddle (same format as burp)
+  - HB/LH burp-format tests: ≥5 s and ≥30% on ≥40
+  - FF Wed 8:15 without trial: ≥40 at 15 h
+- If the short-form studio also adds an LF Reel on Wed, LF hits the 2-Reel ceiling. queue_lint will flag it.
+
 ## Mon Oct 26, 2026 (daily run, fired 9:41 am Toronto)
 
 **Followers (insights Oct 26 04:38 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total; flat for 12 reads; 7 days: FF −1, LH −2, HB −1, LF −1). No attributable organic follow.

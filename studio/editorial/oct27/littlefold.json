@@ -1,0 +1,64 @@
+[
+ {
+  "id": "lf-reel-1028am-cord-stump",
+  "account": "littlefold",
+  "publish_at": "2026-10-28T08:00:00-04:00",
+  "trial": "auto",
+  "video": "studio-oct27/littlefold/lf-reel-1028am-cord-stump.mp4",
+  "cover": "studio-oct27/littlefold/lf-reel-1028am-cord-stump-cover.jpg",
+  "caption": "Diaper rubbing the cord stump? Fold the top of the diaper down, below the stump.\n\nWHY: the stump heals best when it stays clean and dry. With the diaper folded below it, pee can't soak it and the waistband can't rub it (AAP).\n\nHOW (AAP):\n1. At every change, fold the front of the diaper down so its top edge sits below the stump.\n2. Keep the stump clean and dry, open to the air. There's no need to put alcohol on it.\n3. Leave it be. It dries, shrinks and falls off on its own, usually by the time your baby is 3 weeks old.\n4. A few drops of blood on the diaper around the time it falls off is normal.\n\nTHE CATCH: call your baby's doctor if you see red skin around the base, a yellowish discharge that smells bad, or your baby cries when you touch it. If the cord is actively bleeding, call right away. If it's still there after 3 weeks, book a visit.\n\nDo this: next diaper, fold it below the stump.\n\nSend this to someone with a brand-new baby.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #newbornbaby #newparents #babycare #umbilicalcord",
+  "first_comment": "Sources (checked Oct 27 2026): AAP, HealthyChildren.org, 'Umbilical Cord Care in Newborns' (healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx, updated 7/6/2025): keep the stump \"clean and dry as it shrivels and eventually falls off\"; \"There is no need to use alcohol on the umbilical cord stump\"; \"keep the diaper folded below the cord to keep urine from soaking it\"; should \"fall off by the time your baby is 3 weeks old\", otherwise see the doctor; a few drops of blood around the time it falls off \"is normal\"; \"if the cord actively bleeds, call your baby's doctor immediately\"; call for foul-smelling yellowish discharge, red skin around the base, or crying when it's touched. Sheffield Children's NHS Foundation Trust, 'Umbilical cord care' (library.sheffieldchildrens.nhs.uk/umbilical-cord-care): keep the cord dry and clean; keep it out of the nappy area; \"try not to touch the cord\"; it usually falls off 5 to 15 days after birth.",
+  "alt_text": "Illustrated Reel in warm dawn light: pastel sky, sage hills, a smiling sun and a washing line of tiny baby clothes. On a peach changing mat, a drawn baby lies on their back seen from above (sleeping face, green knit hat, arms up, legs bent out). Little coral rub marks show where the diaper's top edge sits over the cord stump; an adult hand folds the diaper's front down so the stump sits above it ('rub, rub…', 'fold it down', 'below the stump ✓'). A round magnifier shows the stump close up with breezes drying it and a bottle labelled 'alcohol' crossed out ('let the air dry it', 'not needed'). The stump shrinks as circles 1, 2, 3 fill ('weeks') and drops off, leaving a belly button and a heart ('all by itself ✓'). Three small icons pop in together next to a ringing phone ('red skin', 'yellow ooze', 'bad smell', 'call your doctor'). Do this: the folded diaper with a check and hearts while a tiny diaper is pegged on the washing line. Sources AAP and NHS.",
+  "beats": [
+   "diaper rubbing the cord stump? | Fold the diaper below the stump. | So pee can't soak it. | rub, rub… | fold it down | below the stump ✓ | AAP · Umbilical cord care",
+   "until it falls off | Keep it clean and dry. | No alcohol needed. | let the air dry it | alcohol | not needed | AAP · NHS",
+   "leave it be | It falls off on its own. | Usually by 3 weeks old. | weeks 1 2 3 | all by itself ✓ | AAP · Umbilical cord care",
+   "call your doctor if you see | Red skin, yellow ooze, a bad smell. | Active bleeding? Call right away. | red skin | yellow ooze | bad smell | call your doctor | AAP · Umbilical cord care",
+   "Do this: | Next diaper: fold it below the stump. | send this to someone with a brand-new baby | Follow for one calm thing a night, from bump to toddler. | AAP · NHS",
+   "COVER: diaper rubbing the cord stump? | Fold the diaper below the stump. | ✓ keep it clean and dry | ✓ it falls off by 3 weeks | ✓ red, oozing, smelly? call the doctor"
+  ],
+  "hook_options": [
+   "Diaper rubbing the cord stump? Fold the diaper below the stump.",
+   "Scared to touch the cord stump? You barely need to: fold the diaper below it.",
+   "Cord stump still hanging on? Keep it dry. It falls off on its own by 3 weeks."
+  ],
+  "duration_s": 14.47,
+  "style": "Body: illustrated 'physical rule, shown being done' in the sunshine washing-line world (the burp/nails format, Performance desk order 1). Cover: sticky-note list (style-menu #13, quiet), so the grid goes Tue 7 pm swaddle washing-line -> this sticky note (quiet) -> Wed 5 pm 3 am Club No. 2 Look B pills (loud) -> Wed 7 pm neck check washing-line.",
+  "send_test": true,
+  "sources": [
+   "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx",
+   "https://library.sheffieldchildrens.nhs.uk/umbilical-cord-care/"
+  ],
+  "notes": "Builder studio/editorial/oct27_littlefold.py stump (reel_story imported, not edited). 14.47 s, music v3/lf-c-sunny-morning-el (same track as the burp Reel), loudnorm -14 LUFS, sticker pops at cuts. Rule drawn being done by 1.35 s (diaper folds), on-screen follow line 2.1 s. Cut: wrist-test bottle temperature (too close to today's bath-elbow temperature test), head support (weaker drawable action), front-to-back wiping. Left out 'don't pull it' (AAP page doesn't say it; NHS trust says 'try not to touch'), and sponge-bath advice (not on the AAP cord page). Doubt: the drawn adult hand is the kit's simple pinch hand and reads a bit mitten-like; the fold itself reads clearly. Rotation: this week is heavy on washing-line Reels (this is the 6th); the cover breaks the run, but the Thursday read should grade bath-elbow/swaddle before more washing-line bodies are added (QG-4). GATE FIX r2 (Oct 27): follow pill moved up and narrowed (top 1440, 2 lines) so it clears the stamp; 'call your doctor' label moved above the phone, away from the sun; the three symptom icons now arrive together within 0.55 s; cover line now 'red, oozing, smelly? call the doctor'. Re-rendered and re-checked strip + cover."
+ },
+ {
+  "id": "lf-reel-1030-rice-grain",
+  "account": "littlefold",
+  "publish_at": "2026-10-30T19:00:00-04:00",
+  "video": "studio-oct27/littlefold/lf-reel-1030-rice-grain.mp4",
+  "cover": "studio-oct27/littlefold/lf-reel-1030-rice-grain-cover.jpg",
+  "caption": "Under 3? Toothpaste is just a smear the size of a grain of rice.\n\nWHY: fluoride toothpaste protects new teeth from decay. A tiny amount gives that protection to a child who can't spit well yet (NHS, AAP).\n\nHOW (NHS, AAP):\n1. Start brushing as soon as the first tooth comes through.\n2. Under 3: a smear of fluoride toothpaste, about the size of a rice grain. The NHS says use one with at least 1,000 ppm fluoride.\n3. From 3 to 6: a pea-sized amount.\n4. Brush twice a day, and make one of them last thing before bed.\n5. Afterwards, spit the extra out. Don't rinse with water: it washes the fluoride away.\n\nTHE CATCH: you put the toothpaste on the brush, not them, and keep the tube out of reach. Most kids need a hand with brushing until about 8 (AAP).\n\nDo this: tonight, a rice-grain smear, then brush.\n\nSend this to whoever does bedtime.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#toddler #toddlerlife #babyteeth #toddlertips #parentingtips",
+  "first_comment": "Sources (checked Oct 27 2026): NHS Best Start in Life, 'Baby and toddler tooth care' (nhs.uk/best-start-in-life/how-to-take-care-of-your-baby-or-toddlers-teeth/): \"Start brushing your child's teeth as soon as the first milk tooth comes through\"; \"use a smear (the size of a grain of rice) of toothpaste for babies and toddlers up to 3 years\"; \"use a pea sized amount of toothpaste for children aged 3 to 6\"; toothpaste with at least 1,000 ppm fluoride; brush last thing at night and one other time; \"do not rinse with water after brushing as it washes away fluoride\". AAP, HealthyChildren.org, 'Toothbrushing Tips for Young Children' (healthychildren.org/English/healthy-living/oral-health/Pages/Toothbrushing-Tips-for-Young-Children.aspx, updated 5/14/2025): under 3 \"a smear of fluoride toothpaste (about the size of a grain of rice)\"; ages 3 to 6 \"a pea-sized amount\"; brush twice a day; spit out and don't rinse right after; children usually need help until 8; an adult places the toothpaste and keeps it out of reach.",
+  "alt_text": "Littlefold Reel under a soft pastel sky with drifting clouds above a peach bathroom counter. Text: 'toothpaste for under-3s: A smear the size of a rice grain. Fluoride toothpaste, from the first tooth.' A drawn toothpaste tube squeezes a tiny white smear onto a toothbrush, and a single rice grain drops in beside it with a dotted line ('a rice grain'). 'From age 3 to 6: Then a pea-sized dot.' The smear grows into a round dot and a green pea rolls in ('a pea'). 'After brushing: Spit it out. Don't rinse. Rinsing washes the fluoride away.' Bubbles rise from the brush and a cup of water gets a red 'no' circle ('leave the fluoride on'). 'Do this: Tonight: a rice-grain smear, then brush. Twice a day. Last thing before bed.' A little smiling tooth is brushed under a crescent moon, then sparkles and hearts; 'Follow for one calm thing a night, from bump to toddler.' Sources NHS and AAP.",
+  "beats": [
+   "toothpaste for under-3s | A smear the size of a rice grain. | Fluoride toothpaste, from the first tooth. | a rice grain | NHS · AAP",
+   "from age 3 to 6 | Then a pea-sized dot. | a pea | NHS · AAP",
+   "after brushing | Spit it out. Don't rinse. | Rinsing washes the fluoride away. | leave the fluoride on | NHS · Best Start in Life",
+   "Do this: | Tonight: a rice-grain smear, then brush. | Twice a day. Last thing before bed. | Follow for one calm thing a night, from bump to toddler. | NHS · AAP",
+   "COVER: toothpaste for under-3s | Just a smear, a rice grain. | just this much | under 3 rice grain | 3 to 6 a pea"
+  ],
+  "hook_options": [
+   "Under 3: a smear the size of a rice grain.",
+   "Toddler toothpaste is a smear, not a stripe.",
+   "After brushing: spit, don't rinse. Let the fluoride stay."
+  ],
+  "duration_s": 14.3,
+  "style": "Body: calm text Reel (style-menu #15) cut with the motion rules: sunny sky, drifting clouds and blobs, static serif text per beat, butter iris wipe on each cut, one drawn object (toothbrush) carrying the meaning. Not washing-line, not the arch card. Cover: awards / rosettes (style-menu #10, quiet) after Fri 5 pm 3 am Club No. 3 (Look B pills, loud) and Thu 7 pm tummy arch card.",
+  "send_test": true,
+  "sources": [
+   "https://www.nhs.uk/best-start-in-life/how-to-take-care-of-your-baby-or-toddlers-teeth/",
+   "https://www.healthychildren.org/English/healthy-living/oral-health/Pages/Toothbrushing-Tips-for-Young-Children.aspx"
+  ],
+  "notes": "Builder studio/editorial/oct27_littlefold.py teeth. 14.30 s, music v4/lf-x-sunny-bounce (tools/music-library.json, 112.3 bpm); 'Do this' lands on the measured drop at 8.27 s; follow line on screen ~4.9 s. Toddler age band (rule as a fact on frame 0, sunny palette). ppm figure kept to the caption (NHS only; AAP doesn't give one). Doubt: the lower third (the counter) is calm and fairly empty by design of the calm-text style; it's an untested direction for LF, so it's one Reel, not a batch (QG-4). GATE POLISH r2 (Oct 27): headlines hard-cut under the butter wipe (no cross-fade ghost); scene and counter lifted 60 px."
+ }
+]

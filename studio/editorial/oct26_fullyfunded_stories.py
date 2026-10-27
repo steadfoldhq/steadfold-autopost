@@ -52,13 +52,13 @@ STORIES = {
                          save="true or false? tap →"),
     "ff-st-1028-2": dict(alt=True, tag="THE ANSWER", h='False.<br><span class="em">It starts when</span><br><span class="em">you open one.</span>',
                          fs=100, body="Room (how much you're allowed to put in) starts the year you open your First Home Savings Account: <b>$8,000</b>. Open one at your bank or investing app by <b>Dec 31</b>.",
-                         small="for first-time home buyers in Canada · source: CRA", next="Tonight at 7 pm: the 15-second version"),
+                         small="for first-time home buyers in Canada · source: CRA", next="Tonight at 7 pm: a 15-second Reel<br>on our page"),
     # Thu Oct 29: tonight's Reel ff-reel-1029-fsa-expires
     "ff-st-1029-1": dict(tag="US · HEALTH FSA", h='<span style="white-space:nowrap">Unspent FSA money</span><br>is <span class="em">always yours</span><br>next year?', fs=96,
                          save="true or false? tap →"),
     "ff-st-1029-2": dict(alt=True, tag="THE ANSWER", h='False.<br><span class="em">It can be lost.</span>',
                          body="Money not used by your plan's end date can be forfeited. Some plans give <b>2½ extra months</b> or let a little carry over.",
-                         small="check your own plan's rules · source: IRS", next="Tonight at 7 pm: the 15-second version"),
+                         small="check your own plan's rules · source: IRS", next="Tonight at 7 pm: a 15-second Reel<br>on our page"),
 }
 
 

@@ -164,10 +164,10 @@ STORIES = {
     "hb-st-1027-1": ("indi", "Car repair quote? / Ask *before* / *you say yes.*", "AI can write the questions for you.", None),
     "hb-st-1027-2": ("plum", "“What exactly / *is causing* / *the squeal?*”", "1 of the 5 questions Claude wrote for us.",
                      "All 5 + the prompt to copy: today's post on our page"),
-    "hb-st-1028-1": ("orng", "Google can name / a song you / *only hum?*", "Yes. No lyrics needed.", None),
+    "hb-st-1028-1": ("orng", "Google can name / a song you / *only hum?*", "", None),
     "hb-st-1028-2": ("indi", "Google app → mic → / *Search a song.*", "Then hum, whistle or sing the tune.",
-                     "Tonight at 7 pm: the 15-second version"),
-    "hb-st-1029-1": ("yel", "Bill went up? / AI can tell you / *why.*", "If you paste both months.", None),
+                     "Tonight at 7 pm: a 15-second Reel on our page"),
+    "hb-st-1029-1": ("yel", "Bill went up? / AI can tell you / *why.*", "", None),
     "hb-st-1029-2": ("plum", "Paste last month's and / this month's bill into / *ChatGPT, Claude* / *or Gemini.* / Ask: *what changed?*",
                      "Cover your account number and address first.", "Tonight at 7 pm: a 15-second Reel on our page"),
 }

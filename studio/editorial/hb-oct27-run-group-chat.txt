@@ -1,0 +1,33 @@
+Hourback real run, Oct 27 2026 (studio maker, Hourback)
+Used in: hb-reel-1030-group-chat (Fri Oct 30, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-27T13:48:12Z
+Input: MADE UP FOR THIS POST (no real family, people or event).
+
+===== PROMPT (verbatim) =====
+Here's my family group chat about Saturday's dinner. I'm Priya. Tell me who's bringing what, what's still missing, and what I need to reply to. Keep it short.
+
+Mom: I'll do the roast chicken
+Sam: I can bring a salad!
+Jo: Drinks are on me
+Mom: Has anyone got dessert?
+Sam: Can someone bring chairs? We only have 6
+Jo: Also who's picking up Grandpa?
+Mom: Priya, can you still come at 4 to help set up?
+
+===== REPLY (verbatim) =====
+**Covered**
+- Mom: roast chicken
+- Sam: salad
+- Jo: drinks
+
+**Still missing**
+- Dessert
+- Extra chairs (they only have 6)
+- Someone to pick up Grandpa
+
+**You need to reply to**
+- Mom: whether you can still come at 4 to help set up
+
+You could also claim one of the open items (dessert, chairs, or Grandpa) in the same message.

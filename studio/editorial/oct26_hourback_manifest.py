@@ -162,10 +162,10 @@ ST = [
     ("hb-st-1027-1", "2026-10-27T12:30:00-04:00", ["quick question", "Car repair quote? Ask before you say yes.", "AI can write the questions for you.", "tap for the answer →"]),
     ("hb-st-1027-2", "2026-10-27T12:31:00-04:00", ["the answer", "“What exactly is causing the squeal?”", "1 of the 5 questions Claude wrote for us.",
                                                   "All 5 + the prompt to copy: today's post on our page"]),
-    ("hb-st-1028-1", "2026-10-28T12:30:00-04:00", ["quick question", "Google can name a song you only hum?", "Yes. No lyrics needed.", "tap for the answer →"]),
+    ("hb-st-1028-1", "2026-10-28T12:30:00-04:00", ["quick question", "Google can name a song you only hum?", "tap for the answer →"]),
     ("hb-st-1028-2", "2026-10-28T12:31:00-04:00", ["the answer", "Google app → mic → Search a song.", "Then hum, whistle or sing the tune.",
-                                                  "Tonight at 7 pm: the 15-second version"]),
-    ("hb-st-1029-1", "2026-10-29T12:30:00-04:00", ["quick question", "Bill went up? AI can tell you why.", "If you paste both months.", "tap for the answer →"]),
+                                                  "Tonight at 7 pm: a 15-second Reel on our page"]),
+    ("hb-st-1029-1", "2026-10-29T12:30:00-04:00", ["quick question", "Bill went up? AI can tell you why.", "tap for the answer →"]),
     ("hb-st-1029-2", "2026-10-29T12:31:00-04:00", ["the answer", "Paste last month's and this month's bill into ChatGPT, Claude or Gemini. Ask: what changed?",
                                                   "Cover your account number and address first.", "Tonight at 7 pm: a 15-second Reel on our page"]),
 ]

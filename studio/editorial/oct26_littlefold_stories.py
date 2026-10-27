@@ -37,10 +37,10 @@ STORIES = [
      "Leave the blanket loose at the hips, so the legs can move.", "Tonight at 7 pm: the 15-second version", "swaddle", True, "AAP · HealthyChildren.org"),
     ("lf-st-1028-1", "2026-10-28T12:30:00-04:00", "cream", "before you grab a blanket", "Cold little hands. / *Add a layer?*", "", "Next Story →", "neck", False, ""),
     ("lf-st-1028-2", "2026-10-28T12:31:00-04:00", "pink", "the 5-second check", "No. Feel the / *back of the neck.*",
-     "Cool hands and feet are normal. Hot or sweaty? Take a layer off.", "Tonight at 7 pm: the 15-second version", "neck", True, "NHS"),
+     "Cool hands and feet are normal. Hot or sweaty? Take a layer off.", "Tonight at 7 pm: a 15-second Reel on our page", "neck", True, "NHS"),
     ("lf-st-1029-1", "2026-10-29T12:30:00-04:00", "cream", "new baby home?", "When can / *tummy time start?*", "", "Next Story →", "tummy", False, ""),
     ("lf-st-1029-2", "2026-10-29T12:31:00-04:00", "pink", "back to sleep, tummy to play", "The day you / *get home.*",
-     "A few minutes at a time, only while baby's awake and you're watching.", "Tonight at 7 pm: the 15-second version", "tummy", True, "AAP · HealthyChildren.org"),
+     "A few minutes at a time, only while baby's awake and you're watching.", "Tonight at 7 pm: a 15-second Reel on our page", "tummy", True, "AAP · HealthyChildren.org"),
 ]
 
 
