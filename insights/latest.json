@@ -1,13 +1,52 @@
 {
- "collected_at": "2026-10-26T20:38:36+00:00",
+ "collected_at": "2026-10-27T04:37:23+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 43,
+   "media_count": 45,
    "posts": [
+    {
+     "media_id": "18061873298543672",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De-bBKZiFn6/",
+     "at": "2026-10-26T23:05:57+0000",
+     "first_line": "Your $10,000 earning 0% interest? If prices rise, money that earns no interest buys less every year.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 17,
+      "reach": 16,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 1999,
+      "ig_reels_video_view_total_time": 31998,
+      "follow_error": "GET 18061873298543672/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18077759330448025",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De-OwqficrF/",
+     "at": "2026-10-26T21:18:38+0000",
+     "first_line": "Paid Friday. Broke by Wednesday? The habit: pay yourself first.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18482666473112451",
      "type": "REEL",
@@ -96,13 +135,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 18,
+      "views": 22,
+      "reach": 19,
       "saved": 1,
       "shares": 8,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 1765,
-      "ig_reels_video_view_total_time": 33538,
+      "ig_reels_avg_watch_time": 1859,
+      "ig_reels_video_view_total_time": 37193,
       "follow_error": "GET 18128832788486241/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -748,46 +787,6 @@
       "profile_visits": 1
      },
      "comments": []
-    },
-    {
-     "media_id": "18089840456691743",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/Deji743jnP7/",
-     "at": "2026-10-16T12:35:37+0000",
-     "first_line": "The car repair is today. Payday isn't. Build a small buffer so surprise bills don't land on a card.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 109,
-      "reach": 81,
-      "saved": 4,
-      "shares": 1,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 3718,
-      "ig_reels_video_view_total_time": 345787,
-      "follow_error": "GET 18089840456691743/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17960508015247252",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DeiF8mCCtas/",
-     "at": "2026-10-15T23:03:06+0000",
-     "first_line": "100 a month from birth could grow to about 645,000 by 65. Automate it this week.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 41,
-      "reach": 25,
-      "saved": 4,
-      "shares": 1,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 7204,
-      "ig_reels_video_view_total_time": 216123,
-      "follow_error": "GET 17960508015247252/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -799,8 +798,47 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 43,
+   "media_count": 45,
    "posts": [
+    {
+     "media_id": "18132570427826661",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De-bVezicje/",
+     "at": "2026-10-26T23:08:35+0000",
+     "first_line": "For whoever studies on their phone: you understand more on paper.",
+     "likes": 2,
+     "comments_count": 1,
+     "insights": {
+      "views": 121,
+      "reach": 106,
+      "saved": 0,
+      "shares": 1,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 3961,
+      "ig_reels_video_view_total_time": 431753,
+      "follow_error": "GET 18132570427826661/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17971529303960169",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De-O3g8iXHU/",
+     "at": "2026-10-26T21:19:33+0000",
+     "first_line": "Inbox open all day again? Today's word: Batch.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18127299977498140",
      "type": "REEL",
@@ -850,8 +888,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 2,
+      "views": 9,
+      "reach": 3,
       "saved": 2,
       "shares": 3,
       "total_interactions": 10,
@@ -869,13 +907,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 129,
-      "reach": 105,
+      "views": 132,
+      "reach": 106,
       "saved": 2,
       "shares": 3,
       "total_interactions": 9,
-      "ig_reels_avg_watch_time": 3760,
-      "ig_reels_video_view_total_time": 409901,
+      "ig_reels_avg_watch_time": 3773,
+      "ig_reels_video_view_total_time": 415076,
       "follow_error": "GET 18072487772769538/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -889,13 +927,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 121,
-      "reach": 107,
+      "views": 122,
+      "reach": 108,
       "saved": 1,
       "shares": 5,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4552,
-      "ig_reels_video_view_total_time": 491720,
+      "ig_reels_avg_watch_time": 4591,
+      "ig_reels_video_view_total_time": 500471,
       "follow_error": "GET 18186281239418903/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -947,13 +985,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 120,
-      "reach": 106,
+      "views": 121,
+      "reach": 107,
       "saved": 2,
       "shares": 3,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 3995,
-      "ig_reels_video_view_total_time": 427569,
+      "ig_reels_avg_watch_time": 3981,
+      "ig_reels_video_view_total_time": 430005,
       "follow_error": "GET 18052820144807309/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1541,45 +1579,6 @@
       "follow_error": "GET 18199788004340683/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18430998832146040",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DeiGO0lFtje/",
-     "at": "2026-10-15T23:05:37+0000",
-     "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 69,
-      "reach": 55,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 18,
-      "ig_reels_avg_watch_time": 4202,
-      "ig_reels_video_view_total_time": 281581,
-      "follow_error": "GET 18430998832146040/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18110119802352799",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DehZk1DHPF7/",
-     "at": "2026-10-15T16:35:10+0000",
-     "first_line": "Reach more of your goals: write one if-then plan tonight.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 37,
-      "reach": 12,
-      "saved": 3,
-      "shares": 7,
-      "total_interactions": 22,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1591,8 +1590,47 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 40,
+   "media_count": 42,
    "posts": [
+    {
+     "media_id": "18438223513194840",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De-bGAEklcw/",
+     "at": "2026-10-26T23:06:30+0000",
+     "first_line": "Stranger in your best photo? Your phone's AI can erase them in seconds.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 63,
+      "reach": 58,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 2917,
+      "ig_reels_video_view_total_time": 169187,
+      "follow_error": "GET 18438223513194840/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18001135251003073",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De-SkSQlve-/",
+     "at": "2026-10-26T21:51:53+0000",
+     "first_line": "AI's answer felt generic again? Add one line: \"Before you answer, ask me 3 questions.\"",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18421199923152408",
      "type": "REEL",
@@ -1602,13 +1640,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 9,
+      "views": 14,
+      "reach": 10,
       "saved": 1,
       "shares": 3,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 3686,
-      "ig_reels_video_view_total_time": 36864,
+      "ig_reels_avg_watch_time": 3429,
+      "ig_reels_video_view_total_time": 37720,
       "follow_error": "GET 18421199923152408/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2333,48 +2371,10 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18193502386400915",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DefnvgFkRse/",
-     "at": "2026-10-15T00:00:18+0000",
-     "first_line": "Plan one potluck menu that works for every diet at the table. Paste your guest list and one prompt.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 53,
-      "reach": 9,
-      "saved": 4,
-      "shares": 8,
-      "total_interactions": 24,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17898256623393323",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DebbPdGFmPv/",
-     "at": "2026-10-13T08:54:03+0000",
-     "first_line": "5 prompts that give you an hour back ⏳",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 47,
-      "reach": 10,
-      "saved": 3,
-      "shares": 8,
-      "total_interactions": 23,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 4
+    "profile_views": 5
    }
   },
   "littlefold": {
@@ -2382,24 +2382,63 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 42,
+   "media_count": 44,
    "posts": [
+    {
+     "media_id": "17941562307372319",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/De-bKGYmPAo/",
+     "at": "2026-10-26T23:07:12+0000",
+     "first_line": "Scratches on their face again? Keep those tiny nails short and smooth, so they can't scratch themselves.",
+     "likes": 3,
+     "comments_count": 1,
+     "insights": {
+      "views": 128,
+      "reach": 105,
+      "saved": 2,
+      "shares": 10,
+      "total_interactions": 18,
+      "ig_reels_avg_watch_time": 7578,
+      "ig_reels_video_view_total_time": 810862,
+      "follow_error": "GET 17941562307372319/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17994066057113403",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/De-Oz7_iSdY/",
+     "at": "2026-10-26T21:19:04+0000",
+     "first_line": "It's 3 am. You're feeding. Your eyes keep closing.",
+     "likes": 3,
+     "comments_count": 1,
+     "insights": {
+      "views": 22,
+      "reach": 4,
+      "saved": 1,
+      "shares": 5,
+      "total_interactions": 11,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18122211049985064",
      "type": "REEL",
      "permalink": "https://www.instagram.com/reel/De9bwxrCj_d/",
      "at": "2026-10-26T13:53:12+0000",
      "first_line": "Gulping, then fussing, every feed? Pause and burp partway through the feed, not just at the end.",
-     "likes": 0,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 379,
-      "reach": 307,
-      "saved": 0,
-      "shares": 1,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7586,
-      "ig_reels_video_view_total_time": 2321385,
+      "views": 461,
+      "reach": 365,
+      "saved": 4,
+      "shares": 38,
+      "total_interactions": 53,
+      "ig_reels_avg_watch_time": 8651,
+      "ig_reels_video_view_total_time": 3183568,
       "follow_error": "GET 18122211049985064/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2410,16 +2449,16 @@
      "permalink": "https://www.instagram.com/reel/De72tJ_kadD/",
      "at": "2026-10-25T23:10:08+0000",
      "first_line": "It's OK to step away. Still crying, and you're at your limit? That happens to loving parents too.",
-     "likes": 3,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 162,
-      "reach": 151,
-      "saved": 1,
-      "shares": 2,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 2600,
-      "ig_reels_video_view_total_time": 390076,
+      "views": 166,
+      "reach": 154,
+      "saved": 3,
+      "shares": 12,
+      "total_interactions": 25,
+      "ig_reels_avg_watch_time": 2724,
+      "ig_reels_video_view_total_time": 419620,
       "follow_error": "GET 18090453248246661/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2430,14 +2469,14 @@
      "permalink": "https://www.instagram.com/p/De7qA_nGx2U/",
      "at": "2026-10-25T21:19:05+0000",
      "first_line": "Breastfed babies: 400 IU of vitamin D, every day.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 8,
-      "saved": 2,
-      "shares": 10,
-      "total_interactions": 19,
+      "views": 30,
+      "reach": 10,
+      "saved": 4,
+      "shares": 20,
+      "total_interactions": 34,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2449,14 +2488,14 @@
      "permalink": "https://www.instagram.com/p/De7DiL_CUBs/",
      "at": "2026-10-25T15:42:48+0000",
      "first_line": "The crying has a peak. It often lands somewhere around 3 to 12 weeks, and it's usually over by 3 to 4 months.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 6,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 15,
+      "views": 21,
+      "reach": 8,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 30,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2468,16 +2507,16 @@
      "permalink": "https://www.instagram.com/reel/De6soAiitVg/",
      "at": "2026-10-25T12:22:50+0000",
      "first_line": "You can't spoil a newborn. Pick them up.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 134,
-      "reach": 112,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4931,
-      "ig_reels_video_view_total_time": 552341,
+      "views": 141,
+      "reach": 114,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 25,
+      "ig_reels_avg_watch_time": 5040,
+      "ig_reels_video_view_total_time": 579612,
       "follow_error": "GET 18152957065536999/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2488,16 +2527,16 @@
      "permalink": "https://www.instagram.com/reel/De5S9NHjkuf/",
      "at": "2026-10-24T23:19:21+0000",
      "first_line": "New dad, feeling left out? You don't need to feed the baby to bond with them.",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 116,
-      "reach": 107,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 2418,
-      "ig_reels_video_view_total_time": 256405,
+      "views": 120,
+      "reach": 108,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 25,
+      "ig_reels_avg_watch_time": 2460,
+      "ig_reels_video_view_total_time": 265752,
       "follow_error": "GET 17929363881421842/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2508,14 +2547,14 @@
      "permalink": "https://www.instagram.com/p/De5FSSNlOJo/",
      "at": "2026-10-24T21:19:37+0000",
      "first_line": "Small Wins No.2: you showered today.",
-     "likes": 3,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 21,
-      "reach": 8,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 17,
+      "views": 28,
+      "reach": 10,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 33,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2527,14 +2566,14 @@
      "permalink": "https://www.instagram.com/p/De4evX9kVS1/",
      "at": "2026-10-24T15:42:49+0000",
      "first_line": "“Just a little honey on the soother?” Not before their first birthday. Not even a tiny bit.",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 19,
-      "reach": 8,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 16,
+      "views": 30,
+      "reach": 10,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 32,
       "follows": 0,
       "profile_visits": 1
      },
@@ -2546,16 +2585,16 @@
      "permalink": "https://www.instagram.com/reel/De4H3IXkrMQ/",
      "at": "2026-10-24T12:23:07+0000",
      "first_line": "Sore gums tonight? A cold cloth and a gentle rub. Two simple things that help.",
-     "likes": 3,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 148,
-      "reach": 129,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 10,
-      "ig_reels_avg_watch_time": 2808,
-      "ig_reels_video_view_total_time": 362252,
+      "views": 157,
+      "reach": 130,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 26,
+      "ig_reels_avg_watch_time": 3123,
+      "ig_reels_video_view_total_time": 409131,
       "follow_error": "GET 18120178661472079/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2566,16 +2605,16 @@
      "permalink": "https://www.instagram.com/reel/De2ul3RCqKh/",
      "at": "2026-10-23T23:23:06+0000",
      "first_line": "First cold morning? Coat off, then buckle. The warm layer goes on top of the straps.",
-     "likes": 1,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 123,
-      "reach": 105,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 7,
-      "ig_reels_avg_watch_time": 5583,
-      "ig_reels_video_view_total_time": 580711,
+      "views": 125,
+      "reach": 107,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 23,
+      "ig_reels_avg_watch_time": 5629,
+      "ig_reels_video_view_total_time": 596754,
       "follow_error": "GET 18383033815225570/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2586,14 +2625,14 @@
      "permalink": "https://www.instagram.com/p/De2eefEGm2N/",
      "at": "2026-10-23T21:02:02+0000",
      "first_line": "When will baby say “mama”? Baby's first year of talking, one step at a time 👉",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 15,
-      "reach": 4,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 8,
+      "views": 22,
+      "reach": 6,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 24,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2605,14 +2644,14 @@
      "permalink": "https://www.instagram.com/p/De160dpEebL/",
      "at": "2026-10-23T15:50:18+0000",
      "first_line": "No RESP yet? It's not too late. Here's the catch-up plan.",
-     "likes": 1,
+     "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 4,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 14,
+      "views": 19,
+      "reach": 6,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 30,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2624,16 +2663,16 @@
      "permalink": "https://www.instagram.com/reel/De1gmdnDe6Q/",
      "at": "2026-10-23T12:01:35+0000",
      "first_line": "Bedtime turned into a battle again? Turn it into the best 20 minutes of the day.",
-     "likes": 1,
+     "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 124,
-      "reach": 110,
-      "saved": 1,
-      "shares": 3,
-      "total_interactions": 7,
-      "ig_reels_avg_watch_time": 2499,
-      "ig_reels_video_view_total_time": 277410,
+      "views": 129,
+      "reach": 112,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 22,
+      "ig_reels_avg_watch_time": 2617,
+      "ig_reels_video_view_total_time": 295754,
       "follow_error": "GET 17959759512027460/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2644,14 +2683,14 @@
      "permalink": "https://www.instagram.com/p/Dez7c70Gr5s/",
      "at": "2026-10-22T21:17:30+0000",
      "first_line": "Baby finally fell asleep. Now where? Find your spot and follow the line 👉",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 5,
-      "saved": 3,
-      "shares": 8,
-      "total_interactions": 19,
+      "views": 24,
+      "reach": 6,
+      "saved": 5,
+      "shares": 18,
+      "total_interactions": 34,
       "follows": 1,
       "profile_visits": 0
      },
@@ -2663,14 +2702,14 @@
      "permalink": "https://www.instagram.com/p/DezVsDSIB6H/",
      "at": "2026-10-22T15:47:22+0000",
      "first_line": "New baby in Ontario? One online form does 5 things 👶",
-     "likes": 4,
+     "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 20,
-      "reach": 5,
-      "saved": 3,
-      "shares": 8,
-      "total_interactions": 20,
+      "views": 26,
+      "reach": 6,
+      "saved": 4,
+      "shares": 13,
+      "total_interactions": 28,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2682,16 +2721,16 @@
      "permalink": "https://www.instagram.com/reel/Dey94tqDDOm/",
      "at": "2026-10-22T13:05:32+0000",
      "first_line": "Sleep and screens by age, Canada edition 🇨🇦",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 121,
-      "reach": 103,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 3436,
-      "ig_reels_video_view_total_time": 360850,
+      "views": 125,
+      "reach": 104,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 24,
+      "ig_reels_avg_watch_time": 3478,
+      "ig_reels_video_view_total_time": 372202,
       "follow_error": "GET 17907146793657135/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2702,16 +2741,16 @@
      "permalink": "https://www.instagram.com/reel/DexjxlsCocF/",
      "at": "2026-10-21T23:12:19+0000",
      "first_line": "Toddler pulling you to come play? Give them 10 minutes where they lead and you follow.",
-     "likes": 4,
+     "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 124,
-      "reach": 104,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 18,
-      "ig_reels_avg_watch_time": 5512,
-      "ig_reels_video_view_total_time": 611870,
+      "views": 128,
+      "reach": 105,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 34,
+      "ig_reels_avg_watch_time": 5713,
+      "ig_reels_video_view_total_time": 645649,
       "follow_error": "GET 17993170929115414/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2722,14 +2761,14 @@
      "permalink": "https://www.instagram.com/p/DexU9vDEkE1/",
      "at": "2026-10-21T21:02:32+0000",
      "first_line": "5 minutes a day that build a brain. Hold the dots and slide 👀",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 4,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 17,
+      "views": 18,
+      "reach": 6,
+      "saved": 4,
+      "shares": 18,
+      "total_interactions": 32,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2741,14 +2780,14 @@
      "permalink": "https://www.instagram.com/p/DewxAgSmuNO/",
      "at": "2026-10-21T15:48:31+0000",
      "first_line": "The 10 minutes your toddler will start asking for.",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 23,
-      "reach": 9,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 16,
+      "views": 29,
+      "reach": 10,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 25,
       "follows": 0,
       "profile_visits": 0
      },
@@ -2760,16 +2799,16 @@
      "permalink": "https://www.instagram.com/reel/DewYq92jhv9/",
      "at": "2026-10-21T12:16:07+0000",
      "first_line": "Money your family can get in Canada, for each child 🇨🇦",
-     "likes": 2,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 63,
-      "reach": 54,
-      "saved": 2,
-      "shares": 8,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 2907,
-      "ig_reels_video_view_total_time": 156998,
+      "views": 67,
+      "reach": 55,
+      "saved": 3,
+      "shares": 13,
+      "total_interactions": 26,
+      "ig_reels_avg_watch_time": 3006,
+      "ig_reels_video_view_total_time": 168369,
       "follow_error": "GET 17914788243551208/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2783,13 +2822,13 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 165,
+      "views": 167,
       "reach": 134,
       "saved": 4,
       "shares": 9,
       "total_interactions": 23,
-      "ig_reels_avg_watch_time": 6045,
-      "ig_reels_video_view_total_time": 840339,
+      "ig_reels_avg_watch_time": 5997,
+      "ig_reels_video_view_total_time": 845670,
       "follow_error": "GET 18133944556675077/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2803,7 +2842,7 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 26,
+      "views": 28,
       "reach": 7,
       "saved": 4,
       "shares": 9,
@@ -2822,7 +2861,7 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 23,
+      "views": 25,
       "reach": 4,
       "saved": 5,
       "shares": 9,
@@ -2841,13 +2880,13 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 124,
+      "views": 126,
       "reach": 108,
       "saved": 4,
       "shares": 12,
       "total_interactions": 27,
-      "ig_reels_avg_watch_time": 2968,
-      "ig_reels_video_view_total_time": 332429,
+      "ig_reels_avg_watch_time": 2936,
+      "ig_reels_video_view_total_time": 334763,
       "follow_error": "GET 18178417720447732/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3124,49 +3163,10 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "17937658338127792",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/Dej4tfskSML/",
-     "at": "2026-10-16T15:45:42+0000",
-     "first_line": "Know what's normal in your first 72 hours home, and when to call.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 33,
-      "reach": 8,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 17,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18116429624064659",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/Deji3MejEkG/",
-     "at": "2026-10-16T12:34:55+0000",
-     "first_line": "Baby hates tummy time? Try it on your chest.",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 110,
-      "reach": 93,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 3096,
-      "ig_reels_video_view_total_time": 309681,
-      "follow_error": "GET 18116429624064659/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 5
+    "profile_views": 10
    }
   }
  }
