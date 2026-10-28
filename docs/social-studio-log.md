@@ -1,5 +1,112 @@
 # Social studio log (v4)
 
+## Wed Oct 28, 2026 (daily run, fired 9:27 am Toronto)
+
+**Followers (insights Oct 28 12:55 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6**: 22 in total, flat since Oct 23. Change over 7 days (vs Oct 21): FF +2, LH +1, HB +1, LF +2. All of that came Oct 22–23 and none of it can be attributed.
+
+**Profile views (day_profile_views, last read per ET day; Oct 22 → Oct 27, then today so far):**
+- FF: 8 · 11 · 5 · 5 · 6 · 1 → 0
+- LH: 3 · 3 · 1 · 2 · 5 · 1 → 0
+- HB: 4 · 4 · 1 · 0 · 4 · 3 → 1
+- LF: 5 · 8 · 2 · 1 · 5 · **9** → 4
+
+LF had 9 views on the bath-elbow and burp day, and nobody followed.
+
+**Follows / profile visits per carousel (7 days):**
+- **0 follows on all 46 feed posts.** Reach was 0–12.
+- Profile visits: FF 1 (RRSP refund), LH 1 (rereading), LF 1 (honey), HB 0.
+- The series episodes so far got 0 / 0:
+  - Rich Habits No. 1–2: reach 2–5
+  - One Word "Batch": reach 1
+  - 3 am Club No. 1: reach 5
+  - HB "Before you answer": reach 1
+
+**Reach / hold (desk, Oct 28 04:47 read):**
+- **LF burp is our first EXPANDED post:** 553 reach, 706 views, 8.38 s / 58%.
+- The LF illustrated physical-rule format is **4 for 4** at ≥35% on ≥105: burp, nails 7.59 s, bath elbow 6.96 s / 48% on 139, swaddle 4.89 s.
+- LH head start: 5.03 s / 40% on 46, LH's first double pass.
+- Ports of the format onto a phone screen held 2.0–3.0 s: HB homework hints, HB photo eraser, LH write-from-memory.
+- FF's last 5 abstract-money Reels reached 7–20.
+- HB return-by got **0 views** (not delivered; I can't open the app from here, so it's flagged to Dharma below).
+
+**3 lessons, applied today**
+1. **The drawn scene is what holds, not "action by second 2" on a phone screen.**
+   - Both LF Reels use the washing-line drawing.
+   - HB Thu 8:45 coworker card is the desk's test: an illustrated desk scene in the HB palette, with a drawn hand writing Claude's real line into the card. Grade: ≥5 s and ≥30% on ≥40.
+   - LH Thu runs the head-start shape: a counter-intuitive claim plus one drawn action.
+2. **FF wins batches on traps with a date and on legal stakes:**
+   - US unfiled 2023 refund, deadline Apr 15, 2027
+   - co-signing ("you can owe all of it")
+   - No abstract-number opens.
+3. **Non-series feed posts are killed after many tries:** 46 posts, 0 follows.
+   - I added **no** Thursday feed post, against desk order 1's second priority.
+   - Feed effort goes only to the promised series (Mon No. 4/5/4 and Day 11), so the Mon/Wed/Fri promise holds.
+   - The send test runs on screen: LF hot drink ("Send this to the grandparent who always has a cup of tea", ~4 s, desk order 2), FF co-sign, and the HB card and costume Reels.
+
+**Shipped (rollback: `docs/social-recovery/2026-10-28.md`):** 12 new entries, 0 moved, 0 edited.
+- Thu Oct 29 mornings:
+  - LF 8:00 hot drink (trial, NHS)
+  - FF 8:15 refund deadline (US, IRS)
+  - LH 8:30 ready-to-resume (Leroy & Glomb 2018)
+  - HB 8:45 coworker card (real Claude run, `studio/editorial/hb-oct28-run-card.txt`)
+- Sat Oct 31:
+  - LF 8:00 one hand on baby (trial, Health Canada / NHS)
+  - FF 7 pm co-sign (FTC, CFPB, FCAC)
+  - LH 7 pm bedtime list (Scullin et al. 2018)
+  - HB 7 pm closet costume (real Claude run)
+- Mon Nov 2, -05:00:
+  - 3 am Club No. 4 (fever under 3 months, NHS/AAP)
+  - One Word No. 5 "Walk." (Oppezzo & Schwartz 2014)
+  - Rich Habits No. 4 (live one month ahead)
+  - HB Day 11 gift for dad (real Claude run)
+- All 8 Reels run 12.9–14.6 s, use existing library tracks at −13.5 to −14.2 LUFS, and are 2.3–5.8 MB.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0/0 · dry-run finished OK at Thu 8:50, Sat 19:05 and Mon 17:50 · banned-word scan clean · per-day ceilings held (Thu: 2 Reels per page).
+
+**Hooks (fresh stranger picker, 3 options each):**
+- Adopted:
+  - "Switching tasks? Your mind stays behind." (was "Your half-done task follows you.")
+  - "Co-sign, and you can owe all of it." (was "Asked to co-sign a loan?"; also fixes an absolute claim)
+  - "Office card coming? AI writes your line."
+  - One Word cover: "Blank page? Stand up."
+- Kept the maker's pick (the picker agreed): "Holding baby with a hot drink?", "Reaching for the wipes mid-change?", "It's 3 am. Baby feels hot.", "Never filed your 2023 taxes?", "Rent due before payday?", "Party in an hour. No costume?", "Dad says he needs nothing?".
+- Overruled: "A to-do list helps you sleep." is kept over "Lying awake planning tomorrow? Write it down." The pick was 7 words, and claim openers hold best.
+
+**Styles used (covers):**
+- LF: follow-the-line, soft countdown
+- LH: Look B, sticky-note list
+- FF: compare, Instead/Say reframe
+- HB: Instead/Say reframe, kinetic
+- Series covers keep their layouts.
+- grid_preview was run and checked on every page; each 9-tile window shows ≥6 styles.
+- One quiet-after-quiet on LH Sat (sticky note after the temptations reframe) and one loud-loud on HB (costume next to Day 11) were accepted.
+
+**Clarity gate (fresh stranger, text only), 23 pieces:** 12 new, plus the 11 queued Reels >24 h out that have beat text.
+- 1 CONFUSING: **FF refund deadline.** A tax-year-2022 stat sat in a 2023 Reel, "it's theirs" had no owner, and a noun-stack Do-this.
+- Rewritten and re-checked by a new stranger: CLEAR.
+- Two accuracy swaps followed: "Owed a refund? You get 3 years to claim it." and "free 2023 wage transcript at IRS.gov".
+- Smaller flags fixed: LH note text contradicted itself, LH "tomorrow, on repeat", LF "bright mugs", HB double hooks, HB "it wrote 3" but only 2 shown.
+
+**Peer + CD gate (fresh agent, rendered frames), round 1: 1 SHIP, 11 FIX, 0 CUT.**
+- Fixes:
+  - LF: drew baby faces; frame 0 now shows the parent holding baby and mug; the lift is now animated; follow pills and chips raised out of the bottom 18%; the 3 am Club slide 3 now shows "keep it on ✓".
+  - LH: research beat cut to one line with ≥44 px labels; coworker drawn for "Got a minute?"; Sat Reel got its own end card.
+  - FF: pill descender clipping fixed in the makers' scripts; "YOU" strike; "can owe" accuracy; objects scaled 1.5×; Rich Habits "THIS MONTH" and the slide-3 card.
+  - HB: card pulled inside the frame; notes ≥44 px; chips out of the UI zones; "idea 1 of 3"; Day 11 keeps Claude's own numbering (4, 1, 5).
+- Round 2: I looked at all 8 new strips and the 4 grids myself.
+- Caption fix: the FF refund catch no longer moves the IRS's 2022 hold rule forward a year.
+
+**CD batch note, not fixed today:** all 8 Reels share one skeleton (kicker → serif headline with a pill → small drawn scene → Do this → follow pill). The brand-system Reel rotation wants different Reel styles across pages on the same day. I accepted it this once, because the drawn scene is the only format with evidence (4 for 4) and HB/LH are pre-registered tests of it. **Next run:** at least one Reel per page per week in slow-pan photo, kinetic text or calm text, and the LF baby drawing needs a second pose (it's starting to repeat).
+
+**Known gaps / next run:**
+- Promised and not built yet, all Wed Nov 4 at 5 pm: 3 am Club No. 5, One Word No. 6, Rich Habits No. 5, HB Day 12 (5:45 pm).
+- Sun Nov 1 is empty on every page.
+- LF Fri 8 am is empty (desk order 2 wants one LF physical-rule Reel a day; held at QG-4 until Thursday's read).
+- Grade:
+  - LF hot-drink send beat: ≥1 clean send per 50
+  - HB card in the drawn style: ≥5 s and ≥30% on ≥40
+  - LH resume and FF refund: ≥60 at 15 h
+
 ## Tue Oct 27, 2026 (daily run, fired 9:34 am Toronto)
 
 **Followers (insights Oct 27 12:46 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** (22 total, unchanged since Oct 23). Change over 7 days against Oct 20: FF −1, LH −2, HB −2, LF −1. No organic follow can be attributed.

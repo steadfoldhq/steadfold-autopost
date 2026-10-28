@@ -1,0 +1,20 @@
+Hourback real run, Oct 28 2026 (studio maker, Hourback)
+Used in: hb-day11-gift-for-dad (Mon Nov 2, 5:45 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-28T13:39:35Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+Help me pick a gift for my dad. He's 64, loves gardening and crossword puzzles, drinks his coffee black, and says he doesn't need anything. My budget is $40. Give me 5 ideas, one line each.
+
+===== REPLY (verbatim) =====
+Here are 5 gift ideas for your dad, each under $40:
+
+1. **Premium whole-bean coffee sampler** (~$30): single-origin beans from a local roaster, picked to taste good black.
+2. **Quality garden pruners** (~$35): Felco or a similar brand, the kind of tool he'll use for decades even if he "has some already."
+3. **New York Times crossword book plus a nice pen** (~$25): a Will Shortz collection with a smooth-writing pen like a Pilot G2 or a Lamy.
+4. **Heirloom seed collection** (~$25): unusual tomatoes, peppers or flowers he can't get at the hardware store, so he has something to plan for next spring.
+5. **Personalized garden kneeler or stool** (~$40): easier on the knees at 64, and practical without implying he's slowing down.
+
+**Top pick:** For a "doesn't need anything" dad, the seeds or the coffee usually work best, because they get used up and won't add clutter.

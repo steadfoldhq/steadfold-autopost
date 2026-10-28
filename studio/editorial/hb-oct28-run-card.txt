@@ -1,0 +1,18 @@
+Hourback real run, Oct 28 2026 (studio maker, Hourback)
+Used in: hb-reel-1029am-coworker-card (Thu Oct 29, 8:45 am)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-28T13:39:24Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+I have to sign a birthday card for a coworker I barely know. Her name is Dana and she works in accounting. Give me 3 short, warm lines I could write. Nothing cheesy.
+
+===== REPLY (verbatim) =====
+Here are three options:
+
+1. "Happy birthday, Dana! Hope your year ahead is a good one, and that it balances out in your favour."
+2. "Wishing you a relaxing birthday and a great year ahead. Thanks for everything you do to keep us all on track!"
+3. "Happy birthday, Dana! I hope today brings you some well-earned time off from the spreadsheets."
+
+If you want to keep it simplest, #2 works for anyone, even if you've never really talked.

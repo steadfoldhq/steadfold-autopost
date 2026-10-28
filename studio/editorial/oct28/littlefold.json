@@ -1,0 +1,141 @@
+[
+ {
+  "id": "lf-reel-1029am-hot-drink",
+  "account": "littlefold",
+  "publish_at": "2026-10-29T08:00:00-04:00",
+  "trial": "auto",
+  "video": "studio-oct28/littlefold/lf-reel-1029am-hot-drink.mp4",
+  "cover": "studio-oct28/littlefold/lf-reel-1029am-hot-drink-cover.jpg",
+  "caption": "Holding baby with a hot drink? Put the mug down first, well out of reach.\n\nWHY: babies grab at bright things, and mugs are bright. Their skin burns more easily than an adult's. And the NHS says a hot drink can still scald 15 minutes after it was made.\n\nHOW:\n1. Before you pick baby up, put your tea or coffee down somewhere high or far back, well out of reach.\n2. Not on the edge of a table, and not on a low coffee table.\n3. Holding baby? Hold the baby, not the drink. Your tea can wait.\n\nTHE CATCH: \"it's cooled down by now\" is easy to believe. 15 minutes later it can still scald. Keep hot drinks away from toddlers too.\n\nDo this: mug down, out of reach, then pick baby up.\n\nSend this to the grandparent who always has a cup of tea.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #babysafety #newparents #grandparents #babytips",
+  "first_comment": "Sources (checked Oct 28 2026): NHS, 'Baby and toddler safety' (nhs.uk/conditions/baby/first-aid-and-safety/safety/baby-and-toddler-safety/, last reviewed 19 Feb 2026): \"If you're having a hot drink, put it down well out of reach before you hold your baby.\"; \"Babies and toddlers will grab at brightly coloured objects, such as mugs.\"; \"A hot drink can still scald 15 minutes after it was made.\"; \"A baby's skin burns more easily than an adult's.\"; \"Keep hot drinks well away from all young children.\"",
+  "alt_text": "Littlefold Reel, drawn sunny washing-line scene. A smiling parent holds a sleeping swaddled baby in one arm and a steaming coral mug in the other hand, right next to the baby; a dotted line draws up to a high shelf and the mug moves onto it, then the parent holds the baby with both hands. A toddler reaches for a mug on a low table and the mug flies up to the shelf. A clock sweeps 15 minutes while the mug keeps steaming. Do this: the mug sits on the shelf while the parent holds the baby close, with hearts. On screen: Put the mug down first. Babies grab mugs. Still hot after 15 minutes. Mug down. Then pick baby up. Send this to the grandparent who always has a cup of tea.",
+  "beats": [
+   "holding baby with a hot drink?",
+   "Put the mug down first.",
+   "Out of reach, before you hold baby.",
+   "baby + hot tea…",
+   "NHS · Baby and toddler safety",
+   "up, out of reach",
+   "now hold baby ♡",
+   "because",
+   "Babies grab mugs.",
+   "And their skin burns more easily than ours.",
+   "grab!",
+   "out of reach ✓",
+   "and",
+   "Still hot after 15 minutes.",
+   "A hot drink can still scald.",
+   "0 min … 15 min (counter under the clock)",
+   "still hot!",
+   "Do this:",
+   "Mug down. Then pick baby up.",
+   "Send this to the grandparent who always has a cup of tea.",
+   "Follow for one calm thing a night, from bump to toddler.",
+   "(stamp)"
+  ],
+  "hook_options": [
+   "Holding baby with a hot drink?",
+   "A hot drink can still scald 15 minutes later.",
+   "Tea in one hand, baby in the other?"
+  ],
+  "duration_s": 14.47,
+  "style": "Body: illustrated 'physical rule, shown being done' in the sunshine washing-line world (LF default 8 am format). Cover: FOLLOW THE LINE (style-menu #9, quiet): mug -> dotted berry line '1' -> shelf, shelf -> coral line '2' -> baby held. Grid: Wed 7 pm neck check (washing-line) -> this (quiet) -> Thu 7 pm tummy arch card.",
+  "send_test": true,
+  "sources": [
+   "https://www.nhs.uk/conditions/baby/first-aid-and-safety/safety/baby-and-toddler-safety/"
+  ],
+  "notes": "SEND-BEAT TEST (desk order 3): the send line is its own on-screen beat element on the last beat (butter tape, Caveat Brush 70 px), on screen from ~10.5 s to the end (~4 s), with the follow pill from ~10.9 s (~3.5 s). Grade: >=1 clean send per 50 reach. Music: existing v4 lf-x-giggle-pop (tools/music-library.json), cut 1 lands on its drop (3.97 s), loudnorm -14 LUFS. Payoff ('Put the mug down first') is on frame 0; the mug is moved to the shelf by 1.5 s and baby lifted by 2.8 s. 4 beats. Builder: studio/editorial/oct28_littlefold.py mug. Topic new (not in the last 10 days). No real children; no product. GATE FIXES (Oct 28): baby now has a face; frame 0 shows the parent holding baby AND the mug; 'Babies grab mugs.' (dropped 'bright'); chip at y 1330, follow pill at y 1395 (ends ~1505), stamp at 1430-1550: all above y 1575; cover baby also has a face."
+ },
+ {
+  "id": "lf-reel-1031am-hand-on-baby",
+  "account": "littlefold",
+  "publish_at": "2026-10-31T08:00:00-04:00",
+  "trial": "auto",
+  "video": "studio-oct28/littlefold/lf-reel-1031am-hand-on-baby.mp4",
+  "cover": "studio-oct28/littlefold/lf-reel-1031am-hand-on-baby-cover.jpg",
+  "caption": "Reaching for the wipes mid-change? Keep one hand on baby, every time.\n\nWHY: babies wriggle, and they can roll off a changing table, a bed or a sofa in a second (NHS). Health Canada says to keep one hand on your baby the whole time, even with the safety strap done up.\n\nHOW:\n1. Before baby goes up: diaper, wipes and clean clothes, all within reach.\n2. One hand stays on baby's tummy for the whole change.\n3. Doorbell, phone, something on the stove? Take baby with you. Never leave them up there, even for a second.\n4. Or skip the height: the NHS suggests changing on a changing mat on the floor.\n\nTHE CATCH: the strap helps, but it can't replace your hand.\n\nDo this: one hand on baby, every change.\n\nSend this to whoever does the diaper changes with you.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#diaperchange #babysafety #newborn #newparents #babytips",
+  "first_comment": "Sources (checked Oct 28 2026): Health Canada, 'Change tables' (canada.ca/en/health-canada/services/infant-care/change-tables.html): \"keeping one hand on your baby at all times when using the change table, even with the safety straps in use\"; \"preparing everything you need before you place your baby on the change table\"; \"taking your baby with you if you leave the area for any reason\". NHS, 'Baby and toddler safety' (nhs.uk/conditions/baby/first-aid-and-safety/safety/baby-and-toddler-safety/, last reviewed 19 Feb 2026): \"Do not leave your baby unattended on a bed, sofa or changing table, even for a second, as they could roll off.\"; \"Change your baby's nappy on a changing mat on the floor.\"",
+  "alt_text": "Littlefold Reel, drawn sunny washing-line scene. A wriggling baby on a striped changing mat, seen from above; a flat adult palm lands on the tummy and stays while the other hand fetches the wipes. A diaper, wipes and a onesie pop in beside the mat with ticks. A doorbell rings and two hands lift the baby off the mat and carry them away, leaving the mat empty. Do this: palm on the tummy, a check and hearts, and a tiny diaper is pegged on the line. On screen: Keep one hand on baby. Grab everything first. Take baby with you. One hand on baby, every change.",
+  "beats": [
+   "reaching for the wipes mid-change?",
+   "Keep one hand on baby.",
+   "They can roll off in a second.",
+   "wriggle, wriggle…",
+   "wipes (on the pack)",
+   "NHS · Health Canada",
+   "one hand stays on",
+   "one hand stays on ✓",
+   "before you start",
+   "Grab everything first.",
+   "Diaper, wipes, clean clothes.",
+   "all within reach ✓",
+   "Health Canada · Change tables",
+   "doorbell mid-change?",
+   "Take baby with you.",
+   "Never leave them on the table.",
+   "ding dong!",
+   "baby comes too ✓",
+   "Health Canada · NHS",
+   "Do this:",
+   "One hand on baby, every change.",
+   "Or change them on a mat on the floor.",
+   "Follow for one calm thing a night, from bump to toddler.",
+   "(stamp)"
+  ],
+  "hook_options": [
+   "Reaching for the wipes mid-change?",
+   "One hand on baby, every change.",
+   "Doorbell mid-change? Take baby with you."
+  ],
+  "duration_s": 14.4,
+  "style": "Body: illustrated 'physical rule, shown being done' in the sunshine washing-line world. Cover: Littlefold SOFT COUNTDOWN giant numeral (style-menu #2 'lf-count', loud): a giant berry '1' + 'hand on baby.' + a drawn palm on a baby on a mat. Grid: Fri 7 pm rice-grain awards (quiet) -> this (loud) -> Mon 5 pm 3 am Club No. 4 (Look B pills).",
+  "send_test": false,
+  "sources": [
+   "https://www.canada.ca/en/health-canada/services/infant-care/change-tables.html",
+   "https://www.nhs.uk/conditions/baby/first-aid-and-safety/safety/baby-and-toddler-safety/"
+  ],
+  "notes": "Music: existing v4 lf-x-tiny-parade; 'Do this' lands on its drop (9.195 s); loudnorm -14 LUFS. Palm on the tummy by 0.6 s, wipes fetched by 1.8 s. 4 beats. Builder: studio/editorial/oct28_littlefold.py change. Glove/countdown family counts toward the 1-in-9 glove limit: no other glove/countdown tile in the last 9 LF tiles (Thu tummy Reel used lf-count only inside its body; its cover is the arch card). GATE FIXES (Oct 28): beat 3 (6.4-9.2 s) now shows a clear lift: hands slide under, the baby rises off the mat (shadow left behind) and is carried off right, the mat stays empty; the stray clipped hand at the right edge (~3 s) now exits fully; chip, follow pill and stamp all above y 1575."
+ },
+ {
+  "id": "lf-3amclub-04",
+  "account": "littlefold",
+  "publish_at": "2026-11-02T17:00:00-05:00",
+  "images": [
+   "studio-oct28/littlefold/lf-3amclub-04/01.jpg",
+   "studio-oct28/littlefold/lf-3amclub-04/02.jpg",
+   "studio-oct28/littlefold/lf-3amclub-04/03.jpg"
+  ],
+  "caption": "It's 3 am and your baby feels hot. If they're under 3 months, don't wait for the morning.\n\n3 am Club No. 4: the night fever rule.\n\nWHY: for babies under 3 months, a temperature of 38°C (100.4°F) or higher needs a call right away, even if they seem fine otherwise (AAP). The NHS counts 38°C or more as a high temperature.\n\nAT 3 AM:\n1. Check with a digital thermometer. Just out of a bath or wrapped in a blanket? Wait a few minutes and check again.\n2. Under 3 months and 38°C (100.4°F) or more: call your doctor or your health line now (in the UK, NHS 111). 3 to 6 months: call at 39°C (102.2°F) or more.\n3. While you call: keep feeding. Don't undress them or sponge them down.\n\nTHE CATCH: no paracetamol (acetaminophen) for babies under 2 months, says the NHS. Ask your doctor or pharmacist before giving any medicine.\n\nDo this: tonight, find your digital thermometer and save your doctor's number in your phone.\n\nSend this to whoever's on the night shift with you.\n\n3 am Club No. 5 is Wednesday at 5 pm.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#newborn #nightfeeds #babyfever #newparents #3amclub",
+  "first_comment": "Sources (checked Oct 28 2026): NHS, 'High temperature (fever) in children' (nhs.uk/symptoms/fever-in-children/, reviewed 3 Jan 2024): \"A high temperature is 38C or more\"; call 111 if your child \"is under 3 months old and has a temperature of 38C or higher, or you think they have a high temperature\" and \"is 3 to 6 months old and has a temperature of 39C or higher\"; use a digital thermometer and wait a few minutes after a bath or being wrapped in a blanket; give plenty of fluids and keep breastfeeding; \"do not undress your child or sponge them down to cool them\"; \"do not give paracetamol to a child under 2 months\". AAP HealthyChildren.org, 'Fever and Your Baby' (updated 9/23/2025): for babies 3 months and younger with a temperature of 100.4°F (38°C) or higher, \"call your pediatrician immediately\", \"even if your baby shows no other signs or symptoms of being ill\".",
+  "alt_text": "Littlefold 3-slide carousel. Slide 1, peach: '3 am Club · No. 4' badge, 'It's 3 am. Baby feels hot.' in a large serif with 'hot' highlighted pink, a drawn digital thermometer reading 38.0°C with two stars, and the handwritten note 'new night tip every Mon · Wed · Fri'. Slide 2, cream: 'Under 3 months and 38°C or more? Call the doctor now.' Handwritten: 38°C is 100.4°F, even if they seem fine. A drawn thermometer and a ringing phone. Slide 3: 'While you call: keep feeding.' Handwritten: don't undress or sponge them down. A drawn baby bottle and a smiling baby sitting up, dressed in a onesie, with the handwritten note 'keep it on ✓'. Sources: NHS, AAP HealthyChildren.org.",
+  "beats": [
+   "3 AM CLUB · NO. 4",
+   "It's 3 am. Baby feels hot.",
+   "new night tip every Mon · Wed · Fri",
+   "38.0°C (thermometer display)",
+   "(stamp)",
+   "2/3",
+   "Under 3 months and 38°C or more? Call the doctor now.",
+   "38°C is 100.4°F · even if they seem fine",
+   "38.0°C",
+   "Source: NHS · AAP HealthyChildren.org",
+   "3/3",
+   "While you call: keep feeding.",
+   "don't undress or sponge them down",
+   "keep it on ✓",
+   "Source: NHS · High temperature in children"
+  ],
+  "hook_options": [
+   "It's 3 am. Baby feels hot.",
+   "Under 3 months and 38°C? Call now.",
+   "3 am fever? Don't wait for morning."
+  ],
+  "style": "Series layout (Look B pills cover on the peach field + drawn object bottom right + save-line + stamp), identical to lf-3amclub-03; drawn thermometer in place of the moon.",
+  "send_test": false,
+  "sources": [
+   "https://www.nhs.uk/symptoms/fever-in-children/",
+   "https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/Fever-and-Your-Baby.aspx"
+  ],
+  "notes": "Fri's No. 3 caption promised 'No. 4 is Monday at 5 pm' (no topic named). 3 slides. publish_at uses -05:00 (EST from Nov 1). Builder: studio/editorial/oct28_littlefold_feed.py. Caption promises No. 5 for Wed Nov 4 at 5 pm: nobody has built it yet. Measuring method left out on purpose (NHS says armpit, AAP prefers rectal under 3 months). GATE FIXES (Oct 28): slide 3 now shows a dressed, smiling baby with 'keep it on ✓' (no empty onesie on a hanger); thermometers read 38.0°C."
+ }
+]

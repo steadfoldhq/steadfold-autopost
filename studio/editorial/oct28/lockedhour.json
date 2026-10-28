@@ -1,0 +1,91 @@
+[
+ {
+  "id": "lh-reel-1029am-ready-to-resume",
+  "account": "lockedhour",
+  "publish_at": "2026-10-29T08:30:00-04:00",
+  "video": "studio-oct28/lockedhour/lh-reel-1029am-ready-to-resume.mp4",
+  "cover": "studio-oct28/lockedhour/lh-reel-1029am-ready-to-resume-cover.jpg",
+  "caption": "Switching tasks? Your mind stays behind. Before you switch, write one line: where you stopped and what's next.\n\nWHY: when you leave a task in the middle, part of your mind stays on it. That leftover thinking takes attention away from whatever you switched to. A quick note tells your brain the task is parked, so it can let go for now.\n\nHOW:\n1. Someone interrupts, or you have to jump to something else.\n2. Take about a minute. On a sticky note or the top of the doc, write where you stopped and your very next step (\"stopped: slide 4. next: fix the chart\").\n3. Leave the note where you'll see it when you come back. Then switch.\n\nTHE RESEARCH: in a lab study, people pulled off an unfinished task under time pressure kept thinking about it during the next task, and did worse on it. In two lab studies, people who wrote a quick plan for coming back first did better on the task they switched to: they recalled more and made better choices.\n\nTHE CATCH: it was tested on the task you switch TO, not on how well you finish the first one later. And it takes the minute before you switch, which is the minute you'll feel like skipping.\n\nDo this: Before you switch, write your next step.\n\nSend this to the coworker who's always \"just got a quick question.\"\nFollow for one small focus trick a day.\n\n#focus #deepwork #productivity #worksmarter #attention",
+  "first_comment": "Sources (checked Oct 28 2026):\n1) Leroy, S. & Glomb, T. M. (2018). Tasks interrupted: How anticipating time pressure on resumption of an interrupted task causes attention residue and low performance on interrupting tasks and how a \"ready-to-resume\" plan mitigates the effects. Organization Science, 29(3), 380–397. doi:10.1287/orsc.2017.1184. Four studies (a field study of 202 working professionals and three lab studies; the plan studies had 66 and 44 students). Interrupted work under time pressure left attention residue and lowered performance on the interrupting task; a brief ready-to-resume plan reduced the residue and protected performance. Checked on the RePEc/EconPapers record (abstract) and the University of Washington news release, Jan 16 2018 (\"Task interrupted? A plan for returning helps you move on\"), which quotes Leroy: plan users \"make better decisions, and recall more information\" and says the plan can take about a minute.\nLimits: lab tasks with students; the effect on finishing the original task was not tested (the authors call it future research).",
+  "alt_text": "Locked Hour zine-style illustrated video on a butter-yellow dot grid. Opening line: 'Switching tasks? Your mind stays behind.' A drawn person with yellow hair has a thought cloud labelled 'the report, half done' with a half-filled progress bar ('still on it…'). A coworker with pink hair asks 'Got a minute?'. A yellow sticky note rises between them and a pink pen writes 'stopped: slide 4 / next: fix the chart'; the thought cloud shrinks into the note. 'So before you switch, write where you stopped and what's next.' The person answers 'Sure, go ahead.'; the note is labelled 'parked for later'. Research beat: 'People who wrote a note before switching remembered more and made better choices on the next task. Leroy & Glomb 2018 · Organization Science', with two figures: 'no note' (thought cloud still full) and 'wrote a note' (tick). 'Do this: Before you switch, write your next step.' The same note is written large and stuck on a laptop. Ends on the opening line, 'Follow for one small focus trick a day.' and the Locked Hour stamp.",
+  "beats": [
+   "Switching tasks? Your mind stays behind. | the report, half done (thought cloud) | still on it… | Got a minute? (said by a drawn coworker) | stopped: slide 4 / next: fix the chart (written on a sticky note)",
+   "so before you switch, | Write where you stopped and what's next. | Got a minute? | Sure, go ahead. | parked for later | stopped: slide 4 / next: fix the chart",
+   "people who wrote a note before switching | remembered more | and made better choices on the next task. | Leroy & Glomb 2018 · Organization Science | no note | wrote a note",
+   "Do this: | Before you switch, write your next step. | stopped: slide 4 / next: fix the chart (written, then stuck on the laptop)",
+   "Switching tasks? Your mind stays behind. | Follow for one small focus trick a day. | LOCKED HOUR · ONE HOUR AT A TIME (stamp) | parked for later | stopped: slide 4 / next: fix the chart"
+  ],
+  "hook_options": [
+   "Switching tasks? Your mind stays behind.",
+   "Your half-done task follows you.",
+   "Interrupted? Write one line first."
+  ],
+  "duration_s": 14.0,
+  "style": "Body: LH zine drawn illustrated scene (head-start shape: counter-intuitive claim + one drawn action by 1.9 s). Cover: style 1 Look B big-headline (loud) in the LH zine look: Inter Display 900 hook with pink pill, Caveat Brush save-line + arrow, the Reel's drawn face/cloud/note, round stamp. Neighbours: Wed 7 pm grey-phone (quiet) before, Thu 7 pm picture-win calm text (quiet) after.",
+  "send_test": false,
+  "sources": [
+   "Leroy & Glomb 2018, Organization Science 29(3):380-397, doi:10.1287/orsc.2017.1184 (EconPapers record + UW News release Jan 16 2018)"
+  ],
+  "notes": "Rev 2 after the CD gate: picker hook on frame 0, loop and cover; one consistent note ('stopped: slide 4 / next: fix the chart') throughout; research beat cut to a one-line headline ('remembered more') + one-line sub, figures bigger, labels 60 px; nothing clips the edges; 'Got a minute?' now comes from a drawn coworker; no text below y 1560 or above 300. Music lh-x-tick-boom (existing v4 track), -13.8 LUFS; library SFX. 2.3 MB, 1080x1920 30 fps H.264 + AAC. Action (note written, cloud shrinks into it) 1.0-2.15 s; payoff line at 2.2 s. No trial. Cover: Look B (style 1) 3 tiles after close-your-eyes' Look B cover, not adjacent."
+ },
+ {
+  "id": "lh-reel-1031-bedtime-list",
+  "account": "lockedhour",
+  "publish_at": "2026-10-31T19:00:00-04:00",
+  "video": "studio-oct28/lockedhour/lh-reel-1031-bedtime-list.mp4",
+  "cover": "studio-oct28/lockedhour/lh-reel-1031-bedtime-list-cover.jpg",
+  "caption": "A to-do list helps you sleep. Lying awake running through tomorrow? Write it down before bed.\n\nWHY: unfinished tasks keep circling at bedtime because your brain is trying not to forget them. Once they're on paper, there's less to hold on to, so it's easier to switch off.\n\nHOW:\n1. Keep a notepad and pen by the bed.\n2. Before lights out, take 5 minutes and write every task you need to do tomorrow and the next few days.\n3. Be specific: not \"work stuff\" but \"email Sam the budget by 10\".\n4. Close the notepad. Lights out.\n\nTHE RESEARCH: 57 healthy young adults spent a night in a sleep lab, with their sleep measured by brain-wave recording. Before bed, half wrote a to-do list for the next few days and half wrote about tasks they'd already finished. The to-do group fell asleep faster: about 15 minutes on average, against about 25. The more specific the to-do list, the faster they fell asleep.\n\nTHE CATCH: it's one small lab study of young people without sleep problems, and it compared two kinds of writing (there was no group that wrote nothing). It isn't a treatment for insomnia.\n\nDo this: Write tomorrow's list. Be specific.\n\nSend this to whoever plans tomorrow at 1 am.\nFollow for one small focus trick a day.\n\n#sleep #focus #habits #todolist #productivity",
+  "first_comment": "Sources (checked Oct 28 2026):\n1) Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146. doi:10.1037/xge0000374. 57 healthy adults aged 18–30, overnight polysomnography; 5 minutes of writing before bed. To-do list writers fell asleep significantly faster than completed-activity writers; more specific to-do lists went with faster sleep onset (the reverse for completed lists). Checked on the Emory open-access record (abstract, volume/issue/pages) and the Baylor University news release (Jan 11 2018).\n2) Group averages (about 15 vs about 25 minutes) as reported by the BPS Research Digest summary of the paper; the Learning & the Brain blog summary reports the same ~10-minute gap.\nLimits: one lab study, healthy young adults, no no-writing control group; the authors say results may not generalise to insomnia.",
+  "alt_text": "Locked Hour zine-style illustrated video. Opening line on a butter-yellow dot grid: 'A to-do list helps you sleep.' A drawn person with pink hair lies awake in bed under a pink blanket, a lamp on, with a thought cloud of tasks circling ('email Sam', '9 am call', 'buy milk'; 'can't stop thinking about tomorrow'). A notepad lifts from the bedside table, a pink pen writes, and each task flies out of the cloud onto the notepad. The cloud pops, the lamp clicks off and the eyes close with rising z's. Background turns soft pink: 'Lying awake planning tomorrow? Put tomorrow on paper. Sleep comes sooner.' and 'on paper, not in your head'. Research beat: 'People who wrote a to-do list fell asleep about 10 minutes faster vs. people who listed what they'd done. Scullin et al. 2018 · J Exp Psych', with two large bars under 'minutes to fall asleep': 'Wrote a to-do list' about 15, 'Listed what they'd done' about 25. 'Do this, before bed: Write tomorrow's list. Be specific. 5 minutes, every task you need to do.' On a notepad, 'work stuff' is crossed out ('too vague') and 'email Sam the budget', 'call the dentist at 9', 'buy milk on the way home' are written and ticked. End card on soft pink: the opening line, 'Follow for one small focus trick a day.', a crescent moon, the finished specific list with ticks, 'goodnight.' and the Locked Hour stamp.",
+  "beats": [
+   "A to-do list helps you sleep. | can't stop thinking about tomorrow | email Sam | 9 am call | buy milk (chips fly onto the notepad and are written: email Sam / 9 am call / buy milk)",
+   "lying awake planning tomorrow? | Put tomorrow on paper. Sleep comes sooner. | on paper, not in your head | z z z | email Sam / 9 am call / buy milk (small notepad on the table)",
+   "the research | People who wrote a to-do list fell asleep about 10 minutes faster | vs. people who listed what they'd done. | Scullin et al. 2018 · J Exp Psych | minutes to fall asleep | Wrote a to-do list | about 15 | Listed what they'd done | about 25",
+   "Do this, before bed: | Write tomorrow's list. Be specific. | 5 minutes, every task you need to do. | too vague | work stuff (struck) | email Sam the budget | call the dentist at 9 | buy milk on the way home",
+   "A to-do list helps you sleep. | Follow for one small focus trick a day. | LOCKED HOUR · ONE HOUR AT A TIME (stamp) | work stuff (struck) | email Sam the budget | call the dentist at 9 | buy milk on the way home | goodnight. | z z z (moon)"
+  ],
+  "hook_options": [
+   "A to-do list helps you sleep.",
+   "Lying awake planning tomorrow? Write it down.",
+   "Park tomorrow on paper, then sleep."
+  ],
+  "duration_s": 14.2,
+  "style": "Body: LH zine drawn illustrated scene (claim + the action drawn by 2.0 s). Cover: style 13 sticky-note list (quiet): lined note card, red margin, tape, Caveat Brush title 'A to-do list helps you sleep.', three ticked Caveat items, the Reel's drawn lamp, stamp, on the LH pink dot grid. Neighbours: Fri 7 pm fewer-temptations reframe (style 7, quiet) before, Mon 5 pm One Word No. 5 (series, loud) after.",
+  "send_test": false,
+  "sources": [
+   "Scullin et al. 2018, J Exp Psychol: General 147(1):139-146, doi:10.1037/xge0000374 (Emory open-access record; Baylor news release)",
+   "BPS Research Digest summary (about 15 vs about 25 minutes)"
+  ],
+  "notes": "Rev 2 after the CD gate: citation pill shortened to 'Scullin et al. 2018 · J Exp Psych' (full citation in first_comment); chart labels 54-64 px, bars enlarged; 'tomorrow, on repeat' -> 'can't stop thinking about tomorrow'; comparison simplified to 'vs. people who listed what they'd done' and bar labels 'Wrote a to-do list' / 'Listed what they'd done'; distinct from Thursday's Reel: pink-haired sleeper and a different end card (moon + finished list + 'goodnight.'). Music lh-x-phone-down (existing v4 track), -14.2 LUFS; library SFX. 2.3 MB. No trial. Rotation flag kept: quiet cover after the quiet temptations reframe (no three-in-a-row)."
+ },
+ {
+  "id": "lh-oneword-05",
+  "account": "lockedhour",
+  "publish_at": "2026-11-02T17:00:00-05:00",
+  "images": [
+   "studio-oct28/lockedhour/lh-oneword-05/01.jpg",
+   "studio-oct28/lockedhour/lh-oneword-05/02.jpg",
+   "studio-oct28/lockedhour/lh-oneword-05/03.jpg"
+  ],
+  "caption": "Blank page? Stand up. Today's word: Walk.\n\nOne Word No. 5. Each episode is one word that guards your focus.\n\nWHY: walking seems to loosen up the flow of ideas. You don't need a nice view: in the study, a treadmill facing a blank wall worked.\n\nTHE RESEARCH: in four experiments with 176 people, mostly students, people came up with more new uses for everyday objects while walking than while sitting. In one experiment, 81% of people had more ideas walking. The boost carried over a bit when they sat back down after a walk.\n\nHOW:\n1. When you need ideas (a gift, a title, a way round a problem), stand up.\n2. Walk: a hallway, around the room, around the block.\n3. Say every idea out loud into a voice memo. Don't judge them yet.\n4. Sit down and pick the best ones.\n\nTHE CATCH: it helps brainstorming, where you want many ideas. On problems with one right answer, walkers did slightly worse than sitters, so do that part sitting down.\n\nDo this: Stuck for ideas? Get up and walk, even around the room. Say every idea into a voice memo.\n\nSend this to whoever has been staring at a blank page all afternoon.\n\nOne Word No. 6 is Wednesday at 5 pm.\n\nFollow for one small focus trick a day.\n\n#creativity #focus #brainstorming #deepwork #oneword",
+  "first_comment": "Source (checked Oct 28 2026 on the paper's first page and the APA press release, Apr 24 2014):\nOppezzo, M. & Schwartz, D. L. (2014). Give your ideas some legs: The positive effect of walking on creative thinking. Journal of Experimental Psychology: Learning, Memory, and Cognition, 40(4), 1142–1152. doi:10.1037/a0036577. Four experiments, 176 people (mostly college students). Abstract: walking increased 81% of participants' creativity on the Guilford alternative-uses test (Experiment 1); walking indoors on a treadmill facing a blank wall worked; a residual benefit remained when people sat down after walking; on a convergent (single-answer) task, walkers fell slightly behind sitters.",
+  "alt_text": "Locked Hour 3-slide carousel. Slide 1 on pink: black label 'One Word · No. 5', 'Blank page? Stand up.' and the huge word 'Walk.' over a pink highlighter stripe, with drawn yellow and pink footprints walking up the page and the note 'even indoors, even facing a wall'. Slide 2 on cream: '81% of people had more ideas walking.' A 10 by 10 grid of dots, 81 filled pink. 'Same idea task, done sitting, then walking on a treadmill facing a blank wall.' 'in one experiment: pink = more ideas walking'. Slide 3 on butter: 'More new ideas.' 'In 4 experiments, people thought up more new ideas walking than sitting. It still helped a bit after they sat back down.' Do this: 'Stuck for ideas? Get up and walk, even around the room. Say every idea into a voice memo.' Note: 'for brainstorming, not for one-right-answer problems'. Source Oppezzo & Schwartz 2014.",
+  "beats": [
+   "ONE WORD · No. 5 | Blank page? Stand up. | Walk. | even indoors, even facing a wall | one word that guards your focus | @lockedhourhq | ONE WORD · No. 5",
+   "81% of people had more ideas walking. | (100 dots, 81 pink) | Same idea task, done sitting, then walking on a treadmill facing a blank wall. | in one experiment: pink = more ideas walking | @lockedhourhq | ONE WORD · No. 5",
+   "More new ideas. | In 4 experiments, people thought up more new ideas walking than sitting. It still helped a bit after they sat back down. | Do this: Stuck for ideas? Get up and walk, even around the room. Say every idea into a voice memo. | for brainstorming, not for one-right-answer problems | Oppezzo & Schwartz 2014, Journal of Experimental Psychology: Learning, Memory, and Cognition (4 experiments, 176 people) | @lockedhourhq | ONE WORD · No. 5"
+  ],
+  "hook_options": [
+   "Blank page? Stand up.",
+   "Stuck for ideas again?",
+   "Your best ideas are a walk away."
+  ],
+  "duration_s": null,
+  "style": "One Word series layout (same as lh-oneword-04: black label, serif hook with pill, huge riso word over pink stripe, one object, Caveat line, mono footer; 3 slides pink/cream/dots).",
+  "send_test": false,
+  "sources": [
+   "Oppezzo & Schwartz 2014, JEP:LMC 40(4):1142-1152, doi:10.1037/a0036577 (paper first page via gwern.net mirror; APA press release Apr 2014)"
+  ],
+  "notes": "Object: drawn zine footprints instead of a halftone cut-out; the library's 'shoe' halftone is Littlefold's baby shoe (wrong page), so it was not used. Mon Nov 2 is after the DST change (Nov 1), so the offset is -05:00. The 'One Word No. 6 is Wednesday at 5 pm' line assumes the Mon/Wed/Fri series slot continues; nothing is queued for it yet. Slide 2's 81% is Experiment 1 only (labelled 'in one experiment'). Cover hook swapped to the picker's 'Blank page? Stand up.' (text swap only; CD SHIP)."
+ }
+]

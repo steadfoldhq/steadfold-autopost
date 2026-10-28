@@ -1,0 +1,95 @@
+[
+ {
+  "id": "ff-reel-1029am-refund-deadline",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-29T08:15:00-04:00",
+  "video": "studio-oct28/fullyfunded/ff-reel-1029am-refund-deadline.mp4",
+  "cover": "studio-oct28/fullyfunded/ff-reel-1029am-refund-deadline-cover.jpg",
+  "caption": "Never filed your 2023 taxes? In the US, if tax came out of your pay, you usually have until April 15, 2027 to claim that refund. After that, the government keeps it.\n\nWHY: the IRS gives most people 3 years to file a return and claim a refund. A 2023 return was due April 15, 2024, so the window closes April 15, 2027. In March 2026, a few weeks before the 2022 deadline (April 15, 2026), the IRS said over 1.3 million people still hadn't claimed their 2022 refunds, and half of those refunds were bigger than $686. The 2023 deadline is a year later, so there's still time.\n\nHOW (one evening):\n1. Get your 2023 W-2s and 1099s. Lost them? Ask your employer, or use Get Transcript Online on IRS.gov for a free wage and income transcript.\n2. Get the 2023 forms from IRS.gov (Forms & Instructions, prior years).\n3. File your 2023 return before April 15, 2027.\n\nTHE CATCH: the IRS may hold the refund if you have other years you haven't filed, and it can use it to pay taxes you owe, past-due child support or federal debts like student loans. Some disaster areas get extra time.\n\nWHO THIS IS FOR: people in the US who had federal tax taken from their 2023 pay (or may qualify for the Earned Income Tax Credit) and never filed for 2023.\n\nDo this: file your 2023 return before April 15, 2027.\n\nSend this to a friend in the US who skipped filing in 2023.\n\nEducation only, not tax advice.\n\nFollow for one money rule a day, in plain words.\n\n#taxrefund #IRS #taxes #moneytips #personalfinance",
+  "first_comment": "Sources (checked Oct 28, 2026):\n• IRS news release IR-2026-37 (Mar 20, 2026), 'Time is running out to claim $1.2 billion in refunds for tax year 2022' (irs.gov/newsroom): 'taxpayers usually have three years to file and claim their tax refunds. If they do not file within three years, the money becomes the property of the U.S. Treasury'; 'over 1.3 million people' have unclaimed 2022 refunds; 'median refund amount is $686'; funds 'may be held if they have not filed tax returns for 2023 and 2024'; refunds applied to amounts owed, child support or federal debts like student loans; Get Transcript Online; prior-year forms on IRS.gov.\n• IRS, 'Time you can claim a credit or refund' (irs.gov/filing/time-you-can-claim-a-credit-or-refund, reviewed Jun 27, 2026): 3 years from filing / 2 years from payment; a return filed early is treated as filed on the due date; exceptions for disasters and combat zones.\n• The maths: the 2022 window ended April 15, 2026 (IRS); the same rule puts the 2023 deadline at April 15, 2027 (2023 return due April 15, 2024, plus 3 years).",
+  "alt_text": "Fully Funded Reel on pale blue dot paper. A blue pill says US · IRS TAX REFUNDS. Headline: 'Never filed your 2023 taxes?' over a drawn green refund cheque, '2023 TAX REFUND', a coral tag 'BY APR 15, 2027', PAY TO: YOU. YOU is struck through in coral and fades, and a coral stamp 'U.S. TREASURY' lands below it; then: 'Miss April 15, 2027, and the government keeps it.' Next: 'Owed a refund? You get 3 years to claim it.' A blue bar YEAR 1, YEAR 2, YEAR 3 from APR 15, 2024 to APR 15, 2027, with a coral marker TODAY near the end. Last: 'do this: File your 2023 return by April 15, 2027.' A card: 'Get your free 2023 wage transcript at IRS.gov, then file.' Handwritten: Follow for one money rule a day, in plain words.",
+  "beats": [
+   "US · IRS TAX REFUNDS | Never filed your 2023 taxes? | 2023 TAX REFUND | BY APR 15, 2027 | PAY TO: YOU | (YOU struck through and faded at 0.7–0.85 s) | U.S. TREASURY (stamp below it, 1.0 s) | Miss April 15, 2027, and the government keeps it. (1.4 s)",
+   "Owed a refund? You get 3 years to claim it. | APR 15, 2024 | APR 15, 2027 | YEAR 1 | YEAR 2 | YEAR 3 | TODAY",
+   "do this: | File your 2023 return by April 15, 2027. | Get your free 2023 wage transcript at IRS.gov, then file. | Follow for one money rule a day, in plain words.",
+   "(loop, hard cut) the frame-0 layout",
+   "cover only (compare tile): US · UNFILED 2023 TAXES | Your refund has a last day. | UNTIL APRIL 15, 2027 PAY TO: YOU | AFTER APRIL 15, 2027 PAY TO: U.S. TREASURY | never filed? you can still file"
+  ],
+  "hook_options": [
+   "Never filed your 2023 taxes?",
+   "Your 2023 refund has a last day.",
+   "Skipped taxes in 2023? Claim it by April 15, 2027."
+  ],
+  "duration_s": 12.91,
+  "style": "Reel body: illustrated 'trap drawn happening' scene (drawn refund cheque: PAY TO: YOU struck and re-stamped U.S. TREASURY by 1.0 s; 3-year bar drawn to scale), kinetic serif cut with the FF motion kit. Dedicated COVER: original simple template 'compare' (style 8, quiet): two cheque stubs, before / after April 15, 2027, on pale-blue dot paper.",
+  "send_test": false,
+  "sources": [
+   "https://www.irs.gov/newsroom/time-is-running-out-to-claim-1-point-2-billion-in-refunds-for-tax-year-2022-taxpayers-face-april-15-deadline",
+   "https://www.irs.gov/filing/time-you-can-claim-a-credit-or-refund"
+  ],
+  "notes": "GATE r3 (Oct 28): beat 2 -> 'Owed a refund? You get 3 years to claim it.'; do-this card -> 'Get your free 2023 wage transcript at IRS.gov, then file.' Re-rendered 12.91 s, 4.8 MB, strip checked. GATE r2 (Oct 28): the IRS 2022 stat is off the screen (it's in the caption with its date, so nobody thinks their own deadline passed); 'and it's theirs' -> 'and the government keeps it'; the IRS.gov noun-stack is now a sentence step; the cobalt proof beat is cut (3 beats + loop, max 4 text elements per beat); 'US' is on frame 0. CD fixes: pills no longer clip descenders (new .HL line-height 1.24 + pill padding in this script's CSS; the kit's words() scale-in replaced by line-by-line lifts); YOU is struck with a thick coral line and faded, the stamp moved below it so nothing peeks out; the small mono labels on the cobalt beat are gone with the beat; the date tag is widened so 'BY APR 15, 2027' is not clipped. No trial flag. Trap with a date in frame 0 (2023 + APR 15, 2027 on the cheque; payee -> U.S. TREASURY by 1.0 s; plain consequence line at 1.4 s); payoff '3 years to claim it back' complete ~3.5 s. April 15, 2027 is maths from the IRS rule (labelled in the first comment). Grid: between Wed 7 pm FHSA (follow-the-line, quiet) and Thu 7 pm FSA (kinetic, loud); this cover is a quiet compare tile with no calendar. Music: ff-x-level-up (v4), -13.9 LUFS / -2.1 dBTP. 1080x1920 30 fps H.264/AAC, 4.8 MB, 12.910 s (ffprobe). Reviewed: QA frames, a 2 fps strip of the final MP4 and the cover. Doubts: the 'refund held if 2024 and 2025 returns unfiled' line in the caption is the IRS's 2022 rule moved forward one year (the release says 2023 and 2024 for 2022 refunds). The audience is narrow (US, didn't file 2023). Built by studio/editorial/oct28_fullyfunded.py."
+ },
+ {
+  "id": "ff-reel-1031-cosign",
+  "account": "fullyfunded",
+  "publish_at": "2026-10-31T19:00:00-04:00",
+  "video": "studio-oct28/fullyfunded/ff-reel-1031-cosign.mp4",
+  "cover": "studio-oct28/fullyfunded/ff-reel-1031-cosign-cover.jpg",
+  "caption": "Co-sign, and you can owe all of it. In Canada and the US, if the borrower stops paying, the lender can ask you for the unpaid balance.\n\nWHY: co-signing isn't a reference. You sign the loan too, so the lender can ask you for the unpaid balance. In the US, the FTC says you may have to pay up to the full amount, plus late fees or collection costs, and the lender can come to you without first trying to collect from the borrower. Their missed payments can also show up on your credit report.\n\nHOW (before you sign):\n1. Ask the full amount, the monthly payment and how long the loan runs.\n2. Check your own budget: could you make that payment alone, for the whole loan?\n3. If not, say no, or offer a smaller amount you can afford to give.\n4. If you do sign, ask the lender to tell you if a payment is missed, and keep copies of everything.\n\nTHE CATCH: you usually can't take your name off later just by asking. Saying no can feel unkind; paying someone else's loan for years is harder.\n\nWHO THIS IS FOR: anyone in Canada or the US asked to co-sign a car loan, a student line of credit, a credit card or a lease.\n\nDo this: only co-sign what you could pay alone.\n\nSend this to whoever was asked to co-sign.\n\nEducation only, not legal or financial advice.\n\nFollow for one money rule a day, in plain words.\n\n#cosigning #credit #moneytips #personalfinance #personalfinancecanada",
+  "first_comment": "Sources (checked Oct 28, 2026):\n• US: FTC, 'Cosigning a Loan FAQs' (consumer.ftc.gov/articles/cosigning-loan-faqs, updated Dec 9, 2025), the Notice to Cosigner: 'You may have to pay up to the full amount of the debt if the borrower does not pay. You may also have to pay late fees or collection costs'; 'The creditor can collect this debt from you without first trying to collect from the borrower'; the default 'may become a part of your credit record.'\n• US: CFPB, 'Should I agree to co-sign someone else's car loan?' (consumerfinance.gov/ask-cfpb/…-en-813/): 'you're legally obligated to repay the loan if the primary borrower is unable to'; 'Any missed payments could also appear on your credit reports.'\n• Canada: FCAC, 'Disclosure of information to joint borrowers' (canada.ca, modified 2025-10-15): 'you become equally responsible for repaying the unpaid balance'; FCAC, 'Student lines of credit' (modified 2025-10-14): a co-signer 'will also be responsible for the debt if you can't pay it back.'\n• Canada: Equifax Canada, 'Establishing credit when you don't have credit history': a co-signer 'agrees to be legally responsible to pay a debt'; missed payments 'can impact both you and your co-signer.'",
+  "alt_text": "Fully Funded Reel on cream dot paper. A blue pill says CANADA · US. Headline: 'Co-sign, and you can owe all of it.' over a large drawn loan agreement: BORROWER signed in blue, CO-SIGNER (YOU) gets signed in coral, then a coral stamp: 'IF THEY STOP, YOU PAY'. Next: 'If they stop paying, you can owe all of it.' A big envelope drops in, 'TO: YOU, THE CO-SIGNER', with a card 'THE FULL BALANCE + LATE FEES'. Then: 'Their missed payments can hurt your credit too.' Two drawn credit reports, THEIR REPORT and YOUR REPORT, each get a coral X; handwritten 'same missed payment, both reports'. Then: 'do this: Only co-sign what you could pay alone.' and a card 'SEND THIS TO WHOEVER was asked to co-sign'. Last: 'Think before you co-sign.' Handwritten: Follow for one money rule a day, in plain words.",
+  "beats": [
+   "CANADA · US | Co-sign, and you can owe all of it. | LOAN AGREEMENT | BORROWER (signed) | CO-SIGNER (YOU) (you sign at 0.3 s) | IF THEY STOP, YOU PAY (stamp at 1.15 s)",
+   "If they stop paying, you can owe all of it. | TO: YOU | THE CO-SIGNER | THE FULL BALANCE + LATE FEES",
+   "Their missed payments can hurt your credit too. | THEIR REPORT | YOUR REPORT | (coral X on both) | same missed payment, both reports",
+   "do this: | Only co-sign what you could pay alone. | SEND THIS TO WHOEVER was asked to co-sign",
+   "Think before you co-sign. | Follow for one money rule a day, in plain words.",
+   "(loop, hard cut) the frame-0 layout",
+   "cover only (reframe under the hook): CANADA · US · CO-SIGNING | Co-sign, and you can owe all of it. | Instead of… “I’m just helping them out.” (struck) | Say… “I could pay all of it.”"
+  ],
+  "hook_options": [
+   "Co-sign, and you can owe all of it.",
+   "Asked to co-sign a loan?",
+   "“Just helping them get approved”? You could pay all of it."
+  ],
+  "duration_s": 14.42,
+  "style": "Reel body: illustrated 'legal stakes drawn happening' scene (large drawn loan agreement, you sign, stamp, a bill addressed to you, two credit reports), cut with the FF motion kit. Dedicated COVER: Ep.01 reframe 'Instead of… Say…' (style 7, quiet) on soft coral, under the picked hook.",
+  "send_test": true,
+  "sources": [
+   "https://consumer.ftc.gov/articles/cosigning-loan-faqs",
+   "https://www.consumerfinance.gov/ask-cfpb/should-i-agree-to-co-sign-someone-elses-car-loan-en-813/",
+   "https://www.canada.ca/en/financial-consumer-agency/services/rights-responsibilities/rights-credit-loans/rights-joint-borrower-disclosure.html",
+   "https://www.canada.ca/en/financial-consumer-agency/services/loans/student-lines-credit.html",
+   "https://www.equifax.ca/personal/education/life-stages/articles/-/learn/establishing-credit-without-credit-history/"
+  ],
+  "notes": "GATE r2 (Oct 28): frame 0 and cover now use the picked hook 'Co-sign, and you can owe all of it.'; payoff says 'can owe'; the cover's 'Say' line is 'I could pay all of it.' (not 'agreeing to pay'); pills no longer clip descenders (.HL line-height 1.24 + pill padding); the word-by-word scale-in (which ran words together, 'Onlyco-signwhat') is replaced by line-by-line lifts with normal spacing; drawn objects about 1.5x (agreement 960x700, envelope 900 wide, reports 460x470) and nothing below y 1530 (bottom 18% clear); final line is 'Think before you co-sign.' No trial flag. Countries on screen (Canada · US). On-screen send beat (send_test true) in the do-this beat, ~3 s; separate follow beat 1.9 s. Grid: after Fri 7 pm late payment (Look B, loud), before Mon 5 pm Rich Habits No. 4 (series, loud); this cover is a quiet reframe. Music: ff-x-money-moves (v4), -13.9 LUFS / -1.4 dBTP. 1080x1920 30 fps H.264/AAC, 5.1 MB, 14.419 s (ffprobe). Reviewed: QA frames, a 2 fps strip of the final MP4 and the cover (fixed a wrapped stamp, a wrapped balance card, an overflowing send card and a cover headline running off the edge). Doubts: 'the lender can collect from you first' is US-only (FTC), caption-only and labelled US. Canada rests on FCAC ('equally responsible for the unpaid balance') and Equifax Canada. Saturday is Halloween; nothing seasonal added. Built by studio/editorial/oct28_fullyfunded.py."
+ },
+ {
+  "id": "ff-richhabits-04",
+  "account": "fullyfunded",
+  "publish_at": "2026-11-02T17:00:00-05:00",
+  "images": [
+   "studio-oct28/fullyfunded/ff-richhabits-04/01.jpg",
+   "studio-oct28/fullyfunded/ff-richhabits-04/02.jpg",
+   "studio-oct28/fullyfunded/ff-richhabits-04/03.jpg"
+  ],
+  "caption": "Rent due before payday? The habit: live one month ahead. Keep one month of bills in the bank, so you pay this month's bills with last month's pay.\n\nRich Habits, Decoded No. 4. Each episode takes one money habit and shows you how to do it on a normal paycheque.\n\nTHE MATHS (made up for this post: bills of $2,000 a month):\n• Set aside $200 a month.\n• $2,000 ÷ $200 = 10 months to get there.\n\nWHY IT WORKS: when the rent is due on the 1st and payday is the 5th, every month starts with a scramble or a card balance. With one month already saved, the bills come out of money you already have, and a late paycheque or a short month stops being an emergency.\n\nHOW (15 minutes):\n1. Add up one month of bills: rent, phone, insurance, groceries, loan payments.\n2. Open a separate account and name it 'Next month'.\n3. Set an automatic transfer for payday. Start with whatever you can, even $50.\n4. When it reaches one month of bills, pay next month's bills from it, and refill it from each paycheque.\n\nTHE CATCH: it takes time, and it isn't an emergency fund (that's extra). If you carry card debt with interest, paying that down usually comes first. Your bills will be different, so use your own.\n\nDo this: add up one month of your bills tonight and open a 'Next month' account.\n\nSend this to a friend whose rent is due before payday.\n\nRich Habits, Decoded No. 5 is Wednesday at 5 pm.\n\nEducation only, not financial advice.\n\nFollow for one money rule a day, in plain words.\n\n#personalfinance #budgeting #moneytips #paycheck #richhabits",
+  "first_comment": "How the numbers work: all amounts are made up for this post and the maths is simple division ($2,000 of bills a month ÷ $200 set aside a month = 10 months). No returns or interest are assumed.",
+  "alt_text": "Fully Funded 3-slide carousel. Slide 1: 'Rich Habits, Decoded · No. 4' badge, 'Rent due before payday?' in a large serif with highlighted words, the handwritten note 'new one every Mon · Wed · Fri' and a drawn calendar strip 'THIS MONTH' with day 1 marked RENT DUE and day 5 marked PAYDAY. Slide 2: 'Keep one month of bills in the bank.' Handwritten: pay this month with last month's pay. A drawn envelope 'LAST MONTH'S PAY' with an arrow to a ticked list 'THIS MONTH'S BILLS'. Slide 3: 'One month ahead, in numbers', made up for this post: Bills a month $2,000. Set aside each month $200. Months to get there: 10. A drawn card with a coral tick and $2,000, and the handwritten line 'next month's $2,000 of bills: already saved'.",
+  "beats": [
+   "Slide 1: RICH HABITS, DECODED · NO. 4 | Rent due before payday? | new one every Mon · Wed · Fri | THIS MONTH | 1 2 3 4 5 6 7 | RENT DUE | PAYDAY",
+   "Slide 2: 2/3 | Keep one month of bills in the bank. | pay this month with last month’s pay | LAST MONTH’S PAY | THIS MONTH’S BILLS",
+   "Slide 3: 3/3 | One month ahead, in numbers | MADE UP FOR THIS POST · USE YOUR OWN BILLS | Bills a month $2,000 | Set aside each month $200 | Months to get there 10 | (drawn card: tick, $2,000) | next month’s $2,000 of bills: already saved"
+  ],
+  "hook_options": [
+   "Rent due before payday?",
+   "Pay this month with last month's pay.",
+   "Live one month ahead."
+  ],
+  "duration_s": null,
+  "style": "Series cover (Rich Habits, Decoded: pills + drawn object + series badge + handwritten series line + stamp), same layout as No. 1-3 (built on oct25_fullyfunded_feed.py).",
+  "send_test": false,
+  "sources": [],
+  "notes": "GATE r2 (Oct 28): cover calendar header 'NEXT MONTH' -> 'THIS MONTH'; slide 3 retitled 'One month ahead, in numbers'; the tiny labelled account card is now a bigger wordless card (tick + $2,000, 60 px figure) and the words are a sentence in the handwritten line: 'next month's $2,000 of bills: already saved' (placed clear of the stamp). Same layout and slot as No. 3 (Mon 5 pm; No. 3's caption promises 'No. 4 is Monday at 5 pm'). Mon Nov 2 is after the US/Canada DST change (Nov 1), so publish_at is -05:00 (17:00 Toronto). Drawn objects replace the halftone/OK-hand cut-outs: a month strip (rent due on the 1st before payday on the 5th), an envelope-to-bills arrow and a drawn savings card (No. 3's chart and jar not reused). Topic chosen to avoid the old 'Got a raise? Save $100 a month' post and the Oct 27 'hours not dollars' post. No returns, so no 'Not guaranteed' line. Reviewed all 3 rendered slides; fixed an oversized 3-line cover headline that touched the series line, a row label and the account-card label overflowing into the handwritten line. Built by studio/editorial/oct28_fullyfunded_feed.py."
+ }
+]

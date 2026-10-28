@@ -1,0 +1,30 @@
+Hourback real run, Oct 28 2026 (studio maker, Hourback)
+Used in: hb-reel-1031-closet-costume (Sat Oct 31, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-10-28T13:39:28Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+Halloween party in an hour and I have no costume. Here's what I own: a white bedsheet, a black turtleneck, black jeans, a denim jacket, a red bandana, sunglasses, a striped T-shirt, a beanie, some cardboard and a black marker. Give me 3 costume ideas I can make from just these things, and what to wear for each. Keep it short.
+
+===== REPLY (verbatim) =====
+Here are three quick costumes:
+
+**1. Classic Ghost**
+- Bedsheet over your head. Cut or draw eye holes, then outline them in marker.
+- Wear the black jeans underneath so your legs disappear into the dark.
+- Add the sunglasses over the eye holes if you want a "cool ghost."
+
+**2. Steve Jobs**
+- Black turtleneck, jeans (the black ones work), and sunglasses or no glasses.
+- Make a cardboard "iPhone" or a sign that says *"One more thing…"* with the marker.
+
+**3. Cartoon Burglar / Robber**
+- Striped T-shirt, black jeans and the beanie.
+- Red bandana over your lower face, plus sunglasses.
+- Draw a "$" on a cardboard sack shape or sign, or write "SWAG" on a cardboard loot bag.
+
+*Bonus if you swap pieces:* denim jacket, red bandana around your neck, sunglasses and jeans make a quick 80s rocker or cowboy.
+
+Have fun! 🎃
