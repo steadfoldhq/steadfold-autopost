@@ -1,5 +1,153 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Wed Oct 28, 2026, Performance desk)
+Data: insights/latest.json, collected **Oct 28 04:47 UTC (12:47 am ET)**. Per-post curves rebuilt from the **14** reads in this clone (Oct 24 20:29 → Oct 28 04:47 UTC; the clone is shallow, which is enough for the 72 h window). Reel lengths from ffprobe on each entry's MP4. Next read ~12:40 UTC (8:40 am ET).
+- **Verdict rules (unchanged):** EXPANDED = reach still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED = flat after 24 h. FAILED HOOK = average watch under 4 s or under 25% of length. PENDING = under 24 h.
+- **Non-follower share** is a floor: (reach − current followers) / reach. follow_type still not read; per-post `follows` still HTTP 400.
+- **No new burst in the last 4 reads** (Oct 27 12:46 → Oct 28 04:47 UTC). Sends and saves below have the 3 known windows removed (Oct 26 04:38 all pages; Oct 26 14:50 FF/HB/LF; Oct 27 04:37 LF only).
+- **Comments per reach = 0 everywhere.** 161 comments counted; all are our own first comments, except possibly 1 on LH "Rereading the same line again?" (2 counted). 0 texts returned (day 14).
+- **⚠ Hourback "Returning something? Paste the store's return policy…" (Tue 8:45 am) has 0 views and 0 reach at 16 h.** It published on time with no error, and the MP4 is a normal 12.6 s 1080×1920 file. Every other Reel in the window has ≥7 reach. Instagram is not delivering it (see ACTION / order 1).
+
+All 26 Reels in the window run 12.6–15.0 s, so length is no longer a variable. The open and the visual format are.
+
+| Page | Post (first line) | Format | Age | Reach curve (age → reach) | Non-follower ≥ | Sends/reach (clean) | Saves/reach (clean) | Avg watch / length | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| LF | **"Gulping, then fussing, every feed? Pause and burp partway through"** | Reel 14.5 s (trial) | 39 h | 1h 78 → 7h 307 → 15h 365 → 23h 426 → 27h **550** → 39h 553 | 99% | 0.002 (1) + 37 in the burst window | 0.002 (1) | **8.38 s / 58%** | **EXPANDED (first ever, by rule).** +127 (+30%) after 23 h, and it's 1 of only 3 Reels with any clean send. Weak on sends: flat since 27 h |
+| LF | "It's OK to step away. Still crying…" | Reel 14.2 s | 54 h | 5h 148 → 29h 154 → 54h 155 | 96% | 0.00 | 0.01 | 2.7 s / 19% | FAILED HOOK + STALLED |
+| LF | **"Bath water too hot? Dip your elbow in…"** | Reel 14.5 s (trial) | 17 h | 5h 136 → 9h 137 → 17h 139 | 96% | 0.00 | 0.00 | **6.96 s / 48%** | PENDING. Batch came in by 5 h. **2nd-best hold on a batch ≥100, ever** |
+| LF | "You can't spoil a newborn. Pick them up." | Reel 14.0 s (trial) | 64 h | 16h 110 → 64h 115 | 95% | 0.00 | 0.00 | 5.02 s / 36% | STALLED (hold bars passed) |
+| FF | "Put TFSA money back too soon? …next January 1." | Reel 15.0 s | 54 h | 5h 106 → 29h 114 → 54h 114 | 94% | 0.00 | 0.01 | 4.87 s / 33% | FAILED HOOK (by 0.1 s) + STALLED |
+| LH | "For whoever studies on their phone: you understand more on paper." | Reel 13.6 s (send test) | 30 h | 5h 106 → 30h 110 | 96% | **0.009 (1)** | 0.00 | 3.87 s / 28% | FAILED HOOK (by s) + STALLED |
+| LF | "New dad, feeling left out?…" | Reel 14.2 s | 78 h | 5h 102 → 78h 109 | 94% | 0.00 | 0.00 | 2.46 s / 17% | FAILED HOOK + STALLED |
+| LH | "Studying with your playlist on? Check the words." | Reel 13.2 s | 77 h | 5h 105 → 77h 108 | 96% | 0.009 (1) | 0.00 | 4.59 s / 35% | STALLED |
+| FF | "Not married? No will? In Ontario…" | Reel 14.8 s (trial) | 64 h | 16h 31 → 32h 107 → 64h 107 | 93% | 0.00 | 0.00 | 1.78 s / 12% | FAILED HOOK + STALLED (late batch at 16–26 h) |
+| LH | "Everything takes longer than you think?…" | Reel 12.9 s (trial) | 64 h | 3h 101 → 27h 105 → 64h 107 | 96% | 0.00 | 0.01 | 3.77 s / 29% | FAILED HOOK (by s) + STALLED |
+| LF | **"Scratches on their face again? Keep those tiny nails short"** | Reel 14.9 s | 30 h | 5h 105 → 30h 107 | 94% | 0.00 (10 in the burst window) | 0.02 | **7.59 s / 51%** | STALLED (hold bars passed easily) |
+| LF | "Swaddling? Leave room for the hips…" | Reel 14.2 s | 6 h | 6h **105** | 94% | 0.00 | 0.01 | 4.89 s / 35% | PENDING. Misses 5 s by 0.11 s |
+| HB | "Open fridge, no plan? You already have dinner." | Reel 14.0 s | 78 h | 5h 101 → 78h 103 | 95% | 0.00 | 0.00 | 1.23 s / 9% | FAILED HOOK + STALLED |
+| LH | "Exam next week? Stop rereading. Testing yourself works better." | Reel 14.9 s | 6 h | 6h **101** | 96% | 0.00 | 0.00 | 2.76 s / 19% | FAILED HOOK + PENDING |
+| HB | "Stranger in your best photo? Your phone's AI can erase them" | Reel 12.6 s | 30 h | 6h 58 → 14h 99 → 30h 99 | 95% | 0.00 | 0.00 | 3.03 s / 24% | FAILED HOOK + STALLED. HB's 2nd-biggest batch |
+| HB | "Kid's fractions and you forgot how? Ask AI for hints…" | Reel 14.0 s | 6 h | 6h **83** | 94% | 0.00 | 0.00 | 2.03 s / 14% | FAILED HOOK + PENDING |
+| LH | **"A head start makes you finish. Even a fake one."** | Reel 12.6 s (trial) | 16 h | 4h 11 → 8h 20 → 16h **46** | 91% | 0.00 | 0.00 | **5.03 s / 40%** | PENDING, still climbing. **LH's first pass of both hold bars on ≥40** |
+| LH | "\"It'll take an hour.\" It won't." | Reel 13.6 s | 54 h | 5h 27 → 29h 44 → 54h 45 | 91% | 0.00 | 0.02 | 2.77 s / 20% | FAILED HOOK + STALLED |
+| FF | "Your $10,000 earning 0% interest?…" | Reel 14.9 s | 30 h | 5h 16 → 30h 20 | 65% | 0.00 | 0.00 | 2.01 s / 14% | FAILED HOOK + STALLED, no batch |
+| FF | "Your TFSA, after you die?…" | Reel 13.5 s | 78 h | 5h 4 → 21h 15 → 78h 19 | 63% | 0.00 | 0.00 | 1.86 s / 14% | FAILED HOOK + STALLED, no batch |
+| HB | "That sparkle button? It's AI." | Reel 13.0 s (trial) | 64 h | 15h 6 → 64h 10 | 50% | 0.00 | 0.00 | 3.43 s / 26% | FAILED HOOK + STALLED, no batch |
+| FF | "For the friend buying a car: the lower monthly payment can cost thousands" | Reel 14.9 s (send test) | 6 h | 6h **10** | 30% | 0.00 | 0.00 | 1.43 s / 10% | FAILED HOOK + PENDING, no batch |
+| FF | "Paid on time, but still charged interest? Here's why." | Reel 14.2 s (no trial, 41 min late) | 16 h | 4h 3 → 8h 7 → 16h **8** | 13% | 0.00 | 0.00 | 4.68 s / 33% | PENDING, no batch. **Grade ≥40 at 15 h: missed** |
+| FF | "How long until $10K is $20K? Divide 72…" | Reel 14.6 s (trial) | 39 h | 6h 7 → 39h 7 | 0% | 0.00 | 0.00 | 2.56 s / 18% | FAILED HOOK + STALLED, no batch |
+| LH | "Monday plans gone by noon? Write down when and where…" | Reel 14.3 s (trial) | 39 h | 6h 3 → 39h 7 | 0% | 0.00 | 0.00 | 2.02 s / 14% | FAILED HOOK + STALLED, no batch |
+| HB | "Returning something? Paste the store's return policy…" | Reel 12.6 s (no trial) | 16 h | 4h 0 → 16h **0** | n/a | n/a | n/a | 0 views | **NOT DELIVERED** (0 views at 16 h) |
+
+**Feed posts in the window (16: 12 carousels, 4 singles):** all STALLED or PENDING at reach **0–11**, 0 clean sends, 3 clean saves. Best: LF "The crying has a peak" (3 sl) 11, LF vitamin D single 11, LF Small Wins No.2 10. Tue's 3-slide LH "new place" and HB "mechanic questions" have 0 reach at 12 h.
+
+**EXPANDED: 1 of 176 (first ever).** What moved since yesterday:
+1. **LF burp passed the reach rule.** 426 at 23 h → 550 at 27 h (+30%), 553 now, 706 views. It's EXPANDED on 1 clean send; the +37 shares in the Oct 27 burst window (+10 on every other LF post) can't be separated, so about 27 may be real. Treat it as a weak EXPANDED.
+2. **The LF illustrated physical-rule format is now 4 for 4 on ≥30% watch-through on batches ≥105:** burp 58% on 553, nails 51% on 107, bath elbow 48% on 139, swaddle 35% on 105. 3 of the 4 clear 5 s. Every other LF batch ≥100 since Oct 19 held 2.5–6.7 s. n = 4, **medium confidence**.
+3. **The port to HB and LH didn't work.** Tue 7 pm "homework hints" (HB) held 2.0 s on 83 and "write from memory" (LH) 2.8 s on 101; Mon "photo eraser" (HB) 3.0 s on 99. These show the action by ~2 s but on a phone screen or plain scene, not the LF drawn washing-line style. The exception is LH "head start" (counter-intuitive claim + a drawn start line): 5.03 s / 40% on 46 and still climbing.
+4. **Fully Funded is losing the batch, not the hold.** Its last 5 Reels reached 7–20 (cash at 0%, rule of 72, TFSA after death, card interest, car loan). Its trap-with-a-date and legal-stakes Reels reached 107–122. Dropping the trial flag didn't fix it: Tue's non-trial card Reel got 8 at 16 h.
+5. **Send tests: 1 send per 110 (LH print it) and 0 per 10 (FF car loan) so far.** Goal: 1 per 50. LH and HB tests run Wed–Thu; grade on Friday's read.
+
+- **TikTok:** manual (no API; no numbers logged).
+- **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels** and **0 Instagram accounts** connected.
+- **Trial Reels:** 43 measured. Graduation to followers: no data yet (not in the API).
+
+**3 orders**
+1. **REPEAT:** the LF illustrated physical-rule format (felt question → one rule drawn being done by second 2, ≤15 s): 4 for 4 at ≥35% on ≥105, and the first EXPANDED post.
+2. **KILL:** FF abstract-money opens (0% interest, rule of 72, card interest, car payment: 7–20 reach), and reassurance opens on every page (step away 2.7 s on 155, new dad 2.5 s on 109, fridge 1.2 s on 103).
+3. **TEST:** the LF drawn style itself (washing-line illustration, not a phone screen) on 1 HB Reel, and a "send this to ___" end beat on 1 LF physical-rule Reel. Grade: HB ≥5 s and ≥30% on ≥40; LF ≥1 clean send per 50 reach.
+
+## Today's orders (Wed Oct 28, 2026, Performance desk)
+Data: Oct 28 04:47 UTC read, 14 reads of per-post curves. 176 posts tracked (40 per page in the latest read), 22 followers. Direction: medium confidence. No burst in the last 4 reads.
+1. **Social studio: FILL Thursday Oct 29, and check the Hourback 0-view Reel.**
+   - **Thu Oct 29 has no feed post and no morning Reel on any of the 4 pages.** Each page has only 2 Stories (12:30 pm) and the 7 pm Reel. Wed has 2 Reels + 1 feed post per page.
+   - **The queue ends Fri Oct 30, 7 pm.** Nothing is queued for Sat–Sun.
+   - Priority: LF Thu 8 am in the physical-rule format (order 2), then 1 feed post per page (≤5 slides), then the other morning Reels with no trial flag on LH and FF. Rollback record in docs/social-recovery/ as usual.
+   - **HB "Returning something?"** (Tue 8:45 am, permalink /reel/De_6Tu8mNcG/) has 0 views at 16 h. Open it in the app and check for a restriction or a stuck upload before reusing its MP4 or format.
+2. **Short-form studio (Littlefold): MORE physical-rule Reels; make it the default for LF's 8 am slot.**
+   - Burp 8.38 s / 58% on 553 (EXPANDED), nails 7.59 s / 51% on 107, bath 6.96 s / 48% on 139, swaddle 4.89 s / 35% on 105 (6 h).
+   - Run it on 1 LF Reel a day (7 a week), and keep the 7 pm slot for other LF tests. Today's cord stump (8 am) and neck check (7 pm), and Thu tummy-to-play, are already in the format; grade them on Thursday's and Friday's reads.
+   - **TEST a "send this to whoever ___" end beat** on one of them. Sends are the only thing between this format and a clean EXPANDED: 1 clean send across 904 reach on the 4 Reels.
+   - **Grade:** ≥5 s AND ≥30% on ≥100, plus ≥1 clean send per 50 on the send-beat Reel.
+3. **Short-form studio (Hourback): TEST the actual LF drawn style on 1 HB Reel by Fri.**
+   - The "action by second 2" ports on a phone screen held 2.0–3.0 s on 83–101 (homework hints, photo eraser). HB has never held ≥4 s on a batch ≥40.
+   - Draw the moment as an illustrated scene in the HB palette (e.g. the group-chat list being sorted on a drawn page), not a screen recording.
+   - **Grade:** ≥5 s and ≥30% on ≥40.
+4. **Social studio (Locked Hour): REPEAT the "head start" open: a counter-intuitive claim plus a drawn action.**
+   - "A head start makes you finish. Even a fake one." held 5.03 s / 40% on 46 and was still climbing at 16 h (11 → 20 → 46). "Exam next week? Stop rereading" held 2.8 s on 101.
+   - Use the shape on the Thu or Fri LH Reel if it can be rebuilt in time. **Grade:** ≥5 s and ≥30% on ≥40.
+5. **Social studio (Fully Funded): LESS abstract-money opens; MORE trap-with-a-date and legal-stakes opens.**
+   - The last 5 FF Reels (0% interest, rule of 72, TFSA after death, card interest, car payment) reached 7–20. The trap and legal Reels reached 107–122 (wills 122, TFSA trap 114, Ontario wills 107).
+   - Today's FHSA room (7 pm) and Thu FSA expires fit. Check that frame 0 states the trap and the date, not a number.
+   - **Grade:** ≥60 at 15 h.
+6. **Automation architect:**
+   - **Add a "0 views at 6 h" alert** for Reels, so a non-delivered Reel like HB return-by is caught the same day.
+   - Same open asks: per-post history lines (day 13), comment text (day 14), follow_type, the per-post `follows` HTTP 400, and a burst flag (none in the last 4 reads).
+
+**Grading yesterday's orders (owner check):**
+1. **Fill the Wed morning Reels: done.** All 4 pages have a Wed 8–8:45 am Reel. Stories are still 2 a day per page (cadence 3–5).
+2. **LF physical-rule, ≥5 s AND ≥30% on ≥100: passed once, near-miss once.** Bath elbow 6.96 s / 48% on 139. Swaddle 4.89 s / 35% on 105 (6 h, 0.11 s short).
+3. **Drop the trial flag on LH and FF morning Reels: done from Wed.** Tue's LH head start still ran as a trial and got 46 at 15 h (grade ≥40: passed). Tue's FF card Reel ran without a trial and got 8 (missed).
+4. **Burp format on 1 HB + 1 LH Reel, ≥5 s and ≥30% on ≥40: missed.** HB homework hints 2.0 s / 14% on 83; LH write from memory 2.8 s / 19% on 101. Neither used the drawn style (order 3).
+5. **FF trap-with-a-date: pending.** The Wed 7 pm FHSA room is the first; the Tue Reels were card interest and car payment (8 and 10 reach).
+6. **Automation asks: not done.** No new burst landed.
+
+---
+
+## Daily report: Wed Oct 28, 2026
+
+### Scoreboard (insights read Oct 28 04:47 UTC)
+Changes are vs the Oct 27 04:37 UTC read (1 day) and vs Oct 21 04:36 UTC (7 days). Best and worst by clean (saves + sends)/reach are for posts in the 72 h window with reach ≥20; older posts can't be burst-cleaned in this clone.
+
+| Page | Followers (1d / 7d) | Feed posts 7d (slides) | Reels 7d | Median reach (all / Reels / feed) | Best by clean (saves+sends)/reach | Worst | Best by views | Worst by views (>24 h) |
+|---|---|---|---|---|---|---|---|---|
+| Fully Funded | 7 (+0 / −1) | 11 (10, 9, 9, 7, 7, 7, 6, 5, 5, 3 sl; 1 single) | 13 | 8.5 / 19 / 4 | Reel "Put TFSA money back too soon?" 1/114 | Reel "Not married? No will? In Ontario…" 0/107 | Reel "Put TFSA money back too soon?" 137 | Carousel "Paid Friday. Broke by Wednesday?" (3 sl) 5 |
+| Locked Hour | 4 (+0 / −2) | 11 (10, 10, 10, 7, 7, 7, 6, 5, 3, 3, 3 sl) | 12 | 7 / 45.5 / 4 | Reel "\"It'll take an hour.\" It won't." 1/45 · "Everything takes longer" 1/107 | Reel "A head start makes you finish" 0/46 | Reel "Everything takes longer" 134 | Carousel One Word "Batch" (3 sl) 1 |
+| Hourback | 5 (+0 / −2) | 10 (10, 9, 9, 9, 7, 7, 7, 6, 3, 3 sl) | 11 | 5 / 11 / 2.5 | none scored: 0 clean saves or sends on every post ≥20 reach | Reel "Open fridge, no plan?" 0/103 | Reel "Open fridge, no plan?" 109 | Carousel "AI's answer felt generic again?" (3 sl) 3 |
+| Littlefold | 6 (+0 / −1) | 12 (9, 8, 7, 7, 7, 6, 5, 3, 2 sl; 3 singles) | 13 | 55 / 109 / 6 | Reel "baby nails" 2/107 · "swaddle hips" 1/105 | Reel "New dad, feeling left out?" 0/109 | **Reel "burp partway" 706** | Carousel "5 minutes a day that build a brain" 18 |
+
+**Total: 22 followers (+0 since yesterday's read, −6 vs Oct 21).** Flat for 20 reads (since Oct 23 04:35 UTC). Profile views yesterday: LF 10, HB 3, FF 1, LH 1.
+- **Yesterday's posts (Oct 27 ET, 12 posts: 8 Reels, 4 feed):**
+  - Best by clean (saves + sends)/reach: LF "swaddle hips", 1/105.
+  - Best on strangers: **LF "Bath water too hot? Dip your elbow in", 139 reach, 6.96 s / 48%.**
+  - Best by views: the same Reel, 149.
+  - Worst: HB "Returning something?", 0 views (not delivered); the LH and HB 3-slide carousels got 0 reach at 12 h.
+- **Sum of post reach (1 day, 40 newest posts):** FF 1,079 → 1,040 (older posts rolled out of the 40), LH 1,157 → 1,284, HB 652 → 737, LF 2,596 → 2,940.
+
+### Patterns (all pages ≥5 posts)
+- **Reels vs feed (high confidence on direction):** in the last 7 days, Reels median reach 11–109 by page against 2.5–6 for feed posts. Every batch ≥100 in the window is 94–99% non-follower.
+- **Visual format (medium, n=4):** the LF illustrated physical-rule Reels held 35–58% on 105–553. The 21 other delivered Reels in the window held 9–40%, median about 19%.
+- **Open type (medium):**
+  - Rule shown being done (LF): 4.9–8.4 s.
+  - Counter-intuitive claim (LH head start): 5.0 s on 46.
+  - Reassurance (step away, new dad, fridge): 1.2–2.7 s on ≥100.
+  - Abstract money numbers (FF 0% interest, rule of 72, car payment): 1.4–2.6 s, and no batch.
+- **Topic decides the batch on FF (medium):** trap-with-a-date and legal stakes 107–122; interest and fees 7–20, with and without the trial flag.
+- **Trial flag (medium-low):** in the 72 h window, trial vs normal median reach: LF 139 vs 108 (n=3/4), LH 46 vs 104.5 (3/4), FF 57 (107, 7) vs 19 (2/5), HB 10 vs 91 (1/4). Morning slot and topic are confounded with it.
+- **Length:** no longer testable. All 26 Reels in the window run 12.6–15 s.
+- **Sends:** 3 clean sends in 72 h, on 2,387 Reel reach (burp, print it, lyrics).
+
+### Comments
+**No data yet.** 0 real comments with text; comment text has been empty for 14 days. LH "Rereading the same line again?" counts 2 comments (ours + 1 possibly real; text not returned).
+
+### Health
+- **Published vs schedule:** all **376 of 376** entries due by 11:40 UTC Oct 28 are published, with 0 failed, 0 errors and 0 comment errors (last state push Oct 27 23:07 UTC).
+  - **Late in the last 24 h:** FF card Reel 41 min, the 8 Tue Stories 35–36 min, LH head start 26 min, 3 Tue feed posts 18 min. All within one run cycle; the Monday 83–113 min delay didn't repeat.
+  - **Not delivered:** HB "Returning something?" Reel, 0 views at 16 h (order 1).
+- **Next 48 h (to 7:40 am ET Fri Oct 30):** each page has 3 Reels (Wed 8 am, Wed 7 pm, Thu 7 pm), 1 feed post (Wed) and 4 Stories.
+  - **Empty: the Thu Oct 29 feed post and morning Reel on all 4 pages.** Stories run 2 a day per page (cadence 3–5).
+  - All media files exist. **The schedule ends Fri Oct 30, 7 pm.**
+- **Data:** all 14 reads in this clone succeeded, with no token or account errors.
+  - **Still broken:** comment text, follow_type, per-post `follows` (HTTP 400) and per-post history lines.
+
+### For the Automation architect
+See order 6: a 0-views-at-6 h alert, plus the standing asks.
+
+### Media kit
+Updated (claude/media-kit.md).
+
+---
+
 ## TEST-BATCH TABLE (Tue Oct 27, 2026, Performance desk)
 Data: insights/latest.json, collected **Oct 27 04:37 UTC (12:37 am ET)**. Per-post curves rebuilt from **34** reads in git (Oct 19 04:37 → Oct 27 04:37 UTC). Reel lengths from ffprobe on each entry's MP4. Next read ~12:40 UTC (8:40 am ET).
 - **Verdict rules (unchanged):** EXPANDED = reach still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED = flat after 24 h. FAILED HOOK = average watch under 4 s or under 25% of length. PENDING = under 24 h.
