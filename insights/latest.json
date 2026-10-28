@@ -1,13 +1,33 @@
 {
- "collected_at": "2026-10-28T04:47:05+00:00",
+ "collected_at": "2026-10-28T12:55:23+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 48,
+   "media_count": 49,
    "posts": [
+    {
+     "media_id": "18078799388430763",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfCbOBgmk6N/",
+     "at": "2026-10-28T12:24:44+0000",
+     "first_line": "Miss the \"no interest\" end date, and the interest can go back to the day you bought it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 18078799388430763/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18188759509407718",
      "type": "REEL",
@@ -56,13 +76,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 8,
+      "views": 10,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 4676,
-      "ig_reels_video_view_total_time": 32738,
+      "ig_reels_avg_watch_time": 4178,
+      "ig_reels_video_view_total_time": 33429,
       "follow_error": "GET 18115431448858048/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -768,30 +788,10 @@
       "profile_visits": 4
      },
      "comments": []
-    },
-    {
-     "media_id": "18637565494019727",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DemJBtTjUwH/",
-     "at": "2026-10-17T12:46:56+0000",
-     "first_line": "Your employer may add +$1,500 a year that you never claimed.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 59,
-      "reach": 46,
-      "saved": 5,
-      "shares": 0,
-      "total_interactions": 17,
-      "ig_reels_avg_watch_time": 4465,
-      "ig_reels_video_view_total_time": 232219,
-      "follow_error": "GET 18637565494019727/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "lockedhour": {
@@ -849,13 +849,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 60,
-      "reach": 46,
+      "views": 123,
+      "reach": 104,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5029,
-      "ig_reels_video_view_total_time": 251479,
+      "ig_reels_avg_watch_time": 5619,
+      "ig_reels_video_view_total_time": 595688,
       "follow_error": "GET 18571565365078185/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1085,8 +1085,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 1,
       "shares": 3,
       "total_interactions": 10,
@@ -1104,8 +1104,8 @@
      "likes": 3,
      "comments_count": 2,
      "insights": {
-      "views": 37,
-      "reach": 18,
+      "views": 39,
+      "reach": 19,
       "saved": 1,
       "shares": 3,
       "total_interactions": 11,
@@ -1584,7 +1584,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "hourback": {
@@ -1603,13 +1603,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 91,
-      "reach": 83,
+      "views": 96,
+      "reach": 89,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2030,
-      "ig_reels_video_view_total_time": 174650,
+      "ig_reels_avg_watch_time": 2017,
+      "ig_reels_video_view_total_time": 185585,
       "follow_error": "GET 17945875311084748/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1642,13 +1642,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 2,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 2907,
+      "ig_reels_video_view_total_time": 2907,
       "follow_error": "GET 18003573515806377/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2376,7 +2376,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 3
+    "profile_views": 1
    }
   },
   "littlefold": {
@@ -2384,8 +2384,28 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 47,
+   "media_count": 48,
    "posts": [
+    {
+     "media_id": "18125388160981028",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfCbJFNDR7K/",
+     "at": "2026-10-28T12:24:00+0000",
+     "first_line": "Diaper rubbing the cord stump? Fold the top of the diaper down, below the stump.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 35,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 18125388160981028/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18149453779559893",
      "type": "REEL",
@@ -2395,13 +2415,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 119,
-      "reach": 105,
+      "views": 120,
+      "reach": 106,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 4889,
-      "ig_reels_video_view_total_time": 513439,
+      "ig_reels_avg_watch_time": 4920,
+      "ig_reels_video_view_total_time": 521524,
       "follow_error": "GET 18149453779559893/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2493,13 +2513,13 @@
      "likes": 9,
      "comments_count": 1,
      "insights": {
-      "views": 706,
-      "reach": 553,
+      "views": 707,
+      "reach": 556,
       "saved": 5,
       "shares": 38,
       "total_interactions": 58,
-      "ig_reels_avg_watch_time": 8383,
-      "ig_reels_video_view_total_time": 4694960,
+      "ig_reels_avg_watch_time": 8373,
+      "ig_reels_video_view_total_time": 4697755,
       "follow_error": "GET 18122211049985064/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2533,8 +2553,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 32,
-      "reach": 11,
+      "views": 33,
+      "reach": 12,
       "saved": 4,
       "shares": 20,
       "total_interactions": 35,
@@ -2611,7 +2631,7 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 28,
+      "views": 29,
       "reach": 10,
       "saved": 4,
       "shares": 18,
@@ -2630,8 +2650,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 31,
-      "reach": 11,
+      "views": 32,
+      "reach": 12,
       "saved": 4,
       "shares": 18,
       "total_interactions": 32,
@@ -3146,29 +3166,10 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "17915309772496167",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DemdkJmm7BZ/",
-     "at": "2026-10-17T15:46:13+0000",
-     "first_line": "Make tonight's sleep safer: alone, on their back, in a crib.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 31,
-      "reach": 10,
-      "saved": 5,
-      "shares": 7,
-      "total_interactions": 24,
-      "follows": 0,
-      "profile_visits": 1
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 10
+    "profile_views": 4
    }
   }
  }
