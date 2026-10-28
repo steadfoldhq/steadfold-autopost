@@ -8409,7 +8409,7 @@
     },
     "hb-day9-kind-firm-no": {
       "account": "hourback",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18128931649799084",
         "18128931667799084",
@@ -8421,14 +8421,22 @@
         "studio-oct25/hourback/hb-day9-kind-firm-no-r2/03.jpg"
       ],
       "children_created_at": "2026-10-28T21:52:40Z",
-      "updated_at": "2026-10-28T21:53:18Z",
+      "updated_at": "2026-10-28T22:32:50Z",
       "container_id": "18128931709799084",
       "container_created_at": "2026-10-28T21:52:40Z",
       "publish_called": true,
       "publish_called_at": "2026-10-28T21:52:40Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=A6hzOZoxd1ZptCmX6ea90L2)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-28T21:52:40Z"
+      "failed_at": "2026-10-28T21:52:40Z",
+      "media_id": "18147995797603650",
+      "permalink": "https://www.instagram.com/p/DfDcUBimcM5/",
+      "published_at": "2026-10-28T21:53:16+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "17912707548481461",
+      "comment_error": null,
+      "commented_at": "2026-10-28T22:32:49Z"
     }
   }
 }
