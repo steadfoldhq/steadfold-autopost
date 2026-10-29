@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-29T16:57:09+00:00",
+ "collected_at": "2026-10-29T20:47:36+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 2,
+      "views": 4,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3965,
-      "ig_reels_video_view_total_time": 7931,
+      "ig_reels_avg_watch_time": 2833,
+      "ig_reels_video_view_total_time": 8500,
       "follow_error": "GET 18136404241660866/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -34,16 +34,16 @@
      "permalink": "https://www.instagram.com/reel/DfDlbilDTVa/",
      "at": "2026-10-28T23:13:11+0000",
      "first_line": "No FHSA open? No room yet. In Canada, your FHSA (First Home Savings Account) room, meaning how much you're allowed to put in, only starts th",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 7,
+      "views": 11,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1118,
-      "ig_reels_video_view_total_time": 7832,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 1348,
+      "ig_reels_video_view_total_time": 13489,
       "follow_error": "GET 17915179389517439/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -792,7 +792,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 2
    }
   },
   "lockedhour": {
@@ -811,13 +811,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 56,
-      "reach": 52,
+      "views": 81,
+      "reach": 73,
       "saved": 0,
       "shares": 1,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3006,
-      "ig_reels_video_view_total_time": 147329,
+      "ig_reels_avg_watch_time": 3407,
+      "ig_reels_video_view_total_time": 248745,
       "follow_error": "GET 17919244728530010/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1009,7 +1009,7 @@
      "comments_count": 1,
      "insights": {
       "views": 49,
-      "reach": 45,
+      "reach": 46,
       "saved": 1,
       "shares": 3,
       "total_interactions": 9,
@@ -1605,13 +1605,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 1,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 658,
+      "ig_reels_video_view_total_time": 658,
       "follow_error": "GET 17975849487133341/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1645,8 +1645,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 1,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1704,8 +1704,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 4,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -2398,13 +2398,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 162,
-      "reach": 143,
+      "views": 163,
+      "reach": 144,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 4570,
-      "ig_reels_video_view_total_time": 648961,
+      "ig_reels_avg_watch_time": 4557,
+      "ig_reels_video_view_total_time": 651657,
       "follow_error": "GET 18132211861829651/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2634,8 +2634,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 25,
-      "reach": 11,
+      "views": 26,
+      "reach": 12,
       "saved": 4,
       "shares": 18,
       "total_interactions": 31,
