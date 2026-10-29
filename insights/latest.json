@@ -1,13 +1,52 @@
 {
- "collected_at": "2026-10-28T20:45:26+00:00",
+ "collected_at": "2026-10-29T04:49:58+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 49,
+   "media_count": 51,
    "posts": [
+    {
+     "media_id": "17915179389517439",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfDlbilDTVa/",
+     "at": "2026-10-28T23:13:11+0000",
+     "first_line": "No FHSA open? No room yet. In Canada, your FHSA (First Home Savings Account) room, meaning how much you're allowed to put in, only starts th",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 3,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 822,
+      "ig_reels_video_view_total_time": 2467,
+      "follow_error": "GET 17915179389517439/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17952820275322793",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DfDacsnm1oh/",
+     "at": "2026-10-28T21:36:57+0000",
+     "first_line": "$15 lunch, every workday? The habit: pack lunch 3 days a week.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18078799388430763",
      "type": "REEL",
@@ -17,13 +56,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 11,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 2367,
+      "ig_reels_video_view_total_time": 26040,
       "follow_error": "GET 18078799388430763/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -116,8 +155,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -331,7 +370,7 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 9,
+      "views": 10,
       "reach": 4,
       "saved": 1,
       "shares": 3,
@@ -750,48 +789,10 @@
       "follow_error": "GET 18033351860887203/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18099696305435020",
-     "type": "IMAGE",
-     "permalink": "https://www.instagram.com/p/DenF0I9mR2a/",
-     "at": "2026-10-17T21:37:57+0000",
-     "first_line": "5 checks, once a year: fees, beneficiaries, loan rates, insurance cover, your freedom number.",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 30,
-      "reach": 9,
-      "saved": 4,
-      "shares": 0,
-      "total_interactions": 14,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18014671928987663",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/Demf_UAmsDa/",
-     "at": "2026-10-17T16:07:24+0000",
-     "first_line": "The rich often borrow against their investments instead of selling them.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 46,
-      "reach": 9,
-      "saved": 5,
-      "shares": 1,
-      "total_interactions": 17,
-      "follows": 0,
-      "profile_visits": 4
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "lockedhour": {
@@ -799,8 +800,47 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 49,
+   "media_count": 51,
    "posts": [
+    {
+     "media_id": "18079656635729381",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfDlrlqElCU/",
+     "at": "2026-10-28T23:15:23+0000",
+     "first_line": "Turn your phone grey tonight. A boring phone is easier to put down.",
+     "likes": 3,
+     "comments_count": 1,
+     "insights": {
+      "views": 160,
+      "reach": 134,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 5323,
+      "ig_reels_video_view_total_time": 718705,
+      "follow_error": "GET 18079656635729381/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "17964423771227544",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DfDajpjG2uy/",
+     "at": "2026-10-28T21:37:54+0000",
+     "first_line": "Third coffee not working? Today's word: Nap. Ten minutes asleep, alarm on.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18644456128013435",
      "type": "REEL",
@@ -810,13 +850,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 117,
-      "reach": 102,
+      "views": 118,
+      "reach": 104,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3797,
-      "ig_reels_video_view_total_time": 394979,
+      "ig_reels_avg_watch_time": 3764,
+      "ig_reels_video_view_total_time": 395243,
       "follow_error": "GET 18644456128013435/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1542,45 +1582,6 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18132680593815357",
-     "type": "IMAGE",
-     "permalink": "https://www.instagram.com/p/Demj4EbGr0u/",
-     "at": "2026-10-17T16:41:23+0000",
-     "first_line": "Stay in your focus hour: when a new thought pops up, write it on a \"later\" list and keep going.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 30,
-      "reach": 9,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 18,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18002153877034149",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DemJG9xgG4E/",
-     "at": "2026-10-17T12:47:41+0000",
-     "first_line": "\"Do taxes\" has been on your list for 3 weeks. It's not a task, it's a project. Rewrite it as a next step.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 68,
-      "reach": 54,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 18,
-      "ig_reels_avg_watch_time": 4966,
-      "ig_reels_video_view_total_time": 278112,
-      "follow_error": "GET 18002153877034149/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1592,8 +1593,47 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 46,
+   "media_count": 48,
    "posts": [
+    {
+     "media_id": "17953736760312701",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfDlg2mjUwn/",
+     "at": "2026-10-28T23:13:54+0000",
+     "first_line": "Song stuck in your head and no idea what it's called? Hum it. Google names it.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5003,
+      "ig_reels_video_view_total_time": 5003,
+      "follow_error": "GET 17953736760312701/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18147995797603650",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DfDcUBimcM5/",
+     "at": "2026-10-28T21:53:16+0000",
+     "first_line": "He wants $500. Again. Ask Claude (or ChatGPT or Gemini) to help you say no, and add three words: kind, firm, no excuses.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18102474587568264",
      "type": "REEL",
@@ -1604,12 +1644,12 @@
      "comments_count": 1,
      "insights": {
       "views": 2,
-      "reach": 1,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 894,
-      "ig_reels_video_view_total_time": 894,
+      "ig_reels_avg_watch_time": 532,
+      "ig_reels_video_view_total_time": 1064,
       "follow_error": "GET 18102474587568264/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1741,13 +1781,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 109,
-      "reach": 103,
+      "views": 111,
+      "reach": 104,
       "saved": 1,
       "shares": 3,
       "total_interactions": 7,
-      "ig_reels_avg_watch_time": 1232,
-      "ig_reels_video_view_total_time": 126910,
+      "ig_reels_avg_watch_time": 1244,
+      "ig_reels_video_view_total_time": 129475,
       "follow_error": "GET 18132770962706159/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2335,45 +2375,6 @@
       "follow_error": "GET 17895969018655285/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "17947871355067253",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DekrWi2AELc/",
-     "at": "2026-10-16T23:08:26+0000",
-     "first_line": "Get through a long email fast: paste it and ask for just the asks.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 34,
-      "reach": 18,
-      "saved": 4,
-      "shares": 4,
-      "total_interactions": 20,
-      "ig_reels_avg_watch_time": 5765,
-      "ig_reels_video_view_total_time": 155656,
-      "follow_error": "GET 17947871355067253/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18107426059960368",
-     "type": "IMAGE",
-     "permalink": "https://www.instagram.com/p/Dekkunkkfcx/",
-     "at": "2026-10-16T22:10:20+0000",
-     "first_line": "Before you trust an AI answer, check it. Ask it to show its work.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 27,
-      "reach": 7,
-      "saved": 4,
-      "shares": 4,
-      "total_interactions": 19,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -2385,8 +2386,47 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 48,
+   "media_count": 50,
    "posts": [
+    {
+     "media_id": "18636664864041550",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfDlmEjiZ2S/",
+     "at": "2026-10-28T23:14:36+0000",
+     "first_line": "For whoever keeps adding blankets: feel the back of baby's neck, not their hands.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 126,
+      "reach": 107,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5721,
+      "ig_reels_video_view_total_time": 617871,
+      "follow_error": "GET 18636664864041550/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
+    {
+     "media_id": "18162093418498616",
+     "type": "CAROUSEL_ALBUM",
+     "permalink": "https://www.instagram.com/p/DfDagP7G5ZO/",
+     "at": "2026-10-28T21:37:26+0000",
+     "first_line": "3 am, and your baby wants to play? Make the next half hour as boring as you can.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+     },
+     "comments": []
+    },
     {
      "media_id": "18125388160981028",
      "type": "REEL",
@@ -2396,13 +2436,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 131,
-      "reach": 117,
+      "views": 133,
+      "reach": 119,
       "saved": 0,
       "shares": 1,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 6218,
-      "ig_reels_video_view_total_time": 684043,
+      "ig_reels_avg_watch_time": 6175,
+      "ig_reels_video_view_total_time": 691646,
       "follow_error": "GET 18125388160981028/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3128,49 +3168,10 @@
       "follow_error": "GET 17905600989665775/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18206419024373588",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DenPdZHI3ng/",
-     "at": "2026-10-17T23:02:28+0000",
-     "first_line": "Someone offers help? Give them one job: dinner on Tuesday, one load of laundry, or holding the baby while you shower.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 154,
-      "reach": 136,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 18,
-      "ig_reels_avg_watch_time": 1914,
-      "ig_reels_video_view_total_time": 273779,
-      "follow_error": "GET 18206419024373588/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17976152387935104",
-     "type": "IMAGE",
-     "permalink": "https://www.instagram.com/p/DenCDtDAfUM/",
-     "at": "2026-10-17T21:05:06+0000",
-     "first_line": "Someone else has the baby? Lie down, even for 20 minutes.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 30,
-      "reach": 14,
-      "saved": 4,
-      "shares": 7,
-      "total_interactions": 23,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 5
+    "profile_views": 7
    }
   }
  }
