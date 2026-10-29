@@ -1,6 +1,6 @@
 # NEXT PASTE: one Chrome run for every approved Gumroad listing that isn't live yet
 
-**Rebuilt by the Launch desk every morning. This copy: Wed Oct 28 2026, 6:13 am ET (unchanged jobs: no new approval since Oct 27).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (same 3 jobs, same gated text). Pasting either one is fine; the duplicate guards stop a second copy.
+**Rebuilt by the Launch desk every morning. This copy: Thu Oct 29 2026, 6:13 am ET (unchanged jobs: no new approval in your words since Oct 27; no HANDOFF pasted back).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (same 3 jobs, same gated text). Pasting either one is fine; the duplicate guards stop a second copy.
 
 **~14 min, mostly file picks. 3 jobs, 4 Gumroad products, oldest approval first:**
 
@@ -12,7 +12,7 @@
 
 **Not in this paste (no approval in your words yet, launch rule E1):** Debt-Free Date Planner ("approve DEBT-FREE", RQ-46, pack claude/launch/2026-10-19-debt-free-gumroad.md in the project), Paycheck Plan US ("approve PP-US", RQ-53), BA + API Spec Kit ("approve BA-KIT", RQ-55, docs/launch/2026-10-24-ba-api-spec-kit-gumroad.md). Say the word and tomorrow's rebuild adds them (max 4 jobs per paste).
 
-**Live check this morning (Wed Oct 28, WebFetch worked):** control page https://steadfold.gumroad.com/l/calm-planner-2027-printable loads (2027 Calm Planner + Reset Kit (Printable), US$12), so the store is reachable. All 4 planned URLs in this paste (/l/calm-planner-2027-tablet, /l/holiday-money-plan, /l/money-planner-bundle, /l/money-steps-planner) return a client error: **confirmed NOT live**. The store page itself renders products by script, so the full Gumroad inventory is still from Oct 21. Etsy: listings/live.json shows 15 live (unchanged since Oct 18). The 4 cover images were re-checked at tile size today: each says what it is in one glance.
+**Live check this morning (Thu Oct 29): UNVERIFIED since Wed Oct 28.** WebFetch permission timed out on all 5 Gumroad URLs; the WebSearch fallback (site:steadfold.gumroad.com and the product titles) indexes no Steadfold pages at all, so it proves nothing either way. Last real evidence (Wed Oct 28, WebFetch): control page /l/calm-planner-2027-printable loads at US$12; all 4 planned URLs in this paste return a client error (NOT live). If you listed any of them since, the duplicate guards skip it. Etsy: listings/live.json shows 15 live (unchanged since Oct 18); listings/stats.json still not shipped. **Holiday Money Plan's calendar slot is today, and Diwali is Nov 8: JOB 2 is the time-critical one.**
 
 ## Files in Downloads (unzip only the 3 kits marked)
 1. `Calm-Planner-2027-Tablet-Monday.pdf`, `Calm-Planner-2027-Tablet-Sunday.pdf`, `Calm-Planner-2027-Extras.zip` (don't unzip): Products shelf https://claude.ai/artifact/VHxsT31NqrCiNPaKwkNTi4, card "2027 Calm Planner"
