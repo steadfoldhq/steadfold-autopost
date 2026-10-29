@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-29T04:49:58+00:00",
+ "collected_at": "2026-10-29T12:56:30+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 3,
+      "views": 6,
+      "reach": 6,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 822,
-      "ig_reels_video_view_total_time": 2467,
+      "ig_reels_avg_watch_time": 1096,
+      "ig_reels_video_view_total_time": 6578,
       "follow_error": "GET 17915179389517439/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -56,13 +56,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 11,
+      "views": 12,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2367,
-      "ig_reels_video_view_total_time": 26040,
+      "ig_reels_avg_watch_time": 2237,
+      "ig_reels_video_view_total_time": 26844,
       "follow_error": "GET 18078799388430763/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -812,7 +812,7 @@
      "comments_count": 1,
      "insights": {
       "views": 160,
-      "reach": 134,
+      "reach": 135,
       "saved": 0,
       "shares": 0,
       "total_interactions": 4,
@@ -850,13 +850,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 118,
-      "reach": 104,
+      "views": 120,
+      "reach": 107,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3764,
-      "ig_reels_video_view_total_time": 395243,
+      "ig_reels_avg_watch_time": 3757,
+      "ig_reels_video_view_total_time": 402045,
       "follow_error": "GET 18644456128013435/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1145,8 +1145,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 3,
+      "views": 9,
+      "reach": 4,
       "saved": 1,
       "shares": 3,
       "total_interactions": 10,
@@ -1222,7 +1222,7 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 9,
+      "views": 10,
       "reach": 4,
       "saved": 1,
       "shares": 3,
@@ -1340,7 +1340,7 @@
      "comments_count": 1,
      "insights": {
       "views": 16,
-      "reach": 5,
+      "reach": 6,
       "saved": 4,
       "shares": 9,
       "total_interactions": 21,
@@ -1604,13 +1604,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 12,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5003,
-      "ig_reels_video_view_total_time": 5003,
+      "ig_reels_avg_watch_time": 3408,
+      "ig_reels_video_view_total_time": 37491,
       "follow_error": "GET 17953736760312701/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1643,7 +1643,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 2,
+      "views": 4,
       "reach": 2,
       "saved": 0,
       "shares": 0,
@@ -2378,7 +2378,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "littlefold": {
@@ -2386,8 +2386,28 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 50,
+   "media_count": 51,
    "posts": [
+    {
+     "media_id": "18132211861829651",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfE-mMYgPsl/",
+     "at": "2026-10-29T12:12:10+0000",
+     "first_line": "Holding baby with a hot drink? Put the mug down first, well out of reach.",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 13,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 5581,
+      "ig_reels_video_view_total_time": 16745,
+      "follow_error": "GET 18132211861829651/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18636664864041550",
      "type": "REEL",
@@ -2397,13 +2417,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 126,
-      "reach": 107,
+      "views": 129,
+      "reach": 108,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5721,
-      "ig_reels_video_view_total_time": 617871,
+      "ig_reels_avg_watch_time": 6037,
+      "ig_reels_video_view_total_time": 658131,
       "follow_error": "GET 18636664864041550/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2456,13 +2476,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 125,
-      "reach": 108,
+      "views": 126,
+      "reach": 109,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5180,
-      "ig_reels_video_view_total_time": 559454,
+      "ig_reels_avg_watch_time": 5156,
+      "ig_reels_video_view_total_time": 562011,
       "follow_error": "GET 18149453779559893/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3148,30 +3168,10 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "17905600989665775",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/Deoozm0jc1f/",
-     "at": "2026-10-18T12:03:08+0000",
-     "first_line": "It's 3 am and the baby is wide awake again.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 161,
-      "reach": 144,
-      "saved": 3,
-      "shares": 5,
-      "total_interactions": 19,
-      "ig_reels_avg_watch_time": 1955,
-      "ig_reels_video_view_total_time": 293310,
-      "follow_error": "GET 17905600989665775/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 7
+    "profile_views": 3
    }
   }
  }
