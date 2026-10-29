@@ -8600,16 +8600,21 @@
     },
     "ff-st-1029-1": {
       "account": "fullyfunded",
-      "status": "failed",
-      "container_id": null,
-      "container_created_at": "2026-10-29T16:54:41Z",
-      "publish_called": false,
+      "status": "published",
+      "container_id": "18154246054497733",
+      "container_created_at": "2026-10-29T17:40:57Z",
+      "publish_called": true,
       "kind": "story",
-      "updated_at": "2026-10-29T16:54:45Z",
-      "publish_called_at": "2026-10-29T16:54:41Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 400: The media is not ready for publishing, please wait for a moment (code=9007, subcode=2207027, fbtrace_id=AaycyajaiptgEcomvU-_g3B)",
+      "updated_at": "2026-10-29T17:41:12Z",
+      "publish_called_at": "2026-10-29T17:40:57Z",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-29T16:54:41Z"
+      "failed_at": "2026-10-29T16:54:41Z",
+      "media_id": "18108961358348675",
+      "published_at": "2026-10-29T17:40:57Z",
+      "late": false,
+      "comment_status": "none",
+      "comment_attempts": 0
     },
     "hb-st-1029-1": {
       "account": "hourback",
@@ -8709,16 +8714,21 @@
     },
     "lh-st-1029-2": {
       "account": "lockedhour",
-      "status": "failed",
-      "container_id": null,
-      "container_created_at": "2026-10-29T16:54:41Z",
-      "publish_called": false,
+      "status": "published",
+      "container_id": "18071977745521398",
+      "container_created_at": "2026-10-29T17:40:57Z",
+      "publish_called": true,
       "kind": "story",
-      "updated_at": "2026-10-29T16:56:23Z",
-      "publish_called_at": "2026-10-29T16:54:41Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 400: The media with 18,071,965,013,521,398 cannot be found. (code=24, subcode=2207006, fbtrace_id=Aw3RgdkhM2yDsKfjwWlVOKP)",
+      "updated_at": "2026-10-29T17:41:17Z",
+      "publish_called_at": "2026-10-29T17:40:57Z",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-29T16:54:41Z"
+      "failed_at": "2026-10-29T16:54:41Z",
+      "media_id": "18078134459446610",
+      "published_at": "2026-10-29T17:40:57Z",
+      "late": false,
+      "comment_status": "none",
+      "comment_attempts": 0
     }
   }
 }
