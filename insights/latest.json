@@ -1,13 +1,33 @@
 {
- "collected_at": "2026-10-29T20:47:36+00:00",
+ "collected_at": "2026-10-30T04:49:56+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 52,
+   "media_count": 53,
    "posts": [
+    {
+     "media_id": "17914921776286050",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfGMH4QDLDU/",
+     "at": "2026-10-29T23:29:45+0000",
+     "first_line": "Your FSA money can expire. In the US, health FSA money you don't use by your plan's end date can be lost.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 6,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 1063,
+      "ig_reels_video_view_total_time": 6379,
+      "follow_error": "GET 17914921776286050/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18136404241660866",
      "type": "REEL",
@@ -17,13 +37,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 3,
+      "views": 5,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2833,
-      "ig_reels_video_view_total_time": 8500,
+      "ig_reels_avg_watch_time": 2344,
+      "ig_reels_video_view_total_time": 9377,
       "follow_error": "GET 18136404241660866/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -37,13 +57,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 9,
+      "views": 13,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 1348,
-      "ig_reels_video_view_total_time": 13489,
+      "ig_reels_avg_watch_time": 1245,
+      "ig_reels_video_view_total_time": 14948,
       "follow_error": "GET 17915179389517439/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -769,26 +789,6 @@
       "profile_visits": 2
      },
      "comments": []
-    },
-    {
-     "media_id": "18088420088318477",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DeotwlwAnTm/",
-     "at": "2026-10-18T12:46:43+0000",
-     "first_line": "Your car breaks down and the bill is $1,500. With no savings, it goes on a credit card, and then it costs you interest every month.",
-     "likes": 7,
-     "comments_count": 1,
-     "insights": {
-      "views": 82,
-      "reach": 66,
-      "saved": 4,
-      "shares": 3,
-      "total_interactions": 20,
-      "ig_reels_avg_watch_time": 3396,
-      "ig_reels_video_view_total_time": 247923,
-      "follow_error": "GET 18088420088318477/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -800,8 +800,28 @@
    "username": "lockedhourhq",
    "followers_count": 4,
    "follows_count": 3,
-   "media_count": 52,
+   "media_count": 53,
    "posts": [
+    {
+     "media_id": "18212271178367501",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfGMcwlAjjG/",
+     "at": "2026-10-29T23:32:43+0000",
+     "first_line": "Daydreaming the goal? You may do less. Picture what's in the way too.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 114,
+      "reach": 99,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3658,
+      "ig_reels_video_view_total_time": 365808,
+      "follow_error": "GET 18212271178367501/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17919244728530010",
      "type": "REEL",
@@ -811,13 +831,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 81,
-      "reach": 73,
+      "views": 106,
+      "reach": 91,
       "saved": 0,
       "shares": 1,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3407,
-      "ig_reels_video_view_total_time": 248745,
+      "ig_reels_avg_watch_time": 3717,
+      "ig_reels_video_view_total_time": 338287,
       "follow_error": "GET 17919244728530010/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1563,26 +1583,6 @@
       "follow_error": "GET 18112307180613555/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18073945682580980",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DenPi86FAVA/",
-     "at": "2026-10-17T23:03:11+0000",
-     "first_line": "Get more done in your next hour: close every tab but one.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 46,
-      "reach": 36,
-      "saved": 2,
-      "shares": 4,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 2071,
-      "ig_reels_video_view_total_time": 87004,
-      "follow_error": "GET 18073945682580980/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1594,8 +1594,28 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 49,
+   "media_count": 50,
    "posts": [
+    {
+     "media_id": "18036524861894311",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfGMNRZCV9Z/",
+     "at": "2026-10-29T23:30:29+0000",
+     "first_line": "Phone bill went up and you don't know why? Paste last month's and this month's bill into an AI chat and ask what changed.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 4,
+      "reach": 4,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 901,
+      "ig_reels_video_view_total_time": 3606,
+      "follow_error": "GET 18036524861894311/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17975849487133341",
      "type": "REEL",
@@ -1605,13 +1625,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 4,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 658,
-      "ig_reels_video_view_total_time": 658,
+      "ig_reels_avg_watch_time": 5613,
+      "ig_reels_video_view_total_time": 16841,
       "follow_error": "GET 17975849487133341/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2357,25 +2377,6 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18179899729437655",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DemmmWyG88k/",
-     "at": "2026-10-17T17:05:10+0000",
-     "first_line": "Can you sublet? Make AI quote the lease, so every answer is one you can check. Add one line to your question.",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 26,
-      "reach": 7,
-      "saved": 4,
-      "shares": 4,
-      "total_interactions": 18,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -2387,8 +2388,28 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 51,
+   "media_count": 52,
    "posts": [
+    {
+     "media_id": "18110175005092280",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfGMWxqD6mI/",
+     "at": "2026-10-29T23:31:51+0000",
+     "first_line": "Back to sleep. Tummy to play. Asleep, babies go on their back. Awake and watched, they spend some time on their tummy.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 117,
+      "reach": 104,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3004,
+      "ig_reels_video_view_total_time": 312467,
+      "follow_error": "GET 18110175005092280/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18132211861829651",
      "type": "REEL",
@@ -2575,13 +2596,13 @@
      "likes": 9,
      "comments_count": 1,
      "insights": {
-      "views": 709,
-      "reach": 557,
+      "views": 710,
+      "reach": 559,
       "saved": 5,
       "shares": 38,
       "total_interactions": 58,
-      "ig_reels_avg_watch_time": 8367,
-      "ig_reels_video_view_total_time": 4710706,
+      "ig_reels_avg_watch_time": 8353,
+      "ig_reels_video_view_total_time": 4711526,
       "follow_error": "GET 18122211049985064/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3146,25 +3167,6 @@
       "saved": 4,
       "shares": 4,
       "total_interactions": 19,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17913397242540828",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DepDJr8GhCA/",
-     "at": "2026-10-18T15:53:08+0000",
-     "first_line": "Your baby can get up to $500 a year from the government, just for saving for their school.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 21,
-      "reach": 8,
-      "saved": 3,
-      "shares": 4,
-      "total_interactions": 20,
       "follows": 0,
       "profile_visits": 0
      },
