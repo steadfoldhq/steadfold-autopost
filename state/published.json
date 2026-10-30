@@ -8812,7 +8812,7 @@
     },
     "ff-richhabits-03": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18154639219497733",
         "18154639258497733",
@@ -8824,18 +8824,26 @@
         "studio-oct26/fullyfunded/ff-richhabits-03/03.jpg"
       ],
       "children_created_at": "2026-10-30T21:33:47Z",
-      "updated_at": "2026-10-30T21:34:07Z",
+      "updated_at": "2026-10-30T22:07:08Z",
       "container_id": "18154639315497733",
       "container_created_at": "2026-10-30T21:33:47Z",
       "publish_called": true,
       "publish_called_at": "2026-10-30T21:33:47Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AEGn83m8oamcLRvbfaqTjMp)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-30T21:33:47Z"
+      "failed_at": "2026-10-30T21:33:47Z",
+      "media_id": "17963048829220124",
+      "permalink": "https://www.instagram.com/p/DfIjubficRK/",
+      "published_at": "2026-10-30T21:34:05+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18098738768449591",
+      "comment_error": null,
+      "commented_at": "2026-10-30T22:07:06Z"
     },
     "lf-3amclub-03": {
       "account": "littlefold",
-      "status": "failed",
+      "status": "published",
       "children": [
         "17884211199544608",
         "17884211220544608"
@@ -8845,18 +8853,26 @@
         "studio-oct26/littlefold/lf-3amclub-03/02.jpg"
       ],
       "children_created_at": "2026-10-30T21:33:47Z",
-      "updated_at": "2026-10-30T21:34:31Z",
+      "updated_at": "2026-10-30T22:07:10Z",
       "container_id": "17884211238544608",
       "container_created_at": "2026-10-30T21:33:47Z",
       "publish_called": true,
       "publish_called_at": "2026-10-30T21:33:47Z",
-      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AjAfaJqQS1YPgM80B--723G)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-30T21:33:47Z"
+      "failed_at": "2026-10-30T21:33:47Z",
+      "media_id": "18105679322329778",
+      "permalink": "https://www.instagram.com/p/DfIjwDBCerz/",
+      "published_at": "2026-10-30T21:34:27+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18449540683135565",
+      "comment_error": null,
+      "commented_at": "2026-10-30T22:07:06Z"
     },
     "lh-oneword-04": {
       "account": "lockedhour",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18072361151521398",
         "18072361190521398",
@@ -8868,14 +8884,45 @@
         "studio-oct26/lockedhour/lh-oneword-04/03.jpg"
       ],
       "children_created_at": "2026-10-30T21:33:47Z",
-      "updated_at": "2026-10-30T21:34:57Z",
+      "updated_at": "2026-10-30T22:07:11Z",
       "container_id": "18072361235521398",
       "container_created_at": "2026-10-30T21:33:47Z",
       "publish_called": true,
       "publish_called_at": "2026-10-30T21:33:47Z",
-      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=ADfjE2To9Je7FLkZiSaJZse)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-30T21:33:47Z"
+      "failed_at": "2026-10-30T21:33:47Z",
+      "media_id": "17996650593023229",
+      "permalink": "https://www.instagram.com/p/DfIjznzCTAj/",
+      "published_at": "2026-10-30T21:34:56+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18119248249999437",
+      "comment_error": null,
+      "commented_at": "2026-10-30T22:07:06Z"
+    },
+    "hb-day10-pancakes-for-6": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18129454690799084",
+        "18129454708799084",
+        "18129454726799084"
+      ],
+      "children_media": [
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/01.jpg",
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/02.jpg",
+        "studio-oct26/hourback/hb-day10-pancakes-for-6/03.jpg"
+      ],
+      "children_created_at": "2026-10-30T22:07:06Z",
+      "updated_at": "2026-10-30T22:07:38Z",
+      "container_id": "18129454744799084",
+      "container_created_at": "2026-10-30T22:07:06Z",
+      "publish_called": true,
+      "publish_called_at": "2026-10-30T22:07:06Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AUh8nxtCxaGglo-Mkg-TTY0)",
+      "attempts": 1,
+      "failed_at": "2026-10-30T22:07:06Z"
     }
   }
 }
