@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-30T12:57:07+00:00",
+ "collected_at": "2026-10-30T16:50:27+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -37,13 +37,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 4,
+      "views": 6,
+      "reach": 5,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2344,
-      "ig_reels_video_view_total_time": 9377,
+      "ig_reels_avg_watch_time": 2617,
+      "ig_reels_video_view_total_time": 13088,
       "follow_error": "GET 18136404241660866/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1204,8 +1204,8 @@
      "likes": 3,
      "comments_count": 2,
      "insights": {
-      "views": 39,
-      "reach": 19,
+      "views": 40,
+      "reach": 20,
       "saved": 1,
       "shares": 3,
       "total_interactions": 11,
@@ -1625,13 +1625,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 67,
-      "reach": 61,
+      "views": 68,
+      "reach": 62,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 4154,
-      "ig_reels_video_view_total_time": 245106,
+      "ig_reels_avg_watch_time": 4109,
+      "ig_reels_video_view_total_time": 246584,
       "follow_error": "GET 17975849487133341/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1920,8 +1920,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 2,
       "shares": 8,
       "total_interactions": 15,
@@ -2399,13 +2399,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 149,
-      "reach": 123,
-      "saved": 0,
+      "views": 194,
+      "reach": 170,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3100,
-      "ig_reels_video_view_total_time": 381330,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 3252,
+      "ig_reels_video_view_total_time": 552900,
       "follow_error": "GET 18110175005092280/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
