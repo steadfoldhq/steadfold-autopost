@@ -8903,7 +8903,7 @@
     },
     "hb-day10-pancakes-for-6": {
       "account": "hourback",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18129454690799084",
         "18129454708799084",
@@ -8915,14 +8915,22 @@
         "studio-oct26/hourback/hb-day10-pancakes-for-6/03.jpg"
       ],
       "children_created_at": "2026-10-30T22:07:06Z",
-      "updated_at": "2026-10-30T22:07:38Z",
+      "updated_at": "2026-10-30T22:48:45Z",
       "container_id": "18129454744799084",
       "container_created_at": "2026-10-30T22:07:06Z",
       "publish_called": true,
       "publish_called_at": "2026-10-30T22:07:06Z",
-      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AUh8nxtCxaGglo-Mkg-TTY0)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-10-30T22:07:06Z"
+      "failed_at": "2026-10-30T22:07:06Z",
+      "media_id": "18095210537179068",
+      "permalink": "https://www.instagram.com/p/DfInivdFth5/",
+      "published_at": "2026-10-30T22:07:35+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18119925512090941",
+      "comment_error": null,
+      "commented_at": "2026-10-30T22:48:43Z"
     }
   }
 }
