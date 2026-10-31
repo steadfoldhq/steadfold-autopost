@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-31T04:45:56+00:00",
+ "collected_at": "2026-10-31T12:49:27+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 2,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0,
+      "ig_reels_avg_watch_time": 1046,
+      "ig_reels_video_view_total_time": 2093,
       "follow_error": "GET 18133776106759625/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -793,7 +793,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "lockedhour": {
@@ -812,13 +812,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 32,
-      "reach": 26,
+      "views": 47,
+      "reach": 42,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 5205,
-      "ig_reels_video_view_total_time": 135342,
+      "ig_reels_avg_watch_time": 4834,
+      "ig_reels_video_view_total_time": 207893,
       "follow_error": "GET 18178075000448451/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1606,13 +1606,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 10,
+      "views": 19,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5779,
-      "ig_reels_video_view_total_time": 52017,
+      "ig_reels_avg_watch_time": 3772,
+      "ig_reels_video_view_total_time": 64139,
       "follow_error": "GET 18141971281537377/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1920,13 +1920,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 8,
+      "views": 12,
+      "reach": 9,
       "saved": 1,
       "shares": 3,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 4409,
-      "ig_reels_video_view_total_time": 35279,
+      "ig_reels_avg_watch_time": 3956,
+      "ig_reels_video_view_total_time": 35604,
       "follow_error": "GET 18104528654286500/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2381,7 +2381,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "littlefold": {
@@ -2389,8 +2389,28 @@
    "username": "littlefoldhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 54,
+   "media_count": 55,
    "posts": [
+    {
+     "media_id": "18134201956702953",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfKKwfCignM/",
+     "at": "2026-10-31T12:34:43+0000",
+     "first_line": "Reaching for the wipes mid-change? Keep one hand on baby, every time.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "follow_error": "GET 18134201956702953/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18685246018028616",
      "type": "REEL",
@@ -2400,13 +2420,13 @@
      "likes": 6,
      "comments_count": 1,
      "insights": {
-      "views": 1553,
-      "reach": 1122,
+      "views": 1655,
+      "reach": 1331,
       "saved": 1,
       "shares": 0,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 7188,
-      "ig_reels_video_view_total_time": 8806207,
+      "ig_reels_avg_watch_time": 7340,
+      "ig_reels_video_view_total_time": 9850337,
       "follow_error": "GET 18685246018028616/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2439,13 +2459,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 194,
+      "views": 195,
       "reach": 170,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3252,
-      "ig_reels_video_view_total_time": 552900,
+      "ig_reels_avg_watch_time": 3239,
+      "ig_reels_video_view_total_time": 553927,
       "follow_error": "GET 18110175005092280/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2676,8 +2696,8 @@
      "likes": 5,
      "comments_count": 1,
      "insights": {
-      "views": 33,
-      "reach": 12,
+      "views": 35,
+      "reach": 13,
       "saved": 4,
       "shares": 20,
       "total_interactions": 35,
@@ -3152,30 +3172,10 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18042377414828593",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DerQqDnjOHM/",
-     "at": "2026-10-19T12:30:13+0000",
-     "first_line": "Your newborn is talking to you long before they cry. Here's how to hear it.",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 151,
-      "reach": 136,
-      "saved": 4,
-      "shares": 14,
-      "total_interactions": 28,
-      "ig_reels_avg_watch_time": 6649,
-      "ig_reels_video_view_total_time": 924230,
-      "follow_error": "GET 18042377414828593/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 2
+    "profile_views": 0
    }
   }
  }
