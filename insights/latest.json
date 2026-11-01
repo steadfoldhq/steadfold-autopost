@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-01T04:53:10+00:00",
+ "collected_at": "2026-11-01T12:51:18+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -809,16 +809,16 @@
      "permalink": "https://www.instagram.com/reel/DfLVq3WmUv1/",
      "at": "2026-10-31T23:29:13+0000",
      "first_line": "A to-do list helps you sleep. Lying awake running through tomorrow? Write it down before bed.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 34,
-      "reach": 29,
-      "saved": 0,
+      "views": 111,
+      "reach": 99,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3052,
-      "ig_reels_video_view_total_time": 88536,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 3993,
+      "ig_reels_video_view_total_time": 403308,
       "follow_error": "GET 18121084163073879/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1588,7 +1588,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "hourback": {
@@ -2401,13 +2401,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 149,
-      "reach": 125,
+      "views": 150,
+      "reach": 126,
       "saved": 1,
       "shares": 3,
       "total_interactions": 6,
       "ig_reels_avg_watch_time": 4796,
-      "ig_reels_video_view_total_time": 613933,
+      "ig_reels_video_view_total_time": 618764,
       "follow_error": "GET 18134201956702953/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2421,13 +2421,13 @@
      "likes": 9,
      "comments_count": 1,
      "insights": {
-      "views": 1670,
+      "views": 1671,
       "reach": 1337,
       "saved": 2,
       "shares": 6,
       "total_interactions": 18,
-      "ig_reels_avg_watch_time": 7651,
-      "ig_reels_video_view_total_time": 10337545,
+      "ig_reels_avg_watch_time": 7646,
+      "ig_reels_video_view_total_time": 10338614,
       "follow_error": "GET 18685246018028616/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2716,8 +2716,8 @@
      "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 28,
-      "reach": 12,
+      "views": 29,
+      "reach": 13,
       "saved": 4,
       "shares": 18,
       "total_interactions": 32,
