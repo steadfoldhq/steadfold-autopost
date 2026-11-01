@@ -1,0 +1,39 @@
+Hourback real run, Nov 1 2026 (studio maker, Hourback)
+Used in: hb-reel-1103-guests-30-min (Tue Nov 3, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-11-01T14:26:02Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+Guests arrive in 30 minutes and my apartment is a mess: dishes in the sink, laundry on the couch, shoes and bags by the door, mail all over the table, and the bathroom hasn't been cleaned. Give me a 30-minute plan, starting with what guests will see first. Keep it short.
+
+===== REPLY (verbatim) =====
+**30-minute guest-ready plan** (set a timer; do a fast "good enough" pass, not a deep clean)
+
+**0–5 min: Entry (first impression)**
+- Shoes go in a neat row or into a closet. Bags go on hooks or into a bedroom.
+- Clear a spot for guests' coats and shoes.
+
+**5–10 min: Living area**
+- Laundry goes into a basket or bin, then into the bedroom. Shut the door.
+- Fluff the cushions and fold any throw blanket.
+
+**10–14 min: Table**
+- Sweep all the mail into one pile or bag and put it in a drawer or the bedroom. Sort it later.
+- Wipe the table.
+
+**14–21 min: Kitchen**
+- Load the dishwasher, or soak the dishes in hot soapy water and stack them neatly to one side.
+- Wipe the counters and empty the sink if you can.
+
+**21–28 min: Bathroom**
+- Wipe the sink, faucet and mirror. Swish and wipe the toilet seat and rim.
+- Put out a fresh hand towel and check for toilet paper.
+- Clear clutter off the counter into a drawer or basket. Empty the trash.
+
+**28–30 min: Final touch**
+- Take out the full trash and turn on soft lighting.
+- Open a window or light a candle, and do one walk-through from the front door.
+
+**Tip:** Carry one empty basket or bag as you go. Anything that doesn't belong goes in it, and the basket goes into the bedroom.

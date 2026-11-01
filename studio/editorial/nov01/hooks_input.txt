@@ -1,0 +1,99 @@
+## P1 (littlefold)
+  A. Toddler eating grapes? Cut each grape into 4.
+  B. One grape, 4 small pieces.
+  C. A whole grape is the wrong size for a toddler.
+
+## P2 (littlefold)
+  A. Sausage for a toddler? Strips, not round slices.
+  B. Round slices are the wrong shape.
+  C. Hot dog night? Cut it the long way.
+
+## P3 (littlefold)
+  A. Babies can drown in just 5 cm of water.
+  B. 5 cm of bath water is enough.
+  C. Bath done? Pull the plug right away.
+
+## P4 (littlefold)
+  A. It's 3 am. Baby's been sick.
+  B. Baby sick at night? Keep feeding.
+  C. 3 am tummy bug? Count the wet diapers.
+
+## P5 (littlefold)
+  A. It's 3 am. Baby feels hot.
+  B. Under 3 months and 38°C? Call now.
+  C. 3 am fever? Don't wait for morning.
+
+## P6 (lockedhour)
+  A. Shower 90 minutes before bed tonight.
+  B. Can't fall asleep? Shower earlier tonight.
+  C. Warm shower at 9:30, asleep sooner.
+
+## P7 (lockedhour)
+  A. After dinner, switch to one lamp.
+  B. Your ceiling light says it's daytime.
+  C. Big light off. Sleepier by bedtime.
+
+## P8 (lockedhour)
+  A. Studying tonight? Set a break timer.
+  B. Don't wait until you're tired to stop.
+  C. 24 minutes on, 6 off. Tonight.
+
+## P9 (lockedhour)
+  A. Boring call? Grab a pen.
+  B. Zoning out in meetings?
+  C. Doodling isn't zoning out.
+
+## P10 (lockedhour)
+  A. Blank page? Stand up.
+  B. Stuck for ideas again?
+  C. Your best ideas are a walk away.
+
+## P11 (fullyfunded)
+  A. Moved in together a year ago?
+  B. 12 months living together? You're common-law.
+  C. Not married? The CRA may disagree.
+
+## P12 (fullyfunded)
+  A. Partner skipped their taxes?
+  B. No income? Still file.
+  C. Your partner's taxes can stop your benefit.
+
+## P13 (fullyfunded)
+  A. Married? Your spouse can't just step in.
+  B. Who pays your bills if you can't?
+  C. Your spouse isn't automatically in charge.
+
+## P14 (fullyfunded)
+  A. Money talk only in a fight?
+  B. Book a monthly money date.
+  C. 20 minutes a month for your money.
+
+## P15 (fullyfunded)
+  A. Rent due before payday?
+  B. Pay this month with last month's pay.
+  C. Live one month ahead.
+
+## P16 (hourback)
+  A. Toast tonight? Nothing written.
+  B. Speech at 8. Still blank?
+  C. Best friend's wedding. No toast yet.
+
+## P17 (hourback)
+  A. Toast tonight? Can't memorize it?
+  B. Don't memorize your toast. Do this.
+  C. Speech at 8. Blank mind?
+
+## P18 (hourback)
+  A. Guests in 30 minutes?
+  B. Doorbell in 30. Place is a mess.
+  C. 30 minutes. Where do you start?
+
+## P19 (hourback)
+  A. Potluck tomorrow. 3 diets?
+  B. Vegan, nut-free, gluten-free. One dish?
+  C. One dish everyone can eat?
+
+## P20 (hourback)
+  A. Dad says he needs nothing?
+  B. Gift for someone who has everything?
+  C. Stuck on a gift under $40?

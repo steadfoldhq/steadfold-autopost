@@ -1,0 +1,16 @@
+Hourback real run, Nov 1 2026 (studio maker, Hourback)
+Used in: hb-day12-potluck (Wed Nov 4, 5:45 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-11-01T14:26:02Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+I'm bringing a dish to a potluck tomorrow. One guest is vegan, one can't eat nuts, and one is gluten-free. I have about 30 minutes to cook and $20. Give me 3 dishes that work for all of them, one line each.
+
+===== REPLY (verbatim) =====
+1. **Black bean & corn salad**: canned black beans, corn, diced peppers, red onion, cilantro, lime juice, olive oil, cumin. About 15 minutes and roughly $10.
+2. **Coconut chickpea curry over rice**: onion, garlic, curry powder, canned chickpeas, canned tomatoes and coconut milk, served over plain rice. About 30 minutes and roughly $12.
+3. **Roasted potatoes and veggies**: baby potatoes, carrots and broccoli tossed in olive oil, salt, garlic powder and smoked paprika, roasted at 425°F. About 30 minutes and roughly $10.
+
+Check the labels on canned goods and spice blends for hidden gluten, nut or dairy ingredients. Skip soy sauce, which has gluten, or use certified gluten-free tamari instead.

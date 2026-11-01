@@ -1,0 +1,53 @@
+Hourback real run, Nov 1 2026 (studio maker, Hourback)
+Used in: hb-reel-1102-toast-cue-card (Mon Nov 2, 7 pm), Part 2 of hb-reel-1101-wedding-toast
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-11-01T14:26:17Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+I have to give this toast tonight and I can't memorize it. Turn it into a cue card: 5 short prompts, a few words each, that I can glance at to remember each part. Here's the toast:
+
+Here's a toast that runs about a minute out loud:
+
+---
+
+Hi everyone. For those who don't know me, I'm [your name], and I've been Maya's best friend since our first week of college.
+
+That's when I met her, standing outside our dorm at 2 a.m. in our pajamas, because Maya had set off the fire alarm. Making toast. So it feels right that I'm the one up here making one tonight. I promise to keep this one under control.
+
+Over the years I learned that Maya is the person who shows up. When I moved, she drove six hours to help me carry boxes, and she never once complained. Okay, she complained a little, but she kept carrying.
+
+Then she met Theo. And Theo did something none of us had ever managed: he beat her at Scrabble. More than once. I knew right then he was either a genius or the one. It turns out he's both.
+
+Theo, you found someone who will cross a state for you. Maya, you found someone who can keep up with you, and occasionally win.
+
+So please raise your glasses. To Maya and Theo: a lifetime of showing up for each other, a few friendly Scrabble rivalries, and a smoke detector that never goes off. Cheers!
+
+---
+
+**Delivery tips:**
+- Pause after "Making toast." The laugh lands there.
+- Make eye contact with Theo on the Scrabble line and with Maya on the line about her showing up.
+- Swap "cross a state" for "drive six hours" if the move wasn't out of state.
+
+Have a wonderful night. You'll do great.
+
+===== REPLY (verbatim) =====
+Here's your cue card:
+
+**1. Intro: best friend since college, week one**
+
+**2. Fire alarm, 2 a.m. → "Making toast." (pause)**
+
+**3. She shows up: six-hour drive, boxes (complained a little)**
+
+**4. Theo beat her at Scrabble → genius *and* the one**
+
+**5. Raise glasses: showing up, Scrabble, quiet smoke detector**
+
+Small reminders:
+- Look at Maya on #3 and Theo on #4.
+- The line "Theo, you found someone who will cross a state for you…" sits between cards 4 and 5. If you lose it, skip straight to the glasses. Nobody will notice.
+
+You've got this. Enjoy the night!

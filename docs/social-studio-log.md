@@ -1,5 +1,48 @@
 # Social studio log (v4)
 
+## Sun Nov 1, 2026 (daily run, fired 9:17 am Toronto)
+
+**No studio runs Oct 29–31** (the desks hit the account usage limit), so the queue was empty from Sat 7 pm except Monday's 4 series posts. This run refilled Sun 7 pm → Wed 5:45 pm on every page.
+
+**Followers (insights Nov 1 12:51 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6** = 22, flat since Oct 23 (7-day change 0 on every page).
+
+**Profile views (day_profile_views, last read per ET day, Oct 25 → Oct 31, then today so far):**
+- FF: 8 · 6 · 1 · 1 · 2 · 1 · 0 → 0
+- LH: 6 · 5 · 1 · 0 · 0 · 0 · 0 → 1
+- HB: 3 · 5 · 3 · 1 · 1 · 1 · 0 → 0
+- LF: 5 · 10 · 10 · 7 · 5 · 2 · 2 → 2
+
+**Follows / profile visits per carousel (7 days):** 0 follows on every feed post; feed reach 0–1 on all 8 series posts (desk). follows_from_posts: LF 1 (unchanged since Oct 22), others 0.
+
+**3 lessons, applied today (desk read Nov 1 04:53 UTC)**
+1. **A size you can picture + a topic every under-5 parent has = LF's biggest batch** (rice grain 1,337 reach, 7.65 s / 53%). All 3 LF Reels carry one: "Cut each grape into 4.", "Strips, not round slices.", "Babies can drown in 5 cm of water."
+2. **Reach isn't the bottleneck; follows are** (1,337 strangers → 0 follows). Today's test: a real **Part 2** on all four pages. Sunday's Reel ends "Part 2 tomorrow, 7 pm." + the page follow line, and Monday's Reel is that Part 2 with its own hook (LF grapes → sausage; LH shower → one lamp; FF common-law → both partners file; HB toast → cue card). Grade: LF/LH profile views on Mon/Tue vs the 2/day baseline, and any follows.
+3. **FF only batches on Canadian partner/deadline stakes** (wills, TFSA trap); US-only and penalty opens got 3–11. All 3 FF Reels are Canadian couple/family rules with "Canada" on frame 0, in the drawn style, now with a cobalt field.
+
+**Shipped (rollback: `docs/social-recovery/2026-11-01.md`):** 16 new entries, 1 edited (Day 11 slides, CONFUSING), 0 moved.
+- 12 Reels, 12.8–14.6 s, existing library tracks at −13.5 to −14.1 LUFS, 1.5–4.4 MB; Sun/Mon/Tue 7 pm.
+- 4 series episodes Wed (3 am Club No. 5 "Baby keeps throwing up", One Word No. 6 "Doodle.", Rich Habits No. 5 "money date", HB Day 12 potluck, real Claude run).
+- Sources: NHS (food prep, baby safety, D&V), AAP; Haghayegh 2019, Gooley 2011, Biwer 2023, Andrade 2010; CRA marital status / CCB pages, ontario.ca + Ontario POA kit; HB runs in `studio/editorial/hb-nov01-run-*.txt`.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0/0 · dry-run OK at Sun 19:05, Mon 19:05, Tue 19:05, Wed 17:50 · banned-word scan clean · ceilings held (max 1 feed + 1 Reel per page per day).
+
+**Hooks (fresh stranger picker, 3 options each):** adopted picker picks or rewrites on 9: LH "Can't fall asleep? Shower 90 minutes before bed." (shortened kicker form), "Your ceiling light says it's daytime.", "Studying tonight? 24 minutes on, 6 off."; FF "Living with your partner 12 months? You're common-law.", "Partner didn't file a tax return?", "Too sick to make decisions? Who pays your bills?"; HB "Best friend's wedding. No toast yet."; LF "Babies can drown in 5 cm of water.", "It's 3 am. Baby keeps throwing up." Kept maker's pick on the rest.
+
+**Styles (covers):** LF reframe, compare (coral field), kinetic "5 cm"; LH kinetic "90", compare, Look B; FF sticky note (cobalt), Look B, follow the line; HB sticky note, compare, kinetic. grid_preview run and looked at for every page: ≥6 styles in each 9-tile window. Accepted: one loud-loud pair per page where a fixed loud series cover follows a loud Reel cover (LF 5 cm → 3 am Club; LH Look B → One Word; HB kinetic → Day 12).
+
+**Clarity gate (fresh strangers, text only), 3 rounds:**
+- Round 1 (20 pieces incl. Monday's 4 queued): 3 CONFUSING: 3 am Club No. 5 ("Baby's been sick" = ill in North America; who to call), FF both-file ("File together" — Canada has no joint return), HB Day 11 ("4, 1, 5" numbering read as an error, queued Mon). All rewritten.
+- Round 2 (17): 2 CONFUSING: FF power of attorney ("Can't decide for yourself?" read as indecisive), HB toast (real vs made-up stories tangle; toast unreadable). Rewritten.
+- Round 3: HB toast and FF common-law CLEAR. FF POA still CONFUSING and the stranger caught an **accuracy** issue (a non-continuing POA stops at incapacity) → now "Sign a continuing power of attorney for property." + "2 witnesses" (Ontario POA kit). Accepted on the maker's re-check; next run re-gates it (>24 h out).
+
+**Peer + CD gate (fresh agent, rendered frames):** round 1: 3 LF + 2 carousels SHIP, 11 FIX (FF Reels near-bare cream cards with blank wipe frames and the stamp in the top UI zone; HB payoffs in 25–30 px handwriting; LH clipped labels; scenes too small with empty lower bands). Round 2: **all 16 SHIP**, nits only (fixed: LF follow pill and sub-lines to 46–50 px, LH stamp lifted, FF stamp on end cards, HB hard cuts). I looked at the Sunday strips and all 4 grids myself.
+
+**Not done / next run:**
+- Wed 8 am and Thu–Fri are empty. Promised and not built: 3 am Club No. 6, One Word No. 7, Rich Habits No. 6 (Fri 5 pm), HB Day 13 (Fri 5:45 pm).
+- No Stories were made (desk order: Stories last).
+- FF POA cover still reads "Your spouse can't just step in." (the Reel's hook changed); re-gate and consider a cover swap before Tue.
+- Grade: Part 2 test (profile views Mon–Tue vs baseline, follows); LF grapes/sausage/5 cm ≥5 s and ≥30% on ≥100; FF ≥40 reach at 15 h on all 3 (else the account is the suspect); LH ≥5 s / 30% on ≥40; HB ≥5 s on ≥40.
+
 ## Wed Oct 28, 2026 (daily run, fired 9:27 am Toronto)
 
 **Followers (insights Oct 28 12:55 UTC):** Fully Funded **7**, Locked Hour **4**, Hourback **5**, Littlefold **6**: 22 in total, flat since Oct 23. Change over 7 days (vs Oct 21): FF +2, LH +1, HB +1, LF +2. All of that came Oct 22–23 and none of it can be attributed.
