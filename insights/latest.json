@@ -1,13 +1,33 @@
 {
- "collected_at": "2026-11-01T20:39:26+00:00",
+ "collected_at": "2026-11-02T05:02:17+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 56,
+   "media_count": 57,
    "posts": [
+    {
+     "media_id": "18148754005538705",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfN-FwojQHr/",
+     "at": "2026-11-02T00:01:03+0000",
+     "first_line": "Living with your partner 12 months? You're common-law. In Canada, after 12 months of living together, the CRA counts you as common-law, even",
+     "likes": 1,
+     "comments_count": 1,
+     "insights": {
+      "views": 16,
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 5718,
+      "ig_reels_video_view_total_time": 68621,
+      "follow_error": "GET 18148754005538705/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17981005568915781",
      "type": "REEL",
@@ -770,39 +790,39 @@
       "profile_visits": 1
      },
      "comments": []
-    },
-    {
-     "media_id": "18076929002442429",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DerQykME3y_/",
-     "at": "2026-10-19T12:31:01+0000",
-     "first_line": "New baby, new mortgage: which life insurance? Here's the difference in plain words.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 29,
-      "reach": 20,
-      "saved": 5,
-      "shares": 6,
-      "total_interactions": 23,
-      "ig_reels_avg_watch_time": 3389,
-      "ig_reels_video_view_total_time": 77947,
-      "follow_error": "GET 18076929002442429/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "lockedhour": {
    "account": "lockedhour",
    "username": "lockedhourhq",
-   "followers_count": 4,
+   "followers_count": 5,
    "follows_count": 3,
-   "media_count": 56,
+   "media_count": 57,
    "posts": [
+    {
+     "media_id": "17917064436521603",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfN-az7Amid/",
+     "at": "2026-11-02T00:03:53+0000",
+     "first_line": "Can't fall asleep? Shower 90 minutes before bed. A warm shower, timed right, helps you fall asleep sooner.",
+     "likes": 20,
+     "comments_count": 1,
+     "insights": {
+      "views": 1281,
+      "reach": 1068,
+      "saved": 7,
+      "shares": 2,
+      "total_interactions": 31,
+      "ig_reels_avg_watch_time": 6680,
+      "ig_reels_video_view_total_time": 7134383,
+      "follow_error": "GET 17917064436521603/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18121084163073879",
      "type": "REEL",
@@ -812,13 +832,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 111,
-      "reach": 99,
+      "views": 112,
+      "reach": 101,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 3993,
-      "ig_reels_video_view_total_time": 403308,
+      "ig_reels_avg_watch_time": 4002,
+      "ig_reels_video_view_total_time": 408260,
       "follow_error": "GET 18121084163073879/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -832,13 +852,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 62,
-      "reach": 55,
+      "views": 63,
+      "reach": 56,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5018,
-      "ig_reels_video_view_total_time": 281012,
+      "ig_reels_avg_watch_time": 4962,
+      "ig_reels_video_view_total_time": 282842,
       "follow_error": "GET 18178075000448451/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -871,13 +891,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 114,
-      "reach": 99,
+      "views": 115,
+      "reach": 100,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3658,
-      "ig_reels_video_view_total_time": 365808,
+      "ig_reels_avg_watch_time": 3654,
+      "ig_reels_video_view_total_time": 369101,
       "follow_error": "GET 18212271178367501/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -1565,30 +1585,10 @@
       "follow_error": "GET 17911614957503161/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
-    },
-    {
-     "media_id": "18144868549586313",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/Dep0wsLHye4/",
-     "at": "2026-10-18T23:06:53+0000",
-     "first_line": "Busy all day, but nothing actually got done?",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 41,
-      "reach": 25,
-      "saved": 3,
-      "shares": 2,
-      "total_interactions": 16,
-      "ig_reels_avg_watch_time": 4448,
-      "ig_reels_video_view_total_time": 151254,
-      "follow_error": "GET 18144868549586313/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
-     },
-     "comments": []
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 3
    }
   },
   "hourback": {
@@ -1596,8 +1596,28 @@
    "username": "hourbackhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 53,
+   "media_count": 54,
    "posts": [
+    {
+     "media_id": "18229089337336919",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfN-QmIigYa/",
+     "at": "2026-11-02T00:02:36+0000",
+     "first_line": "Best friend's wedding and no toast yet? Give AI 3 true stories about your friend and ask for a toast you can say in 1 minute.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 144,
+      "reach": 117,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5494,
+      "ig_reels_video_view_total_time": 631864,
+      "follow_error": "GET 18229089337336919/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "17996547128842707",
      "type": "REEL",
@@ -2360,25 +2380,6 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "18219251656353694",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DepM7_XmgdP/",
-     "at": "2026-10-18T17:18:38+0000",
-     "first_line": "Same price as last year doesn't mean nothing changed.",
-     "likes": 6,
-     "comments_count": 1,
-     "insights": {
-      "views": 43,
-      "reach": 9,
-      "saved": 5,
-      "shares": 12,
-      "total_interactions": 30,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -2388,10 +2389,30 @@
   "littlefold": {
    "account": "littlefold",
    "username": "littlefoldhq",
-   "followers_count": 6,
+   "followers_count": 7,
    "follows_count": 3,
-   "media_count": 55,
+   "media_count": 56,
    "posts": [
+    {
+     "media_id": "18108462652975435",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfN-WajD_In/",
+     "at": "2026-11-02T00:03:12+0000",
+     "first_line": "Toddler eating grapes? Cut each grape into 4 small pieces.",
+     "likes": 12,
+     "comments_count": 1,
+     "insights": {
+      "views": 1370,
+      "reach": 1069,
+      "saved": 2,
+      "shares": 0,
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 7212,
+      "ig_reels_video_view_total_time": 7652250,
+      "follow_error": "GET 18108462652975435/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
+     },
+     "comments": []
+    },
     {
      "media_id": "18134201956702953",
      "type": "REEL",
@@ -2421,13 +2442,13 @@
      "likes": 9,
      "comments_count": 1,
      "insights": {
-      "views": 1671,
-      "reach": 1337,
+      "views": 1672,
+      "reach": 1339,
       "saved": 2,
       "shares": 6,
       "total_interactions": 18,
-      "ig_reels_avg_watch_time": 7646,
-      "ig_reels_video_view_total_time": 10338614,
+      "ig_reels_avg_watch_time": 7642,
+      "ig_reels_video_view_total_time": 10340236,
       "follow_error": "GET 18685246018028616/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3150,25 +3171,6 @@
       "saved": 4,
       "shares": 3,
       "total_interactions": 17,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17904510816598166",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DerpGRllPVP/",
-     "at": "2026-10-19T16:03:11+0000",
-     "first_line": "Up to $2,000 for your child's education, and you don't have to put in a cent. Part 2 of baby money.",
-     "likes": 3,
-     "comments_count": 1,
-     "insights": {
-      "views": 17,
-      "reach": 4,
-      "saved": 4,
-      "shares": 13,
-      "total_interactions": 26,
       "follows": 0,
       "profile_visits": 0
      },
