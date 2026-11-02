@@ -9171,6 +9171,75 @@
       "comment_id": "18102749372644793",
       "comment_error": null,
       "commented_at": "2026-11-02T00:00:17Z"
+    },
+    "ff-richhabits-04": {
+      "account": "fullyfunded",
+      "status": "failed",
+      "children": [
+        "18155709646497733",
+        "18155709667497733",
+        "18155709706497733"
+      ],
+      "children_media": [
+        "studio-oct28/fullyfunded/ff-richhabits-04/01.jpg",
+        "studio-oct28/fullyfunded/ff-richhabits-04/02.jpg",
+        "studio-oct28/fullyfunded/ff-richhabits-04/03.jpg"
+      ],
+      "children_created_at": "2026-11-02T22:27:01Z",
+      "updated_at": "2026-11-02T22:27:31Z",
+      "container_id": "18155709730497733",
+      "container_created_at": "2026-11-02T22:27:01Z",
+      "publish_called": true,
+      "publish_called_at": "2026-11-02T22:27:01Z",
+      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AXZKvLQRjiZIBOuHA6mZPNN)",
+      "attempts": 1,
+      "failed_at": "2026-11-02T22:27:01Z"
+    },
+    "lf-3amclub-04": {
+      "account": "littlefold",
+      "status": "failed",
+      "children": [
+        "17885035071544608",
+        "17885035092544608",
+        "17885035125544608"
+      ],
+      "children_media": [
+        "studio-oct28/littlefold/lf-3amclub-04/01.jpg",
+        "studio-oct28/littlefold/lf-3amclub-04/02.jpg",
+        "studio-oct28/littlefold/lf-3amclub-04/03.jpg"
+      ],
+      "children_created_at": "2026-11-02T22:27:01Z",
+      "updated_at": "2026-11-02T22:28:00Z",
+      "container_id": "17885035155544608",
+      "container_created_at": "2026-11-02T22:27:01Z",
+      "publish_called": true,
+      "publish_called_at": "2026-11-02T22:27:01Z",
+      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AM1NyS2_lRLfzTiwycmnG02)",
+      "attempts": 1,
+      "failed_at": "2026-11-02T22:27:01Z"
+    },
+    "lh-oneword-05": {
+      "account": "lockedhour",
+      "status": "failed",
+      "children": [
+        "18073518692521398",
+        "18073518716521398",
+        "18073518740521398"
+      ],
+      "children_media": [
+        "studio-oct28/lockedhour/lh-oneword-05/01.jpg",
+        "studio-oct28/lockedhour/lh-oneword-05/02.jpg",
+        "studio-oct28/lockedhour/lh-oneword-05/03.jpg"
+      ],
+      "children_created_at": "2026-11-02T22:27:01Z",
+      "updated_at": "2026-11-02T22:28:29Z",
+      "container_id": "18073518767521398",
+      "container_created_at": "2026-11-02T22:27:01Z",
+      "publish_called": true,
+      "publish_called_at": "2026-11-02T22:27:01Z",
+      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=A3_L1HFDT4gbROMnNd6aoLL)",
+      "attempts": 1,
+      "failed_at": "2026-11-02T22:27:01Z"
     }
   }
 }
