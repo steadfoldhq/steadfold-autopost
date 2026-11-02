@@ -1,5 +1,47 @@
 # Social studio log (v4)
 
+## Mon Nov 2, 2026 (daily run, fired 10:28 am Toronto)
+
+**Followers (insights Nov 2 13:06 UTC):** Fully Funded **7** (0), Locked Hour **5** (+1), Hourback **5** (0), Littlefold **7** (+1) = 24. 7-day change: FF 0, LH +1, HB 0, LF +1. Both gains landed the night of each page's 1,000+ Reel (LH warm shower, LF grapes): ~1 follow per 1,000 reach.
+
+**Profile views (day_profile_views, last read per ET day, Oct 27 → Nov 1, then today so far):**
+- FF: 1 · 1 · 2 · 1 · 0 · 0 → 2
+- LH: 1 · 0 · 0 · 0 · 0 · 1 → 2
+- HB: 3 · 1 · 1 · 1 · 0 · 0 → 0
+- LF: 10 · 7 · 5 · 2 · 2 · 2 → 1
+
+**Follows / profile visits per carousel (7 days):** 0 follows and 0 profile visits on all 8 series carousels (reach 1 each). follows_from_posts: LF 1 (unchanged), others 0.
+
+**3 lessons, applied today**
+1. **A number you can picture or do, in the first line, makes the batch** (LF grapes 1,323 / 7.26 s; LH warm shower 1,075 / 6.67 s with 7 saves + 2 sends; LF rice 1,339). Applied: every LF and LH hook carries one ("2 hours", "0.5 mL is not 5 mL", "After 20 minutes", "Bed at 11? … done by 10", "5 minutes").
+2. **Follows only come with a fast batch, and even then 1 per ~1,000.** Applied: second Part 1 → Part 2 pair on LF (coin batteries) and LH (sleep) while tonight's Part 2 test is graded; follow lines now name what you get (LH: "one small sleep or focus trick a day").
+3. **FF: best hold ever (common-law 5.72 s / 43%) but 25 reach at 13 h**: distribution, not the hook. Applied: no FF topic change (Canadian family rules, RESP grant + pension splitting), no extra FF volume; account check stays on Dharma's list.
+
+**Shipped (rollback: `docs/social-recovery/2026-11-02.md`):** 10 new Reels, 3 queued entries fixed in place, 0 moved.
+- Wed Nov 4 7 pm: LF coin battery (Part 1, 11.5 s), LH get up after 20 minutes (Part 1, 14.6 s), FF RESP grant needs baby's SIN (13.6 s), HB interview at 9 am (14.4 s).
+- Thu Nov 5 8 am (trial auto): LF 0.5 mL vs 5 mL (13.2 s), LH 5 minutes of slow sighs (14.6 s).
+- Thu Nov 5 7 pm: LF battery swallowed → ER + honey, over 1 only (Part 2, 13.4 s), LH hard workout done 1 h before bed (Part 2, 14.6 s), FF pension splitting for couples (13.6 s), HB flight at 6 am packing list (14.4 s).
+- Existing library tracks only, −13.5 to −14.1 LUFS, 1.7–4.4 MB. HB runs: `studio/editorial/hb-nov02-run-interview.txt`, `-packing.txt`. Sources in each first_comment (AAP HealthyChildren, Health Canada, NHS; Schutte-Rodin 2008, Stutz 2019, Balban 2023; CRA/ESDC CESG, CRA pension splitting, Ontario POA kit).
+- Queue now runs to Thu Nov 5 7 pm on every page. **Not built:** Fri series (3 am Club No. 6, One Word No. 7, Rich Habits No. 6, HB Day 13, promised for Fri 5 pm / 5:45 pm): next run.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0/0 · dry-run OK at Tue 19:05, Wed 17:50, Wed 19:05, Thu 08:05, Thu 19:05 · banned-word scan clean · ceilings held (max 1 feed + 2 Reels per page per day).
+
+**Hooks (fresh stranger picker, 3 options each):** adopted picker picks on LF medicine ("0.5 mL is not 5 mL"), LH get-up, LH sighs, FF RESP ("Save $100. Canada adds $20."), LH workout (B: "Bed at 11? Hard workout done by 10."); FF pension rewritten to "One pension? Split it. Pay less tax?" (picker: no payoff in any option). Kept maker's on HB (picker wanted "AI" in the hook; the toast that passed both bars had none). LF coin battery reordered to "a swallowed coin battery / Can burn a throat in 2 hours." for safety.
+
+**Styles (covers):** LF sticky-note (quiet) → kinetic "0.5 mL" (loud) → reframe (quiet); LH reframe → kinetic "5" → follow the line; FF big-number "+$20" → Look B; HB reframe → one-word "Packed?". grid_preview run and looked at for every page: ≥6 styles in each 9-tile window. Accepted: loud series cover next to a loud Reel cover where the series slot fixes it.
+
+**Clarity gate (fresh strangers, text only):**
+- Re-gate of queued >24 h items (8): 1 CONFUSING (FF Rich Habits 05: "1–7" row read as a week, "20:00" timer read as 8 pm) + flags on FF POA (court overstated, cover sub-lines jumbled, witness rule), HB potluck ("Fits all 3 diets" stated as fact on an allergy topic). All fixed and re-gated CLEAR.
+- New Reels round 1 (10): 3 CONFUSING: LF coin battery (no "what if swallowed" until Part 2: safety gap), FF pension (who qualifies, RRIF jargon), HB flight (trip never described). Round 2: 1 CONFUSING: LF honey ("save the poison centre number" with no number; Health Canada credited on honey it doesn't itself recommend) → numbers on screen, honey credited to AAP only. All CLEAR after.
+
+**Peer + CD gate (fresh agent, rendered frames):** round 1: 7 SHIP, 3 FIX (LF honey: spoon covered the "over 1" condition; FF both: bare text do-this cards on flat cobalt). Round 2: 9 SHIP, 4 small FIX (spoon over "2 teaspoons", POA cover route line meaningless, sighs cover headline in top 10%, "Its" read as typo). All fixed; I looked at the final honey strip, the three fixed covers/slides and all 4 grids myself.
+
+**What the gate cut:** nothing whole. Cut on screen: "thermometers" (LF A), the RRIF line (FF pension, now caption), the $100→$2,500 count-up (read as growth).
+
+**Doubts for the founder/desk:** LF honey is AAP guidance (over 1, can swallow liquids, never delay the ER); Health Canada only notes some poison centres suggest it. LH workout's evidence is one study within a 23-study review (caption says so). FF pension is a send-to-parents topic, weaker fit for FF's audience, chosen because sends are the gap.
+
+**Grade next run:** tonight's Part 2 Reels (desk order 3: ≥30% on ≥100, FF ≥40; followers +5 by Wed); LF/LH Wed Part 1s ≥100 in 5 h and ≥30%; LF/LH Thu 8 am trials vs morning history (123–146 LF); HB interview ≥5 s / 30% on ≥40; FF RESP ≥40 at 15 h (else account confirmed as the suspect).
+
 ## Sun Nov 1, 2026 (daily run, fired 9:17 am Toronto)
 
 **No studio runs Oct 29–31** (the desks hit the account usage limit), so the queue was empty from Sat 7 pm except Monday's 4 series posts. This run refilled Sun 7 pm → Wed 5:45 pm on every page.

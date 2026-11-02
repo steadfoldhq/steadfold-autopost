@@ -1,0 +1,45 @@
+Hourback real run, Nov 2 2026 (studio maker, Hourback)
+Used in: hb-reel-1105-flight-6am (Thu Nov 5, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-11-02T15:34:23Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+My flight is at 6 am tomorrow and I haven't packed. 3 nights in Vancouver, carry-on only. There's a wedding on Saturday (I'm wearing a suit), one day hike, and it'll probably rain. Make me a packing list sorted by room in my apartment (bedroom, bathroom, kitchen, front door) so I only walk through once. Keep it short.
+
+===== REPLY (verbatim) =====
+# Packing list: Vancouver, 3 nights, carry-on only
+
+**Bedroom**
+- Suit, dress shirt, tie or pocket square, belt
+- Dress shoes and dress socks
+- Hiking pants and a moisture-wicking top
+- Fleece or warm mid-layer
+- Rain jacket (wear it on the plane)
+- Hiking shoes (wear them on the plane, since they're the bulkiest pair)
+- 2 casual outfits, sleepwear
+- 4 underwear and 4 pairs of socks (one pair wool for the hike)
+- Small daypack (it can also be your personal item)
+- Phone charger, power bank, earbuds
+
+**Bathroom**
+- Toothbrush, toothpaste, deodorant
+- Razor and shaving cream
+- Hair products, skincare, sunscreen
+- Medications and a few blister bandages
+- Liquids in a clear bag, 100 ml max each
+
+**Kitchen**
+- Reusable water bottle (empty for security)
+- Snacks for the hike and the flight
+
+**Front door**
+- ID or passport, wallet, keys
+- Boarding pass
+- Compact umbrella
+- Wedding gift or card
+
+**Tips**
+- **Suit:** fold the jacket inside-out with the shoulders tucked into each other, lay it on top of the bag, and hang it in the hotel bathroom while you shower to steam out the creases.
+- **Before bed:** set two alarms and book your ride to the airport.

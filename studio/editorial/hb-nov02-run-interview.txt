@@ -1,0 +1,31 @@
+Hourback real run, Nov 2 2026 (studio maker, Hourback)
+Used in: hb-reel-1104-interview-9am (Wed Nov 4, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+Run at (UTC): 2026-11-02T15:34:15Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+My job interview is tomorrow at 9 am and I haven't prepared at all. Here's the job posting:
+
+"Shift Supervisor, neighbourhood bakery café. Open the store at 6 am two days a week, lead a team of 4, handle customer complaints, count the cash drawer at close, and train new staff. 1+ year in food service. Weekend availability."
+
+Based on this posting, what are the 5 questions they're most likely to ask me? Keep each one short, and add one line on what they're really checking.
+
+===== REPLY (verbatim) =====
+1. **"Tell me about a time you dealt with an upset customer."**
+   *Really checking:* whether you stay calm, take ownership, and fix the problem without giving away the store.
+
+2. **"How would you handle a team member who shows up late or isn't pulling their weight?"**
+   *Really checking:* whether you can lead people you work alongside: address issues directly, fairly, and early.
+
+3. **"Can you reliably open at 6 am and work weekends?"**
+   *Really checking:* dependability. If the opener doesn't show, the store doesn't open.
+
+4. **"Your cash drawer is $20 short at close. What do you do?"**
+   *Really checking:* honesty and process. Recount, document, report, and don't cover it up or guess.
+
+5. **"How would you train a brand-new hire on their first shift?"**
+   *Really checking:* whether you can break tasks down, be patient, and get someone productive fast without overwhelming them.
+
+**Quick prep tip:** For questions 1, 2, and 5, have a real 30-second story ready using Situation → Action → Result. If your experience is mostly outside food service, say so plainly. Then draw on things you've actually done, like training colleagues, handling escalations, or owning accuracy-critical work. They'll respect honesty more than a stretched answer.
