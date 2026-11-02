@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-02T17:05:41+00:00",
+ "collected_at": "2026-11-02T20:47:34+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 39,
-      "reach": 32,
+      "views": 40,
+      "reach": 33,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3678,
-      "ig_reels_video_view_total_time": 121400,
+      "ig_reels_avg_watch_time": 3587,
+      "ig_reels_video_view_total_time": 121974,
       "follow_error": "GET 18148754005538705/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2402,13 +2402,13 @@
      "likes": 18,
      "comments_count": 1,
      "insights": {
-      "views": 1560,
-      "reach": 1325,
+      "views": 1562,
+      "reach": 1326,
       "saved": 3,
       "shares": 1,
       "total_interactions": 23,
-      "ig_reels_avg_watch_time": 7271,
-      "ig_reels_video_view_total_time": 9576308,
+      "ig_reels_avg_watch_time": 7270,
+      "ig_reels_video_view_total_time": 9589831,
       "follow_error": "GET 18108462652975435/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
