@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-02T05:02:17+00:00",
+ "collected_at": "2026-11-02T13:06:29+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 12,
+      "views": 32,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 5718,
-      "ig_reels_video_view_total_time": 68621,
+      "ig_reels_avg_watch_time": 3260,
+      "ig_reels_video_view_total_time": 84763,
       "follow_error": "GET 18148754005538705/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -793,7 +793,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 2
    }
   },
   "lockedhour": {
@@ -812,13 +812,13 @@
      "likes": 20,
      "comments_count": 1,
      "insights": {
-      "views": 1281,
-      "reach": 1068,
+      "views": 1289,
+      "reach": 1075,
       "saved": 7,
       "shares": 2,
       "total_interactions": 31,
-      "ig_reels_avg_watch_time": 6680,
-      "ig_reels_video_view_total_time": 7134383,
+      "ig_reels_avg_watch_time": 6673,
+      "ig_reels_video_view_total_time": 7173694,
       "follow_error": "GET 17917064436521603/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -951,8 +951,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 1,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1588,7 +1588,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 3
+    "profile_views": 2
    }
   },
   "hourback": {
@@ -1607,13 +1607,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 144,
-      "reach": 117,
+      "views": 147,
+      "reach": 120,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5494,
-      "ig_reels_video_view_total_time": 631864,
+      "ig_reels_avg_watch_time": 5377,
+      "ig_reels_video_view_total_time": 634552,
       "follow_error": "GET 18229089337336919/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -2399,16 +2399,16 @@
      "permalink": "https://www.instagram.com/reel/DfN-WajD_In/",
      "at": "2026-11-02T00:03:12+0000",
      "first_line": "Toddler eating grapes? Cut each grape into 4 small pieces.",
-     "likes": 12,
+     "likes": 18,
      "comments_count": 1,
      "insights": {
-      "views": 1370,
-      "reach": 1069,
-      "saved": 2,
-      "shares": 0,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 7212,
-      "ig_reels_video_view_total_time": 7652250,
+      "views": 1559,
+      "reach": 1323,
+      "saved": 3,
+      "shares": 1,
+      "total_interactions": 23,
+      "ig_reels_avg_watch_time": 7265,
+      "ig_reels_video_view_total_time": 9554550,
       "follow_error": "GET 18108462652975435/insights: HTTP 400: The Media Insights API does not support the follows, profile_visits metric for this media product type. (code=100, sub"
      },
      "comments": []
@@ -3178,7 +3178,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 2
+    "profile_views": 1
    }
   }
  }
