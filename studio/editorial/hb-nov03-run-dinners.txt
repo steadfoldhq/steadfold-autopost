@@ -1,0 +1,55 @@
+Hourback real run, Nov 3 2026 (studio maker, Hourback)
+Used in: hb-reel-1107-5-dinners (Sat Nov 7, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (see the
+  ISOLATION FIX note in studio/editorial/nov03_hourback_run.py; an earlier non-isolated run was discarded unused).
+Run at (UTC): 2026-11-03T14:31:23Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+The grocery store closes at 9 and I need to shop for the week. Plan 5 weeknight dinners for 2 adults, each under 30 minutes, that share ingredients so nothing goes to waste. Budget about $80. Give me the 5 dinners (one line each), then one shopping list, then tell me which ingredients get used more than once. Keep it short.
+
+===== REPLY (verbatim) =====
+**Dinners**
+1. **Mon: Chicken fajitas.** Sliced chicken, peppers, and onion with tortillas, salsa, and sour cream.
+2. **Tue: Chicken fried rice.** Chicken, rice, eggs, frozen peas, green onion, and soy sauce.
+3. **Wed: Black bean quesadillas.** Black beans, peppers, onion, and cheese in tortillas, with salsa and sour cream.
+4. **Thu: Garlic chicken and broccoli pasta.** Chicken, broccoli, garlic, and parmesan.
+5. **Fri: Rice and bean burrito bowls.** Rice, black beans, corn, peppers, cheese, salsa, and sour cream.
+
+**Shopping list (about $70 to $80)**
+- Chicken breasts or thighs, 2.5 lb
+- Bell peppers, 4
+- Yellow onions, 2
+- Garlic, 1 head
+- Green onions, 1 bunch
+- Broccoli, 1 large head
+- Flour tortillas, 1 pack of 10
+- Shredded Mexican cheese, 8 oz
+- Parmesan, small wedge or tub
+- Sour cream, 8 oz
+- Salsa, 1 jar
+- Eggs, 6
+- Black beans, 2 cans
+- Frozen peas, 1 bag
+- Frozen corn, 1 bag
+- Rice, 2 lb bag
+- Pasta, 1 lb
+- Soy sauce (skip if you have it)
+
+Pantry items assumed: oil, salt, pepper, cumin, and chili powder.
+
+**Ingredients used more than once**
+- **Chicken:** Mon, Tue, Thu
+- **Bell peppers:** Mon, Wed, Fri
+- **Onion:** Mon, Tue, Wed
+- **Tortillas:** Mon, Wed
+- **Salsa and sour cream:** Mon, Wed, Fri
+- **Shredded cheese:** Wed, Fri
+- **Black beans:** Wed, Fri
+- **Rice:** Tue, Fri. Cook a double batch Tuesday, since day-old rice is better for fried rice anyway.
+- **Garlic:** Tue, Thu
+- **Green onion:** Tue, Fri (as a topping)
+
+The leftover peas and corn are frozen, so they won't spoil.

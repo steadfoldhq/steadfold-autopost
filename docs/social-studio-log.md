@@ -1,5 +1,51 @@
 # Social studio log (v4)
 
+## Tue Nov 3, 2026 (daily run, fired 9:20 am Toronto)
+
+**Followers (insights Nov 3 13:01 UTC):** Fully Funded **7** (0), Locked Hour **5** (0), Hourback **6** (+1, overnight), Littlefold **7** (0) = 25. 7-day change: FF 0, LH +1, HB +1, LF +1.
+
+**Profile views (day_profile_views, last read per ET day, Oct 28 → Nov 2, then today so far):**
+- FF: 1 · 2 · 1 · 0 · 0 · 2 → 1
+- LH: 0 · 0 · 0 · 0 · 1 · 3 → 1
+- HB: 1 · 1 · 1 · 0 · 0 · 0 → 0
+- LF: 7 · 5 · 2 · 2 · 2 · 1 → 0
+
+**Follows / profile visits per carousel (7 days):** 0 follows and 0 profile visits on all 8 series carousels (reach 0–2). follows_from_posts: LF 1 (unchanged), others 0.
+
+**3 lessons, applied today**
+1. **Number in frame 0 is the only repeatable batch** (all 3 FAST BATCHES; Part 2s without one got 110–152, now LH lamp 251 at 13 h). Applied: all 8 new Reels open on a number ("4 times faster", "all 5 straps", "Mix 3 kinds", "45 minutes", "Up to $60,000 each", "Canada still adds $500", "20 notes left", "Store closes at 9. 5 dinners?").
+2. **Sequel framing costs the batch** (desk, n=4). Applied: no new Part 1/Part 2 pairs; removed "PART 2" from Thu's LF honey Reel and "sleep, part 2" from Thu's LH workout Reel (re-rendered in place, >24 h out).
+3. **Feed reach is 0–1 and 0 follows on every tile.** Applied: only the promised Fri series episodes, cut to 2 slides each; effort moved to Reel frame 0. FF: no topic change (Canadian partner/family rules), account check still open.
+
+**Shipped (rollback: `docs/social-recovery/2026-11-03.md`):** 12 new entries, 2 queued Reels fixed in place, 0 moved.
+- Fri Nov 6 5 pm: 3 am Club No. 6 (formula water boiled in the last 30 min, NHS), One Word No. 7 "Snooze." (Sundelin 2023), Rich Habits No. 6 ("Only 2 left? Sleep on it 24 hours.", Competition Bureau); 5:45 pm HB Day 13 landlord heat email (real Claude run).
+- Fri Nov 6 7 pm: LF high chair 5 straps (12.3 s; NHS, AAP), LH mix 3 kinds of problems (14.6 s; Rohrer & Taylor 2007, Brunmair & Richter 2019), FF Home Buyers' Plan up to $60,000 each (13.6 s; CRA), HB 20 baby-shower thank-you notes (14.6 s).
+- Sat Nov 7 7 pm: LF hot tap 49°C (12.8 s; PHAC, NHS), LH 45 minutes of calm music (14.6 s; Harmat 2008, Cochrane 2022), FF Canada Learning Bond $500 (13.6 s; CRA/ESDC), HB 5 dinners one shopping list (14.6 s).
+- Existing library tracks only, −13.8 to −14.1 LUFS, 1.8–5.2 MB. HB runs: `studio/editorial/hb-nov03-run-thanks.txt`, `-dinners.txt`, `-landlord2.txt` (`-landlord.txt` kept, unused: dates didn't fit a Friday post).
+- Queue now runs to Sat Nov 7 7 pm on every page. **Not built:** Mon Nov 9 series (3 am Club No. 7, One Word No. 8, Rich Habits No. 7, HB Day 14), promised in Friday captions: next run.
+
+**Checks:** 172 tests OK (2 skipped) · queue_lint 0/0 · dry-run OK through Thu 19:05, Fri 17:05, 17:50, 19:05, Sat 19:05 · banned-word scan clean · personal-data scan of new run files clean · ceilings held (max 1 feed + 1 Reel per page per day Fri/Sat).
+
+**Hooks (fresh stranger picker, 3 options each):** adopted picker picks on LF 3 am Club (then rewritten by the clarity gate to "3 am bottle? Use water boiled in the last 30 minutes."), LF tap (shortened to 6 words: "Kids' skin burns 4 times faster."), FF Rich Habits ("Only 2 left? Sleep on it 24 hours."), HB thank-you ("Baby shower's over. 20 notes left."), LH music (picker's own line: "Can't switch off? 45 minutes of calm music."). Picker agreed with the maker on LF high chair, LH snooze, LH mix, FF HBP, FF bond, HB landlord. Kept maker's on HB dinners (picker liked "$80 for 5 dinners", accurate, held as an alternative).
+
+**Styles (covers):** LF awards (quiet) → kinetic "49°C" (loud), series cover between; LH compare (quiet) → Look B (loud); FF awards → sticky note on cobalt; HB sticky note → follow-the-line. grid_preview run and looked at for every page: ≥6 styles in each 9-tile window.
+
+**Clarity gate (fresh strangers, text only):**
+- Re-gate of 14 queued items >24 h out: 14 CLEAR. Safety notes acted on: LF honey caption gets the 12-hour condition. Accepted as is: 3 am Club No. 5 (caption already covers under-1s and dehydration), HB potluck (caption covers labels/allergies).
+- New, round 1 (14): 1 CONFUSING: FF HBP ("$60,000 each" read as a payout, "within 15 years" read as a lump sum) → "Up to $60,000 each", "Pay back a bit each year, over 15 years", missed-payment tax in caption. Round 2 (9 revised): 1 CONFUSING: LF 3 am Club ("Use the kettle within 30 minutes" never says boiled) → fixed. All CLEAR after.
+
+**Peer + CD gate (fresh agent, rendered frames):** round 1: 11 SHIP, 3 FIX (LH music cover weak; HB dinners follow pill over the card; HB Day 13 email dated for a Wednesday on a Friday post → re-run with fitting dates). Round 2: 5 SHIP, 4 FIX (grid-crop edges on 3 covers, FF checkout card jammed at the bottom). All fixed; I looked at the final covers/slides, the HB thank-you strip and all 4 grids myself.
+
+**What the gate cut:** nothing whole. LH maker skipped two topics whose studies failed replication (expressive writing before tests, "say I'm excited").
+
+**Doubts for the founder/desk:**
+- **HB real-run method:** the HB maker found that a plain `claude -p` run in this environment loads the attached claude.ai Project's instructions (it named the founder and his employer in a test; a first landlord draft signed with his real name). Those drafts were discarded, never committed. Today's runs used an isolated mode (`studio/editorial/nov03_hourback_run.py`: empty folder, no setting sources, Project env vars removed). Earlier runs (Oct 24–Nov 2) used the plain call; their outputs show no visible leak. Next runs should use the isolated method.
+- FF bond is the 2nd RESP-adjacent FF Reel in 4 days; HB dinners is the 3rd food-adjacent HB piece in 9 days.
+- LF tap follows PHAC (heater 60°C + valve to 49°C); US guidance (heater at 120°F) differs. LF honey: HealthyChildren.org was blocked to the maker today; the facts were checked Nov 2 plus NCPC today.
+- Cadence wording: series tiles say "every Mon · Wed · Fri" while follow lines say "a day"/"a night"; a stranger noticed.
+
+**Grade next run:** Fri/Sat number-hook Reels: LF/LH ≥500 in 5 h at ≥30%; HB ≥100 at ≥30%; FF ≥40 at 15 h. Thu Part 2s without the label vs Mon's (110–152).
+
 ## Mon Nov 2, 2026 (daily run, fired 10:28 am Toronto)
 
 **Followers (insights Nov 2 13:06 UTC):** Fully Funded **7** (0), Locked Hour **5** (+1), Hourback **5** (0), Littlefold **7** (+1) = 24. 7-day change: FF 0, LH +1, HB 0, LF +1. Both gains landed the night of each page's 1,000+ Reel (LH warm shower, LF grapes): ~1 follow per 1,000 reach.

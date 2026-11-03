@@ -1,0 +1,24 @@
+Hourback real run, Nov 3 2026 (studio maker, Hourback)
+Used in: hb-day13-landlord-email (Fri Nov 6, 5:45 pm, AI, for real · Day 13), replaces hb-nov03-run-landlord.txt
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (see the
+  ISOLATION FIX note in studio/editorial/nov03_hourback_run.py; an earlier non-isolated run was discarded unused).
+Run at (UTC): 2026-11-03T15:23:39Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+Today is Friday, November 6. The heat in my apartment has been off since Wednesday, November 4, and it's 16°C inside. I texted my landlord, Dan, on Wednesday and he said he'd look at it, but nothing has happened. Write me a short email to send him before 5 pm today. Polite but firm: what's wrong, since when, what I've already done, and that I need the heat repaired by Saturday, November 7. Sign it from Alex in unit 4B. Under 120 words.
+
+===== REPLY (verbatim) =====
+**Subject: Heat Not Working in Unit 4B: Repair Needed by Saturday**
+
+Hi Dan,
+
+The heat in my apartment has not worked since Wednesday, November 4, and the indoor temperature is now 16°C. I texted you about it on Wednesday, and you said you'd look into it, but no repair has been made yet.
+
+The apartment is getting uncomfortably cold, so I need the heat repaired by Saturday, November 7. Please let me know today when someone will come, and I'll make sure they can get in.
+
+Thank you,
+Alex
+Unit 4B

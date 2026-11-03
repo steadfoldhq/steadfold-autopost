@@ -1,0 +1,95 @@
+Hourback real run, Nov 3 2026 (studio maker, Hourback)
+Used in: hb-reel-1106-thank-you-20 (Fri Nov 6, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (see the
+  ISOLATION FIX note in studio/editorial/nov03_hourback_run.py; an earlier non-isolated run was discarded unused).
+Run at (UTC): 2026-11-03T14:31:06Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+My baby shower was on Saturday and I have 20 thank-you notes to write today. Here's who gave what:
+
+1. Aunt Rosa: a handmade quilt
+2. Priya: a baby carrier
+3. Grandpa Joe: a rocking chair he fixed up
+4. Mei: a stack of board books
+5. Daniel and Sam: a stroller
+6. Coworkers at the clinic: a diaper bag
+7. Lena: 3 frozen dinners for the first week
+8. Uncle Marco: a $50 gift card
+9. Fatima: a white noise machine
+10. Chris: a bath tub and towels
+11. Neighbour Ruth: a knitted hat
+12. Tom: a baby monitor
+13. Jess: a box of onesies
+14. Cousin Ana: a play mat
+15. Mr. and Mrs. Okafor: a savings bond
+16. Bea: a night light shaped like a moon
+17. Leo: a diaper caddy
+18. Grandma June: her own baby photo album
+19. Karin: a sling
+20. My book club: a basket of snacks for late nights
+
+Write a 2-sentence note for each one. Name the gift and say one specific way we'll use it. Don't make them all sound the same.
+
+===== REPLY (verbatim) =====
+**1. Aunt Rosa**
+Your handmade quilt is already folded over the back of the nursery chair, and I keep running my hand over the stitching. We'll spread it on the floor for tummy time so the baby is surrounded by something you made.
+
+**2. Priya**
+Thank you for the baby carrier! I'm planning to wear the baby on our morning walks around the block so we both get fresh air and I still have my hands free for coffee.
+
+**3. Grandpa Joe**
+I can't believe how beautiful the rocking chair turned out after all your work on it. It's going right next to the crib, and every 3 a.m. feeding will happen in it.
+
+**4. Mei**
+The stack of board books was such a thoughtful gift, and we've already picked out a favorite. Reading one before bed every night is going to be our very first family tradition.
+
+**5. Daniel and Sam**
+We're so grateful for the stroller. You two picked a great one. Our first big outing will be a stroll through the park, and you're welcome to join us.
+
+**6. Coworkers at the clinic**
+Thank you all for the diaper bag. It's sturdy enough to survive anything, just like all of you! It'll come with us to every pediatrician visit, and I'll think of the clinic crew each time I pack it.
+
+**7. Lena**
+Three frozen dinners might be the most practical gift anyone could give new parents, so thank you! On the nights we're too tired to think, we'll just pop one in the oven and silently bless you.
+
+**8. Uncle Marco**
+Thank you so much for the $50 gift card. We're going to use it to stock up on diapers and wipes, which I'm told disappear at an alarming rate.
+
+**9. Fatima**
+The white noise machine is already plugged in and tested, and it's honestly relaxing *me*. We're counting on it to help the baby sleep through the creaky floors and the neighbor's dog.
+
+**10. Chris**
+Thank you for the baby bathtub and the soft towels! Bath time will be part of our evening wind-down routine, followed by a cozy wrap in one of those towels.
+
+**11. Neighbour Ruth**
+Your knitted hat is so tiny and sweet that I teared up opening it. It'll be the hat the baby wears home from the hospital, and I'll keep it forever.
+
+**12. Tom**
+Thanks so much for the baby monitor. It means a lot for our peace of mind. We'll be able to catch a nap or cook dinner while still keeping an eye on the nursery.
+
+**13. Jess**
+A whole box of onesies! You clearly know how many outfit changes a day is in store for us. They'll be our everyday uniform for the first few months, and I'm sure we'll go through every single one.
+
+**14. Cousin Ana**
+Thank you for the colorful play mat. It's already laid out in the living room. It'll be the baby's first little playground, where we'll lie side by side looking up at the dangling toys.
+
+**15. Mr. and Mrs. Okafor**
+Thank you for your generous gift of a savings bond. We'll tuck it away for the baby's education fund, and someday we'll tell them it came from you.
+
+**16. Bea**
+The moon night light is just magical, and it makes the whole nursery glow. It'll be our soft light for late-night diaper changes, so nobody has to fully wake up.
+
+**17. Leo**
+Thank you for the diaper caddy, which is exactly the kind of thing I didn't know I needed. We'll keep it stocked downstairs so we're not running up to the nursery for every change.
+
+**18. Grandma June**
+Your baby photo album is one of the most precious things anyone has ever given me. We'll look through it together as the baby grows, comparing their little face to yours.
+
+**19. Karin**
+Thank you for the sling. It's so soft and easy to use! I'm looking forward to using it on fussy evenings when the only thing that helps is being held close.
+
+**20. My book club**
+You all know me too well. A basket of snacks for late nights is perfect. I'll be keeping it right by the feeding chair, and I promise to rejoin the club once I can read more than a page at a time.
