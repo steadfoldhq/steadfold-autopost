@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-04T13:04:02+00:00",
+ "collected_at": "2026-11-04T17:00:10+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -789,13 +789,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 127,
-      "reach": 111,
+      "views": 131,
+      "reach": 114,
       "saved": 2,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5125,
-      "ig_reels_video_view_total_time": 563857
+      "ig_reels_avg_watch_time": 5087,
+      "ig_reels_video_view_total_time": 574838
      },
      "comments": []
     },
@@ -827,8 +827,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 1,
+      "views": 8,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -846,13 +846,13 @@
      "likes": 21,
      "comments_count": 1,
      "insights": {
-      "views": 1301,
-      "reach": 1079,
+      "views": 1303,
+      "reach": 1080,
       "saved": 7,
       "shares": 3,
       "total_interactions": 33,
-      "ig_reels_avg_watch_time": 6723,
-      "ig_reels_video_view_total_time": 7267664
+      "ig_reels_avg_watch_time": 6722,
+      "ig_reels_video_view_total_time": 7273250
      },
      "comments": []
     },
@@ -903,7 +903,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 7,
+      "views": 13,
       "reach": 3,
       "saved": 0,
       "shares": 0,
@@ -979,8 +979,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
-      "reach": 1,
+      "views": 2,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1036,7 +1036,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
+      "views": 5,
       "reach": 2,
       "saved": 0,
       "shares": 0,
@@ -1055,13 +1055,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 123,
-      "reach": 104,
+      "views": 124,
+      "reach": 105,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5619,
-      "ig_reels_video_view_total_time": 595688
+      "ig_reels_avg_watch_time": 5572,
+      "ig_reels_video_view_total_time": 596245
      },
      "comments": []
     },
@@ -1074,13 +1074,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 128,
-      "reach": 110,
+      "views": 129,
+      "reach": 111,
       "saved": 0,
       "shares": 1,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 3873,
-      "ig_reels_video_view_total_time": 437749
+      "ig_reels_avg_watch_time": 3874,
+      "ig_reels_video_view_total_time": 441691
      },
      "comments": []
     },
@@ -1245,13 +1245,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 123,
-      "reach": 108,
+      "views": 127,
+      "reach": 109,
       "saved": 2,
       "shares": 3,
       "total_interactions": 11,
-      "ig_reels_avg_watch_time": 3918,
-      "ig_reels_video_view_total_time": 431048
+      "ig_reels_avg_watch_time": 3954,
+      "ig_reels_video_view_total_time": 438947
      },
      "comments": []
     },
@@ -1264,7 +1264,7 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 52,
+      "views": 55,
       "reach": 43,
       "saved": 1,
       "shares": 3,
@@ -1283,8 +1283,8 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 4,
+      "views": 13,
+      "reach": 5,
       "saved": 1,
       "shares": 3,
       "total_interactions": 10,
@@ -1302,8 +1302,8 @@
      "likes": 3,
      "comments_count": 2,
      "insights": {
-      "views": 40,
-      "reach": 20,
+      "views": 41,
+      "reach": 21,
       "saved": 1,
       "shares": 3,
       "total_interactions": 11,
@@ -1340,8 +1340,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 5,
+      "views": 12,
+      "reach": 6,
       "saved": 1,
       "shares": 3,
       "total_interactions": 8,
@@ -1558,16 +1558,16 @@
      "permalink": "https://www.instagram.com/reel/DfTJ-ItElz3/",
      "at": "2026-11-04T00:20:55+0000",
      "first_line": "Guests in 30 minutes and the place is a mess? List the mess and ask AI for a 30-minute plan that starts with what guests see first.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 11,
-      "reach": 9,
+      "views": 86,
+      "reach": 64,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 1051,
-      "ig_reels_video_view_total_time": 9460
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 6394,
+      "ig_reels_video_view_total_time": 422035
      },
      "comments": []
     },
@@ -2333,13 +2333,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 242,
-      "reach": 198,
+      "views": 256,
+      "reach": 209,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7057,
-      "ig_reels_video_view_total_time": 1390387
+      "ig_reels_avg_watch_time": 7239,
+      "ig_reels_video_view_total_time": 1498528
      },
      "comments": []
     },
