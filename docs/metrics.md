@@ -1,5 +1,121 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Wed Nov 4, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 4 04:59 UTC (11:59 pm ET Nov 3)**. Per-post curves from the reads in git (Oct 31 → Nov 4 04:59 UTC). **Two Nov 3 reads (~17:00 and ~21:00 UTC) are missing.** Both runs hit the 15-min limit. Commit a622892 fixed this (25 min, and the HTTP 400 follows calls on Reels are skipped), so the 8 h → 24 h points are thin this time. Reel lengths are from ffprobe. The next read is ~12:50 UTC (7:50 am ET).
+- **Verdict rules:** unchanged. EXPANDED = still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED. FAILED HOOK = avg watch < 4 s or < 25% of length. PENDING = under 24 h. FAST BATCH (AI interpretation) = reach ≥ 5× the page's median Reel batch within 24 h.
+- **Non-follower share** is a floor: (reach − followers) / reach. follow_type is still not read.
+- **Bursts:** none. Between the Nov 3 13:01 and Nov 4 04:59 reads, posts older than 24 h gained 0 sends. The only save was +1 on the LH lamp. The reach gains on the LH lamp (+72) and the HB cue card (+85) came with no save or send spike, so they're real late batches.
+- **Comments per reach = 0.** 0 comment texts returned (day 21).
+
+| Page | Post (first line) | Format | Age | Reach curve (age → reach) | Non-follower ≥ | Sends/reach | Saves/reach | Avg watch / length | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| LF | "Toddler eating grapes? Cut each grape into 4 small pieces." | Reel 14.3 s | 53 h | 5h 1,069 → 13h 1,323 → 53h 1,328 | 99.5% | 0.001 (1) | 0.002 (3) | 7.26 s / 51% | FAST BATCH; STALLED |
+| LH | "Can't fall asleep? Shower 90 minutes before bed." | Reel 14.6 s | 53 h | 5h 1,068 → 29h 1,079 → 53h 1,079 | 99.4% | **0.003 (3)** | **0.006 (7)** | 6.72 s / 46% | FAST BATCH; STALLED |
+| LH | **"Your ceiling light says it's daytime."** (Part 2) | Reel 14.6 s | 29 h | 5h 152 → 13h 251 → 29h **323** | 98% | 0.00 | 0.009 (3) | 5.04 s / 34% | **Still climbing at 29 h (+72, +29% since 13 h).** 0 sends, so not EXPANDED. Re-check on the next read |
+| LF | **"Babies can drown in 5 cm (2 inches) of water."** | Reel 14.4 s | 5 h | 5h **159** | 96% | 0.00 | 0.00 | **6.95 s / 48%** | PENDING. Missed the ≥500 bar. LF's 2nd-best hold this week |
+| HB | "Best friend's wedding and no toast yet?" | Reel 14.4 s | 53 h | 5h 117 → 53h 121 | 95% | 0.00 | 0.00 | 5.41 s / 38% | STALLED (hold bars passed) |
+| LF | "Sausage for a toddler? Cut it into short strips…" (Part 2) | Reel 14.3 s | 29 h | 5h 110 → 29h 110 | 94% | 0.00 | 0.00 | 5.17 s / 36% | STALLED |
+| HB | "Party in an hour and no costume?" | Reel 14.4 s | 78 h | 5h 107 → 78h 107 | 94% | 0.00 | 0.00 | 4.52 s / 31% | STALLED |
+| LH | **"Studying tonight? 24 minutes on, 6 off…"** | Reel 14.6 s | 5 h | 5h **104** | 94% | 0.00 | **0.019 (2)** | 5.12 s / 35% | PENDING. Missed ≥500; 2 saves in 5 h |
+| HB | **"Toast tonight and you can't memorize it?"** (Part 2) | Reel 14.4 s | 29 h | 5h 14 → 13h 16 → 29h **101** | 94% | 0.00 | 0.00 | 3.65 s / 25% | **Late batch** (+85 between 13 h and 29 h). FAILED HOOK (3.65 s) |
+| LH | "A to-do list helps you sleep." | Reel 14.2 s | 78 h | 5h 29 → 13h 99 → 78h 101 | 94% | 0.00 | 0.010 (1) | 4.00 s / 28% | STALLED |
+| FF | "Living with your partner 12 months? You're common-law." | Reel 13.2 s | 53 h | 5h 12 → 21h 33 → 53h 33 | 79% | 0.00 | 0.00 | 3.59 s / 27% | FAILED HOOK + STALLED |
+| FF | "Partner didn't file a tax return?" (Part 2) | Reel 12.8 s | 29 h | 5h 7 → 13h 8 → 29h 10 | 30% | 0.00 | 0.00 | 17.4 s (loops; followers) | STALLED, no batch |
+| FF | "Co-sign, and you can owe all of it." | Reel 14.4 s | 78 h | 5h 4 → 78h 6 | ~0% | 0.00 | 0.00 | 0.72 s / 5% | FAILED HOOK + STALLED |
+| HB | "Guests in 30 minutes and the place is a mess?" | Reel 14.4 s | 5 h | 5h **2** | ~0% | 0.00 | 0.00 | 1.37 s / 10% | PENDING, no batch yet (the cue card was 14 at 5 h, then 101) |
+| FF | "Too sick to make decisions? Who handles your bills?" | Reel 13.5 s | 5 h | 5h **2** | ~0% | 0.00 | 0.00 | 0.55 s / 4% | PENDING, no batch, FAILED HOOK so far |
+
+**Feed posts in the window (4, Nov 2, 2–3 slides): reach 0–3**, 0 sends. FF Rich Habits 04 1, LH One Word 05 1, HB Day 11 0, LF 3 am Club 04 3.
+
+**EXPANDED: 0 strict. 0 new FAST BATCHES** (still 3 on the account, all Oct 30 – Nov 1). What moved since Nov 3:
+1. **Yesterday's "Part 2 got 1/8 of Part 1" read was premature. I'm correcting it.** Two of the Part 2s got late batches after the 5 h read: the LH lamp went 152 → 323 (still climbing), and the HB cue card went 14 → 101. At 29 h, Part 2 sits at **30% of Part 1 on LH and 83% on HB**. LF sausage (110) and FF (10) didn't move.
+2. **The standalone number hooks didn't beat the sequels on batch size.** LF "5 cm" got 159 and LH "24 on / 6 off" got 104 in 5 h, against 110–152 for Monday's sequels at the same age. Both missed the ≥500 grade. Per the Nov 3 test rule, **the FAST BATCH nights look like the night (distribution), not the sequel label.** They held well, though: LF 6.95 s / 48% and LH 5.12 s / 35%. The number keeps people watching; it doesn't decide whether Instagram sends the big batch.
+3. **Batch timing is now split.** LF and LH get their batch inside 5 h. HB (cue card) and LH (lamp) also got one 13–29 h later. Don't grade 7 pm Reels on the 5 h read alone; use the 29 h read.
+4. **HB "Guests in 30 min" and FF "Too sick" got 2 reach each in 5 h.** HB's cue card had 14 at 5 h and then got a batch, so these stay PENDING until tonight's read.
+5. **Followers +2 since yesterday (LH +1, HB +1): 26 total, +4 in 7 days.** Both landed on the night of the LH lamp and HB cue card late batches. The Nov 2 grade (+5 by Wed) missed: +2.
+
+- **TikTok:** manual (no API; no numbers logged).
+- **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels** connected.
+- **Trial Reels:** none in the last 72 h. The first are Thu 8 am (LF "0.5 mL is not 5 mL", LH slow sighs). Graduation: no data yet.
+
+**3 orders**
+1. **REPEAT:** the number in frame 0. It's the most reliable *hold* we have: 5 of the 7 Reels at ≥35% this week open on one (grapes 4, 90 min, 5 cm, 24/6, rice grain); the other 2 are sausage 36% and wedding toast 38%. Batch size, though, doesn't follow from it.
+2. **KILL:** grading or rewriting a Reel on its 5 h read alone. The lamp and the cue card both looked like failures at 5 h and got late batches. And keep killing feed posts as a reach play: 4 of 4 at reach 0–3.
+3. **TEST:** sends. That's the only thing standing between us and EXPANDED: 4 clean sends across all Reels since Nov 1. On Thu–Fri, give one Reel per page a single send line on screen in the last 2 s, naming the person to send it to ("Send this to whoever does bath time"). Keep the rest the same. **Grade on the Sat read:** ≥1 send per 100 reach on the send-line Reels, against 0.1–0.3 per 100 now.
+
+## Today's orders (Wed Nov 4, 2026, Performance desk)
+Data: Nov 4 04:59 UTC read (two Nov 3 reads missed; fixed in a622892). 160 posts in the read, 26 followers. Direction: medium confidence that number-in-frame-0 lifts hold; medium-low that batch size is night or distribution-driven, not hook-driven (n = 8 Reels over 2 nights). No bursts.
+1. **Short-form studio (all pages): TEST a "send this to ___" end beat on 1 Reel per page, Thu–Fri.** Sends are the #1 expansion signal, and we have 4 clean sends on ~3,400 Reel reach since Nov 1 (3 on warm shower, 1 on grapes). No Reel asks for the send yet. Suggested Reels: LF Thu 7 pm "battery honey" ("Send this to whoever babysits"), LH Fri 7 pm "mix 3 kinds", HB Fri 7 pm "thank-you in 20", FF Fri 7 pm "HBP couple" ("Send this to your partner"). Keep everything else the same so it's a clean test. **Grade (Sat read):** ≥1 send per 100 reach on at least 2 of the 4.
+2. **Short-form studio (LF, LH): REPEAT the number-in-frame-0 open. It's the hold lever, not the batch lever.** LF "5 cm of water" held 6.95 s / 48% on 159 (95.6% strangers). LH "24 on / 6 off" held 5.12 s / 35% on 104, with 2 saves in 5 h. Wed's "coin battery in 2 hours" and "after about 20 minutes, get up" already fit. Stop expecting ≥500 in 5 h from the hook alone: the 3 FAST BATCHES came in one 3-night stretch. **Grade:** ≥35% watch-through on ≥100 reach.
+3. **All desks: grade 7 pm Reels on the 29 h read, not the 5 h read.** LH lamp went 152 → 323 and HB cue card 14 → 101 after 13 h. Yesterday's "Part 2 got 1/8" call was wrong for those two. The Part 2 label is already off Thursday's frames (97c1f15, done), so no further change.
+4. **Short-form studio (Hourback): FIX the hold, since the batch now comes.** HB's 3 recent batches of 100+ held 3.65–5.41 s. The cue-card callback held 3.65 s / 25%. "Guests in 30 min" held 1.37 s on 2 viewers (early). Thu "Flight at 6 am" and Fri "thank-you in 20" should show the AI output (the list or the card) in frame 0, not the panic. The wedding toast (5.41 s) had the page of text visible by second 1. **Grade:** ≥5 s and ≥30% on ≥40.
+5. **Social studio (Fully Funded): HOLD, still waiting on the account check.** "Too sick to make decisions?" got 2 reach, 0.55 s. FF's last 13 Reels reached 2–33, while the same format got 101–1,079 on LH and LF the same nights. Nothing in topic, length or hook explains a gap that size. Wed "Save $100… Canada adds $20" is the number-hook control. If it also lands under 40 at 29 h, the account check is the only lever left (Dharma's to-do in the review queue).
+6. **Social studio: LESS feed effort; queue is fine.** The schedule now runs to **Sat Nov 7, 7 pm ET** (97c1f15, done), and every page has a feed post and a Reel in the next 48 h. Still 1 Reel a day (2 on Thu for LF and LH) and 0 Stories. Feed posts reached 0–3. Before the queue runs out, extend it through Mon Nov 9. **Automation architect:** comment text (day 21), follow_type, per-post history lines, a burst flag. Insights timeouts: done.
+
+**Grading the Nov 3 orders (owner check):**
+1. **Thu Part 2 frame 0 with its own number, no label: done** (97c1f15; LF battery-honey now has "2 teaspoons"). It airs Thu.
+2. **Number-hook standalone test (LF/LH ≥500 in 5 h at ≥30%; HB ≥100 at ≥30%): failed on batch, passed on hold.** LF 159 at 48%, LH 104 at 35%, HB 2 at 10%.
+3. **Extend the queue past Thu: done.** Fri + Sat Reels and Fri series on all 4 pages.
+4. **HB deadline + output, no callback: shape done, grade pending.** "Guests in 30 min": 2 reach so far.
+5. **FF hold: done.** Common-law stayed at 33 (missed ≥40).
+6. **Less feed effort: done** (1 tile per page every other day). Automation: insights timeout fixed; the other asks are still open.
+
+---
+
+## Daily report: Wed Nov 4, 2026
+
+### Scoreboard (insights read Nov 4 04:59 UTC)
+Changes are vs the Nov 3 04:56 UTC read (1 day) and vs Oct 28 04:47 UTC (7 days). Posts are those published Oct 28 – Nov 3 ET. Best and worst by clean (saves + sends)/reach cover posts with reach ≥20; the Oct 31 LF burst is removed.
+
+| Page | Followers (1d / 7d) | Feed posts 7d (slides) | Reels 7d | Median reach (all / Reels / feed) | Best by clean (saves+sends)/reach | Worst | Best by views | Worst by views |
+|---|---|---|---|---|---|---|---|---|
+| Fully Funded | 7 (+0 / +0) | 3 (3, 3, 3 sl) | 9 | 5.5 / 9 / 1 | none scored: the only post ≥20 (common-law, 33) has 0 | Reel "common-law" 0/33 | Reel "common-law" 40 | Carousel Rich Habits "$15 lunch" 1 |
+| Locked Hour | 6 (**+1** / **+2**) | 3 (3, 3, 3 sl) | 9 | 100.5 / 104 / 1 | **Reel "24 minutes on, 6 off" 2/104** · warm shower 10/1,079 | Reel "Daydreaming the goal?" 0/100 | **Reel "warm shower" 1,301** · lamp 366 | Carousel One Word "third coffee" 1 |
+| Hourback | 6 (**+1** / +1) | 3 (3, 3, 3 sl) | 9 | 9.5 / 19 / 1 | none scored: 0 saves or sends on all 5 posts ≥20 | Reel "office card" 0/63 | Reel "wedding toast" 148 | Carousel "gift for Dad" 0 |
+| Littlefold | 7 (+0 / +1) | 3 (3, 2, 3 sl) | 9 | 123 / 146 / 1 | Reel "cord stump" 1/120 (clean) · grapes 4/1,328 | Reel "sausage strips" 0/110 · "5 cm water" 0/159 | **Reel "rice grain" 1,672** · grapes 1,564 | Carousel 3 am Club "wants to play" 4 |
+
+**Total: 26 followers (+2 since yesterday, +4 in 7 days).** Profile views yesterday: FF 1, LH 1, HB 0, LF 0.
+- **Yesterday's posts (Tue Nov 3 ET: 4 Reels, 0 feed):**
+  - Best by (saves + sends)/reach: LH "Studying tonight? 24 minutes on, 6 off", 2/104.
+  - Best on strangers: LF "Babies can drown in 5 cm of water", 159 reach at 48%.
+  - Best by views: LF 5 cm, 192.
+  - Worst: HB "Guests in 30 min" and FF "Too sick", 2 reach each (5 h).
+- **Sum of post reach (40 newest posts, 1 day):** FF 842 → 792, LH 2,848 → 3,120, HB 864 → 944, LF 5,735 → 5,788. FF's fell because older posts dropped out of the 40-post window.
+
+### Patterns (all pages ≥5 posts)
+- **Reels vs feed (high confidence):** the median Reel this week reached 104 on LH and 146 on LF, while every feed post reached 0–5. Every Reel batch of 100 or more is ≥93% non-follower.
+- **The number in frame 0 lifts hold (medium):** these opens held 35–53% (grapes, rice, 90 min, 5 cm, 24/6). Opens without a number held 25–38% (sausage 36, lamp 34, wedding toast 38, cue card 25, to-do list 28).
+- **The number didn't decide batch size (medium-low, n = 8 over 2 nights):** Nov 3 number hooks got 104–159 in 5 h, the same as the Nov 2 sequels (110–152).
+- **Late batches exist (new, medium):** 2 of the last 8 Reels gained 70–85 reach between 13 h and 29 h.
+- **Topic and page decide the ceiling (medium-high):**
+  - LF safety: 110–1,339.
+  - LH tonight actions: 100–1,079.
+  - HB deadline scenes: 2–121.
+  - FF: 2–33, whatever the topic.
+- **Length and style:** not variables this week. Every Reel ran 12.8–14.6 s in the drawn style.
+- **Sends:** 4 clean sends on all Reels since Nov 1 (3 on warm shower, 1 on grapes). Saves are starting on LH (2 in 5 h on 24/6, 3 on lamp).
+
+### Comments
+**No data yet.** 0 real comment texts (day 21).
+
+### Health
+- **Published vs schedule:** all **440 of 440** entries due by 12:28 UTC Nov 4 are published, with 0 failed, 0 errors and 0 comment errors. In the last 24 h, the 4 Reels went out 21–22 min late, all within one run cycle.
+- **Next 48 h (to 12:30 UTC Fri Nov 6): every page has a feed post and a Reel.**
+  - Wed: a feed tile (5–5:45 pm) and a 7 pm Reel on every page.
+  - Thu: 8 am Trial Reels on LF and LH, and 7 pm Reels on all 4 pages.
+  - All 4 Thu 7 pm Reels have number hooks. No Stories.
+  - The schedule runs to **Sat Nov 7, 7 pm ET**.
+- **Data:** two Nov 3 insight runs timed out (no read ~17:00 or ~21:00 UTC). Fixed in a622892 (25 min limit, skips the follows calls on Reels). No token or account errors.
+  - **Still broken:** comment text, follow_type, per-post history lines.
+
+### For the Automation architect
+See order 6.
+
+### Media kit
+Updated (claude/media-kit.md).
+
+---
+
 ## TEST-BATCH TABLE (Tue Nov 3, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 3 04:56 UTC (11:56 pm ET Nov 2)**. Per-post curves from the **22** reads in this clone (Oct 26 → Nov 3 04:56 UTC). Reel lengths from ffprobe on each entry's MP4. Frame 0 of the 4 Part 1 and 4 Part 2 Reels reviewed side by side. The next read is ~12:50 UTC (7:50 am ET).
 - **Verdict rules:** unchanged. EXPANDED = still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED. FAILED HOOK = avg watch < 4 s or < 25% of length. PENDING = under 24 h. FAST BATCH (AI interpretation) = reach ≥ 5× the page's median Reel batch within 24 h.
