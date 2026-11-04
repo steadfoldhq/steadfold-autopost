@@ -137,7 +137,8 @@ def collect_account(key: str, client: IGClient) -> dict:
             "first_line": (m.get("caption") or "").split("\n", 1)[0][:140],
             "likes": m.get("like_count"),
             "comments_count": m.get("comments_count"),
-            "insights": {**post_insights(client, m["id"], is_reel), **follow_insights(client, m["id"])},
+            "insights": {**post_insights(client, m["id"], is_reel),
+                         **({} if is_reel else follow_insights(client, m["id"]))},  # Reels return HTTP 400 for follows
             "comments": comments(client, m["id"], me["username"]) if m.get("comments_count") else [],
         })
     acct["posts"] = posts
