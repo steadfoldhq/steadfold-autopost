@@ -1,5 +1,52 @@
 # Social studio log (v4)
 
+## Wed Nov 4, 2026 (daily run, fired 9:19 am Toronto)
+
+**Followers (insights Nov 4 13:04 UTC):** Fully Funded **7** (0), Locked Hour **6** (0), Hourback **6** (0), Littlefold **7** (0) = 26. 7-day change: FF 0, LH +2, HB +1, LF +1.
+
+**Profile views (day_profile_views, last read per ET day, Oct 28 → Nov 3, then today so far):**
+- FF: 1 · 2 · 1 · 0 · 0 · 2 · 1 → 0
+- LH: 0 · 0 · 0 · 0 · 1 · 3 · 1 → 0
+- HB: 1 · 1 · 1 · 0 · 0 · 0 · 0 → 0
+- LF: 7 · 5 · 2 · 2 · 2 · 1 · 0 → 0
+
+**Follows / profile visits per carousel (7 days):** 0 follows and 0 profile visits on all series carousels (reach 1–3). follows_from_posts: LF 1 (unchanged), others 0.
+
+**3 lessons, applied today**
+1. **The number in frame 0 is the hold lever, not the batch lever.** LF "5 cm of water" 198 reach at 13 h, 7.06 s (49%); LH "24 on, 6 off" 111, 5.12 s, 2 saves. Applied: every new LF/LH/FF Reel opens on a number ("10 cm", "16 to 20°C", "Last coffee by 2 pm", "Right once? Don't drop it yet" + 3 tallies, "$2,000", "twice").
+2. **Sends are the missing signal** (4 clean sends on ~3,400 Reel reach). Applied: desk send test on Fri Nov 6 7 pm, one on-screen "Send this to…" line in the last 2–3 s on LF high chair, LH mix 3 kinds and HB thank-you (FF's Thu–Sat Reels already had one). All other new Reels have no on-screen send line (control).
+3. **HB panic opens die (Guests in 30 min: 9 reach, 1.05 s); the toast held because the AI text was visible at once.** Applied: every HB Reel, including Thu's queued flight Reel and Fri's thank-you, now shows the real Claude output in frame 0.
+
+**Shipped (rollback: `docs/social-recovery/2026-11-04.md`):** 12 new entries, 4 queued Reels re-rendered in place, 0 moved.
+- Sun Nov 8 7 pm: LF windows open 10 cm (13.6 s; CPS), LH last coffee by 2 pm (14.6 s; Gardiner 2023, Drake 2013), FF family medical bills on the lower earner's return (13.8 s; CRA line 33099), HB Nonna's 90th card in Italian (14.5 s; real run).
+- Mon Nov 9 5 pm: 3 am Club No. 7 (newborn breathing pauses, AAP + NHS 111 Wales), One Word No. 8 "Same." (Windred 2024), Rich Habits No. 7 (day-28 trial reminder, Competition Bureau); 5:45 pm HB Day 14 (missed friend's 30th apology, real run).
+- Mon Nov 9 7 pm: LF baby's room 16–20°C (14.2 s; Lullaby Trust, NHS), LH flashcards right 3 times (14.6 s; Rawson & Dunlosky 2011, Kornell & Bjork 2008), FF spousal RRSP 3-year rule (13.8 s; CRA), HB 2-minute retirement speech (14.4 s; real run).
+- Existing library tracks only, −13.5 to −14.1 LUFS, 1.7–5.3 MB. HB runs (isolated method): `studio/editorial/hb-nov04-run-{nonna,retire,missed}.txt`.
+- Queue now runs to Mon Nov 9 7 pm on every page. Not built: Wed Nov 11 series (No. 8 / 9 / 8 / Day 15), promised in Monday captions: next run.
+
+**Checks:** 172 tests OK (2 skipped; one failure fixed: HB retirement caption was 2,252 chars, trimmed to 2,195) · queue_lint 0/0 · dry-run OK through Thu 19:05, Fri 19:05, Sun 19:05, Mon 17:05, 17:50, 19:05 · banned-word scan clean · personal-data scan of run files clean · ceilings held (max 1 feed + 1 Reel per page per day Sun/Mon).
+
+**Hooks (fresh stranger picker, 3 options each):** adopted picker picks on LF 3 am Club ("Newborn breathing pauses: under 10 seconds is normal."), LF room ("Heating on?" version cut to "Heating on? Baby's room: 16 to 20°C."), LH coffee ("Bed at 11? Last coffee by 2 pm."), LH flashcards (picker's rewrite "Got it right once? Don't drop it yet."), FF medical ("Dentist, glasses, pills: $2,000 this year?"), FF spousal ("Earn twice what your partner does?"); HB hooks picked by an isolated fresh session (Nonna, 30th, retirement). Kept maker's on LF windows (picker preferred "A window screen won't stop a toddler falling."; kept the number open per the desk's hold data), LH One Word, FF Rich Habits (picker agreed).
+
+**Styles (covers):** LF compare → series → sticky note → kinetic → awards; LH sticky note → series → kinetic "2 pm" → Look B → compare; FF follow the line → series → Look B → sticky → awards; HB giant "2:00" → series → reframe → follow the line → sticky. grid_preview run and looked at for every page: ≥6 styles in each 9-tile window.
+
+**Clarity gate (fresh strangers, text only):**
+- Re-gate of 16 queued items >24 h out: 16 CLEAR (notes: LF tap repeats "4 times faster" twice; HB dinners hook promises a shopping list the Reel doesn't show; both accepted).
+- New + edited, round 1 (16): 1 CONFUSING: LH flashcards ("Right 3 times? Then drop the card." contradicted its own research beat) → rewritten to "Set it aside. Review the pile again in a few days." Round 2 (15): all CLEAR; borderline notes fixed (One Word "average age 63"; 3 am Club 911 line now "not breathing, or blue or grey lips").
+
+**Peer + CD gate (fresh agent, rendered frames):** round 1: 6 SHIP, 10 FIX (LF send line too small/short; FF medical comparison text 16–20 px, receipts to the edges; FF Rich Habits used Hourback's periwinkle; HB input note on screen ~1 s and chip in the caption zone on all 4 Reels; Nonna's English lines tiny grey; Day 14 "names made up" → "names and story"; One Word overstated Windred). Round 2: 13 SHIP, 2 FIX (3 am Club headline near the right edge; One Word pink bar detached from "Same."). Both fixed; I looked at the final slides, the flight and high-chair strips and all 4 grids myself.
+
+**What the gate cut:** nothing whole. LH maker cut "phone in another room" (Ward 2017 failed a pre-registered replication). FF caregiver credit not used (canada.ca page blocked).
+
+**Doubts for the founder/desk:**
+- CD flagged template sameness: all 3 LF Reels share one scene template, the 2 LH Reels another, and 3 covers across pages use the taped lined-note design. Vary the cover systems next batch (founder line: "not recolours of one template").
+- 3 am Club No. 7 is health-adjacent (breathing pauses); AAP page undated; "not breathing → 911" is sourced to NHS 111 Wales.
+- HB retirement is the 3rd speech-type HB piece in 9 days; Nonna's Italian was not checked by a native speaker (caption says to ask one).
+- FF: same account-level reach problem; these 3 pieces don't diagnose it. Account check remains on Dharma's list.
+- Makers had no Agent tool for the in-build picker; the studio ran the picker afterwards and makers re-rendered.
+
+**Grade next run:** Fri send test (Sat read): ≥1 send per 100 reach on ≥2 of LF high chair, LH mix, HB thank-you, FF HBP. HB Thu flight + Fri thank-you ≥5 s / 30% on ≥40. LF/LH Sun/Mon ≥35% on ≥100 (29 h read).
+
 ## Tue Nov 3, 2026 (daily run, fired 9:20 am Toronto)
 
 **Followers (insights Nov 3 13:01 UTC):** Fully Funded **7** (0), Locked Hour **5** (0), Hourback **6** (+1, overnight), Littlefold **7** (0) = 25. 7-day change: FF 0, LH +1, HB +1, LF +1.

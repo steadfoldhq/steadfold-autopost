@@ -1,0 +1,16 @@
+Hourback real run, Nov 4 2026 (studio maker, Hourback)
+Used in: hb-day14-missed-30th (Mon Nov 9, 5:45 pm, AI, for real · Day 14)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (method of
+  studio/editorial/nov03_hourback_run.py; see its ISOLATION FIX note).
+Run at (UTC): 2026-11-04T14:28:13Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+I missed my friend Jordan's 30th birthday dinner on Saturday. I had a migraine, fell asleep, and didn't text until Sunday morning. Write a short apology text I can send tonight: own it, no long excuses, and say I'd like to take Jordan out for dinner this week. Under 60 words.
+
+===== REPLY (verbatim) =====
+Hey Jordan, I'm really sorry I missed your 30th on Saturday. I had a migraine and fell asleep, but you deserved better than a text the next morning. I'd love to take you out to dinner this week to celebrate properly, my treat. What night works for you?
+
+*(55 words)*

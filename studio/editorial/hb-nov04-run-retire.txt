@@ -1,0 +1,42 @@
+Hourback real run, Nov 4 2026 (studio maker, Hourback)
+Used in: hb-reel-1109-retirement-speech (Mon Nov 9, 7 pm)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (method of
+  studio/editorial/nov03_hourback_run.py; see its ISOLATION FIX note).
+Run at (UTC): 2026-11-04T14:27:59Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+My coworker Linda is retiring after 31 years at the front desk of our town library, and I'm giving a 2-minute speech at her send-off tomorrow at 3 pm. Three true things about her: she knew every regular's name, she ran Saturday story time for 20 years, and she kept a jar of lemon candies at the desk for anyone having a rough day. Write a warm 2-minute speech (about 250 words) with one light joke, and end with a line everyone can raise a glass to. Use short sentences I can read out loud.
+
+===== REPLY (verbatim) =====
+**Speech for Linda**
+
+Good afternoon, everyone.
+
+Thank you for being here for Linda.
+
+For thirty-one years, Linda was the first face you saw when you walked through that door. And she always knew whose face it was.
+
+Linda knew every regular by name. Not just your name. Your kids' names. Your favorite authors. The book you'd love before you even asked.
+
+She also knew exactly whose books were overdue. She was very kind about it. Mostly.
+
+For twenty years, Linda ran Saturday story time. Think about that. A whole generation of kids in this town learned to love books on that rug, listening to her voice. Some of those kids now bring their own kids. That's not just a job. That's a legacy.
+
+And then there's the jar. The lemon candies on the desk, for anyone having a rough day. Linda never asked what was wrong. She just slid the jar a little closer. It was a small thing. But I don't think she knows how many people it helped.
+
+That's Linda. She noticed people. She made this library feel like home.
+
+Linda, we're going to miss you. The front desk won't be the same. Saturday mornings won't be the same.
+
+But we are so happy for you. You've earned every slow morning and every good book ahead.
+
+So please, everyone, raise your glass.
+
+To Linda, who knew all our names and made every one of us feel known.
+
+---
+
+*About 240 words, roughly two minutes at a relaxed pace. Pause briefly after "Mostly." to let the laugh land.*
