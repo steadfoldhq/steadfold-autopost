@@ -9458,7 +9458,7 @@
     },
     "ff-richhabits-05": {
       "account": "fullyfunded",
-      "status": "failed",
+      "status": "published",
       "children": [
         "18156412618497733",
         "18156412639497733",
@@ -9470,18 +9470,26 @@
         "studio-nov01/fullyfunded/ff-richhabits-05/03.jpg"
       ],
       "children_created_at": "2026-11-04T22:16:29Z",
-      "updated_at": "2026-11-04T22:17:03Z",
+      "updated_at": "2026-11-04T23:01:59Z",
       "container_id": "18156412681497733",
       "container_created_at": "2026-11-04T22:16:29Z",
       "publish_called": true,
       "publish_called_at": "2026-11-04T22:16:29Z",
-      "error": "POST 17841414931971616/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AFc73O2hlXWylKQ-LNALaSl)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-11-04T22:16:29Z"
+      "failed_at": "2026-11-04T22:16:29Z",
+      "media_id": "17912288682309065",
+      "permalink": "https://www.instagram.com/p/DfVgmKLCRJl/",
+      "published_at": "2026-11-04T22:17:00+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18118244171011242",
+      "comment_error": null,
+      "commented_at": "2026-11-04T23:01:57Z"
     },
     "lf-3amclub-05": {
       "account": "littlefold",
-      "status": "failed",
+      "status": "published",
       "children": [
         "17885558220544608",
         "17885558238544608",
@@ -9493,31 +9501,68 @@
         "studio-nov01/littlefold/lf-3amclub-05/03.jpg"
       ],
       "children_created_at": "2026-11-04T22:16:29Z",
-      "updated_at": "2026-11-04T22:17:31Z",
+      "updated_at": "2026-11-04T23:02:01Z",
       "container_id": "17885558277544608",
       "container_created_at": "2026-11-04T22:16:29Z",
       "publish_called": true,
       "publish_called_at": "2026-11-04T22:16:29Z",
-      "error": "POST 17841476338210539/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AQ3aBvYhP24p-yK4orQMhHe)",
+      "error": null,
       "attempts": 1,
-      "failed_at": "2026-11-04T22:16:29Z"
+      "failed_at": "2026-11-04T22:16:29Z",
+      "media_id": "18151223764560752",
+      "permalink": "https://www.instagram.com/p/DfVgpljCS0I/",
+      "published_at": "2026-11-04T22:17:28+0000",
+      "recovered": true,
+      "comment_status": "done",
+      "comment_id": "18129285664880777",
+      "comment_error": null,
+      "commented_at": "2026-11-04T23:01:57Z"
     },
     "lh-oneword-06": {
       "account": "lockedhour",
       "status": "failed",
       "children": [
-        "18074241827521398"
+        "18074250938521398",
+        "18074250986521398",
+        "18074251013521398"
       ],
       "children_media": [
         "studio-nov01/lockedhour/lh-oneword-06/01.jpg",
         "studio-nov01/lockedhour/lh-oneword-06/02.jpg",
         "studio-nov01/lockedhour/lh-oneword-06/03.jpg"
       ],
-      "children_created_at": "2026-11-04T22:16:29Z",
-      "updated_at": "2026-11-04T22:17:43Z",
-      "error": "POST 17841445641921372/media: HTTP 400: The media could not be fetched from this URI: https://raw.githubusercontent.com/steadfoldhq/steadfold-autopost/main/media/studio-nov01/lockedhour/lh-oneword-06/02.jpg.Please check the limitations section in our development document for more information: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating (code=9004, subcode=2207052, fbtrace_id=A9-SZ8NiOekZprhmWzYEuxO)",
+      "children_created_at": "2026-11-04T23:01:57Z",
+      "updated_at": "2026-11-04T23:02:31Z",
+      "error": "POST 17841445641921372/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AMaNbjMrIqz9IstAk-BiRtV)",
+      "attempts": 2,
+      "failed_at": "2026-11-04T23:01:57Z",
+      "container_id": "18074251034521398",
+      "container_created_at": "2026-11-04T23:01:57Z",
+      "publish_called": true,
+      "publish_called_at": "2026-11-04T23:01:57Z"
+    },
+    "hb-day12-potluck": {
+      "account": "hourback",
+      "status": "failed",
+      "children": [
+        "18130643347799084",
+        "18130643380799084",
+        "18130643536799084"
+      ],
+      "children_media": [
+        "studio-nov01/hourback/hb-day12-potluck/01.jpg",
+        "studio-nov01/hourback/hb-day12-potluck/02.jpg",
+        "studio-nov01/hourback/hb-day12-potluck/03.jpg"
+      ],
+      "children_created_at": "2026-11-04T23:01:57Z",
+      "updated_at": "2026-11-04T23:03:01Z",
+      "container_id": "18130643554799084",
+      "container_created_at": "2026-11-04T23:01:57Z",
+      "publish_called": true,
+      "publish_called_at": "2026-11-04T23:01:57Z",
+      "error": "POST 17841423972516137/media_publish: HTTP 403: We restrict certain activity to protect our community. Tell us if you think we made a mistake. (code=4, subcode=2207051, fbtrace_id=AxPhzdW2qht3cHV36KXbcVc)",
       "attempts": 1,
-      "failed_at": "2026-11-04T22:16:29Z"
+      "failed_at": "2026-11-04T23:01:57Z"
     }
   }
 }
