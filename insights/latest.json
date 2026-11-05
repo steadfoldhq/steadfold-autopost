@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-05T13:10:28+00:00",
+ "collected_at": "2026-11-05T17:16:28+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 39,
-      "reach": 36,
+      "views": 40,
+      "reach": 37,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3152,
-      "ig_reels_video_view_total_time": 113478
+      "ig_reels_avg_watch_time": 3181,
+      "ig_reels_video_view_total_time": 117710
      },
      "comments": []
     },
@@ -36,8 +36,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 1,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -778,8 +778,27 @@
    "username": "lockedhourhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 62,
+   "media_count": 63,
    "posts": [
+    {
+     "media_id": "17997957810045782",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfXOHn1Dl-u/",
+     "at": "2026-11-05T14:14:14+0000",
+     "first_line": "Stressed already? Sigh slowly for 5 minutes: one deep breath in through your nose, a short sip more, then a long breath out through your mou",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 115,
+      "reach": 104,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 2745,
+      "ig_reels_video_view_total_time": 288281
+     },
+     "comments": []
+    },
     {
      "media_id": "18098164760409868",
      "type": "REEL",
@@ -789,13 +808,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 116,
-      "reach": 95,
+      "views": 118,
+      "reach": 96,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 4392,
-      "ig_reels_video_view_total_time": 439292
+      "ig_reels_avg_watch_time": 4495,
+      "ig_reels_video_view_total_time": 454050
      },
      "comments": []
     },
@@ -808,8 +827,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 0,
-      "reach": 0,
+      "views": 10,
+      "reach": 1,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1520,25 +1539,6 @@
       "profile_visits": 0
      },
      "comments": []
-    },
-    {
-     "media_id": "17934468873144538",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DeuU9_IlZBL/",
-     "at": "2026-10-20T17:05:02+0000",
-     "first_line": "Your phone can drain your focus even when it's switched off. Here's the full method, not just \"put it away\".",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 15,
-      "reach": 5,
-      "saved": 4,
-      "shares": 9,
-      "total_interactions": 23,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1561,13 +1561,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 103,
-      "reach": 97,
+      "views": 105,
+      "reach": 99,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 2058,
-      "ig_reels_video_view_total_time": 203825
+      "ig_reels_avg_watch_time": 2038,
+      "ig_reels_video_view_total_time": 205928
      },
      "comments": []
     },
@@ -2322,8 +2322,27 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 61,
+   "media_count": 62,
    "posts": [
+    {
+     "media_id": "17905596894671574",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfXOCFUihlq/",
+     "at": "2026-11-05T14:13:31+0000",
+     "first_line": "Giving kids liquid medicine? 0.5 mL is not 5 mL. Mix them up and it's 10 times the dose.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 138,
+      "reach": 126,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3929,
+      "ig_reels_video_view_total_time": 483372
+     },
+     "comments": []
+    },
     {
      "media_id": "17915760144543777",
      "type": "REEL",
@@ -2334,7 +2353,7 @@
      "comments_count": 1,
      "insights": {
       "views": 168,
-      "reach": 154,
+      "reach": 155,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
@@ -3062,25 +3081,6 @@
       "total_interactions": 26,
       "ig_reels_avg_watch_time": 2964,
       "ig_reels_video_view_total_time": 168987
-     },
-     "comments": []
-    },
-    {
-     "media_id": "18133944556675077",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DevAMPcka-R/",
-     "at": "2026-10-20T23:22:56+0000",
-     "first_line": "The first 2 weeks: protect your bonding bubble.",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 168,
-      "reach": 135,
-      "saved": 4,
-      "shares": 9,
-      "total_interactions": 23,
-      "ig_reels_avg_watch_time": 5959,
-      "ig_reels_video_view_total_time": 846295
      },
      "comments": []
     }
