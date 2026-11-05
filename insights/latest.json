@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-05T17:16:28+00:00",
+ "collected_at": "2026-11-05T20:53:25+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 40,
-      "reach": 37,
+      "views": 41,
+      "reach": 38,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3181,
-      "ig_reels_video_view_total_time": 117710
+      "ig_reels_avg_watch_time": 3116,
+      "ig_reels_video_view_total_time": 118430
      },
      "comments": []
     },
@@ -770,7 +770,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "lockedhour": {
@@ -827,7 +827,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 10,
+      "views": 11,
       "reach": 1,
       "saved": 0,
       "shares": 0,
@@ -865,13 +865,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 368,
-      "reach": 323,
+      "views": 369,
+      "reach": 324,
       "saved": 3,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 5034,
-      "ig_reels_video_view_total_time": 1646164
+      "ig_reels_avg_watch_time": 5023,
+      "ig_reels_video_view_total_time": 1647589
      },
      "comments": []
     },
@@ -2333,13 +2333,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 138,
-      "reach": 126,
+      "views": 140,
+      "reach": 127,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3929,
-      "ig_reels_video_view_total_time": 483372
+      "ig_reels_avg_watch_time": 3937,
+      "ig_reels_video_view_total_time": 492140
      },
      "comments": []
     },
