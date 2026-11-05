@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Writes studio/editorial/nov05/fullyfunded.json (Nov 5 FF build: ff-reel-1110-donations-one-return, ff-richhabits-08).
+    python3 studio/editorial/nov05_fullyfunded_manifest.py
+"""
+import json, re, subprocess, sys
+from pathlib import Path
+
+REPO = Path("/home/claude/steadfold-autopost")
+OUT = REPO / "studio/editorial/nov05/fullyfunded.json"
+MED = REPO / "media"
+BANNED = re.compile(r"example|e\.g\.|hypothetical|for illustration", re.I)
+
+
+def dur(p):
+    return round(float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                                 str(MED / p)], text=True).strip()), 2)
+
+
+SRC_A = [
+    "CRA, 'Who can claim - Donations and gifts' (line 34900; canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts/who-claim.html, modified 2026-07-06): 'You or your spouse or common law partner may be able to claim a tax credit'; the same part of a gift can't be claimed on another return; an official receipt is required. Checked Nov 5 2026.",
+    "CRA, 'How much you can claim - Donations and gifts' (.../line-34900-donations-gifts/how-much-claim.html, modified 2026-07-06): claim up to 75% of net income; unclaimed gifts carry forward for the next 5 years. Checked Nov 5 2026.",
+    "CRA, 'How to claim - Donations and gifts' (.../line-34900-donations-gifts/how-claim.html, modified 2026-07-06): complete Schedule 9, enter the result on line 34900; keep the official receipts. Checked Nov 5 2026.",
+    "Finance Canada, 'Report on the Impact of Reducing the Lowest Marginal Personal Income Tax Rate on Non-Refundable Tax Credits' (canada.ca/en/department-finance/services/publications/report-impact-reducing-lowest-marginal-personal-income-tax-rate-non-refundable-tax-credits.html, modified 2026-07-29): 'Only the first $200 of an individual's charitable donation claim is subject to the lowest income tax rate'; the lowest rate is 14% in 2026. Checked Nov 5 2026.",
+    "TaxTips.ca, '2026 donation tax credit rates' (taxtips.ca/filing/donations/tax-credit-rates-2026.htm): federal 14% on the first $200 and 29% on the amount over $200; 33% only to the extent taxable income is in the 33% bracket. Checked Nov 5 2026 (secondary source for the 29%; CRA's line 34900 page lists the federal 29% and 33% rates for 2025).",
+    "CI Global Asset Management, 'Marriage, common-law partnerships and the charitable donation tax credit': 'it often makes sense to claim all donations on the tax return of one spouse to maximize tax savings for the family.' Checked Nov 5 2026.",
+]
+
+CAP_A = """You both gave $200 to charity? Put both receipts on one return, and you can get more back.
+
+In Canada, if you're married or common-law, you can claim your spouse's or common-law partner's donations on your own return. The federal tax credit is 14% of the first $200 you claim (2026) and 29% of every dollar after that.
+
+The maths (made up for this post): you each give $200.
+• Two returns: $200 x 14% = $28 credit, twice. $56 back.
+• One return with both receipts ($400): $28 + ($200 x 29% = $58). $86 back.
+Same gifts, $30 more back. "Back" here means less federal tax to pay: the credit can't go below $0 tax.
+
+HOW:
+1. Collect both official donation receipts (from registered charities).
+2. In your tax app, put all of them on one partner's return: Schedule 9, line 34900.
+3. Leave them off the other return, so nothing is claimed twice.
+4. Give by Dec 31 for it to count on your 2026 return.
+
+THE CATCH: it's a non-refundable credit, so it only helps if the partner who claims owes at least that much federal tax. If they owe little, claim on the other return, or carry the gifts forward (up to 5 years). If one of you earns in the top federal bracket, part of the claim can get 33%. Your province or territory adds its own donation credit on top, at its own rates. The yearly limit is 75% of net income.
+
+Who qualifies: married or common-law couples, with official receipts from registered charities.
+
+Do this: Claim both receipts on one return.
+
+Send this to the partner who keeps the receipts.
+
+Education only, not financial advice.
+
+Follow for one money rule a day, in plain words.
+
+#canadiantaxes #personalfinancecanada #charity #taxtips #moneycouples"""
+
+FC_A = "Sources (checked Nov 5 2026):\n" + "\n".join("• " + s for s in SRC_A) + \
+       "\nThe $200 gifts and the $56 / $86 maths are made up for this post (federal credit only, 2026 rates; provincial credits not included)."
+
+ALT_A = ("Fully Funded Reel on a soft coral dotted field. Frame 0: small blue text 'CANADA · SPOUSE OR COMMON-LAW PARTNER' and the serif "
+         "hook 'You both gave $200 to charity?' (last line on a white pill) over two drawn glass jars, each filled with coral coins up to a dashed $200 line. "
+         "A coral arrow pours the right jar into the left one: the right jar empties and the left fills past the line with blue coins. "
+         "'Put both on one return. You can get more back.' Then one jar: the bottom $200 labelled FIRST $200 · TAX CREDIT, 14% back; the top "
+         "labelled NEXT $200 · TAX CREDIT, 29% back; a card: 'Two returns: $56 back' (struck out), 'One return: $86 back'; FEDERAL CREDIT · "
+         "2026 RATES. On cream: 'do this: "
+         "Claim both receipts on one return. Official donation receipts. In your tax app: Schedule 9, line 34900.', two $200 receipts dropping into a jar labelled ONE "
+         "RETURN, handwritten 'give by Dec 31 to count for 2026'. End: 'One return. Both gifts.' with the full jar, 'Follow for one money rule "
+         "a day, in plain words.' and the round stamp.")
+
+BEATS_A = [
+    "(soft coral dotted field) CANADA · SPOUSE OR COMMON-LAW PARTNER | You both gave | $200 to charity? | two drawn jars, coins to "
+    "a dashed line | (1.0 s) coral arrow, right jar pours into the left | (1.9 s) Put both on one return. | You can get more back.",
+    "(glide) Only the first $200 | gets the low rate. | jar | FIRST $200 · TAX CREDIT | 14% back | NEXT $200 · TAX CREDIT | 29% back | "
+    "(1.5 s card, larger) Two returns: $56 back (struck) | One return: $86 back | FEDERAL CREDIT · 2026 RATES",
+    "(slam up, cream dotted field) do this: | Claim both receipts | on one return. | Official donation receipts. | In your tax app: | Schedule 9, line 34900. | "
+    "jar label ONE RETURN | receipts RECEIPT $200, RECEIPT $200 | give by Dec 31 to count for 2026",
+    "(whip, soft coral field) One return. | Both gifts. | full jar | Follow for one money rule a day, | in plain words. | (round brand stamp)",
+    "(loop, hard cut) the frame-0 layout",
+    "cover only (style 7 reframe + jar): CANADA · SPOUSE OR COMMON-LAW PARTNER | You both gave | $200 to charity? | Instead of… | "
+    "two returns, $56 back (struck) | Try… | one return, $86 back | full coin jar | FEDERAL TAX CREDIT | 2026 RATES · SCHEDULE 9 | "
+    "(round brand stamp)",
+]
+
+CAP_C = """Holiday gifts? Set a $300 cap first. The habit: before you buy anything, write every name with a dollar amount, and make them add up to one total.
+
+Rich Habits, Decoded No. 8. Each episode takes one money habit and shows you how to do it on a normal paycheque.
+
+WHY IT WORKS: holiday spending happens one "it's only $20 more" at a time, in many stores and apps. A total you pick in advance turns lots of small decisions into one. Canada's Financial Consumer Agency says to plan for big purchases and life events inside your budget, and the holidays are one.
+
+HOW:
+1. Pick the total you can pay in full by January, without a balance on your card. (We used $300. Made up for this post.)
+2. Write every name and give each one a dollar amount: Mom $70, Dad $70, sister $60, best friend $60, office swap $40.
+3. Before each purchase, check the list. Over on one name? Take it from another, never from outside the total.
+4. Cross off each gift with what you really paid.
+
+THE CATCH: the list only works if it includes everything: wrapping, shipping, the extra host gift. Add a small "extras" line if you need one.
+
+Do this: Write the names and amounts tonight, before you shop.
+
+Send this to the friend who starts holiday shopping in November.
+
+Education only, not financial advice.
+
+Follow for one money rule a day, in plain words.
+
+#personalfinance #budgeting #moneyhabits #richhabits #holidaybudget
+
+Rich Habits, Decoded No. 9 lands Fri Nov 13 at 5 pm."""
+
+FC_C = ("Sources (checked Nov 5 2026):\n• Financial Consumer Agency of Canada, 'Making a budget' (canada.ca/en/financial-consumer-agency/services/make-budget.html, "
+        "modified 2025-08-21): a budget is especially important if you 'are planning for a major purchase or a life event'; 'Make saving for those goals "
+        "part of your budget.'\nThe $300 cap and the names on the list are made up for this post. Setting the total first is the habit's own rule of "
+        "thumb, not a study result.")
+
+ALT_C = ("Fully Funded 2-slide carousel. Slide 1, on the coral field: 'Rich Habits, Decoded · No. 8' badge, 'Holiday gifts? Set a $300 cap first.' "
+         "in a large serif with the last lines on a white pill, the handwritten note 'new one every Mon · Wed · Fri', the round brand stamp, and a "
+         "drawn card HOLIDAY GIFT LIST: MOM $70, DAD $70, SISTER $60, BEST FRIEND $60, OFFICE SWAP $40, with a coral stamp TOTAL CAP $300. "
+         "Slide 2, on cream: 'Give every name a dollar amount. Stop at $300.' (last line on a soft-coral pill), handwritten 'check the list "
+         "before you pay', and a drawn tally card: GIFTS BOUGHT · 4 OF 5, $240 of $300, a progress bar at 80%, $60 LEFT · 1 GIFT TO GO.")
+
+A_VID = "studio-nov05/fullyfunded/ff-reel-1110-donations-one-return.mp4"
+entries = [
+    dict(id="ff-reel-1110-donations-one-return", account="fullyfunded", publish_at="2026-11-10T19:00:00-05:00",
+         video=A_VID, cover="studio-nov05/fullyfunded/ff-reel-1110-donations-one-return-cover.jpg",
+         caption=CAP_A, first_comment=FC_A, alt_text=ALT_A, beats=BEATS_A,
+         hook_options=["You both gave $200 to charity?", "You and your partner gave $200 each?", "Two charity receipts, $200 each?"],
+         hook_picker=("Studio picker liked the 'You both' angle; clarity gate r2 asked to name who can pool, so the kicker says SPOUSE OR COMMON-LAW "
+                      "PARTNER; r3 restored the picker's pick 'You both gave $200 to charity?' so 'charity' is on screen."),
+         duration_s=dur(A_VID),
+         style=("Reel body: NEW composition for FF (not the centred tag-pill + centred serif + white offset card + cobalt do-this/follow template "
+                "of the last 3 FF Reels): left-aligned serif on a soft-coral dotted field, ONE drawn object (an open glass coin jar) that fills, "
+                "pours and splits into two rate zones; glide / slam-up / whip / hard-cut transitions; do-this beat on cream. Dedicated COVER: "
+                "style 7 'Instead of… / Try…' reframe (quiet) on the soft-coral field, hook 124 px, round stamp."),
+         send_test=False, sources=SRC_A,
+         notes=("Tue Nov 10 19:00 (no trial), standalone. Desk orders applied: frame 0 = ONE picture (two coin jars) + ONE number ($200), 2 text "
+                "blocks (CANADA kicker + 6-word hook); payoff in plain words at 1.9 s; rates and maths from 3.6 s. 'Canada' on screen. Topic "
+                "family: tax-return credits for couples (on the brief's candidate list; not on the 14-day avoid list). Close cousin of the Sun "
+                "Nov 8 medical Reel ('one return' idea), two days apart: CD may prefer spacing; the mechanism differs (a $200 two-rate "
+                "threshold vs a 3%-of-income floor). Music: existing FF track media/music/library/v4/ff-x-level-up.mp3 (tools/music-library.json; "
+                "Nov 8 and 9 use big-reveal and money-moves), -13.9 LUFS, peak -2.1. QG-1: frame 0, a 2 fps strip of the encode and the cover "
+                "viewed; fixed in review: grey see-through glass (ink shadow showed through), the pour arrow striking through the hook, coin "
+                "layers flashing at the jar floor, receipts clipped at the right edge. Reading check (kit 0.4 s/word) flags every beat as dense, "
+                "as on earlier FF Reels; scene 2 carries 29 words in 4.4 s (the numbers are big type, the labels small). No on-screen send line "
+                "(send_test false); one caption send line. Doubt: the 29% figure is from TaxTips.ca 2026 plus CRA's 2025 rate list (14.5/29/33); "
+                "the CRA Schedule 9 PDF could not be fetched (robots / proxy). Cover alternation: Nov 9 Reel cover is quiet and RH08 is loud, so a "
+                "quiet cover here gives L L Q Q L, never 3 in a row. CLARITY r2 (Nov 5): hook names the partner; kicker 'CANADA · SPOUSE OR "
+                "COMMON-LAW PARTNER'; '14%/29% off' -> '14%/29% back' with 'TAX CREDIT' labels; 'You pay less tax.' -> 'You can get more "
+                "back.'; scoreboard in 'back' and ~20% bigger (58 -> 70 px); caption adds the non-refundable limit, 33% and provincial "
+                "credits; cover now shows the full jar beside the reframe cards. Re-rendered in place; strip and cover viewed. ROUND 3: hook back to the picker's 'You both gave $200 to charity?' (charity on "
+                "screen; Wed's Rich Habits is holiday gifts); do-this sub-line 'Official donation receipts. In your tax app: Schedule 9, line "
+                "34900.'; top-right receipt pulled inside (right edge ~870 px); cover re-broken 'You both gave / $200 to charity?' with "
+                "looser leading (no descender behind the pill), jar raised into the centre 1080x1440 crop (bottom ~1640), lid centred.")),
+    dict(id="ff-richhabits-08", account="fullyfunded", publish_at="2026-11-11T17:00:00-05:00",
+         images=["studio-nov05/fullyfunded/ff-richhabits-08/01.jpg", "studio-nov05/fullyfunded/ff-richhabits-08/02.jpg"],
+         caption=CAP_C, first_comment=FC_C, alt_text=ALT_C,
+         beats=["Slide 1: RICH HABITS, DECODED · NO. 8 | Holiday gifts? | Set a $300 cap | first. | new one every Mon · Wed · Fri | HOLIDAY GIFT "
+                "LIST | MOM $70 | DAD $70 | SISTER $60 | BEST FRIEND $60 | OFFICE SWAP $40 | TOTAL CAP $300 | (round brand stamp)",
+                "Slide 2: 2/2 | Give every name | a dollar amount. | Stop at $300. | check the list before you pay | GIFTS BOUGHT · 4 OF 5 | "
+                "$240 of $300 | (progress bar) | $60 LEFT · 1 GIFT TO GO | (round brand stamp)"],
+         hook_options=["Holiday gifts? Set a $300 cap first.", "6 gifts to buy? Give each a number.", "Holiday list: 5 names, $300 total."],
+         hook_picker="No Agent tool in this maker session; maker's own pick (option 1). Studio: please run the picker.",
+         style=("Series cover (Rich Habits, Decoded: pills + drawn object + series badge + handwritten series line + stamp), same layout and "
+                "pill colours as No. 7 (coral field, drawn card bottom-right; slide 2 on the lite field with a drawn card). 2 slides."),
+         send_test=False, sources=[FC_C.split("\n")[1].lstrip("• ")],
+         notes=("Promised in No. 7's caption (No. 8 on Wed Nov 11 at 5 pm); same layout and slot. Hook 7 words naming the money moment (holiday "
+                "shopping), number $300 on the cover. Not a repeat of No. 1-7. Caption's last line promises No. 9 Fri Nov 13 at 5 pm, per the "
+                "brief. Option 2 says '6 gifts' while the list has 5: if the picker chooses it, change it to '5 gifts to buy?'. QG-1: both "
+                "slides viewed at full size. Feed effort kept minimal per desk order 6.")),
+]
+
+for e in entries:
+    blob = json.dumps(e)
+    assert not BANNED.search(blob), (e["id"], BANNED.search(blob).group(0))
+    for k in ("video", "cover"):
+        if k in e:
+            assert (MED / e[k]).exists(), e[k]
+    for p in e.get("images", []):
+        assert (MED / p).exists(), p
+assert entries[0]["duration_s"] <= 15.0
+OUT.write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n")
+print(OUT, [e["id"] for e in entries], entries[0]["duration_s"])

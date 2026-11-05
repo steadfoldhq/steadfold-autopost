@@ -1,0 +1,32 @@
+Hourback hook picker, Nov 5 2026, fresh isolated session (claude-opus-5-5), 2026-11-05T14:32:00Z
+
+===== ASK =====
+Hourback is an Instagram page that shows one real, practical AI trick for everyday life, using made-up situations.
+
+Piece A (a 15-second Reel):
+1. Sitter at 6. No notes yet.
+2. Sitter's here at 6. Fridge note?
+3. Babysitter at 6. Messy brain dump?
+
+Piece C (a 2-slide carousel cover):
+1. 4 roommates. Whose turn is it?
+2. 4 roommates, 1 messy kitchen.
+3. Dishes piling up? One fair text.
+
+Which one would stop a stranger scrolling, and which is clearest? Pick one per piece, or say none works and why.
+
+===== VERDICT =====
+**Piece A: pick #3, "Babysitter at 6. Messy brain dump?"**
+
+- **Most scroll-stopping:** #1, "Sitter at 6. No notes yet." The clock plus "nothing's ready" is a feeling every parent knows.
+- **Clearest:** #3. It hints at the trick: you dump your messy thoughts and AI turns them into a note. "Babysitter" also reads faster than "Sitter," which some people will take as pet sitter.
+- **Why #3 wins:** A 15-second Reel has no time to explain, so the hook needs to point at the trick. #2 ("Fridge note?") is the weakest. It's vague and doesn't create any urgency.
+- **Possible tweak:** "Babysitter at 6. No notes. Just a brain dump." This keeps #1's urgency and #3's clarity.
+
+**Piece C: pick #1, "4 roommates. Whose turn is it?"**
+
+- **Most scroll-stopping:** #1. "Whose turn is it?" is an argument people have actually had, and it makes them want to tag someone.
+- **Clearest:** #3, "Dishes piling up? One fair text." It names both the problem and the fix.
+- **Why #1 wins:** This is a carousel cover. Its only job is to earn the swipe, and slide 2 can deliver the "one fair text" payoff. So the cover can carry the hook while slide 2 handles the clarity. #2 ("1 messy kitchen") just describes a scene. It has no question and no tension, so skip it.
+
+**The rule behind both picks:** In a Reel, the hook has to carry both the stop and the clarity. In a carousel, the cover only needs to stop the scroll, and the next slide can explain.

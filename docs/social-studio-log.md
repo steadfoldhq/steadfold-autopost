@@ -1,5 +1,54 @@
 # Social studio log (v4)
 
+## Thu Nov 5, 2026 (daily run, fired 9:20 am Toronto)
+
+**Followers (insights Nov 5 13:10 UTC):** Fully Funded **7** (0), Locked Hour **5** (−1), Hourback **6** (0), Littlefold **7** (0) = 25. 7-day change: FF 0, LH +1, HB +1, LF +1.
+
+**Profile views (day_profile_views, last read per ET day, Oct 29 → Nov 4, then today so far):**
+- FF: 2 · 1 · 0 · 0 · 2 · 1 · 0 → 0
+- LH: 0 · 0 · 0 · 1 · 3 · 1 · 0 → 1
+- HB: 1 · 1 · 0 · 0 · 0 · 0 · 0 → 0
+- LF: 5 · 2 · 2 · 2 · 1 · 0 · 0 → 0
+
+**Follows / profile visits per carousel (7 days):** 0 follows and 0 profile visits on all 12 series carousels (reach 0–3). follows_from_posts: LF 1 (unchanged), others 0. OPT-IG-02's failure condition ("no change in profile views after 3 episodes") is met on every page; the series is kept because it is the standing follow-engine instruction, at minimum effort (2 slides). Recommendation for the strategy review: move each page's series number onto one Reel a week (Reels reach 36–1,330 strangers; tiles reach followers only).
+
+**Correction (desk order 3):** the Nov 4 line "HB panic opens die (Guests in 30 min: 9 reach, 1.05 s)" was a 13 h read. At 29 h "Guests" reached 110 and held **7.65 s / 53%**, HB's best hold on any 100+ batch. Panic/deadline opens are kept; 7 pm Reels are graded on the 29 h read from now on.
+
+**3 lessons, applied today**
+1. **Frame 0 = one picture + one number, ≤2 text blocks** (5 cm water 7.18 s / 50% on 215; grapes 7.25 s on 1,330; coin battery with 4 blocks 3.76 s on 153). Applied: all 4 new Reels open on one drawn object + one number in ≤2 blocks (2 stair gates; 5 questions in an open book; two $200 jars; the messy note + 5:48 clock).
+2. **Never open on an empty box** (HB Interview "Their questions: ?" 1.88 s / 13% vs Guests' mess + 30:00 timer 7.65 s). Applied: HB sitter opens on a full (made-up) brain-dump note; Claude's real sorted note lands at 2 s.
+3. **Feed tiles reach 0–3 with 0 follows; the queue is full.** Applied: only the 4 promised Wed episodes, 2 slides each, no extra volume; effort went to clarity fixes on 2 queued Reels.
+
+**Shipped (rollback: `docs/social-recovery/2026-11-05.md`):** 8 new entries, 2 queued Reels re-rendered in place, 0 moved.
+- Tue Nov 10 7 pm: LF stair gates top and bottom (14.2 s; NHS, CPS), LH guess 5 answers before you read (13.5 s; St. Hilaire, Chan & Ahn 2024 preregistered meta-analysis, Richland 2009), FF partners' charity receipts on one return ($56 vs $86 federal, labelled maths; 14.6 s; CRA line 34900, Finance Canada), HB babysitter note from a brain dump (14.2 s; real isolated Claude run `studio/editorial/hb-nov05-run-sitter.txt`).
+- Wed Nov 11 5 pm: 3 am Club No. 8 (newborns feed 8–12 times a day; CDC, CPS), One Word No. 9 "Skip." (nightcap, Gardiner et al. 2025 Sleep Med Rev), Rich Habits No. 8 (holiday gift cap before you shop; FCAC); 5:45 pm HB Day 15 roommate chore rota (real run `hb-nov05-run-chores.txt`). Captions promise No. 9 / 10 / 9 / Day 16 on Fri Nov 13: **next run builds them.**
+- Fixed in place (CONFUSING in today's re-gate): FF Sun "medical bills on one return" ($800 vs $2,000 contradiction, "$800 claimed" read as money back, mixed instruction, missing cap); LF Mon "baby's room 16–20°C" ("thermometer where they sleep", "take off a blanket" against safe-sleep advice).
+- Existing library tracks only, −13.8 to −14.0 LUFS, 2.3–6.7 MB. No on-screen send lines (Fri test kept clean); one caption send line each.
+- Queue now runs to Wed Nov 11 5:45 pm on every page (Wed 7 pm Reels not built).
+
+**Checks:** 172 tests OK (2 skipped; one failure fixed: HB sitter caption was 2,509 chars, cut to 1,961) · queue_lint 0/0 · dry-run OK at Sun 19:05, Mon 19:05, Tue 19:05, Wed 17:05, 17:50 · banned-word scan clean · HB run files scanned for real names/employer: clean · ceilings held (max 1 feed + 1 Reel per page per day).
+
+**Hooks (fresh stranger picker, 3 options each):** adopted picker picks on LF 3 am Club ("3 am feed? Newborns need 8–12 a day."), LH Reel (picker said all 3 weak; adopted its direction as "Guess 5 answers. Then read."), LH One Word ("2 drinks before bed? Less dream sleep."), FF donations ("You both gave $200 to charity?", after the clarity gate rejected the "partner" rewrite for never saying charity), FF Rich Habits, HB sitter, HB Day 15 (agreed with maker). Kept maker's on LF stairs ("Stairs need 2 gates: top and bottom."; picker preferred "Crawling? Gate the stairs, top and bottom.", kept for desk order 1: number in frame 0).
+
+**Styles (covers):** LF follow-the-line (quiet) after Mon's compare, series pills next; LH Look B on cream dots, then One Word pink series; FF reframe "Instead of… / Try…" with the jar, then Rich Habits series; HB kinetic big text "5:48", then Day series. No taped lined-note cover today. New scene compositions: LF side-cutaway staircase, LH full-bleed book from above, FF one glass jar on soft coral, HB fridge door. grid_preview run and looked at for every page: ≥6 styles in each 9-tile window. Accepted: FF top row has two coral-field tiles side by side (reframe + series); LF quiet tile follows a quiet tile once.
+
+**Clarity gate (fresh strangers, text only):**
+- Re-gate of 24 queued items >24 h out: 22 CLEAR, 2 CONFUSING (FF medical, LF room) → fixed and re-gated CLEAR.
+- New, round 1 (8): 1 CONFUSING (FF donations: "you both" never said spouse/common-law, "14% off" read as % off the tax bill, "you pay less tax" over-promised a non-refundable credit). Round 2: still CONFUSING ("charity" never on screen) → hook changed. Round 3: CLEAR (note: "back" = less tax owed; caption explains non-refundable).
+
+**Peer + CD gate (fresh agents, rendered frames):** round 1: 7 SHIP, 1 FIX (HB sitter: 3rd dense text block in frame 0, cover pill collision, callout over rows, tiny sticky, contradictory "We're home. We're at a restaurant" row, over-claim "it tells you what you left out"). Round 2: 3 SHIP + 6 FIX (FF receipt off the right edge, FF cover crop/descender/lid; HB follow pill over the clock, empty lower door; LF stairs check badges on the 1/2 badges, gate bracket clipped; LF room "18°C" tag over the 30 mark and frame 0 reading 27°C; LH One Word slide 2 line spacing). All fixed; I looked at the final 1 fps strips of all 5 re-cut Reels and all 4 grids myself.
+
+**What the gate cut:** nothing whole. Makers dropped: LF sofa-sleep 3 am Club (repeats No. 1/3), LH bedroom temperature / morning light / 2-minute rule (no firm peer-reviewed number), protégé effect (mixed evidence), phone in another room (failed replication).
+
+**Doubts for the founder/desk:**
+- FF donations is a cousin of Sunday's medical-bills-on-one-return Reel, 2 days apart (different rule). The 2026 29% rate and medical cap ($2,891) come from TaxTips.ca; CRA's 2026 pages weren't fetchable/published.
+- LF stairs mixes NHS (age 2, 6.5 cm) with CPS (screw the top gate in); 3 am Club No. 8 is breastfeeding guidance (slide 2 says breastfed; the cover says newborns).
+- LH One Word No. 9 relies on one review whose abstract says ~2 drinks and results say up to 3; slide uses the authors' 2.
+- HB sitter note is "shortened"; the 10:30 row is cut to its first sentence.
+- Makers again had no Agent tool; the studio ran the picker afterwards.
+
+**Grade next run:** Tue Nov 10 Reels at the 29 h read: LF/LH ≥45% on ≥100; HB sitter ≥5 s / 30% on ≥40; FF ≥40. Fri send test (Sat read) unchanged.
+
 ## Wed Nov 4, 2026 (daily run, fired 9:19 am Toronto)
 
 **Followers (insights Nov 4 13:04 UTC):** Fully Funded **7** (0), Locked Hour **6** (0), Hourback **6** (0), Littlefold **7** (0) = 26. 7-day change: FF 0, LH +2, HB +1, LF +1.

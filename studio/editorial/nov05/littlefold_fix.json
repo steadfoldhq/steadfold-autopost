@@ -1,0 +1,54 @@
+[
+ {
+  "id": "lf-reel-1109-room-16-20c",
+  "account": "littlefold",
+  "publish_at": "2026-11-09T19:00:00-05:00",
+  "video": "studio-nov04/littlefold/lf-reel-1109-room-16-20c.mp4",
+  "cover": "studio-nov04/littlefold/lf-reel-1109-room-16-20c-cover.jpg",
+  "caption": "Heating on? Keep the room your baby sleeps in at 16 to 20°C (about 61 to 68°F).\n\nWHY: the NHS says overheating can increase the risk of SIDS (sudden infant death syndrome). The Lullaby Trust recommends 16 to 20°C so babies don't get too hot.\n\nHOW (Lullaby Trust, NHS):\n1. Put a room thermometer in the room where your baby sleeps. It's hard to guess the temperature.\n2. Use a well-fitting baby sleeping bag, or lightweight bedding firmly tucked in no higher than their shoulders. No loose blankets, duvets or pillows in the cot.\n3. Baby's skin hot or sweaty? Take off one or more layers.\n4. Take hats and extra clothing off as soon as you come indoors. Babies don't need hats indoors.\n\nTHE CATCH: hands and feet usually feel cooler, and that's normal. Feel their chest or the back of their neck instead.\n\nDo this: tonight, put a room thermometer in the room where your baby sleeps.\n\nSend this to whoever puts your baby down at their place.\n\nFollow for one calm thing a night, from bump to toddler.\n\nGeneral information only, not medical advice.\n\n#safesleep #newborn #newparents #babysleep #sids",
+  "first_comment": "Sources (checked Nov 4 2026; re-checked Nov 5 2026): The Lullaby Trust, 'What is the ideal baby room temperature?' (https://www.lullabytrust.org.uk/safer-sleep-advice/baby-room-temperature/, last reviewed 1 February 2025, updated April 30 2026): \"The recommended room temperature for babies is 16-20°C so that they don't get too hot.\"; \"use a room thermometer in the rooms where your baby sleeps\"; \"feel your baby's chest or the back of their neck (your baby's hands and feet will usually be cooler, which is normal)\"; \"Babies do not need to wear hats indoors.\"; \"If your baby's skin is hot or sweaty, remove one or more layers of bedclothes or bedding.\" NHS, 'Reduce the risk of sudden infant death syndrome (SIDS)' (https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/, last reviewed 25 November 2025): \"keep the room at a temperature between about 16 to 20C – monitor the temperature using a room thermometer\"; \"Overheating can increase the risk of SIDS.\"; \"remove hats and extra clothing as soon as you come indoors\"; remove 1 or more layers of clothing or bedding if your baby's skin is hot or sweating; \"use lightweight blankets, sheets or a baby sleeping bag\". °F values are maths (16°C = 60.8°F, 20°C = 68°F). The Lullaby Trust, 'Keeping a clear cot' (https://www.lullabytrust.org.uk/baby-safety/safer-sleep-information/keeping-a-clear-cot/, last reviewed 1 February 2025): \"all the baby needs is lightweight bedding, firmly tucked in no higher than their shoulders, or a baby sleeping bag.\"; \"The bedding should be appropriate to the room temperature, firmly tucked in and not soft or bulky.\" NHS (same SIDS page): \"do not use pillows, duvets, cot bumpers, loose blankets, soft toys or anything to keep your baby in place\".",
+  "alt_text": "Littlefold Reel, drawn sunny sky. A wall thermometer on the wall beside a crib with a drawn baby asleep on their back in a pink sleep bag. The red line sits in a sage band between 16 and 20 and settles at 18; a berry tag '16–20°C' and 'just right ✓'. Close-up of the crib: little sweat drops by the baby's head, 'hot or sweaty?', then a small blue baby top floats up and away, 'one layer off' and a check. No blanket in the crib. A knit hat with a 'no' ring floats off the baby's head, 'hat off' and a check. Do this: the thermometer pops onto the wall beside the crib reading 18, a '18°C' tag beside the reading, a check and hearts. On screen: heating on? Baby's room: 16 to 20°C. About 61 to 68°F. Check them: too warm? Take a layer off. Hot or sweaty? Take off some clothes. And: indoors, babies don't need a hat. Take it off when you get home. Do this: Put a room thermometer in their room. Follow for one calm thing a night, from bump to toddler.",
+  "beats": [
+   "heating on?",
+   "Baby's room: 16 to 20°C.",
+   "About 61 to 68°F. (berry pill)",
+   "10 · 15 · 20 · 25 · 30 (thermometer scale)",
+   "16–20°C (tag)",
+   "just right ✓",
+   "Lullaby Trust · NHS",
+   "check them",
+   "Too warm? Take a layer off.",
+   "Hot or sweaty? Take off some clothes.",
+   "hot or sweaty?",
+   "one layer off",
+   "Lullaby Trust · NHS",
+   "and",
+   "Indoors, babies don't need a hat.",
+   "Take it off when you get home.",
+   "hat off",
+   "Lullaby Trust · NHS",
+   "Do this:",
+   "Put a room thermometer in their room.",
+   "18°C (tag)",
+   "Follow for one calm thing a night, from bump to toddler.",
+   "Lullaby Trust · NHS",
+   "(stamp)"
+  ],
+  "hook_options": [
+   "Heating on? Baby's room: 16 to 20°C.",
+   "Baby's room: 16 to 20°C.",
+   "Indoors, babies don't need a hat."
+  ],
+  "hook_picker": "Stranger picker (gate Nov 4) chose the 'Heating on?' version; its own wording ran 9 words, so frame 0 and the cover use the 7-word cut 'Heating on? Baby's room: 16 to 20°C.' (kicker 'heating on?' + headline).",
+  "duration_s": 14.18,
+  "style": "Body: illustrated physical rule (sunny sky + ONE drawn object doing the rule: a wall thermometer settling at 18 inside a sage 16-20 band beside a crib with the oct26 sleeping baby; a small baby top (a clothing layer) floating off, no blanket; hat floating off). Cover: ORIGINAL SIMPLE TEMPLATE 'compare' (style-menu #8, quiet): two panels, 'too warm' thermometer at 25 with a small 'no' ring vs 'just right' at 18 with a check, under the hook, stamp. Grid: Mon 5 pm 3 am Club No. 7 (#1 pills, loud) -> THIS (#8, quiet).",
+  "send_test": false,
+  "sources": [
+   "https://www.lullabytrust.org.uk/safer-sleep-advice/baby-room-temperature/",
+   "https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/",
+   "https://www.lullabytrust.org.uk/baby-safety/safer-sleep-information/keeping-a-clear-cot/"
+  ],
+  "notes": "CD round 3 (Nov 5) applied: frame 0 thermometer now reads inside the 16-20 band from the first frame (settles 19.6 -> 18, never above 20), so it no longer reads ~26 beside the '16 to 20°C' headline; end-card '18°C' tag moved next to the 18 reading (was over the 30 mark). Re-rendered in place 14.18 s (ffprobe 14.183), 2.7 MB; strip reviewed. STUDIO FIX Nov 5 (stranger gate: CONFUSING on 2 safety lines), re-rendered in place, same mp4 path; cover unchanged (thermometers only, no blanket or crib). (1) Do this 'Put a thermometer where they sleep.' -> 'Put a room thermometer in their room.' (7 words; the drawn thermometer is on the wall beside the crib, never in it). (2) Beat 2 'Hot or sweaty? Take a layer off.' / 'Take off a blanket or some clothes.' -> 'Too warm? Take a layer off.' / 'Hot or sweaty? Take off some clothes.'; the peach blanket that lifted off the baby is gone (the baby is in the sleep bag the whole Reel), and a small blue baby top floats off instead. Caption step 2 now uses the Lullaby Trust 'Keeping a clear cot' wording (sleeping bag, or lightweight bedding firmly tucked in no higher than the shoulders) plus NHS 'no loose blankets'; step 3 says 'layers' (NHS says 'clothing or bedding', so no new claim). Do this in the caption matches the screen. The studio's 'out of reach' wording was left out: no source says where to put a room thermometer, and the on-screen line already avoids the crib reading. 14.18 s (ffprobe 14.183), 2.7 MB, same music, same cut points. Strip reviewed: no blanket in any frame; the floating top clears the sub line; no text clipping. Builder: studio/editorial/nov05_littlefold.py room (imports nov04_littlefold, edits nothing; patches beat 2's JS only). Previous notes: GATE Nov 4 applied: hook -> 'Heating on? Baby's room: 16 to 20°C.' on frame 0 and the cover (cover re-rendered and reviewed); sub 'Bedding or clothes, one or more.' -> 'Take off a blanket or some clothes.'; source chip 32 px at y 1398 (73%); art x.85, floor raised to 1385; zoomed crib moved up off the chip; '18°C' tag clear of the follow pill. Re-rendered 14.18 s (ffprobe 14.183), 2.7 MB; strip reviewed again. Standalone, number in frame 0 and line 1 ('16 to 20°C'; the thermometer settles in the band by 1.3 s, tag by 1.6 s). Different family from A (sleep/temperature vs falls). No send line on screen (control). 14.18 s (ffprobe 14.183), 2.9 MB, H.264 1080x1920 30 fps + AAC, ~-14 LUFS. Music: existing v4 lf-x-giggle-pop. Follow pill ~3.6 s. Strip + cover reviewed (fixed: sage band hidden behind the tube, crib too small, zoomed crib over the source chip, '18°C' tag hidden behind the follow pill, cover 'no' ring covering the thermometer). Builder: studio/editorial/nov04_littlefold.py room. DOUBTS: the 'neck/chest check' (Oct 28 Reel) is kept to the caption's catch only, not on screen, to avoid a repeat. 16-20°C is UK guidance (Lullaby Trust, NHS); Canadian/US sources weren't checked today and the post credits only the UK sources. The 25 on the cover's 'too warm' thermometer is a drawn reading, not a claim. Baby is drawn, on its back, clear cot (no toys/bumpers). No real children; no product.",
+  "replaces_existing": true
+ }
+]

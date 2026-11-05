@@ -1,0 +1,20 @@
+Hourback real run, Nov 5 2026 (studio maker, Hourback)
+Used in: hb-day15-roommate-chores (Wed Nov 11, 5:45 pm, AI, for real · Day 15)
+Tool: Claude (Anthropic), model claude-opus-5-5, fresh session via the Claude Code CLI in print mode (claude -p),
+  no prior conversation, no tools (--tools ""), no session persistence, system prompt: "You are Claude, an AI assistant made by Anthropic."
+  Isolated: empty working folder, --setting-sources "", claude.ai Project/account env vars removed (method of
+  studio/editorial/nov03_hourback_run.py; see its ISOLATION FIX note).
+Run at (UTC): 2026-11-05T14:30:55Z
+Input: MADE UP FOR THIS POST (no real person, workplace or event).
+
+===== PROMPT (verbatim) =====
+I live with 3 roommates (Sam, Ana and Theo) and the kitchen is a mess because nobody knows whose turn it is. The chores: dishes every night, trash and recycling out on Tuesday night, counters and stove once a week, bathroom once a week. Theo works night shifts on weekends. Write a short, friendly text for our group chat that proposes a fair weekly rotation, so nobody feels blamed. Under 80 words.
+
+===== REPLY (verbatim) =====
+Hey all! 🧽 Quick idea so nobody has to guess whose turn it is:
+
+**Dishes:** Theo Mon+Tue (keeps your weekend nights free!), Sam Wed+Thu, Ana Fri+Sat, me Sun
+**Trash + recycling (Tue night):** me, since I only have one dish night
+**Counters/stove + bathroom:** rotate weekly between Sam, Ana and Theo, so one of you gets a break each week
+
+Happy to tweak anything. Thoughts? 😊
