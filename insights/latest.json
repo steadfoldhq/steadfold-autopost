@@ -1,13 +1,32 @@
 {
- "collected_at": "2026-11-05T20:53:25+00:00",
+ "collected_at": "2026-11-06T04:59:55+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 62,
+   "media_count": 63,
    "posts": [
+    {
+     "media_id": "18376427182209916",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfYWjVVDcl0/",
+     "at": "2026-11-06T00:47:01+0000",
+     "first_line": "One pension? Split it. Pay less tax? In Canada, a retired couple (married or common-law) can split eligible pension income on their tax retu",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 1,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 770,
+      "ig_reels_video_view_total_time": 770
+     },
+     "comments": []
+    },
     {
      "media_id": "18073166756592130",
      "type": "REEL",
@@ -17,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 41,
-      "reach": 38,
+      "views": 42,
+      "reach": 39,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3116,
-      "ig_reels_video_view_total_time": 118430
+      "ig_reels_avg_watch_time": 3061,
+      "ig_reels_video_view_total_time": 119390
      },
      "comments": []
     },
@@ -36,7 +55,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
+      "views": 6,
       "reach": 1,
       "saved": 0,
       "shares": 0,
@@ -748,25 +767,6 @@
       "ig_reels_video_view_total_time": 531530
      },
      "comments": []
-    },
-    {
-     "media_id": "18286297390289596",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/Deuv_gCknf1/",
-     "at": "2026-10-20T21:01:10+0000",
-     "first_line": "Your first $100,000 is the hardest. Then every step gets shorter 👉",
-     "likes": 5,
-     "comments_count": 1,
-     "insights": {
-      "views": 19,
-      "reach": 6,
-      "saved": 5,
-      "shares": 6,
-      "total_interactions": 21,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -778,8 +778,27 @@
    "username": "lockedhourhq",
    "followers_count": 5,
    "follows_count": 3,
-   "media_count": 63,
+   "media_count": 64,
    "posts": [
+    {
+     "media_id": "18639688735017728",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfYWwJOkUa6/",
+     "at": "2026-11-06T00:48:58+0000",
+     "first_line": "Bed at 11? Hard workout done by 10. Finish hard workouts 1 hour before bed. Evening exercise is fine for sleep; it's the hard session that e",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 130,
+      "reach": 109,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 6404,
+      "ig_reels_video_view_total_time": 698052
+     },
+     "comments": []
+    },
     {
      "media_id": "17997957810045782",
      "type": "REEL",
@@ -1520,25 +1539,6 @@
       "ig_reels_video_view_total_time": 127016
      },
      "comments": []
-    },
-    {
-     "media_id": "17913352476471925",
-     "type": "CAROUSEL_ALBUM",
-     "permalink": "https://www.instagram.com/p/DeuwKvqEmur/",
-     "at": "2026-10-20T21:02:42+0000",
-     "first_line": "30 ticks. Hold the dots and slide, and watch a habit fill in 👀",
-     "likes": 2,
-     "comments_count": 1,
-     "insights": {
-      "views": 16,
-      "reach": 7,
-      "saved": 4,
-      "shares": 9,
-      "total_interactions": 21,
-      "follows": 0,
-      "profile_visits": 0
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -1550,8 +1550,27 @@
    "username": "hourbackhq",
    "followers_count": 6,
    "follows_count": 3,
-   "media_count": 59,
+   "media_count": 60,
    "posts": [
+    {
+     "media_id": "18093526505230561",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfYWmc1jP84/",
+     "at": "2026-11-06T00:47:39+0000",
+     "first_line": "Flight at 6 am and you haven't packed? Tell AI about the trip and ask for a packing list sorted by room, so you walk through your place once",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 8,
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3546,
+      "ig_reels_video_view_total_time": 28370
+     },
+     "comments": []
+    },
     {
      "media_id": "18132330412801771",
      "type": "REEL",
@@ -1580,7 +1599,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 1,
+      "views": 3,
       "reach": 1,
       "saved": 0,
       "shares": 0,
@@ -2292,25 +2311,6 @@
       "ig_reels_video_view_total_time": 81804
      },
      "comments": []
-    },
-    {
-     "media_id": "17954461410036623",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DesaC8kD_mv/",
-     "at": "2026-10-19T23:11:08+0000",
-     "first_line": "AI made people 25% faster. Then it made them wrong.",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 26,
-      "reach": 19,
-      "saved": 3,
-      "shares": 11,
-      "total_interactions": 23,
-      "ig_reels_avg_watch_time": 3698,
-      "ig_reels_video_view_total_time": 85056
-     },
-     "comments": []
     }
    ],
    "account_day": {
@@ -2322,8 +2322,27 @@
    "username": "littlefoldhq",
    "followers_count": 7,
    "follows_count": 3,
-   "media_count": 62,
+   "media_count": 63,
    "posts": [
+    {
+     "media_id": "18109806125287863",
+     "type": "REEL",
+     "permalink": "https://www.instagram.com/reel/DfYWrbRkiPL/",
+     "at": "2026-11-06T00:48:19+0000",
+     "first_line": "Coin battery swallowed? Go to the ER now. On the way, if they're over 1: 2 teaspoons of honey.",
+     "likes": 0,
+     "comments_count": 1,
+     "insights": {
+      "views": 154,
+      "reach": 128,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 4993,
+      "ig_reels_video_view_total_time": 644148
+     },
+     "comments": []
+    },
     {
      "media_id": "17905596894671574",
      "type": "REEL",
@@ -2333,13 +2352,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 140,
-      "reach": 127,
+      "views": 142,
+      "reach": 128,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3937,
-      "ig_reels_video_view_total_time": 492140
+      "ig_reels_avg_watch_time": 4016,
+      "ig_reels_video_view_total_time": 506027
      },
      "comments": []
     },
@@ -2352,13 +2371,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 168,
-      "reach": 155,
+      "views": 169,
+      "reach": 156,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3756,
-      "ig_reels_video_view_total_time": 567253
+      "ig_reels_avg_watch_time": 3818,
+      "ig_reels_video_view_total_time": 584211
      },
      "comments": []
     },
@@ -3062,25 +3081,6 @@
       "total_interactions": 25,
       "follows": 0,
       "profile_visits": 0
-     },
-     "comments": []
-    },
-    {
-     "media_id": "17914788243551208",
-     "type": "REEL",
-     "permalink": "https://www.instagram.com/reel/DewYq92jhv9/",
-     "at": "2026-10-21T12:16:07+0000",
-     "first_line": "Money your family can get in Canada, for each child 🇨🇦",
-     "likes": 4,
-     "comments_count": 1,
-     "insights": {
-      "views": 68,
-      "reach": 56,
-      "saved": 3,
-      "shares": 13,
-      "total_interactions": 26,
-      "ig_reels_avg_watch_time": 2964,
-      "ig_reels_video_view_total_time": 168987
      },
      "comments": []
     }
