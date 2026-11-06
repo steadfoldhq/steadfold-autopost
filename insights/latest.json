@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-06T13:06:36+00:00",
+ "collected_at": "2026-11-06T16:55:26+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -14,16 +14,16 @@
      "permalink": "https://www.instagram.com/reel/DfYWjVVDcl0/",
      "at": "2026-11-06T00:47:01+0000",
      "first_line": "One pension? Split it. Pay less tax? In Canada, a retired couple (married or common-law) can split eligible pension income on their tax retu",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 2,
-      "reach": 1,
+      "views": 6,
+      "reach": 6,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 770,
-      "ig_reels_video_view_total_time": 770
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 1512,
+      "ig_reels_video_view_total_time": 9073
      },
      "comments": []
     },
@@ -770,7 +770,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 2
    }
   },
   "lockedhour": {
@@ -960,13 +960,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 64,
-      "reach": 57,
+      "views": 66,
+      "reach": 58,
       "saved": 1,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 4896,
-      "ig_reels_video_view_total_time": 283993
+      "ig_reels_avg_watch_time": 4876,
+      "ig_reels_video_view_total_time": 287724
      },
      "comments": []
     },
@@ -1561,13 +1561,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 24,
-      "reach": 21,
+      "views": 28,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2562,
-      "ig_reels_video_view_total_time": 56378
+      "ig_reels_avg_watch_time": 2858,
+      "ig_reels_video_view_total_time": 77169
      },
      "comments": []
     },
@@ -2314,7 +2314,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "littlefold": {
@@ -2333,13 +2333,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 158,
-      "reach": 131,
+      "views": 159,
+      "reach": 132,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5200,
-      "ig_reels_video_view_total_time": 691682
+      "ig_reels_avg_watch_time": 5177,
+      "ig_reels_video_view_total_time": 693835
      },
      "comments": []
     },
@@ -3086,7 +3086,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   }
  }
