@@ -1,5 +1,117 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Fri Nov 6, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 6 05:01 UTC (12:01 am ET)**. Per-post curves come from the 19 reads in this clone (Nov 1 04:53 → Nov 6 05:01 UTC). All 4 Nov 5 reads landed (13:12, 17:18, 20:55, 05:01). Reel lengths are from ffprobe. Frame 0 and the 2 s frame of all 6 Thu Reels were reviewed side by side. The next read is ~12:50 UTC (7:50 am ET).
+- **POSTING PAUSE (Dharma via Muse, Nov 6 00:24 ET):** all 32 queued posts were moved to schedule/held-2026-11-06-pause.json. The Thu Nov 5 7 pm Reels are the last ones out. **The Fri on-screen send-line test was held, so it can't be graded.** Nothing posts until Muse delivers a READY package. incoming/muse/ has 0 packages this run.
+- **Verdict rules:** unchanged. EXPANDED = still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED. FAILED HOOK = avg watch < 4 s or < 25% of length. PENDING = under 24 h. FAST BATCH (AI interpretation) = reach ≥ 5× the page's median Reel batch within 24 h.
+- **Non-follower share** is a floor: (reach − followers) / reach. follow_type is still not read.
+- **Bursts:** none. **Sends on every post in this window = 0.**
+- **Comments per reach = 0.** 0 comment texts returned (day 23).
+
+| Page | Post (first line) | Format | Age | Reach curve (age → reach) | Non-follower ≥ | Sends/reach | Saves/reach | Avg watch / length | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| LF | "Babies can drown in 5 cm (2 inches) of water." | Reel 14.4 s | 53 h | 5h 159 → 13h 198 → 21h 214 → 53h 215 | 97% | 0.00 | 0.005 (1) | 7.18 s / 50% | STALLED (final) |
+| LF | "A swallowed coin battery can burn a child's throat in 2 hours." | Reel 11.5 s | 29 h | 5h 153 → 13h 154 → 29h 156 | 96% | 0.00 | 0.00 | 3.82 s / 33% | FAILED HOOK (< 4 s) + STALLED |
+| LF | "Giving kids liquid medicine? 0.5 mL is not 5 mL." | Reel 13.2 s (trial) | 15 h | 3h 126 → 7h 127 → 15h 128 | 95% | 0.00 | 0.00 | 4.02 s / 30% | PENDING (whole batch in 3 h, then flat) |
+| LF | "Coin battery swallowed? Go to the ER now. … 2 teaspoons of honey." | Reel 13.4 s | 4 h | 4h **128** | 95% | 0.00 | 0.00 | 4.99 s / 37% | PENDING |
+| LH | "Studying tonight? 24 minutes on, 6 off…" | Reel 14.6 s | 53 h | 5h 104 → 29h 119 → 53h 119 | 96% | 0.00 | 0.017 (2) | 5.17 s / 35% | STALLED (final) |
+| LH | "Lying awake? After about 20 minutes, get out of bed." | Reel 14.6 s | 29 h | 5h 95 → 29h 96 | 95% | 0.00 | 0.010 (1) | 4.50 s / 31% | STALLED |
+| LH | "Stressed already? Sigh slowly for 5 minutes." | Reel 14.6 s (trial) | 15 h | 3h 104 → 15h 104 | 95% | 0.00 | 0.00 | **2.75 s / 19%** | FAILED HOOK + PENDING |
+| LH | **"Bed at 11? Hard workout done by 10."** | Reel 14.6 s | 4 h | 4h **109** | 95% | 0.00 | 0.00 | **6.40 s / 44%** | PENDING. Best LH hold at 4 h since warm shower |
+| HB | "Guests in 30 minutes and the place is a mess?" | Reel 14.4 s | 53 h | 5h 2 → 17h 64 → 21h 106 → 53h 110 | 95% | 0.00 | 0.00 | 7.65 s / 53% | STALLED (final) |
+| HB | "Interview at 9 am and you haven't prepared?" | Reel 14.4 s | 29 h | 5h 76 → 13h 97 → 29h 99 | 94% | 0.00 | 0.00 | **2.04 s / 14%** | FAILED HOOK + STALLED |
+| HB | "Flight at 6 am and you haven't packed?" | Reel 14.9 s | 4 h | 4h **7** | ~14% | 0.00 | 0.00 | 3.55 s / 24% | PENDING. HB's batch usually comes at 13–29 h, so grade it on tonight's read |
+| FF | "Save $100 for your baby. Canada adds $20." | Reel 13.6 s | 29 h | 5h 36 → 13h 36 → 29h **39** | 82% | 0.00 | 0.00 | 3.06 s / 22% | FAILED HOOK + STALLED. **Under the 40 bar** (order 5, Nov 5) |
+| FF | "Too sick to make decisions? Who handles your bills?" | Reel 13.5 s | 53 h | 5h 2 → 53h 2 | ~0% | 0.00 | 0.00 | 0.55 s / 4% | FAILED HOOK + STALLED, no batch (final) |
+| FF | "One pension? Split it. Pay less tax?" | Reel 13.6 s | 4 h | 4h **1** | 0% | 0.00 | 0.00 | 0.77 s | PENDING, no batch yet |
+
+Aged out at 77 h, final: LH ceiling light 324 (3 saves), LF sausage 110, HB toast 101, FF partner tax return 10.
+
+**Feed posts in the window (5, Nov 3–5, 2–3 slides): reach 1–3**, 0 sends, 0 saves.
+
+**EXPANDED: 0 strict. 0 new FAST BATCHES** (still 3, all Oct 30 – Nov 1). What moved since Nov 5:
+1. **Sends are the wall, not reach.** The 14 Reels in this window reached 1,313 accounts (≥94% non-follower on every batch of 90+) and got **0 sends**. Since Nov 1, all Reels together have 4 clean sends. The 6 Thu Reels had a "Send this to…" caption line: 0 sends on 477 reach. Caption lines are now 0 for 12 Reels and ~840 reach.
+2. **LH "workout by 10" held 6.40 s / 44% on 109 at 4 h.** Frame 0 (reviewed) shows one figure lifting, a moon in the window, and two short lines ("Bed at 11? Hard workout done by 10."). The same-day LH Trial "Sigh slowly for 5 minutes" (a breathing figure, no clock or number to picture) held 2.75 s / 19% on 104. That's a picture plus a time, against a picture plus an instruction. n = 2, low confidence.
+3. **The HB output-first fix landed on "Flight at 6 am".** Frame 0 shows Claude's filled packing list, not an empty box (yesterday's order 1 was followed). It has only 7 reach at 4 h, which is normal for HB's late batches. Grade it on the 29 h read (Fri ~05:00 UTC). "Interview" finished at 2.04 s / 14% on 99.
+4. **LF "battery honey" held 37% on 128 at 4 h,** better than the coin battery Reel's 33% but under the ≥45% bar. Frame 0 has 4 text items (badge, question, two-line headline, "only if over 1" strip) beside one jar, so yesterday's ≤2 text-block order was half-followed. "0.5 mL is not 5 mL" (2 syringes, 2 text blocks) held 30% on 128.
+5. **FF "Save $100" finished at 39 at 29 h, 1 under the pre-registered 40 bar.** Under the Nov 5 rule, the account check (already in the review queue) is FF's only lever. FF "One pension?" had 1 reach at 4 h.
+6. **Followers: 25 (+0 since yesterday, +3 in 7 days).**
+
+- **TikTok:** manual (no API; no numbers logged).
+- **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels**.
+- **Trial Reels:** LF "0.5 mL" 128 and LH "slow sighs" 104, both 95%. Neither batch was bigger than the same pages' non-trial 7 pm Reels (128, 109). Graduation: no data yet.
+
+**3 orders**
+1. **REPEAT** (in the first Muse packages): one picture plus one number or time in frame 0, with ≤2 text blocks. It held 44–53% on 109–1,339 strangers (workout by 10, 5 cm, grapes, rice, guests).
+2. **KILL:** caption-only send lines as a send lever (0 sends on ~840 reach over 12 Reels). Also kill opens that show an instruction with nothing to picture ("Sigh slowly for 5 minutes": 2.75 s; "Interview": 2.04 s).
+3. **TEST:** the held on-screen send line, moved to the first Muse Reels on LF, LH and HB. **Grade on the 29 h read:** ≥1 send per 100 reach on at least 2 of 3.
+
+## Today's orders (Fri Nov 6, 2026, Performance desk)
+Data: Nov 6 05:01 UTC read (all 4 Nov 5 reads landed). 160 posts in the read, 25 followers. **Posting is paused by Dharma; the only thing that can post is a READY Muse package.** So these orders are about how the first Muse posts are checked and graded. Direction: medium that a picture plus a number or time in frame 0 lifts hold. Low on everything about sends (only 4 clean sends since Nov 1). No bursts.
+1. **Social studio (Muse intake): add a frame-0 check to the usual clarity, rights and dry-run checks.** Pass = one picture plus one number or time, ≤2 text blocks, 11–15 s. Evidence: 44–53% hold on 109–1,339 (LH workout by 10 at 6.40 s, LF 5 cm 50%, grapes 51%, rice 53%, HB guests 53%). Fails held 14–33%: HB interview (empty box) 14%, LH sighs (instruction only) 19%, LF coin battery (4 text blocks) 33%. A package that fails goes back to Muse with the frame-0 note in docs/social-studio-log.md "For Muse". Don't recut it ourselves. **Grade:** ≥40% hold on ≥100 reach for the first 3 Muse Reels.
+2. **Social studio (Muse intake): schedule the first Muse Reels on Littlefold, Locked Hour and Hourback before Fully Funded.** 7-day median Reel reach: LF 142, LH 106.5, HB 101, FF 6. Fully Funded can't tell us whether the new Muse look works, because it doesn't get a stranger batch (its last 15 Reels, since Oct 26, got 1–39). Send at most 1 Muse Reel per page per day until 3 have been graded at 29 h. That's the founder rule against scaling an unproven direction.
+3. **All desks: TEST for a restart dip after the pause.** Pre-registered now: the first Muse Reel on each page is compared with that page's pre-pause 7-day median Reel batch (LF 142, LH 106.5, HB 101). **A dip** = under half the median at the 29 h read on 2 or more pages. That would mean the pause cost distribution, not that the Muse look failed. Grade the frame (order 1) separately from the batch size.
+4. **Short-form studio / Muse: the on-screen send line carries over.** The Fri test was held by the pause. Caption-only lines got 0 sends on ~840 reach across 12 Reels. Put "Send this to [named person]" on screen in the last 2 s of the first LF, LH and HB Muse Reels, and change nothing else. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
+5. **Social studio (Fully Funded): HOLD. The pre-registered bar was missed.** "Save $100" got 39 at 29 h against the 40 bar. Under the Nov 5 rule, the account check (already in the review queue) is FF's only lever. Build no new FF tests until that check is back. Nothing new for Dharma.
+6. **Social studio: LESS feed effort; Automation architect: keep insights running through the pause.** Feed: 5 of 5 at reach 1–3 this window. Insights reads are still landing every ~4 h, and they are what grades the restart. Open asks: comment text (day 23), follow_type, per-post history lines, a burst flag.
+
+**Grading the Nov 5 orders (owner check):**
+1. **HB, never open on an empty box: done.** The "Flight at 6 am" frame 0 shows Claude's filled list (frame reviewed). Its grade is pending (7 at 4 h; graded on the 29 h read). "Interview" finished at 2.04 s / 14% on 99 (fail, as expected). Fri "thank-you" was held by the pause.
+2. **LF, one object, one number, ≤2 text blocks: half done.** "Battery honey" opens on the jar and "2 teaspoons", but with 4 text items. It held 37% on 128 at 4 h, under the ≥45% bar so far. Fri "5 straps" was held.
+3. **Grade 7 pm Reels on the 29 h read: done.** The Social studio log carries the "Guests" correction (line 15).
+4. **On-screen send-line test: not run.** The Fri Reels were held by the pause. It carries over (order 4). Thu's caption lines: 0 sends on 477.
+5. **FF control, grade "Save $100" at 29 h: done.** 39, under 40, so the account check is the lever.
+6. **Queue through Mon Nov 9: superseded** by Dharma's pause. 32 posts are held, not deleted. Automation asks: still open.
+
+---
+
+## Daily report: Fri Nov 6, 2026
+
+### Scoreboard (insights read Nov 6 05:01 UTC)
+Changes are vs the Nov 5 05:01 UTC read (1 day) and vs the Oct 30 04:49 UTC read (7 days). Posts are those published Oct 30 – Nov 5 ET. Best and worst by clean (saves + sends)/reach cover posts with reach ≥20, with the Oct 31 LF burst removed.
+
+| Page | Followers (1d / 7d) | Feed posts 7d (slides) | Reels 7d | Median reach (all / Reels / feed) | Best by clean (saves+sends)/reach | Worst | Best by views | Worst by views |
+|---|---|---|---|---|---|---|---|---|
+| Fully Funded | 7 (+0 / +0) | 3 (2–3 sl) | 7 | 2.5 / 6 / 1 | none scored: 0 on both Reels ≥20 (Save $100 39, common-law 33) | Reel "Save $100" 0/39 | Reel "Save $100" 42 · common-law 40 | Reel "One pension?" 1 (4 h) · Rich Habits "rent" 1 |
+| Locked Hour | 5 (+0 / +1) | 3 (2–3 sl) | 8 | 101 / 106.5 / 2 | **Reel "Fewer temptations" 1/57 (1.8%)** · "24 on / 6 off" 2/119 (1.7%) · warm shower 10/1,080 (0.9%) | Reel "Sigh slowly" 0/104 · "workout by 10" 0/109 (4 h) | **Reel "warm shower" 1,303** · ceiling light 369 | Carousel One Word "Doodle" 11 views, 1 reach |
+| Hourback | 6 (+0 / +1) | 3 (2–3 sl) | 7 | 59 / 101 / 1 | none scored: 0 saves or sends on all 6 Reels ≥20 | Reel "Interview" 0/99 (also the lowest hold, 2.04 s) | Reel "wedding toast" 148 · guests 135 | Carousel "recipe for 4" / "potluck" 3 views |
+| Littlefold | 7 (+0 / +1) | 3 (2–3 sl) | 8 | 128 / 142 / 1 | Reel "5 cm of water" 1/215 (0.5%) · grapes 4/1,330 (0.3%) · rice 8/1,339 raw, which includes the Oct 31 burst | Reel "0.5 mL" 0/128 · "battery honey" 0/128 · coin battery 0/156 | **Reel "rice grain" 1,672** · grapes 1,565 | Carousel 3 am Club "throwing up" 2 |
+
+**Total: 25 followers (+0 since yesterday, +3 in 7 days).** Profile views yesterday: FF 1, LH 1, others 0. Follows from posts: LF 1.
+- **Yesterday's posts (Thu Nov 5 ET: 6 Reels, 0 feed):**
+  - Best by (saves + sends)/reach: none; all 6 have 0 saves and 0 sends.
+  - Best on strangers: LF "Coin battery swallowed? ER now… 2 teaspoons of honey", 128 reach at 4 h (95%). The 8 am LF "0.5 mL" Trial Reel also reached 128.
+  - Best hold: LH "Bed at 11? Hard workout done by 10.", 6.40 s / 44% on 109.
+  - Best by views: LF "battery honey" 154.
+  - Worst: FF "One pension? Split it." at 1 reach.
+- **Sum of post reach (40 newest posts, 1 day):** FF 800 → 799, LH 3,129 → 3,333, HB 1,118 → 1,129, LF 5,989 → 6,057.
+
+### Patterns (all pages ≥5 posts)
+- **Reels vs feed (high confidence):** 7-day median Reel reach is LF 142, LH 106.5, HB 101 and FF 6. Every feed post is at 1–3. Every batch of 90 or more is ≥94% non-follower.
+- **Picture plus number or time in frame 0 (medium):** passes held 44–53% (workout by 10, 5 cm, grapes, rice, guests). Instruction-only, empty-box or crowded opens held 14–33%.
+- **Batch timing (medium):** LF and LH get their whole batch inside 3–5 h, Trial Reels included. HB 7 pm Reels get it at 13–29 h. FF gets none.
+- **Trial Reels (low, n = 2 this week):** no bigger batch than the same day's 7 pm Reel on the same page.
+- **Sends (medium that it's the bottleneck):** 4 clean sends on all Reels since Nov 1, on 4,422 Reel reach. Caption send lines: 0 for 12.
+- **Length, style, posting time:** not variables this week. Every Reel is 11.5–14.9 s, drawn style, 8 am or 7 pm.
+
+### Comments
+**No data yet.** 0 real comment texts (day 23).
+
+### Health
+- **Published vs schedule:** all **454 of 454** entries due are published, with 0 failed, 0 errors and 0 comment errors. Late in the last 24 h: the 2 Thu 8 am Trial Reels went out **73 min late** (the worst this week, about 5 run cycles). The four 7 pm Reels were 46 min late.
+- **Next 48 h: no posts on any page. This is by Dharma's decision, not a fault.** schedule/posts.json has 0 future entries, and 32 are held in schedule/held-2026-11-06-pause.json (rollback: docs/social-recovery/2026-11-06-pause.md). incoming/muse/ holds 0 packages, so nothing will post until Muse delivers one marked READY.
+- **Data:** all 4 Nov 5 reads succeeded, with no token or account errors.
+  - **Still broken:** comment text, follow_type, per-post history lines.
+  - This run: `git pull` timed out once; `git fetch` worked on retry. The clone is shallow, with reads from Nov 1 only.
+
+### For the Automation architect
+See order 6. New: the 8 am run on Thu was 73 min late. Check whether the 8 am cron is being skipped under load.
+
+### Media kit
+Updated (claude/media-kit.md).
+
+---
+
 ## TEST-BATCH TABLE (Thu Nov 5, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 5 05:01 UTC (12:01 am ET)**. Per-post curves from the 75 reads in this clone (Oct 17 → Nov 5 05:01 UTC). All 4 Nov 4 reads landed (13:04, 17:00, 20:57, 05:01), so the 25-min fix holds. Reel lengths are from ffprobe. Frame 0 and the 2 s frame of the 4 Wed Reels and HB "Guests in 30 min" were looked at side by side. The next read is ~12:50 UTC (7:50 am ET).
 - **Verdict rules:** unchanged. EXPANDED = still climbing after 24 h (≥ +25% and ≥ +10) AND sends/reach in the top third. STALLED. FAILED HOOK = avg watch < 4 s or < 25% of length. PENDING = under 24 h. FAST BATCH (AI interpretation) = reach ≥ 5× the page's median Reel batch within 24 h.
