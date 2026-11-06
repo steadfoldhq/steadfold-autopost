@@ -31,7 +31,7 @@ If pushing isn't possible, Dharma can drop the three files into the chat and Cla
   "rights": {
     "characters": "Ripple family, original, owned by Dharma",
     "art": "tool + who made it",
-    "music": "track + licence (link or file in the folder)",
+    "music": "track + source + licence terms/ID, or \"silent by design\"",
     "voice": "none | tool + licence"
   }
 }

@@ -74,6 +74,9 @@ def check(folder: Path) -> tuple[str, list[str], list[str]]:
     for k in RIGHTS_REQUIRED:
         if not rights.get(k):
             problems.append(f"rights.{k} is required (who made it / which tool / licence)")
+    music = str(rights.get("music", "")).lower()
+    if music and "silent by design" not in music and not any(w in music for w in ("licen", "license", "cc0", "royalty")):
+        problems.append("rights.music needs the licence (source + terms/ID) or 'silent by design' (Founder, Nov 6)")
     if "example" in (post.get("caption", "") + post.get("hook", "")).lower():
         problems.append("never the word 'example' (brand rule)")
     if len(post.get("hook", "").split()) > 8:
