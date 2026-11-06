@@ -2,6 +2,11 @@
 
 Every agent working here reads this file first. That includes the scheduled studio, performance, launch and chief-of-staff desks, Claude sessions, and ChatGPT reviews.
 
+## POSTING PAUSE (Dharma via Muse, Nov 6 2026 ~00:24 ET) — read before anything else
+All four Instagram pages are paused. The 32 queued posts were moved to schedule/held-2026-11-06-pause.json (rollback: docs/social-recovery/2026-11-06-pause.md).
+- No agent adds, restores or builds posts for schedule/posts.json while this block is here. The Social studio's job during the pause: run `python3 tools/intake_muse.py` and schedule ONLY READY Muse packages from incoming/muse/ (with the usual clarity, rights and dry-run checks). If none are READY, change nothing and finish.
+- Never move held posts back. Only Dharma lifts the pause; when he does, delete this block.
+
 ## Before any substantive change
 1. **Read `docs/north-star.md`, the Steadfold North Star & Decision Register.**
    - Lines marked **Founder** are the founder's own decisions and stay in force until he changes them.
