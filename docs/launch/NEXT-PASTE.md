@@ -1,6 +1,6 @@
 # NEXT PASTE: one Chrome run for every approved Gumroad listing that isn't live yet
 
-**Rebuilt by the Launch desk every morning. This copy: Fri Nov 6 2026, 6:15 am ET (unchanged jobs: no new approval in your words since Oct 27; no HANDOFF pasted back; Day 16 waiting; Diwali in 2 days).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (same 3 jobs, same gated text). Pasting either one is fine; the duplicate guards stop a second copy.
+**Rebuilt by the Launch desk every morning. This copy: Sat Nov 7 2026, 6:15 am ET (unchanged jobs: no new approval in your words since Oct 27; no HANDOFF pasted back; Day 17 waiting; Diwali is tomorrow, Sun Nov 8).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (same 3 jobs, same gated text). Pasting either one is fine; the duplicate guards stop a second copy.
 
 **~14 min, mostly file picks. 3 jobs, 4 Gumroad products, oldest approval first:**
 
