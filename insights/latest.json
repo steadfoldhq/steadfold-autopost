@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-07T12:51:54+00:00",
+ "collected_at": "2026-11-07T16:42:25+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -1675,13 +1675,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 148,
+      "views": 149,
       "reach": 121,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5413,
-      "ig_reels_video_view_total_time": 644200
+      "ig_reels_avg_watch_time": 5377,
+      "ig_reels_video_view_total_time": 645277
      },
      "comments": []
     },
