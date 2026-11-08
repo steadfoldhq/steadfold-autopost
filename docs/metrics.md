@@ -1,5 +1,94 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Sun Nov 8, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 8 04:55 UTC (11:55 pm ET Sat)**. Curves from the 21 reads in this clone (Nov 1 → Nov 8 UTC). All 4 Nov 7 reads landed (12:53, 16:43, 20:43, 04:55). Reel lengths by ffprobe.
+- **POSTING PAUSE, day 3 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts went out Sat Nov 7. 0 future entries in schedule/posts.json; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
+- **No post is under 72 h old with anything left to grade.** The last posts (Nov 5, 7 pm ET) are 52 h old and were final at 28 h. Every curve in the window is flat since the 28 h read.
+- Verdict rules, non-follower floor, burst check: unchanged. **Sends in the window = 0. Comments per reach = 0; 0 comment texts (day 25).**
+
+| Page | Post (first line) | Format | Age | Reach curve | Non-follower ≥ | Sends/reach | Saves/reach | Avg watch / length | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| LF | "Coin battery swallowed? Go to the ER now…" | Reel 13.4 s | 52 h | 4h 128 → 28h 132 → 52h 132 | 95% | 0.00 | 0.00 | 5.17 s / 39% | STALLED (final) |
+| LF | "Giving kids liquid medicine? 0.5 mL is not 5 mL." | Reel 13.2 s (trial) | 63 h | 3h 126 → 63h 128 | 95% | 0.00 | 0.00 | 4.02 s / 30% | STALLED (final) |
+| LH | "Bed at 11? Hard workout done by 10." | Reel 14.6 s | 52 h | 4h 109 → 52h 111 | 95% | 0.00 | 0.00 | **6.34 s / 43%** | STALLED (final), best hold |
+| LH | "Stressed already? Sigh slowly for 5 minutes." | Reel 14.6 s (trial) | 63 h | 3h 104 → 63h 104 | 95% | 0.00 | 0.00 | 2.75 s / 19% | FAILED HOOK + STALLED |
+| HB | "Flight at 6 am and you haven't packed?" | Reel 14.9 s | 52 h | 4h 7 → 28h 27 → 52h 27 | 78% | 0.00 | 0.00 | 2.78 s / 19% | FAILED HOOK + STALLED |
+| FF | "One pension? Split it. Pay less tax?" | Reel 13.6 s | 52 h | 4h 1 → 52h 7 | ~0% | 0.00 | 0.00 | 1.39 s / 10% | FAILED HOOK + STALLED |
+
+Aged out since yesterday at 76 h, final: LF "coin battery" 156, LH "Lying awake" 96 (1 save), HB "Interview" 99, FF "Save $100" 39. Feed (Nov 4): 1–2 reach.
+
+**EXPANDED: 0.** Nothing new to learn until the first Muse post. Week totals are in the 4-week table below.
+- **TikTok:** manual. **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels**.
+
+**3 orders** (unchanged; pre-registered tests stay intact)
+1. **REPEAT** on the first Muse packages: one picture plus one number or time in frame 0, ≤2 text blocks. This week 10 of 22 Reels passed ≥5 s and ≥30% on ≥40 reach; all 10 had that frame.
+2. **KILL:** instruction-only, empty-box and full-text frames (sighs 19%, flight 19%, interview 14%), and caption-only send lines (0 sends on the last 17 Reels).
+3. **TEST:** on-screen "Send this to [named person]" in the last 2 s of the first LF, LH and HB Muse Reels. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
+
+## Today's orders (Sun Nov 8, 2026, Performance desk)
+Data: Nov 8 04:55 UTC read. 25 followers. **Pause day 3; 0 Muse packages.** No new posts, so the orders keep every pre-registered test unchanged. Direction: medium on frame 0, low on sends.
+1. **Social studio (Muse intake): unchanged.** Pass = one picture plus one number or time, ≤2 text blocks, 11–15 s; a full AI-output screen counts as text. Failing packages go back to Muse via docs/social-studio-log.md "For Muse". **Grade:** ≥40% hold on ≥100 reach for the first 3 Muse Reels.
+2. **Social studio (Muse intake): first Muse Reels to LF, LH, HB, at most 1 per page per day, until 3 are graded at 29 h.** This week's median Reel batch: LF 144, LH 115, HB 101, FF 10.
+3. **All desks: restart-dip test, baselines unchanged** (LF 142, LH 106.5, HB 101). Dip = under half at 29 h on 2+ pages. Grade frame and batch separately.
+4. **Short-form studio / Muse: on-screen send line in the last 2 s of the first LF, LH, HB Muse Reels; change nothing else.** Week sends: 4 on 4,467 reach (LH shower 3, LF grapes 1).
+5. **Social studio (Fully Funded): HOLD** (unchanged). Median Reel reach 10 this week vs 101–144 on the other pages.
+6. **Automation architect: keep insights running** (all 4 Sat reads landed). Open asks: comment text (day 25), follow_type, per-post history lines, burst flag.
+
+**Grading the Nov 7 orders:** 1–4 nothing to grade (0 packages, 0 posts). 5 FF hold: done. 6 insights through the pause: done.
+
+---
+
+## Daily report: Sun Nov 8, 2026
+
+### Scoreboard (insights read Nov 8 04:55 UTC)
+Changes vs the Nov 7 04:53 UTC read (1 day) and vs Nov 1 04:53 UTC (7 days). Posts = published Nov 1–7 ET (none Nov 6–7: pause). Best/worst by (saves + sends)/reach cover posts with reach ≥20.
+
+| Page | Followers (1d / 7d) | Feed posts 7d (slides) | Reels 7d | Median reach (all / Reels / feed) | Best by (saves+sends)/reach | Worst | Best by views | Worst by views |
+|---|---|---|---|---|---|---|---|---|
+| Fully Funded | 7 (+0 / +0) | 2 (2–3 sl) | 5 | 7 / 10 / 1 | none scored: 0 on every Reel ≥20 | Reel "Save $100" 0/39 | Reel "Save $100" 42 | Carousel Rich Habits "rent" 1 |
+| Locked Hour | 5 (+0 / +1) | 2 (2–3 sl) | 6 | 107.5 / 115 / 2 | Reel "24 on / 6 off" 2/119 (1.7%) · "warm shower" 10/1,080 (0.9%) | Reel "Sigh slowly" 0/104 | **Reel "warm shower" 1,303** | Carousel One Word "Blank page" 8 |
+| Hourback | 6 (+0 / +1) | 2 (2–3 sl) | 5 | 99 / 101 / 1 | none scored: 0 on every Reel | Reel "Flight at 6 am" 0/27 | Reel "wedding toast" 149 | Carousel "potluck" 3 |
+| Littlefold | 7 (+0 / +1) | 2 (2–3 sl) | 6 | 130 / 144 / 2 | Reel "5 cm of water" 1/215 (0.5%) · "grapes" 4/1,330 (0.3%) | Reel "Sausage" 0/110 | **Reel "grapes" 1,565** | Carousel 3 am Club "throwing up" 2 |
+
+**Total: 25 followers (+0 since yesterday, +3 in 7 days).** Profile views Sat: 1 on each page.
+- **Yesterday's posts (Sat Nov 7 ET): none. Posting is paused by Dharma.**
+
+### Patterns
+No new posts. The week's final numbers back the existing patterns (medium confidence):
+- **Reels vs feed:** median Reel reach 110.5 (n=22), feed 1 (n=8). Every Reel batch of 90+ was ≥94% non-follower.
+- **Frame 0:** all 10 hold passes (≥5 s, ≥30%, ≥40 reach) opened on a picture plus a number or time. The fails were instruction-only or text-heavy frames.
+- **Sends:** 4 on 4,467 reach; 0 on the last 17 Reels.
+
+### Comments
+**No data yet.** 0 real comment texts (day 25).
+
+### Health
+- **Published vs schedule:** all **454 of 454** due entries published; 0 failed, 0 errors, 0 comment errors. Nothing was due in the last 24 h.
+- **Next 48 h: no posts on any page. This is Dharma's pause, not a fault.** 0 future entries, 32 held. incoming/muse/ has 0 packages.
+- **Data:** all 4 Nov 7 reads succeeded; no token or account errors. Still broken: comment text, follow_type, per-post history lines. `git pull` timed out again this run (fetch worked).
+
+### 4-week trend (Sunday)
+Reach is per-post reach as of each week's latest read. Reel length by ffprobe.
+
+| Week (ET) | Followers (end) | Posts (feed / Reels) | Sum of post reach | Median Reel reach | Median feed reach | Clean sends | Reels ≥100 reach | Reels passing ≥5 s AND ≥30% on ≥40 | Best Reel hold on ≥40 |
+|---|---|---|---|---|---|---|---|---|---|
+| Oct 12 (Oct 13–18) | 26 | 35 / 28 | 2,017 | 50 | 10 | 19 (before burst checks) | 5 | 0 | 5.1 s (FF fee, 44) |
+| Oct 19 (Oct 19–24) | 22 | 48 / 43 | 2,438 | 29 | 4 | 2 | 15 | 2 | 6.6 s (LF newborn cues, 136) |
+| Oct 26 (Oct 25–31) | 22 | 20 / 46 | 4,990 | 99 | 1 | 2 (24 of 66 checkable) | 21 | 11 | 8.35 s (LF burp, 560) |
+| **Nov 2 (Nov 1–7; posts Nov 1–5 only)** | **25** | **8 / 22** | **4,467** | **110.5** | **1** | **4** | **14** | **10** | **7.60 s (HB guests, 111)** |
+
+Median Reel reach by page, last week → this week: FF 10.5 → 10, LH 100 → 115, HB 15.5 → 101, LF 133 → 144.
+
+**The single biggest lever for next week: the first Muse posts, built on the frame that already works, with the send line on screen.** In 5 posting days the pages reached 4,467 (two Reels over 1,000) and the frame-0 rule produced 10 hold passes, but that turned into +3 followers and 4 sends. Since Nov 6 there have been 0 posts, because 0 Muse packages have arrived. Once posting restarts, the on-screen send/follow test (order 4) is the cheapest way to turn reach into followers.
+
+### For the Automation architect
+See order 6. Nothing new.
+
+### Media kit
+Updated (claude/media-kit.md).
+
+---
+
 ## TEST-BATCH TABLE (Sat Nov 7, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 7 04:53 UTC (11:53 pm ET Fri)**. Per-post curves come from the 19 reads in this clone (Nov 2 05:02 → Nov 7 04:53 UTC). All 4 Nov 6 reads landed (13:08, 16:56, 20:51, 04:53). Reel lengths are from ffprobe (logged Nov 5–6). The next read is ~12:50 UTC (7:50 am ET).
 - **POSTING PAUSE, day 2 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts went out on Fri Nov 6. schedule/posts.json has 0 future entries; 32 are held in schedule/held-2026-11-06-pause.json. **incoming/muse/ has 0 packages** (only _template and _notes), so nothing will post until Muse delivers one marked READY. This table is the final grade of the last pre-pause posts.
