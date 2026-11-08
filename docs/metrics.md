@@ -22,7 +22,7 @@ Aged out since yesterday at 76 h, final: LF "coin battery" 156, LH "Lying awake"
 
 **3 orders** (unchanged; pre-registered tests stay intact)
 1. **REPEAT** on the first Muse packages: one picture plus one number or time in frame 0, ≤2 text blocks. This week 10 of 22 Reels passed ≥5 s and ≥30% on ≥40 reach; all 10 had that frame.
-2. **KILL:** instruction-only, empty-box and full-text frames (sighs 19%, flight 19%, interview 14%), and caption-only send lines (0 sends on the last 17 Reels).
+2. **KILL:** instruction-only, empty-box and full-text frames (sighs 19%, flight 19%, interview 14%), and caption-only send lines (0 sends on the 18 Reels after Nov 1).
 3. **TEST:** on-screen "Send this to [named person]" in the last 2 s of the first LF, LH and HB Muse Reels. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
 
 ## Today's orders (Sun Nov 8, 2026, Performance desk)
@@ -57,7 +57,7 @@ Changes vs the Nov 7 04:53 UTC read (1 day) and vs Nov 1 04:53 UTC (7 days). Pos
 No new posts. The week's final numbers back the existing patterns (medium confidence):
 - **Reels vs feed:** median Reel reach 110.5 (n=22), feed 1 (n=8). Every Reel batch of 90+ was ≥94% non-follower.
 - **Frame 0:** all 10 hold passes (≥5 s, ≥30%, ≥40 reach) opened on a picture plus a number or time. The fails were instruction-only or text-heavy frames.
-- **Sends:** 4 on 4,467 reach; 0 on the last 17 Reels.
+- **Sends:** 4 on 4,467 reach; 0 on the 18 Reels after Nov 1.
 
 ### Comments
 **No data yet.** 0 real comment texts (day 25).
