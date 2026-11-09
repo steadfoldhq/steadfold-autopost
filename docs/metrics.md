@@ -1,5 +1,62 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Mon Nov 9, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 9 05:07 UTC (12:07 am ET Mon)**. All 4 Nov 8 reads landed (12:51, 16:41, 20:41, 05:07). Next read ~12:50 UTC.
+- **POSTING PAUSE, day 4 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts Sun Nov 8. schedule/posts.json: 454 entries, **0 future**; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
+- **No post in the last 72 h.** The last posts (Nov 5, 7 pm ET) are now 77 h old and aged out, final as graded on Nov 8. Nothing to table.
+- Sum of post reach vs the Nov 8 04:55 read: FF 805 → 806; LH 3,337, HB 1,150, LF 6,061 unchanged. Sends, saves, views flat on all pages. Comments per reach = 0; 0 comment texts (day 26).
+
+**EXPANDED: 0.** Nothing new to learn until the first Muse post.
+- **TikTok:** manual. **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels**.
+
+**3 orders** (unchanged; pre-registered tests stay intact)
+1. **REPEAT** on the first Muse packages: one picture plus one number or time in frame 0, ≤2 text blocks (10 of 22 Reels in Nov 1–5 passed ≥5 s and ≥30% on ≥40 reach; all 10 had that frame).
+2. **KILL:** instruction-only, empty-box and full-text frames, and caption-only send lines (0 sends on the last 18 Reels).
+3. **TEST:** on-screen "Send this to [named person]" in the last 2 s of the first LF, LH and HB Muse Reels. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
+
+## Today's orders (Mon Nov 9, 2026, Performance desk)
+Data: Nov 9 05:07 UTC read. 25 followers. **Pause day 4; 0 Muse packages.** No new posts, so every order and baseline carries over unchanged. Direction: medium on frame 0, low on sends.
+1. **Social studio (Muse intake): unchanged.** Pass = one picture plus one number or time, ≤2 text blocks, 11–15 s; a full AI-output screen counts as text. Failing packages go back to Muse via docs/social-studio-log.md "For Muse". **Grade:** ≥40% hold on ≥100 reach for the first 3 Muse Reels.
+2. **Social studio (Muse intake): first Muse Reels to LF, LH, HB, at most 1 per page per day, until 3 are graded at 29 h.** Last posting week's median Reel batch: LF 144, LH 115, HB 101, FF 10.
+3. **All desks: restart-dip test, baselines unchanged** (LF 142, LH 106.5, HB 101). Dip = under half at 29 h on 2+ pages. Grade frame and batch separately. After 4+ idle days this test matters more, not less.
+4. **Short-form studio / Muse: on-screen send line in the last 2 s of the first LF, LH, HB Muse Reels; change nothing else.**
+5. **Social studio (Fully Funded): HOLD** (unchanged).
+6. **Automation architect: keep insights running** (all 4 Sun reads landed). Open asks: comment text (day 26), follow_type, per-post history lines, burst flag.
+
+**Grading the Nov 8 orders:** 1–4 nothing to grade (0 packages, 0 posts). 5 FF hold: done. 6 insights through the pause: done.
+
+---
+
+## Daily report: Mon Nov 9, 2026
+
+### Scoreboard (insights read Nov 9 05:07 UTC)
+Changes vs the Nov 8 04:55 UTC read (1 day) and vs Nov 2 05:02 UTC (7 days). Posts in the last 7 days = Nov 2–8 ET (posts went out Nov 2–5 only).
+
+| Page | Followers (1d / 7d) | Posts 7d | Median reach | Best / worst | Profile views (Sun) |
+|---|---|---|---|---|---|
+| Fully Funded | 7 (+0 / +0) | unchanged from Nov 8 table (no new posts) | unchanged | unchanged | 0 |
+| Locked Hour | 5 (+0 / +0) | ″ | ″ | ″ | 1 |
+| Hourback | 6 (+0 / +1) | ″ | ″ | ″ | 0 |
+| Littlefold | 7 (+0 / +0) | ″ | ″ | ″ | 0 |
+
+**Total: 25 followers (+0 since yesterday, +1 vs Nov 2).** Best post yesterday: none (0 posts, paused). The all-time per-page bests are in the Nov 8 scoreboard and the media kit.
+
+### Patterns
+No new posts; the Nov 8 patterns stand (medium confidence): Reels median reach 110.5 vs feed 1 in the last posting week; picture + number/time frames win the hold; sends are the wall.
+
+### Comments
+**No data yet.** 0 real comment texts (day 26).
+
+### Health
+- **Published vs schedule:** all **454 of 454** entries published; 0 failed, 0 errors, 0 comment errors. Nothing was due in the last 24 h.
+- **Next 48 h: no posts on any page. This is Dharma's pause, not a fault.** 0 future entries, 32 held, 0 Muse packages.
+- **Data:** all 4 Nov 8 reads succeeded; no token or account errors. Still broken: comment text, follow_type, per-post history lines. `git pull` timed out again (fetch worked).
+
+### Media kit
+Updated (claude/media-kit.md): read date and FF reach (806).
+
+---
+
 ## TEST-BATCH TABLE (Sun Nov 8, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 8 04:55 UTC (11:55 pm ET Sat)**. Curves from the 21 reads in this clone (Nov 1 → Nov 8 UTC). All 4 Nov 7 reads landed (12:53, 16:43, 20:43, 04:55). Reel lengths by ffprobe.
 - **POSTING PAUSE, day 3 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts went out Sat Nov 7. 0 future entries in schedule/posts.json; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
