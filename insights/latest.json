@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-09T20:57:29+00:00",
+ "collected_at": "2026-11-10T04:56:40+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -1559,13 +1559,13 @@
      "at": "2026-11-06T00:47:39+0000",
      "first_line": "Flight at 6 am and you haven't packed? Tell AI about the trip and ask for a packing list sorted by room, so you walk through your place once",
      "likes": 0,
-     "comments_count": 1,
+     "comments_count": 2,
      "insights": {
       "views": 30,
       "reach": 27,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
+      "total_interactions": 2,
       "ig_reels_avg_watch_time": 2780,
       "ig_reels_video_view_total_time": 80648
      },
