@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-10T04:56:40+00:00",
+ "collected_at": "2026-11-10T13:03:44+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -1033,16 +1033,16 @@
      "permalink": "https://www.instagram.com/reel/DfDlrlqElCU/",
      "at": "2026-10-28T23:15:23+0000",
      "first_line": "Turn your phone grey tonight. A boring phone is easier to put down.",
-     "likes": 3,
+     "likes": 4,
      "comments_count": 1,
      "insights": {
-      "views": 160,
-      "reach": 136,
+      "views": 161,
+      "reach": 137,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 4,
-      "ig_reels_avg_watch_time": 5323,
-      "ig_reels_video_view_total_time": 718705
+      "total_interactions": 5,
+      "ig_reels_avg_watch_time": 5361,
+      "ig_reels_video_view_total_time": 729190
      },
      "comments": []
     },
@@ -1846,13 +1846,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 96,
-      "reach": 89,
+      "views": 97,
+      "reach": 90,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2017,
-      "ig_reels_video_view_total_time": 185585
+      "ig_reels_avg_watch_time": 2002,
+      "ig_reels_video_view_total_time": 186191
      },
      "comments": []
     },
@@ -2338,8 +2338,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5171,
-      "ig_reels_video_view_total_time": 698143
+      "ig_reels_avg_watch_time": 5147,
+      "ig_reels_video_view_total_time": 700008
      },
      "comments": []
     },
@@ -2656,8 +2656,8 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 7,
-      "reach": 3,
+      "views": 9,
+      "reach": 4,
       "saved": 1,
       "shares": 3,
       "total_interactions": 7,
