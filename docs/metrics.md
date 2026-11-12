@@ -1,5 +1,63 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Thu Nov 12, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 12 05:02 UTC (12:02 am ET Thu)**. All 4 Nov 11 reads landed (13:09, 16:59, 21:38, 05:02). Next read ~12:50–13:10 UTC.
+- **⚠ Littlefold insight read FAILED at 05:02 UTC:** `GET me: HTTP 400 … session has been invalidated because the user changed their password or Facebook has changed the session for security reasons (code 190)`. The 21:38 UTC read worked, so the token died overnight. FF, LH and HB read fine. A dead IG_TOKEN_LITTLEFOLD also means Autopost could not publish to @littlefoldhq when the pause lifts, and the weekly renewer cannot renew an invalidated token: it needs a fresh token (README step 9).
+- **POSTING PAUSE, day 7 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts Wed Nov 11. schedule/posts.json: 454 entries, **0 future**; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
+- **No post in the last 72 h** (newest: Nov 5, 7 pm ET, final). Nothing to table.
+- Sum of post reach vs the Nov 11 05:03 read: FF 807 → 809, LH 3,339 → 3,340, HB 1,151 → 1,153, LF 6,062 → 6,063 at 21:38 (then no data). Sends and saves flat. Comments per reach = 0; 0 comment texts (day 29).
+
+**EXPANDED: 0.** Nothing new to learn until the first Muse post.
+- **TikTok:** manual. **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels**.
+
+**3 orders** (unchanged; pre-registered tests stay intact)
+1. **REPEAT** on the first Muse packages: one picture plus one number or time in frame 0, ≤2 text blocks.
+2. **KILL:** instruction-only, empty-box and full-text frames, and caption-only send lines (0 sends on the last 18 Reels).
+3. **TEST:** on-screen "Send this to [named person]" in the last 2 s of the first LF, LH and HB Muse Reels. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
+
+## Today's orders (Thu Nov 12, 2026, Performance desk)
+Data: Nov 12 05:02 UTC read (LF failed). 18 followers readable + LF 7 at its last good read = 25. **Pause day 7; 0 Muse packages.** Direction: medium on frame 0, low on sends.
+1. **Dharma / Automation architect: RE-AUTH Littlefold before anything else.** New token for @littlefoldhq (README step 9: API setup with Instagram login → Add account → Generate token) pasted straight into the `IG_TOKEN_LITTLEFOLD` secret, then Actions → Refresh tokens → Run workflow with "Only check". LF is the page with the biggest batches (median Reel batch 144 in the last posting week), so it must work before the first Muse Reel.
+2. **Social studio (Muse intake): unchanged.** Pass = one picture plus one number or time, ≤2 text blocks, 11–15 s; music licence in rights.music or "silent by design". **Do not schedule a Littlefold package until the LF token check passes.** **Grade:** ≥40% hold on ≥100 reach for the first 3 Muse Reels.
+3. **Social studio (Muse intake): first Muse Reels to LF, LH, HB, at most 1 per page per day, until 3 are graded at 29 h.** Baselines: LF 144, LH 107.5, HB 99, FF 7 (Nov 3–5 Reels).
+4. **All desks: restart-dip test, baselines unchanged** (LF 142, LH 106.5, HB 101). Dip = under half at 29 h on 2+ pages. Seven idle days now.
+5. **Short-form studio / Muse: on-screen send line in the last 2 s of the first LF, LH, HB Muse Reels; change nothing else.**
+6. **Social studio (Fully Funded): HOLD** (unchanged; its Nov 3–5 Reels reached 2–39).
+
+**Grading the Nov 11 orders:** 1–4 nothing to grade (0 packages, 0 posts). 5 FF hold: done. 6 insights running: 4 of 4 reads ran, but the 05:02 LF read failed (order 1 today).
+
+---
+
+## Daily report: Thu Nov 12, 2026
+
+### Scoreboard (insights read Nov 12 05:02 UTC)
+Changes vs the Nov 11 05:03 UTC read (1 day) and vs Nov 5 05:01 UTC (7 days).
+
+| Page | Followers (1d / 7d) | Sum of post reach (1d) | Note |
+|---|---|---|---|
+| Fully Funded | 7 (+0 / +0) | 809 (+2) | paused |
+| Locked Hour | 5 (+0 / +0) | 3,340 (+1) | paused |
+| Hourback | 6 (+0 / +0) | 1,153 (+2) | paused |
+| Littlefold | **no data** (7 at 21:38 UTC Nov 11) | no data (6,063 at 21:38, +1) | paused; **token invalidated** |
+
+**Total: 25 followers (18 read + LF 7 last known; +0 this week).** Best post yesterday: none (0 posts, paused). Best and worst of the last posting week are unchanged from the Nov 10 report.
+
+### Patterns
+No new posts; the Nov 8 patterns stand (medium confidence).
+
+### Comments
+**No data yet.** 0 real comment texts (day 29).
+
+### Health
+- **Published vs schedule:** all **454 of 454** entries published; 0 failed, 0 errors. Nothing was due in the last 24 h.
+- **Next 48 h: no posts on any page. This is Dharma's pause, not a fault.** 0 future entries, 32 held, 0 Muse packages.
+- **Data: BROKEN for Littlefold** (code 190, session invalidated, first seen 05:02 UTC Nov 12). FF, LH, HB fine. Still broken: comment text, follow_type, per-post history lines.
+
+### Media kit
+No change (LF numbers frozen at the Nov 11 21:38 read until the token is fixed).
+
+---
+
 ## TEST-BATCH TABLE (Wed Nov 11, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 11 05:03 UTC (12:03 am ET Wed)**. All 4 Nov 10 reads landed (13:03, 16:55, 20:48, 05:03). Next read ~12:50 UTC.
 - **POSTING PAUSE, day 6 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts Tue Nov 10. schedule/posts.json: 454 entries, **0 future**; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
