@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-13T04:59:03+00:00",
+ "collected_at": "2026-11-13T13:04:45+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -74,13 +74,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 2,
-      "reach": 2,
+      "views": 3,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 549,
-      "ig_reels_video_view_total_time": 1099
+      "ig_reels_avg_watch_time": 783,
+      "ig_reels_video_view_total_time": 2350
      },
      "comments": []
     },
@@ -112,8 +112,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 5,
-      "reach": 2,
+      "views": 9,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -169,13 +169,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 3,
+      "views": 4,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 928,
-      "ig_reels_video_view_total_time": 2786
+      "ig_reels_avg_watch_time": 995,
+      "ig_reels_video_view_total_time": 3980
      },
      "comments": []
     },
@@ -808,13 +808,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 118,
-      "reach": 106,
+      "views": 120,
+      "reach": 107,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2732,
-      "ig_reels_video_view_total_time": 292417
+      "ig_reels_avg_watch_time": 2746,
+      "ig_reels_video_view_total_time": 296620
      },
      "comments": []
     },
@@ -827,13 +827,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 119,
-      "reach": 97,
+      "views": 120,
+      "reach": 98,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 4511,
-      "ig_reels_video_view_total_time": 460158
+      "ig_reels_avg_watch_time": 4503,
+      "ig_reels_video_view_total_time": 463839
      },
      "comments": []
     },
@@ -900,14 +900,14 @@
      "permalink": "https://www.instagram.com/p/DfQYUKsEW2f/",
      "at": "2026-11-02T22:28:26+0000",
      "first_line": "Blank page? Stand up. Today's word: Walk.",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 11,
+      "views": 14,
       "reach": 3,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
+      "total_interactions": 2,
       "follows": 0,
       "profile_visits": 0
      },
@@ -979,7 +979,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 14,
+      "views": 15,
       "reach": 4,
       "saved": 0,
       "shares": 0,
@@ -1559,15 +1559,15 @@
      "at": "2026-11-06T00:47:39+0000",
      "first_line": "Flight at 6 am and you haven't packed? Tell AI about the trip and ask for a packing list sorted by room, so you walk through your place once",
      "likes": 0,
-     "comments_count": 2,
+     "comments_count": 3,
      "insights": {
-      "views": 31,
-      "reach": 28,
+      "views": 32,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 2732,
-      "ig_reels_video_view_total_time": 81986
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 2677,
+      "ig_reels_video_view_total_time": 82987
      },
      "comments": []
     },
@@ -1676,12 +1676,12 @@
      "comments_count": 1,
      "insights": {
       "views": 151,
-      "reach": 121,
+      "reach": 122,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5377,
-      "ig_reels_video_view_total_time": 645277
+      "ig_reels_avg_watch_time": 5349,
+      "ig_reels_video_view_total_time": 647291
      },
      "comments": []
     },
@@ -1732,8 +1732,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 1,
+      "views": 7,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
