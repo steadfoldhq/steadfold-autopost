@@ -1,11 +1,11 @@
 {
- "collected_at": "2026-11-12T20:54:40+00:00",
+ "collected_at": "2026-11-13T04:59:03+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
    "username": "fullyfundedhq",
-   "followers_count": 7,
-   "follows_count": 4,
+   "followers_count": 8,
+   "follows_count": 5,
    "media_count": 63,
    "posts": [
     {
@@ -17,13 +17,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 8,
+      "views": 12,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 1876,
-      "ig_reels_video_view_total_time": 16884
+      "ig_reels_avg_watch_time": 2656,
+      "ig_reels_video_view_total_time": 29219
      },
      "comments": []
     },
@@ -55,8 +55,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 1,
+      "views": 11,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -188,8 +188,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 2,
+      "views": 7,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -776,8 +776,8 @@
   "lockedhour": {
    "account": "lockedhour",
    "username": "lockedhourhq",
-   "followers_count": 5,
-   "follows_count": 4,
+   "followers_count": 6,
+   "follows_count": 5,
    "media_count": 64,
    "posts": [
     {
@@ -808,13 +808,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 116,
-      "reach": 105,
+      "views": 118,
+      "reach": 106,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 2736,
-      "ig_reels_video_view_total_time": 290088
+      "ig_reels_avg_watch_time": 2732,
+      "ig_reels_video_view_total_time": 292417
      },
      "comments": []
     },
@@ -846,8 +846,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 2,
+      "views": 17,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -865,13 +865,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 138,
+      "views": 139,
       "reach": 119,
       "saved": 2,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5165,
-      "ig_reels_video_view_total_time": 609554
+      "ig_reels_avg_watch_time": 5163,
+      "ig_reels_video_view_total_time": 614476
      },
      "comments": []
     },
@@ -903,8 +903,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 8,
-      "reach": 2,
+      "views": 11,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -922,13 +922,13 @@
      "likes": 21,
      "comments_count": 1,
      "insights": {
-      "views": 1303,
-      "reach": 1080,
+      "views": 1304,
+      "reach": 1081,
       "saved": 7,
       "shares": 3,
       "total_interactions": 33,
-      "ig_reels_avg_watch_time": 6722,
-      "ig_reels_video_view_total_time": 7273250
+      "ig_reels_avg_watch_time": 6716,
+      "ig_reels_video_view_total_time": 7274039
      },
      "comments": []
     },
@@ -979,8 +979,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 13,
-      "reach": 3,
+      "views": 14,
+      "reach": 4,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1264,13 +1264,13 @@
      "likes": 3,
      "comments_count": 1,
      "insights": {
-      "views": 122,
-      "reach": 108,
+      "views": 123,
+      "reach": 109,
       "saved": 1,
       "shares": 5,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 4591,
-      "ig_reels_video_view_total_time": 500471
+      "ig_reels_avg_watch_time": 4555,
+      "ig_reels_video_view_total_time": 501054
      },
      "comments": []
     },
@@ -1542,14 +1542,14 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "hourback": {
    "account": "hourback",
    "username": "hourbackhq",
-   "followers_count": 6,
-   "follows_count": 3,
+   "followers_count": 7,
+   "follows_count": 5,
    "media_count": 60,
    "posts": [
     {
@@ -1561,13 +1561,13 @@
      "likes": 0,
      "comments_count": 2,
      "insights": {
-      "views": 30,
-      "reach": 27,
+      "views": 31,
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 2780,
-      "ig_reels_video_view_total_time": 80648
+      "ig_reels_avg_watch_time": 2732,
+      "ig_reels_video_view_total_time": 81986
      },
      "comments": []
     },
@@ -1580,13 +1580,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 109,
-      "reach": 100,
+      "views": 110,
+      "reach": 101,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 2179,
-      "ig_reels_video_view_total_time": 222294
+      "ig_reels_avg_watch_time": 2183,
+      "ig_reels_video_view_total_time": 224927
      },
      "comments": []
     },
@@ -1599,13 +1599,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
-      "reach": 1,
+      "views": 9,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
       "follows": 0,
-      "profile_visits": 0
+      "profile_visits": 1
      },
      "comments": []
     },
@@ -1637,13 +1637,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 114,
-      "reach": 101,
+      "views": 115,
+      "reach": 102,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3652,
-      "ig_reels_video_view_total_time": 372543
+      "ig_reels_avg_watch_time": 3667,
+      "ig_reels_video_view_total_time": 377727
      },
      "comments": []
     },
@@ -1656,8 +1656,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 9,
-      "reach": 1,
+      "views": 12,
+      "reach": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1675,7 +1675,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 149,
+      "views": 151,
       "reach": 121,
       "saved": 0,
       "shares": 0,
@@ -1732,7 +1732,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 3,
+      "views": 4,
       "reach": 1,
       "saved": 0,
       "shares": 0,
@@ -2314,7 +2314,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "littlefold": {
