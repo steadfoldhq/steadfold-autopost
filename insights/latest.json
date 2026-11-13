@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-13T16:55:41+00:00",
+ "collected_at": "2026-11-13T20:54:05+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -36,13 +36,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 42,
-      "reach": 39,
+      "views": 43,
+      "reach": 40,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3061,
-      "ig_reels_video_view_total_time": 119390
+      "ig_reels_avg_watch_time": 3036,
+      "ig_reels_video_view_total_time": 121456
      },
      "comments": []
     },
@@ -865,7 +865,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 139,
+      "views": 141,
       "reach": 119,
       "saved": 2,
       "shares": 0,
@@ -1713,13 +1713,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 22,
-      "reach": 19,
+      "views": 23,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 4215,
-      "ig_reels_video_view_total_time": 80092
+      "ig_reels_avg_watch_time": 4646,
+      "ig_reels_video_view_total_time": 92923
      },
      "comments": []
     },
