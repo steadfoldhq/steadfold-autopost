@@ -1,5 +1,64 @@
 # Metrics (Performance desk, repo copy while the Learning Lab project is full)
 
+## TEST-BATCH TABLE (Sat Nov 14, 2026, Performance desk)
+Data: insights/latest.json, collected **Nov 14 04:53 UTC (11:53 pm ET Fri)**. All 4 Nov 13 reads ran (13:04, 16:55, 20:54, 04:53). Next read ~12:50–13:10 UTC.
+- **⚠ Littlefold read FAILED for the 9th read in a row** (every read since 05:02 UTC Nov 12): code 190, session invalidated. The last "Refresh tokens" run is still the scheduled Nov 9 one (success, before the break). Nobody has re-authed. LF numbers stay frozen at the Nov 11 21:38 read.
+- **POSTING PAUSE, day 9 (Dharma via Muse, Nov 6 00:24 ET).** 0 posts Fri Nov 13. schedule/posts.json: 454 entries, all published, **0 future**; 32 held. **incoming/muse/ still has 0 packages** (only _template, _notes).
+- **No post in the last 72 h** (newest: Nov 5, 7:47 pm ET). Nothing to table.
+- 1-day tail on old posts (vs the Nov 13 04:59 read): sum of post reach FF 813 → 819, LH 3,349 → 3,355, HB 1,158 → 1,164 (+6 each); views +13 / +13 / +10. Sends, saves and followers flat. Comments per reach = 0; 0 comment texts (day 31).
+
+**EXPANDED: 0.** Nothing new to learn until the first Muse post.
+- **TikTok:** manual. **YouTube Shorts:** no data yet. vidIQ checked this run: signed in as the Steadfold Gmail, **0 YouTube channels**.
+
+**3 orders** (unchanged; pre-registered tests stay intact)
+1. **REPEAT** on the first Muse packages: one picture plus one number or time in frame 0, ≤2 text blocks.
+2. **KILL:** instruction-only, empty-box and full-text frames, and caption-only send lines (0 sends on the last 18 Reels).
+3. **TEST:** on-screen "Send this to [named person]" in the last 2 s of the first LF, LH and HB Muse Reels. **Grade (29 h):** ≥1 send per 100 reach on 2 of 3.
+
+## Today's orders (Sat Nov 14, 2026, Performance desk)
+Data: Nov 14 04:53 UTC read (LF failed, 9th in a row). 21 followers readable + LF 7 at its last good read = 28. **Pause day 9; 0 Muse packages.** Direction: medium on frame 0, low on sends.
+1. **Dharma: RE-AUTH Littlefold (still open, day 3).** Steps are in dharma-todo Today item 1 (README step 9). Paste the new token only into the `IG_TOKEN_LITTLEFOLD` secret, then Actions → Refresh tokens → Run workflow with "Only check". LF is the biggest page by reach (6,063 of 11,401 total post reach; median Reel batch 144 in the last posting week). It can't be measured now, and it can't post when the pause lifts.
+2. **Social studio (Muse intake): unchanged.** Pass = one picture plus one number or time, ≤2 text blocks, 11–15 s; music licence in rights.music or "silent by design". **No Littlefold package until the LF token check passes.** **Grade:** ≥40% hold on ≥100 reach for the first 3 Muse Reels.
+3. **Social studio (Muse intake): first Muse Reels to LH and HB (and LF once its token works), at most 1 per page per day, until 3 are graded at 29 h.** Baselines: LF 144, LH 107.5, HB 99, FF 7 (Nov 3–5 Reels).
+4. **All desks: restart-dip test, baselines unchanged** (LF 142, LH 106.5, HB 101). Dip = under half at 29 h on 2+ pages. Nine idle days now.
+5. **Short-form studio / Muse: on-screen send line in the last 2 s of the first LF, LH, HB Muse Reels; change nothing else.**
+6. **Social studio (Fully Funded): HOLD** (unchanged; its Nov 3–5 Reels reached 2–39, median reach 9 over its last 40 posts).
+
+**Grading the Nov 13 orders:** 1 LF re-auth: **not done** (no Refresh-tokens run since Nov 9; 4 more failed reads). 2–5: nothing to grade (0 packages, 0 posts). 6 FF hold: done.
+
+---
+
+## Daily report: Sat Nov 14, 2026
+
+### Scoreboard (insights read Nov 14 04:53 UTC)
+Changes are vs the Nov 13 04:59 UTC read (1 day) and vs Nov 7 04:53 UTC (7 days). Posts in the last 7 days: **0 on every page** (paused). Best/worst below are over each page's last 40 posts (Oct 20 – Nov 5), reach ≥20 for the ratio.
+
+| Page | Followers (1d / 7d) | Median reach (40 posts) | Reels: median views | Best (saves+sends)/reach | Worst | Best by views |
+|---|---|---|---|---|---|---|
+| Fully Funded | 8 (+0 / +1) | 9 | 16 (25 Reels; 15 feed) | Reel "Your TFSA, after you die?" 9/20 = 0.45 | Reel "Living with your partner 12 months?" 0/36 | Reel "Not married? No will?" 143 |
+| Locked Hour | 6 (+0 / +1) | 38 | 120 (25 Reels; 15 carousels) | Reel "Missed a day? Don't start over" 9/32 = 0.28 | Reel "Exam next week? Stop rereading" 0/102 | Reel "Shower 90 minutes before bed" 1,304 |
+| Hourback | 7 (+0 / +1) | 9 | 26.5 (24 Reels; 16 carousels) | Reel "Spam texts and calls: the shut-off sheet" 15/22 = 0.68 | Reel "Kid's fractions and you forgot how?" 0/90 | Reel "Best friend's wedding and no toast yet?" 151 |
+| Littlefold | **no data** (7 at Nov 11 21:38) | no data | no data | no data (token) | | |
+
+**Total: 28 followers (21 read + LF 7 last known; +0 today, +3 this week, all in the one unattributed Nov 12–13 overnight window).** Best post yesterday: none (0 posts, paused).
+- Caution on the "best" ratios: the top FF and HB ratios are Oct 20–24 posts whose sends sit inside the Oct 19–20 share-burst era; the clean Reel sends rate on the last 18 Reels is 0.
+
+### Patterns
+No new posts; the Nov 8 patterns stand (medium confidence).
+
+### Comments
+**No data yet.** 0 real comment texts (day 31).
+
+### Health
+- **Published vs schedule:** all **454 of 454** entries published; 0 failed, 0 errors. Nothing was due in the last 24 h.
+- **Next 48 h: no posts on any page.** This is Dharma's pause, not a fault: 0 future entries, 32 held, 0 Muse packages.
+- **Data: BROKEN for Littlefold** (code 190; 9 failed reads since 05:02 UTC Nov 12; not re-authed). FF, LH and HB fine. Still broken: comment text, follow_type, per-post history lines.
+
+### Media kit
+No change (no new posts; LF frozen at the Nov 11 21:38 read until the token is fixed).
+
+---
+
 ## TEST-BATCH TABLE (Fri Nov 13, 2026, Performance desk)
 Data: insights/latest.json, collected **Nov 13 04:59 UTC (11:59 pm ET Thu)**. All 4 Nov 12 reads ran (13:11, 17:07, 20:54, 04:59). Next read ~12:50–13:10 UTC.
 - **⚠ Littlefold read FAILED for the 5th read in a row** (05:02, 13:11, 17:07, 20:54 Nov 12; 04:59 Nov 13): code 190, session invalidated. No "Refresh tokens" run since the scheduled Nov 9 one, so the re-auth (dharma-todo Today item 1) has not happened yet. LF numbers stay frozen at the Nov 11 21:38 read.
