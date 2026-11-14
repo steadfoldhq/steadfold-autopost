@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-13T20:54:05+00:00",
+ "collected_at": "2026-11-14T04:53:41+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -131,13 +131,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 44,
-      "reach": 35,
+      "views": 45,
+      "reach": 36,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 3610,
-      "ig_reels_video_view_total_time": 133584
+      "ig_reels_avg_watch_time": 3859,
+      "ig_reels_video_view_total_time": 146665
      },
      "comments": []
     },
@@ -150,13 +150,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 6,
-      "reach": 6,
+      "views": 9,
+      "reach": 7,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 725,
-      "ig_reels_video_view_total_time": 4350
+      "ig_reels_avg_watch_time": 2138,
+      "ig_reels_video_view_total_time": 14968
      },
      "comments": []
     },
@@ -188,7 +188,7 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 7,
+      "views": 9,
       "reach": 3,
       "saved": 0,
       "shares": 0,
@@ -866,12 +866,12 @@
      "comments_count": 1,
      "insights": {
       "views": 141,
-      "reach": 119,
+      "reach": 120,
       "saved": 2,
       "shares": 0,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 5163,
-      "ig_reels_video_view_total_time": 614476
+      "ig_reels_avg_watch_time": 5166,
+      "ig_reels_video_view_total_time": 620021
      },
      "comments": []
     },
@@ -884,13 +884,13 @@
      "likes": 2,
      "comments_count": 1,
      "insights": {
-      "views": 369,
-      "reach": 324,
+      "views": 370,
+      "reach": 326,
       "saved": 3,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 5023,
-      "ig_reels_video_view_total_time": 1647589
+      "ig_reels_avg_watch_time": 5009,
+      "ig_reels_video_view_total_time": 1647997
      },
      "comments": []
     },
@@ -1618,13 +1618,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 136,
-      "reach": 111,
+      "views": 139,
+      "reach": 112,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7604,
-      "ig_reels_video_view_total_time": 859301
+      "ig_reels_avg_watch_time": 7602,
+      "ig_reels_video_view_total_time": 866690
      },
      "comments": []
     },
