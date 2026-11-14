@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-14T04:53:41+00:00",
+ "collected_at": "2026-11-14T17:56:49+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -90,16 +90,16 @@
      "permalink": "https://www.instagram.com/reel/DfQlWBSgrPW/",
      "at": "2026-11-03T00:22:35+0000",
      "first_line": "Partner didn't file a tax return? In Canada, to keep getting the Canada child benefit, you and your spouse or common-law partner each have t",
-     "likes": 0,
+     "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 16,
-      "reach": 10,
+      "views": 18,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 17430,
-      "ig_reels_video_view_total_time": 174308
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 16962,
+      "ig_reels_video_view_total_time": 186584
      },
      "comments": []
     },
@@ -789,13 +789,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 137,
-      "reach": 113,
+      "views": 138,
+      "reach": 114,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 6431,
-      "ig_reels_video_view_total_time": 726766
+      "ig_reels_avg_watch_time": 6404,
+      "ig_reels_video_view_total_time": 730093
      },
      "comments": []
     },
@@ -1542,7 +1542,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "hourback": {
@@ -2314,7 +2314,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 0
    }
   },
   "littlefold": {
