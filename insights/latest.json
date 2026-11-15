@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-14T23:50:53+00:00",
+ "collected_at": "2026-11-15T11:54:12+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -1808,8 +1808,8 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 4,
-      "reach": 2,
+      "views": 6,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
