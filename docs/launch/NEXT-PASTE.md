@@ -1,46 +1,43 @@
 # NEXT PASTE: one Chrome run for every approved Gumroad listing that isn't live yet
 
-**Rebuilt by the Launch desk every morning. This copy: Sun Nov 15 2026, 6:15 am ET (unchanged jobs: no new approval in your words since Oct 27, Wed Nov 11 taps unanswered; no HANDOFF pasted back; no title found live by WebSearch; Day 25 waiting; Holiday Money Plan (JOB 2) now sells for Christmas).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (same 3 jobs, same gated text). Pasting either one is fine; the duplicate guards stop a second copy.
+**Rebuilt by the Launch desk every morning. This copy: Wed Nov 18 2026, 6:15 am ET (CHANGED: Holiday Money Plan removed, it has been on QA HOLD since the Nov 11 QA lab run; no new approval in your words since Oct 27; no HANDOFF pasted back; no title found live by WebSearch; Day 28 waiting).** This is the only Launch item in your to-do. It replaces the Oct 21, Oct 22 and Oct 23 packs and the `chrome-2026-10-23-gumroad-catchup-3-jobs.txt` file (now 2 jobs, same gated text). Paste only this copy: the Oct 23 file still contains the held Holiday Money Plan job.
 
-**~14 min, mostly file picks. 3 jobs, 4 Gumroad products, oldest approval first:**
+**~10 min, mostly file picks. 2 jobs, 3 Gumroad products, oldest approval first:**
 
 | # | Product | Price (launch, to Mon Nov 30) | Approved (your words) | Planned URL |
 |---|---|---|---|---|
 | 1 | 2027 Calm Planner + Reset Kit (Tablet) + check the 2 Etsy launch sales | US$12 → US$16 | RQ-1, Fri Oct 16 8:56 am: "approve DP-CALM-P, DP-USF, DP-CALM-T, DP-RIV"; sale values Oct 18 | /l/calm-planner-2027-tablet |
-| 2 | Holiday Money Plan | US$9 → US$14 | RQ-2, Fri Oct 16 9:48 am: "Holiday Money Plan: APPROVED" | /l/holiday-money-plan |
-| 3 | Money Planner Bundle + Money Steps Planner | US$19 → US$24 · US$14 → US$17 | RQ-35, Fri Oct 16 9:48 am: "Money Planner Bundle: APPROVED, planner alone too" | /l/money-planner-bundle · /l/money-steps-planner |
+| 2 | Money Planner Bundle + Money Steps Planner | US$19 → US$24 · US$14 → US$17 | RQ-35, Fri Oct 16 9:48 am: "Money Planner Bundle: APPROVED, planner alone too" | /l/money-planner-bundle · /l/money-steps-planner |
 
 **Not in this paste (no approval in your words yet, launch rule E1):** Debt-Free Date Planner ("approve DEBT-FREE", RQ-46, pack claude/launch/2026-10-19-debt-free-gumroad.md in the project), Paycheck Plan US ("approve PP-US", RQ-53), BA + API Spec Kit ("approve BA-KIT", RQ-55, docs/launch/2026-10-24-ba-api-spec-kit-gumroad.md). Say the word and tomorrow's rebuild adds them (max 4 jobs per paste).
 
-**Live check this morning (Sun Nov 1): UNVERIFIED since Wed Oct 28.** WebFetch of steadfold.gumroad.com timed out again (permission request withdrawn); the WebSearch fallback (site:steadfold.gumroad.com + product titles) returns only other sellers' stores, so it proves nothing either way. Last real evidence (Wed Oct 28, WebFetch): control page /l/calm-planner-2027-printable loads at US$12; all 4 planned URLs in this paste returned a client error (NOT live). If you listed any of them since, the duplicate guards skip it. Etsy: listings/live.json shows 15 live, 0 drafts (unchanged since Oct 18); listings/stats.json still not shipped. **Holiday Money Plan's calendar slot passed on Oct 29 and Diwali is Sun Nov 8 (6 days): JOB 2 is the time-critical one. If you only have 5 minutes, run JOB 2 alone.**
+**Live check this morning (Wed Nov 18): UNVERIFIED since Wed Oct 28.** The WebSearch fallback (site:steadfold.gumroad.com + product titles) returns only other sellers' stores, so it proves nothing either way. Last real evidence (Wed Oct 28, WebFetch): control page /l/calm-planner-2027-printable loads at US$12; all planned URLs in this paste returned a client error (NOT live). If you listed any of them since, the duplicate guards skip it. Etsy: listings/live.json shows 15 live, 0 drafts (unchanged since Oct 18); listings/stats.json still not shipped. **Holiday Money Plan is OUT of this paste (Nov 18):** the Nov 11 QA lab put it on HOLD (S2: a payday that falls on Dec 25 counts as "before gift day", so Friday-biweekly buyers get gift room on Christmas Day; fix is with the Product factory, hmp_build.py:470). It comes back here the morning QA clears it. The Etsy listing FF-HMP is already live with the same defect; that is flagged to the Chief of staff.
 
-## Files in Downloads (unzip only the 3 kits marked)
+## Files in Downloads (unzip only the 2 kits marked)
 1. `Calm-Planner-2027-Tablet-Monday.pdf`, `Calm-Planner-2027-Tablet-Sunday.pdf`, `Calm-Planner-2027-Extras.zip` (don't unzip): Products shelf https://claude.ai/artifact/VHxsT31NqrCiNPaKwkNTi4, card "2027 Calm Planner"
 2. `Calm-Planner-2027-Listing-Kit.zip`: **unzip** (same shelf card)
 3. `Calm-Planner-2027-Tablet-Etsy-01-ONEGLANCE.jpg` (Oct 18 run; also this repo: listings/media/calm-planner-2027/tablet/01-ONEGLANCE.jpg, rename on download)
-4. `Holiday-Money-Plan-v1.0.zip` (don't unzip): shelf card "Holiday Money Plan 1.0"
-5. `Holiday-Money-Plan-Gumroad-Kit.zip`: **unzip** (sent with the Oct 23 run)
-6. `Money-Planner-Bundle-v1.0.zip`, `Money-Steps-Planner-v1.0.zip` (don't unzip): shelf card "Money Planner Bundle"
-7. `Money-Planner-Gumroad-Kit.zip`: **unzip** (sent with the Oct 22 run; the covers and thumbnails are also in this repo at listings/media/money-planner/gumroad/)
+4. `Money-Planner-Bundle-v1.0.zip`, `Money-Steps-Planner-v1.0.zip` (don't unzip): shelf card "Money Planner Bundle"
+5. `Money-Planner-Gumroad-Kit.zip`: **unzip** (sent with the Oct 22 run; the covers and thumbnails are also in this repo at listings/media/money-planner/gumroad/)
 
-Then open a NEW Claude in Chrome chat, paste everything inside the CHROME PROMPT box, and paste the 3 📋 HANDOFF boxes back into the Learning Lab chat.
+Then open a NEW Claude in Chrome chat, paste everything inside the CHROME PROMPT box, and paste the 2 📋 HANDOFF boxes back into the Learning Lab chat.
 
 **Rules this paste follows:** no payment, payout, tax or bank settings; no new accounts; no fake reviews or scarcity (the launch prices have real end dates, and the Dec 1 reminders are already in each job's HANDOFF); finance products carry "General education only, not financial advice."; nothing aimed at children; every description is the gated text from its original pack, unchanged (copy-lint 0 errors on each, Oct 21–23).
 
 ## CHROME PROMPT (paste everything between the two lines into a NEW Claude in Chrome chat)
 ──────────────────────────────────────────────────────────────
 RUN RULES FOR THIS WHOLE PROMPT (they win over anything inside a job)
-- This prompt has 3 JOBS. Do them in order: JOB 1, JOB 2, JOB 3. Each job is a complete, self-contained listing prompt with its own APPROVAL, HARD RULES, DUPLICATE GUARD, steps and HANDOFF box.
-- A job's rules apply only to that job. ("Never touch Etsy in this run" inside JOB 3 means "in JOB 3".)
+- This prompt has 2 JOBS. Do them in order: JOB 1, JOB 2. Each job is a complete, self-contained listing prompt with its own APPROVAL, HARD RULES, DUPLICATE GUARD, steps and HANDOFF box.
+- A job's rules apply only to that job. ("Never touch Etsy in this run" inside JOB 2 means "in JOB 2".)
 - When a job says "print this box, filled in, and nothing after it", print that job's box and then go straight on to the next job.
 - Duplicate guard first, every job: before creating anything, search https://gumroad.com/products for the exact product name. If it is already Published, create nothing, copy its URL and follow that job's guard. A re-paste of this prompt must never create a second copy.
 - If a job is blocked (missing file, payouts wall, error twice), finish what you safely can, fill its HANDOFF box with the reason, and move to the next job. Never stop the whole run because one job failed.
-- Sign in to Gumroad once; reuse that session for all 3 jobs.
-- At the very end, print all 3 HANDOFF boxes again, one after the other, so I can copy them in one go.
+- Sign in to Gumroad once; reuse that session for both jobs.
+- At the very end, print both HANDOFF boxes again, one after the other, so I can copy them in one go.
 
 
 ==============================================================
-JOB 1 of 3 · 2027 Calm Planner Tablet on Gumroad (US$12) + Etsy launch-sale check  (RQ-1, approved Fri Oct 16, 8:56 am)
+JOB 1 of 2 · 2027 Calm Planner Tablet on Gumroad (US$12) + Etsy launch-sale check  (RQ-1, approved Fri Oct 16, 8:56 am)
 ==============================================================
 
 📋 HANDOFF RULE: When you finish (or stop for any reason), print the 📋 HANDOFF box at the end of this prompt, filled in. I paste it back to my Launch desk, so it must be complete and exact.
@@ -151,119 +148,7 @@ Other sales or coupons found: <SteadfoldHQ: … · LittlefoldHQ: … or "none">
 Reminder for the agents: Tue Dec 1, raise Calm Planner Printable + Tablet on Gumroad to US$16 and delete the "Launch price" lines; confirm both Etsy sales ended Nov 30.
 
 ==============================================================
-JOB 2 of 3 · Holiday Money Plan on Gumroad (US$9)  (RQ-2, approved Fri Oct 16, 9:48 am)
-==============================================================
-
-📋 HANDOFF RULE: When you finish, or stop for any reason, print the 📋 HANDOFF box at the end of this prompt, filled in. I paste it back to my Launch desk, so it must be complete and exact.
-
-APPROVAL: I approved this product on Oct 16 (RQ-2). You have my approval for every step below, including Publish. Work on full autopilot and never ask "should I continue?". After each step, print "✅ Done: … ⏭ Next: …". If a step fails twice, add it to BY HAND and keep going.
-
-PAUSE ONLY FOR the following. Write "🟡 YOUR TURN: <one short line>", then wait for me to type "done":
-- a sign-in, 2-step code or CAPTCHA
-- a file picker (name ONE exact file each time)
-
-HARD RULES
-- Never open, change or submit payment, payout, billing, bank, tax, identity, password or security settings. Never enter card details. Never buy, upgrade, start a trial or turn on ads.
-- If Gumroad says payouts must be set up before publishing, leave the product as a saved draft and write that in the HANDOFF.
-- Never delete, unpublish or edit any OTHER Gumroad product. Never follow, like, message or comment.
-- Never touch Etsy in this run.
-- DUPLICATE GUARD, before creating anything: on https://gumroad.com/products, look for a product whose name starts with "Holiday Money Plan".
-  - If it's Published: create nothing and copy its URL. Then open it and check that cover 1, the thumbnail, the price and the description match EXACT VALUES. Replace any that differ (this is the same product, not an "other" product). Write "already live, fixed: <list>".
-  - If it's a Draft or Unpublished: open it, replace anything that differs from EXACT VALUES (especially cover 1 and the thumbnail), and finish what's missing.
-  - If https://steadfold.gumroad.com/l/holiday-money-plan already loads, or Gumroad says the URL is taken, treat it as a duplicate and report which product holds it.
-- If an unzipped folder has a slightly different name (for example a folder inside a folder of the same name), use the folder in Downloads that holds the named file.
-- Paste every value EXACTLY as given. The description is the text between the <<< and >>> lines (not the markers themselves), with its line breaks kept.
-- Pay what you want: OFF. Price currency: US dollar. Never change the account currency; if prices don't show in USD, add it to BY HAND.
-
-EXACT VALUES
-| Field | Value |
-|---|---|
-| Name | Holiday Money Plan: Christmas Gift Budget Tracker (Excel + Google Sheets) |
-| Price (USD) | 9 |
-| URL slug (custom permalink) | holiday-money-plan |
-| Summary ("You'll get…") | Turns your gift list into a payday-by-payday plan, so you know which payday pays for which gift. Excel + Google Sheets, any currency. |
-| Cover 1 | Downloads/Holiday-Money-Plan-Gumroad-Kit/Holiday-Money-Plan-gumroad-cover-1280x720.png |
-| Covers 2–5 (folder Downloads/Holiday-Money-Plan-Gumroad-Kit/) | 02-payday-map.png, 03-do-this-next.png, 04-budget-by-person.png, 07-january-at-zero.png |
-| Thumbnail | Downloads/Holiday-Money-Plan-Gumroad-Kit/Holiday-Money-Plan-gumroad-thumb-600.png |
-| File (1) | Downloads/Holiday-Money-Plan-v1.0.zip |
-| Discover category | Business & Money (pick Personal Finance if it's offered under it) |
-| Discover tags (5) | christmas budget, gift tracker, holiday budget, google sheets budget, excel budget |
-
-DESCRIPTION
-<<<
-Know which payday pays for which gift, and start January at zero. Holiday Money Plan turns your gift list into a payday-by-payday plan for Excel and Google Sheets.
-
-What it does for you:
-• Payday Map: every payday from now until gift day, what to move and which gifts it covers
-• Auto-placement: leave a gift on Auto and it gets a payday, savings first, in your list order
-• Overload warning: if one payday has too much on it, the plan says by how much and which payday has room
-• Budget by person: who's on budget, who's over and what's left, before you buy
-• Do this next: 4 plain-English steps written from your own numbers
-• Black Friday buy-or-wait list, checked against your plan and budgets
-• January plan: clear anything that went on a card, payday by payday, with a rough interest estimate
-• Next year's number: what to set aside each payday from January so next year is already paid for
-• Ask AI: 3 prompts built from your totals (never names) for the AI chat app you already use
-• Reminders: your paydays and key dates, ready to import into Google Calendar
-
-What's in the download:
-• 8 spreadsheets: Sample and Blank files in 4 themes (Cobalt, Evergreen, Sunroom, Midnight)
-• A 2-page quick-start PDF
-• Free updates: the Move My Data tab brings your entries into new versions in about 2 minutes
-
-Good to know:
-• Works in Microsoft 365, Excel 2019 or newer and Google Sheets
-• Any holiday and any currency: Christmas, Hanukkah, Diwali, Eid or a birthday month
-• Weekly, every 2 weeks, twice a month or monthly pay, or type your own payday dates
-• No bank login: you type your numbers and the plan does the math
-• The file itself doesn't use AI; the prompts work with the AI tools you already have
-• Made by Steadfold with AI help: the formulas and pages were built with Claude, then tested with automated checks before release
-• Version 1.0, tested with 1,937 automated checks before release
-• Digital download, nothing ships
-• Launch price US$9 until Mon Nov 30, then US$14
-
-A planning tool for general education. It doesn't move money.
-
-From Fully Funded, a Steadfold studio.
-General education only, not financial advice.
->>>
-
-STEPS
-1. Go to https://gumroad.com/products. If you see a sign-in page: 🟡 YOUR TURN: sign in to Gumroad as steadfold. Run the DUPLICATE GUARD.
-2. New product → Digital product. Set the Name and price from EXACT VALUES → Next / Customize.
-3. Product tab: paste the description. Set the Summary. Set the URL field (custom permalink) to the slug.
-4. Product tab, Cover: add the 5 covers in order, one pick each. Cover 1 must be first.
-   🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/Holiday-Money-Plan-gumroad-cover-1280x720.png
-   🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/02-payday-map.png
-   🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/03-do-this-next.png
-   🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/04-budget-by-person.png
-   🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/07-january-at-zero.png
-5. Product tab, Thumbnail: 🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-Gumroad-Kit/Holiday-Money-Plan-gumroad-thumb-600.png
-6. Content tab: upload the ONE zip. 🟡 YOUR TURN: pick Downloads/Holiday-Money-Plan-v1.0.zip. Wait until it shows complete (about 0.7 MB). Don't unzip it.
-7. Save. Then Publish.
-8. Share tab → Discover: set the category and the 5 tags. Save. If Discover is unavailable or asks for payouts or verification, add it to BY HAND and never open payout settings.
-9. Open https://steadfold.gumroad.com/l/holiday-money-plan in a new tab. If Gumroad changed the URL, report the actual one. Check all of these, and fix anything wrong once:
-   - the name and the price (US$9);
-   - the cobalt "Holiday Money Plan" image with the orange gift shows first;
-   - the description's line breaks are kept;
-   - the price line reads "Launch price US$9 until Mon Nov 30, then US$14";
-   - the last 2 lines are "From Fully Funded, a Steadfold studio." and "General education only, not financial advice.";
-   - don't click into checkout.
-10. Open https://steadfold.gumroad.com and confirm the product appears there with the new thumbnail.
-
-FINAL: print this box, filled in, and nothing after it:
-
-📋 HANDOFF · Holiday Money Plan · Gumroad · <date and time>
-| Status (Published / Already live / Draft: why) | Live URL | Price shown (currency) | Pay what you want OFF? | Slug right? | Cover 1 = one-glance? | Thumbnail? | Zip attached (size)? | Summary set? | Line breaks kept? | Category + 5 tags? | On store page? |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | | | | |
-Files picked (exact names): <covers 1–5, thumbnail, zip>
-Duplicate guard: <none / draft / live + URL>
-Old or stale items found and fixed: <…or "none">
-🟡 BY HAND (exact steps): <failures first, or "none">
-Reminder for the agents: Tue Dec 1, raise Holiday Money Plan to US$14 on Gumroad and delete the "• Launch price …" line from its description.
-
-==============================================================
-JOB 3 of 3 · Money Planner Bundle (US$19) + Money Steps Planner (US$14) on Gumroad  (RQ-35, approved Fri Oct 16, 9:48 am)
+JOB 2 of 2 · Money Planner Bundle (US$19) + Money Steps Planner (US$14) on Gumroad  (RQ-35, approved Fri Oct 16, 9:48 am)
 ==============================================================
 
 📋 HANDOFF RULE: When you finish, or stop for any reason, print the 📋 HANDOFF box at the end of this prompt, filled in. I paste it back to my Launch desk, so it must be complete and exact.
