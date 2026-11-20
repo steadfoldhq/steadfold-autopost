@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-19T23:01:04+00:00",
+ "collected_at": "2026-11-20T12:44:43+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -17,13 +17,13 @@
      "likes": 1,
      "comments_count": 1,
      "insights": {
-      "views": 12,
-      "reach": 10,
+      "views": 13,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 2656,
-      "ig_reels_video_view_total_time": 29219
+      "ig_reels_avg_watch_time": 2947,
+      "ig_reels_video_view_total_time": 35366
      },
      "comments": []
     },
@@ -37,7 +37,7 @@
      "comments_count": 1,
      "insights": {
       "views": 43,
-      "reach": 40,
+      "reach": 41,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -770,7 +770,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "lockedhour": {
