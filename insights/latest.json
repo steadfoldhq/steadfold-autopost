@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-20T22:37:57+00:00",
+ "collected_at": "2026-11-21T12:30:31+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -770,7 +770,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 1
+    "profile_views": 2
    }
   },
   "lockedhour": {
@@ -923,7 +923,7 @@
      "comments_count": 1,
      "insights": {
       "views": 1304,
-      "reach": 1081,
+      "reach": 1082,
       "saved": 7,
       "shares": 3,
       "total_interactions": 33,
@@ -1542,7 +1542,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "hourback": {
@@ -1676,7 +1676,7 @@
      "comments_count": 1,
      "insights": {
       "views": 151,
-      "reach": 122,
+      "reach": 123,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
@@ -1694,13 +1694,13 @@
      "likes": 0,
      "comments_count": 1,
      "insights": {
-      "views": 127,
-      "reach": 108,
+      "views": 128,
+      "reach": 109,
       "saved": 0,
       "shares": 0,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 4498,
-      "ig_reels_video_view_total_time": 494854
+      "ig_reels_avg_watch_time": 4508,
+      "ig_reels_video_view_total_time": 500451
      },
      "comments": []
     },
@@ -2314,7 +2314,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "littlefold": {
