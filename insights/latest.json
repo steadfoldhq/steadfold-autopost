@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-11-27T00:30:58+00:00",
+ "collected_at": "2026-11-27T13:44:33+00:00",
  "accounts": {
   "fullyfunded": {
    "account": "fullyfunded",
@@ -2314,7 +2314,7 @@
     }
    ],
    "account_day": {
-    "profile_views": 0
+    "profile_views": 1
    }
   },
   "littlefold": {
